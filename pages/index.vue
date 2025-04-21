@@ -15,31 +15,46 @@
       </div>
     </section>
 
-    <!-- Platforms Section -->
-    <section id="platforms" class="section bg-gray-50">
+    <!-- Products/Services Section -->
+    <section class="section" id="platforms">
       <div class="container">
-        <h2 class="section-title">Our Educational Platforms</h2>
+        <h2 class="section-title text-white">Our Educational Ecosystem</h2>
         
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          <!-- Blog Platform -->
-          <div class="card">
-            <h3 class="text-xl md:text-2xl font-bold mb-3">Blog</h3>
-            <p class="mb-4 text-gray-600">Educational articles and resources to enhance your learning journey.</p>
-            <a href="https://blog.skill-wanderer.com" class="text-primary hover:underline font-medium">Visit Blog →</a>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <!-- Blog Card -->
+          <div class="platform-card cream-bg rounded-lg shadow-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-orange-500">Blog</h3>
+              <p class="text-gray-700 mb-4">Educational articles and resources to enhance your learning journey.</p>
+              <a href="https://blog.skill-wanderer.com" class="inline-flex items-center text-orange-500 hover:text-orange-600">
+                Visit Blog <span class="ml-1">→</span>
+              </a>
+            </div>
           </div>
           
-          <!-- Dojo Platform -->
-          <div class="card">
-            <h3 class="text-xl md:text-2xl font-bold mb-3">Dojo</h3>
-            <p class="mb-4 text-gray-600">Free, mission-driven educational platform with optional premium support.</p>
-            <a href="https://dojo.skill-wanderer.com" class="text-primary hover:underline font-medium">Visit Dojo →</a>
+          <!-- Dojo Card -->
+          <div class="platform-card cream-bg rounded-lg shadow-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-orange-500">Dojo</h3>
+              <p class="text-gray-700 mb-4">Interactive courses and learning paths for structured skill development.</p>
+              <a href="https://dojo.skill-wanderer.com" class="inline-flex items-center text-orange-500 hover:text-orange-600">
+                Visit Dojo <span class="ml-1">→</span>
+              </a>
+            </div>
           </div>
           
-          <!-- Hub Platform (Coming Soon) -->
-          <div class="card opacity-75">
-            <h3 class="text-xl md:text-2xl font-bold mb-3">Hub <span class="text-sm font-normal text-gray-500">(Coming Soon)</span></h3>
-            <p class="mb-4 text-gray-600">Community learning environment to connect with fellow learners.</p>
-            <span class="text-gray-400">Coming Soon</span>
+          <!-- Hub Card (Coming Soon) -->
+          <div class="platform-card cream-bg rounded-lg shadow-lg overflow-hidden relative">
+            <div class="absolute top-0 right-0 bg-gray-500 text-white py-1 px-3 rounded-bl-lg text-sm">
+              Coming Soon
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold mb-3 text-orange-500">Hub</h3>
+              <p class="text-gray-700 mb-4">Community space for connecting with fellow learners and experts.</p>
+              <a href="#" class="inline-flex items-center text-gray-400 cursor-not-allowed">
+                Visit Hub <span class="ml-1">→</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -59,3 +74,27 @@
     </section>
   </div>
 </template>
+
+<style scoped>
+.cream-bg {
+  background-color: #FEF1E4;
+}
+
+.platform-card {
+  margin: 1rem 0;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.platform-title {
+  color: black;
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+</style>

@@ -1,30 +1,20 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <header class="bg-white shadow-sm sticky top-0 z-10">
+    <header class="bg-orange-500 shadow-sm sticky top-0 z-10 text-white">
       <nav class="container flex justify-between items-center py-4 md:py-6">
-        <NuxtLink to="/" class="text-xl md:text-2xl font-bold text-primary">Skill Wanderer</NuxtLink>
+        <NuxtLink to="/" class="flex items-center space-x-2 w-1/4">
+          <img src="/cropped-skill-wanderer-logo-768x256.webp" alt="Skill Wanderer Logo" class="h-8 md:h-10 w-full object-contain" />
+        </NuxtLink>
         
-        <!-- Mobile Menu Button -->
-        <button @click="showMobileMenu = !showMobileMenu" class="md:hidden">
-          <span class="block w-6 h-px mb-1 bg-gray-900"></span>
-          <span class="block w-6 h-px mb-1 bg-gray-900"></span>
-          <span class="block w-6 h-px bg-gray-900"></span>
-        </button>
-        
-        <!-- Desktop Navigation -->
-        <div class="hidden md:flex space-x-8">
-          <a href="https://blog.skill-wanderer.com" class="hover:text-primary transition">Blog</a>
-          <a href="https://dojo.skill-wanderer.com" class="hover:text-primary transition">Dojo</a>
-          <a href="https://hub.skill-wanderer.com" class="hover:text-primary transition opacity-50">Hub (Soon)</a>
-        </div>
+
       </nav>
       
       <!-- Mobile Navigation -->
-      <div v-if="showMobileMenu" class="md:hidden bg-white py-4 shadow-inner">
+      <div v-if="showMobileMenu" class="md:hidden bg-gray-800 py-4 shadow-inner">
         <div class="container flex flex-col space-y-4">
-          <a href="https://blog.skill-wanderer.com" class="hover:text-primary transition">Blog</a>
-          <a href="https://dojo.skill-wanderer.com" class="hover:text-primary transition">Dojo</a>
-          <a href="https://hub.skill-wanderer.com" class="hover:text-primary transition opacity-50">Hub (Soon)</a>
+          <NuxtLink to="https://blog.skill-wanderer.com" class="text-white hover:text-orange-300 transition">Blog</NuxtLink>
+          <NuxtLink to="https://dojo.skill-wanderer.com" class="text-white hover:text-orange-300 transition">Dojo</NuxtLink>
+          <NuxtLink to="https://hub.skill-wanderer.com" class="text-white hover:text-orange-300 transition opacity-50">Hub (Soon)</NuxtLink>
         </div>
       </div>
     </header>
