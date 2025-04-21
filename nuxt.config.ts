@@ -19,7 +19,7 @@ export default defineNuxtConfig({
 
   postcss: {
     plugins: {
-      '@tailwindcss/postcss': {}, // Replace tailwindcss with @tailwindcss/postcss
+      '@tailwindcss/postcss': require('./tailwind.config.js'),
       autoprefixer: {},
     },
   },
