@@ -2,9 +2,8 @@
   <div class="min-h-screen flex flex-col">
     <header class="bg-orange-500 shadow-sm sticky top-0 z-10 text-white">
       <nav class="container flex justify-between items-center py-4 md:py-6">
-        <NuxtLink to="/" class="flex items-center space-x-2 w-1/5">
+        <NuxtLink to="/" class="flex items-center space-x-2 w-1/4">
           <img src="/cropped-skill-wanderer-logo-768x256.webp" alt="Skill Wanderer Logo" class="h-8 md:h-10 w-full object-contain" />
-          <span class="text-xl md:text-2xl font-bold text-white">Skill Wanderer</span>
         </NuxtLink>
         
 
