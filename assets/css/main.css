@@ -12,6 +12,24 @@
     font-feature-settings: "kern";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: white;
+  }
+  
+  a {
+    color: #0066cc; /* Standard blue for regular links */
+  }
+  
+  /* Add these explicit color definitions */
+  .bg-orange-500 {
+    background-color: #f97316 !important;
+  }
+  
+  .bg-gray-800 {
+    background-color: #1f2937 !important;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f3f4f6 !important;
   }
 }
 
@@ -64,7 +82,7 @@
   }
   
   .btn-primary {
-    background-color: #00C58E; /* bg-primary */
+    background-color: #FF6B00; /* Orange accent color */
     color: white;
     padding: 0.75rem 1.5rem; /* px-6 py-3 */
     border-radius: 0.5rem; /* rounded-lg */
@@ -75,6 +93,14 @@
   
   .btn-primary:hover {
     opacity: 0.8; /* hover:bg-opacity-80 */
+  }
+  
+  .text-primary {
+    color: #FF6B00; /* Orange accent color */
+  }
+  
+  .hover\:text-primary:hover {
+    color: #FF6B00; /* Orange accent color */
   }
   
   .card {
