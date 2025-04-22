@@ -1,22 +1,22 @@
 # Build stage
-FROM node:20 AS build
+FROM node:20-bullseye AS build
 
 WORKDIR /app
 
-# Copy package files first for better layer caching
-COPY package.json yarn.lock* ./
+# Copy package files
+COPY package.json ./
 
-# Install dependencies using yarn
-RUN yarn install
+# Try to install with npm first (most reliable)
+RUN npm install
 
 # Copy the rest of the application
 COPY . .
 
 # Build the application
-RUN yarn build
+RUN npm run build
 
-# Production stage
-FROM node:20-alpine
+# Production stage - keep using Alpine for smaller image size
+FROM node:20-alpine AS production
 
 WORKDIR /app
 
