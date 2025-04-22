@@ -1,16 +1,16 @@
 # Build stage
-FROM node:20-alpine as build
+FROM node:20-alpine AS build
 
 WORKDIR /app
 
-# Enable and prepare Yarn through Corepack
-RUN corepack enable && corepack prepare yarn@stable --activate
+# Install yarn using npm (more reliable in Alpine)
+RUN npm install -g yarn
 
 # Copy package files
 COPY package*.json yarn.lock* ./
 
 # Install dependencies
-RUN yarn install --immutable
+RUN yarn install
 
 # Copy the rest of the application
 COPY . .
