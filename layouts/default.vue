@@ -1,20 +1,10 @@
 <template>
   <div class="min-h-screen flex flex-col">
-    <header class="bg-orange-500 shadow-sm sticky top-0 z-10 text-white">
-      <nav class="container flex justify-between items-center py-4 md:py-6">
-        <NuxtLink to="/" class="flex items-center space-x-2 w-1/4">
-          <img src="/cropped-skill-wanderer-logo-768x256.webp" alt="Skill Wanderer Logo" class="h-8 md:h-10 w-full object-contain" />
-        </NuxtLink>
-        
-
-      </nav>
-      
-      <!-- Mobile Navigation -->
-      <div v-if="showMobileMenu" class="md:hidden bg-gray-800 py-4 shadow-inner">
-        <div class="container flex flex-col space-y-4">
-          <NuxtLink to="https://blog.skill-wanderer.com" class="text-white hover:text-orange-300 transition">Blog</NuxtLink>
-          <NuxtLink to="https://dojo.skill-wanderer.com" class="text-white hover:text-orange-300 transition">Dojo</NuxtLink>
-          <NuxtLink to="https://hub.skill-wanderer.com" class="text-white hover:text-orange-300 transition opacity-50">Hub (Soon)</NuxtLink>
+    <!-- Header -->
+    <header class="bg-dark-gray shadow-md">
+      <div class="container">
+        <div class="logo-container flex justify-center py-5">
+          <img src="/cropped-skill-wanderer-logo-768x256.webp" alt="Skill-Wanderer Logo" class="logo h-[60px]">
         </div>
       </div>
     </header>
@@ -23,15 +13,33 @@
       <slot />
     </main>
 
-    <footer class="bg-gray-100 py-8">
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-10">
       <div class="container text-center">
-        <p>© {{ new Date().getFullYear() }} Skill Wanderer. All rights reserved.</p>
-        <p class="mt-2 text-sm text-gray-600">Making quality education accessible to everyone</p>
+        <p class="copyright opacity-70 text-sm">&copy; {{ new Date().getFullYear() }} Skill-Wanderer. All rights reserved.</p>
       </div>
     </footer>
   </div>
 </template>
 
-<script setup>
-const showMobileMenu = ref(false);
-</script>
+<style scoped>
+header {
+  background-color: var(--dark-gray);
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+}
+</style>

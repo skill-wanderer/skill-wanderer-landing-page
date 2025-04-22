@@ -13,6 +13,10 @@ module.exports = {
     extend: {
       colors: {
         primary: '#00C58E', // Nuxt green for primary color
+        'primary-color': '#FF5722',
+        'dark-gray': '#333333',
+        'medium-gray': '#555555',
+        'light-gray': '#f5f5f5',
       },
       // In Tailwind v4, redefine the entire gray scale if extending it
       textColor: {
@@ -32,6 +36,22 @@ module.exports = {
       },
       fontFamily: {
         sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+      },
+      keyframes: {
+        bounce: {
+          '0%, 20%, 50%, 80%, 100%': { 
+            transform: 'translateY(0) translateX(-50%)' 
+          },
+          '40%': {
+            transform: 'translateY(-20px) translateX(-50%)'
+          },
+          '60%': {
+            transform: 'translateY(-10px) translateX(-50%)'
+          }
+        }
+      },
+      animation: {
+        bounce: 'bounce 2s infinite',
       },
     },
   },
