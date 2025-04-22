@@ -3,8 +3,8 @@ FROM node:20-alpine AS build
 
 WORKDIR /app
 
-# Install yarn using npm (more reliable in Alpine)
-RUN npm install -g yarn
+# Install yarn using Alpine package manager
+RUN apk add --no-cache yarn
 
 # Copy package files
 COPY package*.json yarn.lock* ./
