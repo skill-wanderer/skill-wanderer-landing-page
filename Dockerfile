@@ -3,11 +3,14 @@ FROM node:20-alpine as build
 
 WORKDIR /app
 
+# Enable and prepare Yarn through Corepack
+RUN corepack enable && corepack prepare yarn@stable --activate
+
 # Copy package files
 COPY package*.json yarn.lock* ./
 
 # Install dependencies
-RUN yarn install --frozen-lockfile
+RUN yarn install --immutable
 
 # Copy the rest of the application
 COPY . .
