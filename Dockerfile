@@ -1,15 +1,12 @@
 # Build stage
-FROM node:20-alpine AS build
+FROM node:20 AS build
 
 WORKDIR /app
 
-# Install yarn using Alpine package manager
-RUN apk add --no-cache yarn
+# Copy package files first for better layer caching
+COPY package.json yarn.lock* ./
 
-# Copy package files
-COPY package*.json yarn.lock* ./
-
-# Install dependencies
+# Install dependencies using yarn
 RUN yarn install
 
 # Copy the rest of the application
