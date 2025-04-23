@@ -78,11 +78,6 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Configure Git
-        run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-      
       - name: Install Helm
         uses: azure/setup-helm@v3
         with:
@@ -110,46 +105,39 @@ jobs:
           mkdir -p .cr-release-packages
           helm package charts/skill-wanderer --destination .cr-release-packages
       
-      - name: Setup GitHub Pages
-        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: gh-pages
-          persist-credentials: false
-          fetch-depth: 0
-          clean: false
-        continue-on-error: true
-      
-      - name: Create gh-pages branch if it doesn't exist
+      - name: Configure Git Identity
         run: |
-          if [ ! -d "gh-pages" ]; then
-            mkdir -p gh-pages
-            cd gh-pages
-            git init
-            git checkout -b gh-pages
-            git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-            touch index.html
-            echo "<html><body><h1>Helm Chart Repository</h1></body></html>" > index.html
-            git add index.html
-            git commit -m "Initial gh-pages commit"
-            git push -u origin gh-pages
-            cd ..
-          fi
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
       
-      - name: Update Helm Repository
+      - name: Publish Helm chart to GitHub Pages
         run: |
-          mkdir -p gh-pages/charts
-          cp .cr-release-packages/*.tgz gh-pages/charts/
-          cd gh-pages
-          if [ -f "index.yaml" ]; then
-            helm repo index --url https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/charts --merge index.yaml .
+          mkdir -p helm-charts
+          cp .cr-release-packages/*.tgz helm-charts/
+          
+          if git ls-remote --heads origin gh-pages | grep -q 'gh-pages'; then
+            echo "gh-pages branch exists. Checking out..."
+            git checkout -b gh-pages origin/gh-pages
           else
-            helm repo index --url https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/charts .
+            echo "Creating gh-pages branch..."
+            git checkout --orphan gh-pages
+            git rm -rf .
+            echo "# Helm Chart Repository" > README.md
+            git add README.md
+            git commit -m "Initial gh-pages commit"
           fi
+          
+          cp -R helm-charts/* .
+          
+          if [ -f "index.yaml" ]; then
+            helm repo index --url https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }} --merge index.yaml .
+          else
+            helm repo index --url https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }} .
+          fi
+          
           git add .
           git commit -m "Update Helm chart repository" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
+          git push -u origin gh-pages
       
       - name: Output Helm Repository Info
         run: |
