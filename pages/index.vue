@@ -57,7 +57,7 @@
             <div class="platform-content">
               <h3>The Hub</h3>
               <p>Join a community of fellow wanderers. Share your experiences, collaborate on projects, and connect with others on similar learning journeys.</p>
-              <a href="https://hub.skill-wanderer.com" class="platform-link">Get Notified</a>
+              <span class="platform-link disabled">Coming Soon</span>
             </div>
           </div>
         </div>
