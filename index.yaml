@@ -1,0 +1,34 @@
+apiVersion: v1
+entries:
+  skill-wanderer:
+  - apiVersion: v2
+    appVersion: 0.1.0-20250423141315
+    created: "2025-04-23T14:13:15.605288617Z"
+    description: A Helm chart for Skill Wanderer landing page
+    digest: e7e89ca218d2c880b0881a90951a7fc168316466a15a9cf2d0e481998e0c7c4b
+    name: skill-wanderer
+    type: application
+    urls:
+    - https://JimmyYouhei.github.io/skill-wanderer-landing-page/skill-wanderer-0.1.0-20250423141315.tgz
+    version: 0.1.0-20250423141315
+  - apiVersion: v2
+    appVersion: 0.1.0-20250423141315
+    created: "2025-04-23T14:13:15.605606788Z"
+    description: A Helm chart for Skill Wanderer landing page
+    digest: e7e89ca218d2c880b0881a90951a7fc168316466a15a9cf2d0e481998e0c7c4b
+    name: skill-wanderer
+    type: application
+    urls:
+    - https://JimmyYouhei.github.io/skill-wanderer-landing-page/.cr-release-packages/skill-wanderer-0.1.0-20250423141315.tgz
+    version: 0.1.0-20250423141315
+  - apiVersion: v2
+    appVersion: 0.1.0-20250423141315
+    created: "2025-04-23T14:13:15.605943284Z"
+    description: A Helm chart for Skill Wanderer landing page
+    digest: e7e89ca218d2c880b0881a90951a7fc168316466a15a9cf2d0e481998e0c7c4b
+    name: skill-wanderer
+    type: application
+    urls:
+    - https://JimmyYouhei.github.io/skill-wanderer-landing-page/helm-charts/skill-wanderer-0.1.0-20250423141315.tgz
+    version: 0.1.0-20250423141315
+generated: "2025-04-23T14:13:15.604774782Z"
