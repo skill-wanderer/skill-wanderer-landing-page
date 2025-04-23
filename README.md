@@ -125,9 +125,75 @@ This project uses GitHub Actions to automatically build and push Docker images t
 Once built and pushed, container images are available at:
 
 ```
-ghcr.io/your-github-username/skill-wanderer-landing-page:tag
+ghcr.io/JimmyYouhei/skill-wanderer-landing-page:tag
 ```
 
 Where `tag` is one of the automatically generated tags based on the workflow.
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information about Nuxt.js deployments.
+
+## Helm Chart
+
+This project includes a Helm chart for deploying the application to Kubernetes.
+
+### Prerequisites
+
+- Kubernetes cluster
+- Helm 3.0+
+- kubectl configured to communicate with your cluster
+
+### Installing the Chart
+
+To install the chart with the release name `my-release`:
+
+```bash
+helm install my-release ./charts/skill-wanderer
+```
+
+### Configuration
+
+The following table lists the configurable parameters of the skill-wanderer chart and their default values.
+
+| Parameter                | Description             | Default                    |
+| ------------------------ | ----------------------- | -------------------------- |
+| `replicaCount`           | Number of replicas      | `1`                        |
+| `image.repository`       | Image repository        | `ghcr.io/JimmyYouhei/skill-wanderer-landing-page` |
+| `image.pullPolicy`       | Image pull policy       | `IfNotPresent`             |
+| `image.tag`              | Image tag               | `latest`                   |
+| `service.type`           | Service type            | `ClusterIP`                |
+| `service.port`           | Service port            | `80`                       |
+| `service.targetPort`     | Target port             | `3000`                     |
+| `ingress.enabled`        | Enable ingress          | `false`                    |
+| `resources`              | CPU/Memory resource requests/limits | Check values.yaml for defaults |
+
+Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
+
+For example:
+
+```bash
+helm install my-release ./charts/skill-wanderer --set replicaCount=2
+```
+
+Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart:
+
+```bash
+helm install my-release ./charts/skill-wanderer -f values.yaml
+```
+
+### Upgrading the Chart
+
+To upgrade the chart:
+
+```bash
+helm upgrade my-release ./charts/skill-wanderer
+```
+
+### Uninstalling the Chart
+
+To uninstall/delete the deployment:
+
+```bash
+helm uninstall my-release
+```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information about Nuxt.js deployments.
