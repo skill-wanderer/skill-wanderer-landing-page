@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/jimmyyouhei/skill-wanderer-landing-page
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   tag: "latest"  # Default to latest, override in production
 
 imagePullSecrets: []
