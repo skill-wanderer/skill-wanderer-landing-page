@@ -78,6 +78,11 @@ jobs:
         with:
           fetch-depth: 0
       
+      - name: Configure Git
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+      
       - name: Install Helm
         uses: azure/setup-helm@v3
         with:
@@ -100,46 +105,11 @@ jobs:
           sed -i "s/^version: .*$/version: ${{ env.VERSION }}/" charts/skill-wanderer/Chart.yaml
           sed -i "s/^appVersion: .*$/appVersion: ${{ env.VERSION }}/" charts/skill-wanderer/Chart.yaml
       
-      - name: Package Helm Chart
-        run: |
-          mkdir -p .cr-release-packages
-          helm package charts/skill-wanderer --destination .cr-release-packages
-      
-      - name: Configure Git Identity
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-      
-      - name: Publish Helm chart to GitHub Pages
-        run: |
-          mkdir -p helm-charts
-          cp .cr-release-packages/*.tgz helm-charts/
-          
-          if git ls-remote --heads origin gh-pages | grep -q 'gh-pages'; then
-            echo "gh-pages branch exists. Checking out..."
-            git checkout -b gh-pages origin/gh-pages
-          else
-            echo "Creating gh-pages branch..."
-            git checkout --orphan gh-pages
-            git rm -rf .
-            echo "# Helm Chart Repository" > README.md
-            git add README.md
-            git commit -m "Initial gh-pages commit"
-          fi
-          
-          cp -R helm-charts/* .
-          
-          if [ -f "index.yaml" ]; then
-            helm repo index --url https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }} --merge index.yaml .
-          else
-            helm repo index --url https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }} .
-          fi
-          
-          git add .
-          git commit -m "Update Helm chart repository" || echo "No changes to commit"
-          git push -u origin gh-pages
-      
-      - name: Output Helm Repository Info
-        run: |
-          echo "::notice::Helm repository available at https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-          echo "::notice::Add the repository to Helm with: helm repo add ${{ github.event.repository.name }} https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+      - name: Run chart-releaser
+        uses: helm/chart-releaser-action@v1.5.0
+        env:
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        with:
+          charts_dir: charts
+          config: |
+            release-name-template: "{{ .Name }}-{{ .Version }}"
