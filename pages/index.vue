@@ -87,4 +87,11 @@
 
 <style scoped>
 /* Any additional page-specific styles can go here */
+.platform-link.disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  background-color: var(--dark-gray);
+  color: #fff;
+  pointer-events: none;
+}
 </style>
