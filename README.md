@@ -136,7 +136,24 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 This project includes a Helm chart for deploying the application to Kubernetes.
 
-### Helm Repository
+### Installation Methods
+
+#### Method 1: Install directly from Git repository
+
+You can install the Helm chart directly by cloning the repository:
+
+```bash
+# Clone the repository
+git clone https://github.com/JimmyYouhei/skill-wanderer-landing-page.git
+cd skill-wanderer-landing-page
+
+# Install the chart
+helm install my-release ./charts/skill-wanderer
+```
+
+This method is useful during development or when you need to make customizations to the chart before installation.
+
+#### Method 2: Using Helm Repository
 
 The Helm chart is available in a Helm repository hosted on GitHub Pages. You can add the repository to your Helm installation with:
 
@@ -151,19 +168,17 @@ To search for available chart versions:
 helm search repo skill-wanderer
 ```
 
+To install the chart with the release name `my-release`:
+
+```bash
+helm install my-release skill-wanderer/skill-wanderer
+```
+
 ### Prerequisites
 
 - Kubernetes cluster
 - Helm 3.0+
 - kubectl configured to communicate with your cluster
-
-### Installing the Chart
-
-To install the chart with the release name `my-release`:
-
-```bash
-helm install my-release ./charts/skill-wanderer
-```
 
 ### Configuration
 
