@@ -187,7 +187,7 @@ The following table lists the configurable parameters of the skill-wanderer char
 | Parameter                | Description             | Default                    |
 | ------------------------ | ----------------------- | -------------------------- |
 | `replicaCount`           | Number of replicas      | `1`                        |
-| `image.repository`       | Image repository        | `ghcr.io/JimmyYouhei/skill-wanderer-landing-page` |
+| `image.repository`       | Image repository        | `ghcr.io/jimmyyouhei/skill-wanderer-landing-page` |
 | `image.pullPolicy`       | Image pull policy       | `IfNotPresent`             |
 | `image.tag`              | Image tag               | `latest`                   |
 | `service.type`           | Service type            | `ClusterIP`                |
