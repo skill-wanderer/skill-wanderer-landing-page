@@ -71,7 +71,7 @@
           <div class="journey-text">
             <h2>My Learning Journey</h2>
             <p>I've worn many hats throughout my career, constantly expanding my skills across domains. From front-end development to back-end engineering, from DevOps to solution architecture, I've wandered the tech landscape gathering knowledge.</p>
-            <p>Even outside of technology, as an Import-Export Manager, I learned to rapidly adapt to complex systems—proving that continuous learning is the key to versatility.</p>
+            <p>Even outside of technology, as a former Import-Export Manager, I learned to rapidly adapt to complex systems—proving that continuous learning is the key to versatility.</p>
             <p>Now, I'm sharing the insights and skills I've gathered along my journey to help you navigate your own path of growth and discovery.</p>
           </div>
           <div class="journey-image">
