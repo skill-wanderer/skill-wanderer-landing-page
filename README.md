@@ -136,6 +136,21 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 This project includes a Helm chart for deploying the application to Kubernetes.
 
+### Helm Repository
+
+The Helm chart is available in a Helm repository hosted on GitHub Pages. You can add the repository to your Helm installation with:
+
+```bash
+helm repo add skill-wanderer https://jimmyyouhei.github.io/skill-wanderer-landing-page/
+helm repo update
+```
+
+To search for available chart versions:
+
+```bash
+helm search repo skill-wanderer
+```
+
 ### Prerequisites
 
 - Kubernetes cluster
