@@ -75,7 +75,7 @@
             <p>Now, I'm sharing the insights and skills I've gathered along my journey to help you navigate your own path of growth and discovery.</p>
           </div>
           <div class="journey-image">
-            <img src="/cropped-skill-wanderer-logo-768x256.webp" alt="Learning Journey">
+            <img src="/cropped-skill-wanderer-logo-768x256.webp" alt="Learning Journey" class="responsive-logo">
           </div>
         </div>
       </div>
@@ -93,5 +93,45 @@
   background-color: var(--dark-gray);
   color: #fff;
   pointer-events: none;
+}
+
+.responsive-logo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Small to medium screens (tablets) */
+@media (min-width: 481px) and (max-width: 1023px) {
+  .responsive-logo {
+    width: 85%;
+    max-height: 180px;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+  }
+  
+  .journey-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .responsive-logo {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .journey-image {
+    padding: 0 15px;
+  }
 }
 </style>
