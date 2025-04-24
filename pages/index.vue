@@ -27,7 +27,7 @@
             </div>
             <div class="platform-content">
               <h3>The Blog</h3>
-              <p>Dive into articles, tutorials, and insights from my journey across various tech disciplines. From front-end to DevOps, from solution architecture to business analysis.</p>
+              <p>Join me on my learning journey! Read articles sharing insights from my explorations across various tech domains, and get the latest updates on the development of the skill-wanderer platform.</p>
               <a href="https://blog.skill-wanderer.com" class="platform-link">Visit the Blog</a>
             </div>
           </div>
@@ -41,8 +41,8 @@
             </div>
             <div class="platform-content">
               <h3>The Dojo</h3>
-              <p>Master skills through structured learning paths and hands-on projects. Our e-learning platform focuses on practical applications across multiple technology domains.</p>
-              <a href="https://dojo.skill-wanderer.com" class="platform-link">Enter the Dojo</a>
+              <p>While the Dojo is live, it's currently a blank canvas. The vision is to build a mission-driven e-learning platform (LMS) offering high-quality, curated learning paths from diverse sources, making skill development accessible to all.</p>
+              <a href="https://dojo.skill-wanderer.com" class="platform-link">Visit the Dojo</a>
             </div>
           </div>
           
@@ -56,7 +56,7 @@
             </div>
             <div class="platform-content">
               <h3>The Hub</h3>
-              <p>Join a community of fellow wanderers. Share your experiences, collaborate on projects, and connect with others on similar learning journeys.</p>
+              <p>Connect with a vibrant community of learners. Share your journey, exchange insights, collaborate on projects, find mentors or mentees, and grow together in a supportive environment for skill development.</p>
               <span class="platform-link disabled">Coming Soon</span>
             </div>
           </div>
