@@ -104,21 +104,26 @@
 }
 
 /* Small to medium screens (tablets) */
-@media (min-width: 481px) and (max-width: 1023px) {
+@media (min-width: 481px) and (max-width: 1200px) {
   .responsive-logo {
     width: 85%;
-    max-height: 180px;
+    max-width: 350px;
+    max-height: 160px;
     margin: 0 auto;
     display: block;
     object-fit: contain;
   }
-  
   .journey-image {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 10px;
     width: 100%;
+    overflow: hidden;
+  }
+  .journey-content {
+    gap: 20px;
+    padding: 0 10px;
   }
 }
 
