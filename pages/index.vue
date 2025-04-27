@@ -83,6 +83,14 @@
     
 
   </div>
+  <footer class="footer-section">
+    <div class="footer-content">
+      <span>
+        Need a reference? Check out the source for this landing page on
+        <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page" target="_blank" rel="noopener" class="footer-link">GitHub</a>.
+      </span>
+    </div>
+  </footer>
 </template>
 
 <style scoped>
@@ -138,5 +146,27 @@
   .journey-image {
     padding: 0 15px;
   }
+}
+
+.footer-section {
+  background: #18181b;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0 10px 0;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+.footer-link {
+  color: #38bdf8;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: #0ea5e9;
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 </style>
