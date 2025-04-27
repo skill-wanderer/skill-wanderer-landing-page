@@ -153,20 +153,6 @@ A Helm chart is provided in the `./charts/skill-wanderer` directory for easy dep
 helm install my-release ./charts/skill-wanderer
 ```
 
-**Method 2: From Helm Repository (GitHub Pages)**
-
-```bash
-# Add the repository
-helm repo add skill-wanderer https://jimmyyouhei.github.io/skill-wanderer-landing-page/
-helm repo update
-
-# Search for the chart
-helm search repo skill-wanderer
-
-# Install the chart
-helm install my-release skill-wanderer/skill-wanderer
-```
-
 #### Helm Configuration
 
 Customize the deployment by setting parameters during installation. Refer to `./charts/skill-wanderer/values.yaml` for all available options.
@@ -205,9 +191,6 @@ helm install my-release skill-wanderer/skill-wanderer -f my-custom-values.yaml
 ```bash
 # Using local chart
 helm upgrade my-release ./charts/skill-wanderer
-
-# Using Helm repository
-helm upgrade my-release skill-wanderer/skill-wanderer
 ```
 
 #### Uninstalling the Chart
