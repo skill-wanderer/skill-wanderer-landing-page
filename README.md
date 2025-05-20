@@ -1,6 +1,5 @@
 # Skill-Wanderer Landing Page
 
-[![CI/CD](https://github.com/JimmyYouhei/skill-wanderer-landing-page/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/JimmyYouhei/skill-wanderer-landing-page/actions/workflows/docker-publish.yml)
 
 This repository contains the source code for the Skill-Wanderer landing page, a Nuxt.js application designed to introduce the Skill-Wanderer platform and its components (Blog, Dojo, Hub).
 
