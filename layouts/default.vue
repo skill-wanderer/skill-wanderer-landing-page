@@ -16,11 +16,15 @@
     <!-- Footer -->
     <footer class="bg-dark-gray text-white py-10">
       <div class="container text-center">
-        <p class="copyright opacity-70 text-sm">&copy; {{ new Date().getFullYear() }} Skill-Wanderer. All rights reserved.</p>
+        <p class="copyright opacity-70 text-sm">&copy; {{ currentYear }} Skill-Wanderer. All rights reserved.</p>
       </div>
     </footer>
   </div>
 </template>
+
+<script setup lang="ts">
+const currentYear = new Date().getFullYear()
+</script>
 
 <style scoped>
 header {
