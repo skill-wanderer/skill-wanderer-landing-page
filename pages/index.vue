@@ -101,6 +101,45 @@
   </footer>
 </template>
 
+<script setup lang="ts">
+import type { Platform } from '~/types'
+
+// Platform data with TypeScript interface
+const platforms: Platform[] = [
+  {
+    title: 'The Blog',
+    description: 'Join me on my learning journey! Read articles sharing insights from my explorations across various tech domains, and get the latest updates on the development of the skill-wanderer platform.',
+    link: 'https://blog.skill-wanderer.com',
+    icon: '📝'
+  },
+  {
+    title: 'The Dojo',
+    description: 'Master your skills through hands-on practice and challenges. Coming soon with interactive coding environments and skill assessments.',
+    link: '#',
+    icon: '🥋',
+    isComingSoon: true
+  },
+  {
+    title: 'The Hub',
+    description: 'Connect with other skill wanderers, share your journey, and discover new learning paths. The central community platform.',
+    link: '#',
+    icon: '🌐',
+    isComingSoon: true
+  }
+]
+
+// SEO and meta management
+useHead({
+  title: 'Skill Wanderer - Navigate Your Learning Journey',
+  meta: [
+    { name: 'description', content: 'Discover the path to becoming a versatile professional through continuous learning and skill exploration. Join the wanderer\'s journey across the tech landscape.' },
+    { property: 'og:title', content: 'Skill Wanderer - Navigate Your Learning Journey' },
+    { property: 'og:description', content: 'Discover the path to becoming a versatile professional through continuous learning and skill exploration.' },
+    { name: 'twitter:card', content: 'summary_large_image' }
+  ]
+})
+</script>
+
 <style scoped>
 /* Any additional page-specific styles can go here */
 .platform-link.disabled {
