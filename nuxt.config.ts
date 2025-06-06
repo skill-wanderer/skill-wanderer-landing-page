@@ -3,13 +3,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
+  // TypeScript configuration
+  typescript: {
+    typeCheck: true
+  },
+
   app: {
     head: {
       title: 'Skill Wanderer',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'The central navigation hub for the Skill Wanderer ecosystem' },
+        { name: 'description', content: 'The central navigation hub for the Skill Wanderer ecosystem' },
         // Open Graph / social media meta tags for the logo
         { property: 'og:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
         { property: 'og:image:width', content: '768' },

@@ -10,6 +10,7 @@ This repository contains the source code for the Skill-Wanderer landing page, a 
   - [Installation](#installation)
   - [Development Server](#development-server)
 - [Building for Production](#building-for-production)
+- [TypeScript Support](#typescript-support)
 - [Deployment](#deployment)
   - [Docker](#docker)
     - [Building Locally](#building-the-docker-image-locally)
@@ -95,6 +96,45 @@ pnpm preview
 yarn preview
 # or
 bun run preview
+```
+
+## TypeScript Support
+
+This project is built with full TypeScript support, providing type safety and enhanced development experience.
+
+### TypeScript Configuration
+
+- **Nuxt 3**: Built-in TypeScript support with automatic type generation
+- **Vue Components**: Use `<script setup lang="ts">` for type-safe Vue components
+- **Shared Types**: Common type definitions are available in `/types/index.ts`
+- **Config Files**: All configuration files use TypeScript (`.ts` extension)
+
+### Available Scripts
+
+```bash
+# Type checking without emitting output
+npm run typecheck
+# or
+pnpm typecheck
+# or
+yarn typecheck
+```
+
+### Development Features
+
+- **IDE Support**: Full IntelliSense and autocompletion in VS Code and other TypeScript-aware editors
+- **Type Safety**: Compile-time type checking prevents runtime errors
+- **Auto-import**: Automatic imports for components, composables, and utilities
+- **Type Generation**: Nuxt automatically generates types for routes, components, and APIs
+
+### Project Structure
+
+```
+├── types/           # Shared TypeScript type definitions
+├── nuxt.config.ts   # Nuxt configuration with TypeScript
+├── tailwind.config.ts # Tailwind configuration with TypeScript
+├── tsconfig.json    # TypeScript configuration
+└── server/tsconfig.json # Server-side TypeScript configuration
 ```
 
 ## Deployment
