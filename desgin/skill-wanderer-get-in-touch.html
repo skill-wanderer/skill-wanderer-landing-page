@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch | Let's Start a Conversation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-orange: #FF6B35;
+            --deep-orange: #E85D25;
+            --dark-bg: #1a1a1a;
+            --darker-bg: #0f0f0f;
+            --light-text: #e0e0e0;
+            --accent-yellow: #FFD93D;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-hover: rgba(255, 255, 255, 0.08);
+            --success-green: #4CAF50;
+            --error-red: #f44336;
+            --info-blue: #2196F3;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 0;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 15px 0;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-orange);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--accent-yellow);
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid var(--dark-bg);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--light-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 140px 20px 80px;
+            text-align: center;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        /* Quick Contact Options */
+        .quick-contact {
+            padding: 80px 20px;
+            background: var(--darker-bg);
+        }
+
+        .quick-contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .contact-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-card:hover::before {
+            opacity: 1;
+        }
+
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 32px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-card h3 {
+            font-size: 1.4rem;
+            color: white;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-card p {
+            opacity: 0.8;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-card a {
+            color: var(--primary-orange);
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            opacity: 0.8;
+        }
+
+        /* Response Time */
+        .response-time {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.05), rgba(255, 217, 61, 0.02));
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .response-time h3 {
+            color: var(--primary-orange);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .response-time p {
+            opacity: 0.9;
+        }
+
+        /* Purpose Section */
+        .purpose {
+            padding: 80px 20px;
+            background: var(--dark-bg);
+        }
+
+        .purpose-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .purpose-item {
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .purpose-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .purpose-item h3 {
+            color: var(--primary-orange);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .purpose-item p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Direct Message Section */
+        .direct-message {
+            padding: 80px 20px;
+            background: var(--darker-bg);
+        }
+
+        .message-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .message-form {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form-intro h2 {
+            font-size: 2rem;
+            color: var(--primary-orange);
+            margin-bottom: 15px;
+        }
+
+        .form-intro p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--light-text);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            border-radius: 10px;
+            color: var(--light-text);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-orange);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .priority-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .priority-option {
+            position: relative;
+        }
+
+        .priority-option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .priority-label {
+            display: block;
+            padding: 15px;
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .priority-option input[type="radio"]:checked + .priority-label {
+            background: rgba(255, 107, 53, 0.1);
+            border-color: var(--primary-orange);
+            color: var(--primary-orange);
+        }
+
+        .priority-label:hover {
+            border-color: rgba(255, 107, 53, 0.4);
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+            color: white;
+            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Success Message */
+        .form-message {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+        }
+
+        .form-message.success {
+            background: rgba(76, 175, 80, 0.1);
+            border: 1px solid var(--success-green);
+            color: var(--success-green);
+        }
+
+        .form-message.error {
+            background: rgba(244, 67, 54, 0.1);
+            border: 1px solid var(--error-red);
+            color: var(--error-red);
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 20px 30px;
+            background: var(--darker-bg);
+            border-top: 1px solid rgba(255, 107, 53, 0.2);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-links a {
+            color: var(--light-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-orange);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .contact-options {
+                grid-template-columns: 1fr;
+            }
+
+            .message-form {
+                padding: 30px 20px;
+            }
+
+            .priority-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon"></div>
+                Skill-Wanderer
+            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/explore">Explore</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Let's Start a Conversation</h1>
+        <p>Have a question? Want to collaborate? Or just want to share your learning journey? I'm all ears!</p>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="quick-contact">
+        <div class="quick-contact-container">
+            <div class="section-header">
+                <h2>Choose Your Preferred Channel</h2>
+                <p>I'm active on multiple platforms—pick whatever works best for you</p>
+            </div>
+            
+            <div class="contact-options">
+                <div class="contact-card" onclick="window.location.href='mailto:nguyen.hong.quan282@gmail.com'">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>Best for detailed discussions, proposals, or technical questions</p>
+                    <a href="mailto:nguyen.hong.quan282@gmail.com">nguyen.hong.quan282@gmail.com</a>
+                </div>
+                
+                <div class="contact-card" onclick="window.open('https://www.linkedin.com/in/quan-nguyen-skill-wanderer', '_blank')">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally and follow my daily insights</p>
+                    <a href="https://www.linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank">@quan-nguyen-skill-wanderer</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>Discord Community</h3>
+                    <p>Join discussions with fellow learners (coming soon)</p>
+                    <a href="#" style="opacity: 0.6;">Launching with platform</a>
+                </div>
+            </div>
+            
+            <div class="response-time">
+                <h3>⏱️ Response Time</h3>
+                <p>I personally read and respond to every message. Expect a reply within 24-48 hours on weekdays. Your message matters to me!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purpose Section -->
+    <section class="purpose">
+        <div class="section-header">
+            <h2>What Can We Talk About?</h2>
+            <p>Here are some common reasons people reach out</p>
+        </div>
+        <div class="purpose-grid">
+            <div class="purpose-item" style="animation-delay: 0.1s;">
+                <span class="purpose-icon">🎓</span>
+                <h3>Learning & Education</h3>
+                <p>Questions about courses, learning paths, or how to transition into tech</p>
+            </div>
+            <div class="purpose-item" style="animation-delay: 0.2s;">
+                <span class="purpose-icon">🤝</span>
+                <h3>Collaboration</h3>
+                <p>Partnership opportunities, guest contributions, or community initiatives</p>
+            </div>
+            <div class="purpose-item" style="animation-delay: 0.3s;">
+                <span class="purpose-icon">💻</span>
+                <h3>Technology Services</h3>
+                <p>Consulting inquiries, project discussions, or technical challenges</p>
+            </div>
+            <div class="purpose-item" style="animation-delay: 0.4s;">
+                <span class="purpose-icon">💡</span>
+                <h3>Feedback & Ideas</h3>
+                <p>Platform suggestions, course ideas, or feature requests</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Message Section -->
+    <section class="direct-message">
+        <div class="message-container">
+            <div class="message-form">
+                <div class="form-intro">
+                    <h2>Send a Direct Message</h2>
+                    <p>Share your thoughts, questions, or just say hello!</p>
+                </div>
+                
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="How should I address you?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Priority Level</label>
+                        <div class="priority-options">
+                            <div class="priority-option">
+                                <input type="radio" id="casual" name="priority" value="casual" checked>
+                                <label for="casual" class="priority-label">Just Chatting</label>
+                            </div>
+                            <div class="priority-option">
+                                <input type="radio" id="question" name="priority" value="question">
+                                <label for="question" class="priority-label">Have a Question</label>
+                            </div>
+                            <div class="priority-option">
+                                <input type="radio" id="urgent" name="priority" value="urgent">
+                                <label for="urgent" class="priority-label">Time-Sensitive</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell me what's on your mind... Feel free to share your story, ask questions, or propose ideas. I love hearing about your learning journey!"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                        <span>→</span>
+                    </button>
+                    
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/explore">Explore</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+                <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank">LinkedIn</a>
+            </div>
+            <p>&copy; 2025 Skill-Wanderer. All resources reinvested for global impact.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Form submission handler
+        document.getElementById('messageForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formMessage = document.getElementById('formMessage');
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const priority = this.querySelector('input[name="priority"]:checked').value;
+            
+            // Disable button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending... <span>⏳</span>';
+            
+            // Simulate form submission
+            setTimeout(() => {
+                // Show success message
+                formMessage.className = 'form-message success';
+                
+                // Customize message based on priority
+                let responseMessage = 'Thank you for your message! ';
+                if (priority === 'urgent') {
+                    responseMessage += "I see this is time-sensitive—I'll respond as soon as possible.";
+                } else if (priority === 'question') {
+                    responseMessage += "I'll get back to you with an answer within 24-48 hours.";
+                } else {
+                    responseMessage += "I love hearing from fellow wanderers—expect a reply soon!";
+                }
+                
+                formMessage.textContent = responseMessage;
+                formMessage.style.display = 'block';
+                
+                // Reset form
+                this.reset();
+                
+                // Reset button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Message <span>→</span>';
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            }, 1500);
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.purpose-item').forEach(item => {
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>
