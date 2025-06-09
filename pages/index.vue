@@ -485,6 +485,7 @@ body {
   color: var(--primary-orange);
   margin-bottom: 10px;
   font-size: 1.3rem;
+  white-space: nowrap;
 }
 
 .value-item p {
