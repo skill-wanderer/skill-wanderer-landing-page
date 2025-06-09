@@ -1,219 +1,631 @@
-<template>
-  <div>
-    <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))">
-      <div class="hero-content">
-        <h1>Navigate Your Learning Journey</h1>
-        <p>Discover the path to becoming a versatile professional through continuous learning and skill exploration. Join the wanderer's journey across the tech landscape.</p>
-        <a href="#platforms" class="scroll-down">↓</a>
-      </div>
-    </section>
-    
-    <!-- Platforms Section -->
-    <section class="platforms section" id="platforms">
-      <div class="container">
-        <div class="section-title">
-          <h2>Explore Our Platforms</h2>
-          <p>Choose your path or experience them all. Each platform offers a unique approach to learning and skill development.</p>
-        </div>
-        
-        <div class="platforms-grid">
-          <!-- Blog Platform -->
-          <div class="platform-card">
-            <div class="platform-img" style="background-color: var(--dark-gray)">
-              <div class="platform-overlay">
-                <div class="platform-icon">📝</div>
-              </div>
-            </div>
-            <div class="platform-content">
-              <h3>The Blog</h3>
-              <p>Join me on my learning journey! Read articles sharing insights from my explorations across various tech domains, and get the latest updates on the development of the skill-wanderer platform.</p>
-              <a href="https://blog.skill-wanderer.com" class="platform-link">Visit the Blog</a>
-            </div>
-          </div>
-          
-          <!-- Dojo Platform -->
-          <div class="platform-card">
-            <div class="platform-img" style="background-color: var(--dark-gray)">
-              <div class="platform-overlay">
-                <div class="platform-icon">🥋</div>
-              </div>
-            </div>
-            <div class="platform-content">
-              <h3>The Dojo</h3>
-              <p>While the Dojo is live, it's currently a blank canvas. The vision is to build a mission-driven e-learning platform (LMS) offering high-quality, curated learning paths from diverse sources, making skill development accessible to all.</p>
-              <a href="https://dojo.skill-wanderer.com" class="platform-link">Visit the Dojo</a>
-            </div>
-          </div>
-          
-          <!-- Hub Platform (Coming Soon) -->
-          <div class="platform-card">
-            <div class="platform-img" style="background-color: var(--dark-gray)">
-              <div class="platform-overlay">
-                <div class="platform-icon">🌐</div>
-              </div>
-              <div class="coming-soon-badge">Coming Soon</div>
-            </div>
-            <div class="platform-content">
-              <h3>The Hub</h3>
-              <p>Connect with a vibrant community of learners. Share your journey, exchange insights, collaborate on projects, find mentors or mentees, and grow together in a supportive environment for skill development.</p>
-              <span class="platform-link disabled">Coming Soon</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Journey Section -->
-    <section class="journey section">
-      <div class="container">
-        <div class="journey-content">
-          <div class="journey-text">
-            <h2>My Learning Journey</h2>
-            <p>I've worn many hats throughout my career, constantly expanding my skills across domains. From front-end development to back-end engineering, from DevOps to solution architecture, I've wandered the tech landscape gathering knowledge.</p>
-            <p>Even outside of technology, as a former Import-Export Manager, I learned to rapidly adapt to complex systems—proving that continuous learning is the key to versatility.</p>
-            <p>Now, I'm sharing the insights and skills I've gathered along my journey to help you navigate your own path of growth and discovery.</p>
-          </div>
-          <div class="journey-image">
-            <img src="/cropped-skill-wanderer-logo-768x256.webp" alt="Learning Journey" class="responsive-logo">
-          </div>
-        </div>
-      </div>
-    </section>
-    
+<template>  <div>
+    <!-- Navigation -->
+    <TheNavigation />
 
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Learn Tech, Savor the Journey</h1>
+        <p class="tagline">Free, Practical Education That Celebrates Learning Through Failure</p>
+        <p class="hero-description">
+          Quality education shapes brighter futures. Skill-Wanderer integrates real-world insights 
+          into practical tech learning paths, creating an honest educational platform with no ads, 
+          no affiliate bias—just pure, passionate learning.
+        </p>
+        <div class="hero-cta">
+          <a href="#platform" class="btn btn-primary">
+            Explore the Platform
+            <span>→</span>
+          </a>
+          <a href="#values" class="btn btn-secondary">
+            Our Principles
+          </a>
+        </div>
+      </div>
+      <svg class="wandering-path" viewBox="0 0 1200 200">
+        <path class="path" d="M0,150 Q300,100 600,130 T1200,100" />
+      </svg>
+    </section>
+
+    <!-- Platform Features Section -->
+    <section id="platform" class="features">
+      <div class="section-header">
+        <h2>The Skill-Wanderer Platform</h2>
+        <p>A revolutionary approach to tech education, currently in development</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Curated Learning Paths</h3>
+          <p>Expert-selected resources and AI-assisted content, organized into clear pathways from beginner to advanced, always with practical application in mind.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💡</div>
+          <h3>Learn Through Failure</h3>
+          <p>We celebrate mistakes as learning opportunities. Every challenge, every "oops" moment is a valuable lesson on your journey to mastery.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌟</div>
+          <h3>Real-World Integration</h3>
+          <p>Content directly informed by active technology services experience, ensuring what you learn is immediately applicable in the real world.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h3>100% Free Core Content</h3>
+          <p>All course content created or curated by us is completely free. Quality education should be accessible to everyone, everywhere.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Community-Driven</h3>
+          <p>Join a supportive community of learners where questions are welcomed, achievements are celebrated, and everyone grows together.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Future Pathways</h3>
+          <p>Long-term vision includes pathways for learners to join our team or launch their own ventures, fostering a cycle of growth and opportunity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="values">
+      <div class="values-content">
+        <div class="section-header">
+          <h2>Our Guiding Principles</h2>
+          <p>The foundation of everything we build and teach</p>
+        </div>
+        <div class="values-grid">
+          <div class="value-item" style="animation-delay: 0.1s;">
+            <span class="value-icon">🛡️</span>
+            <h3>Complete Integrity</h3>
+            <p>No ads, no affiliate marketing, no commissions. Our recommendations are purely for your benefit.</p>
+          </div>
+          <div class="value-item" style="animation-delay: 0.2s;">
+            <span class="value-icon">♻️</span>
+            <h3>Mission-Centric Reinvestment</h3>
+            <p>All net revenue is reinvested into the platform, community, and global educational impact.</p>
+          </div>
+          <div class="value-item" style="animation-delay: 0.3s;">
+            <span class="value-icon">🌍</span>
+            <h3>Accessible Education</h3>
+            <p>Free core content with equitable access provisions for premium services when available.</p>
+          </div>
+          <div class="value-item" style="animation-delay: 0.4s;">
+            <span class="value-icon">🎨</span>
+            <h3>Creative Learning</h3>
+            <p>Encouraging experimentation, celebrating failures, and finding joy in the learning process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey">
+      <div class="journey-content">
+        <h2>The Wandering Saga</h2>
+        <p class="journey-quote">
+          Every expert was once a beginner who refused to give up. Every failure was a lesson that led to success.
+        </p>
+        <p class="journey-description">
+          Skill-Wanderer is born from a simple belief: the best teachers are those who remember what it's like to struggle, 
+          to fail, and to finally breakthrough. This platform captures that journey—the wandering path of continuous learning—and 
+          transforms it into accessible education for all. Whether you're taking your first steps in tech or seeking to master 
+          advanced concepts, you'll find a home here.
+        </p>
+        <p class="journey-description">
+          As we build this platform, we're learning too. Every line of code, every curated resource, every moment of creation 
+          is both a lesson for us and a future lesson we'll share with you. This is education built by learners, for learners.
+        </p>
+      </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon">
+      <div class="section-header">
+        <h2>Platform Launching Soon</h2>
+        <p>Join us on this journey to make quality tech education accessible to everyone</p>
+      </div>
+      <div class="countdown">
+        <div class="countdown-item">
+          <span class="countdown-number">Q4</span>
+          <span class="countdown-label">2025</span>
+        </div>
+      </div>
+      <p style="margin-top: 40px; opacity: 0.8;">
+        Currently in active development. Initial courses will focus on practical web development, 
+        cloud concepts, and modern API design.
+      </p>
+    </section>
+
+    <!-- Tech Services Brief Section -->
+    <section class="tech-services">
+      <div class="tech-services-content">
+        <h3>Also Offering Technology Services</h3>
+        <p>
+          Alongside building Skill-Wanderer, I provide technology consulting services. 
+          Every real-world challenge solved becomes a lesson shared on the platform.
+        </p>
+        <a @click.prevent="handleDisableClick"  href="/services" class="btn btn-secondary">Coming Soon</a>
+      </div>
+    </section>    <!-- Footer -->
+    <TheFooter />
   </div>
-  <footer class="footer-section">
-    <div class="footer-content">
-      <span>
-        Need a reference? Check out the source for this landing page on
-        <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page" target="_blank" rel="noopener" class="footer-link">GitHub</a>.
-      </span>
-      <br />
-      <span>
-        Connect with me on
-        <a href="https://www.linkedin.com/in/quan-nguyen-jimmy-youhei" target="_blank" rel="noopener" class="footer-link" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="vertical-align: text-bottom; margin-right: 4px;"><path fill="currentColor" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm15.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z"/></svg>
-          LinkedIn
-        </a>
-      </span>
-    </div>
-  </footer>
 </template>
 
 <script setup lang="ts">
-import type { Platform } from '~/types'
-
-// Platform data with TypeScript interface
-const platforms: Platform[] = [
-  {
-    title: 'The Blog',
-    description: 'Join me on my learning journey! Read articles sharing insights from my explorations across various tech domains, and get the latest updates on the development of the skill-wanderer platform.',
-    link: 'https://blog.skill-wanderer.com',
-    icon: '📝'
-  },
-  {
-    title: 'The Dojo',
-    description: 'Master your skills through hands-on practice and challenges. Coming soon with interactive coding environments and skill assessments.',
-    link: '#',
-    icon: '🥋',
-    isComingSoon: true
-  },
-  {
-    title: 'The Hub',
-    description: 'Connect with other skill wanderers, share your journey, and discover new learning paths. The central community platform.',
-    link: '#',
-    icon: '🌐',
-    isComingSoon: true
-  }
-]
-
 // SEO and meta management
 useHead({
-  title: 'Skill Wanderer - Navigate Your Learning Journey',
+  title: 'Skill Wanderer - Practical Tech Education for Everyone',
   meta: [
-    { name: 'description', content: 'Discover the path to becoming a versatile professional through continuous learning and skill exploration. Join the wanderer\'s journey across the tech landscape.' },
-    { property: 'og:title', content: 'Skill Wanderer - Navigate Your Learning Journey' },
-    { property: 'og:description', content: 'Discover the path to becoming a versatile professional through continuous learning and skill exploration.' },
+    { name: 'description', content: 'The central navigation hub for the Skill Wanderer ecosystem. Free, practical education that celebrates learning through failure.' },
+    { property: 'og:title', content: 'Skill Wanderer - Practical Tech Education for Everyone' },
+    { property: 'og:description', content: 'Free, practical education that celebrates learning through failure. Quality education shapes brighter futures.' },
     { name: 'twitter:card', content: 'summary_large_image' }
   ]
+})
+
+// Function to handle disabled links
+const handleDisableClick = () => {
+
+}
+
+// Client-side JavaScript for interactions
+onMounted(() => {
+  // Navbar scroll effect
+  const handleScroll = () => {
+    const navbar = document.getElementById('navbar')
+    if (navbar) {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled')
+      } else {
+        navbar.classList.remove('scrolled')
+      }
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll)
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor: Element) => {
+    anchor.addEventListener('click', function (e: Event) {
+      e.preventDefault()
+      const element = e.currentTarget as HTMLAnchorElement
+      const href = element.getAttribute('href')
+      if (href) {
+        const target = document.querySelector(href)
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+        }
+      }
+    })
+  })
+
+  // Intersection Observer for animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        (entry.target as HTMLElement).style.opacity = '1'
+      }
+    })
+  }, observerOptions)
+
+  document.querySelectorAll('.value-item').forEach(item => {
+    observer.observe(item)
+  })
+
+  // Cleanup
+  onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+  })
 })
 </script>
 
 <style scoped>
-/* Any additional page-specific styles can go here */
-.platform-link.disabled {
-  cursor: not-allowed;
-  opacity: 0.7;
-  background-color: var(--dark-gray);
-  color: #fff;
+/* CSS Variables */
+:root {
+  --primary-orange: #FF6B35;
+  --deep-orange: #E85D25;
+  --dark-bg: #1a1a1a;
+  --darker-bg: #0f0f0f;
+  --light-text: #e0e0e0;
+  --accent-yellow: #FFD93D;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-hover: rgba(255, 255, 255, 0.08);
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 100px 20px 60px;
+  background: radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 50%, rgba(255, 217, 61, 0.05) 0%, transparent 50%);
+}
+
+.hero-content {
+  max-width: 1200px;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  margin-bottom: 20px;  background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero .tagline {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: var(--light-text);
+  margin-bottom: 30px;
+  opacity: 0.9;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  opacity: 0.8;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  color: white;
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(255, 107, 53, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary-orange);
+  border: 2px solid var(--primary-orange);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-orange);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Wandering Path Animation */
+.wandering-path {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  opacity: 0.3;
   pointer-events: none;
 }
 
-.responsive-logo {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+.path {
+  stroke: var(--primary-orange);
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawPath 3s ease-out forwards;
 }
 
-/* Small to medium screens (tablets) */
-@media (min-width: 481px) and (max-width: 1200px) {
-  .responsive-logo {
-    width: 85%;
-    max-width: 350px;
-    max-height: 160px;
-    margin: 0 auto;
-    display: block;
-    object-fit: contain;
-  }
-  .journey-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-    width: 100%;
-    overflow: hidden;
-  }
-  .journey-content {
-    gap: 20px;
-    padding: 0 10px;
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
-/* Mobile screens */
-@media (max-width: 480px) {
-  .responsive-logo {
-    width: 90%;
-    margin: 0 auto;
-    display: block;
-  }
-  
-  .journey-image {
-    padding: 0 15px;
-  }
+/* Platform Features Section */
+.features {
+  padding: 100px 20px;
+  background: var(--darker-bg);
 }
 
-.footer-section {
-  background: #18181b;
-  color: #fff;
+.section-header {
   text-align: center;
-  padding: 18px 0 10px 0;
-  font-size: 1rem;
-  margin-top: 40px;
+  max-width: 800px;
+  margin: 0 auto 60px;
 }
-.footer-link {
-  color: #38bdf8;
-  text-decoration: underline;
-  transition: color 0.2s;
+
+.section-header h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 20px;
+  color: var(--primary-orange);
 }
-.footer-link:hover {
-  color: #0ea5e9;
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.footer-content {
+
+.feature-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, var(--primary-orange), transparent);
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: var(--card-hover);
+}
+
+.feature-card:hover::before {
+  opacity: 0.3;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.feature-card p {
+  opacity: 0.8;
+}
+
+/* Values Section */
+.values {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, transparent 50%);
+}
+
+.values-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.value-item {
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.value-item h3 {
+  color: var(--primary-orange);
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.value-item p {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+/* Journey Section */
+.journey {
+  padding: 100px 20px;
+  background: var(--darker-bg);
+}
+
+.journey-content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 16px;
+  text-align: center;
+}
+
+.journey-quote {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: var(--primary-orange);
+  position: relative;
+  padding: 0 40px;
+}
+
+.journey-quote::before,
+.journey-quote::after {
+  content: '"';
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.3;
+}
+
+.journey-quote::before {
+  left: 0;
+  top: -10px;
+}
+
+.journey-quote::after {
+  right: 0;
+  bottom: -30px;
+}
+
+.journey-description {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+  padding: 100px 20px;
+  background: var(--dark-bg);
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-orange);
+  display: block;
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* Tech Services Section */
+.tech-services {
+  padding: 60px 20px;
+  background: rgba(255, 107, 53, 0.05);
+  text-align: center;
+}
+
+.tech-services-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tech-services h3 {
+  font-size: 1.8rem;
+  color: var(--primary-orange);
+  margin-bottom: 20px;
+}
+
+.tech-services p {
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .countdown {
+    gap: 20px;
+  }
 }
 </style>
