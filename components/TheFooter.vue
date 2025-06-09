@@ -5,8 +5,8 @@
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
-        <NuxtLink to="/contact">Contact</NuxtLink>
-        <a href="https://linkedin.com/in/quannguyen" target="_blank">LinkedIn</a>
+        <!-- <NuxtLink to="/contact">Contact</NuxtLink> -->
+        <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank">LinkedIn</a>
       </div>
       <p>&copy; 2025 Skill-Wanderer. All resources reinvested for global impact.</p>
     </div>
