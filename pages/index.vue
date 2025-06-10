@@ -142,7 +142,7 @@
       <div class="tech-services-content">
         <h3>Also Offering Technology Services</h3>
         <p>
-          Alongside building Skill-Wanderer, I provide technology consulting services. 
+          Alongside building Skill-Wanderer, I provide technology services. 
           Every real-world challenge solved becomes a lesson shared on the platform.
         </p>
         <a @click.prevent="handleDisableClick"  href="/services" class="btn btn-secondary">Coming Soon</a>

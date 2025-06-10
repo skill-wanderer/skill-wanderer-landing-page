@@ -20,7 +20,7 @@
             journey taught me something profound about learning and growth.
           </p>
           <p>
-            Through four startups, leading 16 developers, juggling multiple projects simultaneously, and yes, failing 
+            Through four startups, leading 20+ developers, juggling multiple projects simultaneously, and yes, failing 
             spectacularly at times, I discovered that <span class="highlight">the gap between what we learn and what 
             we need to know keeps growing wider</span>. Every role I've wandered through—from Frontend to DevOps, 
             from Business Analyst to Solution Architect—added another piece to the puzzle.
@@ -187,15 +187,13 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Team Section -->
+    </section>    <!-- Team Section -->
     <section class="team">
       <div class="section-header">
         <h2>The Wanderer</h2>
       </div>
       <div class="founder-card">
-        <div class="founder-avatar">QN</div>
+        <img src="/skill-wanderer-avatar.jpg" alt="Quan Nguyen - Founder" class="founder-avatar" />
         <h3 class="founder-name">Quan Nguyen</h3>
         <p class="founder-title">Founder, Full-Cycle Developer & The Passionate Wanderer</p>
         <div class="founder-bio">
@@ -571,14 +569,11 @@ body {
 .founder-avatar {
   width: 150px;
   height: 150px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
   border-radius: 50%;
   margin: 0 auto 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  color: white;
+  display: block;
+  object-fit: cover;
+  border: 4px solid var(--primary-orange);
 }
 
 .founder-name {
@@ -624,7 +619,7 @@ body {
 
 .btn {
   padding: 15px 30px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 50px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -634,10 +629,11 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  min-height: 50px;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  background: var(--primary-orange);
   color: white;
   box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
 }
@@ -645,6 +641,22 @@ body {
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 30px rgba(255, 107, 53, 0.4);
+  background: var(--deep-orange);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary-orange);
+  border-color: var(--primary-orange);
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 107, 53, 0.1);
+  border-color: var(--deep-orange);
+  color: var(--deep-orange);
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.2);
 }
 
 /* Animations */
