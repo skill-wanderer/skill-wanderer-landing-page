@@ -3,7 +3,7 @@
     <div class="nav-container">
       <NuxtLink to="/" class="logo">
         <div class="logo-icon"></div>
-        Skill-Wanderer
+        SKILL-WANDERER
       </NuxtLink>
       <div class="nav-links">
         <NuxtLink to="/">Home</NuxtLink>
