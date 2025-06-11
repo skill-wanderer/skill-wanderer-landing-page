@@ -11,15 +11,14 @@
           Quality education shapes brighter futures. Skill-Wanderer integrates real-world insights 
           into practical tech learning paths, creating an honest educational platform with no ads, 
           no affiliate bias—just pure, passionate learning.
-        </p>
-        <div class="hero-cta">
+        </p>        <div class="hero-cta">
           <a href="#platform" class="btn btn-primary">
             Explore the Platform
             <span>→</span>
           </a>
-          <a href="#values" class="btn btn-secondary">
+          <NuxtLink to="/principles" class="btn btn-secondary">
             Our Principles
-          </a>
+          </NuxtLink>
         </div>
       </div>
       <svg class="wandering-path" viewBox="0 0 1200 200">
@@ -89,12 +88,17 @@
             <span class="value-icon">🌍</span>
             <h3>Accessible Education</h3>
             <p>Free core content with equitable access provisions for premium services when available.</p>
-          </div>
-          <div class="value-item" style="animation-delay: 0.4s;">
+          </div>          <div class="value-item" style="animation-delay: 0.4s;">
             <span class="value-icon">🎨</span>
             <h3>Creative Learning</h3>
             <p>Encouraging experimentation, celebrating failures, and finding joy in the learning process.</p>
           </div>
+        </div>
+        <div class="principles-cta" style="animation-delay: 0.6s;">
+          <NuxtLink to="/principles" class="btn btn-outline">
+            View All 12 Principles
+            <span>→</span>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -342,6 +346,26 @@ body {
   background: var(--primary-orange);
   color: white;
   transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-orange);
+  border: 2px solid rgba(255, 107, 53, 0.3);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 107, 53, 0.1);
+  border-color: var(--primary-orange);
+  transform: translateY(-2px);
+}
+
+/* Principles CTA */
+.principles-cta {
+  text-align: center;
+  margin-top: 60px;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
 }
 
 /* Wandering Path Animation */
