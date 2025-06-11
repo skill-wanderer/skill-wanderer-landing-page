@@ -125,14 +125,14 @@
         <h2>Platform Launching Soon</h2>
         <p>Join us on this journey to make quality tech education accessible to everyone</p>
       </div>
-      <div class="countdown">
+      <!-- <div class="countdown">
         <div class="countdown-item">
           <span class="countdown-number">Q4</span>
           <span class="countdown-label">2025</span>
         </div>
-      </div>
+      </div> -->
       <p style="margin-top: 40px; opacity: 0.8;">
-        Currently in active development. Initial courses will focus on practical web development, 
+        Currently in active development.Initial courses will focus on practical web development, 
         cloud concepts, and modern API design.
       </p>
     </section>
