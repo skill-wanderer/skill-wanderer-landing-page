@@ -136,9 +136,14 @@
         </div>
       </div> -->
       <p style="margin-top: 40px; opacity: 0.8;">
-        Currently in active development.Initial courses will focus on practical web development, 
+        Currently in active development. Initial courses will focus on practical web development, 
         cloud concepts, and modern API design.
       </p>
+      <div class="hero-cta" style="margin-top: 30px;">
+        <a href="http://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          Preview Future LMS
+        </a>
+      </div>
     </section>
 
     <!-- Tech Services Brief Section -->
