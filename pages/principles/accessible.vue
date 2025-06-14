@@ -132,7 +132,7 @@
         </div>
           <div class="impact-card" style="animation-delay: 0.3s;">
           <span class="impact-icon">🌍</span>
-          <h3>For the Global<br>Learner</h3>
+          <h3>For the Global Learner</h3>
           <p>No geographic restrictions. Whether you're in Silicon Valley or rural Vietnam, quality education is yours.</p>
         </div>
       </div>
@@ -480,12 +480,8 @@
   }
 }
 
-/* Responsive */
-@media (max-width: 1023px) {
-  /* Hide line break on screens smaller than 1024px */
-  .impact-card h3 br {
-    display: none;
-  }
+.impact-card h3 {
+  height: 3.9rem;
 }
 
 @media (max-width: 768px) {
