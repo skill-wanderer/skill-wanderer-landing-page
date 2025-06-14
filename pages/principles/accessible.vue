@@ -1,26 +1,13 @@
 <template>
-  <div>
-    <!-- Navigation -->
+  <div>    <!-- Navigation -->
     <TheNavigation />
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="breadcrumb">
-        <NuxtLink to="/">Home</NuxtLink>
-        <span>→</span>
-        <NuxtLink to="/principles">Principles</NuxtLink>
-        <span>→</span>
-        <span>Accessible</span>
-      </div>
-      
-      <div class="principle-header">
-        <div class="principle-number-large">1</div>
-        <div class="principle-title-section">
-          <h1>Accessible</h1>
-          <p class="principle-tagline-large">Free Knowledge for All</p>
-        </div>
-      </div>
-    </section>
+    <PrincipleHero 
+      :number="1"
+      title="Accessible"
+      tagline="Free Knowledge for All"
+    />
 
     <!-- Story Section -->
     <section class="story-section">
@@ -228,74 +215,6 @@
 </template>
 
 <style scoped>
-/* Hero Section */
-.hero {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 80px 20px 80px;
-  text-align: center;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 107, 53, 0.15) 0%, transparent 50%);
-}
-
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.95rem;
-  opacity: 0.7;
-  animation: fadeInUp 0.6s ease-out;
-  justify-content: center;
-}
-
-.breadcrumb a {
-  color: rgb(224, 224, 224);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.breadcrumb a:hover {
-  color: #FF6B35;
-}
-
-.principle-header {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
-  animation: fadeInUp 0.6s ease-out 0.1s both;
-  justify-content: center;
-}
-
-.principle-number-large {
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, #FF6B35, #E85D25);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  flex-shrink: 0;
-  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
-}
-
-.principle-title-section h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  background: linear-gradient(135deg, #FF6B35, #FFD93D);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 10px;
-}
-
-.principle-tagline-large {
-  font-size: 1.5rem;
-  color: #FF6B35;
-  opacity: 0.9;
-}
-
 /* Restrict main content width and center */
 .story-section, .stats-section, .impact-section, .practice-section, .quote-section {
   padding: 80px 20px;
