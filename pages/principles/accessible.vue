@@ -136,45 +136,13 @@
           <p>No geographic restrictions. Whether you're in Silicon Valley or rural Vietnam, quality education is yours.</p>
         </div>
       </div>
-    </section>
-
-    <!-- Practice Section -->
-    <section class="practice-section">
-      <div class="practice-content">
-        <div class="practice-header">
-          <h2 class="practice-title">How We Live This Principle</h2>
-          <p class="practice-subtitle">Concrete actions that make accessibility real</p>
-        </div>
-
-        <div class="practice-example">
-          <h3>Free Core Content - Always</h3>
-          <ul>
-            <li>Every course we create or curate is completely free</li>
-            <li>No paywalls, no "premium only" sections for essential knowledge</li>
-            <li>Full access from day one - no email gates or forced registrations</li>
-            <li>Content stays free forever - we never move it behind a paywall</li>
-          </ul>
-        </div>
-
-        <div class="practice-example">
-          <h3>Transparent Resource Guidance</h3>
-          <ul>
-            <li>Clear marking of which third-party resources are free vs paid</li>
-            <li>Honest reviews without affiliate bias - we receive no commissions</li>
-            <li>Multiple options provided - there's always a free alternative</li>
-            <li>Guidance on when paid resources are truly worth the investment</li>
-          </ul>
-        </div>
-
-        <div class="practice-example">
-          <h3>Removing Hidden Barriers</h3>
-          <ul>
-            <li>Multiple learning formats to suit different styles and bandwidths</li>
-            <li>Community support that's also free - no paid Discord channels</li>
-            <li>Clear learning paths so you never feel lost or overwhelmed</li>
-          </ul>
-        </div>
-      </div>    </section>
+    </section>    <!-- Practice Section -->
+    <PrinciplePractice 
+      title="How We Live This Principle"
+      subtitle="Concrete actions that make accessibility real"
+      :examples="practiceExamples"
+      background-color="var(--dark-bg)"
+    />
 
     <!-- Quote Section -->
     <PrincipleQuote 
@@ -183,9 +151,48 @@
     <PrincipleNavigation current-slug="accessible" />
 
     <!-- Footer -->
-    <TheFooter />
-  </div>
+    <TheFooter />  </div>
 </template>
+
+<script setup lang="ts">
+// Meta tags for SEO
+useHead({
+  title: 'Accessible: Free Knowledge for All | Principle #1 - Skill-Wanderer',
+  meta: [
+    { name: 'description', content: 'Discover how Skill-Wanderer ensures free access to quality education by removing financial barriers and providing transparent guidance for all learners.' }
+  ]
+})
+
+// Practice examples data
+const practiceExamples = [
+  {
+    title: 'Free Core Content - Always',
+    items: [
+      'Every course we create or curate is completely free',
+      'No paywalls, no "premium only" sections for essential knowledge',
+      'Full access from day one - no email gates or forced registrations',
+      'Content stays free forever - we never move it behind a paywall'
+    ]
+  },
+  {
+    title: 'Transparent Resource Guidance',
+    items: [
+      'Clear marking of which third-party resources are free vs paid',
+      'Honest reviews without affiliate bias - we receive no commissions',
+      'Multiple options provided - there\'s always a free alternative',
+      'Guidance on when paid resources are truly worth the investment'
+    ]
+  },
+  {
+    title: 'Removing Hidden Barriers',
+    items: [
+      'Multiple learning formats to suit different styles and bandwidths',
+      'Community support that\'s also free - no paid Discord channels',
+      'Clear learning paths so you never feel lost or overwhelmed'
+    ]
+  }
+]
+</script>
 
 <style scoped>
 /* Restrict main content width and center */
@@ -398,74 +405,6 @@
   opacity: 0.8;
   font-size: 0.95rem;
   line-height: 1.7;
-}
-
-/* Practice Section */
-.practice-section {
-  padding: 80px 20px;
-  background: #1a1a1a;
-}
-
-.practice-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.practice-header {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.practice-title {
-  font-size: 2.5rem;
-  color: #FF6B35;
-}
-
-.practice-subtitle {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
-.practice-example {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 30px;
-  transition: all 0.3s ease;
-}
-
-.practice-example:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.practice-example h3 {
-  color: white;
-  margin-bottom: 20px;
-  font-size: 1.4rem;
-}
-
-.practice-example ul {
-  list-style: none;
-  padding: 0;
-}
-
-.practice-example li {
-  padding: 12px 0;
-  padding-left: 35px;
-  position: relative;
-  opacity: 0.9;
-  line-height: 1.7;
-}
-
-.practice-example li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #FF6B35;
-  font-weight: bold;
-  font-size: 1.2rem;
 }
 
 /* Animations */
