@@ -531,6 +531,10 @@ body {
   opacity: 0.9;
 }
 
+.banned-item h3 {
+    height: 3.9rem;
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from {
