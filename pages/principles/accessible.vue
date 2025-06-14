@@ -7,80 +7,11 @@
       :number="1"
       title="Accessible"
       tagline="Free Knowledge for All"
+    />    <!-- Story Section -->
+    <PrincipleStory 
+      :intro="storyIntro"
+      :chapters="storyChapters"
     />
-
-    <!-- Story Section -->
-    <section class="story-section">
-      <div class="story-content">
-        <p class="story-intro">
-          I call our first principle <strong>Accessible</strong>, and it comes from a very real and personal place.
-        </p>
-
-        <div class="story-chapter" style="animation-delay: 0.1s;">
-          <h2><span class="chapter-icon">👥</span> The Leadership Challenge</h2>
-          
-          <p class="story-text">
-            Over the years, I've had the privilege of leading many developers—more than 20 in total, and at one point, 
-            I was managing a team of 16 simultaneously. I quickly learned that training a team with diverse skill levels 
-            is a major challenge. It's inefficient to teach everyone 1-on-1, and putting junior and mid level developers 
-            in the same class often helps no one. The best approach was always to point my team toward high-quality 
-            external learning materials so they could learn at their own pace.
-          </p>
-
-          <p class="story-text">
-            That's where I saw the problem.
-          </p>
-        </div>
-
-        <div class="story-chapter" style="animation-delay: 0.3s;">
-          <h2><span class="chapter-icon">💔</span> The Barrier I Witnessed</h2>
-          
-          <p class="story-text">
-            The best courses, the ones that truly make a difference, often come with a cost—typically around $25-$50 USD 
-            per month. While that might not seem like much, it was a huge barrier for my junior developers. For many, 
-            that monthly fee was <strong>more than 10% of their entire salary</strong>. I watched as talented, driven 
-            developers struggled to afford the very resources they needed to grow. They didn't know which courses were 
-            worth the investment or simply lacked the funds to find out.
-          </p>
-
-          <div class="personal-story">
-            I remember one junior developer on my team—brilliant mind, incredible work ethic. He would stay late, 
-            debugging issues, always asking smart questions. But when I recommended a specific course that would 
-            accelerate his learning, he quietly said, "Maybe next month." That's when I realized: he was choosing 
-            between learning resources and basic necessities. That moment haunts me still.
-          </div>
-
-          <p class="story-text">
-            And I can tell you from experience: <strong>nothing is more dangerous than being left behind in the tech industry.</strong>
-          </p>
-        </div>
-
-        <div class="story-chapter" style="animation-delay: 0.5s;">
-          <h2><span class="chapter-icon">☯️</span> The Karma of Knowledge</h2>
-          
-          <p class="story-text">
-            I've been fortunate in my own career to have the resources to invest in my education. But I saw so many 
-            others who weren't as lucky. I believe in a kind of karma—that good fortune should be shared. This is why 
-            our organization is built on the promise of free access. We are committed to providing and curating 
-            high-quality core educational content that is <strong>completely free</strong>, removing that initial 
-            financial barrier for those who need it most.
-          </p>
-
-          <p class="story-text">
-            At the same time, I know that many people who will come to our platform <em>can</em> afford to pay for 
-            premium resources but simply don't know where to start. That's why our <strong>Accessible</strong> principle 
-            also includes guiding learners to valuable, optional paid third-party resources. We serve both the person 
-            who needs a free path to get started and the person who needs expert guidance on where to best invest in 
-            their education.
-          </p>
-
-          <p class="story-text">
-            Ultimately, this principle is about ensuring that no one gets left behind simply because they can't afford 
-            the first step.
-          </p>
-        </div>
-      </div>
-    </section>
 
     <!-- Stats Section -->
     <section class="stats-section">
@@ -163,6 +94,62 @@ useHead({
   ]
 })
 
+// Story content data
+const storyIntro = 'I call our first principle <strong>Accessible</strong>, and it comes from a very real and personal place.'
+
+const storyChapters = [
+  {
+    icon: '👥',
+    title: 'The Leadership Challenge',
+    content: [
+      {
+        type: 'text' as const,
+        text: 'Over the years, I\'ve had the privilege of leading many developers—more than 20 in total, and at one point, I was managing a team of 16 simultaneously. I quickly learned that training a team with diverse skill levels is a major challenge. It\'s inefficient to teach everyone 1-on-1, and putting junior and mid level developers in the same class often helps no one. The best approach was always to point my team toward high-quality external learning materials so they could learn at their own pace.'
+      },
+      {
+        type: 'text' as const,
+        text: 'That\'s where I saw the problem.'
+      }
+    ]
+  },
+  {
+    icon: '💔',
+    title: 'The Barrier I Witnessed',
+    content: [
+      {
+        type: 'text' as const,
+        text: 'The best courses, the ones that truly make a difference, often come with a cost—typically around $25-$50 USD per month. While that might not seem like much, it was a huge barrier for my junior developers. For many, that monthly fee was <strong>more than 10% of their entire salary</strong>. I watched as talented, driven developers struggled to afford the very resources they needed to grow. They didn\'t know which courses were worth the investment or simply lacked the funds to find out.'
+      },
+      {
+        type: 'personal-story' as const,
+        text: 'I remember one junior developer on my team—brilliant mind, incredible work ethic. He would stay late, debugging issues, always asking smart questions. But when I recommended a specific course that would accelerate his learning, he quietly said, "Maybe next month." That\'s when I realized: he was choosing between learning resources and basic necessities. That moment haunts me still.'
+      },
+      {
+        type: 'text' as const,
+        text: 'And I can tell you from experience: <strong>nothing is more dangerous than being left behind in the tech industry.</strong>'
+      }
+    ]
+  },
+  {
+    icon: '☯️',
+    title: 'The Karma of Knowledge',
+    content: [
+      {
+        type: 'text' as const,
+        text: 'I\'ve been fortunate in my own career to have the resources to invest in my education. But I saw so many others who weren\'t as lucky. I believe in a kind of karma—that good fortune should be shared. This is why our organization is built on the promise of free access. We are committed to providing and curating high-quality core educational content that is <strong>completely free</strong>, removing that initial financial barrier for those who need it most.'
+      },
+      {
+        type: 'text' as const,
+        text: 'At the same time, I know that many people who will come to our platform <em>can</em> afford to pay for premium resources but simply don\'t know where to start. That\'s why our <strong>Accessible</strong> principle also includes guiding learners to valuable, optional paid third-party resources. We serve both the person who needs a free path to get started and the person who needs expert guidance on where to best invest in their education.'
+      },
+      {
+        type: 'text' as const,
+        text: 'Ultimately, this principle is about ensuring that no one gets left behind simply because they can\'t afford the first step.'
+      }
+    ]
+  }
+]
+
 // Practice examples data
 const practiceExamples = [
   {
@@ -211,77 +198,6 @@ const practiceExamples = [
 .stats-grid, .impact-grid {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-/* Story Section */
-.story-section {
-  padding: 80px 20px;
-  background: #0f0f0f;
-}
-
-.story-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.story-intro {
-  font-size: 1.4rem;
-  line-height: 1.8;
-  margin-bottom: 50px;
-  opacity: 0.9;
-  animation: fadeInUp 0.6s ease-out 0.3s both;
-  text-align: center;
-}
-
-.story-chapter {
-  margin-bottom: 60px;
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.story-chapter h2 {
-  font-size: 2rem;
-  color: #FF6B35;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.chapter-icon {
-  font-size: 1.5rem;
-}
-
-.story-text {
-  font-size: 1.1rem;
-  line-height: 1.9;
-  opacity: 0.9;
-  margin-bottom: 20px;
-}
-
-.story-text strong {
-  color: #FF6B35;
-  font-weight: 600;
-}
-
-.personal-story {
-  background: rgba(255, 107, 53, 0.05);
-  padding: 30px;
-  border-radius: 15px;
-  border-left: 4px solid #FF6B35;
-  font-style: italic;
-  margin: 30px 0;
-  position: relative;
-}
-
-.personal-story::before {
-  content: '"';
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  font-size: 3rem;
-  opacity: 0.3;
-  color: #FF6B35;
 }
 
 /* Stats Section */

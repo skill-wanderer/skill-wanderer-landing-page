@@ -8,91 +8,11 @@
       :number="3"
       title="Individualized"
       tagline="Your Path, Your Way"
+    />    <!-- Story Section -->
+    <PrincipleStory 
+      :intro="storyIntro"
+      :chapters="storyChapters"
     />
-
-    <!-- Story Section -->
-    <section class="story-section">
-      <div class="story-content">
-        <p class="story-intro">
-          I call our third principle <strong>Individualized</strong>, and it comes directly from the most important lesson I've learned in my entire career leading developers.
-        </p>
-
-        <div class="story-chapter" style="animation-delay: 0.1s;">
-          <h2><span class="chapter-icon">🌟</span> Every Learner is Unique</h2>
-          
-          <p class="story-text">
-            Just like in my story for our first principle, my experience comes from guiding many developers, all with 
-            different starting points. But the differences ran much deeper than just their initial skill level; I quickly 
-            realized that each person has a unique and deeply personal way of learning effectively.
-          </p>
-
-          <p class="story-text">
-            I've seen it all. I've worked with the developer who needs to <strong>code first</strong> and break things, 
-            learning by fixing his own mistakes. I've known another who needs to <strong>watch an entire video course</strong> 
-            from beginning to end before he gathers the confidence to write a single line of code. I've seen a young woman 
-            who learns best by <strong>pair programming with a senior mentor</strong>, absorbing knowledge through collaboration. 
-            I've known another who <strong>prefers reading documentation</strong> to watching any video, and another who 
-            meticulously <strong>plans every step</strong>, then browses the internet to learn just what he needs for that 
-            single step.
-          </p>
-
-          <div class="personal-story">
-            One of the most memorable cases was a junior developer with less than a year of experience. His unique way 
-            of truly mastering a concept was to learn it and then teach it back to me. And yes, I was not ashamed at 
-            all to learn from him; his ability was undeniable. It proved to me that the path to skill has little to 
-            do with years of experience and everything to do with finding YOUR way.
-          </div>
-        </div>
-
-        <div class="story-chapter" style="animation-delay: 0.3s;">
-          <h2><span class="chapter-icon">⏱️</span> The Myth of Speed</h2>
-          
-          <p class="story-text">
-            <strong>This same principle applies to the pace of learning.</strong> I've worked with developers who learn 
-            incredibly quickly, absorbing new frameworks in days. But I've also had the privilege of leading a developer 
-            who many might have called "slow."
-          </p>
-
-          <p class="story-text">
-            Every step he took was deliberate, careful, and concrete. He built his knowledge like a solid stone foundation, 
-            not a house of cards. And time after time, when a "quick" developer's rapidly built code would break under 
-            pressure, it was this "slow," methodical developer who became our <strong>firefighter</strong>, calmly stepping 
-            in to fix the problem with his deep and solid understanding.
-          </p>
-
-          <p class="story-text">
-            This individuality extends beyond <em>how</em> people learn to <em>when</em> they learn. I knew a developer 
-            whose most productive learning hours were in the dead of night, when he felt most focused and the world was quiet.
-          </p>
-        </div>
-
-        <div class="story-chapter" style="animation-delay: 0.5s;">
-          <h2><span class="chapter-icon">📖</span> The Learner's Story</h2>
-          
-          <p class="story-text">
-            My experience taught me a simple truth: everyone is different, and nobody can or should be forced to learn 
-            in the exact same way as someone else. Time and time again, I have found that <strong>the people who improve 
-            the most are the ones who discover their own way of learning and stick to it.</strong> As a leader, I have 
-            no quarrel with how my team learns, as long as they <em>are</em> learning and improving.
-          </p>
-
-          <p class="story-text">
-            This is the heart of our <strong>Individualized</strong> principle. We are not here to dictate a single, 
-            rigid path. That's not our story to write.
-          </p>
-
-          <p class="story-text">
-            It is <strong>the learner's story</strong>.
-          </p>
-
-          <p class="story-text">
-            Our role is to be the narrator—the guide who lays out all the resources: the video courses, the readings, 
-            the hands-on projects, the collaborative opportunities. But it is the learner, the hero of their own story, 
-            who <strong>must be the one to choose their own path</strong> and their own pace.
-          </p>
-        </div>
-      </div>
-    </section>
 
     <!-- Learning Styles Section -->
     <section class="learning-styles">
@@ -241,6 +161,70 @@ useHead({
   ]
 })
 
+// Story content data
+const storyIntro = 'I call our third principle <strong>Individualized</strong>, and it comes directly from the most important lesson I\'ve learned in my entire career leading developers.'
+
+const storyChapters = [
+  {
+    icon: '🌟',
+    title: 'Every Learner is Unique',
+    content: [
+      {
+        type: 'text' as const,
+        text: 'Just like in my story for our first principle, my experience comes from guiding many developers, all with different starting points. But the differences ran much deeper than just their initial skill level; I quickly realized that each person has a unique and deeply personal way of learning effectively.'
+      },
+      {
+        type: 'text' as const,
+        text: 'I\'ve seen it all. I\'ve worked with the developer who needs to <strong>code first</strong> and break things, learning by fixing his own mistakes. I\'ve known another who needs to <strong>watch an entire video course</strong> from beginning to end before he gathers the confidence to write a single line of code. I\'ve seen a young woman who learns best by <strong>pair programming with a senior mentor</strong>, absorbing knowledge through collaboration. I\'ve known another who <strong>prefers reading documentation</strong> to watching any video, and another who meticulously <strong>plans every step</strong>, then browses the internet to learn just what he needs for that single step.'
+      },
+      {
+        type: 'personal-story' as const,
+        text: 'One of the most memorable cases was a junior developer with less than a year of experience. His unique way of truly mastering a concept was to learn it and then teach it back to me. And yes, I was not ashamed at all to learn from him; his ability was undeniable. It proved to me that the path to skill has little to do with years of experience and everything to do with finding YOUR way.'
+      }
+    ]
+  },
+  {
+    icon: '⏱️',
+    title: 'The Myth of Speed',
+    content: [
+      {
+        type: 'text' as const,
+        text: '<strong>This same principle applies to the pace of learning.</strong> I\'ve worked with developers who learn incredibly quickly, absorbing new frameworks in days. But I\'ve also had the privilege of leading a developer who many might have called "slow."'
+      },
+      {
+        type: 'text' as const,
+        text: 'Every step he took was deliberate, careful, and concrete. He built his knowledge like a solid stone foundation, not a house of cards. And time after time, when a "quick" developer\'s rapidly built code would break under pressure, it was this "slow," methodical developer who became our <strong>firefighter</strong>, calmly stepping in to fix the problem with his deep and solid understanding.'
+      },
+      {
+        type: 'text' as const,
+        text: 'This individuality extends beyond <em>how</em> people learn to <em>when</em> they learn. I knew a developer whose most productive learning hours were in the dead of night, when he felt most focused and the world was quiet.'
+      }
+    ]
+  },
+  {
+    icon: '📖',
+    title: 'The Learner\'s Story',
+    content: [
+      {
+        type: 'text' as const,
+        text: 'My experience taught me a simple truth: everyone is different, and nobody can or should be forced to learn in the exact same way as someone else. Time and time again, I have found that <strong>the people who improve the most are the ones who discover their own way of learning and stick to it.</strong> As a leader, I have no quarrel with how my team learns, as long as they <em>are</em> learning and improving.'
+      },
+      {
+        type: 'text' as const,
+        text: 'This is the heart of our <strong>Individualized</strong> principle. We are not here to dictate a single, rigid path. That\'s not our story to write.'
+      },
+      {
+        type: 'text' as const,
+        text: 'It is <strong>the learner\'s story</strong>.'
+      },
+      {
+        type: 'text' as const,
+        text: 'Our role is to be the narrator—the guide who lays out all the resources: the video courses, the readings, the hands-on projects, the collaborative opportunities. But it is the learner, the hero of their own story, who <strong>must be the one to choose their own path</strong> and their own pace.'
+      }
+    ]
+  }
+]
+
 // Practice examples data
 const practiceExamples = [
   {
@@ -285,87 +269,16 @@ onMounted(() => {
       if (entry.isIntersecting) {
         (entry.target as HTMLElement).style.opacity = '1'
       }
-    })
-  }, observerOptions)
+    })  }, observerOptions)
 
   // Observe animated elements
-  document.querySelectorAll('.story-chapter, .style-card, .journey-step').forEach(item => {
+  document.querySelectorAll('.style-card, .journey-step').forEach(item => {
     observer.observe(item)
   })
 })
 </script>
 
 <style scoped>
-/* Story Section */
-.story-section {
-  padding: 80px 20px;
-  background: var(--darker-bg);
-}
-
-.story-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.story-intro {
-  font-size: 1.3rem;
-  color: var(--primary-orange);
-  margin-bottom: 40px;
-  text-align: center;
-  font-weight: 600;
-}
-
-.story-chapter {
-  margin-bottom: 50px;
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.story-chapter h2 {
-  font-size: 2rem;
-  color: var(--primary-orange);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.chapter-icon {
-  font-size: 1.5rem;
-}
-
-.story-text {
-  font-size: 1.1rem;
-  line-height: 1.9;
-  opacity: 0.9;
-  margin-bottom: 20px;
-}
-
-.story-text strong {
-  color: var(--primary-orange);
-  font-weight: 600;
-}
-
-.personal-story {
-  background: rgba(255, 107, 53, 0.05);
-  padding: 30px;
-  border-radius: 15px;
-  border-left: 4px solid var(--primary-orange);
-  font-style: italic;
-  margin: 30px 0;
-  position: relative;
-}
-
-.personal-story::before {
-  content: '"';
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  font-size: 3rem;
-  opacity: 0.3;
-  color: var(--primary-orange);
-}
-
 /* Learning Styles Section */
 .learning-styles {
   padding: 80px 20px;

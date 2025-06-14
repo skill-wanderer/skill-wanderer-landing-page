@@ -8,76 +8,11 @@
       title="Integrity and Impartiality"
       tagline="No Hidden Agendas"
       breadcrumb-name="Integrity and Impartiality"
+    />    <!-- Story Section -->
+    <PrincipleStory 
+      :intro="storyIntro"
+      :chapters="storyChapters"
     />
-
-    <!-- Story Section -->
-    <section class="story-section">
-      <div class="story-content">
-        <p class="story-intro">
-          I call our second principle <strong>Integrity and Impartiality</strong>, and it comes from a deep understanding of marketing and trust.
-        </p>
-
-        <div class="story-chapter" style="animation-delay: 0.1s;">
-          <h2><span class="chapter-icon">📚</span> The Marketing Education</h2>
-          
-          <p class="story-text">
-            My background is in commerce and marketing, and through my studies and experience, I've seen both the good 
-            and the bad. I have a particular skepticism for business models where personal financial gain can conflict 
-            with genuine recommendations.
-          </p>
-
-          <p class="story-text">
-            Word-of-mouth is arguably the most powerful marketing tool because it's built on trust. You'll always believe 
-            a recommendation from your family or a close friend more than an ad on TV, right?
-          </p>
-
-          <p class="story-text">
-            But I've seen how quickly that trust can be broken when money is on the table.
-          </p>
-        </div>
-
-        <div class="story-chapter" style="animation-delay: 0.3s;">
-          <h2><span class="chapter-icon">💔</span> When Trust Breaks</h2>
-          
-          <p class="story-text">
-            I've seen relatives trick each other into buying bad insurance policies. I've seen friends mislead friends 
-            into buying fake products. Here in Vietnam, we've all seen stories of famous people promoting defective or 
-            "too-good-to-be-true" products to their fans, sometimes with serious legal consequences.
-          </p>
-
-          <div class="personal-story">
-            I remember watching a famous Vietnamese influencer I once admired promote a "miracle" health product. 
-            Thousands of fans bought it based on trust alone. Later, when the product was found to be harmful, 
-            I saw the comments—people felt betrayed, not just financially, but emotionally. That trust, once broken, 
-            could never be fully restored. It made me realize: when you mix trust with hidden financial incentives, 
-            you're playing with fire.
-          </div>
-
-          <p class="story-text">
-            This creates a fundamental problem. Even if a recommendation is genuine, the moment people know you're 
-            getting paid for it, <strong>a seed of doubt is planted</strong>. As a skeptical person myself, I know 
-            that feeling well. That very doubt is what I want to eliminate entirely from our organization.
-          </p>
-        </div>
-
-        <div class="story-chapter" style="animation-delay: 0.5s;">
-          <h2><span class="chapter-icon">🛡️</span> The Hard Line</h2>
-          
-          <p class="story-text">
-            That is why this principle is a hard line in the sand. <strong>Our recommendations will be our own, based 
-            solely on what we believe is best for the learner.</strong> We will not accept any form of revenue—no 
-            commissions, no referral fees, no kickbacks—from any third-party resources we guide our learners to. 
-            Our opinions and our guidance cannot and will not be for sale. This is the only way to ensure our cause 
-            is free from any doubt.
-          </p>
-
-          <p class="story-text">
-            Ultimately, our integrity is the foundation of the trust our community places in us. This principle is 
-            our commitment to protecting that trust above all else.
-          </p>
-        </div>
-      </div>
-    </section>
 
     <!-- Trust Breakdown Section -->
     <section class="trust-breakdown">
@@ -197,6 +132,62 @@ useHead({
   ]
 })
 
+// Story content data
+const storyIntro = 'I call our second principle <strong>Integrity and Impartiality</strong>, and it comes from a deep understanding of marketing and trust.'
+
+const storyChapters = [
+  {
+    icon: '📚',
+    title: 'The Marketing Education',
+    content: [
+      {
+        type: 'text' as const,
+        text: 'My background is in commerce and marketing, and through my studies and experience, I\'ve seen both the good and the bad. I have a particular skepticism for business models where personal financial gain can conflict with genuine recommendations.'
+      },
+      {
+        type: 'text' as const,
+        text: 'Word-of-mouth is arguably the most powerful marketing tool because it\'s built on trust. You\'ll always believe a recommendation from your family or a close friend more than an ad on TV, right?'
+      },
+      {
+        type: 'text' as const,
+        text: 'But I\'ve seen how quickly that trust can be broken when money is on the table.'
+      }
+    ]
+  },
+  {
+    icon: '💔',
+    title: 'When Trust Breaks',
+    content: [
+      {
+        type: 'text' as const,
+        text: 'I\'ve seen relatives trick each other into buying bad insurance policies. I\'ve seen friends mislead friends into buying fake products. Here in Vietnam, we\'ve all seen stories of famous people promoting defective or "too-good-to-be-true" products to their fans, sometimes with serious legal consequences.'
+      },
+      {
+        type: 'personal-story' as const,
+        text: 'I remember watching a famous Vietnamese influencer I once admired promote a "miracle" health product. Thousands of fans bought it based on trust alone. Later, when the product was found to be harmful, I saw the comments—people felt betrayed, not just financially, but emotionally. That trust, once broken, could never be fully restored. It made me realize: when you mix trust with hidden financial incentives, you\'re playing with fire.'
+      },
+      {
+        type: 'text' as const,
+        text: 'This creates a fundamental problem. Even if a recommendation is genuine, the moment people know you\'re getting paid for it, <strong>a seed of doubt is planted</strong>. As a skeptical person myself, I know that feeling well. That very doubt is what I want to eliminate entirely from our organization.'
+      }
+    ]
+  },
+  {
+    icon: '🛡️',
+    title: 'The Hard Line',
+    content: [
+      {
+        type: 'text' as const,
+        text: 'That is why this principle is a hard line in the sand. <strong>Our recommendations will be our own, based solely on what we believe is best for the learner.</strong> We will not accept any form of revenue—no commissions, no referral fees, no kickbacks—from any third-party resources we guide our learners to. Our opinions and our guidance cannot and will not be for sale. This is the only way to ensure our cause is free from any doubt.'
+      },
+      {
+        type: 'text' as const,
+        text: 'Ultimately, our integrity is the foundation of the trust our community places in us. This principle is our commitment to protecting that trust above all else.'
+      }
+    ]
+  }
+]
+
 // Client-side JavaScript for interactions
 onMounted(() => {
   // Navbar scroll effect
@@ -223,10 +214,9 @@ onMounted(() => {
       if (entry.isIntersecting) {
         (entry.target as HTMLElement).style.opacity = '1'
       }
-    })
-  }, observerOptions)
+    })  }, observerOptions)
 
-  document.querySelectorAll('.story-chapter, .trust-card, .banned-item').forEach(item => {
+  document.querySelectorAll('.trust-card, .banned-item').forEach(item => {
     observer.observe(item)
   })
 
@@ -265,77 +255,6 @@ body {
   color: var(--light-text);
   line-height: 1.6;
   overflow-x: hidden;
-}
-
-/* Story Section */
-.story-section {
-  padding: 80px 20px;
-  background: var(--darker-bg);
-}
-
-.story-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.story-intro {
-  font-size: 1.4rem;
-  line-height: 1.8;
-  margin-bottom: 50px;
-  opacity: 0.9;
-  animation: fadeInUp 0.6s ease-out 0.3s both;
-  text-align: center;
-}
-
-.story-chapter {
-  margin-bottom: 60px;
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.story-chapter h2 {
-  font-size: 2rem;
-  color: var(--primary-orange);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.chapter-icon {
-  font-size: 1.5rem;
-}
-
-.story-text {
-  font-size: 1.1rem;
-  line-height: 1.9;
-  opacity: 0.9;
-  margin-bottom: 20px;
-}
-
-.story-text strong {
-  color: var(--primary-orange);
-  font-weight: 600;
-}
-
-.personal-story {
-  background: rgba(255, 107, 53, 0.05);
-  padding: 30px;
-  border-radius: 15px;
-  border-left: 4px solid var(--primary-orange);
-  font-style: italic;
-  margin: 30px 0;
-  position: relative;
-}
-
-.personal-story::before {
-  content: '"';
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  font-size: 3rem;
-  opacity: 0.3;
-  color: var(--primary-orange);
 }
 
 /* Trust Breakdown Section */
