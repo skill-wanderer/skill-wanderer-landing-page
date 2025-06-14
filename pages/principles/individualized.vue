@@ -209,47 +209,13 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Practice Section -->
-    <section class="practice-section">
-      <div class="practice-content">
-        <div class="practice-header">
-          <h2>How We Honor Your Individuality</h2>
-          <p>Practical ways we support every learning journey</p>
-        </div>
-
-        <div class="practice-example">
-          <h3>Multiple Resources for Every Concept</h3>
-          <ul>
-            <li>Video courses for visual learners who need to see concepts in action</li>
-            <li>Written tutorials and documentation for those who learn by reading</li>
-            <li>Hands-on projects for learners who need to build to understand</li>
-            <li>Community forums for collaborative learners who thrive on discussion</li>
-          </ul>
-        </div>
-
-        <div class="practice-example">
-          <h3>Flexible Learning Paths</h3>
-          <ul>
-            <li>No enforced order - jump to what interests you most</li>
-            <li>Self-paced progress - take your time or speed through</li>
-            <li>Optional depth - choose how deep you want to go on each topic</li>
-            <li>Multiple entry points - start where you feel comfortable</li>
-          </ul>
-        </div>
-
-        <div class="practice-example">
-          <h3>Celebrating Every Journey</h3>
-          <ul>
-            <li>No comparison or competition - your progress is your own</li>
-            <li>Recognition for different types of achievements</li>
-            <li>Stories from learners with diverse paths to success</li>
-            <li>Encouragement to find and trust your unique learning style</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    </section>    <!-- Practice Section -->
+    <PrinciplePractice 
+      title="How We Honor Your Individuality"
+      subtitle="Practical ways we support every learning journey"
+      :examples="practiceExamples"
+      background-color="var(--darker-bg)"
+    />
 
     <!-- Quote Section -->
     <PrincipleQuote 
@@ -274,6 +240,37 @@ useHead({
     { name: 'description', content: 'Discover how Skill-Wanderer honors every learner\'s unique style and pace, providing multiple resources for every concept so you can choose your own path to mastery.' }
   ]
 })
+
+// Practice examples data
+const practiceExamples = [
+  {
+    title: 'Multiple Resources for Every Concept',
+    items: [
+      'Video courses for visual learners who need to see concepts in action',
+      'Written tutorials and documentation for those who learn by reading',
+      'Hands-on projects for learners who need to build to understand',
+      'Community forums for collaborative learners who thrive on discussion'
+    ]
+  },
+  {
+    title: 'Flexible Learning Paths',
+    items: [
+      'No enforced order - jump to what interests you most',
+      'Self-paced progress - take your time or speed through',
+      'Optional depth - choose how deep you want to go on each topic',
+      'Multiple entry points - start where you feel comfortable'
+    ]
+  },
+  {
+    title: 'Celebrating Every Journey',
+    items: [
+      'No comparison or competition - your progress is your own',
+      'Recognition for different types of achievements',
+      'Stories from learners with diverse paths to success',
+      'Encouragement to find and trust your unique learning style'
+    ]
+  }
+]
 
 // Client-side JavaScript for interactions
 onMounted(() => {
@@ -600,75 +597,6 @@ onMounted(() => {
   font-size: 0.9rem;
 }
 
-/* Practice Section */
-.practice-section {
-  padding: 80px 20px;
-  background: var(--darker-bg);
-}
-
-.practice-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.practice-header {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.practice-header h2 {
-  font-size: 2.5rem;
-  color: var(--primary-orange);
-  margin-bottom: 10px;
-}
-
-.practice-header p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
-.practice-example {
-  background: var(--card-bg);
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 30px;
-  transition: all 0.3s ease;
-}
-
-.practice-example:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.practice-example h3 {
-  color: white;
-  margin-bottom: 20px;
-  font-size: 1.4rem;
-}
-
-.practice-example ul {
-  list-style: none;
-  padding: 0;
-}
-
-.practice-example li {
-  padding: 12px 0;
-  padding-left: 35px;
-  position: relative;
-  opacity: 0.9;
-  line-height: 1.7;
-}
-
-.practice-example li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--primary-orange);
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -702,10 +630,6 @@ onMounted(() => {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-  }
-
-  .practice-example {
-    padding: 25px 20px;
   }
 }
 </style>
