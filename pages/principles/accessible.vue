@@ -174,20 +174,12 @@
             <li>Clear learning paths so you never feel lost or overwhelmed</li>
           </ul>
         </div>
-      </div>
-    </section>
+      </div>    </section>
 
     <!-- Quote Section -->
-    <section class="quote-section">
-      <div class="quote-content">
-        <p class="principle-quote">
-          "No one gets left behind simply because they can't afford the first step. 
-          That junior developer who chooses between courses and necessities? 
-          They deserve the same chance to grow as anyone else."
-        </p>
-        <p class="quote-author">- Quan Nguyen, Founder of Skill-Wanderer</p>
-      </div>
-    </section>
+    <PrincipleQuote 
+      quote="No one gets left behind simply because they can't afford the first step. That junior developer who chooses between courses and necessities? They deserve the same chance to grow as anyone else."
+    />
 
     <!-- Navigation Section -->
     <section class="principle-nav">
@@ -493,31 +485,6 @@
   color: #FF6B35;
   font-weight: bold;
   font-size: 1.2rem;
-}
-
-/* Quote Section */
-.quote-section {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 217, 61, 0.05) 100%);
-  text-align: center;
-}
-
-.quote-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.principle-quote {
-  font-size: 1.8rem;
-  font-style: italic;
-  color: #FF6B35;
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-.quote-author {
-  font-size: 1.1rem;
-  opacity: 0.8;
 }
 
 /* Navigation Section */

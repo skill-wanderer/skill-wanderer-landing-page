@@ -173,20 +173,12 @@
             to our bottom line.</strong>
           </p>
         </div>
-      </div>
-    </section>
+      </div>    </section>
 
     <!-- Quote Section -->
-    <section class="quote-section">
-      <div class="quote-content">
-        <p class="principle-quote">
-          "The moment people know you're getting paid for a recommendation, a seed of doubt is planted. 
-          We refuse to let that seed take root. Our guidance will never be for sale—this is the only 
-          way to ensure complete trust in our educational mission."
-        </p>
-        <p class="quote-author">- Quan Nguyen, Founder of Skill-Wanderer</p>
-      </div>
-    </section>
+    <PrincipleQuote 
+      quote="The moment people know you're getting paid for a recommendation, a seed of doubt is planted. We refuse to let that seed take root. Our guidance will never be for sale—this is the only way to ensure complete trust in our educational mission."
+    />
 
     <!-- Navigation Section -->
     <section class="principle-nav">
@@ -564,31 +556,6 @@ body {
   font-size: 1.1rem;
   line-height: 1.8;
   opacity: 0.9;
-}
-
-/* Quote Section */
-.quote-section {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 217, 61, 0.05) 100%);
-  text-align: center;
-}
-
-.quote-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.principle-quote {
-  font-size: 1.8rem;
-  font-style: italic;
-  color: var(--primary-orange);
-  line-height: 1.8;
-  margin-bottom: 30px;
-}
-
-.quote-author {
-  font-size: 1.1rem;
-  opacity: 0.8;
 }
 
 /* Navigation Section */
