@@ -179,27 +179,8 @@
     <!-- Quote Section -->
     <PrincipleQuote 
       quote="No one gets left behind simply because they can't afford the first step. That junior developer who chooses between courses and necessities? They deserve the same chance to grow as anyone else."
-    />
-
-    <!-- Navigation Section -->
-    <section class="principle-nav">
-      <div class="nav-content">
-        <NuxtLink to="/principles" class="nav-button all">
-          <span class="nav-arrow">↑</span>
-          <div>
-            <div class="nav-title">All Principles</div>
-          </div>
-        </NuxtLink>
-        
-        <NuxtLink to="/principles/integrity" class="nav-button next">
-          <div>
-            <div class="nav-label">Next Principle</div>
-            <div class="nav-title">Integrity & Impartiality</div>
-          </div>
-          <span class="nav-arrow">→</span>
-        </NuxtLink>
-      </div>
-    </section>
+    />    <!-- Navigation Section -->
+    <PrincipleNavigation current-slug="accessible" />
 
     <!-- Footer -->
     <TheFooter />
@@ -487,63 +468,6 @@
   font-size: 1.2rem;
 }
 
-/* Navigation Section */
-.principle-nav {
-  padding: 60px 20px;
-  background: #0f0f0f;
-  border-top: 1px solid rgba(255, 107, 53, 0.2);
-}
-
-.nav-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-
-.nav-button {
-  flex: 1;
-  padding: 20px 30px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 15px;
-  text-decoration: none;
-  color: rgb(224, 224, 224);
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.nav-button:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-3px);
-  border-color: rgba(255, 107, 53, 0.4);
-}
-
-.nav-button.all {
-  justify-content: center;
-  max-width: 200px;
-}
-
-.nav-arrow {
-  font-size: 1.5rem;
-  color: #FF6B35;
-}
-
-.nav-label {
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-.nav-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: white;
-}
-
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -568,14 +492,6 @@
   .principle-header {
     flex-direction: column;
     text-align: center;
-  }
-
-  .nav-content {
-    flex-direction: column;
-  }
-
-  .nav-button {
-    width: 100%;
   }
 
   .stats-grid {
