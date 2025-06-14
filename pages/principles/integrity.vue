@@ -178,35 +178,8 @@
     <!-- Quote Section -->
     <PrincipleQuote 
       quote="The moment people know you're getting paid for a recommendation, a seed of doubt is planted. We refuse to let that seed take root. Our guidance will never be for sale—this is the only way to ensure complete trust in our educational mission."
-    />
-
-    <!-- Navigation Section -->
-    <section class="principle-nav">
-      <div class="nav-content">
-        <NuxtLink to="/principles/accessible" class="nav-button prev">
-          <span class="nav-arrow">←</span>
-          <div>
-            <div class="nav-label">Previous Principle</div>
-            <div class="nav-title">Accessible</div>
-          </div>
-        </NuxtLink>
-        
-        <NuxtLink to="/principles" class="nav-button all">
-          <span class="nav-arrow">↑</span>
-          <div>
-            <div class="nav-title">All Principles</div>
-          </div>
-        </NuxtLink>
-        
-        <NuxtLink to="/principles/individualized" class="nav-button next">
-          <div>
-            <div class="nav-label">Next Principle</div>
-            <div class="nav-title">Individualized</div>
-          </div>
-          <span class="nav-arrow">→</span>
-        </NuxtLink>
-      </div>
-    </section>
+    />    <!-- Navigation Section -->
+    <PrincipleNavigation current-slug="integrity" />
 
     <!-- Footer -->
     <TheFooter />
@@ -558,71 +531,6 @@ body {
   opacity: 0.9;
 }
 
-/* Navigation Section */
-.principle-nav {
-  padding: 60px 20px;
-  background: var(--darker-bg);
-  border-top: 1px solid rgba(255, 107, 53, 0.2);
-}
-
-.nav-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-}
-
-.nav-button {
-  flex: 1;
-  padding: 20px 30px;
-  background: var(--card-bg);
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 15px;
-  text-decoration: none;
-  color: var(--light-text);
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.nav-button:hover {
-  background: var(--card-hover);
-  transform: translateY(-3px);
-  border-color: rgba(255, 107, 53, 0.4);
-}
-
-.nav-button.prev {
-  justify-content: flex-start;
-}
-
-.nav-button.next {
-  justify-content: flex-end;
-}
-
-.nav-button.all {
-  justify-content: center;
-  max-width: 200px;
-}
-
-.nav-arrow {
-  font-size: 1.5rem;
-  color: var(--primary-orange);
-}
-
-.nav-label {
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-.nav-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: white;
-}
-
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -637,14 +545,6 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav-content {
-    flex-direction: column;
-  }
-
-  .nav-button {
-    width: 100%;
-  }
-
   .trust-visual {
     grid-template-columns: 1fr;
   }
