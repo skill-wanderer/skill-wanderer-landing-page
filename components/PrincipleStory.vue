@@ -13,12 +13,16 @@
           <span class="chapter-icon">{{ chapter.icon }}</span>
           {{ chapter.title }}
         </h2>
-        
-        <template v-for="(content, contentIndex) in chapter.content" :key="contentIndex">
+          <template v-for="(content, contentIndex) in chapter.content" :key="contentIndex">
           <p v-if="content.type === 'text'" class="story-text" v-html="content.text"></p>
           
           <div v-else-if="content.type === 'personal-story'" class="personal-story">
             {{ content.text }}
+          </div>
+          
+          <div v-else-if="content.type === 'quote'" class="japanese-quote">
+            <p>"{{ content.text }}"</p>
+            <p v-if="content.author" class="author">- {{ content.author }}</p>
           </div>
         </template>
       </div>
@@ -28,8 +32,9 @@
 
 <script setup lang="ts">
 interface StoryContent {
-  type: 'text' | 'personal-story'
+  type: 'text' | 'personal-story' | 'quote'
   text: string
+  author?: string
 }
 
 interface StoryChapter {
@@ -116,6 +121,29 @@ const props = defineProps<Props>()
   font-size: 3rem;
   opacity: 0.3;
   color: var(--primary-orange);
+}
+
+.japanese-quote {
+  background: linear-gradient(135deg, rgba(255, 68, 68, 0.05) 0%, rgba(255, 107, 53, 0.05) 100%);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.japanese-quote p {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--primary-orange);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.japanese-quote .author {
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 /* Animations */

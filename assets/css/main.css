@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
+@layer base {  :root {
     --primary-orange: #FF6B35;
     --deep-orange: #E85D25;
     --dark-bg: #1a1a1a;
@@ -12,6 +11,10 @@
     --accent-yellow: #FFD93D;
     --card-bg: rgba(255, 255, 255, 0.05);
     --card-hover: rgba(255, 255, 255, 0.08);
+    --success-green: #4CAF50;
+    --flame-red: #ff4444;
+    --flame-orange: #ff8844;
+    --flame-yellow: #ffcc44;
   }
   
   html {
