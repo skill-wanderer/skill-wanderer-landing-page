@@ -15,6 +15,9 @@
     --flame-red: #ff4444;
     --flame-orange: #ff8844;
     --flame-yellow: #ffcc44;
+    --failure-red: #f44336;
+    --wisdom-purple: #9C27B0;
+    --growth-blue: #2196F3;
   }
   
   html {

@@ -12,8 +12,7 @@
         <h2>
           <span class="chapter-icon">{{ chapter.icon }}</span>
           {{ chapter.title }}
-        </h2>
-          <template v-for="(content, contentIndex) in chapter.content" :key="contentIndex">
+        </h2>        <template v-for="(content, contentIndex) in chapter.content" :key="contentIndex">
           <p v-if="content.type === 'text'" class="story-text" v-html="content.text"></p>
           
           <div v-else-if="content.type === 'personal-story'" class="personal-story">
@@ -24,6 +23,12 @@
             <p>"{{ content.text }}"</p>
             <p v-if="content.author" class="author">- {{ content.author }}</p>
           </div>
+          
+          <div v-else-if="content.type === 'annual-review'" class="annual-review">
+            <p class="boss-quote">"{{ content.text }}"</p>
+            <p v-if="content.additionalText">{{ content.additionalText }}</p>
+            <p v-if="content.author" class="boss-quote">"{{ content.author }}"</p>
+          </div>
         </template>
       </div>
     </div>
@@ -32,9 +37,10 @@
 
 <script setup lang="ts">
 interface StoryContent {
-  type: 'text' | 'personal-story' | 'quote'
+  type: 'text' | 'personal-story' | 'quote' | 'annual-review'
   text: string
   author?: string
+  additionalText?: string
 }
 
 interface StoryChapter {
@@ -144,6 +150,38 @@ const props = defineProps<Props>()
 .japanese-quote .author {
   font-size: 1rem;
   opacity: 0.8;
+}
+
+.annual-review {
+  background: linear-gradient(135deg, rgba(156, 39, 176, 0.05) 0%, rgba(255, 107, 53, 0.05) 100%);
+  padding: 40px;
+  border-radius: 20px;
+  margin: 40px 0;
+  border: 1px solid rgba(156, 39, 176, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.annual-review::before {
+  content: '📋';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  opacity: 0.1;
+}
+
+.annual-review p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--light-text);
+  margin-bottom: 20px;
+}
+
+.annual-review .boss-quote {
+  color: var(--wisdom-purple);
+  font-style: italic;
+  font-weight: 500;
 }
 
 /* Animations */
