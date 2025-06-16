@@ -141,14 +141,12 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Practice Section -->
+    </section>    <!-- Practice Section -->
     <PrinciplePractice
       title="The Engine in Action"
       subtitle="How we integrate services and education"
       :list-icon="'⚙️'"
-      :practices="practiceItems"
+      :examples="practiceItems"
     />
 
     <!-- Quote Section -->
@@ -264,7 +262,7 @@ const practiceItems = [
     title: "Financial Transparency",
     items: [
       "Clear connection between services revenue and educational investment",
-      "Public reporting on how funds support the mission",
+      "No hidden fees or profit margins",
       "No hidden profit motives - everything reinvested",
       "Sustainable model that doesn't depend on charity"
     ]
