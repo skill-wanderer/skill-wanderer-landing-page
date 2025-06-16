@@ -273,6 +273,15 @@ const practiceItems = [
 </script>
 
 <style scoped>
+
+/* CSS Custom Properties for dynamic colors */
+:root {
+  --practice-blue: #2196F3;
+  --education-purple: #9C27B0;
+  --success-green: #4CAF50;
+  --engine-red: #f44336;
+}
+
 /* Engine Visual Section */
 .engine-section {
   padding: 80px 20px;
@@ -436,7 +445,7 @@ const practiceItems = [
   border-radius: 20px;
   padding: 40px;
   text-align: center;
-  border: 2px solid rgba(255, 107, 53, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
@@ -650,13 +659,7 @@ const practiceItems = [
   }
 }
 
-/* CSS Custom Properties for dynamic colors */
-:root {
-  --practice-blue: #2196F3;
-  --education-purple: #9C27B0;
-  --success-green: #4CAF50;
-  --engine-red: #f44336;
-}
+
 
 /* Animation keyframes */
 @keyframes fadeInUp {
