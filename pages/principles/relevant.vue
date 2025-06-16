@@ -169,14 +169,13 @@
           guiding them to complete, industry-ready expertise.
         </p>
       </div>
-    </section>
-
-    <!-- Practice Section -->
+    </section>    <!-- Practice Section -->
     <PrinciplePractice
       title="Making Education Matter"
       subtitle="How we ensure relevance and impact"
       :examples="practiceExamples"
       background-color="var(--darker-bg)"
+      list-icon="🎯"
     />
 
     <!-- Quote Section -->

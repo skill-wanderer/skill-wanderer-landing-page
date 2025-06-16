@@ -1,5 +1,5 @@
 <template>
-  <section class="practice-section" :style="{ backgroundColor: props.backgroundColor }">
+  <section class="practice-section" :style="{ backgroundColor: props.backgroundColor, ...cssVars }">
     <div class="practice-content">
       <div class="practice-header">
         <h2>{{ title }}</h2>
@@ -23,6 +23,8 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+
 interface PracticeExample {
   title: string
   items: string[]
@@ -33,11 +35,18 @@ interface Props {
   subtitle: string
   examples: PracticeExample[]
   backgroundColor?: string
+  listIcon?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  backgroundColor: 'var(--darker-bg)'
+  backgroundColor: 'var(--darker-bg)',
+  listIcon: '✓'
 })
+
+// Create a computed property for the CSS custom property
+const cssVars = computed(() => ({
+  '--list-icon': `"${props.listIcon}"`
+}))
 </script>
 
 <style scoped>
@@ -102,7 +111,7 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .practice-example li::before {
-  content: '✓';
+  content: var(--list-icon);
   position: absolute;
   left: 0;
   color: var(--primary-orange);

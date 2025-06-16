@@ -73,6 +73,7 @@
       subtitle="Concrete actions that make accessibility real"
       :examples="practiceExamples"
       background-color="var(--dark-bg)"
+      list-icon="✓"
     />
 
     <!-- Quote Section -->
