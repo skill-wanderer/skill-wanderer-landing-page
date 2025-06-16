@@ -134,7 +134,7 @@
               </div>
             </div>
             <p class="principle-description">
-              Leveraging real-world consulting to fund free education and keep content relevant.
+              Leveraging real-world technology services to fund free education and keep content relevant.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
