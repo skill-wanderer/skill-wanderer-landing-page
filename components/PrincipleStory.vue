@@ -380,6 +380,7 @@ const props = defineProps<Props>()
   border-radius: 50%;
   top: 0;
   left: 0;
+  animation: slowRotate 30s linear infinite;
 }
 
 .loop-center {
@@ -466,7 +467,7 @@ const props = defineProps<Props>()
 
 /* Add subtle rotation animation to the whole loop */
 .loop-visual {
-  animation: slowRotate 30s linear infinite;
+  /* animation: slowRotate 30s linear infinite; */
 }
 
 @keyframes slowRotate {
