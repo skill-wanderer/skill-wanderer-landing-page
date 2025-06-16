@@ -16,10 +16,16 @@ export interface SeoMeta {
 }
 
 export interface StoryContent {
-  type: 'text' | 'personal-story' | 'quote' | 'annual-review'
+  type: 'text' | 'personal-story' | 'quote' | 'annual-review' | 'motto-highlight' | 'reinforcing-loop' | 'vision-timeline' | 'disconnect-examples'
   text: string
   author?: string
   additionalText?: string
+  items?: string[]
+  timelineItems?: Array<{
+    phase: string
+    description: string
+    icon: string
+  }>
 }
 
 export interface StoryChapter {

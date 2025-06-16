@@ -17,7 +17,11 @@
     --flame-yellow: #ffcc44;
     --failure-red: #f44336;
     --wisdom-purple: #9C27B0;
-    --growth-blue: #2196F3;
+    --growth-blue: #2196F3;    --theory-blue: #2196F3;
+    --practice-green: #00BCD4;
+    --balance-purple: #9C27B0;
+    --pathway-purple: #9C27B0;
+    --loop-blue: #2196F3;
   }
   
   html {
