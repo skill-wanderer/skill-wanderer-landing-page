@@ -209,7 +209,7 @@ const practiceExamples: PracticeExample[] = [
   {
     title: 'Building Succession',
     items: [
-      'Today\'s learners become tomorrow\'s teachers',
+      'Today\'s learners become tomorrow\'s colleagues',
       'Career progression from student to educator',
       'Leadership development for future growth',
       'Creating our own talent pipeline'
