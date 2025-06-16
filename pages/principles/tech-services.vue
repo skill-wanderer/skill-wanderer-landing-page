@@ -64,9 +64,7 @@
         <div style="text-align: center; margin-bottom: 50px;">
           <h2 style="font-size: 2.5rem; color: var(--primary-orange);">Practitioners & Educators</h2>
           <p style="font-size: 1.2rem; opacity: 0.9;">Two roles that strengthen each other</p>
-        </div>
-        
-        <div class="role-comparison">
+        </div>        <div class="role-comparison">
           <div class="role-card practitioner" style="animation-delay: 0.1s;">
             <div class="role-icon">💻</div>
             <h3>As Practitioners</h3>
@@ -78,8 +76,7 @@
               <li>Learn from failures</li>
             </ul>
           </div>
-          
-          <div class="role-connector">
+            <div class="role-connector">
             <div class="connector-symbol">♾️</div>
             <p style="font-weight: 600; color: var(--primary-orange);">Reinforcing Loop</p>
           </div>
@@ -439,9 +436,18 @@ const practiceItems = [
   border-radius: 20px;
   padding: 40px;
   text-align: center;
+  border: 2px solid rgba(255, 107, 53, 0.2);
   transition: all 0.3s ease;
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.role-card.practitioner {
+  border-color: var(--practice-blue);
+}
+
+.role-card.educator {
+  border-color: var(--education-purple);
 }
 
 .role-card:hover {
@@ -450,29 +456,50 @@ const practiceItems = [
 }
 
 .role-icon {
-  font-size: 48px;
-  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.role-card.practitioner .role-icon {
+  background: rgba(33, 150, 243, 0.1);
+  border: 2px solid var(--practice-blue);
+}
+
+.role-card.educator .role-icon {
+  background: rgba(156, 39, 176, 0.1);
+  border: 2px solid var(--education-purple);
 }
 
 .role-card h3 {
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 1.4rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .role-benefits {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 
 .role-benefits li {
   padding: 8px 0;
   position: relative;
   padding-left: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
 }
 
 .role-benefits li::before {
-  content: '✓';
+  content: '→';
   position: absolute;
   left: 0;
   color: var(--primary-orange);
@@ -483,12 +510,27 @@ const practiceItems = [
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .connector-symbol {
-  font-size: 48px;
-  opacity: 0.8;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* Triple Benefit Section */
