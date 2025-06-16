@@ -274,13 +274,7 @@ const practiceItems = [
 
 <style scoped>
 
-/* CSS Custom Properties for dynamic colors */
-:root {
-  --practice-blue: #2196F3;
-  --education-purple: #9C27B0;
-  --success-green: #4CAF50;
-  --engine-red: #f44336;
-}
+/* CSS Custom Properties for dynamic colors - replaced with raw values in scoped styles */
 
 /* Engine Visual Section */
 .engine-section {
@@ -386,21 +380,21 @@ const practiceItems = [
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  border-color: var(--practice-blue);
+  border-color: #2196F3;
 }
 
 .engine-component.education {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  border-color: var(--education-purple);
+  border-color: #9C27B0;
 }
 
 .engine-component.revenue {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  border-color: var(--success-green);
+  border-color: #4CAF50;
 }
 
 .engine-component.impact {
@@ -452,11 +446,11 @@ const practiceItems = [
 }
 
 .role-card.practitioner {
-  border-color: var(--practice-blue);
+  border-color: #2196F3;
 }
 
 .role-card.educator {
-  border-color: var(--education-purple);
+  border-color: #9C27B0;
 }
 
 .role-card:hover {
@@ -477,12 +471,12 @@ const practiceItems = [
 
 .role-card.practitioner .role-icon {
   background: rgba(33, 150, 243, 0.1);
-  border: 2px solid var(--practice-blue);
+  border: 2px solid #2196F3;
 }
 
 .role-card.educator .role-icon {
   background: rgba(156, 39, 176, 0.1);
-  border: 2px solid var(--education-purple);
+  border: 2px solid #9C27B0;
 }
 
 .role-card h3 {
