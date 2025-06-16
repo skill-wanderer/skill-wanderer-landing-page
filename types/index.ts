@@ -16,7 +16,7 @@ export interface SeoMeta {
 }
 
 export interface StoryContent {
-  type: 'text' | 'personal-story' | 'quote' | 'annual-review' | 'motto-highlight' | 'reinforcing-loop' | 'vision-timeline' | 'disconnect-examples'
+  type: 'text' | 'personal-story' | 'quote' | 'annual-review' | 'motto-highlight'
   text: string
   author?: string
   additionalText?: string
