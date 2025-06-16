@@ -110,6 +110,15 @@
         </div>
       </div>    </section>
 
+    <!-- Practice Section -->
+    <PrinciplePractice
+      title="Living With Complete Integrity"
+      subtitle="How we maintain transparency and avoid conflicts of interest"
+      :examples="practiceExamples"
+      background-color="var(--darker-bg)"
+      list-icon="🛡️"
+    />
+
     <!-- Quote Section -->
     <PrincipleQuote 
       quote="The moment people know you're getting paid for a recommendation, a seed of doubt is planted. We refuse to let that seed take root. Our guidance will never be for sale—this is the only way to ensure complete trust in our educational mission."
@@ -123,6 +132,7 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import type { PracticeExample } from '~/types'
 
 // Meta tags for SEO
 useHead({
@@ -184,6 +194,36 @@ const storyChapters = [
         type: 'text' as const,
         text: 'Ultimately, our integrity is the foundation of the trust our community places in us. This principle is our commitment to protecting that trust above all else.'
       }
+    ]
+  }
+]
+
+// Practice examples data
+const practiceExamples: PracticeExample[] = [
+  {
+    title: 'Zero Financial Conflicts',
+    items: [
+      'No affiliate commissions from any course platforms or tools we recommend',
+      'No paid sponsorships or promotional content disguised as education',
+      'No kickback agreements with training providers or certification bodies',
+      'Complete transparency about any relationships with external organizations'
+    ]
+  },
+  {
+    title: 'Clear Revenue Boundaries',
+    items: [
+      'Our technology services are completely separate from educational recommendations',
+      'We never recommend tools or platforms based on potential business partnerships',
+      'Any future partnerships must benefit learners directly, not our revenue',
+      'We will never allow financial incentives to influence our educational content']
+  },
+  {
+    title: 'Future Scholarship Model',
+    items: [
+      'Seek free access deals from premium providers to benefit struggling learners',
+      'Any benefits obtained from partners flow directly to learners, never to us',
+      'Maintain a strict separation between educational content and business interests',
+      'No influence from providers on curriculum or recommendation decisions'
     ]
   }
 ]
