@@ -135,6 +135,7 @@
       subtitle="Practical ways we support every learning journey"
       :examples="practiceExamples"
       background-color="var(--darker-bg)"
+      list-icon="✓"
     />
 
     <!-- Quote Section -->

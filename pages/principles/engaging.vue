@@ -129,14 +129,13 @@
           <p>Showcase your creations. Your projects inspire others and prove what's possible.</p>
         </div>
       </div>
-    </section>
-
-    <!-- Practice Section -->
+    </section>    <!-- Practice Section -->
     <PrinciplePractice
       title="Keeping the Flame Alive"
       subtitle="Practical ways we make learning engaging and rewarding"
       :examples="practiceExamples"
       background-color="var(--darker-bg)"
+      list-icon="🔥"
     />
 
     <!-- Quote Section -->

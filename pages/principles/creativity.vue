@@ -130,14 +130,13 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Practice Section -->
+    </section>    <!-- Practice Section -->
     <PrinciplePractice
       title="Fostering Creative Failure"
       subtitle="How we create a safe space for experimentation"
       :examples="practiceExamples"
       background-color="var(--darker-bg)"
+      list-icon="🌱"
     />
 
     <!-- Quote Section -->

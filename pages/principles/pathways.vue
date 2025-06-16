@@ -133,14 +133,13 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Practice Section -->
+    </section>    <!-- Practice Section -->
     <PrinciplePractice
       title="Creating Real Pathways"
       subtitle="How we turn promise into practice"
       :examples="practiceExamples"
       background-color="var(--darker-bg)"
+      list-icon="🛤️"
     />
 
     <!-- Quote Section -->
