@@ -1,5 +1,7 @@
 <template>
   <div>
+        <!-- Navigation -->
+    <TheNavigation />
     <!-- Hero Section -->
     <PrincipleHero
       :number="5"

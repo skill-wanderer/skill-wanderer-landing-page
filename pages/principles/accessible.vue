@@ -175,6 +175,7 @@ const practiceExamples = [
     title: 'Removing Hidden Barriers',
     items: [
       'Multiple learning formats to suit different styles and bandwidths',
+      'No geographic restrictions - content accessible worldwide',
       'Community support that\'s also free - no paid Discord channels',
       'Clear learning paths so you never feel lost or overwhelmed'
     ]
