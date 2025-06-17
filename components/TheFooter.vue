@@ -1,9 +1,10 @@
 <template>
   <footer>
-    <div class="footer-content">
-      <div class="footer-links">
+    <div class="footer-content">      <div class="footer-links">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/principles">Principles</NuxtLink>
+        <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
         <!-- <NuxtLink to="/contact">Contact</NuxtLink> -->
         <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank">LinkedIn</a>
@@ -14,9 +15,15 @@
 </template>
 
 <style scoped>
+:root {
+  --primary-orange: #FF6B35;
+  --deeper-bg: #0f0f0f;
+  --light-text: #e0e0e0;
+}
+
 footer {
   padding: 60px 20px 30px;
-  background: var(--darker-bg);
+  background: var(--deeper-bg);
   border-top: 1px solid rgba(255, 107, 53, 0.2);
 }
 
