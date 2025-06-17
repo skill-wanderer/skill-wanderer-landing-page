@@ -60,7 +60,7 @@ const principles = [
   { slug: 'resourceful', name: 'Resourceful Curation' },
   { slug: 'community', name: 'Collaborative Community' },
   { slug: 'equitable-access', name: 'Premium Services with Equity' },
-  { slug: 'reinvestment', name: 'Mission-Centric Reinvestment' }
+  { slug: 'mission-centric-reinvestment', name: 'Mission-Centric Reinvestment' }
 ]
 
 // Find current principle index

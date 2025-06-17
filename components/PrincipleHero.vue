@@ -7,9 +7,10 @@
       <span>→</span>
       <span>{{ displayBreadcrumb }}</span>
     </div>
-    
-    <div class="principle-header">
-      <div class="principle-number-large">{{ number }}</div>
+      <div class="principle-header">
+      <div class="principle-number-large" :class="{ 'with-lock': showLock }">
+        {{ number }}
+      </div>
       <div class="principle-title-section">
         <h1>{{ title }}</h1>
         <p class="principle-tagline-large">{{ tagline }}</p>
@@ -24,10 +25,12 @@ interface Props {
   title: string
   tagline: string
   breadcrumbName?: string
+  showLock?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  breadcrumbName: undefined
+  breadcrumbName: undefined,
+  showLock: false
 })
 
 // Use title as fallback for breadcrumbName
@@ -85,6 +88,18 @@ const displayBreadcrumb = computed(() => props.breadcrumbName || props.title)
   color: white;
   flex-shrink: 0;
   box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+  position: relative;
+}
+
+.principle-number-large.with-lock::after {
+  content: '🔒';
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  font-size: 1.5rem;
+  background: var(--darker-bg);
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .principle-title-section h1 {

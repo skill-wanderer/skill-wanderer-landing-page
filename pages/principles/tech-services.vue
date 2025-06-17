@@ -157,10 +157,7 @@
 
     <!-- Navigation Section -->
     <PrincipleNavigation 
-      prev-link="/principles/pathways"
-      prev-title="Pathways for Our Learners"
-      next-link="/principles/resourceful"
-      next-title="Resourceful Curation"
+      currentSlug="tech-services"
     />
   </div>
 </template>
