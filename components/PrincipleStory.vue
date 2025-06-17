@@ -28,7 +28,14 @@
             <p class="boss-quote">"{{ content.text }}"</p>
             <p v-if="content.additionalText">{{ content.additionalText }}</p>
             <p v-if="content.author" class="boss-quote">"{{ content.author }}"</p>
-          </div>          <div v-else-if="content.type === 'motto-highlight'" class="motto-highlight">
+          </div>
+
+          <div v-else-if="content.type === 'integrity-notice'" class="integrity-notice">
+            <h3 v-if="content.additionalText">{{ content.additionalText }}</h3>
+            <p v-html="content.text"></p>
+          </div>
+
+          <div v-else-if="content.type === 'motto-highlight'" class="motto-highlight">
             <h3>{{ content.text }}</h3>
             <p v-if="content.additionalText">{{ content.additionalText }}</p>
           </div>
@@ -40,7 +47,7 @@
 
 <script setup lang="ts">
 interface StoryContent {
-  type: 'text' | 'personal-story' | 'quote' | 'annual-review' | 'motto-highlight'
+  type: 'text' | 'personal-story' | 'quote' | 'annual-review' | 'motto-highlight' | 'integrity-notice'
   text: string
   author?: string
   additionalText?: string
@@ -191,6 +198,32 @@ const props = defineProps<Props>()
   color: var(--wisdom-purple);
   font-style: italic;
   font-weight: 500;
+}
+
+.integrity-notice {
+  background: linear-gradient(135deg, rgba(33, 150, 243, 0.1), rgba(255, 107, 53, 0.05));
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(33, 150, 243, 0.3);
+  margin: 40px 0;
+  text-align: center;
+}
+
+.integrity-notice h3 {
+  color: #2196F3;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.integrity-notice p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.integrity-notice :deep(strong) {
+  color: var(--primary-orange);
+  font-weight: 600;
 }
 
 /* Animations */
