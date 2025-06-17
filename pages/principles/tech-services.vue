@@ -390,14 +390,14 @@ const practiceItems = [
 
 .engine-component.revenue {
   top: 50%;
-  right: 0;
+  right: 25%; /* Adjusted from 0 to bring it closer to the center */
   transform: translateY(-50%);
   border-color: #4CAF50;
 }
 
 .engine-component.impact {
   top: 50%;
-  left: 0;
+  left: 25%; /* Adjusted from 0 to bring it closer to the center */
   transform: translateY(-50%);
   border-color: var(--accent-yellow);
 }
