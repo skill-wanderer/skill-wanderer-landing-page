@@ -24,14 +24,20 @@
           <h2 style="font-size: 2.5rem; color: var(--primary-orange);">Creating Balance</h2>
           <p style="font-size: 1.2rem; opacity: 0.9;">Premium services fund equitable access for all</p>
         </div>
-        
-        <div class="balance-visual">
+          <div class="balance-visual">
           <div class="balance-scale">
             <div class="scale-fulcrum"></div>
-            <div class="scale-beam"></div>
+            <div 
+              class="scale-beam" 
+              :style="{ transform: `translateX(-50%) rotate(${scaleRotation}deg)` }"
+            ></div>
             
             <div class="balance-side left">
-              <div class="balance-pan">
+              <div 
+                class="balance-pan"
+                @mouseenter="tiltScaleLeft"
+                @mouseleave="resetScale"
+              >
                 <span class="pan-icon">💎</span>
                 <h3 class="pan-title">Premium Payers</h3>
                 <p class="pan-description">Those who can afford to pay full price for premium services</p>
@@ -39,7 +45,11 @@
             </div>
             
             <div class="balance-side right">
-              <div class="balance-pan">
+              <div 
+                class="balance-pan"
+                @mouseenter="tiltScaleRight"
+                @mouseleave="resetScale"
+              >
                 <span class="pan-icon">🤝</span>
                 <h3 class="pan-title">Equitable Access</h3>
                 <p class="pan-description">Learners who receive discounted or free access based on need</p>
@@ -168,6 +178,21 @@ useHead({
     { name: 'description', content: 'Discover how Skill-Wanderer offers premium services with equitable access, ensuring no passionate learner is denied support due to financial circumstances.' }
   ]
 })
+
+// Balance scale interaction
+const scaleRotation = ref(0)
+
+const tiltScaleLeft = () => {
+  scaleRotation.value = 3
+}
+
+const tiltScaleRight = () => {
+  scaleRotation.value = -3
+}
+
+const resetScale = () => {
+  scaleRotation.value = 0
+}
 
 // Story content data
 const storyIntro = 'I call our eleventh principle <strong>Value-Added Premium Services with Equitable Access</strong>, and its story begins with a realization I had during my first internship.'
@@ -319,6 +344,7 @@ const practiceExamples: PracticeExample[] = [
   height: 8px;
   background: linear-gradient(90deg, var(--premium-gold), var(--primary-orange), var(--equity-blue));
   border-radius: 4px;
+  transition: transform 0.3s ease;
 }
 
 .balance-side {
@@ -353,6 +379,7 @@ const practiceExamples: PracticeExample[] = [
   justify-content: center;
   text-align: center;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .balance-side.left .balance-pan {
