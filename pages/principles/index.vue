@@ -185,7 +185,7 @@
           </a>
 
           <!-- Principle 12 -->
-          <a href="/principles/reinvestment" class="principle-card" style="animation-delay: 1.2s;">
+          <a href="/principles/mission-centric-reinvestment" class="principle-card" style="animation-delay: 1.2s;">
             <div class="principle-header">
               <div class="principle-number">12</div>
               <div class="principle-title">
