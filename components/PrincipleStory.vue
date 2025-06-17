@@ -33,11 +33,13 @@
           <div v-else-if="content.type === 'integrity-notice'" class="integrity-notice">
             <h3 v-if="content.additionalText">{{ content.additionalText }}</h3>
             <p v-html="content.text"></p>
-          </div>
-
-          <div v-else-if="content.type === 'motto-highlight'" class="motto-highlight">
+          </div>          <div v-else-if="content.type === 'motto-highlight'" class="motto-highlight">
             <h3>{{ content.text }}</h3>
             <p v-if="content.additionalText">{{ content.additionalText }}</p>
+          </div>
+
+          <div v-else-if="content.type === 'realization-highlight'" class="realization-highlight">
+            <p v-html="content.text"></p>
           </div>
         </template>
       </div>
@@ -47,7 +49,7 @@
 
 <script setup lang="ts">
 interface StoryContent {
-  type: 'text' | 'personal-story' | 'quote' | 'annual-review' | 'motto-highlight' | 'integrity-notice'
+  type: 'text' | 'personal-story' | 'quote' | 'annual-review' | 'motto-highlight' | 'integrity-notice' | 'realization-highlight'
   text: string
   author?: string
   additionalText?: string
@@ -257,5 +259,38 @@ const props = defineProps<Props>()
 .motto-highlight p {
   font-size: 1.1rem;
   opacity: 0.9;
+}
+
+/* Realization Highlight */
+.realization-highlight {
+  background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(255, 107, 53, 0.1));
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(156, 39, 176, 0.3);
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.realization-highlight::before {
+  content: '💡';
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  opacity: 0.3;
+}
+
+.realization-highlight p {
+  font-size: 1.3rem;
+  color: var(--primary-orange);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.realization-highlight :deep(strong) {
+  color: var(--primary-orange);
+  font-weight: 700;
 }
 </style>
