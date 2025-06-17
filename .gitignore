@@ -24,4 +24,4 @@ logs
 !.env.example
 
 # Design files
-design/
+design
