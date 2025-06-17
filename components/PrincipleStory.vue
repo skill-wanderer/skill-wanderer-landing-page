@@ -36,9 +36,18 @@
           </div>          <div v-else-if="content.type === 'motto-highlight'" class="motto-highlight">
             <h3>{{ content.text }}</h3>
             <p v-if="content.additionalText">{{ content.additionalText }}</p>
+          </div>          <div v-else-if="content.type === 'realization-highlight'" class="realization-highlight">
+            <p v-html="content.text"></p>
           </div>
 
-          <div v-else-if="content.type === 'realization-highlight'" class="realization-highlight">
+          <div v-else-if="content.type === 'element-list'" class="element-list-container">
+            <ul class="element-list">
+              <li v-for="(item, itemIndex) in content.items" :key="itemIndex" v-html="item"></li>
+            </ul>
+          </div>
+
+          <div v-else-if="content.type === 'challenge-highlight'" class="challenge-highlight">
+            <h3 v-if="content.additionalText">{{ content.additionalText }}</h3>
             <p v-html="content.text"></p>
           </div>
         </template>
@@ -49,7 +58,7 @@
 
 <script setup lang="ts">
 interface StoryContent {
-  type: 'text' | 'personal-story' | 'quote' | 'annual-review' | 'motto-highlight' | 'integrity-notice' | 'realization-highlight'
+  type: 'text' | 'personal-story' | 'quote' | 'annual-review' | 'motto-highlight' | 'integrity-notice' | 'realization-highlight' | 'element-list' | 'challenge-highlight'
   text: string
   author?: string
   additionalText?: string
@@ -292,5 +301,62 @@ const props = defineProps<Props>()
 .realization-highlight :deep(strong) {
   color: var(--primary-orange);
   font-weight: 700;
+}
+
+/* Element List */
+.element-list-container {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 30px 0;
+}
+
+.element-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.element-list li {
+  padding: 15px 0;
+  padding-left: 40px;
+  position: relative;
+  opacity: 0.9;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.element-list li::before {
+  content: '✨';
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+}
+
+.element-list li :deep(strong) {
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
+/* Challenge Highlight */
+.challenge-highlight {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 107, 53, 0.1));
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  margin: 40px 0;
+}
+
+.challenge-highlight h3 {
+  color: var(--premium-gold);
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.challenge-highlight p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.9;
 }
 </style>

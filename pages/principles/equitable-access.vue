@@ -78,7 +78,7 @@
           <div class="element-card" style="animation-delay: 0.2s;">
             <div class="element-icon">🎯</div>
             <h3>Real Projects</h3>
-            <p>Work on actual client projects with real stakes, deadlines, and the pressure that drives true learning.</p>
+            <p>Work on actual projects with real stakes, deadlines, and the pressure that drives true learning.</p>
           </div>
           
           <div class="element-card" style="animation-delay: 0.3s;">
@@ -201,14 +201,19 @@ const storyChapters: StoryChapter[] = [
   {
     icon: '💡',
     title: 'The Internship Revelation',
-    content: [
-      {
+    content: [      {
         type: 'text',
         text: 'I vividly remember that one-month internship taught me more than six months of my formal studies had. What made the difference? It wasn\'t just one thing; it was a combination of crucial elements:'
       },
       {
-        type: 'text',
-        text: '• I had <strong>mentors and senior members</strong> who showed me the way.<br>• I had <strong>real projects</strong> to work on, not just theoretical exercises.<br>• I had <strong>real clients</strong> who gave me detailed feedback.<br>• And I had the accountability that comes with <strong>real stress</strong>—the pressure to deliver on time and to a high standard.'
+        type: 'element-list',
+        text: '',
+        items: [
+          'I had <strong>mentors and senior members</strong> who showed me the way.',
+          'I had <strong>real projects</strong> to work on, not just theoretical exercises.',
+          'I had <strong>real clients</strong> who gave me detailed feedback.',
+          'And I had the accountability that comes with <strong>real stress</strong>—the pressure to deliver on time and to a high standard.'
+        ]
       },
       {
         type: 'text',
@@ -222,11 +227,11 @@ const storyChapters: StoryChapter[] = [
   },
   {
     icon: '⚖️',
-    title: 'The Challenge of Scale',
-    content: [
+    title: 'The Challenge of Scale',    content: [
       {
-        type: 'text',
-        text: 'These "human touch" resources—a mentor\'s time, personalized feedback on a project—are inherently limited. Unlike digital course content that can be put on a server and accessed by millions at low cost, human expertise is a finite and valuable resource. It has a real cost, and it doesn\'t scale infinitely.'
+        type: 'challenge-highlight',
+        text: 'These "human touch" resources—a mentor\'s time, personalized feedback on a project—are inherently limited. Unlike digital course content that can be put on a server and accessed by millions at low cost, human expertise is a finite and valuable resource. It has a real cost, and it doesn\'t scale infinitely.',
+        additionalText: 'The Finite Resource Problem'
       },
       {
         type: 'text',
@@ -267,7 +272,7 @@ const practiceExamples: PracticeExample[] = [
   {
     title: 'Premium Offerings',
     items: [
-      'Weekly 1-on-1 mentorship sessions with industry professionals',
+      '1-on-1 mentorship sessions with industry professionals',
       'Custom learning paths designed for specific career goals',
       'Direct project collaboration opportunities',
       'Resume reviews and career coaching'
