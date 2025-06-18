@@ -1,8 +1,5 @@
 <template>
-  <div>    <!-- Navigation -->
-    <TheNavigation />
-
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="2"
       title="Integrity and Impartiality"
@@ -123,11 +120,7 @@
     <PrincipleQuote 
       quote="The moment people know you're getting paid for a recommendation, a seed of doubt is planted. We refuse to let that seed take root. Our guidance will never be for sale—this is the only way to ensure complete trust in our educational mission."
     />    <!-- Navigation Section -->
-    <PrincipleNavigation current-slug="integrity" />
-
-    <!-- Footer -->
-    <TheFooter />
-  </div>
+    <PrincipleNavigation current-slug="integrity" />  </div>
 </template>
 
 <script setup lang="ts">

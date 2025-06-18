@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <!-- Navigation -->
-    <TheNavigation />
-
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="11"
       title="Value-Added Premium Services with Equitable Access"
@@ -161,11 +157,7 @@
     />
 
     <!-- Navigation Section -->
-    <PrincipleNavigation current-slug="equitable-access" />
-
-    <!-- Footer -->
-    <TheFooter />
-  </div>
+    <PrincipleNavigation current-slug="equitable-access" />  </div>
 </template>
 
 <script setup lang="ts">

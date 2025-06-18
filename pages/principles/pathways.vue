@@ -1,7 +1,4 @@
-<template>
-    <TheNavigation />
-
-  <div>    <!-- Hero Section -->
+<template>  <div>    <!-- Hero Section -->
     <PrincipleHero
       :number="7"
       title="Pathways for Our Learners" 

@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <!-- Navigation -->
-    <TheNavigation />
-
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <section class="hero">
       <h1>Our 12 Guiding Principles</h1>
       <p>
@@ -209,11 +205,7 @@
 We believe quality education shapes brighter futures. Our mission is to achieve this by integrating real-world insights from our technology services directly into highly practical e-learning. This approach builds a sustainable revenue model, enabling us to operate with complete integrity—forgoing any benefit that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every client project funded becomes free education shared. Every technology service delivered plants seeds of knowledge for countless learners.
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <TheFooter />
-  </div>
+    </section>  </div>
 </template>
 
 <script setup lang="ts">

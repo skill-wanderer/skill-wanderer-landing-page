@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <!-- Navigation -->
-    <TheNavigation />
-
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="3"
       title="Individualized"
@@ -144,11 +140,7 @@
     />
 
     <!-- Navigation Section -->
-    <PrincipleNavigation current-slug="individualized" />
-
-    <!-- Footer -->
-    <TheFooter />
-  </div>
+    <PrincipleNavigation current-slug="individualized" />  </div>
 </template>
 
 <script setup lang="ts">

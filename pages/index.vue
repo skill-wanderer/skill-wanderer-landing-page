@@ -1,7 +1,5 @@
-<template>  <div>
-    <!-- Navigation -->
-    <TheNavigation />
-
+<template>
+  <div>
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
@@ -156,8 +154,7 @@
         </p>
         <a @click.prevent="handleDisableClick"  href="/services" class="btn btn-secondary">Coming Soon</a>
       </div>
-    </section>    <!-- Footer -->
-    <TheFooter />
+    </section>
   </div>
 </template>
 
