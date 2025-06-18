@@ -56,13 +56,13 @@
             <p>Choose whatever works best for you—I'm active on all these channels!</p>
           </div>
           <div class="info-cards">
-            <div class="info-card" >
+            <div class="info-card"  >
               <div class="info-card-header">
                 <div class="info-icon">📧</div>
                 <h3>Email</h3>
               </div>
               <p>For detailed discussions or proposals</p>
-              <a href="mailto:quan-nguyen@skill-wanderer.com">quan-nguyen@skill-wanderer.com</a>
+              <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>
             </div>
             <div class="info-card" @click="openLinkedIn">
               <div class="info-card-header">
