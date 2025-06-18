@@ -15,9 +15,11 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true
   },
-
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en'
+      },
       title: 'Skill-Wanderer',
       meta: [
         { charset: 'utf-8' },
