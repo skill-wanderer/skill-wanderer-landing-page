@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- Navigation -->
-    <TheNavigation />
-
     <!-- Hero Section -->
     <section class="hero">
       <h1>Let's Connect</h1>
@@ -110,7 +107,6 @@
     </section>
 
     <!-- Footer -->
-    <TheFooter />
   </div>
 </template>
 

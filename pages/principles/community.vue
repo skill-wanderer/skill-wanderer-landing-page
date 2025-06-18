@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <!-- Navigation -->
-    <TheNavigation />
-
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="10"
       title="Collaborative Community Ecosystem"
@@ -173,11 +169,7 @@
       quote="To build something truly global, I cannot do it alone. Only with a community can we reach every corner of the world. When we create an ecosystem where everyone is both learner and teacher, we don't just transfer knowledge—we multiply it."
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />    <!-- Navigation Section -->
-    <PrincipleNavigation current-slug="community" />
-
-    <!-- Footer -->
-    <TheFooter />
-  </div>
+    <PrincipleNavigation current-slug="community" />  </div>
 </template>
 
 <script setup lang="ts">
