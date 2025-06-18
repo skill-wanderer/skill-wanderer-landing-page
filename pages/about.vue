@@ -721,5 +721,11 @@ body {
     font-size: 1.4rem;
     padding: 20px;
   }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
 }
 </style>
