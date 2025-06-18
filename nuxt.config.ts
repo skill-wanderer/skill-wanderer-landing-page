@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  ssr: true, // Enable server-side rendering
   css: ['~/assets/css/main.css'],
     modules: [
     '@nuxtjs/sitemap'
