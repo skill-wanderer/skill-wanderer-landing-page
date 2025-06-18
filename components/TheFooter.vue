@@ -6,7 +6,7 @@
         <NuxtLink to="/principles">Principles</NuxtLink>
         <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
-        <!-- <NuxtLink to="/contact">Contact</NuxtLink> -->
+        <NuxtLink to="/contact">Contact</NuxtLink>
         <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank">LinkedIn</a>
       </div>
       <p>&copy; 2025 Skill-Wanderer. All resources reinvested for global impact.</p>
