@@ -8,90 +8,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://skill-wanderer.com', // Replace with your actual domain
   },
-  //   sitemap: {
-  //   urls: [
-  //     {
-  //       loc: '/',
-  //       changefreq: 'weekly',
-  //       priority: 1.0
-  //     },
-  //     {
-  //       loc: '/about',
-  //       changefreq: 'monthly',
-  //       priority: 0.8
-  //     },
-  //     {
-  //       loc: '/contact',
-  //       changefreq: 'monthly',
-  //       priority: 0.8
-  //     },
-  //     {
-  //       loc: '/principles',
-  //       changefreq: 'weekly',
-  //       priority: 0.9
-  //     },
-  //     {
-  //       loc: '/principles/accessible',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/community',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/creativity',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/engaging',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/equitable-access',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/individualized',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/integrity',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/mission-centric-reinvestment',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/pathways',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/relevant',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/resourceful',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     },
-  //     {
-  //       loc: '/principles/tech-services',
-  //       changefreq: 'monthly',
-  //       priority: 0.7
-  //     }
-  //   ]
-  // },
+
 
   // TypeScript configuration
   typescript: {
@@ -122,6 +39,21 @@ export default defineNuxtConfig({
       '@tailwindcss/postcss': {},
       autoprefixer: {},
     },
+  },
+
+  runtimeConfig: {
+    public: {
+      firebase: {
+        apiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY,
+        authDomain: process.env.NUXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+        projectId: process.env.NUXT_PUBLIC_FIREBASE_PROJECT_ID,
+        storageBucket: process.env.NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+        appId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID,
+        measurementId: process.env.NUXT_PUBLIC_FIREBASE_MEASUREMENT_ID || '',
+      }
+
+    }
   },
 
   compatibilityDate: '2025-04-19',
