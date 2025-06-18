@@ -14,12 +14,12 @@ export default defineNuxtPlugin((nuxtApp) => {
   const app: FirebaseApp = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app)
 
-  const auth: Auth = getAuth(app);
+  // const auth: Auth = getAuth(app);
   const firestore: Firestore = getFirestore(app);
 
   // Make Firebase services available to the Nuxt app
   nuxtApp.provide('firebaseApp', app);
-  nuxtApp.provide('auth', auth);
+  // nuxtApp.provide('auth', auth);
   nuxtApp.provide('firestore', firestore);
   nuxtApp.provide('analytics', analytics);
 });
