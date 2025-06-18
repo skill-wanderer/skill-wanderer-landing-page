@@ -169,8 +169,6 @@ const faqs = ref([
 // Methods
 const handleSubmit = async () => {
   isSubmitting.value = true
-
-  console.log('Submitting contact form:', form)
   
   try {
     // Get Firebase Firestore instance
@@ -188,10 +186,8 @@ const handleSubmit = async () => {
     }
     
     // Save to Firestore
-    console.log('Adding message to Firestore:', messageData)
     await addDoc(collection($firestore, 'contact-messages'), messageData)
     .catch((error) => {
-      console.error('Error adding document: ', error)
       throw error
     })
 
@@ -214,7 +210,6 @@ const handleSubmit = async () => {
       formMessage.show = false
     }, 5000)
   } catch (error) {
-    console.error('Error sending message:', error)
     formMessage.show = true
     formMessage.type = 'error'
     formMessage.text = 'Something went wrong. Please try again or contact me directly via email.'
