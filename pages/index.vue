@@ -3,9 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1
-        style="opacity: 1 !important; transform: none !important; animation: none !important;"
-        >Learn Tech, Savor the Journey</h1>
+        <h1>Learn Tech, Savor the Journey</h1>
         <p class="tagline">Free, Practical Education That Celebrates Learning Through Failure</p>
         <p class="hero-description">
           Quality education shapes brighter futures. Skill-Wanderer integrates real-world insights 
