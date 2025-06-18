@@ -7,7 +7,7 @@
         <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
         <!-- <NuxtLink to="/contact">Contact</NuxtLink> -->
-        <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">
           <span aria-hidden="true">⚡</span> View Source Code
         </a>
         <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
