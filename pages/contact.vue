@@ -146,7 +146,7 @@ const activeFaq = ref(-1)
 const faqs = ref([
   {
     question: "When will Skill-Wanderer launch?",
-    answer: "We're targeting Q4 2025 for the platform launch with initial courses on web development, cloud concepts, and API design. Follow me on LinkedIn for the latest updates!"
+    answer: "We're targeting Q3 2025 for the platform launch with initial courses on web development, cloud concepts, and API design. Follow me on LinkedIn for the latest updates!"
   },
   {
     question: "Will the courses really be free?",
@@ -158,7 +158,7 @@ const faqs = ref([
   },
   {
     question: "What technology services do you offer?",
-    answer: "I provide full-cycle development, solution architecture, cloud/DevOps consulting, and technical project management. Every real-world challenge solved feeds back into Skill-Wanderer's educational content. Services launch August 2025."
+    answer: "I provide full-cycle development, solution architecture, cloud/DevOps consulting, and technical project management. Every real-world challenge solved feeds back into Skill-Wanderer's educational content. Services launch after August 2025."
   },
   {
     question: "Why \"Skill-Wanderer\"?",
