@@ -42,7 +42,7 @@ Before you begin, ensure you have the following installed:
 Clone the repository and install the dependencies using your preferred package manager:
 
 ```bash
-git clone https://github.com/JimmyYouhei/skill-wanderer-landing-page.git
+git clone https://github.com/skill-wanderer/skill-wanderer-landing-page.git
 cd skill-wanderer-landing-page
 
 # Choose one:
@@ -213,7 +213,7 @@ helm install my-release skill-wanderer/skill-wanderer -f my-custom-values.yaml
 | Parameter                | Description                                  | Default                                      |
 | ------------------------ | -------------------------------------------- | -------------------------------------------- |
 | `replicaCount`           | Number of application pods                   | `1`                                          |
-| `image.repository`       | Container image repository                   | `ghcr.io/jimmyyouhei/skill-wanderer-landing-page` |
+| `image.repository`       | Container image repository                   | `ghcr.io/skill-wanderer/skill-wanderer-landing-page` |
 | `image.pullPolicy`       | Image pull policy                            | `IfNotPresent`                               |
 | `image.tag`              | Image tag (defaults to chart appVersion)     | `""` (uses Chart.yaml appVersion)            |
 | `service.type`           | Kubernetes Service type                      | `ClusterIP`                                  |
@@ -240,11 +240,11 @@ helm uninstall my-release
 
 ### CI/CD with GitHub Actions
 
-This project utilizes GitHub Actions (`.github/workflows/docker-publish.yml`) for automated Docker image builds and pushes to the GitHub Container Registry (ghcr.io).
+This project utilizes GitHub Actions (`.github/workflows/docker-build.yml`) for automated Docker image builds and pushes to the GitHub Container Registry (ghcr.io).
 
 - **Triggers:** Pushes to `main`/`master`, tags starting with `v`, and pull requests targeting these branches.
 - **Functionality:** Builds multi-architecture images (AMD64, ARM64) using Docker Buildx.
-- **Registry:** Images are pushed to `ghcr.io/JimmyYouhei/skill-wanderer-landing-page`.
+- **Registry:** Images are pushed to `ghcr.io/skill-wanderer/skill-wanderer-landing-page`.
 - **Tagging:** Images are tagged automatically based on branch, PR number, version tag, or commit SHA (e.g., `latest`, `v1.0.0`, `pr-123`).
 
 You can pull these pre-built images for deployment.
