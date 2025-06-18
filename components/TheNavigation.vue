@@ -10,7 +10,7 @@
         <NuxtLink to="/principles">Principles</NuxtLink>
         <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
-        <!-- <NuxtLink to="/contact">Contact</NuxtLink> -->
+        <NuxtLink to="/contact">Contact</NuxtLink>
       </div>
     </div>
   </nav>
