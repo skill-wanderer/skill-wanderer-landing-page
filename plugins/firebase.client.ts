@@ -1,8 +1,9 @@
 // plugins/firebase.client.ts
 
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+import { initializeApp, type FirebaseApp } from 'firebase/app';
+import { getAuth, type Auth } from 'firebase/auth';
+import { getFirestore, type Firestore } from 'firebase/firestore';
+import { getAnalytics } from "firebase/analytics";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig();
@@ -10,13 +11,15 @@ export default defineNuxtPlugin((nuxtApp) => {
   const firebaseConfig = config.public.firebase;
 
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+  const app: FirebaseApp = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app)
 
-  const auth = getAuth(app);
-  const firestore = getFirestore(app);
+  const auth: Auth = getAuth(app);
+  const firestore: Firestore = getFirestore(app);
 
   // Make Firebase services available to the Nuxt app
   nuxtApp.provide('firebaseApp', app);
   nuxtApp.provide('auth', auth);
   nuxtApp.provide('firestore', firestore);
+  nuxtApp.provide('analytics', analytics);
 });

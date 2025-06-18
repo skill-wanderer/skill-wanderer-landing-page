@@ -169,10 +169,32 @@ const faqs = ref([
 // Methods
 const handleSubmit = async () => {
   isSubmitting.value = true
+
+  console.log('Submitting contact form:', form)
   
   try {
-    // Simulate form submission (replace with actual form handler)
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    // Get Firebase Firestore instance
+    const { $firestore } = useNuxtApp()
+    const { collection, addDoc, serverTimestamp } = await import('firebase/firestore')
+    
+    // Prepare the message data
+    const messageData = {
+      name: form.name,
+      email: form.email,
+      topic: form.topic,
+      message: form.message,
+      timestamp: serverTimestamp(),
+      status: 'new'
+    }
+    
+    // Save to Firestore
+    console.log('Adding message to Firestore:', messageData)
+    await addDoc(collection($firestore, 'contact-messages'), messageData)
+    .catch((error) => {
+      console.error('Error adding document: ', error)
+      throw error
+    })
+
     
     // Show success message
     formMessage.show = true
@@ -192,6 +214,7 @@ const handleSubmit = async () => {
       formMessage.show = false
     }, 5000)
   } catch (error) {
+    console.error('Error sending message:', error)
     formMessage.show = true
     formMessage.type = 'error'
     formMessage.text = 'Something went wrong. Please try again or contact me directly via email.'
