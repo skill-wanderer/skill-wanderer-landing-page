@@ -1,18 +1,25 @@
 <template>
-  <footer>
-    <div class="footer-content">      <div class="footer-links">
+  <footer>    <div class="footer-content">
+      <div class="footer-links">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/principles">Principles</NuxtLink>
         <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
-        <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">
-          <span aria-hidden="true">⚡</span> View Source Code
-        </a>
         <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <NuxtLink to="/contact">Contact</NuxtLink>
-        <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank">LinkedIn</a>
       </div>
+      
+      <div class="open-source-info">
+        <p>
+          This website is open source! 
+          <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">
+            <span aria-hidden="true">⚡</span> View the source code
+          </a> 
+          and contribute to our mission.
+        </p>
+      </div>
+      
       <p>&copy; 2025 Skill-Wanderer. All resources reinvested for global impact.</p>
     </div>
   </footer>
@@ -52,6 +59,33 @@ footer {
 
 .footer-links a:hover {
   color: var(--primary-orange);
+}
+
+.open-source-info {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255, 107, 53, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.open-source-info p {
+  margin: 0;
+  color: var(--light-text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.open-source-info a {
+  color: var(--primary-orange);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.open-source-info a:hover {
+  color: #ff8a65;
+  text-decoration: underline;
 }
 
 /* Responsive */
