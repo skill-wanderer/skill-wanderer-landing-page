@@ -186,6 +186,12 @@
             <p>Long-term commitment to creating opportunities for our learners to join our team or launch their own ventures with our support.</p>
           </div>
         </div>
+        <div class="principles-cta" style="animation-delay: 0.6s;">
+          <NuxtLink to="/principles" class="btn btn-outline">
+            View All 12 Principles
+            <span>→</span>
+          </NuxtLink>
+        </div>
       </div>
     </section>    <!-- Team Section -->
     <section class="team">
@@ -659,6 +665,27 @@ body {
   box-shadow: 0 4px 20px rgba(255, 107, 53, 0.2);
 }
 
+.btn-outline {
+  background: transparent;
+  color: var(--primary-orange);
+  border: 2px solid rgba(255, 107, 53, 0.3);
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 107, 53, 0.1);
+  border-color: var(--primary-orange);
+  transform: translateY(-2px);
+}
+
+/* Principles CTA */
+.principles-cta {
+  text-align: center;
+  margin-top: 60px;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
 /* Animations */
 @keyframes fadeInUp {
   from {
@@ -693,6 +720,12 @@ body {
   .mission-statement {
     font-size: 1.4rem;
     padding: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
   }
 }
 </style>
