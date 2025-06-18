@@ -59,13 +59,13 @@
             <p>Choose whatever works best for you—I'm active on all these channels!</p>
           </div>
           <div class="info-cards">
-            <div class="info-card" @click="openEmail">
+            <div class="info-card" >
               <div class="info-card-header">
                 <div class="info-icon">📧</div>
                 <h3>Email</h3>
               </div>
               <p>For detailed discussions or proposals</p>
-              <a href="mailto:nguyen.hong.quan282@gmail.com">nguyen.hong.quan282@gmail.com</a>
+              <a href="mailto:quan-nguyen@skill-wanderer.com">quan-nguyen@skill-wanderer.com</a>
             </div>
             <div class="info-card" @click="openLinkedIn">
               <div class="info-card-header">
@@ -81,7 +81,7 @@
                 <h3>Community</h3>
               </div>
               <p>Join our Discord for real-time discussions</p>
-              <a href="#" class="coming-soon">Coming with platform launch</a>
+              <a href="#" class="coming-soon">Coming with soon</a>
             </div>
           </div>
         </div>
@@ -227,9 +227,7 @@ const toggleFaq = (index: number) => {
   activeFaq.value = activeFaq.value === index ? -1 : index
 }
 
-const openEmail = () => {
-  window.open('mailto:nguyen.hong.quan282@gmail.com', '_blank')
-}
+
 
 const openLinkedIn = () => {
   window.open('https://www.linkedin.com/in/quan-nguyen-skill-wanderer', '_blank')
