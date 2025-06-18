@@ -1,8 +1,5 @@
 <template>
-  <div>    <!-- Navigation -->
-    <TheNavigation />
-
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="1"
       title="Accessible"
@@ -81,9 +78,7 @@
       quote="No one gets left behind simply because they can't afford the first step. That junior developer who chooses between courses and necessities? They deserve the same chance to grow as anyone else."
     />    <!-- Navigation Section -->
     <PrincipleNavigation current-slug="accessible" />
-
-    <!-- Footer -->
-    <TheFooter />  </div>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <!-- Navigation -->
-    <TheNavigation />
-
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="12"
       title="Mission-Centric Total Reinvestment & Ethical Stewardship"
@@ -173,11 +169,7 @@
     />
 
     <!-- Navigation Section -->
-    <PrincipleNavigation current-slug="mission-centric-reinvestment" />
-
-    <!-- Footer -->
-    <TheFooter />
-  </div>
+    <PrincipleNavigation current-slug="mission-centric-reinvestment" />  </div>
 </template>
 
 <script setup lang="ts">

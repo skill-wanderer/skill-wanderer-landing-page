@@ -1,7 +1,4 @@
-<template>
-  <TheNavigation />
-
-  <div>
+<template>  <div>
     <!-- Hero Section -->
     <PrincipleHero
       :number="8"

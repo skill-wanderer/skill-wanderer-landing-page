@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <!-- Navigation -->
-    <TheNavigation />
-
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="9"
       title="Resourceful Curation & Original Creation"
@@ -115,11 +111,7 @@
     />
 
     <!-- Navigation Section -->
-    <PrincipleNavigation current-slug="resourceful" />
-
-    <!-- Footer -->
-    <TheFooter />
-  </div>
+    <PrincipleNavigation current-slug="resourceful" />  </div>
 </template>
 
 <script setup lang="ts">

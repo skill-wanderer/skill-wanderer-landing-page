@@ -1,7 +1,5 @@
-<template>  <div>
-    <!-- Navigation -->
-    <TheNavigation />
-
+<template>
+  <div>
     <!-- Hero Section -->
     <section class="hero">
       <h1>The Story of Skill-Wanderer</h1>
@@ -255,8 +253,7 @@
         Explore Skill-Wanderer
         <span>→</span>
       </NuxtLink>
-    </section>    <!-- Footer -->
-    <TheFooter />
+    </section>
   </div>
 </template>
 

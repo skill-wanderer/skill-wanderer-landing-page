@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <TheNavigation />
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <PrincipleHero
       :number="6"
       title="Relevant & Impactful"
