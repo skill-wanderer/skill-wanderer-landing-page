@@ -1,10 +1,5 @@
 <template>
-  <div>
-
-        <!-- Navigation -->
-    <TheNavigation />
-
-    <!-- Hero Section -->
+  <div>    <!-- Hero Section -->
     <PrincipleHero
       :number="4"
       title="Engaging & Rewarding"
