@@ -162,12 +162,17 @@
 <script setup>
 import { computed } from 'vue'
 
-// Page metadata
-useHead({
+// SEO and meta management
+useSEO({
   title: 'Technology Services Fueling Mission: Work That Gives Back | Principle #8',
-  meta: [
-    { name: 'description', content: 'How Skill-Wanderer uses technology services to create a self-sustaining engine that funds education while ensuring relevance through real-world practice.' }
-  ]
+  description: 'How Skill-Wanderer uses technology services to create a self-sustaining engine that funds education while ensuring relevance through practice.',
+  keywords: ['technology services', 'self-sustaining mission', 'skill-wanderer principle 8', 'real-world practice', 'funding education'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Technology Services Fueling Mission: Work That Gives Back | Principle #8',
+    'How Skill-Wanderer uses technology services to create a self-sustaining engine that funds education while ensuring relevance through real-world practice.',
+    'https://skill-wanderer.com/principles/tech-services'
+  )
 })
 
 // Story content

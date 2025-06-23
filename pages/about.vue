@@ -260,12 +260,17 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 
-// Meta tags for SEO
-useHead({
+// SEO and meta management
+useSEO({
   title: 'About Skill-Wanderer | The Story Behind the Mission',
-  meta: [
-    { name: 'description', content: 'Learn about the passionate journey behind Skill-Wanderer, our philosophy of teaching to master, and our mission to democratize quality tech education through integrity and karma.' }
-  ]
+  description: 'Learn about the journey behind Skill-Wanderer, our philosophy of teaching to master, and our mission to democratize quality tech education with integrity.',
+  keywords: ['about skill-wanderer', 'quan nguyen', 'tech education mission', 'learning philosophy', 'skill wanderer story'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'About Skill-Wanderer | The Story Behind the Mission',
+    'Learn about the journey behind Skill-Wanderer, our philosophy of teaching to master, and our mission to democratize quality tech education with integrity.',
+    'https://skill-wanderer.com/about'
+  )
 })
 
 onMounted(() => {

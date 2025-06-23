@@ -82,12 +82,17 @@
 </template>
 
 <script setup lang="ts">
-// Meta tags for SEO
-useHead({
+// SEO and meta management
+useSEO({
   title: 'Accessible: Free Knowledge for All | Principle #1 - Skill-Wanderer',
-  meta: [
-    { name: 'description', content: 'Discover how Skill-Wanderer ensures free access to quality education by removing financial barriers and providing transparent guidance for all learners.' }
-  ]
+  description: 'Discover how Skill-Wanderer ensures free access to quality education by removing financial barriers and providing transparent guidance for all learners.',
+  keywords: ['accessible education', 'free coding courses', 'remove barriers', 'skill-wanderer principle 1', 'inclusive learning'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Accessible: Free Knowledge for All | Principle #1',
+    'Discover how Skill-Wanderer ensures free access to quality education by removing financial barriers and providing transparent guidance for all learners.',
+    'https://skill-wanderer.com/principles/accessible'
+  )
 })
 
 // Story content data

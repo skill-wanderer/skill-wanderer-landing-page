@@ -151,10 +151,17 @@
 <script setup lang="ts">
 import type { StoryChapter, StoryContent, PracticeExample } from '~/types'
 
-// Meta
-useSeoMeta({
-  title: 'Creativity & Learning Through Failure: Savor the Failure | Principle #5 - Skill-Wanderer',
-  description: 'Discover how failure becomes the greatest teacher when we examine it deeply. Learn why unexamined success can be more dangerous than examined failure.',
+// SEO and meta management
+useSEO({
+  title: 'Creativity & Learning Through Failure | Principle #5',
+  description: 'Discover how failure becomes the greatest teacher when examined deeply. Learn why unexamined success can be more dangerous than examined failure.',
+  keywords: ['learning through failure', 'creativity in education', 'skill-wanderer principle 5', 'failure as teacher', 'growth mindset'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Creativity & Learning Through Failure: Savor the Failure | Principle #5',
+    'Discover how failure becomes the greatest teacher when examined deeply. Learn why unexamined success can be more dangerous than examined failure.',
+    'https://skill-wanderer.com/principles/creativity'
+  )
 })
 
 // Story content
