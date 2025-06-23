@@ -189,10 +189,17 @@
 <script setup lang="ts">
 import type { StoryChapter, StoryContent, PracticeExample } from '~/types'
 
-// Meta
-useSeoMeta({
-  title: 'Relevant & Impactful: Real Skills for Real Jobs | Principle #6 - Skill-Wanderer',
-  description: 'Bridge the gap between theory and practice. Learn how we create education that serves both graduates who need practical skills and practitioners who need foundational knowledge.',
+// SEO and meta management
+useSEO({
+  title: 'Relevant & Impactful: Real Skills for Real Jobs | Principle #6',
+  description: 'Bridge the gap between theory and practice. Learn how we create education that serves both graduates and practitioners with real-world skills.',
+  keywords: ['relevant education', 'practical skills', 'real-world learning', 'skill-wanderer principle 6', 'job-ready skills'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Relevant & Impactful: Real Skills for Real Jobs | Principle #6',
+    'Bridge the gap between theory and practice. Learn how we create education that serves both graduates who need practical skills and practitioners who need foundational knowledge.',
+    'https://skill-wanderer.com/principles/relevant'
+  )
 })
 
 // Story content

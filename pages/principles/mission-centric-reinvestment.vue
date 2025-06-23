@@ -175,12 +175,17 @@
 <script setup lang="ts">
 import type { StoryChapter, PracticeExample } from '~/types'
 
-// Meta tags for SEO
-useHead({
-  title: 'Mission-Centric Reinvestment: Every Penny for Purpose | Principle #12 - Skill-Wanderer',
-  meta: [
-    { name: 'description', content: 'Discover how Skill-Wanderer commits to total reinvestment of all revenue back into the mission, ensuring every dollar serves learners rather than private profit.' }
-  ]
+// SEO and meta management
+useSEO({
+  title: 'Mission-Centric Reinvestment: Every Penny for Purpose | Principle #12',
+  description: 'Discover how Skill-Wanderer commits to total reinvestment of all revenue back into the mission, ensuring every dollar serves learners.',
+  keywords: ['mission-centric', 'reinvestment', 'skill-wanderer principle 12', 'ethical stewardship', 'purpose-driven'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Mission-Centric Reinvestment: Every Penny for Purpose | Principle #12',
+    'Discover how Skill-Wanderer commits to total reinvestment of all revenue back into the mission, ensuring every dollar serves learners rather than private profit.',
+    'https://skill-wanderer.com/principles/mission-centric-reinvestment'
+  )
 })
 
 // Story content data

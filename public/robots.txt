@@ -1,2 +1,18 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://skill-wanderer.com/sitemap.xml
+Sitemap: https://skill-wanderer.com/api/sitemap.xml
+
+# Disallow common directories that shouldn't be indexed
+Disallow: /api/
+Disallow: /_nuxt/
+Disallow: /.nuxt/
+Disallow: /node_modules/
+
+# Allow important pages to be crawled
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /principles/

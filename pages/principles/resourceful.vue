@@ -117,12 +117,17 @@
 <script setup lang="ts">
 import type { StoryChapter, PracticeExample } from '~/types'
 
-// Meta tags for SEO
-useHead({
-  title: 'Resourceful Curation & Original Creation: Best of All Worlds | Principle #9 - Skill-Wanderer',
-  meta: [
-    { name: 'description', content: 'Discover how Skill-Wanderer combines expert curation of existing resources with strategic original content creation to provide the best learning experience.' }
-  ]
+// SEO and meta management
+useSEO({
+  title: 'Resourceful Curation & Original Creation | Principle #9',
+  description: 'Discover how Skill-Wanderer combines expert curation of existing resources with strategic original content creation for the best learning experience.',
+  keywords: ['resourceful curation', 'content creation', 'skill-wanderer principle 9', 'learning resources', 'educational content'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Resourceful Curation & Original Creation: Best of All Worlds | Principle #9',
+    'Discover how Skill-Wanderer combines expert curation of existing resources with strategic original content creation to provide the best learning experience.',
+    'https://skill-wanderer.com/principles/resourceful'
+  )
 })
 
 // Story content data

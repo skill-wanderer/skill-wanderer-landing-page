@@ -160,14 +160,12 @@
 
 <script setup lang="ts">
 // SEO and meta management
-useHead({
-  title: 'Skill-Wanderer - Practical Tech Education for Everyone',
-  meta: [
-    { name: 'description', content: 'The central navigation hub for the Skill-Wanderer ecosystem. Free, practical education that celebrates learning through failure.' },
-    { property: 'og:title', content: 'Skill-Wanderer - Practical Tech Education for Everyone' },
-    { property: 'og:description', content: 'Free, practical education that celebrates learning through failure. Quality education shapes brighter futures.' },
-    { name: 'twitter:card', content: 'summary_large_image' }
-  ]
+useSEO({
+  title: 'Skill-Wanderer - Free Tech Education for Everyone',
+  description: 'Free, practical tech education that celebrates learning through failure. Quality education shapes brighter futures with no ads or affiliate bias.',
+  keywords: ['tech education', 'programming courses', 'free coding bootcamp', 'web development', 'skill development', 'learning platform'],
+  type: 'website',
+  structuredData: createOrganizationSchema()
 })
 
 // Function to handle disabled links

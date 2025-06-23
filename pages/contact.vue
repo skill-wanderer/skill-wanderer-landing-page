@@ -113,12 +113,12 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 
-// Meta tags for SEO
-useHead({
-  title: 'Contact | Let\'s Connect on This Journey',
-  meta: [
-    { name: 'description', content: 'Get in touch with Skill-Wanderer. Whether you\'re a learner with questions, a potential collaborator, or someone who shares the passion for learning—I\'d love to hear from you!' }
-  ]
+// SEO and meta management
+useSEO({
+  title: 'Contact Skill-Wanderer | Let\'s Connect on This Journey',
+  description: 'Get in touch with Skill-Wanderer. Whether you\'re a learner with questions, potential collaborator, or share the passion for learning—let\'s connect!',
+  keywords: ['contact skill-wanderer', 'get in touch', 'tech education questions', 'collaboration opportunities', 'quan nguyen contact'],
+  type: 'website'
 })
 
 // Form state
