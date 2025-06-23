@@ -138,7 +138,7 @@
         cloud concepts, and modern API design.
       </p>
       <div class="hero-cta" style="margin-top: 30px;">
-        <a href="http://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+        <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
           Preview Future LMS
         </a>
       </div>
