@@ -161,10 +161,10 @@
 <script setup lang="ts">
 // SEO and meta management
 useHead({
-  title: 'Skill Wanderer - Practical Tech Education for Everyone',
+  title: 'Skill-Wanderer - Practical Tech Education for Everyone',
   meta: [
-    { name: 'description', content: 'The central navigation hub for the Skill Wanderer ecosystem. Free, practical education that celebrates learning through failure.' },
-    { property: 'og:title', content: 'Skill Wanderer - Practical Tech Education for Everyone' },
+    { name: 'description', content: 'The central navigation hub for the Skill-Wanderer ecosystem. Free, practical education that celebrates learning through failure.' },
+    { property: 'og:title', content: 'Skill-Wanderer - Practical Tech Education for Everyone' },
     { property: 'og:description', content: 'Free, practical education that celebrates learning through failure. Quality education shapes brighter futures.' },
     { name: 'twitter:card', content: 'summary_large_image' }
   ]
