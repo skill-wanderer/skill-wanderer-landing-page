@@ -1,4 +1,4 @@
-// Global type definitions for the Skill Wanderer project
+// Global type definitions for the Skill-Wanderer project
 
 export interface Platform {
   title: string
