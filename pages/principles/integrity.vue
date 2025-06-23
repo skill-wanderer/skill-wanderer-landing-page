@@ -127,12 +127,17 @@
 import { onMounted } from 'vue'
 import type { PracticeExample } from '~/types'
 
-// Meta tags for SEO
-useHead({
-  title: 'Integrity and Impartiality: No Hidden Agendas | Principle #2 - Skill-Wanderer',
-  meta: [
-    { name: 'description', content: 'Discover how Skill-Wanderer maintains complete integrity by refusing all affiliate commissions, sponsored content, and hidden financial incentives that could compromise our educational recommendations.' }
-  ]
+// SEO and meta management  
+useSEO({
+  title: 'Integrity & Impartiality: No Hidden Agendas | Principle #2',
+  description: 'Discover how Skill-Wanderer maintains complete integrity by refusing all affiliate commissions, sponsored content, and hidden financial incentives.',
+  keywords: ['integrity in education', 'no affiliate marketing', 'transparent recommendations', 'skill-wanderer principle 2', 'honest education'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Integrity and Impartiality: No Hidden Agendas | Principle #2',
+    'Discover how Skill-Wanderer maintains complete integrity by refusing all affiliate commissions, sponsored content, and hidden financial incentives.',
+    'https://skill-wanderer.com/principles/integrity'
+  )
 })
 
 // Story content data

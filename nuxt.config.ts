@@ -20,16 +20,25 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      title: 'Skill-Wanderer',
+      title: 'Skill-Wanderer - Free Tech Education for Everyone',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'The central navigation hub for the Skill-Wanderer ecosystem' },
+        { name: 'description', content: 'Free, practical tech education that celebrates learning through failure. Quality education shapes brighter futures with no ads or affiliate bias.' },
+        { name: 'author', content: 'Quan Nguyen' },
+        { name: 'robots', content: 'index,follow' },
+        { name: 'language', content: 'en' },
         // Open Graph / social media meta tags for the logo
+        { property: 'og:site_name', content: 'Skill-Wanderer' },
+        { property: 'og:type', content: 'website' },
         { property: 'og:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
         { property: 'og:image:width', content: '768' },
         { property: 'og:image:height', content: '256' },
-        { name: 'twitter:image', content: '/cropped-skill-wanderer-logo-768x256.webp' }
+        { property: 'og:image:alt', content: 'Skill-Wanderer Logo' },
+        // Twitter meta tags
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
+        { name: 'twitter:image:alt', content: 'Skill-Wanderer Logo' }
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/skill-wanderer-favicon.svg' }

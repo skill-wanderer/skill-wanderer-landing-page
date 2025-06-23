@@ -175,12 +175,17 @@
 <script setup lang="ts">
 import type { StoryChapter, PracticeExample } from '~/types'
 
-// Meta tags for SEO
-useHead({
-  title: 'Collaborative Community: Together We Grow | Principle #10 - Skill-Wanderer',
-  meta: [
-    { name: 'description', content: 'Discover how Skill-Wanderer builds a collaborative community ecosystem where everyone is both teacher and learner, creating global impact through peer-to-peer support.' }
-  ]
+// SEO and meta management
+useSEO({
+  title: 'Collaborative Community: Together We Grow | Principle #10',
+  description: 'Discover how Skill-Wanderer builds a collaborative community where everyone is both teacher and learner, creating global impact through peer support.',
+  keywords: ['collaborative community', 'peer learning', 'skill-wanderer principle 10', 'community ecosystem', 'learning together'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Collaborative Community: Together We Grow | Principle #10',
+    'Discover how Skill-Wanderer builds a collaborative community ecosystem where everyone is both teacher and learner, creating global impact through peer-to-peer support.',
+    'https://skill-wanderer.com/principles/community'
+  )
 })
 
 // Story content data
