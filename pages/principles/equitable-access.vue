@@ -163,12 +163,17 @@
 <script setup lang="ts">
 import type { StoryChapter, PracticeExample } from '~/types'
 
-// Meta tags for SEO
-useHead({
-  title: 'Premium Services with Equity: Extra Help When Needed | Principle #11 - Skill-Wanderer',
-  meta: [
-    { name: 'description', content: 'Discover how Skill-Wanderer offers premium services with equitable access, ensuring no passionate learner is denied support due to financial circumstances.' }
-  ]
+// SEO and meta management
+useSEO({
+  title: 'Premium Services with Equity: Extra Help When Needed | Principle #11',
+  description: 'Discover how Skill-Wanderer offers premium services with equitable access, ensuring no passionate learner is denied support due to finances.',
+  keywords: ['equitable access', 'premium services', 'skill-wanderer principle 11', 'affordable education', 'learning equity'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Premium Services with Equity: Extra Help When Needed | Principle #11',
+    'Discover how Skill-Wanderer offers premium services with equitable access, ensuring no passionate learner is denied support due to financial circumstances.',
+    'https://skill-wanderer.com/principles/equitable-access'
+  )
 })
 
 // Balance scale interaction

@@ -146,12 +146,17 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 
-// Meta tags for SEO
-useHead({
-  title: 'Individualized: Your Path, Your Way | Principle #3 - Skill-Wanderer',
-  meta: [
-    { name: 'description', content: 'Discover how Skill-Wanderer honors every learner\'s unique style and pace, providing multiple resources for every concept so you can choose your own path to mastery.' }
-  ]
+// SEO and meta management
+useSEO({
+  title: 'Individualized: Your Path, Your Way | Principle #3',
+  description: 'Discover how Skill-Wanderer honors every learner\'s unique style and pace, providing multiple resources for every concept so you can choose your path.',
+  keywords: ['individualized learning', 'personalized education', 'skill-wanderer principle 3', 'learning styles', 'custom pace'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Individualized: Your Path, Your Way | Principle #3',
+    'Discover how Skill-Wanderer honors every learner\'s unique style and pace, providing multiple resources for every concept so you can choose your own path to mastery.',
+    'https://skill-wanderer.com/principles/individualized'
+  )
 })
 
 // Story content data

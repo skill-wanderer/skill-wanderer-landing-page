@@ -211,12 +211,17 @@ We believe quality education shapes brighter futures. Our mission is to achieve 
 <script setup lang="ts">
 import { onMounted } from 'vue'
 
-// Meta tags for SEO
-useHead({
+// SEO and meta management
+useSEO({
   title: 'Our 12 Guiding Principles | Skill-Wanderer',
-  meta: [
-    { name: 'description', content: 'Discover the 12 guiding principles that shape Skill-Wanderer\'s mission to provide free, quality tech education with complete integrity and transparency.' }
-  ]
+  description: 'Discover the 12 guiding principles that shape Skill-Wanderer\'s mission to provide free, quality tech education with complete integrity and transparency.',
+  keywords: ['skill-wanderer principles', 'education philosophy', 'learning principles', 'tech education values', 'integrity in education'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Our 12 Guiding Principles | Skill-Wanderer',
+    'Discover the 12 guiding principles that shape Skill-Wanderer\'s mission to provide free, quality tech education with complete integrity and transparency.',
+    'https://skill-wanderer.com/principles'
+  )
 })
 
 // Client-side JavaScript for interactions

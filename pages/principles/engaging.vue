@@ -146,10 +146,17 @@
 <script setup lang="ts">
 import type { StoryChapter, StoryContent, PracticeExample } from '~/types'
 
-// Meta
-useSeoMeta({
-  title: 'Engaging & Rewarding: Learning Should Spark Joy | Principle #4 - Skill-Wanderer',
+// SEO and meta management
+useSEO({
+  title: 'Engaging & Rewarding: Learning Should Spark Joy | Principle #4',
   description: 'Discover how celebrating small victories and recognizing struggle keeps the flame of passion alive in learning. Every breakthrough deserves recognition.',
+  keywords: ['engaging learning', 'rewarding education', 'skill-wanderer principle 4', 'learning motivation', 'celebrate success'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Engaging & Rewarding: Learning Should Spark Joy | Principle #4',
+    'Discover how celebrating small victories and recognizing struggle keeps the flame of passion alive in learning. Every breakthrough deserves recognition.',
+    'https://skill-wanderer.com/principles/engaging'
+  )
 })
 
 // Story content

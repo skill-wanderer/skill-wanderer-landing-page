@@ -152,15 +152,17 @@
 <script setup lang="ts">
 import type { StoryChapter, PracticeExample } from '~/types'
 
-// SEO Meta
-useHead({
-  title: 'Pathways for Our Learners: From Student to Colleague | Principle #7 - Skill-Wanderer',
-  meta: [
-    {
-      name: 'description',
-      content: 'Discover how Skill-Wanderer creates pathways from student to colleague, eating our own dog food to ensure quality education and building our own successors through proven learning systems.'
-    }
-  ]
+// SEO and meta management
+useSEO({
+  title: 'Pathways for Learners: From Student to Colleague | Principle #7',
+  description: 'Discover how Skill-Wanderer creates pathways from student to colleague, building successors through proven learning systems and quality education.',
+  keywords: ['career pathways', 'student to colleague', 'skill-wanderer principle 7', 'professional development', 'learning progression'],
+  type: 'article',
+  structuredData: createArticleSchema(
+    'Pathways for Our Learners: From Student to Colleague | Principle #7',
+    'Discover how Skill-Wanderer creates pathways from student to colleague, eating our own dog food to ensure quality education and building our own successors through proven learning systems.',
+    'https://skill-wanderer.com/principles/pathways'
+  )
 })
 
 const storyIntro = `
