@@ -3,6 +3,12 @@
 
 This repository contains the source code for the Skill-Wanderer landing page, a Nuxt.js application designed to introduce the Skill-Wanderer platform and its components (Blog, Dojo, Hub).
 
+## Related Projects & Links
+
+- **Main Website**: [https://skill-wanderer.com](https://skill-wanderer.com)
+- **Blog**: [https://wanderings.skill-wanderer.com](https://wanderings.skill-wanderer.com)
+- **Dojo (Moodle LMS)**: [https://dojo.skill-wanderer.com](https://dojo.skill-wanderer.com) *(coming soon)*
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
