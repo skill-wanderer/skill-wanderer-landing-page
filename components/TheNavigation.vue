@@ -4,20 +4,43 @@
       <NuxtLink to="/" class="logo">
         <div class="logo-icon"></div>
         SKILL-WANDERER
-      </NuxtLink>      <div class="nav-links">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/principles">Principles</NuxtLink>
-        <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
-        <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
-        <NuxtLink to="/contact">Contact</NuxtLink>
+      </NuxtLink>
+      
+      <!-- Mobile menu button -->
+      <button 
+        class="mobile-menu-btn"
+        @click="toggleMobileMenu"
+        :class="{ active: isMobileMenuOpen }"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="nav-links" :class="{ 'mobile-open': isMobileMenuOpen }">
+        <NuxtLink to="/" @click="closeMobileMenu">Home</NuxtLink>
+        <NuxtLink to="/about" @click="closeMobileMenu">About</NuxtLink>
+        <NuxtLink to="/principles" @click="closeMobileMenu">Principles</NuxtLink>
+        <NuxtLink to="https://dojo.skill-wanderer.com" @click="closeMobileMenu">Dojo</NuxtLink>
+        <NuxtLink to="https://wanderings.skill-wanderer.com" @click="closeMobileMenu">Blog</NuxtLink>
+        <NuxtLink to="/contact" @click="closeMobileMenu">Contact</NuxtLink>
       </div>
     </div>
   </nav>
 </template>
 
 <script setup>
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
+
+const isMobileMenuOpen = ref(false)
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value
+}
+
+const closeMobileMenu = () => {
+  isMobileMenuOpen.value = false
+}
 
 onMounted(() => {
   const handleScroll = () => {
@@ -147,7 +170,80 @@ onMounted(() => {
 }
 
 /* Mobile responsiveness */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.mobile-menu-btn span {
+  width: 25px;
+  height: 3px;
+  background: #e0e0e0;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background: #FF6B35;
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+  background: #FF6B35;
+}
+
 @media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(26, 26, 26, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 107, 53, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-links.mobile-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-links a {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+  }
+  
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+  
   .nav-container {
     padding: 0 20px;
   }
@@ -166,25 +262,16 @@ onMounted(() => {
     border-right: 8px solid transparent;
     border-top: 12px solid #1a1a1a;
   }
-  
-  .nav-links {
-    gap: 20px;
-    font-size: 0.9rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .nav-links {
-    gap: 15px;
-    font-size: 0.8rem;
+  .logo {
+    font-size: 18px;
   }
   
   .nav-links a {
-    padding: 0.25rem 0;
-  }
-  
-  .logo {
-    font-size: 18px;
+    font-size: 1rem;
+    padding: 10px 0;
   }
 }
 </style>
