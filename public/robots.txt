@@ -3,7 +3,6 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://skill-wanderer.com/sitemap.xml
-Sitemap: https://skill-wanderer.com/api/sitemap.xml
 
 # Disallow common directories that shouldn't be indexed
 Disallow: /api/
