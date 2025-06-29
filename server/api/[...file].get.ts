@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
   const filePath = params.file as string
   
   // Define the directory where K8s injects files
-  const injectedFilesDir = '/path/to/injected/files' // Update this path
+  const injectedFilesDir = process.env.INJECTED_FILES_DIR || '/app/.output/public'
   const fullPath = join(injectedFilesDir, filePath)
   
   // Security check - ensure file is within allowed directory
