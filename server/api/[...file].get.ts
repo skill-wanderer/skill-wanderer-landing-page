@@ -29,13 +29,8 @@ export default defineEventHandler(async (event) => {
   try {
     const fileContent = await readFile(fullPath)
     
-    // Set appropriate content type based on file extension
-    const ext = filePath.split('.').pop()?.toLowerCase()
-    const contentTypes: Record<string, string> = {
-      'txt': 'text/plain',
-    }
-    
-    setHeader(event, 'content-type', contentTypes[ext || 'txt'] || 'application/octet-stream')
+    // Set content type to text/plain for all files
+    setHeader(event, 'content-type', 'text/plain')
     
     return fileContent
   } catch (error) {
