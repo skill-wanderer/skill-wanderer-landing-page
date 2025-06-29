@@ -33,11 +33,6 @@ export default defineEventHandler(async (event) => {
     const ext = filePath.split('.').pop()?.toLowerCase()
     const contentTypes: Record<string, string> = {
       'txt': 'text/plain',
-      'json': 'application/json',
-      'xml': 'application/xml',
-      'html': 'text/html',
-      'css': 'text/css',
-      'js': 'application/javascript'
     }
     
     setHeader(event, 'content-type', contentTypes[ext || 'txt'] || 'application/octet-stream')
