@@ -66,3 +66,19 @@ autoscaling:
 nodeSelector: {}
 tolerations: []
 affinity: {}
+
+# Volume configuration for injected files
+volumes: []
+# Example:
+# volumes:
+#   - name: injected-files
+#     hostPath:
+#       path: /host/path/to/injected/files
+#       type: Directory
+
+volumeMounts: []
+# Example:
+# volumeMounts:
+#   - name: injected-files
+#     mountPath: /app/.output/public
+#     readOnly: true
