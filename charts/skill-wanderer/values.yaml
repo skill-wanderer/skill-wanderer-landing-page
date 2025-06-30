@@ -18,6 +18,7 @@ secret:
     - NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
     - NUXT_PUBLIC_FIREBASE_APP_ID
     - NUXT_PUBLIC_MEASUREMENT_ID
+    - INDEX_NOW_API_KEY
 
 imagePullSecrets: []
 nameOverride: ""
