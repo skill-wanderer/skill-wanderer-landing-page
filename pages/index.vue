@@ -152,7 +152,7 @@
           Alongside building Skill-Wanderer, I provide technology services. 
           Every real-world challenge solved becomes a lesson shared on the platform.
         </p>
-        <a @click.prevent="handleDisableClick"  href="/services" class="btn btn-secondary">Coming Soon</a>
+        <NuxtLink to="/services" class="btn btn-secondary">Learn More</NuxtLink>
       </div>
     </section>
   </div>
@@ -167,11 +167,6 @@ useSEO({
   type: 'website',
   structuredData: createOrganizationSchema()
 })
-
-// Function to handle disabled links
-const handleDisableClick = () => {
-
-}
 
 // Client-side JavaScript for interactions
 onMounted(() => {
