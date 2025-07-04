@@ -3,6 +3,7 @@
       <div class="footer-links">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/explore">Explore</NuxtLink>
         <NuxtLink to="/principles">Principles</NuxtLink>
         <NuxtLink to="/services">Services</NuxtLink>
         <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>

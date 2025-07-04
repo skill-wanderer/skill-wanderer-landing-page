@@ -20,6 +20,7 @@
       <div class="nav-links" :class="{ 'mobile-open': isMobileMenuOpen }">
         <NuxtLink to="/" @click="closeMobileMenu">Home</NuxtLink>
         <NuxtLink to="/about" @click="closeMobileMenu">About</NuxtLink>
+        <NuxtLink to="/explore" @click="closeMobileMenu">Explore</NuxtLink>
         <NuxtLink to="/principles" @click="closeMobileMenu">Principles</NuxtLink>
         <NuxtLink to="/services" @click="closeMobileMenu">Services</NuxtLink>
         <NuxtLink to="https://dojo.skill-wanderer.com" @click="closeMobileMenu">Dojo</NuxtLink>
