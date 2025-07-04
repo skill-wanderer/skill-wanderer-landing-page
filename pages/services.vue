@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <h1>Technology Services</h1>
-      <p>Real-world consulting that fuels free education. Every project solved becomes knowledge shared.</p>
+      <p>Real-world Technology solutions that fuel free education. Every project solved becomes knowledge shared.</p>
       <span class="launch-badge">Launching August 2025</span>
     </section>
 
