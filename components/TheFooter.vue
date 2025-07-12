@@ -10,6 +10,8 @@
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
         <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank" rel="noopener noreferrer">Personal LinkedIn</a>
         <NuxtLink to="/contact">Contact</NuxtLink>
+        <!-- Easter egg: Hidden link to mission page -->
+        <NuxtLink to="/mission" class="easter-egg-footer" title="The Heart of Skill-Wanderer (Motivation for Founder)">❤️</NuxtLink>
       </div>
       
       <div class="open-source-info">
@@ -88,6 +90,30 @@ footer {
 .open-source-info a:hover {
   color: #ff8a65;
   text-decoration: underline;
+}
+
+/* Easter egg styling for footer */
+.easter-egg-footer {
+  color: var(--primary-orange);
+  text-decoration: none;
+  font-size: 1.1rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  animation: heartBeat 2s infinite;
+}
+
+.easter-egg-footer:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  color: #ff8a65;
+}
+
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1); }
 }
 
 /* Responsive */
