@@ -25,7 +25,7 @@
               </div>
             </div>
             <p class="principle-description">
-              Ensuring free access to all course content created or curated by us, making quality education available to everyone.
+              All Skill-Wanderer learning content is completely free. Our guided learning paths help you navigate both free resources and optional paid services like personalized grading and live mentoring and third-party resources.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -40,7 +40,7 @@
               </div>
             </div>
             <p class="principle-description">
-              Upholding trust by avoiding conflicts of interest. No ads, no affiliate marketing, no commissions.
+              Upholding trust by avoiding conflicts of interest. No ads, no affiliate marketing, no commissions from third-party resources we recommend.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -145,7 +145,7 @@
               </div>
             </div>
             <p class="principle-description">
-              Curating the best existing resources while creating original content where we add unique value.
+              Curating the best existing third-party resources while creating original free content where we add unique value.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -175,7 +175,7 @@
               </div>
             </div>
             <p class="principle-description">
-              Optional enhancements with provisions ensuring no one is excluded by circumstances.
+              Optional premium services like personalized grading, live mentoring, 1-on-1 guidance with equitable access for those in need.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
