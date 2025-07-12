@@ -6,6 +6,11 @@
         SKILL-WANDERER
       </NuxtLink>
       
+      <!-- Easter egg: Hidden link to mission page -->
+      <NuxtLink to="/mission" class="easter-egg" title="The Heart of Skill-Wanderer (Motivation for Founder)">
+        <span class="heart-beat">❤️</span>
+      </NuxtLink>
+      
       <!-- Mobile menu button -->
       <button 
         class="mobile-menu-btn"
@@ -262,6 +267,48 @@ onMounted(() => {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 12px solid #1a1a1a;
+  }
+}
+
+/* Easter egg styling */
+.easter-egg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.easter-egg:hover {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.heart-beat {
+  animation: heartBeat 2s infinite;
+}
+
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .easter-egg {
+    font-size: 1rem;
+  }
+  
+  .heart-beat {
+    animation: heartBeat 1.5s infinite;
   }
 }
 
