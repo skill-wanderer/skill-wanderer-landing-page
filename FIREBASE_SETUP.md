@@ -15,6 +15,13 @@ service cloud.firestore {
       allow read: if request.auth != null; // Only authenticated users can read
     }
     
+    // Allow anyone to write to subscribers (for the subscribe form)
+    // But only authenticated users can read (for admin access)
+    match /subscribers/{document} {
+      allow write: if true; // Allow anyone to subscribe
+      allow read: if request.auth != null; // Only authenticated users can read
+    }
+    
     // Deny access to all other collections by default
     match /{document=**} {
       allow read, write: if false;
@@ -39,6 +46,7 @@ NUXT_PUBLIC_FIREBASE_MEASUREMENT_ID=your_measurement_id
 
 ## Data Structure
 
+### Contact messages
 Contact messages will be stored in Firestore with this structure:
 
 ```javascript
@@ -52,10 +60,23 @@ Contact messages will be stored in Firestore with this structure:
 }
 ```
 
-## Accessing Messages
+### Subscribers
+Email subscribers will be stored in Firestore with this structure:
 
-To view and manage contact messages, you can:
+```javascript
+{
+  email: "subscriber@example.com",
+  timestamp: Firestore.Timestamp,
+  source: "website", // Source of subscription (website, social, etc.)
+  subscribed: true // Can be toggled for unsubscribe functionality
+}
+```
+
+## Accessing Data
+
+To view and manage contact messages and subscribers, you can:
 
 1. Use the Firebase Console directly
 2. Create an admin interface (authenticated users only)
 3. Set up email notifications when new messages arrive (using Cloud Functions)
+4. Export subscriber lists for email marketing campaigns
