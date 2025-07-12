@@ -48,8 +48,8 @@
         </div>
         <div class="feature-card">
           <div class="feature-icon">🎓</div>
-          <h3>100% Free Core Content</h3>
-          <p>All course content created or curated by us is completely free. Quality education should be accessible to everyone, everywhere.</p>
+          <h3>100% Free Learning Content</h3>
+          <p>All course content and learning materials are completely free. Optional premium services like personalized grading and live mentoring are clearly marked as separate offerings.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🤝</div>
@@ -85,7 +85,7 @@
           <div class="value-item" style="animation-delay: 0.3s;">
             <span class="value-icon">🌍</span>
             <h3>Accessible Education</h3>
-            <p>Free core content with equitable access provisions for premium services when available.</p>
+            <p>Free learning content with transparent pricing for optional premium services like personalized grading and live mentoring.</p>
           </div>          <div class="value-item" style="animation-delay: 0.4s;">
             <span class="value-icon">🎨</span>
             <h3>Creative Learning</h3>

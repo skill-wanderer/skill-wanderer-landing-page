@@ -30,6 +30,10 @@
         <NuxtLink to="https://dojo.skill-wanderer.com" @click="closeMobileMenu">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com" @click="closeMobileMenu">Blog</NuxtLink>
         <NuxtLink to="/contact" @click="closeMobileMenu">Contact</NuxtLink>
+        <!-- Easter egg: Mobile heart link -->
+        <NuxtLink to="/mission" @click="closeMobileMenu" class="easter-egg-mobile" title="The Heart of Skill-Wanderer (Motivation for Founder)">
+          <span class="heart-beat">❤️</span>
+        </NuxtLink>
       </div>
     </div>
   </nav>
@@ -301,14 +305,34 @@ onMounted(() => {
   70% { transform: scale(1); }
 }
 
+/* Mobile easter egg styling */
+.easter-egg-mobile {
+  display: none;
+  text-decoration: none;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+  padding: 15px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 107, 53, 0.2);
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.easter-egg-mobile:hover {
+  background: rgba(255, 107, 53, 0.1);
+  transform: scale(1.1);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  /* Hide desktop easter egg on mobile */
   .easter-egg {
-    font-size: 1rem;
+    display: none;
   }
   
-  .heart-beat {
-    animation: heartBeat 1.5s infinite;
+  /* Show mobile easter egg */
+  .easter-egg-mobile {
+    display: block;
   }
 }
 

@@ -74,12 +74,12 @@
           <div class="principle-card">
             <div class="principle-icon">🌐</div>
             <h3>Accessible</h3>
-            <p>Ensuring free access to all course content created or curated by us, complemented by guided pathways to valuable external resources.</p>
+            <p>All Skill-Wanderer learning content is completely free. Our guided learning paths help you navigate both free resources and optional paid services like personalized grading and live mentoring and third-party resources.</p>
             <div class="principle-visual">
               <div class="access-symbols">
-                <span class="symbol free">FREE</span>
-                <span class="symbol guided">GUIDED</span>
-                <span class="symbol open">OPEN</span>
+                <span class="symbol free">FREE CONTENT</span>
+                <span class="symbol guided">GUIDED PATHS</span>
+                <span class="symbol open">OPEN ACCESS</span>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@
           <div class="principle-card">
             <div class="principle-icon">🛡️</div>
             <h3>Integrity & Impartiality</h3>
-            <p>Upholding trust by avoiding conflicts of interest. No paid advertisements, affiliate marketing, or revenue from third-party resources.</p>
+            <p>Upholding trust by avoiding conflicts of interest. No paid advertisements, affiliate marketing, or revenue from third-party resources we recommend.</p>
             <div class="principle-visual">
               <div class="integrity-badges">
                 <div class="badge no-ads">❌ No Ads</div>
@@ -191,7 +191,7 @@
           <div class="principle-card">
             <div class="principle-icon">🔍</div>
             <h3>Resourceful Curation</h3>
-            <p>Prioritizing the best existing resources to avoid duplication, while creating original content where we can add distinct value.</p>
+            <p>Prioritizing the best existing third-party resources to avoid duplication, while creating original free content where we can add distinct value.</p>
             <div class="principle-visual">
               <div class="resource-balance">
                 <div class="resource-side">
@@ -225,12 +225,12 @@
           <div class="principle-card">
             <div class="principle-icon">⭐</div>
             <h3>Value-Added Premium Services</h3>
-            <p>Core content remains free, with optional paid services for enhancements like mentorship, with equitable access for those in need.</p>
+            <p>Core learning content remains free forever. Optional premium services like personalized grading, live mentoring, and 1-on-1 guidance are available with equitable access for those in need.</p>
             <div class="principle-visual">
               <div class="service-tiers">
-                <div class="tier free">Free Core</div>
-                <div class="tier premium">Premium+</div>
-                <div class="tier accessible">Accessible Pricing</div>
+                <div class="tier free">Free Content</div>
+                <div class="tier premium">Premium Services</div>
+                <div class="tier accessible">Equitable Access</div>
               </div>
             </div>
           </div>
