@@ -6,6 +6,11 @@
         SKILL-WANDERER
       </NuxtLink>
       
+      <!-- Easter egg: Hidden link to mission page -->
+      <NuxtLink to="/mission" class="easter-egg" title="The Heart of Skill-Wanderer (Motivation for Founder)">
+        <span class="heart-beat">❤️</span>
+      </NuxtLink>
+      
       <!-- Mobile menu button -->
       <button 
         class="mobile-menu-btn"
@@ -25,6 +30,10 @@
         <NuxtLink to="https://dojo.skill-wanderer.com" @click="closeMobileMenu">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com" @click="closeMobileMenu">Blog</NuxtLink>
         <NuxtLink to="/contact" @click="closeMobileMenu">Contact</NuxtLink>
+        <!-- Easter egg: Mobile heart link -->
+        <NuxtLink to="/mission" @click="closeMobileMenu" class="easter-egg-mobile" title="The Heart of Skill-Wanderer (Motivation for Founder)">
+          <span class="heart-beat">❤️</span>
+        </NuxtLink>
       </div>
     </div>
   </nav>
@@ -262,6 +271,68 @@ onMounted(() => {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 12px solid #1a1a1a;
+  }
+}
+
+/* Easter egg styling */
+.easter-egg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.easter-egg:hover {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.heart-beat {
+  animation: heartBeat 2s infinite;
+}
+
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1); }
+}
+
+/* Mobile easter egg styling */
+.easter-egg-mobile {
+  display: none;
+  text-decoration: none;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+  padding: 15px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 107, 53, 0.2);
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.easter-egg-mobile:hover {
+  background: rgba(255, 107, 53, 0.1);
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Hide desktop easter egg on mobile */
+  .easter-egg {
+    display: none;
+  }
+  
+  /* Show mobile easter egg */
+  .easter-egg-mobile {
+    display: block;
   }
 }
 

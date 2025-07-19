@@ -67,8 +67,8 @@
         <div class="elements-grid">
           <div class="element-card" style="animation-delay: 0.1s;">
             <div class="element-icon">👨‍🏫</div>
-            <h3>Personal Mentorship</h3>
-            <p>One-on-one guidance from experienced professionals who understand your unique journey and challenges.</p>
+            <h3>Live Mentoring</h3>
+            <p>One-on-one live sessions with experienced professionals who provide real-time guidance and answer your specific questions.</p>
           </div>
           
           <div class="element-card" style="animation-delay: 0.2s;">
@@ -79,8 +79,8 @@
           
           <div class="element-card" style="animation-delay: 0.3s;">
             <div class="element-icon">💬</div>
-            <h3>Detailed Feedback</h3>
-            <p>Get comprehensive code reviews and personalized feedback that generic courses can never provide.</p>
+            <h3>Personalized Grading</h3>
+            <p>Get detailed, personalized feedback on your assignments and projects with comprehensive reviews that help you improve faster.</p>
           </div>
           
           <div class="element-card" style="animation-delay: 0.4s;">

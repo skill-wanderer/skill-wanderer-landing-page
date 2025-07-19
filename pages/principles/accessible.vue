@@ -50,13 +50,13 @@
         <div class="impact-card" style="animation-delay: 0.1s;">
           <span class="impact-icon">🎓</span>
           <h3>For the Struggling Junior</h3>
-          <p>Complete learning paths without spending a penny. No credit cards, no trials, no hidden costs. Just pure learning.</p>
+          <p>Complete learning paths without spending a penny. All content is free—optional premium services like personalized grading and live mentoring are clearly marked as separate offerings.</p>
         </div>
         
         <div class="impact-card" style="animation-delay: 0.2s;">
           <span class="impact-icon">🧭</span>
           <h3>For the Confused Mid Level</h3>
-          <p>Expert curation of both free and paid resources. Know exactly what's worth your investment before you spend.</p>
+          <p>Expert curation of both free and paid third-party resources, plus transparency about our optional premium services like personalized grading and live mentoring.</p>
         </div>
           <div class="impact-card" style="animation-delay: 0.3s;">
           <span class="impact-icon">🌍</span>
@@ -145,6 +145,10 @@ const storyChapters = [
       },
       {
         type: 'text' as const,
+        text: '<strong>To be absolutely clear:</strong> All Skill-Wanderer content—our courses, materials—remains completely free. When we mention paid resources, we\'re referring to third-party tools, courses, or services that we may recommend as optional supplements to your learning journey.'
+      },
+      {
+        type: 'text' as const,
         text: 'Ultimately, this principle is about ensuring that no one gets left behind simply because they can\'t afford the first step.'
       }
     ]
@@ -156,19 +160,22 @@ const practiceExamples = [
   {
     title: 'Free Core Content - Always',
     items: [
-      'Every course we create or curate is completely free',
+      'Every course we create or curate is completely free - no exceptions',
       'No paywalls, no "premium only" sections for essential knowledge',
       'Full access from day one - no email gates or forced registrations',
-      'Content stays free forever - we never move it behind a paywall'
+      'Content stays free forever - we never move it behind a paywall',
+      'When we recommend paid resources, they\'re clearly marked as third-party optional supplements'
     ]
   },
   {
     title: 'Transparent Resource Guidance',
     items: [
       'Clear marking of which third-party resources are free vs paid',
-      'Honest reviews without affiliate bias - we receive no commissions',
-      'Multiple options provided - there\'s always a free alternative',
-      'Guidance on when paid resources are truly worth the investment'
+      'Honest reviews of external tools and courses without affiliate bias',
+      'Multiple options provided - there\'s always a free alternative to paid third-party resources',
+      'Guidance on when paid third-party resources are truly worth the investment',
+      'All Skill-Wanderer learning content remains 100% free - we never charge for courses or materials',
+      'Optional premium services (grading, mentoring) are clearly marked as separate paid offerings'
     ]
   },
   {
@@ -177,7 +184,8 @@ const practiceExamples = [
       'Multiple learning formats to suit different styles and bandwidths',
       'No geographic restrictions - content accessible worldwide',
       'Community support that\'s also free - no paid Discord channels',
-      'Clear learning paths so you never feel lost or overwhelmed'
+      'Clear learning paths so you never feel lost or overwhelmed',
+      'Upfront transparency about which services are free vs. premium (like personalized grading and mentoring)'
     ]
   }
 ]
