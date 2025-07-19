@@ -39,6 +39,12 @@ export interface PracticeExample {
   items: string[]
 }
 
+export interface Subscriber {
+  email: string
+  subscribedAt: any // Firebase ServerTimestamp
+  source: string
+}
+
 // Extend global types if needed
 declare global {
   // Add any global type extensions here

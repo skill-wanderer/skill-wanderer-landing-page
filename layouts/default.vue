@@ -7,6 +7,9 @@
       <slot />
     </main>
 
+    <!-- Subscribe Section -->
+    <TheSubscribe />
+
     <!-- Footer -->
     <TheFooter />
   </div>
