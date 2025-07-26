@@ -257,15 +257,7 @@ You can pull these pre-built images for deployment.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-### Branding and Trademark Policy
-
-The open-source license for this project (found in the LICENSE file) covers the source code and does **not** grant any rights to use the trademarks, brand name, or logo of this project.
-
-#### Project Name and Logo
-
-The name "Skill-Wanderer" and the associated logos are trademarks of Skill-Wanderer.
+This project is licensed under the [Apache License](LICENSE).
 
 #### Your Usage
 
