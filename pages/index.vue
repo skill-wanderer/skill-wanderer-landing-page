@@ -121,27 +121,33 @@
       </div>
     </section>
 
-    <!-- Coming Soon Section -->
+    <!-- Platform Launch Section -->
     <section class="coming-soon">
       <div class="section-header">
-        <h2>Platform Launching Soon</h2>
+        <h2>First Course Launching September 2025</h2>
         <p>Join us on this journey to make quality tech education accessible to everyone</p>
       </div>
-      <!-- <div class="countdown">
+      <div class="countdown">
         <div class="countdown-item">
-          <span class="countdown-number">Q4</span>
+          <span class="countdown-number">Sep</span>
           <span class="countdown-label">2025</span>
         </div>
-      </div> -->
+      </div>
       <p style="margin-top: 40px; opacity: 0.8;">
-        Currently in active development. Initial courses will focus on practical web development, 
-        cloud concepts, and modern API design.
+        Our first course focusing on the history of computing and early foundation concepts is launching before September 2025. 
+        Additional courses covering practical web development, cloud concepts, and modern API design are in active development.
       </p>
-      <div class="hero-cta" style="margin-top: 30px;">
+      <div class="hero-cta" style="margin-top: 30px; gap: 20px;">
+        <a href="https://dojo.skill-wanderer.com/course/view.php?id=2" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Join First Course
+        </a>
         <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-          Preview Future LMS
+          View All Courses
         </a>
       </div>
+      <p style="margin-top: 20px; opacity: 0.7; font-size: 0.9rem;">
+        See <a href="https://dojo.skill-wanderer.com/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-orange); text-decoration: none;">dojo.skill-wanderer.com</a> for other courses in development
+      </p>
     </section>
 
     <!-- Tech Services Brief Section -->

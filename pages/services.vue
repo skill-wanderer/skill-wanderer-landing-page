@@ -4,7 +4,7 @@
     <section class="hero">
       <h1>Technology Services</h1>
       <p>Real-world Technology solutions that fuel free education. Every project solved becomes knowledge shared.</p>
-      <span class="launch-badge">Launching August 2025</span>
+      <span class="launch-badge">Launching September 2025</span>
     </section>
 
     <!-- Philosophy Section -->
