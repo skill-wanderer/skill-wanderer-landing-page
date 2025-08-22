@@ -14,6 +14,9 @@
             Explore the Platform
             <span>→</span>
           </a>
+          <NuxtLink to="/learning-path" class="btn btn-secondary">
+            View Learning Path
+          </NuxtLink>
           <NuxtLink to="/principles" class="btn btn-secondary">
             Our Principles
           </NuxtLink>
@@ -124,22 +127,24 @@
     <!-- Platform Launch Section -->
     <section class="coming-soon">
       <div class="section-header">
-        <h2>First Course Launching September 2025</h2>
+        <h2>Big Picture Overview of Computer Science Now Available</h2>
         <p>Join us on this journey to make quality tech education accessible to everyone</p>
       </div>
       <div class="countdown">
         <div class="countdown-item">
-          <span class="countdown-number">Sep</span>
-          <span class="countdown-label">2025</span>
+          <span class="countdown-number">2</span>
+          <span class="countdown-label">Parts</span>
         </div>
       </div>
       <p style="margin-top: 40px; opacity: 0.8;">
-        Our first course focusing on the history of computing and early foundation concepts is launching before September 2025. 
-        Additional courses covering practical web development, cloud concepts, and modern API design are in active development.
+        Our Big Picture Overview of Computer Science course has been split into two comprehensive parts. Students learn both fundamental concepts and historical context throughout their journey.
       </p>
       <div class="hero-cta" style="margin-top: 30px; gap: 20px;">
         <a href="https://dojo.skill-wanderer.com/course/view.php?id=2" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          Join First Course
+          Part 1: Foundations of Computing
+        </a>
+        <a href="https://dojo.skill-wanderer.com/course/view.php?id=4" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Part 2: Internet Era & Beyond
         </a>
         <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
           View All Courses
