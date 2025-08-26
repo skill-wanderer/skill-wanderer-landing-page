@@ -7,7 +7,7 @@ This repository contains the source code for the Skill-Wanderer landing page, a 
 
 - **Main Website**: [https://skill-wanderer.com](https://skill-wanderer.com)
 - **Blog**: [https://wanderings.skill-wanderer.com](https://wanderings.skill-wanderer.com)
-- **Dojo (Moodle LMS)**: [https://dojo.skill-wanderer.com](https://dojo.skill-wanderer.com) *(coming soon)*
+- **Dojo (Moodle LMS)**: [https://dojo.skill-wanderer.com](https://dojo.skill-wanderer.com) 
 
 ## Table of Contents
 
