@@ -43,6 +43,13 @@
               {{ isSubmitting ? 'Sending...' : 'Send Message' }}
               <span>{{ isSubmitting ? '⏳' : '→' }}</span>
             </button>
+            <div class="form-legal-links">
+              <p>By submitting this form, you agree to our 
+                <NuxtLink to="/privacy-policy" class="legal-link">Privacy Policy</NuxtLink>
+                and 
+                <NuxtLink to="/terms-of-service" class="legal-link">Terms of Service</NuxtLink>.
+              </p>
+            </div>
             <div v-if="formMessage.show" :class="['form-message', formMessage.type]">
               {{ formMessage.text }}
             </div>
@@ -570,6 +577,29 @@ body {
   background: rgba(244, 67, 54, 0.1);
   border: 1px solid var(--error-red);
   color: var(--error-red);
+}
+
+/* Form Legal Links */
+.form-legal-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-legal-links p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  color: var(--light-text);
+}
+
+.legal-link {
+  color: var(--primary-orange);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.legal-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 /* Animations */

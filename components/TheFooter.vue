@@ -10,6 +10,8 @@
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
         <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank" rel="noopener noreferrer">Personal LinkedIn</a>
         <NuxtLink to="/contact">Contact</NuxtLink>
+        <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+        <NuxtLink to="/terms-of-service">Terms of Service</NuxtLink>
         <!-- Easter egg: Hidden link to mission page -->
         <NuxtLink to="/mission" class="easter-egg-footer" title="The Heart of Skill-Wanderer (Motivation for Founder)">❤️</NuxtLink>
       </div>
