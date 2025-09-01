@@ -10,7 +10,7 @@
           to core computer science topics, with a strict focus on practical application.
         </p>
         <div class="path-meta">
-          <span class="meta-item">🎯 10 Comprehensive Courses</span>
+          <span class="meta-item">🎯 11 Comprehensive Courses</span>
           <span class="meta-item">🚀 First Course: September 2025</span>
         </div>
       </div>
@@ -73,10 +73,10 @@
           </div>
           
           <div class="course-grid">
-            <!-- Course 1A: Big Picture Overview Part 1 -->
+            <!-- Course 1: Big Picture Overview Part 1 -->
             <div class="course-card launching" style="animation-delay: 0.1s;">
               <div class="course-header">
-                <div class="course-number">1A</div>
+                <div class="course-number">1</div>
                 <div class="course-info">
                   <h3>Big Picture Overview of Computer Science: Foundations of Computing</h3>
                   <div class="course-status launching">
@@ -93,20 +93,20 @@
               </div>
               <div class="course-cta">
                 <a href="https://dojo.skill-wanderer.com/course/view.php?id=2" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                  Start Part 1
+                  Start Course 1
                 </a>
               </div>
             </div>
 
-            <!-- Course 1B: Big Picture Overview Part 2 -->
+            <!-- Course 2: Big Picture Overview Part 2 -->
             <div class="course-card launching" style="animation-delay: 0.2s;">
               <div class="course-header">
-                <div class="course-number">1B</div>
+                <div class="course-number">2</div>
                 <div class="course-info">
                   <h3>Big Picture Overview of Computer Science: The Internet Era & Beyond</h3>
                   <div class="course-status launching">
                     <span class="status-dot"></span>
-                    Available Now
+                    In Development
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@
               </div>
               <div class="course-cta">
                 <a href="https://dojo.skill-wanderer.com/course/view.php?id=4" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                  Start Part 2
+                  Try Course 2
                 </a>
               </div>
             </div>
@@ -136,15 +136,15 @@
           </div>
           
           <div class="course-grid">
-            <!-- Course 2: CS Fundamentals -->
+            <!-- Course 3: CS Fundamentals -->
             <div class="course-card development" style="animation-delay: 0.3s;">
               <div class="course-header">
-                <div class="course-number">2</div>
+                <div class="course-number">3</div>
                 <div class="course-info">
                   <h3>CS Fundamentals</h3>
                   <div class="course-status development">
                     <span class="status-dot"></span>
-                    In Development
+                    Planned
                   </div>
                 </div>
               </div>
@@ -164,15 +164,15 @@
               </div>
             </div>
 
-            <!-- Course 3: Operating Systems & Networking -->
+            <!-- Course 4: Operating Systems & Networking -->
             <div class="course-card development" style="animation-delay: 0.4s;">
               <div class="course-header">
-                <div class="course-number">3</div>
+                <div class="course-number">4</div>
                 <div class="course-info">
                   <h3>Operating Systems & Computer Networking</h3>
                   <div class="course-status development">
                     <span class="status-dot"></span>
-                    In Development
+                    Planned
                   </div>
                 </div>
               </div>
@@ -192,15 +192,15 @@
               </div>
             </div>
 
-            <!-- Course 4: Database Fundamentals -->
+            <!-- Course 5: Database Fundamentals -->
             <div class="course-card development" style="animation-delay: 0.5s;">
               <div class="course-header">
-                <div class="course-number">4</div>
+                <div class="course-number">5</div>
                 <div class="course-info">
                   <h3>Database Fundamentals</h3>
                   <div class="course-status development">
                     <span class="status-dot"></span>
-                    In Development
+                    Planned
                   </div>
                 </div>
               </div>
@@ -219,15 +219,15 @@
               </div>
             </div>
 
-            <!-- Course 5: Foundational Data Structures & Algorithms -->
+            <!-- Course 6: Foundational Data Structures & Algorithms -->
             <div class="course-card development" style="animation-delay: 0.6s;">
               <div class="course-header">
-                <div class="course-number">5</div>
+                <div class="course-number">6</div>
                 <div class="course-info">
                   <h3>Foundational Data Structures & Algorithms</h3>
                   <div class="course-status development">
                     <span class="status-dot"></span>
-                    In Development
+                    Planned
                   </div>
                 </div>
               </div>
@@ -247,15 +247,15 @@
               </div>
             </div>
 
-            <!-- Course 6: Advanced Data Structures & Algorithms -->
+            <!-- Course 7: Advanced Data Structures & Algorithms -->
             <div class="course-card development" style="animation-delay: 0.7s;">
               <div class="course-header">
-                <div class="course-number">6</div>
+                <div class="course-number">7</div>
                 <div class="course-info">
                   <h3>Advanced Data Structures & Algorithms</h3>
                   <div class="course-status development">
                     <span class="status-dot"></span>
-                    In Development
+                    Planned
                   </div>
                 </div>
               </div>
@@ -286,10 +286,10 @@
           </div>
           
           <div class="course-grid">
-            <!-- Course 7: Software Architecture & Design Patterns -->
+            <!-- Course 8: Software Architecture & Design Patterns -->
             <div class="course-card planned" style="animation-delay: 0.8s;">
               <div class="course-header">
-                <div class="course-number">7</div>
+                <div class="course-number">8</div>
                 <div class="course-info">
                   <h3>Software Architecture & Design Patterns</h3>
                   <div class="course-status planned">
@@ -307,10 +307,10 @@
               </div>
             </div>
 
-            <!-- Course 8: Distributed Computing -->
+            <!-- Course 9: Distributed Computing -->
             <div class="course-card planned" style="animation-delay: 0.9s;">
               <div class="course-header">
-                <div class="course-number">8</div>
+                <div class="course-number">9</div>
                 <div class="course-info">
                   <h3>Distributed Computing</h3>
                   <div class="course-status planned">
@@ -328,10 +328,10 @@
               </div>
             </div>
 
-            <!-- Course 9: Modern Developer Toolkit & Methodologies -->
+            <!-- Course 10: Modern Developer Toolkit & Methodologies -->
             <div class="course-card planned" style="animation-delay: 1.0s;">
               <div class="course-header">
-                <div class="course-number">9</div>
+                <div class="course-number">10</div>
                 <div class="course-info">
                   <h3>The Modern Developer Toolkit & Methodologies</h3>
                   <div class="course-status planned">
@@ -364,10 +364,10 @@
               </div>
             </div>
 
-            <!-- Course 10: Practical Security, Cloud & Modern Math -->
+            <!-- Course 11: Practical Security, Cloud & Modern Math -->
             <div class="course-card planned" style="animation-delay: 1.1s;">
               <div class="course-header">
-                <div class="course-number">10</div>
+                <div class="course-number">11</div>
                 <div class="course-info">
                   <h3>Practical Security, Cloud & Modern Math</h3>
                   <div class="course-status planned">
@@ -448,7 +448,7 @@
 // SEO and meta management
 useSEO({
   title: 'Computer Science Learning Path - Professional Developer Track | Skill-Wanderer',
-  description: 'Comprehensive 10-course learning path for professional developers. From computer history to modern software engineering with integrated mathematics and theory.',
+  description: 'Comprehensive 11-course learning path for professional developers. From computer history to modern software engineering with integrated mathematics and theory.',
   keywords: ['computer science path', 'professional developer', 'learning path', 'cs curriculum', 'software engineering', 'skill-wanderer courses'],
   type: 'website',
   structuredData: createOrganizationSchema()
