@@ -945,7 +945,6 @@ onMounted(() => {
   }
   
   .btn {
-    width: 100%;
     max-width: 300px;
   }
   
