@@ -80,7 +80,7 @@
             <div class="principle-header">
               <div class="principle-number">5</div>
               <div class="principle-title">
-                <h3>Creativity & Learning Through Failure</h3>
+                <h3>Creativity Learning Through Failure</h3>
                 <p class="principle-tagline">Savor the Failure</p>
               </div>
             </div>
