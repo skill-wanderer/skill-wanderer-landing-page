@@ -158,12 +158,12 @@
     <!-- Tech Services Brief Section -->
     <section class="tech-services">
       <div class="tech-services-content">
-        <h3>Also Offering Technology Services</h3>
+        <h3>Become a Technology Partner</h3>
         <p>
-          Alongside building Skill-Wanderer, I provide technology services. 
-          Every real-world challenge solved becomes a lesson shared on the platform.
+          Partner with us to realize your business ideas, access global learning talent, or create social impact. 
+          Every partnership directly funds our mission to provide free education worldwide.
         </p>
-        <NuxtLink to="/services" class="btn btn-secondary">Learn More</NuxtLink>
+        <NuxtLink to="/technology-partner" class="btn btn-secondary">Learn More</NuxtLink>
       </div>
     </section>
   </div>

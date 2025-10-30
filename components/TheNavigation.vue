@@ -27,7 +27,7 @@
         <NuxtLink to="/about" @click="closeMobileMenu">About</NuxtLink>
         <NuxtLink to="/learning-path" @click="closeMobileMenu">Learning Path</NuxtLink>
         <NuxtLink to="/principles" @click="closeMobileMenu">Principles</NuxtLink>
-        <NuxtLink to="/services" @click="closeMobileMenu">Services</NuxtLink>
+        <NuxtLink to="/technology-partner" @click="closeMobileMenu">Technology Partner</NuxtLink>
         <NuxtLink to="https://dojo.skill-wanderer.com" @click="closeMobileMenu">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com" @click="closeMobileMenu">Blog</NuxtLink>
         <NuxtLink to="/contact" @click="closeMobileMenu">Contact</NuxtLink>
