@@ -1,5 +1,15 @@
 <template>
   <div>
+    <!-- Sticky Banner -->
+    <div class="sticky-banner" :class="{ 'visible': showBanner }">
+      <div class="banner-content">
+        <span class="banner-text">💙 Join the waitlist now! ⚡ Limited spots available</span>
+        <a href="https://mindycore.com/start-with-us/" target="_blank" rel="noopener noreferrer" class="banner-btn">
+          Apply Now
+        </a>
+      </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
       <h1>MindyCore Real-Life-Project Training</h1>
@@ -213,6 +223,9 @@ useSEO({
   image: '/cropped-skill-wanderer-logo-768x256.webp'
 })
 
+// Sticky banner state
+const showBanner = ref(false)
+
 // Animation on scroll
 onMounted(() => {
   const observerOptions = {
@@ -232,10 +245,77 @@ onMounted(() => {
   document.querySelectorAll('.cycle-item, .step-card, .path-card, .benefit-item, .impact-statement').forEach(el => {
     observer.observe(el)
   })
+
+  // Handle sticky banner on scroll
+  const handleScroll = () => {
+    showBanner.value = window.scrollY > 300
+  }
+
+  window.addEventListener('scroll', handleScroll)
+
+  // Cleanup
+  onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+  })
 })
 </script>
 
 <style scoped>
+/* Sticky Banner */
+.sticky-banner {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  padding: 15px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 900;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  border-bottom: 2px solid rgba(251, 191, 36, 0.3);
+}
+
+.sticky-banner.visible {
+  transform: translateY(0);
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.banner-btn {
+  background: #fbbf24;
+  color: #1e3a8a;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.banner-btn:hover {
+  background: #f59e0b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.4);
+}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
@@ -697,6 +777,25 @@ onMounted(() => {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .sticky-banner {
+    padding: 12px 15px;
+  }
+
+  .banner-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .banner-btn {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -737,6 +836,20 @@ onMounted(() => {
 }
 
 @media (max-width: 480px) {
+  .sticky-banner {
+    padding: 10px 12px;
+  }
+
+  .banner-text {
+    font-size: 0.9rem;
+    min-width: 100%;
+  }
+
+  .banner-btn {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
   .hero {
     padding: 120px 15px 60px;
   }
