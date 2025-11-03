@@ -12,6 +12,9 @@
 
     <!-- Hero Section -->
     <section class="hero">
+      <div class="hero-logo">
+        <img src="/cropped-mindycore-logo.webp" alt="MindyCore Logo" />
+      </div>
       <h1>MindyCore Real-Life-Project Training</h1>
       <p>Gain hands-on experience with real MindyCore projects through volunteer training—completely free with world-class mentorship and all costs covered.</p>
       <span class="launch-badge">💙 Zero Cost • Real Projects • Volunteer Experience</span>
@@ -333,6 +336,20 @@ onMounted(() => {
   right: 0;
   bottom: 0;
   background: radial-gradient(circle at 30% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
+}
+
+.hero-logo {
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  filter: brightness(1.1);
 }
 
 .hero h1 {
@@ -800,6 +817,10 @@ onMounted(() => {
     font-size: 2.5rem;
   }
   
+  .hero-logo img {
+    max-width: 220px;
+  }
+  
   .hero p {
     font-size: 1.1rem;
   }
@@ -852,6 +873,10 @@ onMounted(() => {
 
   .hero {
     padding: 120px 15px 60px;
+  }
+
+  .hero-logo img {
+    max-width: 180px;
   }
 
   .impact-statement {
