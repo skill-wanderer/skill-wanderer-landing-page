@@ -202,7 +202,7 @@ const storyChapters = [
       },
       {
         type: 'personal-story',
-        text: 'I initially wanted to only reinvest the revenue from the educational platform, while allowing the technology services arm to operate more like a traditional business—maybe reinvesting 51% as the law in Vietnam requires for a social enterprise. The thought was simple: \'I\'m the one generating that tech revenue, so I deserve a larger share, right?\''
+        text: 'I initially wanted to only reinvest the revenue from the educational platform, while allowing the technology partnership arm to operate more like a traditional business—maybe reinvesting 51% as the law in Vietnam requires for a social enterprise. The thought was simple: \'I\'m the one generating that tech revenue, so I deserve a larger share, right?\''
       },
       {
         type: 'text',
@@ -242,7 +242,7 @@ const storyChapters = [
     content: [
       {
         type: 'text',
-        text: 'That is why this principle exists and why it is absolute. I also recognize that the success of our technology services will be tied to the goodwill and reputation of our educational mission. The two are linked. Therefore, all the value generated deserves to be reinvested back into the whole.'
+        text: 'That is why this principle exists and why it is absolute. I also recognize that the success of our technology partnerships will be tied to the goodwill and reputation of our educational mission. The two are linked. Therefore, all the value generated deserves to be reinvested back into the whole.'
       },
       {
         type: 'text',
@@ -266,7 +266,7 @@ const practiceExamples: PracticeExample[] = [
     title: 'Revenue Streams',
     items: [
       'Premium services from educational platform',
-      'Technology services and consulting projects',
+      'Technology partnerships and consulting projects',
       'Corporate training and partnerships',
       'Future dividends from minority stakes in spinoffs'
     ]

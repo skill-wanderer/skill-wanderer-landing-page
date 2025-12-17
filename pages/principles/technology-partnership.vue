@@ -1,4 +1,5 @@
-<template>  <div>
+<template>
+  <div>
     <!-- Hero Section -->
     <PrincipleHero
       :number="8"
@@ -13,11 +14,93 @@
       :chapters="storyChapters"
     />
 
+    <!-- How Our Partnership Model Works Section -->
+    <section class="model-section">
+      <div class="model-container">
+        <h2>How Our Technology Partnership Model Works</h2>
+        
+        <div class="model-intro">
+          <p class="model-statement">
+            Skill-Wanderer does not operate as a traditional outsourcing or staffing company.
+          </p>
+          <p class="model-statement">
+            We do not bill hourly or daily rates, nor do we treat teams as short-term, interchangeable resources.
+          </p>
+          <p class="model-description">
+            Instead, we collaborate with partners through long-term models that may include revenue sharing, 
+            outcome-based scaling, or building dedicated teams from our learner community.
+          </p>
+        </div>
+
+        <div class="model-cards">
+          <div class="model-card">
+            <div class="model-icon">💫</div>
+            <h3>Mission-Support Fee</h3>
+            <p>
+              In some cases, a modest monthly mission-support fee is used to sustain the Skill-Wanderer ecosystem. 
+              This fee covers collaboration coordination, technical mentorship, and educational oversight that ensure 
+              learners grow while delivering real work.
+            </p>
+          </div>
+
+          <div class="model-card">
+            <div class="model-icon">🏗️</div>
+            <h3>Infrastructure Costs</h3>
+            <p>
+              All product infrastructure costs — including cloud services, tooling, operational systems, and internal 
+              engineering expenses — are borne directly by the partner.
+            </p>
+          </div>
+
+          <div class="model-card">
+            <div class="model-icon">🎓</div>
+            <h3>Learner Integration</h3>
+            <p>
+              Learners who join partner projects are not contracted out temporarily. They are hired into the partner's 
+              organization and often continue working there beyond the formal partnership.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aligned Incentives Section -->
+    <section class="alignment-section">
+      <div class="alignment-container">
+        <h2>This Structure Aligns Incentives</h2>
+        
+        <div class="alignment-grid">
+          <div class="alignment-card">
+            <span class="alignment-icon">🤝</span>
+            <h3>Partners</h3>
+            <p>Receive committed teams without outsourcing churn.</p>
+          </div>
+          <div class="alignment-card">
+            <span class="alignment-icon">🚀</span>
+            <h3>Learners</h3>
+            <p>Gain stable employment and real career pathways.</p>
+          </div>
+          <div class="alignment-card">
+            <span class="alignment-icon">🌍</span>
+            <h3>Skill-Wanderer</h3>
+            <p>Sustains free, learner-first education through real work, not advertising or sponsorship.</p>
+          </div>
+        </div>
+
+        <div class="alignment-benefit">
+          <p>
+            By separating mission sustainability from delivery infrastructure, partners can focus resources on product, 
+            marketing, and business growth — often enabling them to operate lean without requiring early external investment.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Engine Visual Section -->
     <section class="engine-section">
       <div class="engine-container">
-        <h2 style="font-size: 2.5rem; color: var(--primary-orange); margin-bottom: 20px;">The Self-Sustaining Engine</h2>
-        <p style="font-size: 1.2rem; opacity: 0.9;">How technology partnerships power our educational mission</p>
+        <h2>The Self-Sustaining Engine</h2>
+        <p class="engine-subtitle">How technology partnerships power our educational mission</p>
         
         <div class="engine-visual">
           <svg class="engine-flow" viewBox="0 0 800 500">
@@ -58,11 +141,13 @@
     <!-- Dual Role Section -->
     <section class="dual-role-section">
       <div class="dual-role-container">
-        <div style="text-align: center; margin-bottom: 50px;">
-          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">Practitioners & Educators</h2>
-          <p style="font-size: 1.2rem; opacity: 0.9;">Two roles that strengthen each other</p>
-        </div>        <div class="role-comparison">
-          <div class="role-card practitioner" style="animation-delay: 0.1s;">
+        <div class="section-header">
+          <h2>Practitioners & Educators</h2>
+          <p>Two roles that strengthen each other</p>
+        </div>
+        
+        <div class="role-comparison">
+          <div class="role-card practitioner">
             <div class="role-icon">💻</div>
             <h3>As Practitioners</h3>
             <ul class="role-benefits">
@@ -73,12 +158,13 @@
               <li>Learn from failures</li>
             </ul>
           </div>
-            <div class="role-connector">
+          
+          <div class="role-connector">
             <div class="connector-symbol">♾️</div>
-            <p style="font-weight: 600; color: var(--primary-orange);">Reinforcing Loop</p>
+            <p>Reinforcing Loop</p>
           </div>
           
-          <div class="role-card educator" style="animation-delay: 0.3s;">
+          <div class="role-card educator">
             <div class="role-icon">📚</div>
             <h3>As Educators</h3>
             <ul class="role-benefits">
@@ -91,7 +177,7 @@
           </div>
         </div>
         
-        <p style="text-align: center; margin-top: 40px; font-size: 1.1rem; opacity: 0.9; max-width: 800px; margin-left: auto; margin-right: auto;">
+        <p class="role-conclusion">
           Every client project becomes a teaching opportunity. Every teaching moment deepens our expertise. 
           This dual role ensures we never become disconnected from the reality of technology work.
         </p>
@@ -101,13 +187,13 @@
     <!-- Triple Benefit Section -->
     <section class="benefit-section">
       <div class="benefit-container">
-        <div style="text-align: center; margin-bottom: 50px;">
-          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">The Triple Benefit</h2>
-          <p style="font-size: 1.2rem; opacity: 0.9;">How this model creates multiple wins</p>
+        <div class="section-header">
+          <h2>The Triple Benefit</h2>
+          <p>How this model creates multiple wins</p>
         </div>
         
         <div class="benefit-grid">
-          <div class="benefit-card" style="animation-delay: 0.1s;">
+          <div class="benefit-card">
             <div class="benefit-number">1</div>
             <span class="benefit-icon">🔄</span>
             <h3>Always Current Curriculum</h3>
@@ -117,17 +203,17 @@
             </p>
           </div>
           
-          <div class="benefit-card" style="animation-delay: 0.3s;">
+          <div class="benefit-card">
             <div class="benefit-number">2</div>
             <span class="benefit-icon">💪</span>
             <h3>Sustainable Independence</h3>
             <p>
-              Revenue from services funds free education without relying on donations or compromising 
+              Revenue from partnerships funds free education without relying on donations or compromising 
               our principles. We control our own destiny.
             </p>
           </div>
           
-          <div class="benefit-card" style="animation-delay: 0.5s;">
+          <div class="benefit-card">
             <div class="benefit-number">3</div>
             <span class="benefit-icon">🌍</span>
             <h3>Double Impact</h3>
@@ -138,10 +224,12 @@
           </div>
         </div>
       </div>
-    </section>    <!-- Practice Section -->
+    </section>
+
+    <!-- Practice Section -->
     <PrinciplePractice
       title="The Engine in Action"
-      subtitle="How we integrate services and education"
+      subtitle="How we integrate partnerships and education"
       :list-icon="'⚙️'"
       :examples="practiceItems"
     />
@@ -152,9 +240,19 @@
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />
 
+    <!-- Transparency Note -->
+    <section class="transparency-section">
+      <div class="transparency-container">
+        <p>
+          Technology partnerships are listed for transparency about collaboration and learning opportunities, 
+          not as endorsements or paid promotion.
+        </p>
+      </div>
+    </section>
+
     <!-- Navigation Section -->
     <PrincipleNavigation 
-      currentSlug="tech-services"
+      currentSlug="technology-partnership"
     />
   </div>
 </template>
@@ -171,7 +269,7 @@ useSEO({
   structuredData: createArticleSchema(
     'Technology Partnerships Fueling Mission: Work That Gives Back | Principle #8',
     'How Skill-Wanderer uses technology partnerships to create a self-sustaining engine that funds education while ensuring relevance through real-world practice.',
-    'https://skill-wanderer.com/principles/tech-services'
+    'https://skill-wanderer.com/principles/technology-partnership'
   )
 })
 
@@ -192,7 +290,8 @@ const storyChapters = [
         text: "I've seen too many educational institutions become echo chambers, teaching outdated technologies with outdated methods. The professors haven't worked in industry for years, sometimes decades. The curriculum moves at glacial speed while the tech world races ahead. I knew we had to do something fundamentally different."
       }
     ]
-  },  {
+  },
+  {
     icon: "💡",
     title: "The Realization",
     content: [
@@ -217,7 +316,8 @@ const storyChapters = [
       {
         type: "text",
         text: "This approach creates a powerful, self-sustaining engine with a triple benefit:"
-      },      {
+      },
+      {
         type: "text",
         text: "1. It ensures <strong>our curriculum will never become outdated</strong>, because it's directly informed by the real-world problems we are solving every day."
       },
@@ -260,7 +360,7 @@ const practiceItems = [
   {
     title: "Financial Transparency",
     items: [
-      "Clear connection between services revenue and educational investment",
+      "Clear connection between partnership revenue and educational investment",
       "No hidden fees or profit margins",
       "No hidden profit motives - everything reinvested",
       "Sustainable model that doesn't depend on charity"
@@ -270,13 +370,199 @@ const practiceItems = [
 </script>
 
 <style scoped>
+/* Model Section */
+.model-section {
+  padding: 80px 20px;
+  background: var(--darker-bg);
+}
 
-/* CSS Custom Properties for dynamic colors - replaced with raw values in scoped styles */
+.model-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.model-container h2 {
+  font-size: 2.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 40px;
+}
+
+.model-intro {
+  margin-bottom: 50px;
+}
+
+.model-statement {
+  font-size: 1.2rem;
+  color: var(--light-text);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.model-description {
+  font-size: 1.1rem;
+  color: var(--light-text);
+  opacity: 0.9;
+  margin-top: 25px;
+  line-height: 1.8;
+}
+
+.model-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.model-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-orange);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.1);
+}
+
+.model-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.model-card h3 {
+  color: var(--primary-orange);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.model-card p {
+  color: var(--light-text);
+  opacity: 0.9;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* Alignment Section */
+.alignment-section {
+  padding: 80px 20px;
+  background: var(--dark-bg);
+}
+
+.alignment-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.alignment-container h2 {
+  font-size: 2.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 40px;
+}
+
+.alignment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.alignment-card {
+  background: rgba(255, 107, 53, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.alignment-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 107, 53, 0.1);
+}
+
+.alignment-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.alignment-card h3 {
+  color: var(--primary-orange);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.alignment-card p {
+  color: var(--light-text);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.alignment-benefit {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.alignment-benefit p {
+  font-size: 1.1rem;
+  color: var(--light-text);
+  opacity: 0.9;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Transparency Section */
+.transparency-section {
+  padding: 40px 20px;
+  background: var(--darker-bg);
+}
+
+.transparency-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.05));
+  border-left: 4px solid var(--primary-orange);
+  border-radius: 0 12px 12px 0;
+  padding: 25px 30px;
+  text-align: center;
+}
+
+.transparency-container p {
+  color: var(--light-text);
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
 
 /* Engine Visual Section */
 .engine-section {
   padding: 80px 20px;
-  background: var(--dark-bg);
+  background: var(--darker-bg);
   position: relative;
   overflow: hidden;
 }
@@ -285,6 +571,17 @@ const practiceItems = [
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+}
+
+.engine-container h2 {
+  font-size: 2.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 20px;
+}
+
+.engine-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
 }
 
 .engine-visual {
@@ -389,14 +686,14 @@ const practiceItems = [
 
 .engine-component.revenue {
   top: 50%;
-  right: 25%; /* Adjusted from 0 to bring it closer to the center */
+  right: 25%;
   transform: translateY(-50%);
   border-color: #4CAF50;
 }
 
 .engine-component.impact {
   top: 50%;
-  left: 25%; /* Adjusted from 0 to bring it closer to the center */
+  left: 25%;
   transform: translateY(-50%);
   border-color: var(--accent-yellow);
 }
@@ -415,7 +712,7 @@ const practiceItems = [
 /* Dual Role Section */
 .dual-role-section {
   padding: 80px 20px;
-  background: var(--darker-bg);
+  background: var(--dark-bg);
 }
 
 .dual-role-container {
@@ -438,8 +735,6 @@ const practiceItems = [
   text-align: center;
   border: 2px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
 }
 
 .role-card.practitioner {
@@ -514,6 +809,11 @@ const practiceItems = [
   gap: 20px;
 }
 
+.role-connector p {
+  font-weight: 600;
+  color: var(--primary-orange);
+}
+
 .connector-symbol {
   width: 60px;
   height: 60px;
@@ -533,10 +833,20 @@ const practiceItems = [
   to { transform: rotate(360deg); }
 }
 
+.role-conclusion {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Triple Benefit Section */
 .benefit-section {
   padding: 80px 20px;
-  background: var(--dark-bg);
+  background: var(--darker-bg);
 }
 
 .benefit-container {
@@ -558,8 +868,6 @@ const practiceItems = [
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
 }
 
 .benefit-card::before {
@@ -612,6 +920,14 @@ const practiceItems = [
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .model-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .alignment-grid {
+    grid-template-columns: 1fr;
+  }
+
   .engine-visual {
     height: 400px;
   }
@@ -648,19 +964,22 @@ const practiceItems = [
   .benefit-grid {
     grid-template-columns: 1fr;
   }
+
+  .section-header h2,
+  .model-container h2,
+  .alignment-container h2,
+  .engine-container h2 {
+    font-size: 2rem;
+  }
 }
 
-
-
-/* Animation keyframes */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+@media (max-width: 480px) {
+  .model-card {
+    padding: 20px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .transparency-container {
+    padding: 20px;
   }
 }
 </style>

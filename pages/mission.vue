@@ -23,7 +23,7 @@
           <div class="mission-flow">
             <div class="flow-step">
               <div class="step-icon">🚀</div>
-              <h3>Tech Services</h3>
+              <h3>Tech Partnerships</h3>
               <p>Real-world projects & consulting</p>
             </div>
             <div class="flow-arrow">→</div>
@@ -44,7 +44,7 @@
           <h2>Our Mission</h2>
           <p class="mission-description">
             We believe quality education shapes brighter futures. Our mission is to achieve this by integrating 
-            real-world insights from our technology services directly into highly practical e-learning. This 
+            real-world insights from our technology partnerships directly into highly practical e-learning. This 
             approach builds a sustainable revenue model, enabling us to operate with complete integrity and 
             reinvest all resources for lasting global impact.
           </p>
@@ -56,7 +56,7 @@
             </div>
             <div class="impact-stat">
               <span class="stat-icon">🌱</span>
-              <strong>Every technology service delivered</strong>
+              <strong>Every technology partnership delivered</strong>
               <p>plants seeds of knowledge for countless learners</p>
             </div>
           </div>
@@ -172,10 +172,10 @@
             </div>
           </div>
 
-          <!-- Tech Services -->
+          <!-- Tech Partnerships -->
           <div class="principle-card">
             <div class="principle-icon">⚙️</div>
-            <h3>Technology Services Fueling Mission</h3>
+            <h3>Technology Partnerships Fueling Mission</h3>
             <p>Leveraging diverse real-world experience to ensure curriculum relevance, upskill our team, and sustainably fund our platform.</p>
             <div class="principle-visual">
               <div class="service-cycle">
@@ -270,7 +270,7 @@
               <div class="step-number">1</div>
               <div class="step-content">
                 <h3>🏢 Client Projects</h3>
-                <p>Technology services generate sustainable revenue</p>
+                <p>Technology partnerships generate sustainable revenue</p>
               </div>
             </div>
             <div class="impact-step">

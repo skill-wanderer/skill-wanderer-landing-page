@@ -47,7 +47,7 @@
         <div class="feature-card">
           <div class="feature-icon">🌟</div>
           <h3>Real-World Integration</h3>
-          <p>Content directly informed by active technology services experience, ensuring what you learn is immediately applicable in the real world.</p>
+          <p>Content directly informed by active technology partnership experience, ensuring what you learn is immediately applicable in the real world.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🎓</div>

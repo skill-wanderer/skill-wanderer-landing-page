@@ -126,15 +126,15 @@
         <h2>Our Mission</h2>
         <div class="mission-statement">
           "We believe quality education shapes brighter futures. Our mission is to achieve this by integrating 
-          real-world insights from our technology services directly into highly practical e-learning. This approach 
+          real-world insights from our technology partnerships directly into highly practical e-learning. This approach 
           builds a sustainable revenue model, enabling us to operate with complete integrity—forgoing any benefit 
           that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every client 
-          project funded becomes free education shared. Every technology service delivered plants seeds of knowledge 
+          project funded becomes free education shared. Every technology partnership delivered plants seeds of knowledge 
           for countless learners."
         </div>
         <p class="mission-description">
           This isn't just a business model—it's a philosophy rooted in the universal law of karma. By creating a 
-          self-sustaining ecosystem where technology services revenue directly funds free education, where teaching 
+          self-sustaining ecosystem where technology partnership revenue directly funds free education, where teaching 
           enhances learning, and where every act of sharing multiplies into collective growth, we're building something 
           that transcends traditional education. What we give, we receive. What we teach, we master. What we share, 
           returns to us enriched. Every consulting hour becomes countless learning hours for students worldwide.

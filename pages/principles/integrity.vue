@@ -210,7 +210,7 @@ const practiceExamples: PracticeExample[] = [
   {
     title: 'Clear Revenue Boundaries',
     items: [
-      'Our technology services are completely separate from educational recommendations',
+      'Our technology partnerships are completely separate from educational recommendations',
       'We never recommend tools or platforms based on potential business partnerships',
       'Any future partnerships must benefit learners directly, not our revenue',
       'We will never allow financial incentives to influence our educational content']
