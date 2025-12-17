@@ -30,7 +30,7 @@
                 <option value="">Select a topic</option>
                 <option value="learning">Learning & Courses</option>
                 <option value="collaboration">Collaboration Opportunities</option>
-                <option value="tech-services">Technology Services</option>
+                <option value="tech-services">Technology Partnerships</option>
                 <option value="feedback">Platform Feedback</option>
                 <option value="other">Something Else</option>
               </select>
@@ -160,8 +160,8 @@ const faqs = ref([
     answer: "Absolutely! As we grow, we'll be looking for passionate educators, content creators, and developers who align with our principles. Reach out through the contact form to discuss collaboration opportunities."
   },
   {
-    question: "What technology services do you offer?",
-    answer: "I provide full-cycle development, solution architecture, cloud/DevOps consulting, and technical project management. Every real-world challenge solved feeds back into Skill-Wanderer's educational content. Services launch after August 2025."
+    question: "What technology partnerships do you offer?",
+    answer: "I provide full-cycle development, solution architecture, cloud/DevOps consulting, and technical project management. Every real-world challenge solved feeds back into Skill-Wanderer's educational content. Partnerships launch after August 2025."
   },
   {
     question: "Why \"Skill-Wanderer\"?",

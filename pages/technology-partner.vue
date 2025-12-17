@@ -177,6 +177,90 @@
       </div>
     </section>
 
+    <!-- How Partnership Model Works Section -->
+    <section class="partnership-model">
+      <div class="model-content">
+        <div class="section-header">
+          <h2>How Our Technology Partnership Model Works</h2>
+        </div>
+
+        <div class="model-intro">
+          <p class="model-statement">
+            Skill-Wanderer does not operate as a traditional outsourcing or staffing company.
+          </p>
+          <p class="model-statement">
+            We do not bill hourly or daily rates, nor do we treat teams as short-term, interchangeable resources.
+          </p>
+          <p class="model-description">
+            Instead, we collaborate with partners through long-term models that may include revenue sharing, 
+            outcome-based scaling, or building dedicated teams from our learner community.
+          </p>
+        </div>
+
+        <div class="model-details">
+          <div class="model-card">
+            <div class="model-icon">💫</div>
+            <h4>Mission-Support Fee</h4>
+            <p>
+              In some cases, a modest monthly mission-support fee is used to sustain the Skill-Wanderer ecosystem. 
+              This fee covers collaboration coordination, technical mentorship, and educational oversight that ensure 
+              learners grow while delivering real work.
+            </p>
+          </div>
+
+          <div class="model-card">
+            <div class="model-icon">🏗️</div>
+            <h4>Infrastructure Costs</h4>
+            <p>
+              All product infrastructure costs — including cloud services, tooling, operational systems, and internal 
+              engineering expenses — are borne directly by the partner.
+            </p>
+          </div>
+
+          <div class="model-card">
+            <div class="model-icon">🎓</div>
+            <h4>Learner Integration</h4>
+            <p>
+              Learners who join partner projects are not contracted out temporarily. They are hired into the partner's 
+              organization and often continue working there beyond the formal partnership.
+            </p>
+          </div>
+        </div>
+
+        <div class="model-alignment">
+          <h3>This structure aligns incentives:</h3>
+          <div class="alignment-points">
+            <div class="alignment-item">
+              <span class="alignment-icon">🤝</span>
+              <p><strong>Partners</strong> receive committed teams without outsourcing churn.</p>
+            </div>
+            <div class="alignment-item">
+              <span class="alignment-icon">🚀</span>
+              <p><strong>Learners</strong> gain stable employment and real career pathways.</p>
+            </div>
+            <div class="alignment-item">
+              <span class="alignment-icon">🌍</span>
+              <p><strong>Skill-Wanderer</strong> sustains free, learner-first education through real work, not advertising or sponsorship.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="model-benefit">
+          <p>
+            By separating mission sustainability from delivery infrastructure, partners can focus resources on product, 
+            marketing, and business growth — often enabling them to operate lean without requiring early external investment.
+          </p>
+        </div>
+
+        <div class="transparency-note">
+          <p>
+            Technology partnerships are listed for transparency about collaboration and learning opportunities, 
+            not as endorsements or paid promotion.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Partnership CTA -->
     <section class="coming-soon-cta">
       <div class="cta-content">
@@ -929,6 +1013,151 @@ onMounted(() => {
   transform: translateY(-2px);
 }
 
+/* Partnership Model Section */
+.partnership-model {
+  padding: 80px 20px;
+  background: var(--darker-bg);
+}
+
+.model-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.model-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.model-statement {
+  font-size: 1.2rem;
+  color: var(--light-text);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.model-description {
+  font-size: 1.1rem;
+  color: var(--light-text);
+  opacity: 0.9;
+  margin-top: 25px;
+  line-height: 1.8;
+}
+
+.model-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.model-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-orange);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.1);
+}
+
+.model-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.model-card h4 {
+  color: var(--primary-orange);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.model-card p {
+  color: var(--light-text);
+  opacity: 0.9;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.model-alignment {
+  background: rgba(255, 107, 53, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.model-alignment h3 {
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.alignment-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.alignment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+}
+
+.alignment-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.alignment-item p {
+  color: var(--light-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.alignment-item strong {
+  color: var(--primary-orange);
+}
+
+.model-benefit {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.model-benefit p {
+  font-size: 1.1rem;
+  color: var(--light-text);
+  opacity: 0.9;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.transparency-note {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 107, 53, 0.05));
+  border-left: 4px solid var(--primary-orange);
+  border-radius: 0 12px 12px 0;
+  padding: 25px 30px;
+  text-align: center;
+}
+
+.transparency-note p {
+  color: var(--light-text);
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0;
+  opacity: 0.95;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
@@ -1017,6 +1246,22 @@ onMounted(() => {
   .section-header h2 {
     font-size: 2rem;
   }
+
+  .model-details {
+    grid-template-columns: 1fr;
+  }
+
+  .alignment-points {
+    grid-template-columns: 1fr;
+  }
+
+  .model-alignment {
+    padding: 25px 20px;
+  }
+
+  .model-statement {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1030,6 +1275,14 @@ onMounted(() => {
 
   .partner-description p {
     font-size: 1rem;
+  }
+
+  .model-card {
+    padding: 20px;
+  }
+
+  .transparency-note {
+    padding: 20px;
   }
 }
 </style>

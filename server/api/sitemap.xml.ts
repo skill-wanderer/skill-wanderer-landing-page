@@ -92,7 +92,7 @@ export default defineEventHandler(async (event) => {
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skill-wanderer.com/principles/tech-services</loc>
+    <loc>https://skill-wanderer.com/principles/technology-partnership</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

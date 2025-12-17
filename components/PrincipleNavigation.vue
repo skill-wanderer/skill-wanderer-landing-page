@@ -56,7 +56,7 @@ const principles = [
   { slug: 'creativity', name: 'Creativity & Learning Through Failure' },
   { slug: 'relevant', name: 'Relevant & Impactful' },
   { slug: 'pathways', name: 'Pathways for Our Learners' },
-  { slug: 'tech-services', name: 'Technology Services Fueling Mission' },
+  { slug: 'technology-partnership', name: 'Technology Partnerships Fueling Mission' },
   { slug: 'resourceful', name: 'Resourceful Curation' },
   { slug: 'community', name: 'Collaborative Community' },
   { slug: 'equitable-access', name: 'Premium Services with Equity' },

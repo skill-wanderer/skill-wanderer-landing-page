@@ -92,11 +92,11 @@
           </ul>
         </div>
 
-        <!-- Technology Services -->
+        <!-- Technology Partnerships -->
         <div class="terms-section">
-          <h2>Technology Services</h2>
+          <h2>Technology Partnerships</h2>
           <p>
-            When providing technology consulting or development services:
+            When providing technology consulting or development partnerships:
           </p>
           <ul>
             <li>Specific terms will be outlined in separate service agreements</li>

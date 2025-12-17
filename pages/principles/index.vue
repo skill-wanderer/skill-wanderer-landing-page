@@ -121,16 +121,16 @@
           </a>
 
           <!-- Principle 8 -->
-          <a href="/principles/tech-services" class="principle-card" style="animation-delay: 0.8s;">
+          <a href="/principles/technology-partnership" class="principle-card" style="animation-delay: 0.8s;">
             <div class="principle-header">
               <div class="principle-number">8</div>
               <div class="principle-title">
-                <h3>Technology Services Fueling Mission</h3>
+                <h3>Technology Partnerships Fueling Mission</h3>
                 <p class="principle-tagline">Work That Gives Back</p>
               </div>
             </div>
             <p class="principle-description">
-              Leveraging real-world technology services to fund free education and keep content relevant.
+              Leveraging real-world technology partnerships to fund free education and keep content relevant.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -202,7 +202,7 @@
     <section class="mission">
       <div class="mission-content">
         <div class="mission-quote">
-We believe quality education shapes brighter futures. Our mission is to achieve this by integrating real-world insights from our technology services directly into highly practical e-learning. This approach builds a sustainable revenue model, enabling us to operate with complete integrity—forgoing any benefit that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every client project funded becomes free education shared. Every technology service delivered plants seeds of knowledge for countless learners.
+We believe quality education shapes brighter futures. Our mission is to achieve this by integrating real-world insights from our technology partnerships directly into highly practical e-learning. This approach builds a sustainable revenue model, enabling us to operate with complete integrity—forgoing any benefit that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every client project funded becomes free education shared. Every technology partnership delivered plants seeds of knowledge for countless learners.
         </div>
       </div>
     </section>  </div>
