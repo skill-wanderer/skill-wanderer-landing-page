@@ -163,7 +163,7 @@
           Partner with us to realize your business ideas, access global learning talent, or create social impact. 
           Every partnership directly funds our mission to provide free education worldwide.
         </p>
-        <NuxtLink to="/technology-partner" class="btn btn-secondary">Learn More</NuxtLink>
+        <NuxtLink to="/partnerships/become-a-partner" class="btn btn-secondary">Learn More</NuxtLink>
       </div>
     </section>
   </div>
