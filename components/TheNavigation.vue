@@ -54,7 +54,34 @@
         </div>
         
         <NuxtLink to="/learning-path" @click="closeMobileMenu">Learning Path</NuxtLink>
-        <NuxtLink to="/technology-partner" @click="closeMobileMenu">Technology Partner</NuxtLink>
+
+        <!-- Partnerships Dropdown -->
+        <div class="dropdown" @mouseenter="isPartnershipsDropdownOpen = true" @mouseleave="isPartnershipsDropdownOpen = false">
+          <span class="dropdown-trigger" :class="{ active: isPartnershipsDropdownOpen }">
+            Partnerships
+            <svg class="dropdown-arrow" :class="{ rotated: isPartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </span>
+          <div class="dropdown-menu" :class="{ open: isPartnershipsDropdownOpen }">
+            <NuxtLink to="/partnerships/become-a-partner" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Become a Partner</NuxtLink>
+            <NuxtLink to="/partnerships/our-partners" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Our Partners</NuxtLink>
+          </div>
+        </div>
+
+        <!-- Mobile Partnerships submenu -->
+        <div class="mobile-dropdown">
+          <button class="mobile-dropdown-trigger" @click="toggleMobilePartnershipsDropdown" :class="{ active: isMobilePartnershipsDropdownOpen }">
+            Partnerships
+            <svg class="dropdown-arrow" :class="{ rotated: isMobilePartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-dropdown-menu" :class="{ open: isMobilePartnershipsDropdownOpen }">
+            <NuxtLink to="/partnerships/become-a-partner" @click="closeMobileMenu">Become a Partner</NuxtLink>
+            <NuxtLink to="/partnerships/our-partners" @click="closeMobileMenu">Our Partners</NuxtLink>
+          </div>
+        </div>
 
         <!-- Platform Ecosystem Dropdown -->
         <div class="dropdown" @mouseenter="isEcosystemDropdownOpen = true" @mouseleave="isEcosystemDropdownOpen = false">
@@ -99,8 +126,10 @@ import { onMounted, onUnmounted, ref } from 'vue'
 
 const isMobileMenuOpen = ref(false)
 const isAboutDropdownOpen = ref(false)
+const isPartnershipsDropdownOpen = ref(false)
 const isEcosystemDropdownOpen = ref(false)
 const isMobileAboutDropdownOpen = ref(false)
+const isMobilePartnershipsDropdownOpen = ref(false)
 const isMobileEcosystemDropdownOpen = ref(false)
 
 const toggleMobileMenu = () => {
@@ -110,13 +139,19 @@ const toggleMobileMenu = () => {
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false
   isMobileAboutDropdownOpen.value = false
+  isMobilePartnershipsDropdownOpen.value = false
   isMobileEcosystemDropdownOpen.value = false
   isAboutDropdownOpen.value = false
+  isPartnershipsDropdownOpen.value = false
   isEcosystemDropdownOpen.value = false
 }
 
 const toggleMobileAboutDropdown = () => {
   isMobileAboutDropdownOpen.value = !isMobileAboutDropdownOpen.value
+}
+
+const toggleMobilePartnershipsDropdown = () => {
+  isMobilePartnershipsDropdownOpen.value = !isMobilePartnershipsDropdownOpen.value
 }
 
 const toggleMobileEcosystemDropdown = () => {
