@@ -4,10 +4,10 @@
     <section class="hero">
       <h1>Our Technology Partners</h1>
       <p>
-        We collaborate with partners to deliver real solutions, build real pathways, and sustain free education through
-        real work.
+        We don't do outsourcing—we do true partnership. Through our Success Sharing Model, we share risks and rewards
+        with our partners, requiring less upfront cost while our community delivers real work.
       </p>
-      <span class="launch-badge">Impact Through Partnership</span>
+      <NuxtLink to="/partnerships/success-sharing-model" class="launch-badge-link">Success Sharing Model</NuxtLink>
     </section>
 
     <!-- Featured Partner: MindyCore (preserved detail) -->
@@ -82,12 +82,13 @@
     <!-- CTA -->
     <section class="cta">
       <div class="cta-content">
-        <h2>Want to Become a Partner?</h2>
+        <h2>Ready for a Real Partnership?</h2>
         <p>
-          If your organization wants real delivery + real impact, we’d love to explore a partnership.
+          Lower upfront costs. Shared success. Community-powered talent. Let's build something meaningful together.
         </p>
         <div class="cta-buttons">
-          <NuxtLink to="/partnerships/become-a-partner" class="btn btn-primary">Become a Tech Partner</NuxtLink>
+          <NuxtLink to="/partnerships/success-sharing-model" class="btn btn-primary">Learn About Success Sharing</NuxtLink>
+          <NuxtLink to="/partnerships/become-a-partner" class="btn btn-secondary">Become a Partner</NuxtLink>
         </div>
       </div>
     </section>
@@ -98,7 +99,7 @@
 useSEO({
   title: 'Our Technology Partners | Skill-Wanderer',
   description:
-    'Meet Skill-Wanderer technology partners and see the impact: MindyCore projects, community support, and free tech training that sustains learner-first education.',
+    'See our Success Sharing Model in action. We partner differently—shared risks, lower upfront costs, and community talent delivering real results.',
   image: '/cropped-skill-wanderer-logo-768x256.webp'
 })
 </script>
@@ -152,6 +153,26 @@ useSEO({
   display: inline-block;
   position: relative;
   z-index: 1;
+}
+
+.launch-badge-link {
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.launch-badge-link:hover {
+  background: linear-gradient(135deg, var(--deep-orange), var(--primary-orange));
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
 }
 
 .partner-section {

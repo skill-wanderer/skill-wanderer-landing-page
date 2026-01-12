@@ -176,7 +176,7 @@
           <div class="principle-card">
             <div class="principle-icon">⚙️</div>
             <h3>Technology Partnerships Fueling Mission</h3>
-            <p>Leveraging diverse real-world experience to ensure curriculum relevance, upskill our team, and sustainably fund our platform.</p>
+            <p>We're not outsourcing—we're true partners. Through our Success Sharing Model, we share risks and success with you, requiring less upfront cost while our community delivers real work.</p>
             <div class="principle-visual">
               <div class="service-cycle">
                 <div class="service-node">Consulting</div>

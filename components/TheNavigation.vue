@@ -53,7 +53,33 @@
           </div>
         </div>
         
-        <NuxtLink to="/learning-path" @click="closeMobileMenu">Learning Path</NuxtLink>
+        <!-- Learning Dropdown -->
+        <div class="dropdown" @mouseenter="isLearningPathDropdownOpen = true" @mouseleave="isLearningPathDropdownOpen = false">
+          <span class="dropdown-trigger" :class="{ active: isLearningPathDropdownOpen }">
+            Learning
+            <svg class="dropdown-arrow" :class="{ rotated: isLearningPathDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </span>
+          <div class="dropdown-menu" :class="{ open: isLearningPathDropdownOpen }">
+            <NuxtLink to="/learning-path" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">All Learning Paths</NuxtLink>
+            <NuxtLink to="/learners" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">Our Learners</NuxtLink>
+          </div>
+        </div>
+
+        <!-- Mobile Learning submenu -->
+        <div class="mobile-dropdown">
+          <button class="mobile-dropdown-trigger" @click="toggleMobileLearningPathDropdown" :class="{ active: isMobileLearningPathDropdownOpen }">
+            Learning
+            <svg class="dropdown-arrow" :class="{ rotated: isMobileLearningPathDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-dropdown-menu" :class="{ open: isMobileLearningPathDropdownOpen }">
+            <NuxtLink to="/learning-path" @click="closeMobileMenu">All Learning Paths</NuxtLink>
+            <NuxtLink to="/learners" @click="closeMobileMenu">Our Learners</NuxtLink>
+          </div>
+        </div>
 
         <!-- Partnerships Dropdown -->
         <div class="dropdown" @mouseenter="isPartnershipsDropdownOpen = true" @mouseleave="isPartnershipsDropdownOpen = false">
@@ -64,6 +90,7 @@
             </svg>
           </span>
           <div class="dropdown-menu" :class="{ open: isPartnershipsDropdownOpen }">
+            <NuxtLink to="/partnerships/success-sharing-model" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Success Sharing Model</NuxtLink>
             <NuxtLink to="/partnerships/become-a-partner" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Become a Partner</NuxtLink>
             <NuxtLink to="/partnerships/our-partners" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Our Partners</NuxtLink>
           </div>
@@ -78,6 +105,7 @@
             </svg>
           </button>
           <div class="mobile-dropdown-menu" :class="{ open: isMobilePartnershipsDropdownOpen }">
+            <NuxtLink to="/partnerships/success-sharing-model" @click="closeMobileMenu">Success Sharing Model</NuxtLink>
             <NuxtLink to="/partnerships/become-a-partner" @click="closeMobileMenu">Become a Partner</NuxtLink>
             <NuxtLink to="/partnerships/our-partners" @click="closeMobileMenu">Our Partners</NuxtLink>
           </div>
@@ -126,9 +154,11 @@ import { onMounted, onUnmounted, ref } from 'vue'
 
 const isMobileMenuOpen = ref(false)
 const isAboutDropdownOpen = ref(false)
+const isLearningPathDropdownOpen = ref(false)
 const isPartnershipsDropdownOpen = ref(false)
 const isEcosystemDropdownOpen = ref(false)
 const isMobileAboutDropdownOpen = ref(false)
+const isMobileLearningPathDropdownOpen = ref(false)
 const isMobilePartnershipsDropdownOpen = ref(false)
 const isMobileEcosystemDropdownOpen = ref(false)
 
@@ -139,15 +169,21 @@ const toggleMobileMenu = () => {
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false
   isMobileAboutDropdownOpen.value = false
+  isMobileLearningPathDropdownOpen.value = false
   isMobilePartnershipsDropdownOpen.value = false
   isMobileEcosystemDropdownOpen.value = false
   isAboutDropdownOpen.value = false
+  isLearningPathDropdownOpen.value = false
   isPartnershipsDropdownOpen.value = false
   isEcosystemDropdownOpen.value = false
 }
 
 const toggleMobileAboutDropdown = () => {
   isMobileAboutDropdownOpen.value = !isMobileAboutDropdownOpen.value
+}
+
+const toggleMobileLearningPathDropdown = () => {
+  isMobileLearningPathDropdownOpen.value = !isMobileLearningPathDropdownOpen.value
 }
 
 const toggleMobilePartnershipsDropdown = () => {
@@ -340,6 +376,15 @@ onMounted(() => {
 
 .dropdown-menu a::after {
   display: none;
+}
+
+.dropdown-menu a.view-all-link,
+.mobile-dropdown-menu a.view-all-link {
+  border-bottom: 1px solid rgba(255, 107, 53, 0.2);
+  color: #FF6B35;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding-bottom: 12px;
 }
 
 /* Hide mobile dropdown on desktop */

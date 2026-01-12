@@ -4,96 +4,99 @@
     <section class="hero">
       <h1>Become a Technology Partner</h1>
       <p>
-        Partner with us to ship meaningful technology, access global learning talent, and create real social impact—while
-        directly funding free, practical education.
+        We're not outsourcing—we're your technology partner. We share both the success and the risks with you,
+        requiring less upfront cost while our community of learners helps bring your vision to life.
       </p>
-      <span class="launch-badge">Your Success Funds Free Education</span>
+      <NuxtLink to="/partnerships/success-sharing-model" class="launch-badge-link">Shared Success. Shared Risk. Real Partnership.</NuxtLink>
     </section>
 
     <!-- Why Partner Section -->
     <section class="philosophy">
       <div class="philosophy-content">
-        <h2>Why Partner With Us?</h2>
+        <h2>Why We're Different From Outsourcing</h2>
         <p class="philosophy-description">
-          Whether you have a business problem to solve, need access to motivated talent, want to train your community, or
-          aim to create measurable social impact—our partnership model connects your vision with a learner-first ecosystem.
+          Traditional outsourcing asks you to pay upfront for work without shared accountability. We do it differently—
+          we become your true technology partner. We invest alongside you, share in your success, and take on the risks together.
           <strong style="color: var(--primary-orange);">
-            Every partnership directly sustains our mission to provide free education globally.
+            Lower upfront costs. Revenue sharing when you succeed. Genuine partnership.
           </strong>
         </p>
 
         <div class="karma-cycle">
           <div class="cycle-item">
-            <div class="cycle-icon">💡</div>
-            <h3>Solve Real Problems</h3>
-            <p>Turn your needs into clear outcomes</p>
+            <div class="cycle-icon">🤝</div>
+            <h3>Shared Risk</h3>
+            <p>We invest in your success together</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon">🎓</div>
-            <h3>Grow Talent</h3>
-            <p>Build pathways and real experience</p>
+            <div class="cycle-icon">💰</div>
+            <h3>Lower Upfront Costs</h3>
+            <p>Pay less now, share success later</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon">🌍</div>
-            <h3>Fund Free Education</h3>
-            <p>Reinvest into global learning access</p>
+            <div class="cycle-icon">🌱</div>
+            <h3>Mutual Growth</h3>
+            <p>Your success funds free education</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Opportunity Pillars -->
+    <!-- Partnership Benefits -->
     <section class="services-preview">
       <div class="services-content">
         <div class="section-header">
-          <h2>Partnership Opportunities</h2>
-          <p>Four ways we can build a win-win-win together</p>
+          <h2>The Partnership Advantage</h2>
+          <p>Why shared success beats traditional outsourcing</p>
         </div>
 
         <div class="partner-features">
           <div class="feature-card">
-            <div class="feature-icon">🚀</div>
-            <h4>Realize Your Business Idea</h4>
+            <div class="feature-icon">💸</div>
+            <h4>Reduced Upfront Investment</h4>
             <p>
-              Bring a concept to life with a partner who cares about outcomes—delivery that also creates learning
-              opportunities.
+              Unlike traditional outsourcing, we don't ask for large upfront payments. Start building with minimal
+              initial cost while we share the journey with you.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h4>Success Sharing Model</h4>
+            <p>
+              We earn when you succeed. Our revenue comes from sharing in your success, aligning our incentives
+              with your business outcomes.
             </p>
           </div>
 
           <div class="feature-card">
             <div class="feature-icon">🌐</div>
-            <h4>Access Global Learning Talent</h4>
+            <h4>Community-Powered Talent</h4>
             <p>
-              Collaborate with motivated learners worldwide who want real projects, real feedback, and real growth.
+              Work gets done by motivated learners from our global community—people eager to prove themselves
+              on real projects with real stakes.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">👥</div>
-            <h4>Train Your Community</h4>
+            <div class="feature-icon">⚖️</div>
+            <h4>True Risk Partnership</h4>
             <p>
-              Upskill your team or community using practical pathways designed to turn curiosity into capability.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🌱</div>
-            <h4>Make Social Impact</h4>
-            <p>
-              Build technology and programs that expand access to education—measurable impact, not marketing.
+              We share both success and setbacks. When you face challenges, we're right there with you—because
+              that's what real partners do.
             </p>
           </div>
         </div>
 
         <div class="impact-statement">
           <div class="impact-icon">💫</div>
-          <h3>The Partnership Impact Model</h3>
+          <h3>The True Partnership Difference</h3>
           <p>
-            Every partnership is a win-win-win: <strong>you get real problems solved</strong>, <strong>learners gain
-            real-world experience</strong>, and <strong>our non-profit mission stays funded</strong>—keeping education free
-            and practical for those who need it most.
+            This isn't outsourcing with a different name. We invest our time, expertise, and community alongside your vision.
+            <strong>You pay less upfront</strong>, <strong>we share in your success</strong>, and <strong>our learners gain
+            real-world experience</strong>—creating a model where everyone wins when you win.
           </p>
         </div>
       </div>
@@ -144,19 +147,19 @@
         </div>
 
         <div class="model-alignment">
-          <h3>This structure aligns incentives:</h3>
+          <h3>Why This Works Better Than Outsourcing:</h3>
           <div class="alignment-points">
             <div class="alignment-item">
-              <span class="alignment-icon">🤝</span>
-              <p><strong>Partners</strong> get committed collaboration without churn.</p>
+              <span class="alignment-icon">💸</span>
+              <p><strong>For You:</strong> Lower risk with reduced upfront costs—we succeed together or not at all.</p>
             </div>
             <div class="alignment-item">
-              <span class="alignment-icon">🚀</span>
-              <p><strong>Learners</strong> gain real pathways, not just practice.</p>
+              <span class="alignment-icon">🎯</span>
+              <p><strong>For Us:</strong> We're motivated by your success, not just billing hours.</p>
             </div>
             <div class="alignment-item">
-              <span class="alignment-icon">🌍</span>
-              <p><strong>Skill-Wanderer</strong> sustains free education through real work.</p>
+              <span class="alignment-icon">🌟</span>
+              <p><strong>For Learners:</strong> Real projects with real stakes create real skills.</p>
             </div>
           </div>
         </div>
@@ -173,14 +176,15 @@
     <!-- CTA -->
     <section class="coming-soon-cta">
       <div class="cta-content">
-        <h2>Ready to Partner With Us?</h2>
+        <h2>Ready for a Real Partnership?</h2>
         <p>
-          Let’s build something meaningful. Solve real problems while sustaining free education.
+          Forget the outsourcing playbook. Let's build together—with shared risk, shared success, and a community
+          ready to help you win.
         </p>
 
         <div class="cta-buttons">
-          <NuxtLink to="/contact" class="btn btn-primary">Become a Partner</NuxtLink>
-          <NuxtLink to="/partnerships/our-partners" class="btn btn-secondary">View our Impact &amp; Partners</NuxtLink>
+          <NuxtLink to="/contact" class="btn btn-primary">Start the Conversation</NuxtLink>
+          <NuxtLink to="/partnerships/success-sharing-model" class="btn btn-secondary">Learn About Success Sharing</NuxtLink>
         </div>
       </div>
     </section>
@@ -191,7 +195,7 @@
 useSEO({
   title: 'Become a Technology Partner | Skill-Wanderer',
   description:
-    'Partner with Skill-Wanderer to solve real problems, access global learning talent, train communities, and create social impact—while funding free education.',
+    'Not outsourcing—true partnership. We share success and risks with you, require less upfront cost, and deliver through our global community of learners.',
   image: '/cropped-skill-wanderer-logo-768x256.webp'
 })
 </script>
@@ -245,6 +249,26 @@ useSEO({
   display: inline-block;
   position: relative;
   z-index: 1;
+}
+
+.launch-badge-link {
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.launch-badge-link:hover {
+  background: linear-gradient(135deg, var(--deep-orange), var(--primary-orange));
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
 }
 
 .philosophy {
