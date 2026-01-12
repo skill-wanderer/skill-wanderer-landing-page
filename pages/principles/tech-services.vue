@@ -55,6 +55,49 @@
       </div>
     </section>
 
+    <!-- Success Sharing Model Section -->
+    <section class="dual-role-section">
+      <div class="dual-role-container">
+        <div style="text-align: center; margin-bottom: 50px;">
+          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">The Success Sharing Model</h2>
+          <p style="font-size: 1.2rem; opacity: 0.9;">How we partner differently than outsourcing</p>
+        </div>
+        <div class="role-comparison">
+          <div class="role-card practitioner" style="animation-delay: 0.1s;">
+            <div class="role-icon">💸</div>
+            <h3>Lower Upfront Costs</h3>
+            <ul class="role-benefits">
+              <li>No large upfront payments</li>
+              <li>Minimal initial investment</li>
+              <li>Share the journey together</li>
+              <li>Risk shared, not transferred</li>
+            </ul>
+          </div>
+          
+          <div class="role-connector">
+            <div class="connector-symbol">🤝</div>
+            <p style="font-weight: 600; color: var(--primary-orange);">True Partnership</p>
+          </div>
+          
+          <div class="role-card educator" style="animation-delay: 0.3s;">
+            <div class="role-icon">📈</div>
+            <h3>Success Sharing</h3>
+            <ul class="role-benefits">
+              <li>We earn when you succeed</li>
+              <li>Aligned incentives</li>
+              <li>Invested in outcomes</li>
+              <li>Community talent delivers</li>
+            </ul>
+          </div>
+        </div>
+        
+        <p style="text-align: center; margin-top: 40px; font-size: 1.1rem; opacity: 0.9; max-width: 800px; margin-left: auto; margin-right: auto;">
+          This isn't outsourcing with a different name. We put skin in the game alongside you—sharing both 
+          success and setbacks. Our global community of learners delivers real work while gaining real experience.
+        </p>
+      </div>
+    </section>
+
     <!-- Dual Role Section -->
     <section class="dual-role-section">
       <div class="dual-role-container">

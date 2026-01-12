@@ -124,46 +124,16 @@
       </div>
     </section>
 
-    <!-- Platform Launch Section -->
-    <section class="coming-soon">
-      <div class="section-header">
-        <h2>Big Picture Overview of Computer Science Now Available</h2>
-        <p>Join us on this journey to make quality tech education accessible to everyone</p>
-      </div>
-      <div class="countdown">
-        <div class="countdown-item">
-          <span class="countdown-number">2</span>
-          <span class="countdown-label">Parts</span>
-        </div>
-      </div>
-      <p style="margin-top: 40px; opacity: 0.8;">
-        Our Big Picture Overview of Computer Science course has been split into two comprehensive parts. Students learn both fundamental concepts and historical context throughout their journey.
-      </p>
-      <div class="hero-cta" style="margin-top: 30px; gap: 20px;">
-        <a href="https://dojo.skill-wanderer.com/course/view.php?id=2" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          Part 1: Foundations of Computing
-        </a>
-        <a href="https://dojo.skill-wanderer.com/course/view.php?id=4" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          Part 2: Internet Era & Beyond
-        </a>
-        <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-          View All Courses
-        </a>
-      </div>
-      <p style="margin-top: 20px; opacity: 0.7; font-size: 0.9rem;">
-        See <a href="https://dojo.skill-wanderer.com/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-orange); text-decoration: none;">dojo.skill-wanderer.com</a> for other courses in development
-      </p>
-    </section>
 
     <!-- Tech Services Brief Section -->
     <section class="tech-services">
       <div class="tech-services-content">
-        <h3>Become a Technology Partner</h3>
+        <h3>The Success Sharing Model</h3>
         <p>
-          Partner with us to realize your business ideas, access global learning talent, or create social impact. 
-          Every partnership directly funds our mission to provide free education worldwide.
+          We don't do outsourcing. We become your true technology partner—sharing both the success and the risks with you.
+          Lower upfront costs. Revenue when you win. Community-powered talent.
         </p>
-        <NuxtLink to="/partnerships/become-a-partner" class="btn btn-secondary">Learn More</NuxtLink>
+        <NuxtLink to="/partnerships/success-sharing-model" class="btn btn-secondary">Learn More</NuxtLink>
       </div>
     </section>
   </div>

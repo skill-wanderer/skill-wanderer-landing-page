@@ -17,47 +17,46 @@
     <!-- How Our Partnership Model Works Section -->
     <section class="model-section">
       <div class="model-container">
-        <h2>How Our Technology Partnership Model Works</h2>
+        <h2>How Our Success Sharing Model Works</h2>
         
         <div class="model-intro">
           <p class="model-statement">
-            Skill-Wanderer does not operate as a traditional outsourcing or staffing company.
+            We're not outsourcing—we're your true technology partner.
           </p>
           <p class="model-statement">
-            We do not bill hourly or daily rates, nor do we treat teams as short-term, interchangeable resources.
+            We share both the success and the risks with you, requiring less upfront cost while our community of learners helps bring your vision to life.
           </p>
           <p class="model-description">
-            Instead, we collaborate with partners through long-term models that may include revenue sharing, 
-            outcome-based scaling, or building dedicated teams from our learner community.
+            Our success sharing model means we earn when you succeed. We invest alongside you, take on risks together, 
+            and build dedicated teams from our global learning community.
           </p>
         </div>
 
         <div class="model-cards">
           <div class="model-card">
-            <div class="model-icon">💫</div>
-            <h3>Mission-Support Fee</h3>
+            <div class="model-icon">�</div>
+            <h3>Lower Upfront Investment</h3>
             <p>
-              In some cases, a modest monthly mission-support fee is used to sustain the Skill-Wanderer ecosystem. 
-              This fee covers collaboration coordination, technical mentorship, and educational oversight that ensure 
-              learners grow while delivering real work.
+              Unlike traditional outsourcing, we don't ask for large upfront payments. Start building with minimal 
+              initial cost because we believe in earning through shared success—not billing for hours.
             </p>
           </div>
 
           <div class="model-card">
-            <div class="model-icon">🏗️</div>
-            <h3>Infrastructure Costs</h3>
+            <div class="model-icon">📈</div>
+            <h3>Success Sharing Model</h3>
             <p>
-              All product infrastructure costs — including cloud services, tooling, operational systems, and internal 
-              engineering expenses — are borne directly by the partner.
+              Our earnings come from sharing in your success. This keeps us genuinely invested in your outcomes, 
+              not just completing tasks. When you win, we win.
             </p>
           </div>
 
           <div class="model-card">
-            <div class="model-icon">🎓</div>
-            <h3>Learner Integration</h3>
+            <div class="model-icon">👥</div>
+            <h3>Community-Powered Talent</h3>
             <p>
-              Learners who join partner projects are not contracted out temporarily. They are hired into the partner's 
-              organization and often continue working there beyond the formal partnership.
+              Work gets done by talented learners from our global community—people eager to prove themselves 
+              on real projects while gaining invaluable experience.
             </p>
           </div>
         </div>
@@ -67,30 +66,30 @@
     <!-- Aligned Incentives Section -->
     <section class="alignment-section">
       <div class="alignment-container">
-        <h2>This Structure Aligns Incentives</h2>
+        <h2>Why Success Sharing Works Better Than Outsourcing</h2>
         
         <div class="alignment-grid">
           <div class="alignment-card">
-            <span class="alignment-icon">🤝</span>
-            <h3>Partners</h3>
-            <p>Receive committed teams without outsourcing churn.</p>
+            <span class="alignment-icon">💸</span>
+            <h3>For You</h3>
+            <p>Lower risk with reduced upfront costs—we succeed together or not at all.</p>
           </div>
           <div class="alignment-card">
-            <span class="alignment-icon">🚀</span>
-            <h3>Learners</h3>
-            <p>Gain stable employment and real career pathways.</p>
+            <span class="alignment-icon">🎯</span>
+            <h3>For Us</h3>
+            <p>We're motivated by your success, not just billing hours. Real outcomes drive our revenue.</p>
           </div>
           <div class="alignment-card">
-            <span class="alignment-icon">🌍</span>
-            <h3>Skill-Wanderer</h3>
-            <p>Sustains free, learner-first education through real work, not advertising or sponsorship.</p>
+            <span class="alignment-icon">🌟</span>
+            <h3>For Learners</h3>
+            <p>Real projects with real stakes create real skills and genuine career pathways.</p>
           </div>
         </div>
 
         <div class="alignment-benefit">
           <p>
-            By separating mission sustainability from delivery infrastructure, partners can focus resources on product, 
-            marketing, and business growth — often enabling them to operate lean without requiring early external investment.
+            This isn't outsourcing with a different name. We put skin in the game alongside you, sharing both 
+            success and setbacks—because that's what real partners do.
           </p>
         </div>
       </div>
