@@ -30,7 +30,7 @@
                 <option value="">Select a topic</option>
                 <option value="learning">Learning & Courses</option>
                 <option value="collaboration">Collaboration Opportunities</option>
-                <option value="tech-services">Technology Partnerships</option>
+                <option value="tech-services">Expertise & Impact</option>
                 <option value="feedback">Platform Feedback</option>
                 <option value="other">Something Else</option>
               </select>
@@ -153,15 +153,15 @@ const faqs = ref([
   },
   {
     question: "Will the courses really be free?",
-    answer: "Yes! All core course content created or curated by us will be 100% free. Optional premium services like personalized mentorship may be offered later, with equitable access provisions for those who need it."
+    answer: "Yes! All core course content created or curated by us will be 100% free. We operate as a social enterprise—learners receive the same quality human mentors, start-up support, and pre-learning advisory. Those who benefit give back through Social Impact Tokens: paying forward, contributing to the platform, or strengthening the community."
   },
   {
     question: "Can I contribute to Skill-Wanderer?",
     answer: "Absolutely! As we grow, we'll be looking for passionate educators, content creators, and developers who align with our principles. Reach out through the contact form to discuss collaboration opportunities."
   },
   {
-    question: "What technology partnerships do you offer?",
-    answer: "I provide full-cycle development, solution architecture, cloud/DevOps consulting, and technical project management. Every real-world challenge solved feeds back into Skill-Wanderer's educational content. Partnerships launch after August 2025."
+    question: "What expertise and impact services do you offer?",
+    answer: "We provide full-cycle development, solution architecture, cloud/DevOps consulting, and technical project management through our success sharing model. Every real-world challenge solved feeds back into Skill-Wanderer's free educational content and funds human mentors for our learners."
   },
   {
     question: "Why \"Skill-Wanderer\"?",

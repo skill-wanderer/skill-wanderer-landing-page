@@ -34,7 +34,7 @@
 
         <div class="model-cards">
           <div class="model-card">
-            <div class="model-icon">�</div>
+            <div class="model-icon">💸</div>
             <h3>Lower Upfront Investment</h3>
             <p>
               Unlike traditional outsourcing, we don't ask for large upfront payments. Start building with minimal 

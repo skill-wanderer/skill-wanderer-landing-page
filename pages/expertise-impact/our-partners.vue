@@ -7,7 +7,7 @@
         We don't do outsourcing—we do true partnership. Through our Success Sharing Model, we share risks and rewards
         with our partners, requiring less upfront cost while our community delivers real work.
       </p>
-      <NuxtLink to="/partnerships/success-sharing-model" class="launch-badge-link">Success Sharing Model</NuxtLink>
+      <NuxtLink to="/expertise-impact/success-sharing-model" class="launch-badge-link">Success Sharing Model</NuxtLink>
     </section>
 
     <!-- Featured Partner: MindyCore (preserved detail) -->
@@ -36,6 +36,14 @@
               design digital solutions that inspire, educate, and empower—serving schools, families, lifelong learners,
               and notably, NGOs dedicated to social good.
             </p>
+            <div class="role-highlight">
+              <span class="role-icon">🤝</span>
+              <p class="mindycore-text">
+                <strong class="mindycore-highlight">Skill-Wanderer's founder, Quan Nguyen, serves as MindyCore's technology partner and start-up advisor</strong>—handling
+                all of the technical work including architecture, development, DevOps, and technical strategy. This hands-on
+                partnership is a living example of our Expertise & Impact model in action.
+              </p>
+            </div>
           </div>
 
           <div class="partner-achievements">
@@ -67,14 +75,7 @@
             </div>
           </div>
 
-          <div class="partner-cta">
-            <a href="https://mindycore.com/about/" target="_blank" rel="noopener noreferrer" class="btn btn-mindycore-primary">
-              Learn About MindyCore
-            </a>
-            <NuxtLink to="/mindycore/free-tech-training" class="btn btn-mindycore-secondary">
-              MindyCore Tech Training Program
-            </NuxtLink>
-          </div>
+
         </div>
       </div>
     </section>
@@ -87,8 +88,8 @@
           Lower upfront costs. Shared success. Community-powered talent. Let's build something meaningful together.
         </p>
         <div class="cta-buttons">
-          <NuxtLink to="/partnerships/success-sharing-model" class="btn btn-primary">Learn About Success Sharing</NuxtLink>
-          <NuxtLink to="/partnerships/become-a-partner" class="btn btn-secondary">Become a Partner</NuxtLink>
+          <NuxtLink to="/expertise-impact/success-sharing-model" class="btn btn-primary">Learn About Success Sharing</NuxtLink>
+          <NuxtLink to="/expertise-impact/become-a-partner" class="btn btn-secondary">Become a Partner</NuxtLink>
         </div>
       </div>
     </section>
@@ -288,6 +289,32 @@ useSEO({
   opacity: 0.95;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.role-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 193, 7, 0.05));
+  border: 1px solid rgba(255, 107, 53, 0.25);
+  border-radius: 16px;
+  padding: 25px 30px;
+  margin-top: 25px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.role-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.role-highlight p {
+  margin: 0;
+  font-size: 1rem;
 }
 
 .partner-achievements {

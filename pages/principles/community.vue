@@ -253,7 +253,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'text',
-        text: '• Members who are more financially fortunate can find ways to support those with fewer resources, perhaps by sponsoring access to premium services.'
+        text: '• Members who are more financially fortunate can give back through Social Impact Tokens—funding the next learner, contributing to the platform, or strengthening the community.'
       },
       {
         type: 'text',
@@ -282,7 +282,7 @@ const practiceExamples: PracticeExample[] = [
     title: 'Support Networks',
     items: [
       'Mentorship matching based on skills and goals',
-      'Community sponsorship programs for premium resources',
+      'Community give-back programs through Social Impact Tokens',
       'Regional chapters for local meetups and support',
       '24/7 help channels with rotating volunteers'
     ]

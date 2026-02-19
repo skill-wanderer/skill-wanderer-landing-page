@@ -20,6 +20,12 @@ export default defineEventHandler(async (event) => {
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://skill-wanderer.com/expertise-impact</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://skill-wanderer.com/principles</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>weekly</changefreq>
@@ -50,7 +56,7 @@ export default defineEventHandler(async (event) => {
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://skill-wanderer.com/principles/equitable-access</loc>
+    <loc>https://skill-wanderer.com/principles/social-enterprise</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

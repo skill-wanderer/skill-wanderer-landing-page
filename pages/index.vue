@@ -47,12 +47,12 @@
         <div class="feature-card">
           <div class="feature-icon">🌟</div>
           <h3>Real-World Integration</h3>
-          <p>Content directly informed by active technology partnership experience, ensuring what you learn is immediately applicable in the real world.</p>
+          <p>Content directly informed by active real-world expertise and impact work, ensuring what you learn is immediately applicable in the real world.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🎓</div>
           <h3>100% Free Learning Content</h3>
-          <p>All course content and learning materials are completely free. Optional premium services like personalized grading and live mentoring are clearly marked as separate offerings.</p>
+          <p>All course content and learning materials are completely free. Human mentors and support are sustained through our social enterprise model with Social Impact Tokens.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🤝</div>
@@ -88,7 +88,7 @@
           <div class="value-item" style="animation-delay: 0.3s;">
             <span class="value-icon">🌍</span>
             <h3>Accessible Education</h3>
-            <p>Free learning content with transparent pricing for optional premium services like personalized grading and live mentoring.</p>
+            <p>Free learning content with quality human mentors sustained through our social enterprise model and open Social Impact Tokens.</p>
           </div>          <div class="value-item" style="animation-delay: 0.4s;">
             <span class="value-icon">🎨</span>
             <h3>Creative Learning</h3>
@@ -125,15 +125,15 @@
     </section>
 
 
-    <!-- Tech Services Brief Section -->
+    <!-- Expertise & Impact Brief Section -->
     <section class="tech-services">
       <div class="tech-services-content">
-        <h3>The Success Sharing Model</h3>
+        <h3>Expertise &amp; Impact</h3>
         <p>
-          We don't do outsourcing. We become your true technology partner—sharing both the success and the risks with you.
-          Lower upfront costs. Revenue when you win. Community-powered talent.
+          We apply real-world technology expertise to solve real problems—and every challenge we tackle fuels free education.
+          Success sharing model. Community-powered talent. Impact that creates learning.
         </p>
-        <NuxtLink to="/partnerships/success-sharing-model" class="btn btn-secondary">Learn More</NuxtLink>
+        <NuxtLink to="/expertise-impact" class="btn btn-secondary">Learn More</NuxtLink>
       </div>
     </section>
   </div>

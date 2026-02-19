@@ -81,33 +81,35 @@
           </div>
         </div>
 
-        <!-- Partnerships Dropdown -->
+        <!-- Expertise & Impact Dropdown -->
         <div class="dropdown" @mouseenter="isPartnershipsDropdownOpen = true" @mouseleave="isPartnershipsDropdownOpen = false">
           <span class="dropdown-trigger" :class="{ active: isPartnershipsDropdownOpen }">
-            Partnerships
+            Expertise & Impact
             <svg class="dropdown-arrow" :class="{ rotated: isPartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </span>
           <div class="dropdown-menu" :class="{ open: isPartnershipsDropdownOpen }">
-            <NuxtLink to="/partnerships/success-sharing-model" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Success Sharing Model</NuxtLink>
-            <NuxtLink to="/partnerships/become-a-partner" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Become a Partner</NuxtLink>
-            <NuxtLink to="/partnerships/our-partners" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Our Partners</NuxtLink>
+            <NuxtLink to="/expertise-impact" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Overview</NuxtLink>
+            <NuxtLink to="/expertise-impact/success-sharing-model" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Success Sharing Model</NuxtLink>
+            <NuxtLink to="/expertise-impact/become-a-partner" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Work With Us</NuxtLink>
+            <NuxtLink to="/expertise-impact/our-partners" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Our Partners</NuxtLink>
           </div>
         </div>
 
-        <!-- Mobile Partnerships submenu -->
+        <!-- Mobile Expertise & Impact submenu -->
         <div class="mobile-dropdown">
           <button class="mobile-dropdown-trigger" @click="toggleMobilePartnershipsDropdown" :class="{ active: isMobilePartnershipsDropdownOpen }">
-            Partnerships
+            Expertise & Impact
             <svg class="dropdown-arrow" :class="{ rotated: isMobilePartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
           <div class="mobile-dropdown-menu" :class="{ open: isMobilePartnershipsDropdownOpen }">
-            <NuxtLink to="/partnerships/success-sharing-model" @click="closeMobileMenu">Success Sharing Model</NuxtLink>
-            <NuxtLink to="/partnerships/become-a-partner" @click="closeMobileMenu">Become a Partner</NuxtLink>
-            <NuxtLink to="/partnerships/our-partners" @click="closeMobileMenu">Our Partners</NuxtLink>
+            <NuxtLink to="/expertise-impact" @click="closeMobileMenu">Overview</NuxtLink>
+            <NuxtLink to="/expertise-impact/success-sharing-model" @click="closeMobileMenu">Success Sharing Model</NuxtLink>
+            <NuxtLink to="/expertise-impact/become-a-partner" @click="closeMobileMenu">Work With Us</NuxtLink>
+            <NuxtLink to="/expertise-impact/our-partners" @click="closeMobileMenu">Our Partners</NuxtLink>
           </div>
         </div>
 

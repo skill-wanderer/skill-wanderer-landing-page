@@ -262,7 +262,7 @@
         </p>
         <div class="cta-buttons">
           <NuxtLink to="/contact" class="btn btn-primary">Start the Conversation</NuxtLink>
-          <NuxtLink to="/partnerships/our-partners" class="btn btn-secondary">See Success Stories</NuxtLink>
+          <NuxtLink to="/expertise-impact/our-partners" class="btn btn-secondary">See Success Stories</NuxtLink>
         </div>
       </div>
     </section>

@@ -221,16 +221,16 @@
             </div>
           </div>
 
-          <!-- Premium Services -->
+          <!-- Social Enterprise Model -->
           <div class="principle-card">
-            <div class="principle-icon">⭐</div>
-            <h3>Value-Added Premium Services</h3>
-            <p>Core learning content remains free forever. Optional premium services like personalized grading, live mentoring, and 1-on-1 guidance are available with equitable access for those in need.</p>
+            <div class="principle-icon">🌱</div>
+            <h3>Social Enterprise Model</h3>
+            <p>Same quality learning with human mentors, start-up support, and pre-learning advisory—sustained through Social Impact Tokens where learners give back by paying forward, contributing to the platform, or strengthening the community.</p>
             <div class="principle-visual">
               <div class="service-tiers">
-                <div class="tier free">Free Content</div>
-                <div class="tier premium">Premium Services</div>
-                <div class="tier accessible">Equitable Access</div>
+                <div class="tier free">Quality Learning</div>
+                <div class="tier premium">Social Impact Tokens</div>
+                <div class="tier accessible">Give Back Cycle</div>
               </div>
             </div>
           </div>
