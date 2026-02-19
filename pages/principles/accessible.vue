@@ -50,13 +50,13 @@
         <div class="impact-card" style="animation-delay: 0.1s;">
           <span class="impact-icon">🎓</span>
           <h3>For the Struggling Junior</h3>
-          <p>Complete learning paths without spending a penny. All content is free—optional premium services like personalized grading and live mentoring are clearly marked as separate offerings.</p>
+          <p>Complete learning paths without spending a penny. All content is free—and through our social enterprise model, human mentors and support are available to those in need via Social Impact Tokens.</p>
         </div>
         
         <div class="impact-card" style="animation-delay: 0.2s;">
           <span class="impact-icon">🧭</span>
           <h3>For the Confused Mid Level</h3>
-          <p>Expert curation of both free and paid third-party resources, plus transparency about our optional premium services like personalized grading and live mentoring.</p>
+          <p>Expert curation of both free and paid third-party resources, plus transparency about our social enterprise services including human mentoring and pre-learning advisory.</p>
         </div>
           <div class="impact-card" style="animation-delay: 0.3s;">
           <span class="impact-icon">🌍</span>
@@ -175,7 +175,7 @@ const practiceExamples = [
       'Multiple options provided - there\'s always a free alternative to paid third-party resources',
       'Guidance on when paid third-party resources are truly worth the investment',
       'All Skill-Wanderer learning content remains 100% free - we never charge for courses or materials',
-      'Optional premium services (grading, mentoring) are clearly marked as separate paid offerings'
+      'Human mentoring and advisory services are available through our social enterprise model with Social Impact Tokens'
     ]
   },
   {
@@ -185,7 +185,7 @@ const practiceExamples = [
       'No geographic restrictions - content accessible worldwide',
       'Community support that\'s also free - no paid Discord channels',
       'Clear learning paths so you never feel lost or overwhelmed',
-      'Upfront transparency about which services are free vs. premium (like personalized grading and mentoring)'
+      'Upfront transparency about which services are free and how mentoring and advisory are sustained through our social enterprise model'
     ]
   }
 ]

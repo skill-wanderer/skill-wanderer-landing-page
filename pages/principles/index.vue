@@ -130,7 +130,7 @@
               </div>
             </div>
             <p class="principle-description">
-              Leveraging real-world technology partnerships to fund free education and keep content relevant.
+              Leveraging real-world expertise and impact work to fund free education and keep content relevant.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -166,16 +166,16 @@
           </a>
 
           <!-- Principle 11 -->
-          <a href="/principles/equitable-access" class="principle-card" style="animation-delay: 1.1s;">
+          <a href="/principles/social-enterprise" class="principle-card" style="animation-delay: 1.1s;">
             <div class="principle-header">
               <div class="principle-number">11</div>
               <div class="principle-title">
-                <h3>Premium Services with Equity</h3>
-                <p class="principle-tagline">Extra Help When Needed</p>
+                <h3>Social Enterprise Model</h3>
+                <p class="principle-tagline">Quality Learning, Sustainable Impact</p>
               </div>
             </div>
             <p class="principle-description">
-              Optional premium services like personalized grading, live mentoring, 1-on-1 guidance with equitable access for those in need.
+              Same quality human mentors, start-up support, and pre-learning advisory—sustained through Social Impact Tokens and an open give-back cycle.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -202,7 +202,7 @@
     <section class="mission">
       <div class="mission-content">
         <div class="mission-quote">
-We believe quality education shapes brighter futures. Our mission is to achieve this by integrating real-world insights from our technology partnerships directly into highly practical e-learning. This approach builds a sustainable revenue model, enabling us to operate with complete integrity—forgoing any benefit that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every client project funded becomes free education shared. Every technology partnership delivered plants seeds of knowledge for countless learners.
+We believe quality education shapes brighter futures. Our mission is to achieve this by integrating real-world insights from our expertise and impact work directly into highly practical e-learning. This approach builds a sustainable revenue model, enabling us to operate with complete integrity—forgoing any benefit that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every client project funded becomes free education shared. Every real-world challenge solved plants seeds of knowledge for countless learners.
         </div>
       </div>
     </section>  </div>

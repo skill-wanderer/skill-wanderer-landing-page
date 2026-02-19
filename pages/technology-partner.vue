@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-await navigateTo('/partnerships/become-a-partner', { redirectCode: 301 })
+await navigateTo('/expertise-impact', { redirectCode: 301 })
 </script>
 
 <style scoped>
