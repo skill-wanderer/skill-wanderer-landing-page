@@ -39,8 +39,8 @@
             <div class="role-highlight">
               <span class="role-icon">🤝</span>
               <p class="mindycore-text">
-                <strong class="mindycore-highlight">Skill-Wanderer's founder, Quan Nguyen, serves as MindyCore's technology partner and start-up advisor</strong>—handling
-                all of the technical work including architecture, development, DevOps, and technical strategy. This hands-on
+                <strong class="mindycore-highlight">Skill-Wanderer's founder, Quan Nguyen, serves as MindyCore's technology partner, start-up advisor, and technical project manager</strong>—handling
+                all of the technical work including architecture, development, DevOps, and technical strategy, while also teaching Agile and Lean methodologies to the team. This hands-on
                 partnership is a living example of our Expertise & Impact model in action.
               </p>
             </div>
