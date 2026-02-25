@@ -2,8 +2,8 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="9"
-      title="Resourceful Curation & Original Creation"
-      tagline="Best of All Worlds"
+      title="Resourceful & Flexible Learning"
+      tagline="Point Learners to What Exists, Create What's Missing"
     />
 
     <!-- Story Section -->
@@ -16,14 +16,14 @@
     <section class="jungle-section">
       <div class="jungle-container">
         <div style="text-align: center; margin-bottom: 50px;">
-          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">Navigating the Information Jungle</h2>
-          <p style="font-size: 1.2rem; opacity: 0.9;">Too many resources, too little guidance</p>
+          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">Navigating the World of Learning Resources</h2>
+          <p style="font-size: 1.2rem; opacity: 0.9;">So much great material already exists — we point you to the best of it and create only what's missing</p>
         </div>
         
         <div class="jungle-visual">
           <div class="jungle-label">
             <h3>The Learning Landscape</h3>
-            <p>Hundreds of courses, thousands of tutorials, millions of possibilities</p>
+            <p>A wealth of publicly available materials waiting to be put to good use</p>
           </div>
           
           <div class="jungle-trees">
@@ -49,56 +49,56 @@
     <section class="strategy-section">
       <div class="strategy-container">
         <div style="text-align: center; margin-bottom: 50px;">
-          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">Our Dual Strategy</h2>
-          <p style="font-size: 1.2rem; opacity: 0.9;">Best of both worlds: curation and creation</p>
+          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">Our Flexible Approach</h2>
+          <p style="font-size: 1.2rem; opacity: 0.9;">Point learners to what's already great, create only what's truly needed</p>
         </div>
         
         <div class="strategy-grid">
           <div class="strategy-card curation" style="animation-delay: 0.1s;">
             <div class="strategy-header">
               <div class="strategy-icon">🔍</div>
-              <h3>Resourceful Curation</h3>
+              <h3>Point Learners to Great Resources</h3>
             </div>
             
             <div class="strategy-description">
-              <p>Our primary approach: finding and organizing the best existing resources into clear learning pathways.</p>
+              <p>Our primary approach: pointing learners to the best publicly available learning materials and guiding them through a clear path.</p>
             </div>
             
             <ul class="strategy-list">
-              <li>Discover the highest-quality free and paid resources</li>
-              <li>Test and verify every recommendation personally</li>
-              <li>Create learning pathways that connect resources logically</li>
-              <li>Provide context and guidance for each resource</li>
+              <li>Point learners to the best free and publicly available resources</li>
+              <li>Test and verify every recommendation to ensure quality</li>
+              <li>Build clear learning pathways that connect existing materials</li>
+              <li>Guide learners through each step so they stay on track</li>
               <li>Continuously update as better resources emerge</li>
-              <li>Maintain strict integrity - no affiliate commissions</li>
+              <li>Maintain strict integrity — no affiliate commissions</li>
             </ul>
           </div>
           
           <div class="strategy-card creation" style="animation-delay: 0.3s;">
             <div class="strategy-header">
               <div class="strategy-icon">🎨</div>
-              <h3>Strategic Creation</h3>
+              <h3>Create When the Situation Demands</h3>
             </div>
             
             <div class="strategy-description">
-              <p>When curation isn't enough: creating original content to fill critical gaps, especially for free learning paths.</p>
+              <p>We only create new learning content when no suitable publicly available material exists — ensuring every effort goes where it matters most.</p>
             </div>
             
             <ul class="strategy-list">
-              <li>Identify gaps where no quality free resource exists</li>
-              <li>Create our own video tutorials and courses</li>
-              <li>Develop hands-on projects and exercises</li>
-              <li>Write comprehensive guides and documentation</li>
-              <li>Build interactive learning tools and platforms</li>
-              <li>Ensure all created content remains free forever</li>
+              <li>Identify genuine gaps where no quality resource exists</li>
+              <li>Create targeted tutorials and guides to fill those gaps</li>
+              <li>Develop hands-on projects and exercises when needed</li>
+              <li>Write clear documentation for under-served topics</li>
+              <li>Focus creation effort on maximum learner impact</li>
+              <li>Ensure all created content remains free and accessible</li>
             </ul>
           </div>
         </div>
       </div>
     </section>    <!-- Practice Section -->
     <PrinciplePractice 
-      title="The Strategy in Action"
-      subtitle="How we implement curation and creation"
+      title="The Flexible Approach in Action"
+      subtitle="How we point learners to existing resources and create when needed"
       :examples="practiceExamples"
       background-color="var(--dark-bg)"
       list-icon="🎯"
@@ -106,7 +106,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote 
-      quote="We don't need to reinvent every wheel, but we will never let a missing wheel stop someone from reaching their destination. Our job is to be the trusted guide who knows both where the best paths already exist and how to build new ones when needed."
+      quote="We believe in being flexible and resourceful — pointing our learners to the wealth of publicly available learning material to help them as much as we can, and only creating new content when the situation truly demands it. That's how we stay efficient and focused on what matters: our learners' growth."
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />
 
@@ -119,50 +119,50 @@ import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management
 useSEO({
-  title: 'Resourceful Curation & Original Creation | Principle #9',
-  description: 'Discover how Skill-Wanderer combines expert curation of existing resources with strategic original content creation for the best learning experience.',
-  keywords: ['resourceful curation', 'content creation', 'skill-wanderer principle 9', 'learning resources', 'educational content'],
+  title: 'Resourceful & Flexible Learning | Principle #9',
+  description: 'Discover how Skill-Wanderer points learners to publicly available learning materials and creates new content only when the situation demands.',
+  keywords: ['resourceful learning', 'flexible curation', 'skill-wanderer principle 9', 'learning resources', 'educational content'],
   type: 'article',
   structuredData: createArticleSchema(
-    'Resourceful Curation & Original Creation: Best of All Worlds | Principle #9',
-    'Discover how Skill-Wanderer combines expert curation of existing resources with strategic original content creation to provide the best learning experience.',
+    'Resourceful & Flexible Learning: Point Learners to What Exists, Create What\'s Missing | Principle #9',
+    'Discover how Skill-Wanderer points learners to publicly available learning materials and creates new content only when the situation demands.',
     'https://skill-wanderer.com/principles/resourceful'
   )
 })
 
 // Story content data
-const storyIntro = 'I call our ninth principle <strong>Resourceful Curation & Original Creation</strong>, and it is born from my own journey as a learner.'
+const storyIntro = 'I call our ninth principle <strong>Resourceful & Flexible Learning</strong>, and it reflects a practical truth I discovered on my own journey as a learner: there is already so much great learning material out there — we should point learners to it and only create new content when the situation demands.'
 
 const storyChapters: StoryChapter[] = [
   {
     icon: '🌐',
-    title: 'My Learning Journey',
+    title: 'A World of Learning Already Exists',
     content: [
       {
         type: 'text',
-        text: 'From the very beginning of my transition into coding up until now, nearly all of my learning has come from online resources. I\'ve experienced it all: content from my old online university, courses from famous MOOC platforms, affordable off-the-shelf courses from various marketplaces, and countless books. I supplemented this with mentorship when I could, but at times, I\'ve been entirely self-taught, navigating a new stack of technologies on my own.'
+        text: 'From the very beginning of my transition into coding, nearly all of my learning came from publicly available resources — online courses, open tutorials, community guides, and books. There is an incredible wealth of high-quality learning material already out there, freely accessible to anyone willing to look.'
       },
       {
         type: 'personal-story',
-        text: 'I remember spending entire weekends just searching for the right React course. There were hundreds of options - some outdated, some too advanced, some missing crucial concepts. I\'d start three different courses before finding one that actually clicked. The abundance of choice was both a blessing and a curse.'
+        text: 'I remember spending weekends just searching for the right React course. There were hundreds of options. The challenge was never a lack of resources — it was finding the right ones and putting them together into a coherent learning path.'
       },
       {
         type: 'text',
-        text: 'This journey taught me two fundamental truths. First, there is an incredible wealth of high-quality learning material already available on the internet. Second, my biggest challenge was never a lack of resources, but the exact opposite: there were <strong>too many choices</strong>. It was a jungle of information, and finding the right path was the hardest part.'
+        text: 'This experience taught me something fundamental: we don\'t need to reinvent the wheel. There is already so much great material available. What learners truly need is <strong>someone to point them to the right resources</strong> and connect those resources into a clear, structured path.'
       }
     ]
   },
   {
     icon: '🤔',
-    title: 'The Core Question',
+    title: 'Flexibility Is Our Strength',
     content: [
       {
         type: 'text',
-        text: 'This brings me to a core question that shapes this principle: Why should we spend our time and energy creating a brand new course that might quickly become outdated, when excellent, continuously updated materials are readily available?'
+        text: 'This principle is about being <strong>flexible</strong> in how we create and use learning material. We point learners to publicly available material to help them as much as we can, and we only create new learning content when the situation demands it.'
       },
       {
         type: 'text',
-        text: 'Our organization is mission-driven. Our goal is the <strong>result</strong>—the impact we have on learners. Therefore, it makes perfect sense to prioritize reusing the best materials that already exist. This is the "Resourceful Curation" part of our principle. Our primary value isn\'t in recreating every wheel. It\'s in being the expert guide—the <strong>narrative voice that creates a clear, trustworthy path</strong> through the jungle of online resources. We will curate the best materials into comprehensive learning pathways and offer optional mentorship when the material gets tough.'
+        text: 'Our organization is mission-driven. Our goal is the <strong>result</strong> — the impact we have on learners. Being resourceful means we point learners to the best available resources and guide them through a clear, structured path. We are the <strong>trusted guide who connects them with the right material</strong> rather than recreating what already exists.'
       },      {
         type: 'integrity-notice',
         text: '<strong>For any learner who might feel doubt about our recommendations for third-party resources, we want to be perfectly clear:</strong> our entire curation process is strictly governed by Principle #2 (Integrity and Impartiality). We will never accept any form of revenue, commission, or referral fee for guiding you to any resource. Our only motivation is finding the absolute best material for <strong>your</strong> learning journey.',
@@ -172,23 +172,23 @@ const storyChapters: StoryChapter[] = [
   },
   {
     icon: '🎨',
-    title: 'When We Create',
+    title: 'Creating Only When the Situation Demands',
     content: [
       {
         type: 'text',
-        text: 'However, there is one critical problem with relying only on curation: sometimes, a high-quality <strong>free</strong> resource for a specific, necessary topic simply doesn\'t exist.'
+        text: 'However, sometimes a suitable publicly available resource for a critical topic simply doesn\'t exist. That is the only time we step in to create new learning content.'
       },
       {
         type: 'text',
-        text: 'This is where "Original Creation" comes in.'
+        text: 'We only create new material <strong>when the situation demands it</strong> — when there is a genuine gap that no existing resource can fill. This keeps us focused and efficient.'
       },
       {
         type: 'text',
-        text: 'To fulfill our first and most important principle—<strong>Accessible</strong>—we must ensure there is always a free path for core learning. When we cannot find a suitable free third-party resource, <strong>that is when we will step in to create our own original content, including our own video teachings.</strong>'
+        text: 'To fulfill our first and most important principle — <strong>Accessible</strong> — we must ensure there is always a free path for core learning. When we cannot find a suitable free resource, <strong>that is when we create our own content.</strong>'
       },
       {
         type: 'text',
-        text: 'This dual strategy is practical and mission-focused. It allows us to be efficient and resourceful by leveraging the best of what\'s out there, while ensuring we never compromise on our promise of providing free, accessible, and high-quality education for all.'
+        text: 'This flexible approach is practical and mission-focused. We point learners to the best of what\'s already available, and when we can\'t find what they need, we create it ourselves — ensuring we never leave a gap that could hold a learner back.'
       }
     ]
   }
@@ -197,30 +197,30 @@ const storyChapters: StoryChapter[] = [
 // Practice examples data
 const practiceExamples: PracticeExample[] = [
   {
-    title: 'Curation Process',
+    title: 'Pointing Learners to Great Resources',
     items: [
-      'Evaluate content quality, teaching style, and learning outcomes',
-      'Create detailed pathway maps showing progression and connections',
-      'Provide honest, unbiased reviews and recommendations',
-      'Always prioritize free resources when quality is comparable'
+      'Point learners to publicly available content that is high-quality and relevant',
+      'Organize the best resources into clear, structured learning pathways',
+      'Provide honest, unbiased guidance — no affiliate commissions',
+      'Prioritize free, publicly available resources whenever possible'
     ]
   },
   {
-    title: 'Creation Triggers',
+    title: 'Creating When Needed',
     items: [
-      'No suitable free alternative exists for essential concepts',
-      'Existing resources have significant gaps or outdated information',
+      'No suitable publicly available resource exists for a critical topic',
+      'Existing materials have significant gaps or outdated information',
       'Complex topics need simplified, beginner-friendly explanations',
-      'Industry-specific knowledge requires practical, real-world context'
+      'The situation demands original content to keep learning accessible'
     ]
   },
   {
-    title: 'Quality Assurance',
+    title: 'Staying Flexible & Focused',
     items: [
-      'Regular reviews to ensure resources remain current and accessible',
-      'Learner feedback incorporated into pathway improvements',
-      'Created content follows the same standards as curated materials',
-      'Transparent marking of when content is our own vs third-party'
+      'Regularly reassess resources to keep pathways current',
+      'Incorporate learner feedback to improve recommendations',
+      'Balance curation and creation based on actual learner needs',
+      'Always ask: does this already exist before creating something new?'
     ]
   }
 ]
