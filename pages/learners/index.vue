@@ -41,32 +41,32 @@
             </div>
           </NuxtLink>
 
-          <!-- Placeholder Cards -->
-          <div class="learner-card placeholder">
+          <!-- Prabhat Kumar Card -->
+          <NuxtLink to="/learners/prabhat-kumar" class="learner-card featured">
+            <div class="first-badge">🧭 Fearless Adventurer</div>
             <div class="learner-avatar">
-              <div class="avatar-placeholder">
-                <span>👨‍💻</span>
-              </div>
+              <img src="/learners/Prabhat-Kumar.jpeg" alt="Prabhat Kumar" class="avatar-image" />
             </div>
             <div class="learner-info">
-              <h3>Your Story</h3>
-              <p class="learner-tagline">Could Be Next</p>
-              <p class="placeholder-text">Join our community and start your journey</p>
+              <h3>Prabhat Kumar</h3>
+              <p class="learner-realname">Computer Science Undergraduate</p>
+              <p class="learner-tagline">The Fearless Adventurer</p>
+              <div class="learner-meta">
+                <span>📍 India</span>
+                <span>💼 DevOps Engineer</span>
+              </div>
+              <div class="learner-path">
+                <span class="path-badge">⚙️ DevOps Path</span>
+              </div>
             </div>
-          </div>
+            <div class="view-story">
+              View Full Story →
+            </div>
+          </NuxtLink>
+        </div>
 
-          <div class="learner-card placeholder">
-            <div class="learner-avatar">
-              <div class="avatar-placeholder">
-                <span>👩‍💻</span>
-              </div>
-            </div>
-            <div class="learner-info">
-              <h3>Coming Soon</h3>
-              <p class="learner-tagline">More Wanderers</p>
-              <p class="placeholder-text">We're growing our community every day</p>
-            </div>
-          </div>
+        <div class="more-learners-notice">
+          <p>🌍 There are many more learners on their journey with Skill-Wanderer — their stories are yet to be featured. Stay tuned!</p>
         </div>
       </div>
     </section>
@@ -98,7 +98,7 @@ import { useSEO } from '~/composables/useSEO'
 useSEO({
   title: 'Our Learners - Skill-Wanderer',
   description: 'Meet the learners who are growing with Skill-Wanderer. Discover their stories, progress, and achievements on their learning journeys.',
-  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'skill-wanderer'],
+  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'skill-wanderer'],
 })
 </script>
 
@@ -176,8 +176,27 @@ useSEO({
 
 .learners-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.more-learners-notice {
+  max-width: 900px;
+  margin: 40px auto 0;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 217, 61, 0.04));
+  border: 1px dashed rgba(255, 107, 53, 0.3);
+  border-radius: 15px;
+  padding: 25px 30px;
+}
+
+.more-learners-notice p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin: 0;
 }
 
 .learner-card {
