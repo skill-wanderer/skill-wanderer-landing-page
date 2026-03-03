@@ -10,10 +10,10 @@
           into practical tech learning paths, creating an honest educational platform with no ads, 
           no affiliate bias—just pure, passionate learning.
         </p>        <div class="hero-cta">
-          <a href="#platform" class="btn btn-primary">
-            Explore the Platform
+          <NuxtLink to="/learners" class="btn btn-primary">
+            Meet Our Learners
             <span>→</span>
-          </a>
+          </NuxtLink>
           <NuxtLink to="/learning-path" class="btn btn-secondary">
             View Learning Path
           </NuxtLink>
