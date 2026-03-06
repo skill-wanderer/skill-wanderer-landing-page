@@ -36,6 +36,7 @@
           <div class="dropdown-menu" :class="{ open: isAboutDropdownOpen }">
             <NuxtLink to="/about" @click="closeMobileMenu(); isAboutDropdownOpen = false">About Us</NuxtLink>
             <NuxtLink to="/principles" @click="closeMobileMenu(); isAboutDropdownOpen = false">Principles</NuxtLink>
+            <NuxtLink to="/roadmap" @click="closeMobileMenu(); isAboutDropdownOpen = false">Roadmap</NuxtLink>
           </div>
         </div>
         
@@ -50,6 +51,7 @@
           <div class="mobile-dropdown-menu" :class="{ open: isMobileAboutDropdownOpen }">
             <NuxtLink to="/about" @click="closeMobileMenu">About Us</NuxtLink>
             <NuxtLink to="/principles" @click="closeMobileMenu">Principles</NuxtLink>
+            <NuxtLink to="/roadmap" @click="closeMobileMenu">Roadmap</NuxtLink>
           </div>
         </div>
         

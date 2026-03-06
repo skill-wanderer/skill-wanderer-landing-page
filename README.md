@@ -16,6 +16,7 @@ This repository contains the source code for the Skill-Wanderer landing page, a 
   - [Installation](#installation)
   - [Development Server](#development-server)
 - [Building for Production](#building-for-production)
+- [Design System for Micro Frontends](#design-system-for-micro-frontends)
 - [TypeScript Support](#typescript-support)
 - [Deployment](#deployment)
   - [Docker](#docker)
@@ -103,6 +104,14 @@ yarn preview
 # or
 bun run preview
 ```
+
+## Design System for Micro Frontends
+
+To keep visual consistency across this app and any additional micro frontends, use the shared design guide:
+
+- [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md)
+
+This document defines shared tokens, typography, spacing, component patterns, and an AI prompt template for generating compatible UI.
 
 ## TypeScript Support
 
