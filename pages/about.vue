@@ -142,6 +142,50 @@
       </div>
     </section>
 
+    <!-- Open Platform Section -->
+    <section class="open-platform">
+      <div class="section-header">
+        <h2>A Platform for Learners, by Learners</h2>
+        <p>Built on the foundations of open knowledge and open source</p>
+      </div>
+      <div class="open-platform-content">
+        <div class="open-platform-card">
+          <span class="open-platform-icon">📖</span>
+          <h3>Open Knowledge</h3>
+          <p>
+            We believe knowledge should be freely accessible to everyone. Skill-Wanderer is being built as a platform that
+            <span class="highlight">serves learners and is shaped by learners</span>. Every piece of educational content
+            we create is designed to be open, transparent, and community-driven—because learning thrives when barriers are removed.
+          </p>
+        </div>
+        <div class="open-platform-card">
+          <span class="open-platform-icon">🔓</span>
+          <h3>Open Source at Heart</h3>
+          <p>
+            Open source isn't just a development model—it's a philosophy we live by. We embrace
+            <span class="highlight">transparency, collaboration, and shared ownership</span> as core values.
+            By building in the open, we invite the global community to learn from our journey, contribute ideas,
+            and help shape the future of the platform together.
+          </p>
+        </div>
+        <div class="open-platform-card">
+          <span class="open-platform-icon">🛠️</span>
+          <h3>Actively Evolving</h3>
+          <p>
+            Skill-Wanderer is in <span class="highlight">active development</span> with an ambitious roadmap ahead.
+            New learning paths, interactive features, community tools, and much more are on the way. This is just the
+            beginning—we're building something meaningful, one step at a time, and we'd love for you to be part of the journey.
+          </p>
+        </div>
+      </div>
+      <div class="open-platform-banner">
+        <p>
+          🚧 <strong>We're actively building!</strong> Skill-Wanderer is a living project—growing, improving, and
+          expanding every day. Stay tuned for new features, learning paths, and community initiatives. The best is yet to come.
+        </p>
+      </div>
+    </section>
+
     <!-- Principles Section -->
     <section class="principles">
       <div class="section-header">
@@ -506,6 +550,68 @@ body {
   font-size: 1.1rem;
   line-height: 1.8;
   opacity: 0.9;
+}
+
+/* Open Platform Section */
+.open-platform {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, rgba(255, 107, 53, 0.03) 0%, transparent 100%);
+}
+
+.open-platform-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.open-platform-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 40px 30px;
+  border: 1px solid rgba(255, 107, 53, 0.1);
+  transition: all 0.3s ease;
+}
+
+.open-platform-card:hover {
+  background: var(--card-hover);
+  border-color: rgba(255, 107, 53, 0.3);
+  transform: translateY(-5px);
+}
+
+.open-platform-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.open-platform-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-orange);
+  margin-bottom: 15px;
+}
+
+.open-platform-card p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.open-platform-banner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px 35px;
+  background: rgba(255, 107, 53, 0.08);
+  border: 1px dashed rgba(255, 107, 53, 0.4);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.open-platform-banner p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.95;
 }
 
 /* Principles Section */
