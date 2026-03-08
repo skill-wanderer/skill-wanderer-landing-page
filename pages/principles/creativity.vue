@@ -157,11 +157,18 @@ useSEO({
   description: 'Discover how failure becomes the greatest teacher when examined deeply. Learn why unexamined success can be more dangerous than examined failure.',
   keywords: ['learning through failure', 'creativity in education', 'skill-wanderer principle 5', 'failure as teacher', 'growth mindset'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Creativity & Learning Through Failure: Savor the Failure | Principle #5',
-    'Discover how failure becomes the greatest teacher when examined deeply. Learn why unexamined success can be more dangerous than examined failure.',
-    'https://skill-wanderer.com/principles/creativity'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Creativity & Learning Through Failure: Savor the Failure | Principle #5',
+      'Discover how failure becomes the greatest teacher when examined deeply. Learn why unexamined success can be more dangerous than examined failure.',
+      'https://skill-wanderer.com/principles/creativity'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Creativity', url: 'https://skill-wanderer.com/principles/creativity' }
+    ])
+  ]
 })
 
 // Story content

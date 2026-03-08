@@ -211,11 +211,18 @@ useSEO({
   description: 'How Skill-Wanderer uses technology partnerships to create a self-sustaining engine that funds education while ensuring relevance through practice.',
   keywords: ['technology partnerships', 'self-sustaining mission', 'skill-wanderer principle 8', 'real-world practice', 'funding education'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Technology Partnerships Fueling Mission: Work That Gives Back | Principle #8',
-    'How Skill-Wanderer uses technology partnerships to create a self-sustaining engine that funds education while ensuring relevance through real-world practice.',
-    'https://skill-wanderer.com/principles/tech-services'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Technology Partnerships Fueling Mission: Work That Gives Back | Principle #8',
+      'How Skill-Wanderer uses technology partnerships to create a self-sustaining engine that funds education while ensuring relevance through real-world practice.',
+      'https://skill-wanderer.com/principles/tech-services'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Technology Partnership', url: 'https://skill-wanderer.com/principles/tech-services' }
+    ])
+  ]
 })
 
 // Story content

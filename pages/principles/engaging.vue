@@ -152,11 +152,18 @@ useSEO({
   description: 'Discover how celebrating small victories and recognizing struggle keeps the flame of passion alive in learning. Every breakthrough deserves recognition.',
   keywords: ['engaging learning', 'rewarding education', 'skill-wanderer principle 4', 'learning motivation', 'celebrate success'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Engaging & Rewarding: Learning Should Spark Joy | Principle #4',
-    'Discover how celebrating small victories and recognizing struggle keeps the flame of passion alive in learning. Every breakthrough deserves recognition.',
-    'https://skill-wanderer.com/principles/engaging'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Engaging & Rewarding: Learning Should Spark Joy | Principle #4',
+      'Discover how celebrating small victories and recognizing struggle keeps the flame of passion alive in learning. Every breakthrough deserves recognition.',
+      'https://skill-wanderer.com/principles/engaging'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Engaging', url: 'https://skill-wanderer.com/principles/engaging' }
+    ])
+  ]
 })
 
 // Story content

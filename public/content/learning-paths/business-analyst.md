@@ -1,0 +1,9 @@
+# Business Analyst Path - Planned | Skill-Wanderer
+
+Business Analyst learning path coming soon. Learn requirements engineering, process modeling, data analysis, and stakeholder management.
+
+## Content
+
+Business Analyst Path Bridge Business and Technology Master the skills to translate business needs into technical solutions. Learn requirements gathering, data analysis, process modeling, and stakeholder communication. 📋 Planned 🔜 Coming Soon 📝 Curriculum Subject to Change 📋 Path Planned We're planning a comprehensive business analysis curriculum that will equip you with the skills to drive successful technology initiatives. This path is in the planning phase and development will begin soon. Planned Topics Include: 📝 Requirements Engineering Elicitation, documentation, and validation of business requirements 🔄 Process Modeling BPMN, flowcharts, and business process optimization 📊 Data Analysis Excel, SQL basics, and data visualization for insights 👥 Stakeholder Management Communication, facilitation, and managing expectations 📋 User Stories & Acceptance Writing user stories, acceptance criteria, and definition of done 🛠️ BA Tools Confluence, Miro, Lucidchart, and documentation best practices Be the First to Know Join our community to get notified when the Business Analyst path launches. You'll receive updates on course development and early access opportunities. Get Notified Explore Front-End Development Path
+Business Analyst Path - Planned | Skill-Wanderer
+Business Analyst learning path coming soon. Learn requirements engineering, process modeling, data analysis, and stakeholder management.

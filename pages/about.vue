@@ -310,11 +310,17 @@ useSEO({
   description: 'Learn about the journey behind Skill-Wanderer, our philosophy of teaching to master, and our mission to democratize quality tech education with integrity.',
   keywords: ['about skill-wanderer', 'quan nguyen', 'tech education mission', 'learning philosophy', 'skill wanderer story'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'About Skill-Wanderer | The Story Behind the Mission',
-    'Learn about the journey behind Skill-Wanderer, our philosophy of teaching to master, and our mission to democratize quality tech education with integrity.',
-    'https://skill-wanderer.com/about'
-  )
+  structuredData: [
+    createArticleSchema(
+      'About Skill-Wanderer | The Story Behind the Mission',
+      'Learn about the journey behind Skill-Wanderer, our philosophy of teaching to master, and our mission to democratize quality tech education with integrity.',
+      'https://skill-wanderer.com/about'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'About', url: 'https://skill-wanderer.com/about' }
+    ])
+  ]
 })
 
 onMounted(() => {

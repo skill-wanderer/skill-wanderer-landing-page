@@ -195,11 +195,18 @@ useSEO({
   description: 'Bridge the gap between theory and practice. Learn how we create education that serves both graduates and practitioners with real-world skills.',
   keywords: ['relevant education', 'practical skills', 'real-world learning', 'skill-wanderer principle 6', 'job-ready skills'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Relevant & Impactful: Real Skills for Real Jobs | Principle #6',
-    'Bridge the gap between theory and practice. Learn how we create education that serves both graduates who need practical skills and practitioners who need foundational knowledge.',
-    'https://skill-wanderer.com/principles/relevant'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Relevant & Impactful: Real Skills for Real Jobs | Principle #6',
+      'Bridge the gap between theory and practice. Learn how we create education that serves both graduates who need practical skills and practitioners who need foundational knowledge.',
+      'https://skill-wanderer.com/principles/relevant'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Relevant', url: 'https://skill-wanderer.com/principles/relevant' }
+    ])
+  ]
 })
 
 // Story content

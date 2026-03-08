@@ -88,11 +88,18 @@ useSEO({
   description: 'Discover how Skill-Wanderer ensures free access to quality education by removing financial barriers and providing transparent guidance for all learners.',
   keywords: ['accessible education', 'free coding courses', 'remove barriers', 'skill-wanderer principle 1', 'inclusive learning'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Accessible: Free Knowledge for All | Principle #1',
-    'Discover how Skill-Wanderer ensures free access to quality education by removing financial barriers and providing transparent guidance for all learners.',
-    'https://skill-wanderer.com/principles/accessible'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Accessible: Free Knowledge for All | Principle #1',
+      'Discover how Skill-Wanderer ensures free access to quality education by removing financial barriers and providing transparent guidance for all learners.',
+      'https://skill-wanderer.com/principles/accessible'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Accessible', url: 'https://skill-wanderer.com/principles/accessible' }
+    ])
+  ]
 })
 
 // Story content data

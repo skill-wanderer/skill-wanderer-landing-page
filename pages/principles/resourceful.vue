@@ -123,11 +123,18 @@ useSEO({
   description: 'Discover how Skill-Wanderer points learners to publicly available learning materials and creates new content only when the situation demands.',
   keywords: ['resourceful learning', 'flexible curation', 'skill-wanderer principle 9', 'learning resources', 'educational content'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Resourceful & Flexible Learning: Point Learners to What Exists, Create What\'s Missing | Principle #9',
-    'Discover how Skill-Wanderer points learners to publicly available learning materials and creates new content only when the situation demands.',
-    'https://skill-wanderer.com/principles/resourceful'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Resourceful & Flexible Learning: Point Learners to What Exists, Create What\'s Missing | Principle #9',
+      'Discover how Skill-Wanderer points learners to publicly available learning materials and creates new content only when the situation demands.',
+      'https://skill-wanderer.com/principles/resourceful'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Resourceful', url: 'https://skill-wanderer.com/principles/resourceful' }
+    ])
+  ]
 })
 
 // Story content data

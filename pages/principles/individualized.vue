@@ -152,11 +152,18 @@ useSEO({
   description: 'Discover how Skill-Wanderer honors every learner\'s unique style and pace, providing multiple resources for every concept so you can choose your path.',
   keywords: ['individualized learning', 'personalized education', 'skill-wanderer principle 3', 'learning styles', 'custom pace'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Individualized: Your Path, Your Way | Principle #3',
-    'Discover how Skill-Wanderer honors every learner\'s unique style and pace, providing multiple resources for every concept so you can choose your own path to mastery.',
-    'https://skill-wanderer.com/principles/individualized'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Individualized: Your Path, Your Way | Principle #3',
+      'Discover how Skill-Wanderer honors every learner\'s unique style and pace, providing multiple resources for every concept so you can choose your own path to mastery.',
+      'https://skill-wanderer.com/principles/individualized'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Individualized', url: 'https://skill-wanderer.com/principles/individualized' }
+    ])
+  ]
 })
 
 // Story content data

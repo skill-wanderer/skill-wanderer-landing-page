@@ -133,11 +133,18 @@ useSEO({
   description: 'Discover how Skill-Wanderer maintains complete integrity by refusing all affiliate commissions, sponsored content, and hidden financial incentives.',
   keywords: ['integrity in education', 'no affiliate marketing', 'transparent recommendations', 'skill-wanderer principle 2', 'honest education'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Integrity and Impartiality: No Hidden Agendas | Principle #2',
-    'Discover how Skill-Wanderer maintains complete integrity by refusing all affiliate commissions, sponsored content, and hidden financial incentives.',
-    'https://skill-wanderer.com/principles/integrity'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Integrity and Impartiality: No Hidden Agendas | Principle #2',
+      'Discover how Skill-Wanderer maintains complete integrity by refusing all affiliate commissions, sponsored content, and hidden financial incentives.',
+      'https://skill-wanderer.com/principles/integrity'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Integrity', url: 'https://skill-wanderer.com/principles/integrity' }
+    ])
+  ]
 })
 
 // Story content data

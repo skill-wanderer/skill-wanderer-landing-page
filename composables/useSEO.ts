@@ -7,7 +7,7 @@ export interface SEOConfig {
   type?: 'website' | 'article'
   author?: string
   keywords?: string[]
-  structuredData?: any
+  structuredData?: any | any[]
 }
 
 export const useSEO = (config: SEOConfig) => {
@@ -72,13 +72,12 @@ export const useSEO = (config: SEOConfig) => {
   
   // Add structured data if provided
   if (config.structuredData) {
+    const schemas = Array.isArray(config.structuredData) ? config.structuredData : [config.structuredData]
     useHead({
-      script: [
-        {
-          type: 'application/ld+json',
-          innerHTML: JSON.stringify(config.structuredData)
-        }
-      ]
+      script: schemas.map(schema => ({
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify(schema)
+      }))
     })
   }
 }
@@ -87,7 +86,7 @@ export const useSEO = (config: SEOConfig) => {
 export const createOrganizationSchema = () => {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "EducationalOrganization",
     "name": "Skill-Wanderer",
     "url": "https://skill-wanderer.com",
     "logo": "https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp",
@@ -140,7 +139,7 @@ export const createCourseSchema = (title: string, description: string, url: stri
     "description": description,
     "url": url,
     "provider": {
-      "@type": "Organization",
+      "@type": "EducationalOrganization",
       "name": "Skill-Wanderer",
       "url": "https://skill-wanderer.com"
     },
@@ -148,5 +147,35 @@ export const createCourseSchema = (title: string, description: string, url: stri
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "courseMode": "online"
+  }
+}
+
+// Helper function to create breadcrumb structured data
+export const createBreadcrumbSchema = (items: { name: string; url: string }[]) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": items.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": item.url
+    }))
+  }
+}
+
+// Helper function to create FAQ structured data
+export const createFAQSchema = (faqs: { question: string; answer: string }[]) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
   }
 }
