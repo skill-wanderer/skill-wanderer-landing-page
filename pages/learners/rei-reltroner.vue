@@ -144,7 +144,7 @@
           who support each other on the path to mastery.
         </p>
         <div class="cta-buttons">
-          <a href="/learning-path/qa-tester" class="btn btn-primary">
+          <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             Explore QA / Tester Path
           </a>
           <a href="/contact" class="btn btn-secondary">

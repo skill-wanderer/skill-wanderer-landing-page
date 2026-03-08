@@ -14,9 +14,9 @@
             Meet Our Learners
             <span>→</span>
           </NuxtLink>
-          <NuxtLink to="/learning-path" class="btn btn-secondary">
+          <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
             View Learning Path
-          </NuxtLink>
+          </a>
           <NuxtLink to="/principles" class="btn btn-secondary">
             Our Principles
           </NuxtLink>
