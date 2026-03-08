@@ -217,11 +217,27 @@ useSEO({
   description: 'Discover the 12 guiding principles that shape Skill-Wanderer\'s mission to provide free, quality tech education with complete integrity and transparency.',
   keywords: ['skill-wanderer principles', 'education philosophy', 'learning principles', 'tech education values', 'integrity in education'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Our 12 Guiding Principles | Skill-Wanderer',
-    'Discover the 12 guiding principles that shape Skill-Wanderer\'s mission to provide free, quality tech education with complete integrity and transparency.',
-    'https://skill-wanderer.com/principles'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Our 12 Guiding Principles | Skill-Wanderer',
+      'Discover the 12 guiding principles that shape Skill-Wanderer\'s mission to provide free, quality tech education with complete integrity and transparency.',
+      'https://skill-wanderer.com/principles'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' }
+    ]),
+    createFAQSchema([
+      {
+        question: 'What are Skill-Wanderer\'s guiding principles?',
+        answer: 'Skill-Wanderer is guided by 12 principles: Accessible, Integrity and Impartiality, Individualized, Relevant, Engaging, Creativity, Community, Social Enterprise, Mission-Centric Reinvestment, Pathways, Resourceful, and Technology Partnership.'
+      },
+      {
+        question: 'Why does Skill-Wanderer have no ads or affiliate marketing?',
+        answer: 'Integrity and Impartiality is one of Skill-Wanderer\'s core principles. The platform avoids ads, affiliate marketing, and commissions to ensure all recommendations are purely for the learner\'s benefit, with no hidden agendas or conflicts of interest.'
+      }
+    ])
+  ]
 })
 
 // Client-side JavaScript for interactions

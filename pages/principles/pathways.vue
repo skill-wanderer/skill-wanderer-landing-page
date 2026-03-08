@@ -158,11 +158,18 @@ useSEO({
   description: 'Discover how Skill-Wanderer creates pathways from student to colleague, building successors through proven learning systems and quality education.',
   keywords: ['career pathways', 'student to colleague', 'skill-wanderer principle 7', 'professional development', 'learning progression'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Pathways for Our Learners: From Student to Colleague | Principle #7',
-    'Discover how Skill-Wanderer creates pathways from student to colleague, eating our own dog food to ensure quality education and building our own successors through proven learning systems.',
-    'https://skill-wanderer.com/principles/pathways'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Pathways for Our Learners: From Student to Colleague | Principle #7',
+      'Discover how Skill-Wanderer creates pathways from student to colleague, eating our own dog food to ensure quality education and building our own successors through proven learning systems.',
+      'https://skill-wanderer.com/principles/pathways'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Pathways', url: 'https://skill-wanderer.com/principles/pathways' }
+    ])
+  ]
 })
 
 const storyIntro = `

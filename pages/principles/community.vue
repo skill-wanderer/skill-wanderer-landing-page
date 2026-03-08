@@ -181,11 +181,18 @@ useSEO({
   description: 'Discover how Skill-Wanderer builds a collaborative community where everyone is both teacher and learner, creating global impact through peer support.',
   keywords: ['collaborative community', 'peer learning', 'skill-wanderer principle 10', 'community ecosystem', 'learning together'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Collaborative Community: Together We Grow | Principle #10',
-    'Discover how Skill-Wanderer builds a collaborative community ecosystem where everyone is both teacher and learner, creating global impact through peer-to-peer support.',
-    'https://skill-wanderer.com/principles/community'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Collaborative Community: Together We Grow | Principle #10',
+      'Discover how Skill-Wanderer builds a collaborative community ecosystem where everyone is both teacher and learner, creating global impact through peer-to-peer support.',
+      'https://skill-wanderer.com/principles/community'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Community', url: 'https://skill-wanderer.com/principles/community' }
+    ])
+  ]
 })
 
 // Story content data

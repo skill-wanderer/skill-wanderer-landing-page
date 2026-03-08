@@ -238,11 +238,18 @@ useSEO({
   description: 'Discover Skill-Wanderer\'s social enterprise model—same quality human mentors, start-up support, and pre-learning advisory, sustained through Social Impact Tokens and open community contribution.',
   keywords: ['social enterprise', 'social impact tokens', 'skill-wanderer principle 11', 'sustainable education', 'pay it forward', 'human mentors', 'quality tech education'],
   type: 'article',
-  structuredData: createArticleSchema(
-    'Social Enterprise Model: Quality Learning with Sustainable Impact | Principle #11',
-    'Discover Skill-Wanderer\'s social enterprise model—same quality human mentors, start-up support, and pre-learning advisory, sustained through Social Impact Tokens and open community contribution.',
-    'https://skill-wanderer.com/principles/social-enterprise'
-  )
+  structuredData: [
+    createArticleSchema(
+      'Social Enterprise Model: Quality Learning with Sustainable Impact | Principle #11',
+      'Discover Skill-Wanderer\'s social enterprise model—same quality human mentors, start-up support, and pre-learning advisory, sustained through Social Impact Tokens and open community contribution.',
+      'https://skill-wanderer.com/principles/social-enterprise'
+    ),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
+      { name: 'Social Enterprise', url: 'https://skill-wanderer.com/principles/social-enterprise' }
+    ])
+  ]
 })
 
 // Cycle interaction

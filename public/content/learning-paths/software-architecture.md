@@ -1,0 +1,9 @@
+# Software Architecture & Design Patterns Path - Planned | Skill-Wanderer
+
+Software Architecture and Design Patterns learning path coming soon. Learn SOLID principles, design patterns, architectural styles, and system design.
+
+## Content
+
+Software Architecture & Design Patterns Path Build Systems That Scale Master the art of designing robust, scalable, and maintainable software systems. Learn architectural patterns, design principles, and best practices used by industry leaders. 📋 Planned 🔜 Coming Soon 📝 Curriculum Subject to Change 🏛️ Path Planned We're planning a comprehensive software architecture curriculum that will equip you with the skills to design, evaluate, and implement software systems at any scale. This path is in the planning phase and development will begin soon. Planned Topics Include: 🎯 SOLID Principles Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion 🔧 Creational Patterns Factory, Abstract Factory, Builder, Prototype, Singleton patterns 🏗️ Structural Patterns Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy patterns 🔄 Behavioral Patterns Observer, Strategy, Command, State, Chain of Responsibility, and more 🌐 Architectural Styles Microservices, Monolithic, Event-Driven, Layered, Hexagonal Architecture 📊 System Design Scalability, Load Balancing, Caching, Database Design, API Design Be the First to Know Join our community to get notified when the Software Architecture path launches. You'll receive updates on course development and early access opportunities. Get Notified Explore Front-End Development Path
+Software Architecture & Design Patterns Path - Planned | Skill-Wanderer
+Software Architecture and Design Patterns learning path coming soon. Learn SOLID principles, design patterns, architectural styles, and system design.
