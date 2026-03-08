@@ -18,7 +18,7 @@
             journey taught me something profound about learning and growth.
           </p>
           <p>
-            Through four startups, leading 20+ developers, juggling multiple projects simultaneously, and yes, failing 
+            Through four startups, leading 50+ members, juggling multiple projects simultaneously, and yes, failing 
             spectacularly at times, I discovered that <span class="highlight">the gap between what we learn and what 
             we need to know keeps growing wider</span>. Every role I've wandered through—from Frontend to DevOps, 
             from Business Analyst to Solution Architect—added another piece to the puzzle.
