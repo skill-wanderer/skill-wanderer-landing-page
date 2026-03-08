@@ -80,9 +80,9 @@
           who support each other on the path to mastery. Your story could be featured here.
         </p>
         <div class="cta-buttons">
-          <NuxtLink to="/learning-path" class="btn btn-primary">
+          <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             Explore Learning Paths
-          </NuxtLink>
+          </a>
           <NuxtLink to="/contact" class="btn btn-secondary">
             Get in Touch
           </NuxtLink>
