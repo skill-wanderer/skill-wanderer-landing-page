@@ -243,7 +243,7 @@
       <div class="founder-card">
         <img src="/skill-wanderer-avatar.jpg" alt="Quan Nguyen - Founder" class="founder-avatar" />
         <h3 class="founder-name">Quan Nguyen</h3>
-        <p class="founder-title">Founder, End-to-End Software Developer & The Passionate Wanderer</p>
+        <p class="founder-title">Founder & The Passionate Wanderer — A One-Man Army in Web, AI, Mobile, DevOps, Solution Architecture & Project Management</p>
         <div class="founder-bio">
           <p>
             Hi, I'm Quan—living proof that the most unconventional paths often lead to the most valuable insights. 
