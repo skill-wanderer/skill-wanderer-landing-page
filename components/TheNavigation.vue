@@ -37,6 +37,7 @@
             <NuxtLink to="/about" @click="closeMobileMenu(); isAboutDropdownOpen = false">About Us</NuxtLink>
             <NuxtLink to="/principles" @click="closeMobileMenu(); isAboutDropdownOpen = false">Principles</NuxtLink>
             <NuxtLink to="/roadmap" @click="closeMobileMenu(); isAboutDropdownOpen = false">Roadmap</NuxtLink>
+            <NuxtLink to="/admiral-orion" @click="closeMobileMenu(); isAboutDropdownOpen = false">Admiral Orion</NuxtLink>
           </div>
         </div>
         
@@ -52,6 +53,7 @@
             <NuxtLink to="/about" @click="closeMobileMenu">About Us</NuxtLink>
             <NuxtLink to="/principles" @click="closeMobileMenu">Principles</NuxtLink>
             <NuxtLink to="/roadmap" @click="closeMobileMenu">Roadmap</NuxtLink>
+            <NuxtLink to="/admiral-orion" @click="closeMobileMenu">Admiral Orion</NuxtLink>
           </div>
         </div>
         

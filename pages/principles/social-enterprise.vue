@@ -4,7 +4,7 @@
     <PrincipleHero
       :number="11"
       title="Social Enterprise Model for Quality Education"
-      tagline="Quality Learning, Sustainable Impact"
+      tagline="3 Ways to Contribute to the Mission"
       breadcrumb-name="Social Enterprise Model"
     />
 
@@ -26,30 +26,30 @@
           <div class="cycle-ring">
             <div class="cycle-step" style="--step-index: 0;">
               <div class="cycle-node" @mouseenter="activeStep = 0" @mouseleave="activeStep = -1">
-                <span class="node-icon">🎓</span>
+                <span class="node-icon">🤝</span>
               </div>
-              <div class="node-label">Learner Joins</div>
-              <p class="node-detail" :class="{ visible: activeStep === 0 }">Supported through Social Impact Tokens</p>
+              <div class="node-label">Donate or Partner</div>
+              <p class="node-detail" :class="{ visible: activeStep === 0 }">Fund the mission through consultancy & coaching</p>
             </div>
 
             <div class="cycle-arrow">→</div>
 
             <div class="cycle-step" style="--step-index: 1;">
               <div class="cycle-node" @mouseenter="activeStep = 1" @mouseleave="activeStep = -1">
-                <span class="node-icon">📚</span>
+                <span class="node-icon">💻</span>
               </div>
-              <div class="node-label">Quality Learning</div>
-              <p class="node-detail" :class="{ visible: activeStep === 1 }">Human mentors, real projects, start-up support</p>
+              <div class="node-label">Build the Platform</div>
+              <p class="node-detail" :class="{ visible: activeStep === 1 }">Learn and gain experience by developing with us</p>
             </div>
 
             <div class="cycle-arrow">→</div>
 
             <div class="cycle-step" style="--step-index: 2;">
               <div class="cycle-node" @mouseenter="activeStep = 2" @mouseleave="activeStep = -1">
-                <span class="node-icon">🚀</span>
+                <span class="node-icon">🌱</span>
               </div>
-              <div class="node-label">Learner Grows</div>
-              <p class="node-detail" :class="{ visible: activeStep === 2 }">Gains skills, experience, and confidence</p>
+              <div class="node-label">Grow the Community</div>
+              <p class="node-detail" :class="{ visible: activeStep === 2 }">Contribute and build meaningful connections</p>
             </div>
 
             <div class="cycle-arrow">→</div>
@@ -58,8 +58,8 @@
               <div class="cycle-node" @mouseenter="activeStep = 3" @mouseleave="activeStep = -1">
                 <span class="node-icon">🔄</span>
               </div>
-              <div class="node-label">Gives Back</div>
-              <p class="node-detail" :class="{ visible: activeStep === 3 }">Pay forward, contribute, or support the community</p>
+              <div class="node-label">Mission Sustained</div>
+              <p class="node-detail" :class="{ visible: activeStep === 3 }">Every contribution fuels quality education for all</p>
             </div>
           </div>
         </div>
@@ -102,72 +102,64 @@
       </div>
     </section>
 
-    <!-- Social Impact Token Section -->
+    <!-- 3 Ways to Contribute Section -->
     <section class="token-section">
       <div class="token-container">
         <div style="text-align: center; margin-bottom: 50px;">
-          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">Social Impact Tokens</h2>
-          <p style="font-size: 1.2rem; opacity: 0.9;">How we fund access and track impact openly</p>
+          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">3 Ways to Contribute to the Mission</h2>
+          <p style="font-size: 1.2rem; opacity: 0.9;">As a social enterprise, every contribution directly funds quality education</p>
         </div>
 
         <div class="token-explainer">
           <div class="token-card main-token">
-            <span class="token-badge">🪙</span>
-            <h3>What Are Social Impact Tokens?</h3>
+            <span class="token-badge">🌍</span>
+            <h3>How Our Social Enterprise Works</h3>
             <p>
-              Social Impact Tokens are Skill-Wanderer's way of investing in learners upfront.
-              When you join—especially if you're in genuine need—we allocate tokens to cover
-              your learning costs including human mentoring, project work, and advisory services.
-              All token allocations and contributions are <strong>openly tracked on our platform</strong>
-              so the community can see the real impact being made.
+              Skill-Wanderer operates as a social enterprise—meaning <strong>100% of revenue is reinvested
+              into our mission</strong> of making quality tech education accessible to everyone.
+              There are three meaningful ways you can contribute to this mission,
+              each creating value for you while sustaining education for those who need it most.
             </p>
           </div>
         </div>
 
         <div style="text-align: center; margin: 50px 0 30px;">
-          <h3 style="font-size: 1.8rem; color: var(--primary-orange);">Ways to Give Back</h3>
-          <p style="font-size: 1.1rem; opacity: 0.9;">Choose the path that works for you</p>
+          <h3 style="font-size: 1.8rem; color: var(--primary-orange);">Choose Your Way to Contribute</h3>
+          <p style="font-size: 1.1rem; opacity: 0.9;">Every path creates impact</p>
         </div>
 
         <div class="payback-grid">
           <div class="payback-card" style="animation-delay: 0.1s;">
-            <span class="payback-icon">💰</span>
-            <h3>Pay What You Can</h3>
+            <span class="payback-icon">🤝</span>
+            <h3>Donate or Become a Tech Partner</h3>
             <p>
-              Contribute financially to support future students—any amount helps.
-              Use a pure monetary contribution or a hybrid approach combining money
-              with other methods. Every dollar goes directly to funding the next learner.
+              Use our tech services, consultancy, or coaching to solve your challenges.
+              We offer what we teach—be it <strong>AI, web, mobile, DevOps, or platform development</strong>.
+              All revenue is <strong>reinvested to fund the mission</strong>.
+              Your problems get solved, and learners get funded. Everyone wins.
             </p>
           </div>
 
           <div class="payback-card" style="animation-delay: 0.2s;">
             <span class="payback-icon">💻</span>
-            <h3>Contribute to the Platform</h3>
+            <h3>Platform Development</h3>
             <p>
-              Help build and improve Skill-Wanderer itself. This gives you real-world
-              experience working on a live product while earning back your tokens.
-              Design, code, test, write—every skill counts.
+              Join us in building the Skill-Wanderer platform itself. Learners gain
+              <strong>real-world experience and learning at the same time</strong>—we
+              will teach you as you contribute. Design, code, test, write—grow your
+              skills on a live product with real mentorship.
             </p>
           </div>
 
           <div class="payback-card" style="animation-delay: 0.3s;">
-            <span class="payback-icon">🤝</span>
-            <h3>Strengthen the Community</h3>
+            <span class="payback-icon">🌱</span>
+            <h3>Contribute to the Community</h3>
             <p>
-              Mentor newer learners, create content, moderate discussions, or organize events.
-              Community contributions are valued and counted openly alongside other methods.
+              Give back by mentoring newer learners, creating content, moderating discussions,
+              or organizing events. In return, you gain <strong>meaningful connections</strong>
+              with like-minded people who share your passion for growth and learning.
             </p>
           </div>
-        </div>
-
-        <div class="transparency-box">
-          <h3>🔍 Full Transparency</h3>
-          <p>
-            All Social Impact Token allocations, contributions, and pay-backs are
-            <strong>openly counted and visible on our platform</strong>. Every learner
-            can see how the system works—how tokens are granted, how people give back,
-            and how the cycle sustains itself. No hidden numbers, no black boxes.
-          </p>
         </div>
       </div>
     </section>
@@ -220,7 +212,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote
-      quote="I once believed that making education free was enough. But quality suffers without sustainability, and charity alone can't fund human mentors forever. The social enterprise model is our answer—every learner receives the same quality, every contribution fuels the next learner, and every token is counted openly. This is how we build something that truly lasts."
+      quote="I once believed that making education free was enough. But quality suffers without sustainability, and charity alone can't fund human mentors forever. The social enterprise model is our answer—whether you donate, become a tech partner, help build the platform, or strengthen the community, every contribution is reinvested into the mission. This is how we build something that truly lasts."
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />
 
@@ -234,14 +226,14 @@ import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management
 useSEO({
-  title: 'Social Enterprise Model: Quality Learning with Sustainable Impact | Principle #11',
-  description: 'Discover Skill-Wanderer\'s social enterprise model—same quality human mentors, start-up support, and pre-learning advisory, sustained through Social Impact Tokens and open community contribution.',
-  keywords: ['social enterprise', 'social impact tokens', 'skill-wanderer principle 11', 'sustainable education', 'pay it forward', 'human mentors', 'quality tech education'],
+  title: 'Social Enterprise Model: 3 Ways to Contribute to the Mission | Principle #11',
+  description: 'Discover Skill-Wanderer\'s social enterprise model—3 ways to contribute: donate or become a tech partner, help develop our platform, or strengthen the community. All revenue reinvested into quality education.',
+  keywords: ['social enterprise', 'tech partner', 'skill-wanderer principle 11', 'sustainable education', 'contribute to mission', 'human mentors', 'quality tech education'],
   type: 'article',
   structuredData: [
     createArticleSchema(
-      'Social Enterprise Model: Quality Learning with Sustainable Impact | Principle #11',
-      'Discover Skill-Wanderer\'s social enterprise model—same quality human mentors, start-up support, and pre-learning advisory, sustained through Social Impact Tokens and open community contribution.',
+      'Social Enterprise Model: 3 Ways to Contribute to the Mission | Principle #11',
+      'Discover Skill-Wanderer\'s social enterprise model—3 ways to contribute: donate or become a tech partner, help develop our platform, or strengthen the community. All revenue reinvested into quality education.',
       'https://skill-wanderer.com/principles/social-enterprise'
     ),
     createBreadcrumbSchema([
@@ -256,7 +248,7 @@ useSEO({
 const activeStep = ref(-1)
 
 // Story content data
-const storyIntro = 'I call our eleventh principle <strong>Social Enterprise Model for Quality Education</strong>. This principle has evolved—and its story is one of honest reflection about what truly works.'
+const storyIntro = 'I call our eleventh principle <strong>Social Enterprise Model for Quality Education</strong>. We operate as a social enterprise with three clear ways to contribute to the mission—and its story is one of honest reflection about what truly works.'
 
 const storyChapters: StoryChapter[] = [
   {
@@ -307,29 +299,21 @@ const storyChapters: StoryChapter[] = [
     ]
   },
   {
-    icon: '🪙',
-    title: 'Social Impact Tokens & Paying It Forward',
+    icon: '🌍',
+    title: '3 Ways to Contribute to the Mission',
     content: [
       {
         type: 'text',
-        text: 'At the heart of this model is what we call <strong>Social Impact Tokens</strong>. When learners join—especially those who need support—we invest in them upfront through these tokens. The tokens cover mentorship, project work, advisory services, and more.'
-      },
-      {
-        type: 'text',
-        text: 'Once learners have grown, they can give back in several ways:'
+        text: 'As a social enterprise, we reinvest all revenue into our mission. There are <strong>three meaningful ways</strong> anyone can contribute:'
       },
       {
         type: 'element-list',
         text: '',
         items: [
-          '<strong>Pay what you can</strong>—contribute financially to fund the next student, using a pure monetary contribution or a hybrid approach.',
-          '<strong>Contribute to the Skill-Wanderer platform</strong>—help build, improve, or maintain our product, gaining real-life professional experience in the process.',
-          '<strong>Contribute to the community</strong>—mentor newer learners, create content, moderate discussions, or organize events.'
+          '<strong>Donate or become a tech partner</strong>—use our tech services, consultancy, or coaching. We offer what we teach: AI, web, mobile, DevOps, and platform development. All revenue is reinvested to fund the mission.',
+          '<strong>Platform development</strong>—join us in building the Skill-Wanderer platform, gaining real-world experience and learning at the same time while we teach you.',
+          '<strong>Contribute to the community</strong>—mentor newer learners, create content, moderate discussions, or organize events, and gain meaningful connections in return.'
         ]
-      },
-      {
-        type: 'text',
-        text: 'Every contribution is <strong>openly counted and tracked on our platform</strong>. There are no hidden numbers. The community can see exactly how Social Impact Tokens are allocated, how learners give back, and how the cycle sustains itself. This transparency is fundamental to the trust that makes this model work.'
       }
     ]
   }
@@ -338,30 +322,30 @@ const storyChapters: StoryChapter[] = [
 // Practice examples data
 const practiceExamples: PracticeExample[] = [
   {
-    title: 'What Every Learner Receives',
+    title: 'Donate or Become a Tech Partner',
     items: [
-      'Human mentorship from experienced industry professionals',
-      'Real project work with meaningful outcomes',
-      'Pre-learning advisory to choose the right path',
-      'Start-up support and guidance for aspiring founders'
+      'Use our tech services, consultancy, or coaching to solve your challenges',
+      'We offer what we teach: AI, web, mobile, DevOps, and platform development',
+      'All revenue from partnerships is reinvested into funding the mission',
+      'Donations of any size go directly toward supporting the next learner'
     ]
   },
   {
-    title: 'How Learners Give Back',
+    title: 'Platform Development',
     items: [
-      'Pay what you can—any financial contribution to fund the next student',
-      'Hybrid model—combine monetary support with platform or community contributions',
-      'Contribute to the Skill-Wanderer platform—gain real-world experience while earning back tokens',
-      'Strengthen the community—mentor, teach, create, moderate, or organize'
+      'Help build and improve the Skill-Wanderer platform hands-on',
+      'Gain real-world experience and learning at the same time',
+      'We will teach you as you contribute—design, code, test, write',
+      'Work on a live product with real mentorship and meaningful outcomes'
     ]
   },
   {
-    title: 'Open & Transparent Tracking',
+    title: 'Contribute to the Community',
     items: [
-      'Social Impact Token allocations are publicly visible on the platform',
-      'All contribution methods and amounts are openly counted',
-      'Community can track how the cycle sustains itself in real time',
-      'Maximum support prioritized for learners in greatest need'
+      'Mentor newer learners and share your knowledge',
+      'Create content, moderate discussions, or organize events',
+      'Build meaningful connections with like-minded people',
+      'Strengthen a network of passionate learners and professionals'
     ]
   }
 ]

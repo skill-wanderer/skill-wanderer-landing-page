@@ -100,8 +100,13 @@ export default defineNuxtConfig({
         messagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
         appId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID,
         measurementId: process.env.NUXT_PUBLIC_FIREBASE_MEASUREMENT_ID || '',
-      }
-
+      },
+      pathfinder: {
+        apiUrl: process.env.NUXT_PUBLIC_PATHFINDER_API_URL || '',
+        domains: process.env.NUXT_PUBLIC_PATHFINDER_DOMAINS || 'skill-wanderer.com,wanderings.skill-wanderer.com,dojo.skill-wanderer.com',
+        sessionExpiryMinutes: Number(process.env.NUXT_PUBLIC_PATHFINDER_SESSION_EXPIRY_MINUTES) || 30,
+        sessionStorage: process.env.NUXT_PUBLIC_PATHFINDER_SESSION_STORAGE || 'browser',
+      },
     }
   },
 

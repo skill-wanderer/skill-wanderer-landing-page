@@ -12,6 +12,11 @@
 
     <!-- Footer -->
     <TheFooter />
+
+    <!-- Pathfinder Chatbot (available on all pages) -->
+    <ClientOnly>
+      <PathfinderChat />
+    </ClientOnly>
   </div>
 </template>
 
