@@ -7,7 +7,44 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap'
   ],
   site: {
-    url: 'https://skill-wanderer.com', // Replace with your actual domain
+    url: 'https://skill-wanderer.com',
+  },
+  sitemap: {
+    // Exclude empty directory routes and dynamic catch-all
+    exclude: [
+      '/learning-path',
+      '/learning-path/**',
+      '/partners',
+      '/partners/**',
+    ],
+    urls: async () => {
+      // Static principle pages with proper metadata
+      const principles = [
+        'accessible',
+        'community',
+        'creativity',
+        'engaging',
+        'individualized',
+        'integrity',
+        'mission-centric-reinvestment',
+        'pathways',
+        'relevant',
+        'resourceful',
+        'social-enterprise',
+        'tech-services',
+        'technology-partnership',
+      ]
+      return principles.map((slug) => ({
+        loc: `/principles/${slug}`,
+        changefreq: 'monthly',
+        priority: 0.8,
+      }))
+    },
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date().toISOString(),
+    },
   },
 
 
@@ -66,6 +103,23 @@ export default defineNuxtConfig({
       }
 
     }
+  },
+
+  routeRules: {
+    '/': { sitemap: { changefreq: 'weekly', priority: 1.0 } },
+    '/about': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
+    '/mission': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
+    '/contact': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
+    '/roadmap': { sitemap: { changefreq: 'weekly', priority: 0.7 } },
+    '/principles': { sitemap: { changefreq: 'monthly', priority: 0.9 } },
+    '/principles/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
+    '/learners': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
+    '/learners/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
+    '/expertise-impact': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
+    '/expertise-impact/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
+    '/technology-partner': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
+    '/privacy-policy': { sitemap: { changefreq: 'yearly', priority: 0.3 } },
+    '/terms-of-service': { sitemap: { changefreq: 'yearly', priority: 0.3 } },
   },
 
   compatibilityDate: '2025-04-19',
