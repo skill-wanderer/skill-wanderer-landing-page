@@ -64,3 +64,8 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/amd64,linux/arm64
+          build-args: |
+            NUXT_PUBLIC_PATHFINDER_API_URL=${{ vars.NUXT_PUBLIC_PATHFINDER_API_URL }}
+            NUXT_PUBLIC_PATHFINDER_DOMAINS=${{ vars.NUXT_PUBLIC_PATHFINDER_DOMAINS }}
+            NUXT_PUBLIC_PATHFINDER_SESSION_EXPIRY_MINUTES=${{ vars.NUXT_PUBLIC_PATHFINDER_SESSION_EXPIRY_MINUTES }}
+            NUXT_PUBLIC_PATHFINDER_SESSION_STORAGE=${{ vars.NUXT_PUBLIC_PATHFINDER_SESSION_STORAGE }}
