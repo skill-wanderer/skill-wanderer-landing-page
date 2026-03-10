@@ -29,7 +29,7 @@
                 <span class="node-icon">🤝</span>
               </div>
               <div class="node-label">Donate or Partner</div>
-              <p class="node-detail" :class="{ visible: activeStep === 0 }">Fund the mission through consultancy & coaching</p>
+              <p class="node-detail" :class="{ visible: activeStep === 0 }">Donate for our teaching and/or work with us as tech partners</p>
             </div>
 
             <div class="cycle-arrow">→</div>
@@ -131,12 +131,13 @@
         <div class="payback-grid">
           <div class="payback-card" style="animation-delay: 0.1s;">
             <span class="payback-icon">🤝</span>
-            <h3>Donate or Become a Tech Partner</h3>
+            <h3>Donate for Our Teaching and/or Work with Us as Tech Partners</h3>
             <p>
-              Use our tech services, consultancy, or coaching to solve your challenges.
-              We offer what we teach—be it <strong>AI, web, mobile, DevOps, or platform development</strong>.
-              All revenue is <strong>reinvested to fund the mission</strong>.
-              Your problems get solved, and learners get funded. Everyone wins.
+              Support our mission by donating directly to fund quality teaching,
+              and/or work with us as tech partners using our services—be it
+              <strong>AI, web, mobile, DevOps, or platform development</strong>.
+              All contributions are <strong>reinvested to fund the mission</strong>.
+              Your challenges get solved, learners get funded. Everyone wins.
             </p>
           </div>
 
@@ -212,7 +213,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote
-      quote="I once believed that making education free was enough. But quality suffers without sustainability, and charity alone can't fund human mentors forever. The social enterprise model is our answer—whether you donate, become a tech partner, help build the platform, or strengthen the community, every contribution is reinvested into the mission. This is how we build something that truly lasts."
+      quote="I once believed that making education free was enough. But quality suffers without sustainability, and charity alone can't fund human mentors forever. The social enterprise model is our answer—whether you donate for our teaching, work with us as tech partners, help build the platform, or strengthen the community, every contribution is reinvested into the mission. This is how we build something that truly lasts."
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />
 
@@ -227,7 +228,7 @@ import type { StoryChapter, PracticeExample } from '~/types'
 // SEO and meta management
 useSEO({
   title: 'Social Enterprise Model: 3 Ways to Contribute to the Mission | Principle #11',
-  description: 'Discover Skill-Wanderer\'s social enterprise model—3 ways to contribute: donate or become a tech partner, help develop our platform, or strengthen the community. All revenue reinvested into quality education.',
+  description: 'Discover Skill-Wanderer\'s social enterprise model—3 ways to contribute: donate for our teaching and/or work with us as tech partners, help develop our platform, or strengthen the community. All contributions reinvested into quality education.',
   keywords: ['social enterprise', 'tech partner', 'skill-wanderer principle 11', 'sustainable education', 'contribute to mission', 'human mentors', 'quality tech education'],
   type: 'article',
   structuredData: [
@@ -310,7 +311,7 @@ const storyChapters: StoryChapter[] = [
         type: 'element-list',
         text: '',
         items: [
-          '<strong>Donate or become a tech partner</strong>—use our tech services, consultancy, or coaching. We offer what we teach: AI, web, mobile, DevOps, and platform development. All revenue is reinvested to fund the mission.',
+          '<strong>Donate for our teaching and/or work with us as tech partners</strong>—support our mission by donating directly to fund quality teaching, and/or use our tech services including AI, web, mobile, DevOps, and platform development. All contributions are reinvested to fund the mission.',
           '<strong>Platform development</strong>—join us in building the Skill-Wanderer platform, gaining real-world experience and learning at the same time while we teach you.',
           '<strong>Contribute to the community</strong>—mentor newer learners, create content, moderate discussions, or organize events, and gain meaningful connections in return.'
         ]
@@ -322,12 +323,12 @@ const storyChapters: StoryChapter[] = [
 // Practice examples data
 const practiceExamples: PracticeExample[] = [
   {
-    title: 'Donate or Become a Tech Partner',
+    title: 'Donate for Our Teaching and/or Work with Us as Tech Partners',
     items: [
-      'Use our tech services, consultancy, or coaching to solve your challenges',
-      'We offer what we teach: AI, web, mobile, DevOps, and platform development',
-      'All revenue from partnerships is reinvested into funding the mission',
-      'Donations of any size go directly toward supporting the next learner'
+      'Donate directly to fund quality teaching and support learners',
+      'Work with us as tech partners using our services: AI, web, mobile, DevOps, and platform development',
+      'All contributions and revenue are reinvested into funding the mission',
+      'Whether you donate, partner, or both—every bit goes toward supporting the next learner'
     ]
   },
   {
