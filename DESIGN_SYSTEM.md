@@ -190,3 +190,11 @@ Build this micro frontend using the Skill-Wanderer design system:
 - Subscribe section pattern: `components/TheSubscribe.vue`
 - Footer pattern: `components/TheFooter.vue`
 - Hero + card usage example: `pages/index.vue`
+
+## 13) Marketing Material Alignment
+
+For posters, social media graphics, decks, flyers, email headers, and other marketing assets, use the companion guide:
+
+- `MARKETING_DESIGN_GUIDELINES.md`
+
+That document adapts this UI system into practical rules for outward-facing brand materials while preserving the same visual feel.

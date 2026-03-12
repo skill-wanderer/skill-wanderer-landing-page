@@ -36,4 +36,26 @@ export const teamMembers: TeamMember[] = [
       'Leading the open-source development team and community growth',
     ],
   },
+  {
+    slug: 'thanh-nguyen',
+    name: 'Thanh Nguyen',
+    role: 'Full-Cycle Associate',
+    badge: '🌱 Team Member',
+    avatar: '/thanh-nguyen-avatar.jpg', 
+    tagline: 'Fueling Innovation through Lifelong Learning and Adaptability',
+    location: 'Vietnam',
+    title: 'Full-Cycle Associate',
+    github: 'https://github.com/Thanh-Nguyen-Valerie', 
+    bio: "As a fresh graduate with a 'learn-it-all' rather than 'know-it-all' philosophy, Thanh joins Skill-Wanderer with a vibrant energy and a relentless drive for excellence. Embracing the 'Full-Cycle' mindset, Thanh is dedicated to mastering the entire product lifecycle—from initial concept to deployment. With a belief that the tech landscape is an infinite classroom, Thanh views every challenge as a strategic stepping stone to mastery, aiming to bridge the gap between academic theory and high-impact, real-world solutions.",
+    skills: [
+      'Full-Stack Development', 
+      'Problem-Solving', 
+      'Rapid Prototyping', 
+      'Growth Mindset', 
+      'Cross-functional Collaboration'
+    ],
+    contributions: [
+      'Currently undergoing onboarding and deep-diving into the Skill-Wanderer ecosystem',
+    ],
+  },
 ]
