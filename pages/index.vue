@@ -1,5 +1,6 @@
 <template>
   <div>
+<<<<<<< HEAD
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
@@ -226,6 +227,13 @@
         <NuxtLink to="/work-with-us" class="btn btn-secondary">Work With the Guild</NuxtLink>
       </div>
     </section>
+=======
+    <HeroSection />
+    <FeaturesSection />
+    <ValuesSection />
+    <JourneySection />
+    <ExpertiseBriefSection />
+>>>>>>> e1723ae (refactor(landing-page): split monolithic index.vue into modular sections)
   </div>
 </template>
 
@@ -292,30 +300,13 @@ onMounted(() => {
     })
   })
 
-  // Intersection Observer for animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        (entry.target as HTMLElement).style.opacity = '1'
-      }
-    })
-  }, observerOptions)
-
-  document.querySelectorAll('.value-item').forEach(item => {
-    observer.observe(item)
-  })
-
   // Cleanup
   onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
   })
 })
 </script>
+<<<<<<< HEAD
 
 <style scoped>
 /* CSS Variables */
@@ -924,3 +915,5 @@ body {
   }
 }
 </style>
+=======
+>>>>>>> e1723ae (refactor(landing-page): split monolithic index.vue into modular sections)
