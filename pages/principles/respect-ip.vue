@@ -30,7 +30,7 @@
           <div class="flow-arrow-container">
             <svg class="flow-arrow-svg" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <linearGradient id="arrowGrad1" x1="0" y1="0" x2="1" y2="0">
+                <linearGradient id="arrowGrad1" x1="4" y1="20" x2="68" y2="20" gradientUnits="userSpaceOnUse">
                   <stop offset="0%" stop-color="#FF6B35"/>
                   <stop offset="100%" stop-color="#FFC107"/>
                 </linearGradient>
@@ -50,7 +50,7 @@
           <div class="flow-arrow-container">
             <svg class="flow-arrow-svg" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <linearGradient id="arrowGrad2" x1="0" y1="0" x2="1" y2="0">
+                <linearGradient id="arrowGrad2" x1="4" y1="20" x2="68" y2="20" gradientUnits="userSpaceOnUse">
                   <stop offset="0%" stop-color="#FF6B35"/>
                   <stop offset="100%" stop-color="#4CAF50"/>
                 </linearGradient>
