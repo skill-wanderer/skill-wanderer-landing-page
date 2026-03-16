@@ -187,20 +187,20 @@
             </div>
           </div>
 
-          <!-- Resourceful -->
+          <!-- Respect IP -->
           <div class="principle-card">
-            <div class="principle-icon">🔍</div>
-            <h3>Resourceful Curation</h3>
-            <p>Prioritizing the best existing third-party resources to avoid duplication, while creating original free content where we can add distinct value.</p>
+            <div class="principle-icon">🛡️</div>
+            <h3>Respect IP</h3>
+            <p>Honoring intellectual property boundaries and attribution practices as a core principle, while leveraging AI to generate learning materials from our own curriculum.</p>
             <div class="principle-visual">
               <div class="resource-balance">
                 <div class="resource-side">
-                  <div class="resource-type">Curated</div>
-                  <div class="resource-percent">70%</div>
+                  <div class="resource-type">AI-Generated</div>
+                  <div class="resource-percent">Own IP</div>
                 </div>
                 <div class="resource-side">
-                  <div class="resource-type">Original</div>
-                  <div class="resource-percent">30%</div>
+                  <div class="resource-type">Attributed</div>
+                  <div class="resource-percent">3rd Party</div>
                 </div>
               </div>
             </div>
