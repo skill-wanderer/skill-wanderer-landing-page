@@ -57,7 +57,7 @@ const principles = [
   { slug: 'relevant', name: 'Relevant & Impactful' },
   { slug: 'pathways', name: 'Pathways for Our Learners' },
   { slug: 'technology-partnership', name: 'Technology Partnerships Fueling Mission' },
-  { slug: 'resourceful', name: 'Resourceful Curation' },
+  { slug: 'respect-ip', name: 'Respect IP' },
   { slug: 'community', name: 'Collaborative Community' },
   { slug: 'social-enterprise', name: 'Social Enterprise Model' },
   { slug: 'mission-centric-reinvestment', name: 'Mission-Centric Reinvestment' }

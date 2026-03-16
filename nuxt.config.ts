@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         'mission-centric-reinvestment',
         'pathways',
         'relevant',
-        'resourceful',
+        'respect-ip',
         'social-enterprise',
         'tech-services',
         'technology-partnership',

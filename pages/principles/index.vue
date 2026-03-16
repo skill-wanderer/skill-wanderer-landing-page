@@ -136,16 +136,16 @@
           </a>
 
           <!-- Principle 9 -->
-          <a href="/principles/resourceful" class="principle-card" style="animation-delay: 0.9s;">
+          <a href="/principles/respect-ip" class="principle-card" style="animation-delay: 0.9s;">
             <div class="principle-header">
               <div class="principle-number">9</div>
               <div class="principle-title">
-                <h3>Resourceful Curation</h3>
-                <p class="principle-tagline">Best of All Worlds</p>
+                <h3>Respect IP</h3>
+                <p class="principle-tagline">Honoring IP in the Age of AI</p>
               </div>
             </div>
             <p class="principle-description">
-              Curating the best existing third-party resources while creating original free content where we add unique value.
+              Explicitly reinforcing intellectual property boundaries and attribution practices as we embrace AI-enabled content generation from our own curriculum.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -230,7 +230,7 @@ useSEO({
     createFAQSchema([
       {
         question: 'What are Skill-Wanderer\'s guiding principles?',
-        answer: 'Skill-Wanderer is guided by 12 principles: Accessible, Integrity and Impartiality, Individualized, Relevant, Engaging, Creativity, Community, Social Enterprise, Mission-Centric Reinvestment, Pathways, Resourceful, and Technology Partnership.'
+        answer: 'Skill-Wanderer is guided by 12 principles: Accessible, Integrity and Impartiality, Individualized, Relevant, Engaging, Creativity, Community, Social Enterprise, Mission-Centric Reinvestment, Pathways, Respect IP, and Technology Partnership.'
       },
       {
         question: 'Why does Skill-Wanderer have no ads or affiliate marketing?',
