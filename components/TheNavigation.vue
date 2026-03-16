@@ -69,8 +69,8 @@
           </span>
           <div class="dropdown-menu" :class="{ open: isLearningPathDropdownOpen }">
             <NuxtLink to="/learning-path" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">All Learning Paths</NuxtLink>
-            <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">Go to Learning Path Study</a>
             <NuxtLink to="/learners" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">Our Learners</NuxtLink>
+            <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">Go to Learning Path Study</a>
           </div>
         </div>
 
@@ -84,8 +84,8 @@
           </button>
           <div class="mobile-dropdown-menu" :class="{ open: isMobileLearningPathDropdownOpen }">
             <NuxtLink to="/learning-path" @click="closeMobileMenu">All Learning Paths</NuxtLink>
-            <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu">Go to Learning Path Study</a>
             <NuxtLink to="/learners" @click="closeMobileMenu">Our Learners</NuxtLink>
+            <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu">Go to Learning Path Study</a>
           </div>
         </div>
 
