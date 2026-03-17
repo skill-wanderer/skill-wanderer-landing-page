@@ -13,6 +13,7 @@
         class="easter-egg"
         :style="heartStyle"
         title="The Heart of Skill-Wanderer (Motivation for Founder)"
+        aria-label="View the Skill-Wanderer mission"
       >
         <span class="heart-beat">❤️</span>
       </NuxtLink>
