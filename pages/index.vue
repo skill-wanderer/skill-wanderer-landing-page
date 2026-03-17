@@ -1,6 +1,5 @@
 <template>
   <div>
-<<<<<<< HEAD
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
@@ -227,13 +226,11 @@
         <NuxtLink to="/work-with-us" class="btn btn-secondary">Work With the Guild</NuxtLink>
       </div>
     </section>
-=======
     <HeroSection />
     <FeaturesSection />
     <ValuesSection />
     <JourneySection />
     <ExpertiseBriefSection />
->>>>>>> e1723ae (refactor(landing-page): split monolithic index.vue into modular sections)
   </div>
 </template>
 
@@ -306,8 +303,6 @@ onMounted(() => {
   })
 })
 </script>
-<<<<<<< HEAD
-
 <style scoped>
 /* CSS Variables */
 :root {
@@ -915,5 +910,4 @@ body {
   }
 }
 </style>
-=======
->>>>>>> e1723ae (refactor(landing-page): split monolithic index.vue into modular sections)
+
