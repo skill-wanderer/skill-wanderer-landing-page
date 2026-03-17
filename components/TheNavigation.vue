@@ -7,7 +7,13 @@
       </NuxtLink>
       
       <!-- Easter egg: Hidden link to mission page -->
-      <NuxtLink to="/mission" class="easter-egg" title="The Heart of Skill-Wanderer (Motivation for Founder)">
+      <NuxtLink
+        v-if="!isMissionPage"
+        to="/mission"
+        class="easter-egg"
+        :style="heartStyle"
+        title="The Heart of Skill-Wanderer (Motivation for Founder)"
+      >
         <span class="heart-beat">❤️</span>
       </NuxtLink>
       
@@ -148,17 +154,13 @@
         </div>
 
         <NuxtLink to="/contact" @click="closeMobileMenu">Contact</NuxtLink>
-        <!-- Easter egg: Mobile heart link -->
-        <NuxtLink to="/mission" @click="closeMobileMenu" class="easter-egg-mobile" title="The Heart of Skill-Wanderer (Motivation for Founder)">
-          <span class="heart-beat">❤️</span>
-        </NuxtLink>
       </div>
     </div>
   </nav>
 </template>
 
-<script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+<script setup lang="ts">
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 
 const isMobileMenuOpen = ref(false)
 const isAboutDropdownOpen = ref(false)
@@ -169,6 +171,17 @@ const isMobileAboutDropdownOpen = ref(false)
 const isMobileLearningPathDropdownOpen = ref(false)
 const isMobilePartnershipsDropdownOpen = ref(false)
 const isMobileEcosystemDropdownOpen = ref(false)
+const heartStyle = ref({ top: '50vh', left: '50vw' })
+const route = useRoute()
+const isMissionPage = computed(() => route.path.startsWith('/mission'))
+
+const HEART_MOVE_INTERVAL_MS = 10000
+const HEART_MARGIN = 36 
+const HEART_HITBOX = 44
+const HEART_SAFE_GAP = 12
+const CLICKABLE_SELECTOR = 'a, button, input, select, textarea, label, [role="button"], [contenteditable="true"], [tabindex], .btn, .mobile-menu-btn, .dropdown-trigger, .mobile-dropdown-trigger'
+
+let heartMoveIntervalId: number | null = null
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value
@@ -202,23 +215,130 @@ const toggleMobileEcosystemDropdown = () => {
   isMobileEcosystemDropdownOpen.value = !isMobileEcosystemDropdownOpen.value
 }
 
-onMounted(() => {
-  const handleScroll = () => {
-    const navbar = document.getElementById('navbar')
-    if (navbar) {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
+const isVisibleElement = (element: HTMLElement) => {
+  const rect = element.getBoundingClientRect()
+  const style = window.getComputedStyle(element)
+
+  return (
+    rect.width > 0
+    && rect.height > 0
+    && style.visibility !== 'hidden'
+    && style.display !== 'none'
+    && style.pointerEvents !== 'none'
+  )
+}
+
+const isOverlapping = (
+  a: { left: number; right: number; top: number; bottom: number },
+  b: { left: number; right: number; top: number; bottom: number }
+) => !(a.right < b.left || a.left > b.right || a.bottom < b.top || a.top > b.bottom)
+
+const canPlaceHeartAt = (x: number, y: number) => {
+  const heartRect = {
+    left: x,
+    right: x + HEART_HITBOX,
+    top: y,
+    bottom: y + HEART_HITBOX
+  }
+
+  const clickables = document.querySelectorAll<HTMLElement>(CLICKABLE_SELECTOR)
+
+  for (const element of clickables) {
+    if (element.classList.contains('easter-egg') || element.classList.contains('easter-egg-mobile')) {
+      continue
+    }
+
+    if (!isVisibleElement(element)) {
+      continue
+    }
+
+    const rect = element.getBoundingClientRect()
+    const expandedRect = {
+      left: rect.left - HEART_SAFE_GAP,
+      right: rect.right + HEART_SAFE_GAP,
+      top: rect.top - HEART_SAFE_GAP,
+      bottom: rect.bottom + HEART_SAFE_GAP
+    }
+
+    if (isOverlapping(heartRect, expandedRect)) {
+      return false
     }
   }
-  
+
+  return true
+}
+
+const setRandomHeartPosition = () => {
+  if (isMissionPage.value) {
+    return
+  }
+
+  const minX = HEART_MARGIN
+  const maxX = window.innerWidth - HEART_MARGIN - HEART_HITBOX
+  const minY = HEART_MARGIN
+  const maxY = window.innerHeight - HEART_MARGIN - HEART_HITBOX
+
+  const xRange = Math.max(maxX - minX, 0)
+  const yRange = Math.max(maxY - minY, 0)
+
+  for (let attempt = 0; attempt < 80; attempt += 1) {
+    const randomX = minX + Math.random() * xRange
+    const randomY = minY + Math.random() * yRange
+
+    if (canPlaceHeartAt(randomX, randomY)) {
+      heartStyle.value = {
+        left: `${randomX}px`,
+        top: `${randomY}px`
+      }
+      return
+    }
+  }
+
+}
+
+const stopHeartAutoMove = () => {
+  if (heartMoveIntervalId !== null) {
+    window.clearInterval(heartMoveIntervalId)
+    heartMoveIntervalId = null
+  }
+}
+
+const startHeartAutoMove = () => {
+  stopHeartAutoMove()
+  if (isMissionPage.value) {
+    return
+  }
+
+  setRandomHeartPosition()
+  heartMoveIntervalId = window.setInterval(setRandomHeartPosition, HEART_MOVE_INTERVAL_MS)
+}
+
+const handleScroll = () => {
+  const navbar = document.getElementById('navbar')
+  if (navbar) {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled')
+    } else {
+      navbar.classList.remove('scrolled')
+    }
+  }
+
+}
+
+onMounted(() => {
   window.addEventListener('scroll', handleScroll)
-  
-  onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll)
-  })
+  window.addEventListener('resize', startHeartAutoMove)
+  startHeartAutoMove()
+})
+
+watch(() => route.path, () => {
+  startHeartAutoMove()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('resize', startHeartAutoMove)
+  stopHeartAutoMove()
 })
 </script>
 
@@ -562,21 +682,19 @@ onMounted(() => {
 
 /* Easter egg styling */
 .easter-egg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
+  position: fixed;
+  z-index: 999;
   text-decoration: none;
   font-size: 1.2rem;
   opacity: 0.6;
-  transition: all 0.3s ease;
+  transition: left 0.45s ease, top 0.45s ease, opacity 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+  will-change: left, top, opacity, transform;
 }
 
 .easter-egg:hover {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1.2);
+  transform: scale(1.2);
 }
 
 .heart-beat {
@@ -611,14 +729,9 @@ onMounted(() => {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  /* Hide desktop easter egg on mobile */
   .easter-egg {
-    display: none;
-  }
-  
-  /* Show mobile easter egg */
-  .easter-egg-mobile {
-    display: block;
+    font-size: 1rem;
+    opacity: 0.75;
   }
 }
 
