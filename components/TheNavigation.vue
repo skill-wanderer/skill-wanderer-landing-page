@@ -304,6 +304,8 @@ const stopHeartAutoMove = () => {
   }
 }
 
+let resizeDebounceTimeoutId: number | null = null
+
 const startHeartAutoMove = () => {
   stopHeartAutoMove()
   if (isMissionPage.value) {
@@ -312,6 +314,15 @@ const startHeartAutoMove = () => {
 
   setRandomHeartPosition()
   heartMoveIntervalId = window.setInterval(setRandomHeartPosition, HEART_MOVE_INTERVAL_MS)
+}
+
+const debouncedStartHeartAutoMove = () => {
+  if (resizeDebounceTimeoutId !== null) {
+    window.clearTimeout(resizeDebounceTimeoutId)
+  }
+  resizeDebounceTimeoutId = window.setTimeout(() => {
+    startHeartAutoMove()
+  }, 200)
 }
 
 const handleScroll = () => {
@@ -328,7 +339,7 @@ const handleScroll = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
-  window.addEventListener('resize', startHeartAutoMove)
+  window.addEventListener('resize', debouncedStartHeartAutoMove)
   startHeartAutoMove()
 })
 
@@ -338,7 +349,11 @@ watch(() => route.path, () => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
-  window.removeEventListener('resize', startHeartAutoMove)
+  window.removeEventListener('resize', debouncedStartHeartAutoMove)
+  if (resizeDebounceTimeoutId !== null) {
+    window.clearTimeout(resizeDebounceTimeoutId)
+    resizeDebounceTimeoutId = null
+  }
   stopHeartAutoMove()
 })
 </script>
