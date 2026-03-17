@@ -749,6 +749,12 @@ onUnmounted(() => {
     font-size: 1rem;
     opacity: 0.75;
   }
+
+  /* Ensure mobile nav menu appears above the fixed easter-egg heart */
+  .nav-links {
+    position: relative;
+    z-index: 1000;
+  }
 }
 
 @media (max-width: 480px) {
