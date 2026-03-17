@@ -177,7 +177,7 @@ const route = useRoute()
 const isMissionPage = computed(() => route.path.startsWith('/mission'))
 
 const HEART_MOVE_INTERVAL_MS = 10000
-const HEART_MARGIN = 36 
+const HEART_MARGIN = 36
 const HEART_HITBOX = 44
 const HEART_SAFE_GAP = 12
 const CLICKABLE_SELECTOR = 'a, button, input, select, textarea, label, [role="button"], [contenteditable="true"], [tabindex], .btn, .mobile-menu-btn, .dropdown-trigger, .mobile-dropdown-trigger'
@@ -748,12 +748,6 @@ onUnmounted(() => {
   .easter-egg {
     font-size: 1rem;
     opacity: 0.75;
-  }
-
-  /* Ensure mobile nav menu appears above the fixed easter-egg heart */
-  .nav-links {
-    position: relative;
-    z-index: 1000;
   }
 }
 
