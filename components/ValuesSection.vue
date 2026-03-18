@@ -38,23 +38,35 @@
 </template>
 
 <script setup lang="ts">
+let observer: IntersectionObserver | null = null
+
 onMounted(() => {
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
   }
 
-  const observer = new IntersectionObserver((entries) => {
+  observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         (entry.target as HTMLElement).style.opacity = '1'
+
+        // stop observing once visible (performance)
+        observer?.unobserve(entry.target)
       }
     })
   }, observerOptions)
 
   document.querySelectorAll('.value-item').forEach(item => {
-    observer.observe(item)
+    observer?.observe(item)
   })
+})
+
+onUnmounted(() => {
+  if (observer) {
+    observer.disconnect()
+    observer = null
+  }
 })
 </script>
 
