@@ -140,6 +140,22 @@
       </div>
     </section>
 
+    <section class="tiers-section">
+      <div class="tiers-card">
+        <div class="section-header narrow">
+          <h2>Tier 1 and Tier 2 Learners</h2>
+          <p>
+            If you are a learner in Tier 1 or Tier 2 and you want to understand where you fit,
+            contact us. We will talk with you and help you choose the right next step.
+          </p>
+        </div>
+        <div class="tiers-actions">
+          <NuxtLink to="/contact" class="btn btn-primary">Contact Us</NuxtLink>
+          <NuxtLink to="/learners" class="btn btn-outline">Meet Our Learners</NuxtLink>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-section">
       <div class="cta-card">
@@ -264,6 +280,7 @@ h1 {
 .system-section,
 .why-section,
 .audience-section,
+.tiers-section,
 .cta-section {
   padding: 0 24px 84px;
 }
@@ -449,6 +466,26 @@ h1 {
   font-weight: 700;
 }
 
+/* Tier contact section */
+.tiers-card {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 107, 53, 0.08), rgba(255, 217, 61, 0.05));
+  border: 1px solid rgba(255, 107, 53, 0.22);
+  border-radius: 22px;
+  padding: 42px 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.tiers-actions {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
 /* CTA section */
 .cta-card {
   max-width: 900px;
@@ -511,12 +548,14 @@ h1 {
   .system-section,
   .why-section,
   .audience-section,
+  .tiers-section,
   .cta-section {
     padding: 0 20px 72px;
   }
 
   .journey-card,
   .audience-card,
+  .tiers-card,
   .cta-card {
     padding: 24px 20px;
   }

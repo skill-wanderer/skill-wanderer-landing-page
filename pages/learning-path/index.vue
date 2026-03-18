@@ -70,6 +70,13 @@ interface LearningTopic {
 
 const topics: LearningTopic[] = [
   {
+    id: '00',
+    slug: 'learn-contribute-build-earn',
+    title: 'Education Philosophy',
+    icon: '🔥',
+    description: 'See how learners move from free study to contribution, real projects, and long-term growth.'
+  },
+  {
     id: '01',
     slug: 'web-development',
     title: 'Web Development',
