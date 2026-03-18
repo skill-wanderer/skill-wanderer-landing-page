@@ -7,8 +7,8 @@
         <p class="tagline">Free, Practical Education That Celebrates Learning Through Failure</p>
         <p class="hero-description">
           Quality education shapes brighter futures. Skill-Wanderer integrates real-world insights 
-          into practical tech learning paths, creating an honest educational platform with no ads,
-          no affiliate bias, and a contribution-first model where serious learners grow by building.
+          into practical tech learning paths, creating an honest educational platform with no ads, 
+          no affiliate bias—just pure, passionate learning.
         </p>        <div class="hero-cta">
           <NuxtLink to="/learners" class="btn btn-primary">
             Meet Our Learners
@@ -64,53 +64,6 @@
           <h3>Future Pathways</h3>
           <p>Long-term vision includes pathways for learners to join our team or launch their own ventures, fostering a cycle of growth and opportunity.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Education Model Section -->
-    <section class="education-model">
-      <div class="section-header">
-        <h2>Learn. Contribute. Build. Earn.</h2>
-        <p>A new way to learn tech without staying passive</p>
-      </div>
-      <div class="education-model-intro">
-        <p>
-          Most platforms ask you to pay first, learn alone, and hope it turns into a job later.
-          Skill-Wanderer is structured differently: you can start for free, unlock deeper support by
-          contributing, gain experience on real work, and grow into paid opportunities, leadership,
-          or even your own venture.
-        </p>
-      </div>
-      <div class="education-model-grid">
-        <div class="model-card">
-          <span class="model-step">01</span>
-          <h3>Learn for Free</h3>
-          <p>Begin with structured learning paths, beginner-friendly content, and community support without cost barriers.</p>
-        </div>
-        <div class="model-card">
-          <span class="model-step">02</span>
-          <h3>Contribute to Unlock More</h3>
-          <p>Instead of fixed tuition, show commitment by contributing financially, building platform features, or strengthening the community.</p>
-        </div>
-        <div class="model-card">
-          <span class="model-step">03</span>
-          <h3>Build on Real Projects</h3>
-          <p>Move beyond theory by working with real teams, production-level challenges, and partner-facing outcomes.</p>
-        </div>
-        <div class="model-card">
-          <span class="model-step">04</span>
-          <h3>Earn Through Growth</h3>
-          <p>Top contributors can progress into revenue sharing, paid roles, mentorship, project leadership, and founder pathways.</p>
-        </div>
-      </div>
-      <div class="education-model-cta">
-        <NuxtLink to="/about" class="btn btn-outline">
-          Read the Philosophy
-          <span>→</span>
-        </NuxtLink>
-        <NuxtLink to="/principles/social-enterprise" class="btn btn-secondary">
-          See How It Works
-        </NuxtLink>
       </div>
     </section>
 
@@ -190,8 +143,8 @@
 // SEO and meta management
 useSEO({
   title: 'Skill-Wanderer - Free Tech Education for Everyone',
-  description: 'Free, practical tech education with a contribution-first model: learn for free, contribute, build on real projects, and grow into earning opportunities.',
-  keywords: ['tech education', 'programming courses', 'free coding bootcamp', 'web development', 'skill development', 'learning platform', 'learn contribute build earn', 'education philosophy'],
+  description: 'Free, practical tech education that celebrates learning through failure. Quality education shapes brighter futures with no ads or affiliate bias.',
+  keywords: ['tech education', 'programming courses', 'free coding bootcamp', 'web development', 'skill development', 'learning platform'],
   type: 'website',
   structuredData: [
     createOrganizationSchema(),
@@ -202,7 +155,7 @@ useSEO({
       },
       {
         question: 'What makes Skill-Wanderer different from other learning platforms?',
-        answer: 'Skill-Wanderer operates with complete integrity — no ads, no affiliate marketing, no commissions. Learners can start for free, contribute to unlock deeper support, and grow through real project work instead of passive course consumption.'
+        answer: 'Skill-Wanderer operates with complete integrity — no ads, no affiliate marketing, no commissions. All recommendations are purely for your benefit. We integrate real-world expertise into practical tech education.'
       },
       {
         question: 'Who is behind Skill-Wanderer?',
@@ -442,78 +395,6 @@ body {
   background: var(--darker-bg);
 }
 
-.education-model {
-  padding: 100px 20px;
-  background: linear-gradient(180deg, rgba(255, 107, 53, 0.06) 0%, rgba(15, 15, 15, 0.98) 100%);
-}
-
-.education-model-intro {
-  max-width: 860px;
-  margin: 0 auto 40px;
-  text-align: center;
-}
-
-.education-model-intro p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  opacity: 0.9;
-}
-
-.education-model-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.model-card {
-  background: linear-gradient(180deg, rgba(255, 107, 53, 0.09) 0%, rgba(255, 255, 255, 0.04) 100%);
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 24px;
-  padding: 32px 28px;
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.model-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255, 107, 53, 0.4);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
-}
-
-.model-step {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 20px;
-  border-radius: 999px;
-  background: rgba(255, 107, 53, 0.15);
-  color: var(--accent-yellow);
-  font-weight: 800;
-  letter-spacing: 0.08em;
-}
-
-.model-card h3 {
-  margin-bottom: 14px;
-  color: var(--primary-orange);
-  font-size: 1.35rem;
-}
-
-.model-card p {
-  opacity: 0.88;
-  line-height: 1.75;
-}
-
-.education-model-cta {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
 .section-header {
   text-align: center;
   max-width: 800px;
@@ -750,14 +631,6 @@ body {
   .features-grid,
   .values-grid {
     grid-template-columns: 1fr;
-  }
-
-  .education-model {
-    padding: 80px 20px;
-  }
-
-  .model-card {
-    padding: 28px 22px;
   }
 
   .hero-cta {
