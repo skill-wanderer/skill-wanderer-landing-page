@@ -70,6 +70,13 @@ interface LearningTopic {
 
 const topics: LearningTopic[] = [
   {
+    id: '00',
+    slug: 'learn-contribute-build-earn',
+    title: 'Learn. Contribute. Build. Earn.',
+    icon: '🧭',
+    description: 'Understand Skill-Wanderer\'s education model from free learning to contribution, real project work, and earning pathways.'
+  },
+  {
     id: '01',
     slug: 'web-development',
     title: 'Web Development',
