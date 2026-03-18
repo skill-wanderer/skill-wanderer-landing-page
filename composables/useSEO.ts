@@ -96,9 +96,7 @@ export const createOrganizationSchema = () => {
       "name": "Quan Nguyen",
       "jobTitle": "Founder & Lead Educator"
     },
-    "sameAs": [
-      "https://www.linkedin.com/in/quan-nguyen-skill-wanderer"
-    ]
+    "sameAs": []
   }
 }
 
