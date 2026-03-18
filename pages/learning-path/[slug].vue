@@ -25,6 +25,10 @@
 const route = useRoute()
 
 const topicMap: Record<string, { title: string; description: string }> = {
+  'learn-contribute-build-earn': {
+    title: 'Education Philosophy',
+    description: 'Understand Skill-Wanderer\'s Learn. Contribute. Build. Earn. model and how learners grow through each stage.'
+  },
   'web-development': {
     title: 'Web Development',
     description: 'Build modern frontend, backend, and full-stack engineering skills step by step.'
