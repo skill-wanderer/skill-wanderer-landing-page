@@ -14,6 +14,31 @@
       </svg>
     </section>
 
+    <section class="learning-tree-section">
+      <div class="learning-tree-wrapper">
+        <div class="section-header">
+          <h2>Learning Tree</h2>
+          <p>Our learning model follows four connected phases — from knowledge to real-world impact.</p>
+        </div>
+
+        <div class="tree-overview">
+          <div class="tree-phases">
+            <div v-for="phase in treePhases" :key="phase.key" class="tree-phase">
+              <span class="tree-phase-icon" aria-hidden="true">{{ phase.icon }}</span>
+              <span class="tree-phase-label">{{ phase.label }}</span>
+            </div>
+          </div>
+          <p class="tree-summary">
+            Each phase builds on the last. Start by learning fundamentals, contribute to real projects,
+            build meaningful work, and earn through your growing expertise.
+          </p>
+          <NuxtLink to="/learning-path/learn-contribute-build-earn" class="tree-cta">
+            Explore the Full Pathway →
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
     <section class="topics-section">
       <div class="topics-wrapper">
         <div class="section-header">
@@ -59,6 +84,13 @@ useSEO({
     'skill wanderer'
   ]
 })
+
+const treePhases = [
+  { key: 'learn', icon: '📖', label: 'Learn' },
+  { key: 'contribute', icon: '🤝', label: 'Contribute' },
+  { key: 'build', icon: '🔨', label: 'Build' },
+  { key: 'earn', icon: '💎', label: 'Earn' }
+]
 
 interface LearningTopic {
   id: string
@@ -211,6 +243,93 @@ const topics: LearningTopic[] = [
   width: 100%;
   height: auto;
   fill: rgba(255, 107, 53, 0.08);
+}
+
+/* Learning Tree Section */
+.learning-tree-section {
+  padding: 36px 24px 48px;
+}
+
+.learning-tree-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tree-overview {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 20px;
+  padding: 36px 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.tree-overview:hover {
+  border-color: var(--primary-orange);
+  background: var(--card-hover);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.tree-phases {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tree-phase {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  background: rgba(255, 107, 53, 0.08);
+  border-radius: 10px;
+  position: relative;
+}
+
+.tree-phase:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  right: -14px;
+  color: var(--primary-orange);
+  font-weight: 700;
+}
+
+.tree-phase-icon {
+  font-size: 1.2rem;
+}
+
+.tree-phase-label {
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.tree-summary {
+  margin: 0 auto 22px;
+  max-width: 640px;
+  color: var(--light-text);
+  line-height: 1.75;
+}
+
+.tree-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  color: #fff;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+}
+
+.tree-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.35);
 }
 
 .topics-section {
