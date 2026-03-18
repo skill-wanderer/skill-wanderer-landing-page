@@ -120,72 +120,6 @@
       </div>
     </section>
 
-    <!-- Education Philosophy Section -->
-    <section class="education-philosophy">
-      <div class="section-header">
-        <h2>Learn. Contribute. Build. Earn.</h2>
-        <p>A practical philosophy for people who want more than passive courses</p>
-      </div>
-      <div class="education-philosophy-content">
-        <div class="education-philosophy-lead">
-          <p>
-            Most learning platforms ask you to pay first, study alone, and hope a certificate opens doors later.
-            Skill-Wanderer takes a different position: you can start for free, prove commitment through contribution,
-            gain real experience by building, and grow into paid work, mentorship, leadership, or founding something of your own.
-          </p>
-        </div>
-
-        <div class="education-philosophy-grid">
-          <article class="education-card">
-            <span class="education-card-icon">📚</span>
-            <h3>Start for Free</h3>
-            <p>Begin with structured learning paths, beginner-friendly courses, and community learning groups. No cost, no barrier, no pressure to buy before you understand the path.</p>
-          </article>
-
-          <article class="education-card">
-            <span class="education-card-icon">🤝</span>
-            <h3>Unlock Mentorship Through Contribution</h3>
-            <p>Real growth requires commitment. Instead of fixed tuition, learners can contribute financially, build real platform features, or help strengthen the community and earn trust through action.</p>
-          </article>
-
-          <article class="education-card">
-            <span class="education-card-icon">🛠️</span>
-            <h3>Work on Real Projects</h3>
-            <p>When you are ready, learning turns into contribution on live systems. You join real teams, solve real problems, and build production-level outcomes instead of disposable demo projects.</p>
-          </article>
-
-          <article class="education-card">
-            <span class="education-card-icon">🌱</span>
-            <h3>Grow Into a Builder or Founder</h3>
-            <p>Top contributors do more than become job-ready. They can mentor others, lead initiatives, share in revenue, launch startups, and help shape the next generation of the platform.</p>
-          </article>
-        </div>
-
-        <div class="education-philosophy-summary">
-          <div class="summary-card">
-            <h3>Why This Model Works</h3>
-            <ul>
-              <li>Free to start, but not free to stay passive</li>
-              <li>Contribution replaces fixed tuition</li>
-              <li>Real work replaces fake portfolio projects</li>
-              <li>Growth is earned through participation and accountability</li>
-            </ul>
-          </div>
-          <div class="summary-card accent-card">
-            <h3>Who It Is For</h3>
-            <p>
-              People who are serious about learning tech, want real experience rather than theory alone,
-              are willing to contribute instead of only consuming, and want a path that can extend beyond courses.
-            </p>
-            <div class="summary-actions">
-              <NuxtLink to="/principles/pathways" class="btn btn-outline">Explore Learner Pathways</NuxtLink>
-              <NuxtLink to="/principles/social-enterprise" class="btn btn-secondary">Explore the Model</NuxtLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Mission Section -->
     <section class="mission">
       <div class="mission-content">
@@ -374,7 +308,7 @@ import { onMounted } from 'vue'
 useSEO({
   title: 'About Skill-Wanderer | The Story Behind the Mission',
   description: 'Learn about the journey behind Skill-Wanderer, our philosophy of teaching to master, and our mission to democratize quality tech education with integrity.',
-  keywords: ['about skill-wanderer', 'quan nguyen', 'tech education mission', 'learning philosophy', 'skill wanderer story', 'learn contribute build earn', 'education philosophy'],
+  keywords: ['about skill-wanderer', 'quan nguyen', 'tech education mission', 'learning philosophy', 'skill wanderer story'],
   type: 'article',
   structuredData: [
     createArticleSchema(
@@ -586,111 +520,6 @@ body {
   color: var(--primary-orange);
   margin-bottom: 15px;
   font-size: 1.4rem;
-}
-
-/* Education Philosophy Section */
-.education-philosophy {
-  padding: 90px 20px;
-  background: linear-gradient(180deg, rgba(15, 15, 15, 1) 0%, rgba(255, 107, 53, 0.05) 100%);
-}
-
-.education-philosophy-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.education-philosophy-lead {
-  max-width: 900px;
-  margin: 0 auto 40px;
-  text-align: center;
-}
-
-.education-philosophy-lead p {
-  font-size: 1.15rem;
-  line-height: 1.9;
-  opacity: 0.92;
-}
-
-.education-philosophy-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-  margin-bottom: 36px;
-}
-
-.education-card {
-  padding: 32px 28px;
-  background: linear-gradient(180deg, rgba(255, 107, 53, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 22px;
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.education-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255, 107, 53, 0.38);
-}
-
-.education-card-icon {
-  display: inline-block;
-  font-size: 2.2rem;
-  margin-bottom: 18px;
-}
-
-.education-card h3 {
-  color: var(--primary-orange);
-  margin-bottom: 14px;
-  font-size: 1.35rem;
-}
-
-.education-card p {
-  line-height: 1.8;
-  opacity: 0.9;
-}
-
-.education-philosophy-summary {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-.summary-card {
-  padding: 32px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 107, 53, 0.15);
-}
-
-.summary-card h3 {
-  color: var(--primary-orange);
-  margin-bottom: 18px;
-  font-size: 1.4rem;
-}
-
-.summary-card ul {
-  padding-left: 20px;
-}
-
-.summary-card li {
-  margin-bottom: 12px;
-  line-height: 1.7;
-  opacity: 0.92;
-}
-
-.accent-card {
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.12), rgba(255, 217, 61, 0.06));
-}
-
-.summary-card p {
-  line-height: 1.8;
-  opacity: 0.92;
-}
-
-.summary-actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 24px;
 }
 
 /* Mission Section */
@@ -987,15 +816,6 @@ body {
 @media (max-width: 768px) {
   .philosophy-grid {
     grid-template-columns: 1fr;
-  }
-
-  .education-philosophy {
-    padding: 70px 20px;
-  }
-
-  .education-card,
-  .summary-card {
-    padding: 26px 22px;
   }
 
   .principle-content p {
