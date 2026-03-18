@@ -264,43 +264,48 @@ useSEO({
   ]
 })
 
-// Client-side JavaScript for interactions
-onMounted(() => {
-  // Navbar scroll effect
-  const handleScroll = () => {
-    const navbar = document.getElementById('navbar')
-    if (navbar) {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
+// 🔷 Define handler outside (important for cleanup)
+const handleScroll = () => {
+  const navbar = document.getElementById('navbar')
+  if (navbar) {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled')
+    } else {
+      navbar.classList.remove('scrolled')
     }
   }
+}
 
-  window.addEventListener('scroll', handleScroll)
-  // Smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach((anchor: Element) => {
-    anchor.addEventListener('click', function (e: Event) {
-      e.preventDefault()
-      const element = e.currentTarget as HTMLAnchorElement
-      const href = element.getAttribute('href')
-      if (href) {
-        const target = document.querySelector(href)
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          })
-        }
-      }
+const handleAnchorClick = (e: Event) => {
+  const targetElement = e.target as HTMLElement | null
+  if (!targetElement) return
+
+  const anchor = targetElement.closest('a[href^="#"]') as HTMLAnchorElement | null
+  if (!anchor) return
+
+  const href = anchor.getAttribute('href')
+  if (!href) return
+
+  const target = document.querySelector(href)
+  if (target) {
+    e.preventDefault()
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     })
-  })
+  }
+}
 
-  // Cleanup
-  onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll)
-  })
+// 🔷 Mount
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+  document.addEventListener('click', handleAnchorClick)
+})
+
+// 🔷 Cleanup (TOP LEVEL ✅)
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+  document.removeEventListener('click', handleAnchorClick)
 })
 </script>
 <style scoped>
