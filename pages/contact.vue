@@ -71,14 +71,7 @@
               <p>For detailed discussions or proposals</p>
               <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>
             </div>
-            <div class="info-card" @click="openLinkedIn">
-              <div class="info-card-header">
-                <div class="info-icon">💼</div>
-                <h3>LinkedIn</h3>
-              </div>
-              <p>Connect professionally and follow my journey</p>
-              <a href="https://www.linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank">@quan-nguyen-skill-wanderer</a>
-            </div>
+
             <div class="info-card">
               <div class="info-card-header">
                 <div class="info-icon">💬</div>
@@ -227,9 +220,7 @@ const toggleFaq = (index: number) => {
 
 
 
-const openLinkedIn = () => {
-  window.open('https://www.linkedin.com/in/quan-nguyen-skill-wanderer', '_blank')
-}
+
 </script>
 
 <style scoped>
