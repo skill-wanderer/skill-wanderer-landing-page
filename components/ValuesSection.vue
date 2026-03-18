@@ -51,7 +51,7 @@ onMounted(() => {
       if (entry.isIntersecting) {
         (entry.target as HTMLElement).style.opacity = '1'
 
-        // stop observing once visible (performance)
+        // stop observing after first trigger
         observer?.unobserve(entry.target)
       }
     })
@@ -83,8 +83,8 @@ onUnmounted(() => {
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
   margin-top: 60px;
 }
 
