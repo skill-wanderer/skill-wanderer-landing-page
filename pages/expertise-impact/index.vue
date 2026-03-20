@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Expertise &amp; Impact</h1>
+      <h1>Work With Us</h1>
       <p>
         We apply real-world technology expertise to solve real problems—and every challenge we tackle fuels free education.
         This is how we sustain our mission without ads, donations, or compromise.
@@ -46,12 +46,12 @@
       </div>
     </section>
 
-    <!-- Three Pillars Section -->
+    <!-- Two Pillars Section -->
     <section class="pillars-section">
       <div class="content">
         <div class="section-header">
-          <h2>Explore Expertise &amp; Impact</h2>
-          <p>Three pillars that power our mission</p>
+          <h2>Explore Work With Us</h2>
+          <p>Two pillars that power our mission</p>
         </div>
 
         <div class="pillars-grid">
@@ -75,7 +75,7 @@
 
           <div class="pillar-card">
             <div class="pillar-icon">🚀</div>
-            <h3>Work With Us</h3>
+            <h3>Become a Partner</h3>
             <p>
               We're not a staffing agency or outsourcing shop. We collaborate through long-term models that include
               outcome-based scopes, revenue sharing, and dedicated teams from our learning community.
@@ -90,23 +90,63 @@
               Become a Partner <span>→</span>
             </NuxtLink>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="pillar-card">
-            <div class="pillar-icon">🌟</div>
-            <h3>Our Partners</h3>
+    <!-- Our Projects Section -->
+    <section class="projects-section">
+      <div class="content">
+        <div class="section-header">
+          <h2>Our Projects</h2>
+          <p>See the Success Sharing Model in action—real partnerships creating meaningful impact</p>
+        </div>
+
+        <div class="project-spotlight mindycore-theme">
+          <div class="project-header">
+            <div class="project-logo">
+              <img src="/cropped-mindycore-logo.webp" alt="MindyCore Logo" class="mindycore-logo" />
+            </div>
+            <h3 class="mindycore-tagline">Ignite Your Curiosity. Feel the Connection. Empower Your Unique Growth.</h3>
+          </div>
+
+          <p class="project-description">
+            MindyCore passionately unlocks human potential through compassionate technology and creativity. They
+            design digital solutions that inspire, educate, and empower—serving schools, families, lifelong learners,
+            and notably, NGOs dedicated to social good.
+          </p>
+
+          <div class="role-highlight">
+            <span class="role-icon">🤝</span>
             <p>
-              See the Success Sharing Model in action. Real partnerships creating meaningful impact—
-              shared risks, lower upfront costs, and community talent delivering real results.
+              <strong class="mindycore-highlight">Skill-Wanderer's founder, Quan Nguyen, serves as MindyCore's technology partner, start-up advisor, and technical project manager</strong>—handling
+              all of the technical work including architecture, development, DevOps, and technical strategy, while also teaching Agile and Lean methodologies to the team.
             </p>
-            <ul class="pillar-highlights">
-              <li>Real success stories</li>
-              <li>Community impact in action</li>
-              <li>Transparent collaboration</li>
-              <li>Partnership, not outsourcing</li>
-            </ul>
-            <NuxtLink to="/expertise-impact/our-partners" class="pillar-link">
-              See Success Stories <span>→</span>
-            </NuxtLink>
+          </div>
+
+          <div class="project-achievements">
+            <div class="achievement-card mindycore-card">
+              <div class="achievement-icon">🧠</div>
+              <h4>MindyMinds</h4>
+              <p>AI-powered personalized chatbots designed for your unique mind. 100 free beta spots available!</p>
+            </div>
+
+            <div class="achievement-card mindycore-card">
+              <div class="achievement-icon">🎮</div>
+              <h4>MindyPlay</h4>
+              <p>Bespoke pedagogical games that make learning a joy—crafted to celebrate your uniqueness.</p>
+            </div>
+
+            <div class="achievement-card mindycore-card">
+              <div class="achievement-icon">💜</div>
+              <h4>Social Impact &amp; Career Development</h4>
+              <p>
+                Supporting WM Smile Generation Uganda with education for children. Offering
+                <strong class="mindycore-highlight">completely free volunteer training</strong> to help aspiring tech
+                professionals become job-ready through real-world projects, mentorship, and a potential path to
+                MindyCore employment.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -179,7 +219,7 @@
 
 <script setup lang="ts">
 useSEO({
-  title: 'Expertise & Impact | Skill-Wanderer',
+  title: 'Work With Us | Skill-Wanderer',
   description:
     'Real-world technology expertise that fuels free education. Learn about our Success Sharing Model, partnership approach, and how every project creates learning opportunities.',
   image: '/cropped-skill-wanderer-logo-768x256.webp'
@@ -405,6 +445,133 @@ useSEO({
   transform: translateX(4px);
 }
 
+/* Projects Section */
+.projects-section {
+  padding: 80px 20px;
+  background: var(--dark-bg);
+}
+
+.project-spotlight {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 50px;
+  border: 2px solid rgba(255, 107, 53, 0.2);
+}
+
+.project-spotlight.mindycore-theme {
+  background: #1e3a8a;
+  border: 2px solid #fbbf24;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(251, 191, 36, 0.3);
+}
+
+.project-logo {
+  margin-bottom: 20px;
+}
+
+.mindycore-logo {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.mindycore-tagline {
+  color: #fbbf24;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.project-description {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.95;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.role-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 193, 7, 0.05));
+  border: 1px solid rgba(255, 107, 53, 0.25);
+  border-radius: 16px;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.role-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.role-highlight p {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.mindycore-highlight {
+  color: #fbbf24;
+}
+
+.project-achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.achievement-card {
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.achievement-card.mindycore-card {
+  background: rgba(30, 58, 138, 0.6);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.achievement-card.mindycore-card:hover {
+  background: rgba(30, 58, 138, 0.8);
+  border-color: rgba(251, 191, 36, 0.5);
+  transform: translateY(-5px);
+}
+
+.achievement-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.achievement-card h4 {
+  color: #fbbf24;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.achievement-card p {
+  color: white;
+  opacity: 0.9;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
 /* Why Section */
 .why-section {
   padding: 80px 20px;
@@ -535,6 +702,19 @@ useSEO({
 
   .pillars-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-spotlight {
+    padding: 30px 20px;
+  }
+
+  .project-achievements {
+    grid-template-columns: 1fr;
+  }
+
+  .role-highlight {
+    flex-direction: column;
+    text-align: center;
   }
 }
 </style>
