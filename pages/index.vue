@@ -125,10 +125,10 @@
     </section>
 
 
-    <!-- Expertise & Impact Brief Section -->
+    <!-- Work With Us Brief Section -->
     <section class="tech-services">
       <div class="tech-services-content">
-        <h3>Expertise &amp; Impact</h3>
+        <h3>Work With Us</h3>
         <p>
           We apply real-world technology expertise to solve real problems—and every challenge we tackle fuels free education.
           Success sharing model. Community-powered talent. Impact that creates learning.
@@ -163,7 +163,7 @@ useSEO({
       },
       {
         question: 'How does Skill-Wanderer sustain itself financially?',
-        answer: 'Skill-Wanderer uses a success sharing model through its Expertise & Impact work. All net revenue is reinvested into the platform, community, and global educational impact.'
+        answer: 'Skill-Wanderer uses a success sharing model through its Work With Us partnerships. All net revenue is reinvested into the platform, community, and global educational impact.'
       }
     ])
   ]

@@ -30,7 +30,7 @@
                 <option value="">Select a topic</option>
                 <option value="learning">Learning & Courses</option>
                 <option value="collaboration">Collaboration Opportunities</option>
-                <option value="tech-services">Expertise & Impact</option>
+                <option value="tech-services">Work With Us</option>
                 <option value="feedback">Platform Feedback</option>
                 <option value="other">Something Else</option>
               </select>
