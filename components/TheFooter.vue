@@ -4,7 +4,7 @@
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/principles">Principles</NuxtLink>
-        <NuxtLink to="/expertise-impact">Expertise & Impact</NuxtLink>
+        <NuxtLink to="/expertise-impact">Work With Us</NuxtLink>
         <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>

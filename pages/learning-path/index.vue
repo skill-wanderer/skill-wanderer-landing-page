@@ -71,90 +71,83 @@ interface LearningTopic {
 const topics: LearningTopic[] = [
   {
     id: '00',
-    slug: 'learn-contribute-build-earn',
-    title: 'Education Philosophy',
-    icon: '🔥',
-    description: 'See how learners move from free study to contribution, real projects, and long-term growth.'
-  },
-  {
-    id: '01',
     slug: 'web-development',
     title: 'Web Development',
     icon: '🌐',
     description: 'Frontend, backend, and full-stack foundations to ship modern web products.'
   },
   {
-    id: '02',
+    id: '01',
     slug: 'mobile-development',
     title: 'Mobile Development',
     icon: '📱',
     description: 'Build native and cross-platform apps with production-ready workflows.'
   },
   {
-    id: '03',
+    id: '02',
     slug: 'ai-and-machine-learning',
     title: 'AI and Machine Learning',
     icon: '🤖',
     description: 'Learn core ML concepts, model building, and practical AI integration.'
   },
   {
-    id: '04',
+    id: '03',
     slug: 'devops',
     title: 'DevOps',
     icon: '⚙️',
     description: 'Automate delivery, improve reliability, and scale systems with confidence.'
   },
   {
-    id: '05',
+    id: '04',
     slug: 'mlops',
     title: 'MLOps',
     icon: '🧪',
     description: 'Operationalize ML pipelines from training and validation to monitoring.'
   },
   {
-    id: '06',
+    id: '05',
     slug: 'qa-tester',
     title: 'QA / Tester',
     icon: '🔍',
     description: 'Build quality-first testing skills across manual, automation, and strategy.'
   },
   {
-    id: '07',
+    id: '06',
     slug: 'software-development-roles-and-career',
     title: 'Software Development Roles & Career',
     icon: '🧭',
     description: 'Understand role pathways, growth plans, and career transitions in tech.'
   },
   {
-    id: '08',
+    id: '07',
     slug: 'project-management',
     title: 'Project Management',
     icon: '📌',
     description: 'Plan, execute, and deliver projects with practical frameworks and tools.'
   },
   {
-    id: '09',
+    id: '08',
     slug: 'business-analyst',
     title: 'Business Analyst',
     icon: '📊',
     description: 'Bridge business and technical teams with strong analysis and communication.'
   },
   {
-    id: '10',
+    id: '09',
     slug: 'start-up-foundation',
     title: 'Start-Up Foundation',
     icon: '🚀',
     description: 'Learn startup essentials from validation and MVP planning to execution.'
   },
   {
-    id: '11',
+    id: '10',
     slug: 'advanced-software-development-skills',
     title: 'Advanced Software Development Skills',
     icon: '🛠️',
     description: 'Strengthen architecture, performance, testing, and advanced engineering craft.'
   },
   {
-    id: '12',
+    id: '11',
     slug: 'software-architecture-and-design-patterns',
     title: 'Software Architecture & Design Patterns',
     icon: '🏗️',
