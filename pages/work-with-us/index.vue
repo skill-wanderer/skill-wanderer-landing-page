@@ -117,6 +117,18 @@
               <span> Every sprint you fund goes directly toward keeping Skill-Wanderer's education free and accessible to all learners—no ads, no paywalls, no compromise.</span>
             </div>
           </div>
+          <div class="lockin-banner">
+            <span class="lockin-icon">🔓</span>
+            <div>
+              <strong>Zero Vendor Lock-In. By Design.</strong>
+              <span>
+                As a non-profit edtech, our mission is education—not dependency. If you can take over
+                the work and run it yourself, that means we did our job well. We build with open standards,
+                clear documentation, and full knowledge transfer so you are never locked into working with us.
+                Your success without us is our greatest measure of success.
+              </span>
+            </div>
+          </div>
         </div>
 
         <!-- Journey Steps -->
@@ -158,7 +170,7 @@
             <div class="step-number">05</div>
             <div class="step-body">
               <h4>Client Independence</h4>
-              <p>After each sprint milestone, clients receive the corresponding code and deliverables. If a partner chooses to continue development independently, they are free to do so. We also offer knowledge transfer sprints or ongoing support retainers to assist with transitions when needed.</p>
+              <p>We take pride in building systems you can fully own and operate without us. After each sprint milestone, you receive everything—code, documentation, and knowledge transfer. If you can take over and run it yourself, it means we succeeded as educators. We actively ensure there is no vendor lock-in at any stage.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
@@ -247,11 +259,12 @@
           </div>
           <div class="ownership-card">
             <div class="ownership-icon">🔓</div>
-            <h4>Client Independence</h4>
+            <h4>No Vendor Lock-In</h4>
             <p>
-              Our goal is to build systems that partners can understand, maintain, and evolve independently. After each sprint milestone,
-              clients receive the corresponding code and deliverables. If a partner chooses to continue development independently, they are
-              free to do so. We also offer knowledge transfer sprints or ongoing support retainers to assist with transitions.
+              As a non-profit edtech, we measure our success by your independence—not your dependency. We use open standards,
+              well-documented architectures, and industry-standard tools so you are never locked into working with us.
+              After each milestone, you receive full code, documentation, and knowledge transfer. If you choose to continue
+              on your own, we consider that a proud outcome—it means we did our job as educators.
             </p>
           </div>
         </div>
@@ -704,6 +717,35 @@ useSEO({
   line-height: 1.6;
 }
 
+.lockin-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.12), rgba(76, 175, 80, 0.05));
+  border: 1px solid rgba(76, 175, 80, 0.35);
+  border-radius: 14px;
+  padding: 22px 28px;
+  text-align: left;
+  margin-top: 16px;
+}
+
+.lockin-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.lockin-banner strong {
+  color: #4caf50;
+  font-size: 1rem;
+}
+
+.lockin-banner span {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
 /* Journey */
 .journey-label {
   text-align: center;
@@ -977,7 +1019,8 @@ useSEO({
     grid-template-columns: 1fr;
   }
 
-  .funding-banner {
+  .funding-banner,
+  .lockin-banner {
     flex-direction: column;
     align-items: center;
     text-align: center;
