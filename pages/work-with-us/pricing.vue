@@ -17,17 +17,21 @@
           <p>A craftsman-led community building real things together</p>
         </div>
 
-        <div class="approach-text">
-          <p>
-            Skill-Wanderer is a non-profit edtech platform built on a guild model — a community of developers at every
-            stage of their craft, learning by building real things together.
-          </p>
-          <p>
-            Every client engagement is led by the Guild Master: a senior solution architect with over a decade of experience
-            across startups and enterprises. For each project, the Guild Master hand-picks artisans from the community —
-            journeymen and apprentices whose skills match the engagement — and leads them through the work with direct
-            oversight, mentorship, and quality assurance.
-          </p>
+        <div class="guild-intro-card">
+          <div class="guild-intro-icon">🏛️</div>
+          <div class="guild-intro-body">
+            <p>
+              Skill-Wanderer is a non-profit edtech platform built on a guild model — a community of developers at every
+              stage of their craft, learning by building real things together.
+            </p>
+            <div class="guild-intro-divider"></div>
+            <p>
+              Every client engagement is led by the <strong>Guild Master</strong>: a senior solution architect with over a decade of experience
+              across startups and enterprises. For each project, the Guild Master hand-picks artisans from the community —
+              journeymen and apprentices whose skills match the engagement — and leads them through the work with direct
+              oversight, mentorship, and quality assurance.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -87,17 +91,29 @@
           <h2>Why This Matters to You</h2>
         </div>
 
-        <div class="guild-value-text">
+        <div class="guild-value-grid">
+          <div class="guild-value-card">
+            <div class="guild-value-icon">🎯</div>
+            <h4>Senior-Led Execution</h4>
+            <p>
+              Your project gets the strategic depth of a senior architect and the execution capacity of a motivated
+              team — at a fraction of what traditional agencies charge.
+            </p>
+          </div>
+          <div class="guild-value-card">
+            <div class="guild-value-icon">🌱</div>
+            <h4>Funding Free Education</h4>
+            <p>
+              Every sprint you commission directly funds free education. Revenue from client
+              engagements sustains the Skill-Wanderer platform, keeping mentorship, learning resources, and community
+              infrastructure free and accessible for developers around the world.
+            </p>
+          </div>
+        </div>
+
+        <div class="guild-value-quote">
+          <span class="quote-mark">&ldquo;</span>
           <p>
-            Your project gets the strategic depth of a senior architect and the execution capacity of a motivated
-            team — at a fraction of what traditional agencies charge.
-          </p>
-          <p>
-            But there is something else: every sprint you commission directly funds free education. Revenue from client
-            engagements sustains the Skill-Wanderer platform, keeping mentorship, learning resources, and community
-            infrastructure free and accessible for developers around the world.
-          </p>
-          <p class="guild-value-highlight">
             When you build with the guild, you are not just getting your product built. You are investing in the next
             generation of developers — and they are earning their craft by building yours.
           </p>
@@ -113,20 +129,32 @@
           <p>Structured around two-week development sprints for clear expectations and steady progress</p>
         </div>
 
-        <div class="approach-text">
-          <p>
-            Our pricing is structured around two-week development sprints. This approach provides clear expectations,
-            regular progress, and flexibility as systems evolve.
-          </p>
-          <p>
-            Rather than fixed project contracts, we focus on delivering value through iterative collaboration.
-            You are not paying for hours — you are paying for a guild delivering progress.
-          </p>
-          <p>
-            Sprint pricing reflects the guild capacity assigned to your engagement. Lighter sprints may involve one artisan
-            with the Guild Master's oversight. Larger sprints bring multiple guild members working in parallel under the
-            same technical leadership.
-          </p>
+        <div class="approach-cards">
+          <div class="approach-card">
+            <div class="approach-card-icon">📅</div>
+            <h4>Two-Week Sprints</h4>
+            <p>
+              Our pricing is structured around two-week development sprints. This approach provides clear expectations,
+              regular progress, and flexibility as systems evolve.
+            </p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-card-icon">🔄</div>
+            <h4>Iterative Collaboration</h4>
+            <p>
+              Rather than fixed project contracts, we focus on delivering value through iterative collaboration.
+              You are not paying for hours — you are paying for a guild delivering progress.
+            </p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-card-icon">⚙️</div>
+            <h4>Flexible Capacity</h4>
+            <p>
+              Sprint pricing reflects the guild capacity assigned to your engagement. Lighter sprints may involve one artisan
+              with the Guild Master's oversight. Larger sprints bring multiple guild members working in parallel under the
+              same technical leadership.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -213,7 +241,7 @@
           <div>
             <span>
               Retainer commitments are month-to-month with a minimum initial period of two months.
-              Payment is due at the start of each month. Retainer rates reflect a <strong>10–15% discount</strong>
+              Payment is due at the start of each month. Retainer rates reflect a commitment discount
               compared to booking equivalent sprints individually.
             </span>
           </div>
@@ -255,37 +283,14 @@
 
         <div class="sub-header">
           <h3>Pricing Under Tech Partnership</h3>
-          <p>Tech Partnership arrangements can reduce cash sprint rates by <strong>20–40%</strong> depending on the combination of models applied. A partial cash component is always required to sustain ongoing development.</p>
-        </div>
-
-        <div class="pricing-table-wrapper">
-          <table class="pricing-table">
-            <thead>
-              <tr>
-                <th>Sprint Package</th>
-                <th>Standard Rate</th>
-                <th>Partner Rate*</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="package-name">Starter Sprint</span></td>
-                <td><span class="price-range">$1,500 – $2,500</span></td>
-                <td><span class="price-range partner-price">$900 – $1,750</span></td>
-              </tr>
-              <tr>
-                <td><span class="package-name">Builder Sprint</span></td>
-                <td><span class="price-range">$2,500 – $4,000</span></td>
-                <td><span class="price-range partner-price">$1,500 – $2,800</span></td>
-              </tr>
-              <tr>
-                <td><span class="package-name">Partner Sprint</span></td>
-                <td><span class="price-range">$4,000 – $7,000</span></td>
-                <td><span class="price-range partner-price">$2,400 – $4,900</span></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="table-footnote">*Partner rates are indicative. Exact pricing depends on the equity/revenue terms, commitment length, and advisory scope agreed during the partnership discussion.</p>
+          <p>
+            Tech Partnership arrangements significantly reduce cash sprint rates in exchange for equity, revenue share,
+            long-term commitment, or advisory involvement. A partial cash component is always required to sustain ongoing development.
+          </p>
+          <p>
+            The exact reduction depends on the combination of models applied, the stage of your product, and the scope of
+            the collaboration. Specific terms are discussed during the partnership conversation and documented in a separate agreement.
+          </p>
         </div>
 
         <div class="who-for-block">
@@ -405,32 +410,118 @@
       </div>
     </section>
 
-    <!-- Startup & Early Collaboration Section -->
-    <section class="startup-section">
+    <!-- Guild Incentives Section -->
+    <section class="incentives-section">
       <div class="content">
         <div class="section-header">
-          <h2>Startup &amp; Early Collaboration</h2>
-          <p>Flexible models for early-stage teams and growing partnerships</p>
+          <h2>Guild Incentives</h2>
+          <p>Two pathways to better pricing — rooted in mutual benefit rather than arbitrary discounting</p>
         </div>
 
-        <div class="startup-grid">
-          <div class="startup-card">
-            <div class="startup-icon">🌱</div>
-            <h3>Startup Collaboration</h3>
+        <!-- Early Partner Program -->
+        <div class="incentive-block">
+          <div class="incentive-block-header">
+            <div class="incentive-block-icon">🏛️</div>
+            <div>
+              <h3>Early Partner Program</h3>
+              <p>The guild is young. Partners who commit early are taking a bet on us before we have a long track record — and that trust deserves to be recognized.</p>
+            </div>
+          </div>
+
+          <div class="incentive-label">Early Partner Benefits</div>
+
+          <div class="incentive-grid">
+            <div class="incentive-card">
+              <h4>Founding Rate Lock</h4>
+              <p>Partners who sign during the guild's early phase lock in their current sprint rate for an agreed period, even if prices are adjusted upward as the guild grows. This applies to sprint packages, retainers, and maintenance agreements.</p>
+            </div>
+            <div class="incentive-card">
+              <h4>Expanded Scope</h4>
+              <p>Early partners may receive additional deliverables within their sprint packages at no extra cost — such as architecture documentation, deployment guides, or knowledge transfer sessions — as the guild invests in building strong reference partnerships.</p>
+            </div>
+            <div class="incentive-card">
+              <h4>Priority Scheduling</h4>
+              <p>Early partners receive first priority when scheduling sprints and retainer cycles. As guild demand grows, this becomes increasingly valuable.</p>
+            </div>
+            <div class="incentive-card">
+              <h4>Direct Guild Master Access</h4>
+              <p>While the guild is small, early partners benefit from a higher ratio of Guild Master involvement. As the guild scales and the Guild Master's time becomes more distributed, this level of direct access becomes a premium offering.</p>
+            </div>
+          </div>
+
+          <div class="info-banner">
+            <span class="info-icon">⏳</span>
+            <div>
+              <span>
+                The Early Partner Program is <strong>limited by design</strong>. Once the guild reaches a critical mass of active engagements,
+                the program closes and these terms are no longer available to new partners. Existing early partners retain their
+                benefits for the agreed duration.
+              </span>
+            </div>
+          </div>
+
+          <div class="qualify-block">
+            <h4>How to Qualify</h4>
             <p>
-              For early-stage startups, we may explore hybrid collaboration models that combine development sprints
-              with equity or revenue sharing. These arrangements are evaluated on a case-by-case basis and require
-              a partial cash component to support ongoing development.
+              Commit to a minimum of two consecutive sprints or a retainer of two months or longer during the guild's early phase.
+              The Early Partner designation is noted in your agreement and honored for the duration of the partnership.
             </p>
           </div>
-          <div class="startup-card">
-            <div class="startup-icon">🤝</div>
-            <h3>Early Collaboration</h3>
-            <p>
-              During the early growth of the Skill-Wanderer ecosystem, some partnerships may receive expanded
-              development capacity within their sprint packages. These arrangements are intended to support meaningful
-              collaborations with partners who share our long-term vision.
-            </p>
+        </div>
+
+        <!-- Guild Capacity Pricing -->
+        <div class="incentive-block">
+          <div class="incentive-block-header">
+            <div class="incentive-block-icon">⚡</div>
+            <div>
+              <h3>Guild Capacity Pricing</h3>
+              <p>When the guild has available capacity between engagements, that idle time benefits no one. Guild Capacity Pricing makes these windows available at a reduced rate.</p>
+            </div>
+          </div>
+
+          <div class="capacity-grid">
+            <div class="capacity-item">
+              <h4>What It Is</h4>
+              <p>When guild artisans have open capacity, we may offer sprint packages at a reduced rate. This keeps the guild active, gives artisans real-world practice, and offers partners access to quality development at a lower entry point.</p>
+            </div>
+            <div class="capacity-item">
+              <h4>When It's Available</h4>
+              <p>Capacity pricing is not always available. It is offered when the guild has open slots between scheduled engagements. We may announce availability through our community channels or offer it directly to partners on a waiting list.</p>
+            </div>
+            <div class="capacity-item">
+              <h4>What's Different</h4>
+              <p>The same quality and Guild Master oversight applies. The reduction reflects scheduling flexibility on the partner's side — capacity sprints may start on shorter notice and require adaptable timelines. Partners cannot choose specific artisans during capacity windows.</p>
+            </div>
+            <div class="capacity-item">
+              <h4>Who Benefits Most</h4>
+              <p>Partners with flexible timelines, backlog items that don't have hard deadlines, or exploratory projects that benefit from opportunistic execution. Also ideal for first-time partners who want to try working with the guild at a lower commitment.</p>
+            </div>
+          </div>
+
+          <div class="info-banner">
+            <span class="info-icon">🔗</span>
+            <div>
+              <span>
+                Guild Capacity Pricing can be combined with Regional Pricing adjustments for partners in eligible regions.
+                It cannot be combined with Tech Partnership or Early Partner arrangements, as those include their own pricing
+                structures. Reach out or join the waiting list to be notified when capacity windows open.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Startup Collaboration -->
+        <div class="incentive-block compact">
+          <div class="incentive-block-header">
+            <div class="incentive-block-icon">🌱</div>
+            <div>
+              <h3>Startup Collaboration</h3>
+              <p>
+                For early-stage startups, we may explore hybrid collaboration models that combine development sprints
+                with equity or revenue sharing. These arrangements are evaluated on a case-by-case basis and require
+                a partial cash component to support ongoing development.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -444,84 +535,48 @@
           <p>Geography should not be a barrier to working with quality development partners</p>
         </div>
 
-        <div class="approach-text">
+        <div class="regional-intro">
+          <div class="regional-intro-icon">🌍</div>
           <p>
             Our standard rates are denominated in USD and reflect the cost of delivering professional-grade development.
-            However, we recognize that $2,500 means something very different in San Francisco than it does in Hanoi, Lagos, or Bogota.
-          </p>
-          <p>
-            For clients and partners based in eligible regions, we offer purchasing power adjustments of
-            <strong>15–35%</strong> on sprint and retainer packages. The adjustment level is based on publicly available
-            purchasing power parity data and is applied transparently.
+            However, we recognize that these rates carry different weight depending on where you operate.
           </p>
         </div>
 
-        <div class="pricing-table-wrapper">
-          <table class="pricing-table regional-table">
-            <thead>
-              <tr>
-                <th>Tier</th>
-                <th>Example Regions</th>
-                <th>Adjustment</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="tier-badge tier-standard">Standard</span></td>
-                <td>US, Canada, EU, UK, Australia, Japan, Singapore</td>
-                <td><span class="adjustment-none">None</span></td>
-              </tr>
-              <tr>
-                <td><span class="tier-badge tier-1">Tier 1</span></td>
-                <td>Eastern Europe, Latin America (upper), Malaysia, Thailand, China (Tier 1 cities)<sup class="footnote-ref">&dagger;</sup></td>
-                <td><span class="adjustment-value">15–20%</span></td>
-              </tr>
-              <tr>
-                <td><span class="tier-badge tier-2">Tier 2</span></td>
-                <td>Vietnam, Philippines, Indonesia, India, Latin America (lower), China (other regions)<sup class="footnote-ref">&dagger;</sup></td>
-                <td><span class="adjustment-value">20–30%</span></td>
-              </tr>
-              <tr>
-                <td><span class="tier-badge tier-3">Tier 3</span></td>
-                <td>Sub-Saharan Africa, Bangladesh, Myanmar, Cambodia</td>
-                <td><span class="adjustment-value">25–35%</span></td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="table-footnote china-footnote">
-            <sup>&dagger;</sup> <strong>China:</strong> Due to significant economic variation across regions, China is assessed on a
-            case-by-case basis. Tier 1 cities include Beijing, Shanghai, Shenzhen, Guangzhou, and Hangzhou. Teams based in other
-            Chinese cities or provinces are typically assessed at Tier 2. Funded startups regardless of city may be evaluated
-            differently based on their financial position.
-          </p>
-          <p class="table-footnote">
-            For countries with significant internal economic variation — such as China, Brazil, or India — the tier assignment
-            may be adjusted during onboarding based on your team's actual location and operating context.
-          </p>
+        <div class="regional-details-grid">
+          <div class="regional-detail-card">
+            <div class="regional-detail-icon">🌏</div>
+            <h4>Emerging Market Adjustments</h4>
+            <p>
+              For clients and partners based in emerging markets — including Southeast Asia, South Asia, Sub-Saharan Africa,
+              Latin America, and parts of Eastern Europe — we offer purchasing power adjustments on sprint and retainer packages.
+              The adjustment level is based on publicly available PPP data and assessed during onboarding based on your team's
+              location and operating context.
+            </p>
+          </div>
+          <div class="regional-detail-card">
+            <div class="regional-detail-icon">📊</div>
+            <h4>Case-by-Case Assessment</h4>
+            <p>
+              For countries with significant internal economic variation — such as China, Brazil, or India — the adjustment is
+              assessed on a case-by-case basis, reflecting the actual conditions of your team rather than a blanket country-level rate.
+            </p>
+          </div>
         </div>
 
-        <div class="eligibility-block">
-          <h4>Eligibility</h4>
+        <div class="eligibility-card">
+          <div class="eligibility-header">
+            <span class="eligibility-icon">✓</span>
+            <h4>Eligibility</h4>
+          </div>
           <p>
             Regional pricing applies to teams and founders whose primary business operations are based in the eligible region.
-            It is not available for companies headquartered in standard-tier countries outsourcing to lower-cost regions.
+            It is not available for companies headquartered in high-income countries outsourcing to lower-cost regions.
           </p>
           <p>
-            This adjustment can be combined with the Tech Partnership model for further flexibility. For example, a Vietnamese
-            startup founder could access both the purchasing power adjustment and an equity-based tech partnership, significantly
-            lowering the cash requirement while maintaining a fair and sustainable collaboration.
+            This adjustment can be combined with other partnership models for further flexibility.
+            Reach out to discuss how regional pricing applies to your situation.
           </p>
-        </div>
-
-        <div class="info-banner example-banner">
-          <span class="info-icon">💡</span>
-          <div>
-            <strong>Example:</strong>
-            <span>
-              A Builder Sprint ($2,500–$4,000 standard) for a Tier 2 partner with a Tech Partnership arrangement could
-              come down to $1,050–$2,000 in cash, supplemented by equity or revenue-sharing terms.
-            </span>
-          </div>
         </div>
       </div>
     </section>
@@ -529,16 +584,20 @@
     <!-- Pricing Notes Section -->
     <section class="notes-section">
       <div class="content">
-        <div class="section-header">
+        <div class="notes-header">
+          <span class="notes-header-icon">📋</span>
           <h2>Pricing Notes</h2>
         </div>
 
         <div class="notes-block">
           <div class="notes-disclaimer">
-            All prices listed on this page are subject to change. Pricing is reviewed periodically and may be adjusted
-            based on market conditions, team capacity, operational costs, and the evolving scope of our services.
-            Any changes will be communicated to existing partners in advance and will not affect active engagements
-            or signed agreements.
+            <span class="notes-disclaimer-icon">⚠️</span>
+            <div>
+              All prices listed on this page are subject to change. Pricing is reviewed periodically and may be adjusted
+              based on market conditions, team capacity, operational costs, and the evolving scope of our services.
+              Any changes will be communicated to existing partners in advance and will not affect active engagements
+              or signed agreements.
+            </div>
           </div>
           <ul class="notes-list">
             <li>Sprint pricing reflects development capacity and complexity. Exact scope and cost are determined during sprint planning.</li>
@@ -758,6 +817,43 @@ useSEO({
   background: var(--darker-bg);
 }
 
+.guild-intro-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  padding: 40px 38px;
+}
+
+.guild-intro-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.guild-intro-body p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.guild-intro-body strong {
+  color: var(--primary-orange);
+}
+
+.guild-intro-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-orange), transparent);
+  margin: 20px 0;
+  border-radius: 2px;
+}
+
 /* Guild Model Section */
 .guild-model-section {
   padding: 80px 20px;
@@ -814,32 +910,140 @@ useSEO({
   background: var(--darker-bg);
 }
 
-.guild-value-text {
+.guild-value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.guild-value-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.12);
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: all 0.3s ease;
+}
+
+.guild-value-card:hover {
+  border-color: rgba(255, 107, 53, 0.35);
+  transform: translateY(-4px);
+}
+
+.guild-value-icon {
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+.guild-value-card h4 {
+  color: var(--primary-orange);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.guild-value-card p {
+  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.guild-value-quote {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 107, 53, 0.02));
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 16px;
+  padding: 32px 40px;
 }
 
-.guild-value-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  opacity: 0.85;
-  margin-bottom: 16px;
+.quote-mark {
+  position: absolute;
+  top: -8px;
+  left: 28px;
+  font-size: 4rem;
+  color: var(--primary-orange);
+  opacity: 0.3;
+  line-height: 1;
+  font-family: Georgia, serif;
 }
 
-.guild-value-highlight {
-  color: white !important;
+.guild-value-quote p {
+  color: white;
   font-weight: 700;
-  font-size: 1.15rem !important;
-  opacity: 1 !important;
+  font-size: 1.1rem;
+  line-height: 1.7;
   font-style: italic;
-  margin-top: 24px !important;
+  margin: 0;
 }
 
 /* Approach */
 .approach-section {
   padding: 80px 20px;
   background: var(--dark-bg);
+}
+
+.approach-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.approach-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.12);
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.approach-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-orange), var(--deep-orange));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.approach-card:hover {
+  border-color: rgba(255, 107, 53, 0.35);
+  transform: translateY(-4px);
+}
+
+.approach-card:hover::before {
+  opacity: 1;
+}
+
+.approach-card-icon {
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+.approach-card h4 {
+  color: var(--primary-orange);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.approach-card p {
+  opacity: 0.8;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin: 0;
 }
 
 .approach-text {
@@ -1358,45 +1562,160 @@ useSEO({
   margin: 0;
 }
 
-/* Startup Section */
-.startup-section {
+/* Incentives Section */
+.incentives-section {
   padding: 80px 20px;
   background: var(--dark-bg);
 }
 
-.startup-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+.incentive-block {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  padding: 40px 35px;
+  margin-bottom: 30px;
 }
 
-.startup-card {
-  background: var(--card-bg);
-  border-radius: 20px;
-  padding: 35px 30px;
+.incentive-block.compact {
+  padding: 30px 35px;
+}
+
+.incentive-block-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.incentive-block.compact .incentive-block-header {
+  margin-bottom: 0;
+}
+
+.incentive-block-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.incentive-block-header h3 {
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.incentive-block-header p {
+  opacity: 0.85;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.incentive-label {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  margin-bottom: 24px;
+  opacity: 0.7;
+}
+
+.incentive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.incentive-card {
+  background: rgba(255, 107, 53, 0.04);
   border: 1px solid rgba(255, 107, 53, 0.12);
+  border-radius: 14px;
+  padding: 24px 22px;
   transition: all 0.3s ease;
 }
 
-.startup-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255, 107, 53, 0.35);
+.incentive-card:hover {
+  border-color: rgba(255, 107, 53, 0.3);
+  transform: translateY(-3px);
 }
 
-.startup-icon {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.startup-card h3 {
+.incentive-card h4 {
   color: var(--primary-orange);
-  font-size: 1.3rem;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.startup-card p {
-  opacity: 0.85;
-  line-height: 1.7;
+.incentive-card p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.qualify-block {
+  max-width: 700px;
+  margin: 28px auto 0;
+  text-align: center;
+}
+
+.qualify-block h4 {
+  color: var(--primary-orange);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.qualify-block p {
+  opacity: 0.8;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.capacity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.capacity-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px 22px;
+  transition: all 0.3s ease;
+}
+
+.capacity-item:hover {
+  border-color: rgba(255, 107, 53, 0.25);
+}
+
+.capacity-item h4 {
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.capacity-item p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.capacity-item strong {
+  color: var(--primary-orange);
+}
+
+.incentive-block .info-banner {
+  margin-bottom: 20px;
+}
+
+.incentive-block .info-banner:last-child {
+  margin-bottom: 0;
 }
 
 /* Regional Section */
@@ -1405,86 +1724,107 @@ useSEO({
   background: var(--darker-bg);
 }
 
-.regional-table td {
-  vertical-align: middle;
-}
-
-.tier-badge {
-  display: inline-block;
-  padding: 5px 14px;
-  border-radius: 50px;
-  font-size: 0.82rem;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.tier-standard {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-}
-
-.tier-1 {
-  background: rgba(76, 175, 80, 0.15);
-  color: #4caf50;
-}
-
-.tier-2 {
-  background: rgba(255, 193, 7, 0.15);
-  color: #ffc107;
-}
-
-.tier-3 {
-  background: rgba(255, 107, 53, 0.15);
-  color: var(--primary-orange);
-}
-
-.footnote-ref {
-  color: var(--primary-orange);
-  font-size: 0.8rem;
-  margin-left: 2px;
-  cursor: default;
-}
-
-.china-footnote {
-  text-align: left;
-}
-
-.china-footnote sup {
-  color: var(--primary-orange);
-  font-weight: 700;
-  margin-right: 4px;
-}
-
-.china-footnote strong {
-  color: white;
-}
-
-.adjustment-none {
-  opacity: 0.45;
-  font-size: 0.9rem;
-}
-
-.adjustment-value {
-  color: #4caf50;
-  font-weight: 700;
-}
-
-.eligibility-block {
+.regional-intro {
   max-width: 800px;
-  margin: 30px auto;
+  margin: 0 auto 40px;
   text-align: center;
 }
 
-.eligibility-block h4 {
-  color: var(--primary-orange);
-  font-size: 1.3rem;
-  margin-bottom: 15px;
+.regional-intro-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-.eligibility-block p {
+.regional-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+.regional-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.regional-detail-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.12);
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: all 0.3s ease;
+}
+
+.regional-detail-card:hover {
+  border-color: rgba(255, 107, 53, 0.35);
+  transform: translateY(-4px);
+}
+
+.regional-detail-icon {
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.regional-detail-card h4 {
+  color: var(--primary-orange);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.regional-detail-card p {
+  opacity: 0.8;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.eligibility-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.08), rgba(76, 175, 80, 0.02));
+  border: 1px solid rgba(76, 175, 80, 0.2);
+  border-radius: 16px;
+  padding: 30px 32px;
+}
+
+.eligibility-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.eligibility-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(76, 175, 80, 0.15);
+  border-radius: 50%;
+  color: #4caf50;
+  font-weight: 800;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.eligibility-card h4 {
+  color: #4caf50;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.eligibility-card p {
   opacity: 0.85;
   line-height: 1.7;
-  margin-bottom: 12px;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.eligibility-card p:last-child {
+  margin-bottom: 0;
 }
 
 /* Notes Section */
@@ -1493,20 +1833,47 @@ useSEO({
   background: var(--dark-bg);
 }
 
+.notes-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.notes-header-icon {
+  font-size: 2rem;
+}
+
+.notes-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-orange);
+  margin: 0;
+}
+
 .notes-block {
   max-width: 800px;
   margin: 0 auto;
 }
 
 .notes-disclaimer {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(255, 193, 7, 0.06);
+  border: 1px solid rgba(255, 193, 7, 0.15);
   border-radius: 14px;
   padding: 22px 28px;
   font-size: 0.95rem;
-  opacity: 0.7;
+  opacity: 0.85;
   line-height: 1.7;
   margin-bottom: 28px;
+}
+
+.notes-disclaimer-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .notes-list {
@@ -1825,8 +2192,23 @@ useSEO({
   .maintenance-cards,
   .partnership-grid,
   .mentorship-grid,
-  .startup-grid {
+  .incentive-grid,
+  .capacity-grid,
+  .regional-details-grid,
+  .guild-value-grid,
+  .approach-cards {
     grid-template-columns: 1fr;
+  }
+
+  .guild-intro-card,
+  .incentive-block-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .guild-intro-divider {
+    margin: 20px auto;
   }
 
   .improvement-block {
@@ -1835,10 +2217,15 @@ useSEO({
     text-align: center;
   }
 
-  .info-banner {
+  .info-banner,
+  .notes-disclaimer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .notes-header h2 {
+    font-size: 2rem;
   }
 
   .pricing-table thead th {
