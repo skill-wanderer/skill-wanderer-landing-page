@@ -7,7 +7,7 @@
         We're not outsourcing—we're your technology partner. We share both the success and the risks with you,
         requiring less upfront cost while our community of learners helps bring your vision to life.
       </p>
-      <NuxtLink to="/expertise-impact/success-sharing-model" class="launch-badge-link">Shared Success. Shared Risk. Real Partnership.</NuxtLink>
+      <NuxtLink to="/work-with-us/success-sharing-model" class="launch-badge-link">Shared Success. Shared Risk. Real Partnership.</NuxtLink>
     </section>
 
     <!-- Why Partner Section -->
@@ -184,7 +184,7 @@
 
         <div class="cta-buttons">
           <NuxtLink to="/contact" class="btn btn-primary">Start the Conversation</NuxtLink>
-          <NuxtLink to="/expertise-impact/success-sharing-model" class="btn btn-secondary">Learn About Success Sharing</NuxtLink>
+          <NuxtLink to="/work-with-us/success-sharing-model" class="btn btn-secondary">Learn About Success Sharing</NuxtLink>
         </div>
       </div>
     </section>
