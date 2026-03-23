@@ -133,7 +133,7 @@
           We apply real-world technology expertise to solve real problems—and every challenge we tackle fuels free education.
           Success sharing model. Community-powered talent. Impact that creates learning.
         </p>
-        <NuxtLink to="/expertise-impact" class="btn btn-secondary">Learn More</NuxtLink>
+        <NuxtLink to="/work-with-us" class="btn btn-secondary">Learn More</NuxtLink>
       </div>
     </section>
   </div>

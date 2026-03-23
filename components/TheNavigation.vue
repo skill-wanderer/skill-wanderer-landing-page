@@ -107,10 +107,11 @@
             </svg>
           </span>
           <div class="dropdown-menu" :class="{ open: isPartnershipsDropdownOpen }">
-            <NuxtLink to="/expertise-impact" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Overview</NuxtLink>
-            <NuxtLink to="/expertise-impact/our-projects" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Our Projects</NuxtLink>
-            <NuxtLink to="/expertise-impact/success-sharing-model" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Success Sharing Model</NuxtLink>
-            <NuxtLink to="/expertise-impact/become-a-partner" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Become a Partner</NuxtLink>
+            <NuxtLink to="/work-with-us" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">How Do We Work</NuxtLink>
+            <NuxtLink to="/work-with-us/who-we-work-with" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Who We Work With</NuxtLink>
+            <NuxtLink to="/work-with-us/our-projects" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Our Projects</NuxtLink>
+            <NuxtLink to="/work-with-us/success-sharing-model" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Success Sharing Model</NuxtLink>
+            <NuxtLink to="/work-with-us/become-a-partner" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Become a Partner</NuxtLink>
           </div>
         </div>
 
@@ -123,10 +124,11 @@
             </svg>
           </button>
           <div class="mobile-dropdown-menu" :class="{ open: isMobilePartnershipsDropdownOpen }">
-            <NuxtLink to="/expertise-impact" @click="closeMobileMenu">Overview</NuxtLink>
-            <NuxtLink to="/expertise-impact/our-projects" @click="closeMobileMenu">Our Projects</NuxtLink>
-            <NuxtLink to="/expertise-impact/success-sharing-model" @click="closeMobileMenu">Success Sharing Model</NuxtLink>
-            <NuxtLink to="/expertise-impact/become-a-partner" @click="closeMobileMenu">Become a Partner</NuxtLink>
+            <NuxtLink to="/work-with-us" @click="closeMobileMenu">How Do We Work</NuxtLink>
+            <NuxtLink to="/work-with-us/who-we-work-with" @click="closeMobileMenu">Who We Work With</NuxtLink>
+            <NuxtLink to="/work-with-us/our-projects" @click="closeMobileMenu">Our Projects</NuxtLink>
+            <NuxtLink to="/work-with-us/success-sharing-model" @click="closeMobileMenu">Success Sharing Model</NuxtLink>
+            <NuxtLink to="/work-with-us/become-a-partner" @click="closeMobileMenu">Become a Partner</NuxtLink>
           </div>
         </div>
 

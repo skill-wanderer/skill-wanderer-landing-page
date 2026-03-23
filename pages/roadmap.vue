@@ -307,7 +307,7 @@
           Get In Touch
           <span>→</span>
         </NuxtLink>
-        <NuxtLink to="/expertise-impact/become-a-partner" class="btn btn-secondary">
+        <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-secondary">
           Partner With Us
         </NuxtLink>
       </div>
