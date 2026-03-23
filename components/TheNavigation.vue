@@ -33,7 +33,7 @@
         <NuxtLink to="/" @click="closeMobileMenu">Home</NuxtLink>
         
         <!-- About Dropdown -->
-        <div class="dropdown" @mouseenter="isAboutDropdownOpen = true" @mouseleave="isAboutDropdownOpen = false">
+        <div class="dropdown" @mouseenter="openAboutDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isAboutDropdownOpen }">
             About
             <svg class="dropdown-arrow" :class="{ rotated: isAboutDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -111,7 +111,7 @@
         </div>
         
         <!-- Learning Dropdown -->
-        <div class="dropdown" @mouseenter="isLearningPathDropdownOpen = true" @mouseleave="isLearningPathDropdownOpen = false">
+        <div class="dropdown" @mouseenter="openLearningDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isLearningPathDropdownOpen }">
             Learning
             <svg class="dropdown-arrow" :class="{ rotated: isLearningPathDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -179,7 +179,7 @@
         </div>
 
         <!-- Engage the Guild Dropdown -->
-        <div class="dropdown" @mouseenter="isPartnershipsDropdownOpen = true" @mouseleave="isPartnershipsDropdownOpen = false">
+        <div class="dropdown" @mouseenter="openPartnershipsDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isPartnershipsDropdownOpen }">
             Engage the Guild
             <svg class="dropdown-arrow" :class="{ rotated: isPartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -267,7 +267,7 @@
         </div>
 
         <!-- Guild Ecosystem Dropdown -->
-        <div class="dropdown" @mouseenter="isEcosystemDropdownOpen = true" @mouseleave="isEcosystemDropdownOpen = false">
+        <div class="dropdown" @mouseenter="openEcosystemDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isEcosystemDropdownOpen }">
             Guild Ecosystem
             <svg class="dropdown-arrow" :class="{ rotated: isEcosystemDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -360,6 +360,53 @@ const closeMobileMenu = () => {
   isLearningPathDropdownOpen.value = false
   isPartnershipsDropdownOpen.value = false
   isEcosystemDropdownOpen.value = false
+}
+
+let dropdownCloseTimer: ReturnType<typeof setTimeout> | null = null
+
+const cancelDropdownClose = () => {
+  if (dropdownCloseTimer) {
+    clearTimeout(dropdownCloseTimer)
+    dropdownCloseTimer = null
+  }
+}
+
+const closeAllDropdowns = () => {
+  isAboutDropdownOpen.value = false
+  isLearningPathDropdownOpen.value = false
+  isPartnershipsDropdownOpen.value = false
+  isEcosystemDropdownOpen.value = false
+}
+
+const scheduleDropdownClose = () => {
+  cancelDropdownClose()
+  dropdownCloseTimer = setTimeout(() => {
+    closeAllDropdowns()
+  }, 80)
+}
+
+const openAboutDropdown = () => {
+  cancelDropdownClose()
+  closeAllDropdowns()
+  isAboutDropdownOpen.value = true
+}
+
+const openLearningDropdown = () => {
+  cancelDropdownClose()
+  closeAllDropdowns()
+  isLearningPathDropdownOpen.value = true
+}
+
+const openPartnershipsDropdown = () => {
+  cancelDropdownClose()
+  closeAllDropdowns()
+  isPartnershipsDropdownOpen.value = true
+}
+
+const openEcosystemDropdown = () => {
+  cancelDropdownClose()
+  closeAllDropdowns()
+  isEcosystemDropdownOpen.value = true
 }
 
 const toggleMobileAboutDropdown = () => {
@@ -573,7 +620,7 @@ onUnmounted(() => {
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
 }
 
@@ -655,7 +702,8 @@ onUnmounted(() => {
   min-width: 160px;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   z-index: 1002;
 }
@@ -663,6 +711,7 @@ onUnmounted(() => {
 .dropdown-menu.open {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   transform: translateX(-50%) translateY(0);
 }
 
