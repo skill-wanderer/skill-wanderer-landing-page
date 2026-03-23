@@ -6,7 +6,7 @@
       <h1>Who We Work With</h1>
       <p>
         We collaborate with organizations and builders who want to create meaningful digital systems
-        and grow them over time. Our work is best suited for those who value long-term thinking,
+        and grow them over time. Our guild is best suited for those who value long-term thinking,
         open technology, and practical learning.
       </p>
       <span class="launch-badge">Is This for You?</span>
@@ -28,8 +28,8 @@
             <div class="audience-icon">🎓</div>
             <h3>Education & Non-Profit Organizations</h3>
             <p>
-              We support organizations building learning platforms, community tools, and educational initiatives.
-              Our approach aligns closely with mission-driven work that prioritizes accessibility, sustainability,
+              We support organizations building learning systems, community tools, and educational initiatives.
+              Our guild approach aligns closely with mission-driven work that prioritizes accessibility, sustainability,
               and real-world impact.
             </p>
           </div>
@@ -38,7 +38,7 @@
             <div class="audience-icon">🚀</div>
             <h3>Startups</h3>
             <p>
-              We work with early-stage teams developing new digital products or platforms. Through iterative
+              We work with early-stage teams developing new digital products. Through iterative
               development sprints and flexible collaboration models, we help startups validate ideas and evolve
               their systems over time.
             </p>
@@ -49,7 +49,7 @@
             <h3>Organizations Building Digital Infrastructure</h3>
             <p>
               We collaborate with teams that need to build internal systems, automation tools, or scalable
-              digital platforms. Our focus is on creating stable and maintainable systems that support
+              digital infrastructure. Our focus is on creating stable and maintainable systems that support
               long-term growth.
             </p>
           </div>
@@ -66,10 +66,10 @@
 
           <div class="audience-card audience-card--highlight">
             <div class="audience-icon">🌱</div>
-            <h3>Builders & Learners</h3>
+            <h3>Builders & Guild Apprentices</h3>
             <p>
               For individuals exploring ideas or learning to build systems, we encourage starting with our
-              free mentorship and educational resources. Our platform is designed to support independent
+              free mentorship and educational resources. Our guild is designed to support independent
               learning and practical experimentation.
             </p>
             <NuxtLink to="/learning-path" class="audience-link">Explore Free Resources →</NuxtLink>
@@ -88,19 +88,19 @@
 
         <div class="mapping-grid">
           <div class="mapping-card">
-            <div class="mapping-label">Learners</div>
+            <div class="mapping-label">Apprentices</div>
             <div class="mapping-arrow">→</div>
             <div class="mapping-value">Free mentorship & educational resources</div>
           </div>
           <div class="mapping-card">
             <div class="mapping-label">Builders</div>
             <div class="mapping-arrow">→</div>
-            <div class="mapping-value">Platform tools & community collaboration</div>
+            <div class="mapping-value">Guild tools & community collaboration</div>
           </div>
           <div class="mapping-card">
             <div class="mapping-label">Organizations</div>
             <div class="mapping-arrow">→</div>
-            <div class="mapping-value">Technology partnership & development sprints</div>
+            <div class="mapping-value">Guild partnership & development sprints</div>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
 useSEO({
   title: 'Who We Work With | Skill-Wanderer',
   description:
-    'We collaborate with education organizations, startups, businesses, and independent builders. Find out if Skill-Wanderer is the right technology partner for you.',
+    'We collaborate with education organizations, startups, businesses, and independent builders. Find out if the Skill-Wanderer guild is the right partner for you.',
   image: '/cropped-skill-wanderer-logo-768x256.webp'
 })
 </script>
