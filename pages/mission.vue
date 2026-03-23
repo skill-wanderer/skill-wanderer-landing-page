@@ -3,8 +3,8 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">The Heart of Skill-Wanderer</h1>
-        <p class="hero-subtitle">Our Mission, Vision & Guiding Principles</p>
+        <h1 class="hero-title">The Heart of the Guild</h1>
+        <p class="hero-subtitle">Our Mission, Vision & Guild Principles</p>
         <div class="hero-visual">
           <div class="heart-icon">❤️</div>
           <div class="pulse-rings">
@@ -23,41 +23,41 @@
           <div class="mission-flow">
             <div class="flow-step">
               <div class="step-icon">🚀</div>
-              <h3>Tech Partnerships</h3>
-              <p>Real-world projects & consulting</p>
+              <h3>Guild Engagements</h3>
+              <p>Real-world projects & partnerships</p>
             </div>
             <div class="flow-arrow">→</div>
             <div class="flow-step">
               <div class="step-icon">📚</div>
-              <h3>Educational Platform</h3>
-              <p>Free, practical learning</p>
+              <h3>Free Education</h3>
+              <p>Guild-powered, community-funded learning</p>
             </div>
             <div class="flow-arrow">→</div>
             <div class="flow-step">
               <div class="step-icon">🌍</div>
-              <h3>Global Impact</h3>
-              <p>Lasting change through education</p>
+              <h3>Social Impact</h3>
+              <p>Lasting change through craft & community</p>
             </div>
           </div>
         </div>
         <div class="mission-text">
           <h2>Our Mission</h2>
           <p class="mission-description">
-            We believe quality education shapes brighter futures. Our mission is to achieve this by integrating 
-            real-world insights from our technology partnerships directly into highly practical e-learning. This 
-            approach builds a sustainable revenue model, enabling us to operate with complete integrity and 
-            reinvest all resources for lasting global impact.
+            With a social enterprise vision, we believe quality education shapes brighter futures. Our mission 
+            is to achieve this through the tech guild model—integrating real-world project experience directly 
+            into free, practical learning. Guild engagements generate sustainable revenue, enabling us to operate 
+            with complete integrity and reinvest all resources into education and social impact.
           </p>
           <div class="mission-impact">
             <div class="impact-stat">
               <span class="stat-icon">💰</span>
-              <strong>Every client project funded</strong>
+              <strong>Every guild engagement delivered</strong>
               <p>becomes free education shared</p>
             </div>
             <div class="impact-stat">
               <span class="stat-icon">🌱</span>
-              <strong>Every technology partnership delivered</strong>
-              <p>plants seeds of knowledge for countless learners</p>
+              <strong>Every project built by the guild</strong>
+              <p>plants seeds of knowledge for future craftspeople</p>
             </div>
           </div>
         </div>
@@ -67,14 +67,14 @@
     <!-- Guiding Principles Section -->
     <section class="principles">
       <div class="container">
-        <h2 class="section-title">Our Guiding Principles</h2>
+        <h2 class="section-title">Guild Principles</h2>
         <div class="principles-grid">
           
           <!-- Accessible -->
           <div class="principle-card">
             <div class="principle-icon">🌐</div>
             <h3>Accessible</h3>
-            <p>All Skill-Wanderer learning content is completely free. Our guided learning paths help you navigate both free resources and optional paid services like personalized grading and live mentoring and third-party resources.</p>
+            <p>All guild learning content is completely free. Our guided learning paths help you navigate both free resources and optional paid services like personalized mentoring from guild masters.</p>
             <div class="principle-visual">
               <div class="access-symbols">
                 <span class="symbol free">FREE CONTENT</span>
@@ -175,8 +175,8 @@
           <!-- Tech Partnerships -->
           <div class="principle-card">
             <div class="principle-icon">⚙️</div>
-            <h3>Technology Partnerships Fueling Mission</h3>
-            <p>We're not outsourcing—we're true partners. Through our Success Sharing Model, we share risks and success with you, requiring less upfront cost while our community delivers real work.</p>
+            <h3>Guild Engagements Fueling Mission</h3>
+            <p>We're not outsourcing—we're a tech guild. Through our social enterprise model, we deliver real work with guild members at every level, and every engagement funds free education.</p>
             <div class="principle-visual">
               <div class="service-cycle">
                 <div class="service-node">Consulting</div>
@@ -209,8 +209,8 @@
           <!-- Community -->
           <div class="principle-card">
             <div class="principle-icon">🤝</div>
-            <h3>Collaborative Community</h3>
-            <p>Fostering a vibrant ecosystem where educators, developers, and contributors collaborate to build and enrich our platform.</p>
+            <h3>Guild Community</h3>
+            <p>Fostering a vibrant guild where apprentices, journeymen, masters, educators, and contributors collaborate to build and enrich our collective craft.</p>
             <div class="principle-visual">
               <div class="community-network">
                 <div class="node educator">Educators</div>
@@ -225,7 +225,7 @@
           <div class="principle-card">
             <div class="principle-icon">🌱</div>
             <h3>Social Enterprise Model</h3>
-            <p>Same quality learning with human mentors, start-up support, and pre-learning advisory—sustained through Social Impact Tokens where learners give back by paying forward, contributing to the platform, or strengthening the community.</p>
+            <p>Same quality learning with guild mentors, start-up support, and pre-learning advisory—sustained through our social enterprise model where guild work funds education and members give back by paying forward.</p>
             <div class="principle-visual">
               <div class="service-tiers">
                 <div class="tier free">Quality Learning</div>
@@ -269,8 +269,8 @@
             <div class="impact-step">
               <div class="step-number">1</div>
               <div class="step-content">
-                <h3>🏢 Client Projects</h3>
-                <p>Technology partnerships generate sustainable revenue</p>
+                <h3>🏢 Guild Engagements</h3>
+                <p>Real-world projects generate sustainable revenue for the social enterprise</p>
               </div>
             </div>
             <div class="impact-step">
@@ -283,15 +283,15 @@
             <div class="impact-step">
               <div class="step-number">3</div>
               <div class="step-content">
-                <h3>🎓 Skilled Learners</h3>
-                <p>Learners gain practical, job-ready skills</p>
+                <h3>🎓 Skilled Craftspeople</h3>
+                <p>Guild members gain practical, job-ready skills through real work</p>
               </div>
             </div>
             <div class="impact-step">
               <div class="step-number">4</div>
               <div class="step-content">
-                <h3>🌍 Global Impact</h3>
-                <p>Skilled individuals create positive change worldwide</p>
+                <h3>🌍 Social Impact</h3>
+                <p>Skilled craftspeople create positive change worldwide</p>
               </div>
             </div>
           </div>
@@ -320,10 +320,10 @@
     <section class="cta">
       <div class="container">
         <div class="cta-content">
-          <h2>Join Our Mission</h2>
-          <p>Be part of a movement that's reshaping education through integrity, innovation, and impact.</p>
+          <h2>Join the Guild</h2>
+          <p>Be part of a tech guild that's reshaping education through craft, integrity, and social impact.</p>
           <div class="cta-buttons">
-            <NuxtLink to="/principles" class="btn btn-primary">Explore Our Principles</NuxtLink>
+            <NuxtLink to="/principles" class="btn btn-primary">Explore Guild Principles</NuxtLink>
             <NuxtLink to="/contact" class="btn btn-secondary">Get in Touch</NuxtLink>
           </div>
         </div>
@@ -334,8 +334,8 @@
 
 <script setup>
 useSEO({
-  title: 'The Heart of Skill-Wanderer - Mission & Principles',
-  description: 'Discover our mission to reshape education through integrity, innovation, and impact. Explore our guiding principles and commitment to free, practical learning.',
+  title: 'The Heart of the Guild - Mission & Principles',
+  description: 'Discover our mission as a tech guild working toward social enterprise. Free education funded by real-world craft. Explore our guild principles and commitment to social impact.',
   ogImage: '/skill-wanderer-avatar.jpg'
 });
 </script>

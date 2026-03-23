@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <h1>Let's Connect</h1>
-      <p>Whether you're a learner with questions, a potential collaborator, or just someone who shares the passion for learning—I'd love to hear from you!</p>
+      <p>Whether you're looking to join the guild, partner with us, or just share your journey—we'd love to hear from you!</p>
     </section>
 
     <!-- Contact Section -->
@@ -13,7 +13,7 @@
         <div class="contact-form">
           <div class="form-header">
             <h2>Send a Message</h2>
-            <p>Have a question, suggestion, or just want to share your learning journey?</p>
+            <p>Have a question, suggestion, or want to share your guild journey?</p>
           </div>
           <form id="contactForm" @submit.prevent="handleSubmit">
             <div class="form-group">
@@ -28,10 +28,10 @@
               <label for="topic">What's this about?</label>
               <select id="topic" v-model="form.topic" required>
                 <option value="">Select a topic</option>
-                <option value="learning">Learning & Courses</option>
-                <option value="collaboration">Collaboration Opportunities</option>
-                <option value="tech-services">Work With Us</option>
-                <option value="feedback">Platform Feedback</option>
+                <option value="learning">Learning & Guild Paths</option>
+                <option value="collaboration">Guild Collaboration</option>
+                <option value="tech-services">Engage the Guild</option>
+                <option value="feedback">Guild Feedback</option>
                 <option value="other">Something Else</option>
               </select>
             </div>
@@ -142,11 +142,11 @@ const activeFaq = ref(-1)
 const faqs = ref([
   {
     question: "When will Skill-Wanderer launch?",
-    answer: "We're targeting Q3 2025 for the platform launch with initial courses on web development, cloud concepts, and API design. Follow me on LinkedIn for the latest updates!"
+    answer: "We're targeting Q3 2025 for the guild launch with initial courses on web development, cloud concepts, and API design. Follow me on LinkedIn for the latest updates!"
   },
   {
     question: "Will the courses really be free?",
-    answer: "Yes! All core course content created or curated by us will be 100% free. We operate as a social enterprise—learners receive the same quality human mentors, start-up support, and pre-learning advisory. Those who benefit give back through Social Impact Tokens: paying forward, contributing to the platform, or strengthening the community."
+    answer: "Yes! All core course content created or curated by us will be 100% free. We operate with a social enterprise mindset—guild members receive the same quality human mentors, start-up support, and pre-learning advisory. Those who benefit give back through Social Impact Tokens: paying forward, contributing to the guild, or strengthening the community."
   },
   {
     question: "Can I contribute to Skill-Wanderer?",

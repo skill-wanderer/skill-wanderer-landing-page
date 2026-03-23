@@ -55,7 +55,7 @@
           <button
             aria-label="Close command console"
             class="pathfinder-header-btn"
-            @click="isOpen = false"
+            @click="closePanel"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -151,6 +151,22 @@
       <!-- Error -->
       <div v-if="error" class="pathfinder-error">
         {{ error }}
+      </div>
+
+      <div class="pathfinder-mobile-actions">
+        <button
+          type="button"
+          class="pathfinder-mobile-close"
+          aria-label="Close command console"
+          @click="closePanel"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+          <span>Close chat</span>
+        </button>
       </div>
 
       <!-- Input -->
@@ -288,6 +304,10 @@ function handleReset() {
   resetChat()
   lastSources.value = []
   revealedSources.value = false
+}
+
+function closePanel() {
+  isOpen.value = false
 }
 
 function askSuggestion(text: string) {
@@ -681,6 +701,37 @@ onUnmounted(() => {
   border-top: 1px solid rgba(255, 107, 107, 0.15);
 }
 
+.pathfinder-mobile-actions {
+  display: none;
+  position: relative;
+  z-index: 1;
+  padding: 0 0.75rem 0.625rem;
+  background: rgba(13, 17, 23, 0.95);
+}
+
+.pathfinder-mobile-close {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e0e0e0;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.pathfinder-mobile-close:hover {
+  color: #FFD93D;
+  background: rgba(255, 217, 61, 0.08);
+  border-color: rgba(255, 217, 61, 0.24);
+}
+
 /* Input bar */
 .pathfinder-input-bar {
   position: relative;
@@ -756,6 +807,23 @@ onUnmounted(() => {
     max-height: 100vh;
     border-radius: 0;
   }
+
+  .pathfinder-header-btn {
+    min-width: 40px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pathfinder-mobile-actions {
+    display: block;
+  }
+
+  .pathfinder-input-bar {
+    padding-bottom: calc(0.625rem + env(safe-area-inset-bottom, 0px));
+  }
+
   .pathfinder-fab {
     bottom: 1rem;
     right: 1rem;

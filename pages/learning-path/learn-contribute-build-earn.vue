@@ -39,7 +39,7 @@
           <p>Real growth requires commitment. Instead of charging fixed tuition, we let you choose how to contribute:</p>
           <ul class="contribution-list">
             <li><span class="list-icon">💰</span> Support financially (optional)</li>
-            <li><span class="list-icon">🛠</span> Build real features for the platform</li>
+            <li><span class="list-icon">🛠</span> Build real features for the guild</li>
             <li><span class="list-icon">🤝</span> Help and grow the community</li>
           </ul>
           <p class="card-emphasis">You don't have to pay — but you do have to show up.</p>
@@ -68,7 +68,7 @@
             <li>Launch startups</li>
             <li>Partner with us</li>
           </ul>
-          <p class="card-emphasis">From learner → builder → leader</p>
+          <p class="card-emphasis">From apprentice → journeyman → master</p>
         </article>
       </div>
     </section>
@@ -77,25 +77,25 @@
     <section class="system-section">
       <div class="section-header">
         <h2>A System That Grows With You</h2>
-        <p>Skill-Wanderer is not just a course. It's a system where every stage leads to the next.</p>
+        <p>Skill-Wanderer is not just a course. It's a guild system where every stage leads to the next.</p>
       </div>
 
       <div class="progression-track">
         <div class="progression-step">
           <span class="progression-dot" />
-          <span>Beginners become contributors</span>
+          <span>Apprentices become contributors</span>
         </div>
         <div class="progression-step">
           <span class="progression-dot" />
-          <span>Contributors become professionals</span>
+          <span>Contributors become journeymen</span>
         </div>
         <div class="progression-step">
           <span class="progression-dot" />
-          <span>Professionals become leaders</span>
+          <span>Journeymen become masters</span>
         </div>
         <div class="progression-step">
           <span class="progression-dot" />
-          <span>And leaders help the next generation rise</span>
+          <span>And masters help the next generation rise</span>
         </div>
       </div>
     </section>

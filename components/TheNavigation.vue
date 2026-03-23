@@ -33,22 +33,66 @@
         <NuxtLink to="/" @click="closeMobileMenu">Home</NuxtLink>
         
         <!-- About Dropdown -->
-        <div class="dropdown" @mouseenter="isAboutDropdownOpen = true" @mouseleave="isAboutDropdownOpen = false">
+        <div class="dropdown" @mouseenter="openAboutDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isAboutDropdownOpen }">
             About
             <svg class="dropdown-arrow" :class="{ rotated: isAboutDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </span>
-          <div class="dropdown-menu" :class="{ open: isAboutDropdownOpen }">
-            <NuxtLink to="/about" @click="closeMobileMenu(); isAboutDropdownOpen = false">About Us</NuxtLink>
-            <NuxtLink to="/team" @click="closeMobileMenu(); isAboutDropdownOpen = false">Our Team</NuxtLink>
-            <NuxtLink to="/principles" @click="closeMobileMenu(); isAboutDropdownOpen = false">Principles</NuxtLink>
-            <NuxtLink to="/roadmap" @click="closeMobileMenu(); isAboutDropdownOpen = false">Roadmap</NuxtLink>
-            <NuxtLink to="/admiral-orion" @click="closeMobileMenu(); isAboutDropdownOpen = false">Admiral Orion</NuxtLink>
+          <div class="dropdown-menu rich-dropdown-menu" :class="{ open: isAboutDropdownOpen }">
+            <NuxtLink to="/about" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Our Story</span>
+                <span class="rich-menu-desc">How the guild came to be</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/team" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Guild Members</span>
+                <span class="rich-menu-desc">Meet the craftspeople building the guild</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/principles" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Guild Principles</span>
+                <span class="rich-menu-desc">The values that guide our social enterprise</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/roadmap" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Roadmap</span>
+                <span class="rich-menu-desc">What we're building next for the guild</span>
+              </span>
+            </NuxtLink>
+            <div class="rich-menu-divider"></div>
+            <NuxtLink to="/admiral-orion" class="rich-menu-item rich-menu-cta" @click="closeMobileMenu(); isAboutDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Admiral Orion</span>
+                <span class="rich-menu-desc">The guardian spirit of Skill-Wanderer</span>
+              </span>
+              <span class="rich-menu-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </NuxtLink>
           </div>
         </div>
-        
+
         <!-- Mobile About submenu -->
         <div class="mobile-dropdown">
           <button class="mobile-dropdown-trigger" @click="toggleMobileAboutDropdown" :class="{ active: isMobileAboutDropdownOpen }">
@@ -58,27 +102,63 @@
             </svg>
           </button>
           <div class="mobile-dropdown-menu" :class="{ open: isMobileAboutDropdownOpen }">
-            <NuxtLink to="/about" @click="closeMobileMenu">About Us</NuxtLink>
-            <NuxtLink to="/team" @click="closeMobileMenu">Our Team</NuxtLink>
-            <NuxtLink to="/principles" @click="closeMobileMenu">Principles</NuxtLink>
+            <NuxtLink to="/about" @click="closeMobileMenu">Our Story</NuxtLink>
+            <NuxtLink to="/team" @click="closeMobileMenu">Guild Members</NuxtLink>
+            <NuxtLink to="/principles" @click="closeMobileMenu">Guild Principles</NuxtLink>
             <NuxtLink to="/roadmap" @click="closeMobileMenu">Roadmap</NuxtLink>
             <NuxtLink to="/admiral-orion" @click="closeMobileMenu">Admiral Orion</NuxtLink>
           </div>
         </div>
         
         <!-- Learning Dropdown -->
-        <div class="dropdown" @mouseenter="isLearningPathDropdownOpen = true" @mouseleave="isLearningPathDropdownOpen = false">
+        <div class="dropdown" @mouseenter="openLearningDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isLearningPathDropdownOpen }">
             Learning
             <svg class="dropdown-arrow" :class="{ rotated: isLearningPathDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </span>
-          <div class="dropdown-menu" :class="{ open: isLearningPathDropdownOpen }">
-            <NuxtLink to="/learning-path/learn-contribute-build-earn" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">Education Philosophy</NuxtLink>
-            <NuxtLink to="/learning-path" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">All Learning Paths</NuxtLink>
-            <NuxtLink to="/learners" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">Our Learners</NuxtLink>
-            <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">Go to Learning Path Study</a>
+          <div class="dropdown-menu rich-dropdown-menu" :class="{ open: isLearningPathDropdownOpen }">
+            <NuxtLink to="/learning-path/learn-contribute-build-earn" class="rich-menu-item" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Guild Philosophy</span>
+                <span class="rich-menu-desc">Learn. Contribute. Build. Earn.</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/learning-path" class="rich-menu-item" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Learning Paths</span>
+                <span class="rich-menu-desc">Pick a craft and grow your skills step by step</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/learners" class="rich-menu-item" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Guild Stories</span>
+                <span class="rich-menu-desc">Real journeys from our guild members</span>
+              </span>
+            </NuxtLink>
+            <div class="rich-menu-divider"></div>
+            <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="rich-menu-item rich-menu-cta" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Enter the Dojo</span>
+                <span class="rich-menu-desc">Jump into the guild's learning dojo</span>
+              </span>
+              <span class="rich-menu-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </a>
           </div>
         </div>
 
@@ -91,68 +171,148 @@
             </svg>
           </button>
           <div class="mobile-dropdown-menu" :class="{ open: isMobileLearningPathDropdownOpen }">
-            <NuxtLink to="/learning-path/learn-contribute-build-earn" @click="closeMobileMenu">Education Philosophy</NuxtLink>
-            <NuxtLink to="/learning-path" @click="closeMobileMenu">All Learning Paths</NuxtLink>
-            <NuxtLink to="/learners" @click="closeMobileMenu">Our Learners</NuxtLink>
-            <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu">Go to Learning Path Study</a>
+            <NuxtLink to="/learning-path/learn-contribute-build-earn" @click="closeMobileMenu">Guild Philosophy</NuxtLink>
+            <NuxtLink to="/learning-path" @click="closeMobileMenu">Learning Paths</NuxtLink>
+            <NuxtLink to="/learners" @click="closeMobileMenu">Guild Stories</NuxtLink>
+            <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu">Start Studying</a>
           </div>
         </div>
 
-        <!-- Work With Us Dropdown -->
-        <div class="dropdown" @mouseenter="isPartnershipsDropdownOpen = true" @mouseleave="isPartnershipsDropdownOpen = false">
+        <!-- Engage the Guild Dropdown -->
+        <div class="dropdown" @mouseenter="openPartnershipsDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isPartnershipsDropdownOpen }">
-            Work With Us
+            Engage the Guild
             <svg class="dropdown-arrow" :class="{ rotated: isPartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </span>
-          <div class="dropdown-menu" :class="{ open: isPartnershipsDropdownOpen }">
-            <NuxtLink to="/expertise-impact" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Overview</NuxtLink>
-            <NuxtLink to="/expertise-impact/success-sharing-model" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Success Sharing Model</NuxtLink>
-            <NuxtLink to="/expertise-impact/become-a-partner" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Become a Partner</NuxtLink>
+          <div class="dropdown-menu rich-dropdown-menu" :class="{ open: isPartnershipsDropdownOpen }">
+            <NuxtLink to="/work-with-us" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Guild Approach</span>
+                <span class="rich-menu-desc">How we partner to build and sustain impact</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/work-with-us/who-we-work-with" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Ideal Partners</span>
+                <span class="rich-menu-desc">Startups, non-profits & builders we serve</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/work-with-us/our-projects" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Projects</span>
+                <span class="rich-menu-desc">Real work creating real-world impact</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/work-with-us/success-sharing-model" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Success Sharing</span>
+                <span class="rich-menu-desc">Partnership over outsourcing — shared risk, shared reward</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/work-with-us/pricing" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Guild Engagements</span>
+                <span class="rich-menu-desc">Sprint packages, retainers & partnership models</span>
+              </span>
+            </NuxtLink>
+            <div class="rich-menu-divider"></div>
+            <NuxtLink to="/work-with-us/become-a-partner" class="rich-menu-item rich-menu-cta" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Partner With Us</span>
+                <span class="rich-menu-desc">Start a conversation about working together</span>
+              </span>
+              <span class="rich-menu-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+            </NuxtLink>
           </div>
         </div>
 
-        <!-- Mobile Work With Us submenu -->
+        <!-- Mobile Engage the Guild submenu -->
         <div class="mobile-dropdown">
           <button class="mobile-dropdown-trigger" @click="toggleMobilePartnershipsDropdown" :class="{ active: isMobilePartnershipsDropdownOpen }">
-            Work With Us
+            Engage the Guild
             <svg class="dropdown-arrow" :class="{ rotated: isMobilePartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
           <div class="mobile-dropdown-menu" :class="{ open: isMobilePartnershipsDropdownOpen }">
-            <NuxtLink to="/expertise-impact" @click="closeMobileMenu">Overview</NuxtLink>
-            <NuxtLink to="/expertise-impact/success-sharing-model" @click="closeMobileMenu">Success Sharing Model</NuxtLink>
-            <NuxtLink to="/expertise-impact/become-a-partner" @click="closeMobileMenu">Become a Partner</NuxtLink>
+            <NuxtLink to="/work-with-us" @click="closeMobileMenu">Guild Approach</NuxtLink>
+            <NuxtLink to="/work-with-us/who-we-work-with" @click="closeMobileMenu">Ideal Partners</NuxtLink>
+            <NuxtLink to="/work-with-us/our-projects" @click="closeMobileMenu">Projects</NuxtLink>
+            <NuxtLink to="/work-with-us/success-sharing-model" @click="closeMobileMenu">Success Sharing</NuxtLink>
+            <NuxtLink to="/work-with-us/pricing" @click="closeMobileMenu">Guild Engagements</NuxtLink>
+            <NuxtLink to="/work-with-us/become-a-partner" @click="closeMobileMenu">Partner With Us</NuxtLink>
           </div>
         </div>
 
-        <!-- Platform Ecosystem Dropdown -->
-        <div class="dropdown" @mouseenter="isEcosystemDropdownOpen = true" @mouseleave="isEcosystemDropdownOpen = false">
+        <!-- Guild Ecosystem Dropdown -->
+        <div class="dropdown" @mouseenter="openEcosystemDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isEcosystemDropdownOpen }">
-            Platform Ecosystem
+            Guild Ecosystem
             <svg class="dropdown-arrow" :class="{ rotated: isEcosystemDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </span>
-          <div class="dropdown-menu" :class="{ open: isEcosystemDropdownOpen }">
-            <NuxtLink to="https://dojo.skill-wanderer.com" @click="closeMobileMenu(); isEcosystemDropdownOpen = false">Dojo</NuxtLink>
-            <NuxtLink to="https://wanderings.skill-wanderer.com" @click="closeMobileMenu(); isEcosystemDropdownOpen = false">Blog</NuxtLink>
+          <div class="dropdown-menu rich-dropdown-menu" :class="{ open: isEcosystemDropdownOpen }">
+            <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer" class="rich-menu-item" @click="closeMobileMenu(); isEcosystemDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Dojo</span>
+                <span class="rich-menu-desc">Interactive guild dojo with guided paths</span>
+              </span>
+              <span class="rich-menu-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </span>
+            </a>
+            <a href="https://wanderings.skill-wanderer.com" target="_blank" rel="noopener noreferrer" class="rich-menu-item" @click="closeMobileMenu(); isEcosystemDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Wanderings Blog</span>
+                <span class="rich-menu-desc">Insights, tutorials & stories from the guild</span>
+              </span>
+              <span class="rich-menu-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </span>
+            </a>
           </div>
         </div>
 
-        <!-- Mobile Platform Ecosystem submenu -->
+        <!-- Mobile Guild Ecosystem submenu -->
         <div class="mobile-dropdown">
           <button class="mobile-dropdown-trigger" @click="toggleMobileEcosystemDropdown" :class="{ active: isMobileEcosystemDropdownOpen }">
-            Platform Ecosystem
+            Guild Ecosystem
             <svg class="dropdown-arrow" :class="{ rotated: isMobileEcosystemDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
           <div class="mobile-dropdown-menu" :class="{ open: isMobileEcosystemDropdownOpen }">
-            <NuxtLink to="https://dojo.skill-wanderer.com" @click="closeMobileMenu">Dojo</NuxtLink>
-            <NuxtLink to="https://wanderings.skill-wanderer.com" @click="closeMobileMenu">Blog</NuxtLink>
+            <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu">Dojo</a>
+            <a href="https://wanderings.skill-wanderer.com" target="_blank" rel="noopener noreferrer" @click="closeMobileMenu">Wanderings Blog</a>
           </div>
         </div>
 
@@ -200,6 +360,53 @@ const closeMobileMenu = () => {
   isLearningPathDropdownOpen.value = false
   isPartnershipsDropdownOpen.value = false
   isEcosystemDropdownOpen.value = false
+}
+
+let dropdownCloseTimer: ReturnType<typeof setTimeout> | null = null
+
+const cancelDropdownClose = () => {
+  if (dropdownCloseTimer) {
+    clearTimeout(dropdownCloseTimer)
+    dropdownCloseTimer = null
+  }
+}
+
+const closeAllDropdowns = () => {
+  isAboutDropdownOpen.value = false
+  isLearningPathDropdownOpen.value = false
+  isPartnershipsDropdownOpen.value = false
+  isEcosystemDropdownOpen.value = false
+}
+
+const scheduleDropdownClose = () => {
+  cancelDropdownClose()
+  dropdownCloseTimer = setTimeout(() => {
+    closeAllDropdowns()
+  }, 80)
+}
+
+const openAboutDropdown = () => {
+  cancelDropdownClose()
+  closeAllDropdowns()
+  isAboutDropdownOpen.value = true
+}
+
+const openLearningDropdown = () => {
+  cancelDropdownClose()
+  closeAllDropdowns()
+  isLearningPathDropdownOpen.value = true
+}
+
+const openPartnershipsDropdown = () => {
+  cancelDropdownClose()
+  closeAllDropdowns()
+  isPartnershipsDropdownOpen.value = true
+}
+
+const openEcosystemDropdown = () => {
+  cancelDropdownClose()
+  closeAllDropdowns()
+  isEcosystemDropdownOpen.value = true
 }
 
 const toggleMobileAboutDropdown = () => {
@@ -413,7 +620,7 @@ onUnmounted(() => {
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
 }
 
@@ -495,7 +702,8 @@ onUnmounted(() => {
   min-width: 160px;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   z-index: 1002;
 }
@@ -503,6 +711,7 @@ onUnmounted(() => {
 .dropdown-menu.open {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   transform: translateX(-50%) translateY(0);
 }
 
@@ -531,6 +740,122 @@ onUnmounted(() => {
   font-weight: 600;
   margin-bottom: 5px;
   padding-bottom: 12px;
+}
+
+/* Rich dropdown menus */
+.rich-dropdown-menu {
+  min-width: 320px;
+  padding: 8px 0;
+}
+
+.rich-menu-item {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  margin: 2px 8px;
+}
+
+.rich-menu-item:hover {
+  background: rgba(255, 107, 53, 0.08) !important;
+}
+
+.rich-menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255, 107, 53, 0.1);
+  color: #FF6B35;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.rich-menu-item:hover .rich-menu-icon {
+  background: rgba(255, 107, 53, 0.18);
+  transform: scale(1.05);
+}
+
+.rich-menu-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.rich-menu-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  transition: color 0.2s ease;
+}
+
+.rich-menu-item:hover .rich-menu-label {
+  color: #FF6B35;
+}
+
+.rich-menu-desc {
+  font-size: 0.75rem;
+  color: #888;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.rich-menu-divider {
+  height: 1px;
+  background: rgba(255, 107, 53, 0.15);
+  margin: 6px 16px;
+}
+
+.rich-menu-cta {
+  background: rgba(255, 107, 53, 0.06);
+  position: relative;
+}
+
+.rich-menu-cta .rich-menu-icon {
+  background: rgba(255, 107, 53, 0.2);
+}
+
+.rich-menu-cta .rich-menu-label {
+  color: #FF6B35;
+}
+
+.rich-menu-cta:hover {
+  background: rgba(255, 107, 53, 0.14) !important;
+}
+
+.rich-menu-cta:hover .rich-menu-icon {
+  background: rgba(255, 107, 53, 0.3);
+}
+
+.rich-menu-arrow {
+  display: flex;
+  align-items: center;
+  color: #FF6B35;
+  margin-left: auto;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all 0.2s ease;
+}
+
+.rich-menu-cta:hover .rich-menu-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* External link arrows — always visible but subtle */
+.rich-menu-item[target="_blank"] .rich-menu-arrow {
+  opacity: 0.4;
+  transform: translateX(0);
+}
+
+.rich-menu-item[target="_blank"]:hover .rich-menu-arrow {
+  opacity: 1;
 }
 
 /* Hide mobile dropdown on desktop */
