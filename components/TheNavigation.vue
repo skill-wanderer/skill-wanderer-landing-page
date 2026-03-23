@@ -98,31 +98,33 @@
           </div>
         </div>
 
-        <!-- Work With Us Dropdown -->
+        <!-- Work with us Dropdown -->
         <div class="dropdown" @mouseenter="isPartnershipsDropdownOpen = true" @mouseleave="isPartnershipsDropdownOpen = false">
           <span class="dropdown-trigger" :class="{ active: isPartnershipsDropdownOpen }">
-            Work With Us
+            Work with us
             <svg class="dropdown-arrow" :class="{ rotated: isPartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </span>
           <div class="dropdown-menu" :class="{ open: isPartnershipsDropdownOpen }">
             <NuxtLink to="/expertise-impact" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Overview</NuxtLink>
+            <NuxtLink to="/expertise-impact/our-projects" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Our Projects</NuxtLink>
             <NuxtLink to="/expertise-impact/success-sharing-model" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Success Sharing Model</NuxtLink>
             <NuxtLink to="/expertise-impact/become-a-partner" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">Become a Partner</NuxtLink>
           </div>
         </div>
 
-        <!-- Mobile Work With Us submenu -->
+        <!-- Mobile Work with us submenu -->
         <div class="mobile-dropdown">
           <button class="mobile-dropdown-trigger" @click="toggleMobilePartnershipsDropdown" :class="{ active: isMobilePartnershipsDropdownOpen }">
-            Work With Us
+            Work with us
             <svg class="dropdown-arrow" :class="{ rotated: isMobilePartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
           <div class="mobile-dropdown-menu" :class="{ open: isMobilePartnershipsDropdownOpen }">
             <NuxtLink to="/expertise-impact" @click="closeMobileMenu">Overview</NuxtLink>
+            <NuxtLink to="/expertise-impact/our-projects" @click="closeMobileMenu">Our Projects</NuxtLink>
             <NuxtLink to="/expertise-impact/success-sharing-model" @click="closeMobileMenu">Success Sharing Model</NuxtLink>
             <NuxtLink to="/expertise-impact/become-a-partner" @click="closeMobileMenu">Become a Partner</NuxtLink>
           </div>
