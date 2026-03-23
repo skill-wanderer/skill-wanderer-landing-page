@@ -2,11 +2,11 @@
   <div class="learning-path-page">
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">Skill-Wanderer Learning Hub</p>
+        <p class="eyebrow">Skill-Wanderer Guild Learning Hub</p>
         <h1>Choose Your Learning Path</h1>
         <p class="hero-description">
-          Start from the topic that matches your mission. Each path is designed to grow practical
-          skills through guided progression, real-world context, and clear milestones.
+          Start from the topic that matches your mission. Each guild path is designed to grow practical
+          skills through guided progression, real-world craft, and clear milestones.
         </p>
       </div>
       <svg class="hero-wave" viewBox="0 0 1200 120" aria-hidden="true">
@@ -45,8 +45,8 @@
 
 <script setup lang="ts">
 useSEO({
-  title: 'General Learning Path | Skill-Wanderer',
-  description: 'Explore Skill-Wanderer learning paths across Web Development, Mobile Development, AI/ML, DevOps, QA, project and career tracks.',
+  title: 'Guild Learning Paths | Skill-Wanderer',
+  description: 'Explore Skill-Wanderer guild learning paths across Web Development, Mobile Development, AI/ML, DevOps, QA, project and career tracks.',
   keywords: [
     'learning path',
     'web development',

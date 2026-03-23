@@ -3,8 +3,8 @@
       <div class="footer-links">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/principles">Principles</NuxtLink>
-        <NuxtLink to="/work-with-us">Work With Us</NuxtLink>
+        <NuxtLink to="/principles">Guild Principles</NuxtLink>
+        <NuxtLink to="/work-with-us">Engage the Guild</NuxtLink>
         <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
         <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
@@ -21,11 +21,11 @@
           <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">
             <span aria-hidden="true">⚡</span> View the source code
           </a> 
-          and contribute to our mission.
+          and contribute to the guild's mission.
         </p>
       </div>
       
-      <p>&copy; 2025 Skill-Wanderer. All resources reinvested for global impact.</p>
+      <p>&copy; 2025 Skill-Wanderer. A tech guild for social good. All resources reinvested for social impact.</p>
     </div>
   </footer>
 </template>

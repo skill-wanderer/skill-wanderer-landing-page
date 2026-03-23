@@ -21,7 +21,7 @@
           <div class="guild-intro-icon">🏛️</div>
           <div class="guild-intro-body">
             <p>
-              Skill-Wanderer is a non-profit edtech platform built on a guild model — a community of developers at every
+              Skill-Wanderer is a tech guild working toward social enterprise — a community of developers at every
               stage of their craft, learning by building real things together.
             </p>
             <div class="guild-intro-divider"></div>
@@ -104,8 +104,8 @@
             <div class="guild-value-icon">🌱</div>
             <h4>Funding Free Education</h4>
             <p>
-              Every sprint you commission directly funds free education. Revenue from client
-              engagements sustains the Skill-Wanderer platform, keeping mentorship, learning resources, and community
+              Every sprint you commission directly funds free education. Revenue from guild
+              engagements sustains the Skill-Wanderer community, keeping mentorship, learning resources, and guild
               infrastructure free and accessible for developers around the world.
             </p>
           </div>
@@ -189,12 +189,12 @@
               </tr>
               <tr>
                 <td><span class="package-name">Builder Sprint</span></td>
-                <td>1–2 guild artisans + Guild Master lead. Build core product features and expand platform capabilities. <span class="payment-split">50/50 payment.</span></td>
+                <td>1–2 guild artisans + Guild Master lead. Build core product features and expand guild capabilities. <span class="payment-split">50/50 payment.</span></td>
                 <td><span class="price-range">$2,500 – $4,000</span></td>
               </tr>
               <tr>
                 <td><span class="package-name">Partner Sprint</span></td>
-                <td>2–3 guild artisans + Guild Master lead. Ongoing collaboration, platform development, complex systems. <span class="payment-split">50/50 payment.</span></td>
+                <td>2–3 guild artisans + Guild Master lead. Ongoing collaboration, guild-level development, complex systems. <span class="payment-split">50/50 payment.</span></td>
                 <td><span class="price-range">$4,000 – $7,000</span></td>
               </tr>
             </tbody>
@@ -615,7 +615,7 @@
       <div class="content">
         <div class="section-header">
           <h2>Not Ready for a Paid Engagement?</h2>
-          <p>As a non-profit edtech guild, our core mission is accessible education — not gatekeeping knowledge behind a price tag</p>
+          <p>As a tech guild, our core mission is accessible education — not gatekeeping knowledge behind a price tag</p>
         </div>
 
         <div class="mentorship-intro">
@@ -648,13 +648,13 @@
             <div class="mentorship-icon">💰</div>
             <h4>Pay by Cash</h4>
             <p>
-              A modest contribution that helps sustain the platform and covers the mentor's time. Rates are significantly
+              A modest contribution that helps sustain the guild and covers the mentor's time. Rates are significantly
               lower than commercial consultancy — because the goal is learning, not billing.
             </p>
           </div>
           <div class="mentorship-card">
             <div class="mentorship-icon">🛠️</div>
-            <h4>Help Build the Platform</h4>
+            <h4>Help Build the Guild</h4>
             <p>
               Contribute development time to Skill-Wanderer itself — fixing bugs, building features, improving documentation,
               or creating learning content. Your contribution earns mentorship hours in return. This is how many of our
@@ -682,11 +682,11 @@
           <div class="cycle-flow">
             <div class="cycle-step">
               <span class="cycle-label">Client engagements</span>
-              <span class="cycle-desc">fund the platform</span>
+              <span class="cycle-desc">fund the guild</span>
             </div>
             <div class="cycle-arrow">&rarr;</div>
             <div class="cycle-step">
-              <span class="cycle-label">The platform</span>
+              <span class="cycle-label">The guild</span>
               <span class="cycle-desc">trains new developers</span>
             </div>
             <div class="cycle-arrow">&rarr;</div>

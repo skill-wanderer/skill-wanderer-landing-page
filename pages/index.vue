@@ -3,19 +3,19 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Learn Tech, Savor the Journey</h1>
-        <p class="tagline">Free, Practical Education That Celebrates Learning Through Failure</p>
+        <h1>A Tech Guild for Social Good</h1>
+        <p class="tagline">Learn by Building. Grow by Contributing. Sustain Through Craft.</p>
         <p class="hero-description">
-          Quality education shapes brighter futures. Skill-Wanderer integrates real-world insights 
-          into practical tech learning paths, creating an honest educational platform with no ads, 
-          no affiliate bias—just pure, passionate learning.
+          Skill-Wanderer is a tech guild working toward becoming a social enterprise—where apprentices, 
+          journeymen, and masters learn and work together on real projects. Every engagement funds free 
+          education. No ads, no hidden agendas—just craft, community, and purpose.
         </p>        <div class="hero-cta">
-          <NuxtLink to="/learners" class="btn btn-primary">
-            Meet Our Learners
+          <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-primary">
+            Join the Guild
             <span>→</span>
           </NuxtLink>
           <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            View Learning Path
+            Explore Learning Paths
           </a>
           <NuxtLink to="/principles" class="btn btn-secondary">
             Our Principles
@@ -27,42 +27,42 @@
       </svg>
     </section>
 
-    <!-- Platform Features Section -->
+    <!-- Guild Model Section -->
     <section id="platform" class="features">
       <div class="section-header">
-        <h2>The Skill-Wanderer Platform</h2>
-        <p>A revolutionary approach to tech education, currently in development</p>
+        <h2>The Tech Guild Model</h2>
+        <p>A social enterprise in the making—where education and real work are one and the same</p>
       </div>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">🎯</div>
-          <h3>Curated Learning Paths</h3>
-          <p>Expert-selected resources and AI-assisted content, organized into clear pathways from beginner to advanced, always with practical application in mind.</p>
+          <div class="feature-icon">🏛️</div>
+          <h3>Guild-Based Learning</h3>
+          <p>Progress from Apprentice to Journeyman to Master through structured mentorship, hands-on projects, and peer collaboration—just like the craft guilds of old.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">💡</div>
-          <h3>Learn Through Failure</h3>
-          <p>We celebrate mistakes as learning opportunities. Every challenge, every "oops" moment is a valuable lesson on your journey to mastery.</p>
+          <div class="feature-icon">🛠️</div>
+          <h3>Learn by Building</h3>
+          <p>Guild members work on real projects for real clients. Every line of code shipped is a lesson learned—failures included. That's how craft is forged.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🌟</div>
-          <h3>Real-World Integration</h3>
-          <p>Content directly informed by active real-world expertise and impact work, ensuring what you learn is immediately applicable in the real world.</p>
+          <div class="feature-icon">♻️</div>
+          <h3>Work Funds Education</h3>
+          <p>Revenue from guild engagements is reinvested into free education, mentorship, and community infrastructure. No ads, no donations needed—just purposeful work.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🎓</div>
-          <h3>100% Free Learning Content</h3>
-          <p>All course content and learning materials are completely free. Human mentors and support are sustained through our social enterprise model with Social Impact Tokens.</p>
+          <h3>100% Free Learning</h3>
+          <p>All learning content is completely free. Human mentors and guild support are sustained through our social enterprise model and real-world engagements.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🤝</div>
-          <h3>Community-Driven</h3>
-          <p>Join a supportive community of learners where questions are welcomed, achievements are celebrated, and everyone grows together.</p>
+          <h3>Community of Craftspeople</h3>
+          <p>A guild where questions are welcomed, craft is respected, and everyone grows together—from first-time coders to seasoned architects.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🚀</div>
-          <h3>Future Pathways</h3>
-          <p>Long-term vision includes pathways for learners to join our team or launch their own ventures, fostering a cycle of growth and opportunity.</p>
+          <h3>Pathways to Purpose</h3>
+          <p>Guild members can grow into mentors, project leads, or launch their own ventures. The guild is a launchpad, not a ceiling.</p>
         </div>
       </div>
     </section>
@@ -71,28 +71,28 @@
     <section id="values" class="values">
       <div class="values-content">
         <div class="section-header">
-          <h2>Our Guiding Principles</h2>
-          <p>The foundation of everything we build and teach</p>
+          <h2>Guild Principles</h2>
+          <p>The values that guide our social enterprise mission</p>
         </div>
         <div class="values-grid">
           <div class="value-item" style="animation-delay: 0.1s;">
             <span class="value-icon">🛡️</span>
             <h3>Complete Integrity</h3>
-            <p>No ads, no affiliate marketing, no commissions. Our recommendations are purely for your benefit.</p>
+            <p>No ads, no affiliate marketing, no commissions. Our only agenda is your growth and the guild's mission.</p>
           </div>
           <div class="value-item" style="animation-delay: 0.2s;">
             <span class="value-icon">♻️</span>
-            <h3>Mission-Centric Reinvestment</h3>
-            <p>All net revenue is reinvested into the platform, community, and global educational impact.</p>
+            <h3>100% Reinvestment</h3>
+            <p>All net revenue from guild engagements is reinvested into education, community, and social impact. Zero profit extraction.</p>
           </div>
           <div class="value-item" style="animation-delay: 0.3s;">
             <span class="value-icon">🌍</span>
-            <h3>Accessible Education</h3>
-            <p>Free learning content with quality human mentors sustained through our social enterprise model and open Social Impact Tokens.</p>
+            <h3>Open & Accessible</h3>
+            <p>Free learning for everyone. Guild mentorship and support sustained through our social enterprise work—not tuition or donations.</p>
           </div>          <div class="value-item" style="animation-delay: 0.4s;">
-            <span class="value-icon">🎨</span>
-            <h3>Creative Learning</h3>
-            <p>Encouraging experimentation, celebrating failures, and finding joy in the learning process.</p>
+            <span class="value-icon">🏛️</span>
+            <h3>Craft Over Credentials</h3>
+            <p>We value what you can build over what certificates you hold. Real skill is forged through practice, mentorship, and real-world craft.</p>
           </div>
         </div>
         <div class="principles-cta" style="animation-delay: 0.6s;">
@@ -107,19 +107,21 @@
     <!-- Journey Section -->
     <section class="journey">
       <div class="journey-content">
-        <h2>The Wandering Saga</h2>
+        <h2>Why a Guild?</h2>
         <p class="journey-quote">
-          Every expert was once a beginner who refused to give up. Every failure was a lesson that led to success.
+          In the old craft guilds, masters taught apprentices by working alongside them—not in classrooms, 
+          but in workshops, building real things. We believe tech education should work the same way.
         </p>
         <p class="journey-description">
-          Skill-Wanderer is born from a simple belief: the best teachers are those who remember what it's like to struggle, 
-          to fail, and to finally breakthrough. This platform captures that journey—the wandering path of continuous learning—and 
-          transforms it into accessible education for all. Whether you're taking your first steps in tech or seeking to master 
-          advanced concepts, you'll find a home here.
+          Skill-Wanderer is a tech guild built on a simple truth: the best way to learn 
+          is to build, and the best way to teach is to work alongside those who are learning. Our guild model 
+          unites education and professional work into a single, self-sustaining cycle—where every project 
+          delivered funds free learning for the next generation of craftspeople.
         </p>
         <p class="journey-description">
-          As we build this platform, we're learning too. Every line of code, every curated resource, every moment of creation 
-          is both a lesson for us and a future lesson we'll share with you. This is education built by learners, for learners.
+          Whether you're writing your first line of code or architecting enterprise systems, the guild has 
+          a place for you. We grow together, we build together, and every contribution—big or small—strengthens 
+          the whole community.
         </p>
       </div>
     </section>
@@ -128,12 +130,12 @@
     <!-- Work With Us Brief Section -->
     <section class="tech-services">
       <div class="tech-services-content">
-        <h3>Work With Us</h3>
+        <h3>Engage the Guild</h3>
         <p>
-          We apply real-world technology expertise to solve real problems—and every challenge we tackle fuels free education.
-          Success sharing model. Community-powered talent. Impact that creates learning.
+          Partner with our tech guild for real-world projects. Senior-led, community-powered delivery—and every engagement 
+          directly funds free education. Not outsourcing. A social enterprise building with purpose.
         </p>
-        <NuxtLink to="/work-with-us" class="btn btn-secondary">Learn More</NuxtLink>
+        <NuxtLink to="/work-with-us" class="btn btn-secondary">Work With the Guild</NuxtLink>
       </div>
     </section>
   </div>
@@ -142,28 +144,28 @@
 <script setup lang="ts">
 // SEO and meta management
 useSEO({
-  title: 'Skill-Wanderer - Free Tech Education for Everyone',
-  description: 'Free, practical tech education that celebrates learning through failure. Quality education shapes brighter futures with no ads or affiliate bias.',
-  keywords: ['tech education', 'programming courses', 'free coding bootcamp', 'web development', 'skill development', 'learning platform'],
+  title: 'Skill-Wanderer - Tech Guild for Education & Social Good',
+  description: 'A tech guild working toward social enterprise. Learn by building real projects, grow through mentorship, and sustain free education through craft.',
+  keywords: ['tech guild', 'social enterprise', 'free tech education', 'guild model', 'learn by building', 'apprenticeship', 'craft community'],
   type: 'website',
   structuredData: [
     createOrganizationSchema(),
     createFAQSchema([
       {
         question: 'Is Skill-Wanderer really free?',
-        answer: 'Yes, all Skill-Wanderer learning content is completely free. Human mentors and support are sustained through our social enterprise model with Social Impact Tokens.'
+        answer: 'Yes, all Skill-Wanderer learning content is completely free. Mentorship and guild support are sustained through our social enterprise model—real-world guild engagements fund education.'
       },
       {
         question: 'What makes Skill-Wanderer different from other learning platforms?',
-        answer: 'Skill-Wanderer operates with complete integrity — no ads, no affiliate marketing, no commissions. All recommendations are purely for your benefit. We integrate real-world expertise into practical tech education.'
+        answer: 'Skill-Wanderer is a tech guild working toward social enterprise status. We combine education and real work—guild members learn by building real projects, and every engagement funds free education. No ads, no affiliate marketing.'
       },
       {
         question: 'Who is behind Skill-Wanderer?',
-        answer: 'Skill-Wanderer was founded by Quan Nguyen, a passionate educator who believes quality education shapes brighter futures. The platform is built by learners, for learners.'
+        answer: 'Skill-Wanderer was founded by Quan Nguyen as a tech guild with a social enterprise vision. It is built by guild members—apprentices, journeymen, and masters working and learning together.'
       },
       {
         question: 'How does Skill-Wanderer sustain itself financially?',
-        answer: 'Skill-Wanderer uses a success sharing model through its Work With Us partnerships. All net revenue is reinvested into the platform, community, and global educational impact.'
+        answer: 'Skill-Wanderer sustains itself through guild engagements—real technology projects delivered by our community. All net revenue is reinvested into education and the guild as we work toward formal social enterprise status.'
       }
     ])
   ]

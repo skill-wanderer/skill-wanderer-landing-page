@@ -4,7 +4,7 @@
     <section class="hero">
       <h1>Our Projects</h1>
       <p>
-        From non-profits to start-ups, big enterprises to our own platform—every project we take on is an opportunity
+        From non-profits to start-ups, big enterprises to our own guild infrastructure—every project we take on is an opportunity
         to create real impact and fuel free education.
       </p>
       <span class="launch-badge">Real Work. Real Impact. Real Learning.</span>
@@ -152,11 +152,11 @@
     <section class="projects-section alt-bg">
       <div class="content">
         <div class="section-header">
-          <div class="section-tag">Skill-Wanderer Platform</div>
+          <div class="section-tag">Skill-Wanderer Guild</div>
           <h2>What We Are Building</h2>
           <p>
             Skill-Wanderer is not just a product—it is our mission made tangible. Every module below is being
-            built in the open, by our community, for our community.
+            built in the open, by our guild, for our community.
           </p>
         </div>
 
@@ -170,7 +170,7 @@
             </div>
             <div class="project-info">
               <h3>This Landing Page</h3>
-              <p>The public face of Skill-Wanderer—communicating our mission, model, and community to the world.</p>
+              <p>The public face of the guild—communicating our mission, model, and community to the world.</p>
               <div class="project-tags">
                 <span class="tag">Nuxt</span>
                 <span class="tag">Live</span>
@@ -187,7 +187,7 @@
             </div>
             <div class="project-info">
               <h3>LMS</h3>
-              <p>A Learning Management System purpose-built for structured, community-driven education at scale.</p>
+              <p>A Learning Management System purpose-built for structured, guild-driven education at scale.</p>
               <div class="project-tags">
                 <span class="tag">Education</span>
                 <span class="tag">In Progress</span>
@@ -204,7 +204,7 @@
             </div>
             <div class="project-info">
               <h3>Blog System</h3>
-              <p>A publishing system for knowledge sharing—enabling learners and instructors to document their journeys.</p>
+              <p>A publishing system for knowledge sharing—enabling guild members and mentors to document their journeys.</p>
               <div class="project-tags">
                 <span class="tag">Content</span>
                 <span class="tag">In Progress</span>
@@ -221,7 +221,7 @@
             </div>
             <div class="project-info">
               <h3>PathFinder AI Fleet</h3>
-              <p>A fleet of AI agents that guide learners through personalised learning paths based on their goals and progress.</p>
+              <p>A fleet of AI agents that guide guild members through personalised learning paths based on their goals and progress.</p>
               <div class="project-tags">
                 <span class="tag">AI</span>
                 <span class="tag">In Progress</span>
@@ -238,7 +238,7 @@
             </div>
             <div class="project-info">
               <h3>Admin & Teacher Panel</h3>
-              <p>A control centre for administrators and instructors to manage content, learners, and platform operations.</p>
+              <p>A control centre for administrators and mentors to manage content, guild members, and guild operations.</p>
               <div class="project-tags">
                 <span class="tag">Dashboard</span>
                 <span class="tag">In Progress</span>
@@ -255,7 +255,7 @@
             </div>
             <div class="project-info">
               <h3>Communication Module</h3>
-              <p>Real-time messaging and notifications connecting learners, mentors, and the wider Skill-Wanderer community.</p>
+              <p>Real-time messaging and notifications connecting guild members, mentors, and the wider Skill-Wanderer community.</p>
               <div class="project-tags">
                 <span class="tag">Messaging</span>
                 <span class="tag">In Progress</span>
@@ -272,7 +272,7 @@
             </div>
             <div class="project-info">
               <h3>Authorization Module</h3>
-              <p>A robust identity and access management layer ensuring secure, role-based access across all platform modules.</p>
+              <p>A robust identity and access management layer ensuring secure, role-based access across all guild modules.</p>
               <div class="project-tags">
                 <span class="tag">Security</span>
                 <span class="tag">In Progress</span>
@@ -286,8 +286,8 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="content">
-        <h2>Want to Work With Us?</h2>
-        <p>If you have a project that needs a technology partner committed to real impact, let's talk.</p>
+        <h2>Want to Engage the Guild?</h2>
+        <p>If you have a project that needs a guild partner committed to real impact, let's talk.</p>
         <div class="cta-buttons">
           <NuxtLink to="/work-with-us/become-a-partner" class="btn-primary">Become a Partner</NuxtLink>
           <NuxtLink to="/work-with-us/success-sharing-model" class="btn-secondary">How It Works</NuxtLink>
@@ -301,7 +301,7 @@
 useSEO({
   title: 'Our Projects | Skill-Wanderer',
   description:
-    'Explore the real-world projects Skill-Wanderer has built—from non-profits and start-ups to enterprise solutions and our own platform.',
+    'Explore the real-world projects the Skill-Wanderer guild has built—from non-profits and start-ups to enterprise solutions and our own guild infrastructure.',
   image: '/cropped-skill-wanderer-logo-768x256.webp'
 })
 </script>

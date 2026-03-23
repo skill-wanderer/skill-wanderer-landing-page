@@ -2,45 +2,45 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Work With Us</h1>
+      <h1>Engage the Guild</h1>
       <p>
-        We apply real-world technology expertise to solve real problems—and every challenge we tackle fuels free education.
-        This is how we sustain our mission without ads, donations, or compromise.
+        A tech guild that applies real-world craft to solve real problems—and every challenge we tackle funds free education.
+        This is how our social enterprise model sustains its mission without ads, donations, or compromise.
       </p>
-      <span class="launch-badge">Real Work. Real Learning. Real Impact.</span>
+      <span class="launch-badge">Real Craft. Real Learning. Real Impact.</span>
     </section>
 
     <!-- How It All Connects Section -->
     <section class="connection-section">
       <div class="content">
         <div class="section-header">
-          <h2>How It All Connects</h2>
-          <p>A self-sustaining cycle where expertise creates impact, and impact creates learning</p>
+          <h2>How the Guild Works</h2>
+          <p>A self-sustaining cycle where craft creates impact, and impact creates learning</p>
         </div>
 
         <div class="cycle-flow">
           <div class="cycle-step">
             <div class="cycle-icon">🤝</div>
-            <h3>Technology Partnerships</h3>
-            <p>We partner with businesses as their true technology team—sharing risks, sharing success.</p>
+            <h3>Guild Partnerships</h3>
+            <p>We partner with organizations as their tech guild—sharing risks, sharing success through our social enterprise model.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
             <div class="cycle-icon">🛠️</div>
-            <h3>Real-World Delivery</h3>
-            <p>Our community delivers real products, gaining hands-on experience with real stakes.</p>
+            <h3>Guild Delivery</h3>
+            <p>Our guild members deliver real products, gaining hands-on experience—apprentices, journeymen, and masters working together.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
             <div class="cycle-icon">📚</div>
             <h3>Free Education</h3>
-            <p>Revenue from partnerships funds free education—no ads, no donations, no compromise.</p>
+            <p>Revenue from guild work funds free education—no ads, no donations, no compromise.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
             <div class="cycle-icon">🌱</div>
-            <h3>Community Growth</h3>
-            <p>Learners grow into skilled practitioners, ready to contribute to the next partnership.</p>
+            <h3>Guild Growth</h3>
+            <p>Apprentices grow into skilled craftspeople, ready to take on the next guild engagement.</p>
           </div>
         </div>
       </div>
@@ -50,8 +50,8 @@
     <section class="pillars-section">
       <div class="content">
         <div class="section-header">
-          <h2>Explore Work With Us</h2>
-          <p>Two pillars that power our mission</p>
+          <h2>Explore the Guild</h2>
+          <p>Two pillars that power our social enterprise mission</p>
         </div>
 
         <div class="pillars-grid">
@@ -59,8 +59,8 @@
             <div class="pillar-icon">💡</div>
             <h3>Success Sharing Model</h3>
             <p>
-              We don't do outsourcing. We become your true technology partner—sharing both the success and the risks with you.
-              Lower upfront costs. Revenue when you win. Community-powered talent.
+              We don't do outsourcing. As a tech guild, we become your true technology partner—sharing both the success and the risks with you.
+              Lower upfront costs. Revenue when you win. Guild-powered talent.
             </p>
             <ul class="pillar-highlights">
               <li>Lower upfront investment</li>
@@ -75,16 +75,16 @@
 
           <div class="pillar-card">
             <div class="pillar-icon">🚀</div>
-            <h3>Become a Partner</h3>
+            <h3>Become a Guild Partner</h3>
             <p>
-              We're not a staffing agency or outsourcing shop. We collaborate through long-term models that include
-              outcome-based scopes, revenue sharing, and dedicated teams from our learning community.
+              We're not a staffing agency or outsourcing shop. We're a tech guild that collaborates through long-term models including
+              outcome-based scopes, revenue sharing, and dedicated guild teams.
             </p>
             <ul class="pillar-highlights">
               <li>True risk partnership</li>
-              <li>Community-powered delivery</li>
-              <li>Mission-support structure</li>
-              <li>Learner growth pathways</li>
+              <li>Guild-powered delivery</li>
+              <li>Social enterprise structure</li>
+              <li>Apprentice growth pathways</li>
             </ul>
             <NuxtLink to="/work-with-us/become-a-partner" class="pillar-link">
               Become a Partner <span>→</span>
@@ -113,7 +113,7 @@
           <div class="funding-banner">
             <span class="funding-icon">🎓</span>
             <div>
-              <strong>Revenue funds free, non-profit education.</strong>
+              <strong>Revenue funds free education.</strong>
               <span> Every sprint you fund goes directly toward keeping Skill-Wanderer's education free and accessible to all learners—no ads, no paywalls, no compromise.</span>
             </div>
           </div>
@@ -122,7 +122,7 @@
             <div>
               <strong>Zero Vendor Lock-In. By Design.</strong>
               <span>
-                As a non-profit edtech, our mission is education—not dependency. If you can take over
+                As a tech guild, our mission is education—not dependency. If you can take over
                 the work and run it yourself, that means we did our job well. We build with open standards,
                 clear documentation, and full knowledge transfer so you are never locked into working with us.
                 Your success without us is our greatest measure of success.
@@ -154,7 +154,7 @@
             <div class="step-number">03</div>
             <div class="step-body">
               <h4>Development Sprints</h4>
-              <p>All development work is delivered through two-week sprints. Each sprint includes planning, implementation, and a review session. Larger systems are developed across multiple sprints, allowing the platform to evolve gradually while maintaining stability.</p>
+              <p>All development work is delivered through two-week sprints. Each sprint includes planning, implementation, and a review session. Larger systems are developed across multiple sprints, allowing the product to evolve gradually while maintaining stability.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
@@ -162,7 +162,7 @@
             <div class="step-number">04</div>
             <div class="step-body">
               <h4>Maintaining System Health</h4>
-              <p>As systems evolve, occasional sprints may focus on improving stability, performance, and maintainability. These improvements may not always introduce visible features, but they ensure the platform remains reliable and easier to evolve over time.</p>
+              <p>As systems evolve, occasional sprints may focus on improving stability, performance, and maintainability. These improvements may not always introduce visible features, but they ensure the system remains reliable and easier to evolve over time.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
@@ -186,9 +186,9 @@
         <!-- Working Together Cards -->
         <div class="working-grid">
           <div class="working-card">
-            <div class="working-icon">📅</div>
+            <div class="working-icon">🏢</div>
             <h4>Communication & Workflow</h4>
-            <p>Each sprint begins with a short planning phase where scope and expectations are aligned. During the sprint, we provide progress updates, and each cycle concludes with a review and demonstration of completed work. This structure ensures transparency while allowing focused development.</p>
+            <p>Each sprint begins with a short planning phase where scope and expectations are aligned. During the sprint, the guild provides progress updates, and each cycle concludes with a review and demonstration of completed work. This structure ensures transparency while allowing focused craft.</p>
           </div>
           <div class="working-card">
             <div class="working-icon">🐛</div>
@@ -198,12 +198,12 @@
           <div class="working-card">
             <div class="working-icon">🌱</div>
             <h4>Startup Collaboration</h4>
-            <p>For early-stage startups, we may offer hybrid collaboration models combining development sprints with equity or revenue sharing. These arrangements are evaluated on a case-by-case basis and always include a partial cash component to support ongoing development.</p>
+            <p>For early-stage startups, the guild may offer hybrid collaboration models combining development sprints with equity or revenue sharing. These arrangements are evaluated on a case-by-case basis and always include a partial cash component to support the guild's ongoing operations.</p>
           </div>
           <div class="working-card">
             <div class="working-icon">🏗️</div>
             <h4>Maintaining System Health</h4>
-            <p>As systems grow, we schedule dedicated stabilisation sprints focused on performance, reliability, and long-term maintainability. These may not introduce new features, but they are essential for keeping your platform solid and ready for future growth.</p>
+            <p>As systems grow, we schedule dedicated stabilisation sprints focused on performance, reliability, and long-term maintainability. These may not introduce new features, but they are essential for keeping your system solid and ready for future growth.</p>
           </div>
         </div>
 
@@ -261,7 +261,7 @@
             <div class="ownership-icon">🔓</div>
             <h4>No Vendor Lock-In</h4>
             <p>
-              As a non-profit edtech, we measure our success by your independence—not your dependency. We use open standards,
+              As a tech guild, we measure our success by your independence—not your dependency. We use open standards,
               well-documented architectures, and industry-standard tools so you are never locked into working with us.
               After each milestone, you receive full code, documentation, and knowledge transfer. If you choose to continue
               on your own, we consider that a proud outcome—it means we did our job as educators.
@@ -276,7 +276,7 @@
       <div class="content">
         <div class="section-header">
           <h2>Why This Matters</h2>
-          <p>This isn't just a business model—it's the engine of our educational mission</p>
+          <p>This isn't just a business model—it's the engine of our social enterprise</p>
         </div>
 
         <div class="why-grid">
@@ -284,8 +284,8 @@
             <div class="why-icon">🎓</div>
             <h3>Education Stays Free</h3>
             <p>
-              Revenue from technology partnerships directly funds free education. No ads, no affiliate marketing, 
-              no paywalls—just pure, passionate learning sustained by real work.
+              Revenue from guild engagements directly funds free education. No ads, no affiliate marketing, 
+              no paywalls—every dollar of surplus goes back into learning and community.
             </p>
           </div>
 
@@ -293,25 +293,25 @@
             <div class="why-icon">⚡</div>
             <h3>Content Stays Relevant</h3>
             <p>
-              Because we work in the real world, our educational content reflects real challenges, real tools, 
-              and real solutions. Theory grounded in practice.
+              Because the guild works on real projects, our educational content reflects real challenges, real tools, 
+              and real solutions. Craft grounded in practice.
             </p>
           </div>
 
           <div class="why-card">
             <div class="why-icon">🔄</div>
-            <h3>Learners Get Real Experience</h3>
+            <h3>Guild Members Get Real Experience</h3>
             <p>
-              Our community members work on real projects with real stakes. This isn't a simulation—it's 
-              genuine hands-on experience that builds real careers.
+              Apprentices and journeymen work on real projects with real stakes. This isn't a simulation—it's 
+              genuine hands-on craft that builds real careers.
             </p>
           </div>
 
           <div class="why-card">
             <div class="why-icon">🛡️</div>
-            <h3>Independence From Donations</h3>
+            <h3>Self-Sustaining Social Enterprise</h3>
             <p>
-              We don't rely on charity to sustain our mission. We earn our way through skill and partnership, 
+              We don't rely on charity to sustain our mission. The guild earns its way through craft and partnership, 
               ensuring long-term sustainability and complete mission integrity.
             </p>
           </div>
@@ -322,10 +322,10 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-content">
-        <h2>Ready to Create Impact Together?</h2>
+        <h2>Ready to Engage the Guild?</h2>
         <p>
-          Whether you're a business looking for a true technology partner or someone curious about how 
-          we sustain free education—we'd love to talk.
+          Whether you're looking for a true technology partner or curious about how 
+          our guild sustains free education—we'd love to talk.
         </p>
         <div class="cta-buttons">
           <NuxtLink to="/work-with-us/success-sharing-model" class="btn btn-primary">Explore the Model</NuxtLink>
@@ -338,9 +338,9 @@
 
 <script setup lang="ts">
 useSEO({
-  title: 'Work With Us | Skill-Wanderer',
+  title: 'Engage the Guild | Skill-Wanderer',
   description:
-    'Real-world technology expertise that fuels free education. Learn about our Success Sharing Model, partnership approach, and how every project creates learning opportunities.',
+    'A tech guild delivering real-world technology projects. Every guild engagement funds free education. Learn about our social enterprise model and partnership approach.',
   image: '/cropped-skill-wanderer-logo-768x256.webp'
 })
 </script>

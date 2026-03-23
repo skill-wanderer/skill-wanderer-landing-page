@@ -9,7 +9,7 @@
         Instead of treating development as a one-time transaction, we work alongside our partners
         through iterative development sprints.
       </p>
-      <span class="launch-badge">Technology Partnership, Not Outsourcing</span>
+      <span class="launch-badge">Guild Partnership, Not Outsourcing</span>
     </section>
 
     <!-- Our Collaboration Approach -->
@@ -51,7 +51,7 @@
             <p>
               We work alongside our partners through iterative development sprints. As systems evolve,
               we continue contributing through ongoing improvements, new features, and system enhancements.
-              This allows the platform to grow gradually while maintaining stability and quality.
+              This allows the product to grow gradually while maintaining stability and quality.
             </p>
           </div>
 
@@ -86,7 +86,7 @@
         <div class="section-header">
           <h2>What This Means in Practice</h2>
           <p>
-            Rather than optimizing for short-term delivery, we focus on building platforms
+            Rather than optimizing for short-term delivery, we focus on building systems
             that can grow, adapt, and remain sustainable over time.
           </p>
         </div>
@@ -217,7 +217,7 @@
       <div class="final-content">
         <div class="section-header">
           <h2>What Makes This Model Unique</h2>
-          <p>Four pillars that set Skill-Wanderer apart from any typical tech vendor.</p>
+          <p>Four pillars that set our guild apart from any typical tech vendor.</p>
         </div>
 
         <div class="pillars-grid">
@@ -233,8 +233,8 @@
           </div>
           <div class="pillar-card">
             <div class="pillar-number">03</div>
-            <h4>Tech Partnership</h4>
-            <p>We work alongside you as a long-term technology partner — aligned with your goals, not just your scope.</p>
+            <h4>Guild Partnership</h4>
+            <p>We work alongside you as a long-term guild partner — aligned with your goals, not just your scope.</p>
           </div>
           <div class="pillar-card">
             <div class="pillar-number">04</div>
@@ -250,7 +250,7 @@
       <div class="cta-content">
         <h2>Let's Build Something Together</h2>
         <p>
-          If you are looking for a technology partner rather than a vendor, we would be glad to explore
+          If you are looking for a guild partner rather than a vendor, we would be glad to explore
           how this model can work for your project.
         </p>
         <div class="cta-buttons">
