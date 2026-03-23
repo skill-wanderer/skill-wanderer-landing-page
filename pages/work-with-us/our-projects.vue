@@ -20,12 +20,10 @@
         </div>
 
         <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">🌍</span>
-                <span class="placeholder-text">WM Smile Generation Uganda</span>
-              </div>
+          <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="project-card project-card--link">
+            <div class="project-image-wrapper">
+              <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" class="project-image" />
+              <img src="/projects/wmsmile/og-image.jpeg" alt="WM Smile Generation Uganda Logo" class="project-logo-overlay" />
             </div>
             <div class="project-info">
               <h3>WM Smile Generation Uganda</h3>
@@ -38,29 +36,28 @@
                 <span class="tag">Non-Profit</span>
                 <span class="tag">Uganda</span>
               </div>
+              <span class="view-detail">View Project Detail →</span>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div class="project-card">
-            <div class="project-image-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">☸️</span>
-                <span class="placeholder-text">Chanh Dao.vn</span>
-              </div>
+          <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="project-card project-card--link">
+            <div class="project-image-wrapper">
+              <img src="/projects/chanhdao/favicon.svg" alt="ChanhDao.vn" class="project-image project-image--logo" />
             </div>
             <div class="project-info">
-              <h3>Chanh Dao.vn</h3>
+              <h3>ChanhDao.vn</h3>
               <p>
-                An AI platform designed to help learners explore and study Vietnamese Buddhist Dharma—making
-                ancient wisdom accessible through modern technology.
+                A non-profit, open-source platform digitalizing Buddhism for Vietnamese learners—162 lessons,
+                AI-powered Q&A, and structured learning paths, all running on a self-hosted Kubernetes cluster.
               </p>
               <div class="project-tags">
                 <span class="tag">AI Platform</span>
                 <span class="tag">Buddhism</span>
                 <span class="tag">Vietnam</span>
               </div>
+              <span class="view-detail">View Project Detail →</span>
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -75,47 +72,44 @@
         </div>
 
         <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">🤖</span>
-                <span class="placeholder-text">MindyMinds</span>
-              </div>
+          <NuxtLink to="/work-with-us/projects/mindyminds" class="project-card project-card--link">
+            <div class="project-image-wrapper">
+              <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds" class="project-image project-image--contain" />
             </div>
             <div class="project-info">
               <h3>MindyMinds</h3>
               <p>
-                An AI chat platform with multiple applications—enabling intelligent, context-aware conversations
-                tailored to a range of personal and professional use cases.
+                A multi-tenant AI platform for start-ups—enabling customizable AI chatbots per client, built with
+                Next.js, hosted via Docker Compose on an EU cloud server with a defense-in-depth security strategy.
+                MVP developed from start to finish in under 3 months.
               </p>
               <div class="project-tags">
-                <span class="tag">AI Chat</span>
-                <span class="tag">Platform</span>
+                <span class="tag">AI Platform</span>
+                <span class="tag">Multi-Tenant</span>
                 <span class="tag">Start-up</span>
               </div>
+              <span class="view-detail">View Project Detail →</span>
             </div>
-          </div>
+          </NuxtLink>
 
-          <div class="project-card">
-            <div class="project-image-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">🎮</span>
-                <span class="placeholder-text">MindyPlay</span>
-              </div>
+          <NuxtLink to="/work-with-us/projects/mindyplay" class="project-card project-card--link">
+            <div class="project-image-wrapper">
+              <img src="/projects/mindyplay/mindyplay-logo.jpg" alt="MindyPlay" class="project-image project-image--contain" />
             </div>
             <div class="project-info">
               <h3>MindyPlay</h3>
               <p>
-                A suite of mobile games under the MindyPlay brand—combining entertainment with meaningful,
-                mind-engaging experiences across multiple game titles.
+                A mobile game digitalization project built with Flutter and Flame Engine—turning a client's game
+                concept into an interactive mobile experience, powered by Firebase and Keycloak.
               </p>
               <div class="project-tags">
                 <span class="tag">Mobile Games</span>
+                <span class="tag">Flutter</span>
                 <span class="tag">Start-up</span>
-                <span class="tag">Entertainment</span>
               </div>
+              <span class="view-detail">View Project Detail →</span>
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -441,6 +435,75 @@ useSEO({
   transform: translateY(-6px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
   background: var(--card-hover);
+}
+
+.project-card--link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.view-detail {
+  display: inline-block;
+  color: var(--primary-orange);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+}
+
+.project-card--link:hover .view-detail {
+  color: #FFD93D;
+  transform: translateX(4px);
+}
+
+/* ── Project Image ─────────────────────────────────── */
+.project-image-wrapper {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.03) 100%);
+  border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card--link:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-image--logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.project-image--contain {
+  object-fit: contain;
+  background: #0d0b2e;
+}
+
+.project-logo-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 107, 53, 0.5);
+  background: var(--darker-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* ── Image Placeholder ─────────────────────────────── */
