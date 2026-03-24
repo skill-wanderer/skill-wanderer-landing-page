@@ -1,5 +1,7 @@
 <template>
-  <div class="path-detail-page">
+  <ReusablePathOverview v-if="reusableOverview" :overview="reusableOverview" />
+
+  <div v-else class="path-detail-page">
     <section class="detail-hero">
       <div class="detail-content">
         <p class="eyebrow">Learning Path</p>
@@ -15,13 +17,16 @@
           </a>
         </div>
 
-        <p class="status-note">Detailed content for this path is in progress and tracked in GitHub issue backlog.</p>
+        <p class="status-note" v-if="!reusableOverview">Detailed content for this path is in progress and tracked in GitHub issue backlog.</p>
       </div>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
+import ReusablePathOverview from '~/components/learning-path/ReusablePathOverview.vue'
+import { reusablePathOverviews } from '~/data/learning-path-overviews'
+
 const route = useRoute()
 
 const topicMap: Record<string, { title: string; description: string }> = {
@@ -80,6 +85,7 @@ const topicMap: Record<string, { title: string; description: string }> = {
 }
 
 const slug = computed(() => String(route.params.slug || ''))
+const reusableOverview = computed(() => reusablePathOverviews[slug.value])
 const topic = computed(() => topicMap[slug.value])
 
 const topicTitle = computed(() => topic.value?.title || 'Learning Path Not Found')
