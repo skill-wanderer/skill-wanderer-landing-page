@@ -2,8 +2,8 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Let's Connect</h1>
-      <p>Whether you're looking to join the guild, partner with us, or just share your journey—we'd love to hear from you!</p>
+      <h1>Let's Build Something Together</h1>
+      <p>Have a project in mind? Tell us what you need and we'll get back to you with a plan, timeline, and transparent pricing.</p>
     </section>
 
     <!-- Contact Section -->
@@ -12,8 +12,8 @@
         <!-- Contact Form -->
         <div class="contact-form">
           <div class="form-header">
-            <h2>Send a Message</h2>
-            <p>Have a question, suggestion, or want to share your guild journey?</p>
+            <h2>Start Your Project</h2>
+            <p>Tell us about your project and we'll respond within 24-48 hours with next steps.</p>
           </div>
           <form id="contactForm" @submit.prevent="handleSubmit">
             <div class="form-group">
@@ -27,17 +27,17 @@
             <div class="form-group">
               <label for="topic">What's this about?</label>
               <select id="topic" v-model="form.topic" required>
-                <option value="">Select a topic</option>
-                <option value="learning">Learning & Guild Paths</option>
-                <option value="collaboration">Guild Collaboration</option>
-                <option value="tech-services">Engage the Guild</option>
-                <option value="feedback">Guild Feedback</option>
+                <option value="">What are you looking for?</option>
+                <option value="website">Website or Landing Page</option>
+                <option value="web-app">Web Application or Platform</option>
+                <option value="consulting">Technical Consulting</option>
+                <option value="partnership">Partnership Opportunity</option>
                 <option value="other">Something Else</option>
               </select>
             </div>
             <div class="form-group">
               <label for="message">Your Message</label>
-              <textarea id="message" v-model="form.message" required placeholder="Tell me your thoughts, questions, or share your own skill-wandering story..."></textarea>
+              <textarea id="message" v-model="form.message" required placeholder="Describe your project, goals, timeline, and any technical requirements..."></textarea>
             </div>
             <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
               {{ isSubmitting ? 'Sending...' : 'Send Message' }}
@@ -59,8 +59,8 @@
         <!-- Contact Info -->
         <div class="contact-info">
           <div class="info-header">
-            <h2>Other Ways to Connect</h2>
-            <p>Choose whatever works best for you—I'm active on all these channels!</p>
+            <h2>Other Ways to Reach Us</h2>
+            <p>Prefer a different channel? We're happy to connect however works best for you.</p>
           </div>
           <div class="info-cards">
             <div class="info-card"  >
@@ -68,17 +68,26 @@
                 <div class="info-icon">📧</div>
                 <h3>Email</h3>
               </div>
-              <p>For detailed discussions or proposals</p>
+              <p>For project proposals or detailed discussions</p>
               <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>
             </div>
 
             <div class="info-card">
               <div class="info-card-header">
-                <div class="info-icon">💬</div>
-                <h3>Community</h3>
+                <div class="info-icon">🧭</div>
+                <h3>Quick Answers</h3>
               </div>
-              <p>Join our Discord for real-time discussions</p>
-              <a href="#" class="coming-soon">Coming with soon</a>
+              <p>Talk to Admiral Orion, our AI assistant, for instant project guidance</p>
+              <NuxtLink to="/admiral-orion" class="info-card-link">Chat with Admiral Orion</NuxtLink>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-header">
+                <div class="info-icon">💰</div>
+                <h3>Pricing</h3>
+              </div>
+              <p>Explore our transparent sprint packages and partnership models</p>
+              <NuxtLink to="/work-with-us/pricing" class="info-card-link">View Pricing</NuxtLink>
             </div>
           </div>
         </div>
@@ -115,9 +124,9 @@ import { ref, reactive } from 'vue'
 
 // SEO and meta management
 useSEO({
-  title: 'Contact Skill-Wanderer | Let\'s Connect on This Journey',
-  description: 'Get in touch with Skill-Wanderer. Whether you\'re a learner with questions, potential collaborator, or share the passion for learning—let\'s connect!',
-  keywords: ['contact skill-wanderer', 'get in touch', 'tech education questions', 'collaboration opportunities', 'quan nguyen contact'],
+  title: 'Contact Skill-Wanderer | Start Your Project Today',
+  description: 'Get in touch with Skill-Wanderer Guild. Tell us about your project and receive a proposal with transparent pricing, clear timelines, and a dedicated team.',
+  keywords: ['contact skill-wanderer', 'custom software development', 'web development services', 'project inquiry', 'get a quote'],
   type: 'website'
 })
 
@@ -141,24 +150,24 @@ const activeFaq = ref(-1)
 // FAQ data
 const faqs = ref([
   {
-    question: "When will Skill-Wanderer launch?",
-    answer: "We're targeting Q3 2025 for the guild launch with initial courses on web development, cloud concepts, and API design. Follow me on LinkedIn for the latest updates!"
+    question: "What kind of projects do you take on?",
+    answer: "We build custom websites, web applications, platforms, and provide technical consulting. From single landing pages to complex multi-feature platforms — every project is custom-coded with modern frameworks, no templates or page builders. Check our What We Build page for detailed examples."
   },
   {
-    question: "Will the courses really be free?",
-    answer: "Yes! All core course content created or curated by us will be 100% free. We operate with a social enterprise mindset—guild members receive the same quality human mentors, start-up support, and pre-learning advisory. Those who benefit give back through Social Impact Tokens: paying forward, contributing to the guild, or strengthening the community."
+    question: "How does pricing work?",
+    answer: "We offer transparent sprint-based packages. Each sprint is scoped with clear deliverables, timelines, and fixed pricing. No hidden fees, no surprise invoices. Visit our pricing page for package details, or describe your project and we'll recommend the right fit."
   },
   {
-    question: "Can I contribute to Skill-Wanderer?",
-    answer: "Absolutely! As we grow, we'll be looking for passionate educators, content creators, and developers who align with our principles. Reach out through the contact form to discuss collaboration opportunities."
+    question: "Who will work on my project?",
+    answer: "Every engagement is led by the Guild Master — a senior solution architect with over a decade of experience across startups and enterprises. For each project, the Guild Master hand-picks skilled artisans from the community and provides direct oversight, code review, and quality assurance."
   },
   {
-    question: "What expertise and impact services do you offer?",
-    answer: "We provide full-cycle development, solution architecture, cloud/DevOps consulting, and technical project management through our success sharing model. Every real-world challenge solved feeds back into Skill-Wanderer's free educational content and funds human mentors for our learners."
+    question: "How long does a typical project take?",
+    answer: "Timelines depend on scope. A landing page can be delivered in 1-2 weeks, while a full web application may take 4-8 weeks or more. After you describe your project, we'll provide a realistic timeline along with our proposal."
   },
   {
-    question: "Why \"Skill-Wanderer\"?",
-    answer: "It represents my journey through various roles—from Import-Export Manager to Full-Stack Developer, from startup founder to Solution Architect. This \"wandering\" approach taught me that the most valuable insights come from connecting dots across disciplines, and that's what I want to share with learners."
+    question: "What makes the guild different from a traditional agency?",
+    answer: "We combine senior-led quality with a social enterprise mission. Every project is architect-led with hands-on code review. Our guild model means you get dedicated craftsmanship at competitive rates, and your investment directly funds free education and mentorship for emerging developers."
   }
 ])
 
@@ -468,9 +477,15 @@ body {
   opacity: 0.8;
 }
 
-.coming-soon {
-  font-style: italic;
-  opacity: 0.6;
+.info-card-link {
+  color: var(--primary-orange);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.info-card-link:hover {
+  opacity: 0.8;
 }
 
 /* FAQ Section */
