@@ -308,8 +308,8 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
       }
     ]
   },
-  'ai-machine-learning': {
-    slug: 'ai-machine-learning',
+  'ai-and-machine-learning': {
+    slug: 'ai-and-machine-learning',
     title: 'AI and Machine Learning',
     description: 'A structured path from understanding AI fundamentals to building and deploying production-ready machine learning systems.',
     intro:
@@ -539,8 +539,8 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
       }
     ]
   },
-  'software-development-roles-career': {
-    slug: 'software-development-roles-career',
+  'software-development-roles-and-career': {
+    slug: 'software-development-roles-and-career',
     title: 'Software Development Roles & Career',
     description: 'Navigate the software industry with clarity — understanding roles, team dynamics, and how to grow with intention.',
     intro:
@@ -693,8 +693,8 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
       }
     ]
   },
-  'startup-foundation': {
-    slug: 'startup-foundation',
+  'start-up-foundation': {
+    slug: 'start-up-foundation',
     title: 'Start-up Foundation',
     description: 'Build the mindset, skills, and practices to turn an idea into a real, sustainable product and business.',
     intro:
@@ -770,8 +770,8 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
       }
     ]
   },
-  'advanced-software-development': {
-    slug: 'advanced-software-development',
+  'advanced-software-development-skills': {
+    slug: 'advanced-software-development-skills',
     title: 'Advanced Software Development Skills',
     description: 'Deepen engineering craft from clean code and system design to performance, reliability, and technical leadership.',
     intro:
@@ -847,8 +847,8 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
       }
     ]
   },
-  'software-architecture-design-patterns': {
-    slug: 'software-architecture-design-patterns',
+  'software-architecture-and-design-patterns': {
+    slug: 'software-architecture-and-design-patterns',
     title: 'Software Architecture & Design Patterns',
     description: 'Learn to design software systems with intentional structure — from design patterns to architectural styles and real-world trade-offs.',
     intro:
