@@ -65,7 +65,7 @@
               </span>
               <span class="rich-menu-text">
                 <span class="rich-menu-label">Guild Principles</span>
-                <span class="rich-menu-desc">The values that guide our social enterprise</span>
+                <span class="rich-menu-desc">The values that guide our social enterprise mission</span>
               </span>
             </NuxtLink>
             <NuxtLink to="/roadmap" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
@@ -205,6 +205,15 @@
                 <span class="rich-menu-desc">Startups, non-profits & builders we serve</span>
               </span>
             </NuxtLink>
+            <NuxtLink to="/work-with-us/what-we-build" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">What We Build</span>
+                <span class="rich-menu-desc">Custom software the guild can take on</span>
+              </span>
+            </NuxtLink>
             <NuxtLink to="/work-with-us/our-projects" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
               <span class="rich-menu-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
@@ -259,6 +268,7 @@
           <div class="mobile-dropdown-menu" :class="{ open: isMobilePartnershipsDropdownOpen }">
             <NuxtLink to="/work-with-us" @click="closeMobileMenu">Guild Approach</NuxtLink>
             <NuxtLink to="/work-with-us/who-we-work-with" @click="closeMobileMenu">Ideal Partners</NuxtLink>
+            <NuxtLink to="/work-with-us/what-we-build" @click="closeMobileMenu">What We Build</NuxtLink>
             <NuxtLink to="/work-with-us/our-projects" @click="closeMobileMenu">Projects</NuxtLink>
             <NuxtLink to="/work-with-us/success-sharing-model" @click="closeMobileMenu">Success Sharing</NuxtLink>
             <NuxtLink to="/work-with-us/pricing" @click="closeMobileMenu">Guild Engagements</NuxtLink>

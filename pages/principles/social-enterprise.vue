@@ -107,15 +107,15 @@
       <div class="token-container">
         <div style="text-align: center; margin-bottom: 50px;">
           <h2 style="font-size: 2.5rem; color: var(--primary-orange);">3 Ways to Contribute to the Mission</h2>
-          <p style="font-size: 1.2rem; opacity: 0.9;">As a social enterprise, every contribution directly funds quality education</p>
+          <p style="font-size: 1.2rem; opacity: 0.9;">With a social enterprise model, every contribution directly funds quality education</p>
         </div>
 
         <div class="token-explainer">
           <div class="token-card main-token">
             <span class="token-badge">🌍</span>
-            <h3>How Our Social Enterprise Works</h3>
+            <h3>How Our Social Enterprise Model Works</h3>
             <p>
-              Skill-Wanderer operates as a social enterprise—meaning <strong>100% of revenue is reinvested
+              Skill-Wanderer is working toward becoming a social enterprise—meaning <strong>100% of revenue is reinvested
               into our mission</strong> of making quality tech education accessible to everyone.
               There are three meaningful ways you can contribute to this mission,
               each creating value for you while sustaining education for those who need it most.
@@ -249,7 +249,7 @@ useSEO({
 const activeStep = ref(-1)
 
 // Story content data
-const storyIntro = 'I call our eleventh principle <strong>Social Enterprise Model for Quality Education</strong>. We operate as a social enterprise with three clear ways to contribute to the mission—and its story is one of honest reflection about what truly works.'
+const storyIntro = 'I call our eleventh principle <strong>Social Enterprise Model for Quality Education</strong>. We are working toward operating as a social enterprise with three clear ways to contribute to the mission—and its story is one of honest reflection about what truly works.'
 
 const storyChapters: StoryChapter[] = [
   {
@@ -305,7 +305,7 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: 'text',
-        text: 'As a social enterprise, we reinvest all revenue into our mission. There are <strong>three meaningful ways</strong> anyone can contribute:'
+        text: 'With our social enterprise model, we reinvest all revenue into our mission. There are <strong>three meaningful ways</strong> anyone can contribute:'
       },
       {
         type: 'element-list',

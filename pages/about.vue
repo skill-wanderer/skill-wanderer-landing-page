@@ -53,7 +53,7 @@
           <p>
             I envisioned a guild that would be different—one that celebrates the wandering journey of learning, 
             embraces failures as stepping stones, and operates with complete transparency and integrity. 
-            No ads, no affiliate commissions, no hidden agenda. A social enterprise built on craft, 
+            No ads, no affiliate commissions, no hidden agenda. Working toward becoming a social enterprise built on craft, 
             community, and purpose.
           </p>
         </div>
@@ -187,7 +187,7 @@
     <section class="principles">
       <div class="section-header">
         <h2>Guild Principles</h2>
-        <p>The non-negotiable standards our social enterprise holds itself to</p>
+        <p>The non-negotiable standards our guild holds itself to</p>
       </div>
       <div class="principles-list">
         <div class="principle-item" style="animation-delay: 0.1s;">
