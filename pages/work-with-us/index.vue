@@ -83,7 +83,7 @@
             <ul class="pillar-highlights">
               <li>True risk partnership</li>
               <li>Guild-powered delivery</li>
-              <li>Social enterprise structure</li>
+              <li>Social enterprise vision</li>
               <li>Apprentice growth pathways</li>
             </ul>
             <NuxtLink to="/work-with-us/become-a-partner" class="pillar-link">
@@ -276,7 +276,7 @@
       <div class="content">
         <div class="section-header">
           <h2>Why This Matters</h2>
-          <p>This isn't just a business model—it's the engine of our social enterprise</p>
+          <p>This isn't just a business model—it's the engine of our social enterprise mission</p>
         </div>
 
         <div class="why-grid">
@@ -309,7 +309,7 @@
 
           <div class="why-card">
             <div class="why-icon">🛡️</div>
-            <h3>Self-Sustaining Social Enterprise</h3>
+            <h3>Self-Sustaining Guild Model</h3>
             <p>
               We don't rely on charity to sustain our mission. The guild earns its way through craft and partnership, 
               ensuring long-term sustainability and complete mission integrity.

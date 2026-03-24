@@ -21,7 +21,7 @@
           <div class="guild-intro-icon">🏛️</div>
           <div class="guild-intro-body">
             <p>
-              Skill-Wanderer is a tech guild working toward social enterprise — a community of developers at every
+              Skill-Wanderer is a non-profit edtech platform built on a guild model — a community of developers at every
               stage of their craft, learning by building real things together.
             </p>
             <div class="guild-intro-divider"></div>
@@ -104,8 +104,8 @@
             <div class="guild-value-icon">🌱</div>
             <h4>Funding Free Education</h4>
             <p>
-              Every sprint you commission directly funds free education. Revenue from guild
-              engagements sustains the Skill-Wanderer community, keeping mentorship, learning resources, and guild
+              Every sprint you commission directly funds free education. Revenue from client
+              engagements sustains the Skill-Wanderer platform, keeping mentorship, learning resources, and community
               infrastructure free and accessible for developers around the world.
             </p>
           </div>
@@ -159,6 +159,202 @@
       </div>
     </section>
 
+    <!-- Choosing Your Path Section -->
+    <section class="choosing-path-section">
+      <div class="content">
+        <div class="section-header">
+          <h2>Choosing Your Path</h2>
+          <p>With multiple packages available, here is a simple guide to finding the right starting point</p>
+        </div>
+
+        <div class="admiral-orion-tip">
+          <span class="tip-icon">🧭</span>
+          <div>
+            <p>
+              <strong>Not sure where you fit?</strong> The detail across all packages can get confusing.
+              <NuxtLink to="/admiral-orion" class="orion-link">Talk to Admiral Orion</NuxtLink> — our AI guide
+              can help you figure out what's the right fit for your situation, or
+              <NuxtLink to="/contact" class="orion-link">reach out directly</NuxtLink> and we'll help you find the right path.
+            </p>
+          </div>
+        </div>
+
+        <div class="pricing-table-wrapper">
+          <table class="pricing-table choosing-table">
+            <thead>
+              <tr>
+                <th>Your Situation</th>
+                <th>Start Here</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>I need a landing page or simple site, fast.</td>
+                <td><span class="package-name">Quick Build Lite or Standard</span> <span class="price-range">($300–$800)</span></td>
+              </tr>
+              <tr>
+                <td>I want to replace WordPress or a legacy tool with something custom.</td>
+                <td><span class="package-name">Quick Build Plus</span> <span class="price-range">($800–$1,500)</span></td>
+              </tr>
+              <tr>
+                <td>I have a defined feature or improvement to build.</td>
+                <td><span class="package-name">Trust Sprint or Starter Sprint</span> <span class="price-range">($800–$2,500)</span></td>
+              </tr>
+              <tr>
+                <td>I need ongoing development for my product.</td>
+                <td><span class="package-name">Builder or Partner Sprint</span> <span class="price-range">($2,500–$7,000)</span></td>
+              </tr>
+              <tr>
+                <td>I want the guild on standby for small work and advisory.</td>
+                <td><span class="package-name">Guild Access Retainer</span> <span class="price-range">($800–$1,500/mo)</span></td>
+              </tr>
+              <tr>
+                <td>I need steady monthly development without heavy commitment.</td>
+                <td><span class="package-name">Steady Retainer</span> <span class="price-range">($1,500–$3,000/mo)</span></td>
+              </tr>
+              <tr>
+                <td>I just need occasional content updates on my site.</td>
+                <td><span class="package-name">Content Care</span> <span class="price-range">($50–$100/mo)</span></td>
+              </tr>
+              <tr>
+                <td>I need bug fixes, server health, and technical maintenance.</td>
+                <td><span class="package-name">Maintenance Package</span> <span class="price-range">($400–$800/mo)</span></td>
+              </tr>
+              <tr>
+                <td>I need continuous development month after month.</td>
+                <td><span class="package-name">Growth or Scale Retainer</span> <span class="price-range">($3,000–$12,000/mo)</span></td>
+              </tr>
+              <tr>
+                <td>I want strategic guidance but prefer to build it myself.</td>
+                <td><span class="package-name">Mentorship Program</span> <span class="price-range">(cash, code, or community)</span></td>
+              </tr>
+              <tr>
+                <td>I'm a startup and want a deeper tech partnership.</td>
+                <td><span class="package-name">Tech Partnership</span> <span class="price-range">(conversation required)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="section-note">
+          Many partnerships evolve over time — starting with a Quick Build and growing into retainers as the relationship develops.
+        </p>
+      </div>
+    </section>
+
+    <!-- Quick Build Section -->
+    <section class="quick-build-section">
+      <div class="content">
+        <div class="section-header">
+          <h2>Quick Build</h2>
+          <p>Small, focused engagements with a one-week turnaround — for ideas that need to ship fast</p>
+        </div>
+
+        <div class="quick-build-features">
+          <div class="approach-card">
+            <div class="approach-card-icon">🛠️</div>
+            <h4>Custom-Built, Not Template-Based</h4>
+            <p>
+              Every Quick Build is coded from scratch using modern frameworks and AI-assisted development. No WordPress,
+              no page builders, no off-the-shelf templates. The result is a lightweight, fast, fully custom product
+              that you own completely — no plugin dependencies, no theme lock-in, no bloat.
+            </p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-card-icon">✏️</div>
+            <h4>Content Updates Without a CMS</h4>
+            <p>
+              We do not build content management systems into Quick Builds. Instead, the guild handles content updates
+              for you on request. With AI-assisted tooling, updating text, images, or layouts takes minutes. This keeps
+              your site fast, simple, and free of CMS overhead.
+            </p>
+          </div>
+          <div class="approach-card">
+            <div class="approach-card-icon">🤖</div>
+            <h4>AI-Assisted Speed</h4>
+            <p>
+              AI tooling allows the guild to build at speed without sacrificing quality. What used to take weeks of
+              manual development can now be delivered in days — with the remaining time invested in review, refinement,
+              and proper handover.
+            </p>
+          </div>
+        </div>
+
+        <div class="pricing-table-wrapper">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Package</th>
+                <th>What You Get</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="package-name">Quick Build — Lite</span></td>
+                <td>Single custom landing page, basic contact form or CTA integration, mobile-responsive, deployed and handed over. Apprentice-built, Guild Master-reviewed. <span class="payment-split">Delivered within 1 week.</span></td>
+                <td><span class="price-range">$300 – $500</span></td>
+              </tr>
+              <tr>
+                <td><span class="package-name">Quick Build — Standard</span></td>
+                <td>Multi-page custom site or workflow automation. Content updates handled by the guild on request — no CMS needed. Clean codebase with deployment guide. Journeyman-built, Guild Master-reviewed. <span class="payment-split">Delivered within 1 week.</span></td>
+                <td><span class="price-range">$500 – $800</span></td>
+              </tr>
+              <tr>
+                <td><span class="package-name">Quick Build — Plus</span></td>
+                <td>Custom web app, API integration, automation pipeline, or replacing legacy platforms (WordPress, Moodle, etc.) with modern custom-built alternatives. Guild Master-led. <span class="payment-split">Delivered within 1–2 weeks.</span></td>
+                <td><span class="price-range">$800 – $1,500</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="quick-build-details">
+          <div class="quick-build-detail-block">
+            <h4>How It Works</h4>
+            <p>
+              Once the brief and requirements are confirmed, the guild builds your project using AI-assisted development.
+              You will receive a completed version within one week (Lite and Standard) or one to two weeks (Plus) for your review.
+              After your feedback, we handle revisions, QA, and final deployment with basic documentation.
+            </p>
+            <p>
+              The guild handles multiple engagements in parallel, so your delivery window is a turnaround guarantee —
+              not a dedicated calendar block. This is how we keep pricing accessible while maintaining quality across every project.
+            </p>
+          </div>
+
+          <div class="info-banner">
+            <span class="info-icon">💳</span>
+            <div>
+              <span>
+                <strong>Payment is 50% upfront to begin work, 50% on delivery.</strong>
+                Quick Build pricing covers design, development, and deployment. Hosting, domain registration, and any
+                third-party service costs are the client's responsibility. The guild can recommend and help set up
+                appropriate infrastructure, but these are billed separately or paid directly by the client to the provider.
+              </span>
+            </div>
+          </div>
+
+          <div class="info-banner example-banner">
+            <span class="info-icon">🎁</span>
+            <div>
+              <span>
+                <strong>Included: 3 Months of Content Care</strong> — Every Quick Build comes with 3 months of Content Care
+                included at no extra cost — up to 8 content update requests per month. After the included 3 months, you can
+                continue on a Content Care plan ($50–$100/month), step up to Site Care ($150–$300/month), upgrade to a full
+                Maintenance package, or manage updates independently.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <p class="section-note">
+          Quick Builds are ideal for validating an idea, launching a presence, or replacing legacy systems with clean,
+          modern alternatives. Many guild partnerships begin here before growing into full sprint engagements.
+        </p>
+      </div>
+    </section>
+
     <!-- Sprint Packages Section -->
     <section class="sprint-section">
       <div class="content">
@@ -189,12 +385,12 @@
               </tr>
               <tr>
                 <td><span class="package-name">Builder Sprint</span></td>
-                <td>1–2 guild artisans + Guild Master lead. Build core product features and expand guild capabilities. <span class="payment-split">50/50 payment.</span></td>
+                <td>1–2 guild artisans + Guild Master lead. Build core product features and expand platform capabilities. <span class="payment-split">50/50 payment.</span></td>
                 <td><span class="price-range">$2,500 – $4,000</span></td>
               </tr>
               <tr>
                 <td><span class="package-name">Partner Sprint</span></td>
-                <td>2–3 guild artisans + Guild Master lead. Ongoing collaboration, guild-level development, complex systems. <span class="payment-split">50/50 payment.</span></td>
+                <td>2–3 guild artisans + Guild Master lead. Ongoing collaboration, platform development, complex systems. <span class="payment-split">50/50 payment.</span></td>
                 <td><span class="price-range">$4,000 – $7,000</span></td>
               </tr>
             </tbody>
@@ -208,10 +404,32 @@
       <div class="content">
         <div class="section-header">
           <h2>Retainer Packages</h2>
-          <p>Ongoing development capacity without re-negotiating every cycle</p>
+          <p>For partners who need ongoing development capacity without re-negotiating every cycle</p>
         </div>
 
-        <div class="retainer-cards">
+        <div class="retainer-cards retainer-cards-4">
+          <div class="retainer-card">
+            <div class="retainer-icon">🔑</div>
+            <h3>Guild Access</h3>
+            <div class="retainer-price">$800 – $1,500<span>/month</span></div>
+            <ul class="retainer-features">
+              <li>The guild on standby — flexible monthly bucket</li>
+              <li>Small dev tasks, content updates, technical advisory</li>
+              <li>Ad-hoc requests</li>
+              <li>Up to 15 hours/month</li>
+            </ul>
+          </div>
+          <div class="retainer-card">
+            <div class="retainer-icon">⚡</div>
+            <h3>Steady Retainer</h3>
+            <div class="retainer-price">$1,500 – $3,000<span>/month</span></div>
+            <ul class="retainer-features">
+              <li>2 reduced-capacity sprints per month</li>
+              <li>Shorter cycles or lighter scope per sprint</li>
+              <li>Async communication &amp; Guild Master oversight</li>
+              <li>Consistent development rhythm</li>
+            </ul>
+          </div>
           <div class="retainer-card">
             <div class="retainer-icon">📈</div>
             <h3>Growth Retainer</h3>
@@ -241,8 +459,8 @@
           <div>
             <span>
               Retainer commitments are month-to-month with a minimum initial period of two months.
-              Payment is due at the start of each month. Retainer rates reflect a commitment discount
-              compared to booking equivalent sprints individually.
+              Payment is due at the start of each month. Steady, Growth, and Scale retainer rates reflect a commitment
+              discount compared to booking equivalent sprints individually. Guild Access hours do not roll over between months.
             </span>
           </div>
         </div>
@@ -310,15 +528,29 @@
       <div class="content">
         <div class="section-header">
           <h2>Maintenance &amp; Advisory Packages</h2>
-          <p>Lighter-weight packages designed for continuity rather than feature delivery</p>
+          <p>Not every engagement requires a full development sprint. Lighter-weight packages designed for continuity rather than feature delivery.</p>
         </div>
 
-        <div class="maintenance-cards">
+        <div class="maintenance-cards maintenance-cards-5">
+          <div class="maintenance-card">
+            <div class="maintenance-icon">📝</div>
+            <h3>Content Care</h3>
+            <div class="maintenance-price">$50 – $100<span>/month</span></div>
+            <p>Content-only updates handled by a guild apprentice. Text changes, image swaps, link updates, and minor copy edits. No development or design work included.</p>
+            <div class="hours-badge">Up to 8 requests/month</div>
+          </div>
+          <div class="maintenance-card">
+            <div class="maintenance-icon">🌐</div>
+            <h3>Site Care</h3>
+            <div class="maintenance-price">$150 – $300<span>/month</span></div>
+            <p>Everything in Content Care (8 content requests/month) plus up to 5 hours of light development: minor bug fixes, small UI tweaks, dependency updates, and basic uptime monitoring. Apprentice or journeyman-handled.</p>
+            <div class="hours-badge">Content + 5 dev hours/month</div>
+          </div>
           <div class="maintenance-card">
             <div class="maintenance-icon">🔧</div>
             <h3>Maintenance</h3>
             <div class="maintenance-price">$400 – $800<span>/month</span></div>
-            <p>Handled by a guild artisan. Small bug fixes, security patches, server health checks, dependency updates, and minor adjustments.</p>
+            <p>Handled by a guild artisan. Small bug fixes, security patches, server health checks, dependency updates, content updates, and minor adjustments.</p>
             <div class="hours-badge">Up to 10 hours/month</div>
           </div>
           <div class="maintenance-card">
@@ -335,6 +567,36 @@
             <p>Combined: guild artisan for maintenance + Guild Master for advisory.</p>
             <div class="hours-badge">Up to 15 hours/month with priority response</div>
           </div>
+        </div>
+
+        <!-- What Counts as a Content Update -->
+        <div class="content-update-block">
+          <h4>What Counts as a Content Update?</h4>
+          <div class="content-update-grid">
+            <div class="content-update-yes">
+              <h5>Content Update (included)</h5>
+              <ul>
+                <li>Updating text or copy</li>
+                <li>Swapping an image for a new one in the same position</li>
+                <li>Changing a link URL</li>
+                <li>Updating a phone number or email address</li>
+                <li>Minor copy corrections</li>
+              </ul>
+            </div>
+            <div class="content-update-no">
+              <h5>Development Work (not included)</h5>
+              <ul>
+                <li>Adding new pages or sections</li>
+                <li>Changing layout or visual design</li>
+                <li>Adding new functionality (forms, integrations, animations)</li>
+                <li>Restructuring navigation</li>
+                <li>Expanding the scope of the original build</li>
+              </ul>
+            </div>
+          </div>
+          <p class="content-update-note">
+            Requests beyond the monthly cap are billed as additional requests, or the client can upgrade to a Maintenance package for broader coverage.
+          </p>
         </div>
 
         <div class="info-banner">
@@ -615,7 +877,7 @@
       <div class="content">
         <div class="section-header">
           <h2>Not Ready for a Paid Engagement?</h2>
-          <p>As a tech guild, our core mission is accessible education — not gatekeeping knowledge behind a price tag</p>
+          <p>As a non-profit edtech guild, our core mission is accessible education — not gatekeeping knowledge behind a price tag</p>
         </div>
 
         <div class="mentorship-intro">
@@ -648,13 +910,13 @@
             <div class="mentorship-icon">💰</div>
             <h4>Pay by Cash</h4>
             <p>
-              A modest contribution that helps sustain the guild and covers the mentor's time. Rates are significantly
+              A modest contribution that helps sustain the platform and covers the mentor's time. Rates are significantly
               lower than commercial consultancy — because the goal is learning, not billing.
             </p>
           </div>
           <div class="mentorship-card">
             <div class="mentorship-icon">🛠️</div>
-            <h4>Help Build the Guild</h4>
+            <h4>Help Build the Platform</h4>
             <p>
               Contribute development time to Skill-Wanderer itself — fixing bugs, building features, improving documentation,
               or creating learning content. Your contribution earns mentorship hours in return. This is how many of our
@@ -1059,6 +1321,95 @@ useSEO({
   margin-bottom: 16px;
 }
 
+/* Choosing Your Path Section */
+.choosing-path-section {
+  padding: 80px 20px;
+  background: var(--darker-bg);
+}
+
+.admiral-orion-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(100, 181, 246, 0.08), rgba(100, 181, 246, 0.02));
+  border: 1px solid rgba(100, 181, 246, 0.2);
+  border-radius: 14px;
+  padding: 22px 28px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.tip-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.admiral-orion-tip p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.orion-link {
+  color: var(--primary-orange);
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.orion-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.choosing-table tbody td:first-child {
+  font-size: 0.92rem;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Quick Build Section */
+.quick-build-section {
+  padding: 80px 20px;
+  background: var(--dark-bg);
+}
+
+.quick-build-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.quick-build-details {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.quick-build-detail-block {
+  margin-bottom: 24px;
+}
+
+.quick-build-detail-block h4 {
+  color: var(--primary-orange);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.quick-build-detail-block p {
+  opacity: 0.85;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.quick-build-details .info-banner {
+  margin-bottom: 20px;
+}
+
 /* Sprint Packages */
 .sprint-section {
   padding: 80px 20px;
@@ -1154,6 +1505,10 @@ useSEO({
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   margin-bottom: 40px;
+}
+
+.retainer-cards-4 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .retainer-card {
@@ -1370,6 +1725,107 @@ useSEO({
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   margin-bottom: 40px;
+}
+
+.maintenance-cards-5 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Content Update Definition Block */
+.content-update-block {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 16px;
+  padding: 32px 30px;
+}
+
+.content-update-block h4 {
+  color: var(--primary-orange);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content-update-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.content-update-yes,
+.content-update-no {
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.content-update-yes {
+  background: rgba(76, 175, 80, 0.06);
+  border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.content-update-no {
+  background: rgba(255, 107, 53, 0.06);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.content-update-yes h5 {
+  color: #4caf50;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.content-update-no h5 {
+  color: var(--primary-orange);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.content-update-yes ul,
+.content-update-no ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-update-yes li,
+.content-update-no li {
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+  font-size: 0.88rem;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+.content-update-yes li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.content-update-no li::before {
+  content: '\2717';
+  position: absolute;
+  left: 0;
+  color: var(--primary-orange);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.content-update-note {
+  text-align: center;
+  font-size: 0.88rem;
+  opacity: 0.65;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .maintenance-card {
@@ -2196,8 +2652,16 @@ useSEO({
   .capacity-grid,
   .regional-details-grid,
   .guild-value-grid,
-  .approach-cards {
+  .approach-cards,
+  .quick-build-features,
+  .content-update-grid {
     grid-template-columns: 1fr;
+  }
+
+  .admiral-orion-tip {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .guild-intro-card,

@@ -270,7 +270,7 @@
               <div class="step-number">1</div>
               <div class="step-content">
                 <h3>🏢 Guild Engagements</h3>
-                <p>Real-world projects generate sustainable revenue for the social enterprise</p>
+                <p>Real-world projects generate sustainable revenue for the guild's social enterprise mission</p>
               </div>
             </div>
             <div class="impact-step">

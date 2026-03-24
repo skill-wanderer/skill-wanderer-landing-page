@@ -480,7 +480,7 @@
             <span class="founder-role">Technology Lead</span>
             <p>
               Motivated by personal Buddhist practice to remove barriers to learning. Also the founder of
-              Skill-Wanderer — the social enterprise supporting this project.
+              Skill-Wanderer — the tech guild supporting this project.
             </p>
           </div>
           <div class="founder-card">

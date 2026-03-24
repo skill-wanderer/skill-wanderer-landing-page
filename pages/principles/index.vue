@@ -202,7 +202,7 @@
     <section class="mission">
       <div class="mission-content">
         <div class="mission-quote">
-We believe quality education shapes brighter futures. Our mission as a tech guild is to achieve this by integrating real-world insights from our craft and guild engagements directly into highly practical, guild-based learning. This approach builds a sustainable social enterprise, enabling us to operate with complete integrity—forgoing any benefit that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every guild engagement becomes free education shared. Every real-world challenge solved plants seeds of knowledge for countless guild members.
+We believe quality education shapes brighter futures. Our mission as a tech guild is to achieve this by integrating real-world insights from our craft and guild engagements directly into highly practical, guild-based learning. This approach builds toward a sustainable social enterprise, enabling us to operate with complete integrity—forgoing any benefit that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every guild engagement becomes free education shared. Every real-world challenge solved plants seeds of knowledge for countless guild members.
         </div>
       </div>
     </section>  </div>

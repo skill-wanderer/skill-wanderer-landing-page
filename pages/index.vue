@@ -157,7 +157,7 @@ useSEO({
       },
       {
         question: 'What makes Skill-Wanderer different from other learning platforms?',
-        answer: 'Skill-Wanderer is a tech guild working toward social enterprise status. We combine education and real work—guild members learn by building real projects, and every engagement funds free education. No ads, no affiliate marketing.'
+        answer: 'Skill-Wanderer is a tech guild working toward social enterprise. We combine education and real work—guild members learn by building real projects, and every engagement funds free education. No ads, no affiliate marketing.'
       },
       {
         question: 'Who is behind Skill-Wanderer?',
