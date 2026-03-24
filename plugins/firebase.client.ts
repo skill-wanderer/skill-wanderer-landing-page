@@ -3,7 +3,6 @@
 import { initializeApp, type FirebaseApp } from 'firebase/app';
 import { getAuth, type Auth } from 'firebase/auth';
 import { getFirestore, type Firestore } from 'firebase/firestore';
-import { getAnalytics } from "firebase/analytics";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig();
@@ -12,7 +11,6 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   // Initialize Firebase
   const app: FirebaseApp = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app)
 
   // const auth: Auth = getAuth(app);
   const firestore: Firestore = getFirestore(app);
@@ -21,5 +19,4 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.provide('firebaseApp', app);
   // nuxtApp.provide('auth', auth);
   nuxtApp.provide('firestore', firestore);
-  nuxtApp.provide('analytics', analytics);
 });

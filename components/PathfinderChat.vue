@@ -169,6 +169,11 @@
         </button>
       </div>
 
+      <!-- Privacy notice -->
+      <div class="pathfinder-privacy-notice">
+        We may store and analyze anonymized conversations to improve the system. You can request deletion at any time. Please avoid sharing personal or sensitive information.
+      </div>
+
       <!-- Input -->
       <form class="pathfinder-input-bar" @submit.prevent="handleSend">
         <input
@@ -730,6 +735,19 @@ onUnmounted(() => {
   color: #FFD93D;
   background: rgba(255, 217, 61, 0.08);
   border-color: rgba(255, 217, 61, 0.24);
+}
+
+/* Privacy notice */
+.pathfinder-privacy-notice {
+  position: relative;
+  z-index: 1;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.625rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(13, 17, 23, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  text-align: center;
 }
 
 /* Input bar */

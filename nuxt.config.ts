@@ -99,7 +99,6 @@ export default defineNuxtConfig({
         storageBucket: process.env.NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
         messagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
         appId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID,
-        measurementId: process.env.NUXT_PUBLIC_FIREBASE_MEASUREMENT_ID || '',
       },
       pathfinder: {
         apiUrl: process.env.NUXT_PUBLIC_PATHFINDER_API_URL || '',
