@@ -6,7 +6,7 @@
 import ReusablePathOverview from '~/components/learning-path/ReusablePathOverview.vue'
 import { reusablePathOverviews } from '~/data/learning-path-overviews'
 
-const overview = reusablePathOverviews['software-architecture-design-patterns']
+const overview = reusablePathOverviews['software-architecture-and-design-patterns']
 
 useSEO({
   title: `${overview.title} Learning Path | Skill-Wanderer`,
