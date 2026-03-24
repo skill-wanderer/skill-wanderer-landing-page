@@ -843,6 +843,78 @@
       </div>
     </section>
 
+    <!-- Payment & Trust Options Section -->
+    <section class="trust-section">
+      <div class="content">
+        <div class="section-header">
+          <h2>Payment &amp; Trust Options</h2>
+          <p>Flexible payment arrangements designed to give you confidence at every stage</p>
+        </div>
+
+        <div class="trust-intro">
+          <div class="trust-intro-icon">🤝</div>
+          <p>
+            By default, all payments are handled directly between you and Skill-Wanderer. Our sprint payment
+            structures — with upfront/delivery splits — are designed to build trust incrementally, especially
+            for first-time partners.
+          </p>
+        </div>
+
+        <div class="trust-option-block">
+          <h3>Prefer Extra Assurance?</h3>
+          <p>
+            If you would like additional security on your payments, we fully support working through established
+            third-party platforms. These services provide independent payment protection, dispute resolution,
+            and verified contract management — giving you peace of mind throughout the engagement.
+          </p>
+        </div>
+
+        <div class="trust-options-grid">
+          <div class="trust-option-card">
+            <div class="trust-option-icon">🔒</div>
+            <h4>Escrow Service</h4>
+            <p>
+              Funds are held by a neutral third party and released only when agreed milestones are met.
+              Ideal for sprint-based engagements where you want milestone-linked payment protection.
+            </p>
+          </div>
+          <div class="trust-option-card">
+            <div class="trust-option-icon">💼</div>
+            <h4>Upwork Direct Contract</h4>
+            <p>
+              Engage through Upwork's Direct Contract feature with built-in payment protection, hourly tracking,
+              and dispute resolution — without going through the open marketplace.
+            </p>
+          </div>
+          <div class="trust-option-card">
+            <div class="trust-option-icon">📄</div>
+            <h4>Deel Contract</h4>
+            <p>
+              Use Deel for compliant international contracts with built-in invoicing, payment processing,
+              and legal protection — especially useful for cross-border engagements.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-banner trust-fee-banner">
+          <span class="info-icon">💡</span>
+          <div>
+            <span>
+              <strong>Third-party platforms charge their own service fees</strong> (typically a percentage of the contract value
+              or a fixed transaction fee). If you choose to use one of these platforms, the associated platform fees will be
+              added to the engagement cost. The guild does not mark up these fees — they are passed through at cost so you
+              pay only what the platform charges. We are happy to help you evaluate which option fits your situation best.
+            </span>
+          </div>
+        </div>
+
+        <p class="section-note">
+          Whether you pay directly, through escrow, or via a contract platform — the deliverables, timelines,
+          and quality remain exactly the same. These options exist to meet you where you are most comfortable.
+        </p>
+      </div>
+    </section>
+
     <!-- Pricing Notes Section -->
     <section class="notes-section">
       <div class="content">
@@ -867,7 +939,22 @@
             <li>Retainer, Tech Partnership, and Maintenance terms are documented in a separate agreement before work begins.</li>
             <li>Regional pricing adjustments are verified during onboarding and reviewed annually.</li>
             <li>Maintenance and advisory hours are non-transferable between months.</li>
+            <li>Third-party payment platform fees (Escrow, Upwork, Deel) are not included in listed prices and are added at cost if you choose to use them.</li>
           </ul>
+        </div>
+
+        <div class="admiral-orion-tip">
+          <span class="tip-icon">🧭</span>
+          <div>
+            <p>
+              <strong>Feeling overwhelmed by all the options?</strong> This page covers a lot of ground.
+              If you'd rather have a conversation than read through every detail,
+              <NuxtLink to="/admiral-orion" class="orion-link">ask Admiral Orion</NuxtLink> — our AI guide
+              can walk you through the packages, help you compare options, and recommend the best fit based on
+              your situation. Or simply <NuxtLink to="/contact" class="orion-link">reach out to us directly</NuxtLink>
+              and we'll sort it out together.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -2281,6 +2368,91 @@ useSEO({
 
 .eligibility-card p:last-child {
   margin-bottom: 0;
+}
+
+/* Trust Options Section */
+.trust-section {
+  padding: 80px 20px;
+  background: var(--dark-bg);
+}
+
+.trust-intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.trust-intro-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.trust-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+.trust-option-block {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.trust-option-block h3 {
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+}
+
+.trust-option-block p {
+  opacity: 0.85;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.trust-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.trust-option-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.12);
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.trust-option-card:hover {
+  border-color: rgba(255, 107, 53, 0.35);
+  transform: translateY(-4px);
+}
+
+.trust-option-icon {
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+.trust-option-card h4 {
+  color: var(--primary-orange);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.trust-option-card p {
+  opacity: 0.8;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.trust-fee-banner {
+  margin-bottom: 30px;
 }
 
 /* Notes Section */
