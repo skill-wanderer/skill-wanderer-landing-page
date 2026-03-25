@@ -193,7 +193,7 @@
                 <td><span class="package-name">Quick Build Lite or Standard</span> <span class="price-range">($300–$800)</span></td>
               </tr>
               <tr>
-                <td>I want to replace WordPress or a legacy tool with something custom.</td>
+                <td>I want to replace a simple legacy platform with something custom.</td>
                 <td><span class="package-name">Quick Build Plus</span> <span class="price-range">($800–$1,500)</span></td>
               </tr>
               <tr>
@@ -302,7 +302,7 @@
               </tr>
               <tr>
                 <td><span class="package-name">Quick Build — Plus</span></td>
-                <td>Custom web app, API integration, automation pipeline, or replacing legacy platforms (WordPress, Moodle, etc.) with modern custom-built alternatives. Guild Master-led. <span class="payment-split">Delivered within 1–2 weeks.</span></td>
+                <td>Custom web app, API integration, automation pipeline, or replacing simple legacy platforms (WordPress, Moodle, etc.) with modern custom-built alternatives. For complex platform replacements, check our Sprint Packages or Retainer options. Guild Master-led. <span class="payment-split">Delivered within 1–2 weeks.</span></td>
                 <td><span class="price-range">$800 – $1,500</span></td>
               </tr>
             </tbody>
