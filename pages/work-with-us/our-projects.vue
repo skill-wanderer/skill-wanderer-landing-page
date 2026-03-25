@@ -124,26 +124,29 @@
         </div>
 
         <div class="projects-grid projects-grid--single">
-          <div class="project-card">
+          <NuxtLink to="/work-with-us/projects/recruitment-validator" class="project-card project-card--link">
             <div class="project-image-placeholder">
               <div class="placeholder-inner">
                 <span class="placeholder-icon">📊</span>
-                <span class="placeholder-text">Aum</span>
+                <span class="placeholder-text">Recruitment Validator</span>
               </div>
             </div>
             <div class="project-info">
-              <h3>Aum</h3>
+              <h3>Recruitment Validator</h3>
               <p>
-                An automation tool built to validate and check Excel spreadsheets at scale—reducing manual
-                effort and human error in data-heavy enterprise workflows.
+                A recruitment data validation tool built for a Vietnamese EdTech & OPM provider—automating
+                mismatch detection across hundreds to thousands of applications, reducing days of manual
+                Excel checking to minutes with severity-rated alerts.
               </p>
               <div class="project-tags">
+                <span class="tag">FastAPI</span>
+                <span class="tag">Python</span>
                 <span class="tag">Automation</span>
-                <span class="tag">Excel</span>
                 <span class="tag">Enterprise</span>
               </div>
+              <span class="view-detail">View Project Detail →</span>
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </section>
