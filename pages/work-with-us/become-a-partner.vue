@@ -5,9 +5,9 @@
       <h1>Become a Technology Partner</h1>
       <p>
         We're not outsourcing—we're your technology partner. We share both the success and the risks with you,
-        requiring less upfront cost while our community of learners helps bring your vision to life.
+        requiring less upfront cost while our guild of craftspeople helps bring your vision to life.
       </p>
-      <NuxtLink to="/expertise-impact/success-sharing-model" class="launch-badge-link">Shared Success. Shared Risk. Real Partnership.</NuxtLink>
+      <NuxtLink to="/work-with-us/success-sharing-model" class="launch-badge-link">Shared Success. Shared Risk. Real Partnership.</NuxtLink>
     </section>
 
     <!-- Why Partner Section -->
@@ -73,9 +73,9 @@
 
           <div class="feature-card">
             <div class="feature-icon">🌐</div>
-            <h4>Community-Powered Talent</h4>
+            <h4>Guild-Powered Talent</h4>
             <p>
-              Work gets done by motivated learners from our global community—people eager to prove themselves
+              Work gets done by motivated guild members from our global community—apprentices and journeymen eager to prove themselves
               on real projects with real stakes.
             </p>
           </div>
@@ -94,8 +94,8 @@
           <div class="impact-icon">💫</div>
           <h3>The True Partnership Difference</h3>
           <p>
-            This isn't outsourcing with a different name. We invest our time, expertise, and community alongside your vision.
-            <strong>You pay less upfront</strong>, <strong>we share in your success</strong>, and <strong>our learners gain
+            This isn't outsourcing with a different name. We invest our time, expertise, and guild alongside your vision.
+            <strong>You pay less upfront</strong>, <strong>we share in your success</strong>, and <strong>our guild members gain
             real-world experience</strong>—creating a model where everyone wins when you win.
           </p>
         </div>
@@ -113,7 +113,7 @@
           <p class="model-statement">We’re not a traditional outsourcing or staffing shop.</p>
           <p class="model-description">
             We collaborate through long-term models that may include outcome-based scopes, revenue sharing, or building
-            dedicated teams from our learning community.
+            dedicated teams from our guild.
           </p>
         </div>
 
@@ -138,9 +138,9 @@
 
           <div class="model-card">
             <div class="model-icon">🎓</div>
-            <h4>Learner Pathways</h4>
+            <h4>Guild Member Pathways</h4>
             <p>
-              Learners are not treated as short-term resources. The goal is stable pathways and durable value for
+              Guild members are not treated as short-term resources. The goal is stable pathways and durable value for
               partners.
             </p>
           </div>
@@ -178,13 +178,13 @@
       <div class="cta-content">
         <h2>Ready for a Real Partnership?</h2>
         <p>
-          Forget the outsourcing playbook. Let's build together—with shared risk, shared success, and a community
+          Forget the outsourcing playbook. Let's build together—with shared risk, shared success, and a guild
           ready to help you win.
         </p>
 
         <div class="cta-buttons">
           <NuxtLink to="/contact" class="btn btn-primary">Start the Conversation</NuxtLink>
-          <NuxtLink to="/expertise-impact/success-sharing-model" class="btn btn-secondary">Learn About Success Sharing</NuxtLink>
+          <NuxtLink to="/work-with-us/success-sharing-model" class="btn btn-secondary">Learn About Success Sharing</NuxtLink>
         </div>
       </div>
     </section>
@@ -195,7 +195,7 @@
 useSEO({
   title: 'Become a Technology Partner | Skill-Wanderer',
   description:
-    'Not outsourcing—true partnership. We share success and risks with you, require less upfront cost, and deliver through our global community of learners.',
+    'Not outsourcing—true guild partnership. We share success and risks with you, require less upfront cost, and deliver through our global guild of craftspeople.',
   image: '/cropped-skill-wanderer-logo-768x256.webp'
 })
 </script>

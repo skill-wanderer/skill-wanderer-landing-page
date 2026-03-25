@@ -3,7 +3,7 @@
     <div class="subscribe-container">
       <div class="subscribe-content">
         <h2>Stay in the Loop</h2>
-        <p>Get notified when the platform launches and receive updates on new learning content</p>
+        <p>Get notified about guild updates, new learning paths, and community initiatives</p>
         
         <form @submit.prevent="handleSubscribe" class="subscribe-form">
           <div class="input-group">
