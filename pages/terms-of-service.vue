@@ -92,9 +92,9 @@
           </ul>
         </div>
 
-        <!-- Expertise & Impact -->
+        <!-- Work With Us -->
         <div class="terms-section">
-          <h2>Expertise & Impact Services</h2>
+          <h2>Work With Us Services</h2>
           <p>
             When providing technology consulting or development services:
           </p>

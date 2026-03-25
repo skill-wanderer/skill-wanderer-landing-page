@@ -2,8 +2,8 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>The Story of Skill-Wanderer</h1>
-      <p>A journey of passion, principles, and purposeful education</p>
+      <h1>The Story of the Guild</h1>
+      <p>How a tech guild was forged from passion, principles, and a social enterprise vision</p>
     </section>
 
     <!-- Story Section -->
@@ -26,7 +26,7 @@
           <p>
             When I built the entire Skill-Wanderer platform on a self-hosted Kubernetes cluster using just an old 
             laptop and Orange Pi, I realized this resourcefulness, this ability to create from constraints, these 
-            lessons from the wandering path—they were too valuable to keep to myself.
+            lessons from the wandering path—they were too valuable to keep to myself. I needed to build a guild.
           </p>
         </div>
 
@@ -36,55 +36,53 @@
             Having transitioned from business to tech myself, I understood firsthand how daunting the journey can be. 
             Traditional education often fails to capture the messy, non-linear reality of learning technology. 
             <span class="highlight">We're taught to fear failure, when in reality, failure is where the deepest learning happens</span>. 
-            What learners truly need is honest, unbiased guidance from someone who remembers the struggle—someone who can 
-            share both the victories and the setbacks without any agenda other than genuine help.
+            What learners truly need is honest, unbiased guidance from someone who remembers the struggle—and a community 
+            that works alongside them, not just lectures at them.
           </p>
           <p>
-            My experience leading teams, building from scratch, and yes—sometimes watching projects fail—taught me that 
-            every setback is a setup for a comeback. The intense pressure of managing four projects simultaneously, the 
-            sleepless nights debugging code, the joy of finally making something work—these are the real teachers.
+            I looked at how the great craft guilds worked throughout history—masters teaching apprentices through real work, 
+            not textbooks. Journeymen honing their skills by contributing to real projects. A cycle where work and learning 
+            were inseparable, and where every member's growth strengthened the whole guild.
           </p>
           <p>
-            I realized that <span class="highlight">Skill-Wanderer itself could be my ultimate learning laboratory</span>. 
-            By building this platform, I create the perfect excuse to explore new technologies, experiment with different 
-            architectures, and push my own boundaries. Every feature I envision becomes a learning opportunity—from 
-            implementing microservices to trying the latest frameworks. The platform grows as I grow, and my growth directly 
-            benefits every learner who joins us.
+            I realized that <span class="highlight">Skill-Wanderer could be a modern tech guild</span>—a 
+            social enterprise in the making where learning happens through building, where revenue from real work funds free education, 
+            and where the guild grows as its members grow. Not a traditional course platform, but a living, working community 
+            of craftspeople at every level.
           </p>
           <p>
-            I envisioned a platform that would be different—one that celebrates the wandering journey of learning, 
+            I envisioned a guild that would be different—one that celebrates the wandering journey of learning, 
             embraces failures as stepping stones, and operates with complete transparency and integrity. 
-            No ads, no affiliate commissions, no hidden agenda. Just pure, passionate education from someone who's 
-            been in the trenches and continues to dig new ones.
+            No ads, no affiliate commissions, no hidden agenda. Working toward becoming a social enterprise built on craft, 
+            community, and purpose.
           </p>
         </div>
 
         <div class="story-section" style="animation-delay: 0.5s;">
           <h2><span class="section-icon">🚀</span> The Vision</h2>
           <p>
-            Skill-Wanderer is built on a profound truth I discovered: <span class="highlight">teaching is the best way to learn</span>. 
-            Every time I prepare a lesson, curate resources, or explain a concept, my own understanding deepens. This platform 
-            isn't just about sharing knowledge—it's about creating a virtuous cycle where teaching accelerates mastery for everyone involved.
+            Skill-Wanderer is built on a profound truth: <span class="highlight">teaching is the best way to learn, 
+            and building is the best way to teach</span>. The guild model unites education and professional work into 
+            a single self-sustaining cycle. Masters mentor journeymen, journeymen guide apprentices, and together the 
+            guild takes on real projects that fund free education for all.
           </p>
           <p>
-            I deeply believe in karma—that <span class="highlight">what we give to the world comes back to us manifold</span>. 
-            By democratizing quality tech education, by operating with complete integrity, by celebrating failures as learning 
-            opportunities, we're not just building a platform. We're nurturing an ecosystem of mutual growth where today's 
-            learners become tomorrow's teachers, where knowledge flows freely, and where every act of sharing creates ripples 
-            of positive impact.
+            With a social enterprise mindset, we deeply believe that <span class="highlight">what we give to the world 
+            comes back to us manifold</span>. By operating as a tech guild—where every engagement delivers value to 
+            clients while growing our community—we create a virtuous cycle. Today's apprentices become tomorrow's masters. 
+            Every project shipped funds the next wave of free education.
           </p>
           <p>
-            The beauty of Skill-Wanderer is that it's a living, breathing example of continuous learning. As I build 
-            new features, experiment with emerging technologies, or tackle complex architectural challenges for the platform 
-            itself, <span class="highlight">every technical decision becomes a teachable moment</span>. When I chose Astro 
+            The beauty of the guild is that it's a living, breathing example of continuous learning. As we build 
+            new features, take on client projects, or tackle complex architectural challenges, 
+            <span class="highlight">every technical decision becomes a teachable moment</span>. When I chose Astro 
             over WordPress, when I implemented microservices, when I set up that self-hosted K8s cluster—these weren't just 
-            technical choices, they were learning adventures that will become courses, tutorials, and shared wisdom.
+            technical choices, they were lessons forged in the guild's workshop.
           </p>
           <p>
-            This symbiotic relationship—where building the platform drives my learning, and my learning enriches the 
-            platform's content—creates an authentic, ever-evolving educational experience. Students don't just learn from 
-            static content; they learn from someone actively exploring, failing, succeeding, and sharing the entire journey 
-            in real-time. The platform grows as I grow, and we all grow together.
+            This symbiotic relationship—where real work drives learning, and learning enriches work—is what makes 
+            the guild model so powerful. Guild members don't just learn from static content; they learn from doing, 
+            failing, succeeding, and building together. The guild grows as we grow, and we all grow together.
           </p>
         </div>
       </div>
@@ -93,29 +91,29 @@
     <!-- Philosophy Section -->
     <section class="philosophy">
       <div class="section-header">
-        <h2>Our Philosophy</h2>
-        <p>The core beliefs that guide everything we do</p>
+        <h2>Guild Philosophy</h2>
+        <p>The core beliefs that guide our social enterprise mission</p>
       </div>
       <div class="philosophy-grid">
         <div class="philosophy-card">
-          <span class="philosophy-icon">🎯</span>
-          <h3>Teaching to Master</h3>
-          <p>We embrace the ancient wisdom that to teach is to learn twice. Every course created deepens our understanding, every explanation clarifies our thinking.</p>
+          <span class="philosophy-icon">🏛️</span>
+          <h3>Craft Through Practice</h3>
+          <p>Like the guilds of old, we believe mastery comes through doing. Every real project is a lesson, every engagement is a classroom. Teaching and building are one and the same.</p>
         </div>
         <div class="philosophy-card">
           <span class="philosophy-icon">🌱</span>
           <h3>Growth Through Failure</h3>
-          <p>We celebrate mistakes as learning opportunities. Every bug fixed, every error resolved is a step towards mastery.</p>
+          <p>We celebrate mistakes as learning opportunities. Every bug fixed, every error resolved is a step towards mastery within the guild.</p>
         </div>
         <div class="philosophy-card">
-          <span class="philosophy-icon">☯️</span>
-          <h3>Karma & Giving Back</h3>
-          <p>What we give returns to us multiplied. By sharing knowledge freely and operating with integrity, we create positive ripples that benefit everyone.</p>
+          <span class="philosophy-icon">♻️</span>
+          <h3>Work Funds Education</h3>
+          <p>All revenue from guild engagements flows back into free education, mentorship, and community infrastructure. No profit extraction, ever.</p>
         </div>
         <div class="philosophy-card">
           <span class="philosophy-icon">🤝</span>
-          <h3>Community Over Competition</h3>
-          <p>Learning is not a solo journey. We foster collaboration, peer support, and collective growth over individual achievement.</p>
+          <h3>Guild Over Competition</h3>
+          <p>Learning is not a solo journey. The guild fosters collaboration, peer mentorship, and collective growth—apprentices, journeymen, and masters building together.</p>
         </div>
       </div>
     </section>
@@ -125,19 +123,18 @@
       <div class="mission-content">
         <h2>Our Mission</h2>
         <div class="mission-statement">
-          "We believe quality education shapes brighter futures. Our mission is to achieve this by integrating 
-          real-world insights from our expertise and impact work directly into highly practical e-learning. This approach 
-          builds a sustainable revenue model, enabling us to operate with complete integrity—forgoing any benefit 
-          that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every client 
-          project funded becomes free education shared. Every real-world challenge solved plants seeds of knowledge 
-          for countless learners."
+          "Our mission is to make quality tech education free and accessible 
+          through the guild model—where real-world work funds learning, and learning feeds back into work. 
+          We operate with complete integrity, forgoing any benefit that could cause doubt in our cause, and 
+          reinvest all resources into education, community, and lasting social impact. Every guild engagement 
+          delivered becomes free education shared. Every challenge solved plants seeds of knowledge for 
+          countless future craftspeople."
         </div>
         <p class="mission-description">
-          This isn't just a business model—it's a philosophy rooted in the universal law of karma. By creating a 
-          self-sustaining ecosystem where expertise and impact revenue directly funds free education, where teaching 
-          enhances learning, and where every act of sharing multiplies into collective growth, we're building something 
-          that transcends traditional education. What we give, we receive. What we teach, we master. What we share, 
-          returns to us enriched. Every consulting hour becomes countless learning hours for students worldwide.
+          This isn't just a business model—it's a social enterprise philosophy. By uniting education and 
+          professional work within a guild structure, we create a self-sustaining ecosystem where craft revenue 
+          directly funds free education, where mentorship is woven into every project, and where every member's 
+          growth strengthens the whole. No ads, no tuition, no compromise—just purpose-driven craft.
         </p>
       </div>
     </section>
@@ -145,16 +142,16 @@
     <!-- Open Platform Section -->
     <section class="open-platform">
       <div class="section-header">
-        <h2>A Platform for Learners, by Learners</h2>
-        <p>Built on the foundations of open knowledge and open source</p>
+        <h2>An Open Guild for All</h2>
+        <p>Built on the foundations of open knowledge, open source, and community craft</p>
       </div>
       <div class="open-platform-content">
         <div class="open-platform-card">
           <span class="open-platform-icon">📖</span>
           <h3>Open Knowledge</h3>
           <p>
-            We believe knowledge should be freely accessible to everyone. Skill-Wanderer is being built as a platform that
-            <span class="highlight">serves learners and is shaped by learners</span>. Every piece of educational content
+            We believe knowledge should be freely accessible to everyone. The guild is built as a community that
+            <span class="highlight">serves craftspeople and is shaped by craftspeople</span>. Every piece of educational content
             we create is designed to be open, transparent, and community-driven—because learning thrives when barriers are removed.
           </p>
         </div>
@@ -163,25 +160,25 @@
           <h3>Open Source at Heart</h3>
           <p>
             Open source isn't just a development model—it's a philosophy we live by. We embrace
-            <span class="highlight">transparency, collaboration, and shared ownership</span> as core values.
+            <span class="highlight">transparency, collaboration, and shared ownership</span> as core guild values.
             By building in the open, we invite the global community to learn from our journey, contribute ideas,
-            and help shape the future of the platform together.
+            and forge the future of the guild together.
           </p>
         </div>
         <div class="open-platform-card">
           <span class="open-platform-icon">🛠️</span>
-          <h3>Actively Evolving</h3>
+          <h3>Actively Forging</h3>
           <p>
-            Skill-Wanderer is in <span class="highlight">active development</span> with an ambitious roadmap ahead.
-            New learning paths, interactive features, community tools, and much more are on the way. This is just the
-            beginning—we're building something meaningful, one step at a time, and we'd love for you to be part of the journey.
+            The guild is in <span class="highlight">active development</span> with an ambitious roadmap ahead.
+            New learning paths, guild tools, community features, and more are being forged every day. This is just the
+            beginning—we're building something meaningful, one craft at a time, and we'd love for you to join the guild.
           </p>
         </div>
       </div>
       <div class="open-platform-banner">
         <p>
-          🚧 <strong>We're actively building!</strong> Skill-Wanderer is a living project—growing, improving, and
-          expanding every day. Stay tuned for new features, learning paths, and community initiatives. The best is yet to come.
+          🚧 <strong>The guild is growing!</strong> Skill-Wanderer is a living project—growing, improving, and
+          expanding every day. Stay tuned for new learning paths, guild engagements, and community initiatives.
         </p>
       </div>
     </section>
@@ -189,8 +186,8 @@
     <!-- Principles Section -->
     <section class="principles">
       <div class="section-header">
-        <h2>Guiding Principles</h2>
-        <p>The non-negotiable standards we hold ourselves to</p>
+        <h2>Guild Principles</h2>
+        <p>The non-negotiable standards our guild holds itself to</p>
       </div>
       <div class="principles-list">
         <div class="principle-item" style="animation-delay: 0.1s;">
@@ -211,21 +208,21 @@
           <span class="principle-number">3</span>
           <div class="principle-content">
             <h3>Mission-Centric Reinvestment</h3>
-            <p>All net revenue is reinvested into the platform, community, and global educational impact. No dividends, just continuous improvement.</p>
+            <p>All net revenue is reinvested into the guild, community, and global educational impact. No dividends, just continuous improvement.</p>
           </div>
         </div>
         <div class="principle-item" style="animation-delay: 0.4s;">
           <span class="principle-number">4</span>
           <div class="principle-content">
-            <h3>Learning Through Creation</h3>
-            <p>We encourage creativity, experimentation, and learning through failure. The journey matters as much as the destination.</p>
+            <h3>Craft Through Practice</h3>
+            <p>We encourage creativity, experimentation, and learning through real guild work. The craft matters as much as the result.</p>
           </div>
         </div>
         <div class="principle-item" style="animation-delay: 0.5s;">
           <span class="principle-number">5</span>
           <div class="principle-content">
-            <h3>Pathways for Learners</h3>
-            <p>Long-term commitment to creating opportunities for our learners to join our team or launch their own ventures with our support.</p>
+            <h3>Guild Pathways</h3>
+            <p>Long-term commitment to creating pathways for guild members to grow from apprentice to journeyman to master, or launch their own ventures.</p>
           </div>
         </div>
         <div class="principles-cta" style="animation-delay: 0.6s;">
@@ -238,12 +235,12 @@
     </section>    <!-- Team Section -->
     <section class="team">
       <div class="section-header">
-        <h2>The Wanderer</h2>
+        <h2>The Guild Master</h2>
       </div>
       <div class="founder-card">
         <img src="/skill-wanderer-avatar.jpg" alt="Quan Nguyen - Founder" class="founder-avatar" />
         <h3 class="founder-name">Quan Nguyen</h3>
-        <p class="founder-title">Founder & The Passionate Wanderer — A One-Man Army in Web, AI, Mobile, DevOps, Solution Architecture & Project Management</p>
+        <p class="founder-title">Founder & Guild Master — A One-Man Army in Web, AI, Mobile, DevOps, Solution Architecture & Project Management</p>
         <div class="founder-bio">
           <p>
             Hi, I'm Quan—living proof that the most unconventional paths often lead to the most valuable insights. 
@@ -261,29 +258,30 @@
             <span class="highlight">My "skill-wandering" approach isn't just about collecting titles—it's about 
             connecting dots across disciplines.</span> Every role taught me something valuable, every failure became 
             a lesson worth sharing. When I single-handedly built Skill-Wanderer on a self-hosted Kubernetes cluster 
-            using an old laptop and Orange Pi, I wasn't just creating a platform—I was embodying the very philosophy 
-            I teach: resourcefulness, continuous learning, and turning constraints into creativity.
+            using an old laptop and Orange Pi, I wasn't just creating a platform—I was forging the first workshop 
+            of what would become a guild: resourcefulness, continuous learning, and turning constraints into craft.
           </p>
           <p>
-            <span class="highlight">Building Skill-Wanderer is itself an act of skill-wandering</span>. The platform 
-            serves as my personal playground to explore cutting-edge technologies—from self-hosting Kubernetes on an 
+            <span class="highlight">Building Skill-Wanderer is itself an act of guild-building</span>. The platform 
+            serves as the guild's workshop to explore cutting-edge technologies—from self-hosting Kubernetes on an 
             old laptop, to experimenting with microservices architecture, to implementing the latest frameworks. Every 
-            technical challenge I solve, every new tool I master while building this platform, becomes content I can 
+            technical challenge I solve, every new tool I master while building this guild, becomes knowledge I can 
             share authentically. I'm not just teaching technology; I'm actively living it, breaking it, fixing it, and 
-            evolving with it.
+            forging it alongside guild members.
           </p>
           <p>
             For me, learning is entertainment. Growing knowledge is my greatest reward. But I've discovered something 
             even more powerful: <span class="highlight">teaching is the ultimate path to mastery</span>. Every time I 
-            prepare content for Skill-Wanderer, my own understanding deepens. Every question from a learner pushes me 
-            to explore new angles. This platform embodies my belief in karma—that by giving knowledge freely and helping 
-            others succeed, we create a cycle of positive energy that elevates everyone.
+            prepare content for the guild, my own understanding deepens. Every question from a guild member pushes me 
+            to explore new angles. This guild embodies my belief—that by giving knowledge freely and building together, 
+            we create a cycle of positive energy that elevates everyone.
           </p>
           <p>
-            Skill-Wanderer isn't just my way of sharing knowledge—it's my way of giving back to a universe that has 
-            given me so much. From that first MVP award at Toyota Tsusho to every line of code I've written, I've 
-            been blessed with opportunities to learn and grow. Now it's my turn to create those opportunities for others, 
-            knowing that this act of giving will return in ways I can't even imagine. This is education as karma in action.
+            Skill-Wanderer isn't just a platform—it's a tech guild working toward social enterprise status. From that first 
+            MVP award at Toyota Tsusho to every line of code I've written, I've been blessed with opportunities to 
+            learn and grow. Now, through the guild model, it's my turn to create those opportunities for others—where 
+            every apprentice can become a master, every project funds free education, and every act of craft strengthens 
+            the community.
           </p>
         </div>
       </div>
@@ -291,8 +289,8 @@
 
     <!-- CTA Section -->
     <section class="cta">
-      <h2>Join the Journey</h2>
-      <p>Be part of a learning revolution that celebrates curiosity, creativity, and community</p>
+      <h2>Join the Guild</h2>
+      <p>Be part of a tech guild that values craft, community, and purpose</p>
       <NuxtLink to="/" class="btn btn-primary">
         Explore Skill-Wanderer
         <span>→</span>
