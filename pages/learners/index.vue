@@ -63,6 +63,29 @@
               View Full Story →
             </div>
           </NuxtLink>
+
+          <!-- Alfredo Salazar Card -->
+          <NuxtLink to="/learners/alfredo-salazar" class="learner-card featured">
+            <div class="first-badge">🔥 The Firebrand</div>
+            <div class="learner-avatar">
+              <img src="/learners/Alfredo-Salazar.jpeg" alt="Alfredo Salazar" class="avatar-image" />
+            </div>
+            <div class="learner-info">
+              <h3>Alfredo Salazar</h3>
+              <p class="learner-realname">Mobile Game Development Mentee</p>
+              <p class="learner-tagline">The Firebrand</p>
+              <div class="learner-meta">
+                <span>📍 Venezuela</span>
+                <span>💼 Mobile Game Development</span>
+              </div>
+              <div class="learner-path">
+                <span class="path-badge">🎮 Mobile Game Dev Path</span>
+              </div>
+            </div>
+            <div class="view-story">
+              View Full Story →
+            </div>
+          </NuxtLink>
         </div>
 
         <div class="more-learners-notice">
@@ -98,7 +121,7 @@ import { useSEO } from '~/composables/useSEO'
 useSEO({
   title: 'Our Learners - Skill-Wanderer',
   description: 'Meet the learners who are growing with Skill-Wanderer. Discover their stories, progress, and achievements on their learning journeys.',
-  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'skill-wanderer'],
+  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'Alfredo Salazar', 'skill-wanderer'],
 })
 </script>
 
@@ -176,9 +199,9 @@ useSEO({
 
 .learners-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -268,6 +291,7 @@ useSEO({
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
 }
+
 
 .avatar-placeholder {
   width: 120px;
@@ -427,6 +451,12 @@ useSEO({
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .learners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .learners-grid {
     grid-template-columns: 1fr;
