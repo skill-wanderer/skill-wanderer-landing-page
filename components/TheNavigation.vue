@@ -956,7 +956,7 @@ onUnmounted(() => {
   }
   
   .mobile-dropdown-menu.open {
-    max-height: 200px;
+    max-height: 500px;
   }
   
   .mobile-dropdown-menu a {
