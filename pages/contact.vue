@@ -6,30 +6,81 @@
       <p>Have a project in mind? Tell us what you need and we'll get back to you with a plan, timeline, and transparent pricing.</p>
     </section>
 
+    <!-- Authority Section: FAQ + Mission + Impact -->
+    <section class="authority">
+      <div class="authority-container">
+        <!-- Senior Architect Oversight -->
+        <div class="authority-card authority-leadership">
+          <div class="authority-icon">🏛️</div>
+          <h3>Who Will Work on Your Project?</h3>
+          <p>Every engagement receives <strong>senior architect oversight</strong> from the Guild Master — a solution architect with over a decade of experience across startups and enterprises. Your project is never handed off to juniors. The Guild Master personally leads architecture, code review, and quality assurance, hand-picking skilled artisans for each engagement.</p>
+        </div>
+
+        <!-- Mission Highlight -->
+        <div class="authority-card authority-mission">
+          <div class="authority-icon">🌱</div>
+          <h3>Your Project Fuels a Mission</h3>
+          <p>Every guild engagement directly funds <strong>free mentorship</strong> for passionate learners like <NuxtLink to="/learners/rei-reltroner" class="authority-link">Rei</NuxtLink> and <NuxtLink to="/team/thanh-nguyen" class="authority-link">Thanh</NuxtLink>. When you build with the Guild, you invest in the next generation of developers.</p>
+        </div>
+
+        <!-- Impact Counter -->
+        <div class="authority-card authority-impact">
+          <div class="authority-icon">📊</div>
+          <div class="impact-counter">
+            <span class="impact-number">100%</span>
+            <span class="impact-label">of projects fund local tech education</span>
+          </div>
+          <p>Senior-led quality with a social enterprise vision — your investment creates real impact beyond code.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admiral Orion: Instant Alternative -->
+    <section class="orion-section">
+      <div class="orion-container">
+        <div class="orion-card">
+          <div class="orion-header">
+            <div class="orion-icon">🧭</div>
+            <div>
+              <h2>Need Answers Now?</h2>
+              <p>Talk to <strong>Admiral Orion</strong>, our AI assistant, for instant project guidance — no waiting required.</p>
+            </div>
+          </div>
+          <NuxtLink to="/admiral-orion" class="btn btn-orion">Chat with Admiral Orion</NuxtLink>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="contact">
       <div class="contact-container">
         <!-- Contact Form -->
         <div class="contact-form">
           <div class="form-header">
-            <h2>Start Your Project</h2>
-            <p>Tell us about your project and we'll respond within 24-48 hours with next steps.</p>
+            <h2>We're Ready to Build</h2>
+            <p>Describe your vision and we'll respond within 24–48 hours with an architectural assessment and next steps.</p>
           </div>
           <form id="contactForm" @submit.prevent="handleSubmit">
             <div class="form-group">
               <label for="name">Your Name</label>
-              <input type="text" id="name" v-model="form.name" required placeholder="How should I address you?">
+              <input type="text" id="name" v-model="form.name" required placeholder="How should we address you?">
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
               <input type="email" id="email" v-model="form.email" required placeholder="your.email@example.com">
             </div>
             <div class="form-group">
-              <label for="topic">What's this about?</label>
+              <label for="topic">How Can the Guild Support Your Vision?</label>
               <select id="topic" v-model="form.topic" required>
-                <option value="">What are you looking for?</option>
+                <option value="">Which Digital Foundation Do You Need?</option>
                 <option value="website">Website or Landing Page</option>
                 <option value="web-app">Web Application or Platform</option>
+                <option value="ecommerce">E-Commerce or Marketplace</option>
+                <option value="ai">AI Application or Integration</option>
+                <option value="mobile">Mobile App or Progressive Web App</option>
+                <option value="api">API Development or Integration</option>
+                <option value="automation">Automation or Workflow Tools</option>
+                <option value="legacy">Legacy System Replacement</option>
                 <option value="consulting">Technical Consulting</option>
                 <option value="partnership">Partnership Opportunity</option>
                 <option value="other">Something Else</option>
@@ -39,16 +90,20 @@
               <label for="message">Your Message</label>
               <textarea id="message" v-model="form.message" required placeholder="Describe your project, goals, timeline, and any technical requirements..."></textarea>
             </div>
+            <div class="form-group form-checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" v-model="form.valuesQuality">
+                <span>I value senior-led quality that fuels social impact</span>
+              </label>
+            </div>
             <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
-              {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+              {{ isSubmitting ? 'Sending...' : 'Request an Architectural Audit' }}
               <span>{{ isSubmitting ? '⏳' : '→' }}</span>
             </button>
-            <div class="form-legal-links">
-              <p>By submitting this form, you agree to our 
-                <NuxtLink to="/privacy-policy" class="legal-link">Privacy Policy</NuxtLink>
-                and 
-                <NuxtLink to="/terms-of-service" class="legal-link">Terms of Service</NuxtLink>.
-              </p>
+            <div class="form-footer-legal">
+              <NuxtLink to="/privacy-policy" class="legal-link">Privacy Policy</NuxtLink>
+              <span class="legal-separator">·</span>
+              <NuxtLink to="/terms-of-service" class="legal-link">Terms of Service</NuxtLink>
             </div>
             <div v-if="formMessage.show" :class="['form-message', formMessage.type]">
               {{ formMessage.text }}
@@ -63,22 +118,19 @@
             <p>Prefer a different channel? We're happy to connect however works best for you.</p>
           </div>
           <div class="info-cards">
-            <div class="info-card"  >
+            <div class="info-card">
               <div class="info-card-header">
                 <div class="info-icon">📧</div>
                 <h3>Email</h3>
               </div>
               <p>For project proposals or detailed discussions</p>
-              <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>
-            </div>
-
-            <div class="info-card">
-              <div class="info-card-header">
-                <div class="info-icon">🧭</div>
-                <h3>Quick Answers</h3>
+              <div class="email-row">
+                <span class="email-text">quan.nguyen@skill-wanderer.com</span>
+                <button type="button" class="copy-btn" title="Copy email to clipboard" @click="copyEmail">
+                  <span v-if="!emailCopied">📋</span>
+                  <span v-else>✅</span>
+                </button>
               </div>
-              <p>Talk to Admiral Orion, our AI assistant, for instant project guidance</p>
-              <NuxtLink to="/admiral-orion" class="info-card-link">Chat with Admiral Orion</NuxtLink>
             </div>
 
             <div class="info-card">
@@ -135,8 +187,11 @@ const form = reactive({
   name: '',
   email: '',
   topic: '',
-  message: ''
+  message: '',
+  valuesQuality: false
 })
+
+const emailCopied = ref(false)
 
 const isSubmitting = ref(false)
 const formMessage = reactive({
@@ -157,10 +212,7 @@ const faqs = ref([
     question: "How does pricing work?",
     answer: "We offer transparent sprint-based packages. Each sprint is scoped with clear deliverables, timelines, and fixed pricing. No hidden fees, no surprise invoices. Visit our pricing page for package details, or describe your project and we'll recommend the right fit."
   },
-  {
-    question: "Who will work on my project?",
-    answer: "Every engagement is led by the Guild Master — a senior solution architect with over a decade of experience across startups and enterprises. For each project, the Guild Master hand-picks skilled artisans from the community and provides direct oversight, code review, and quality assurance."
-  },
+
   {
     question: "How long does a typical project take?",
     answer: "Timelines depend on scope. A landing page can be delivered in 1-2 weeks, while a full web application may take 4-8 weeks or more. After you describe your project, we'll provide a realistic timeline along with our proposal."
@@ -186,6 +238,7 @@ const handleSubmit = async () => {
       email: form.email,
       topic: form.topic,
       message: form.message,
+      valuesQuality: form.valuesQuality,
       timestamp: serverTimestamp(),
       status: 'new'
     }
@@ -207,7 +260,8 @@ const handleSubmit = async () => {
       name: '',
       email: '',
       topic: '',
-      message: ''
+      message: '',
+      valuesQuality: false
     })
     
     // Hide message after 5 seconds
@@ -227,6 +281,25 @@ const toggleFaq = (index: number) => {
   activeFaq.value = activeFaq.value === index ? -1 : index
 }
 
+const copyEmail = async () => {
+  try {
+    await navigator.clipboard.writeText('quan.nguyen@skill-wanderer.com')
+    emailCopied.value = true
+    setTimeout(() => { emailCopied.value = false }, 2000)
+  } catch {
+    // Fallback for older browsers
+    const textArea = document.createElement('textarea')
+    textArea.value = 'quan.nguyen@skill-wanderer.com'
+    textArea.style.position = 'fixed'
+    textArea.style.opacity = '0'
+    document.body.appendChild(textArea)
+    textArea.select()
+    document.execCommand('copy')
+    document.body.removeChild(textArea)
+    emailCopied.value = true
+    setTimeout(() => { emailCopied.value = false }, 2000)
+  }
+}
 
 
 
@@ -284,6 +357,149 @@ body {
   margin: 0 auto;
   opacity: 0.9;
   animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Authority Section */
+.authority {
+  padding: 60px 20px;
+  background: var(--darker-bg);
+}
+
+.authority-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.authority-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.authority-card:hover {
+  background: var(--card-hover);
+  border-color: rgba(255, 107, 53, 0.3);
+}
+
+.authority-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.authority-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-orange);
+  margin-bottom: 12px;
+}
+
+.authority-card p {
+  opacity: 0.85;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.authority-link {
+  color: var(--primary-orange);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.authority-link:hover {
+  text-decoration: underline;
+}
+
+.impact-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.impact-number {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.impact-label {
+  font-size: 1rem;
+  color: var(--primary-orange);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Admiral Orion Section */
+.orion-section {
+  padding: 40px 20px;
+  background: var(--darker-bg);
+}
+
+.orion-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.orion-card {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 217, 61, 0.05));
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 20px;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.orion-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.orion-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.orion-header h2 {
+  font-size: 1.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 5px;
+}
+
+.orion-header p {
+  opacity: 0.85;
+}
+
+.btn-orion {
+  padding: 12px 30px;
+  border: 2px solid var(--primary-orange);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--primary-orange);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-orion:hover {
+  background: var(--primary-orange);
+  color: white;
+  transform: translateY(-2px);
 }
 
 /* Contact Section */
@@ -429,11 +645,9 @@ body {
   border-radius: 15px;
   padding: 30px;
   transition: all 0.3s ease;
-  cursor: pointer;
 }
 
 .info-card:hover {
-  transform: translateY(-3px);
   background: var(--card-hover);
   border-color: rgba(255, 107, 53, 0.3);
 }
@@ -585,7 +799,82 @@ body {
   color: var(--error-red);
 }
 
-/* Form Legal Links */
+/* Email Row with Copy Button */
+.email-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.email-text {
+  color: var(--primary-orange);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.copy-btn {
+  background: rgba(255, 107, 53, 0.15);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  background: rgba(255, 107, 53, 0.25);
+}
+
+/* Value Checkbox */
+.form-checkbox-group {
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--primary-orange);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Form Footer Legal */
+.form-footer-legal {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.form-footer-legal .legal-link {
+  color: var(--light-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.form-footer-legal .legal-link:hover {
+  color: var(--primary-orange);
+  opacity: 1;
+}
+
+.legal-separator {
+  margin: 0 6px;
+  opacity: 0.5;
+}
+
+/* Form Legal Links - Legacy */
 .form-legal-links {
   margin-top: 20px;
   text-align: center;
@@ -622,6 +911,20 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .authority-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .orion-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .orion-card {
+    padding: 25px 20px;
+  }
+
   .contact-container {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -638,6 +941,10 @@ body {
 
   .faq-question h3 {
     font-size: 1.1rem;
+  }
+
+  .email-row {
+    flex-wrap: wrap;
   }
 }
 </style>
