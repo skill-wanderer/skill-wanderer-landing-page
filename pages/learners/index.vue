@@ -20,7 +20,7 @@
         <div class="learners-grid">
           <!-- Rei Reltroner Card -->
           <NuxtLink to="/learners/rei-reltroner" class="learner-card featured">
-            <div class="first-badge">⭐ First Learner</div>
+            <div class="first-badge">⛵ Storm Sailor</div>
             <div class="learner-avatar">
               <img src="/learners/Rei-Reltroner.jpeg" alt="Rei Reltroner" class="avatar-image" />
             </div>
@@ -86,6 +86,29 @@
               View Full Story →
             </div>
           </NuxtLink>
+
+          <!-- Khouja Nasreddine Card -->
+          <NuxtLink to="/learners/khouja-nasreddine" class="learner-card featured">
+            <div class="first-badge">⚔️ The Warrior</div>
+            <div class="learner-avatar">
+              <img src="/learners/khouja-nasreddine.jpeg" alt="Khouja Nasreddine" class="avatar-image" />
+            </div>
+            <div class="learner-info">
+              <h3>Khouja Nasreddine</h3>
+              <p class="learner-realname">Mobile Game Development Mentee</p>
+              <p class="learner-tagline">The Warrior</p>
+              <div class="learner-meta">
+                <span>📍 Tunisia</span>
+                <span>💼 Mobile Game Development</span>
+              </div>
+              <div class="learner-path">
+                <span class="path-badge">🎮 Mobile Game Dev Path</span>
+              </div>
+            </div>
+            <div class="view-story">
+              View Full Story →
+            </div>
+          </NuxtLink>
         </div>
 
         <div class="more-learners-notice">
@@ -121,7 +144,7 @@ import { useSEO } from '~/composables/useSEO'
 useSEO({
   title: 'Our Learners - Skill-Wanderer',
   description: 'Meet the learners who are growing with Skill-Wanderer. Discover their stories, progress, and achievements on their learning journeys.',
-  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'Alfredo Salazar', 'skill-wanderer'],
+  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'Alfredo Salazar', 'Khouja Nasreddine', 'skill-wanderer'],
 })
 </script>
 
@@ -451,7 +474,7 @@ useSEO({
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .learners-grid {
     grid-template-columns: repeat(2, 1fr);
   }
