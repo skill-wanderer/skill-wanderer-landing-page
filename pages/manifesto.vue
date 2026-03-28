@@ -78,7 +78,8 @@
           </div>
         </div>
 
-        <h3 class="distribution-title">Standard Project Distribution</h3>
+        <h3 class="distribution-title">B. The Working Pool (85%)</h3>
+        <p class="distribution-note">Distributed to the "Makers" based on role contribution. Shares are flexible within the ranges below, calibrated per project scope.</p>
         <div class="distribution-table">
           <div class="dist-row header-row">
             <span>Role</span>
@@ -86,64 +87,30 @@
             <span>Responsibility</span>
           </div>
           <div class="dist-row">
-            <span class="role-name">The Closer <em>(Sales)</em></span>
-            <span class="role-share">15%</span>
-            <span>Forging the relationship and securing the contract.</span>
-          </div>
-          <div class="dist-row">
-            <span class="role-name">The Architect <em>(PM)</em></span>
-            <span class="role-share">20%</span>
-            <span>Defining the blueprint and ensuring project success.</span>
-          </div>
-          <div class="dist-row highlight-row">
-            <span class="role-name">The Engine <em>(Dev)</em></span>
-            <span class="role-share">50%</span>
-            <span>The primary force behind the technical implementation.</span>
-          </div>
-          <div class="dist-row">
-            <span class="role-name">The Shield <em>(QA)</em></span>
-            <span class="role-share">15%</span>
-            <span>The final line of defense, ensuring zero-bug delivery.</span>
-          </div>
-        </div>
-
-        <h3 class="distribution-title">DevOps-Inclusive Projects</h3>
-        <p class="distribution-note">For high-availability infrastructure, advanced automation, or enterprise-grade security, specialized Infrastructure Guardians are deployed:</p>
-        <div class="distribution-table">
-          <div class="dist-row header-row">
-            <span>Role</span>
-            <span>Share</span>
-            <span>Infrastructure Focus</span>
-          </div>
-          <div class="dist-row">
             <span class="role-name">The Closer</span>
             <span class="role-share">15%</span>
-            <span>Strategic alignment and long-term partnership growth.</span>
+            <span>Lead generation, contract negotiation, and partner management.</span>
           </div>
           <div class="dist-row">
             <span class="role-name">The Architect</span>
-            <span class="role-share">15%</span>
-            <span>Systems orchestration and cross-service logic.</span>
+            <span class="role-share">15–20%</span>
+            <span>System design, logic flow, and high-level project management.</span>
           </div>
           <div class="dist-row highlight-row">
-            <span class="role-name">The Engine</span>
-            <span class="role-share">45%</span>
-            <span>Core application logic, feature sets, and API development.</span>
+            <span class="role-name">The Engine <em>(Dev)</em></span>
+            <span class="role-share">40–50%</span>
+            <span>Core coding, feature implementation, and technical execution.</span>
           </div>
           <div class="dist-row devops-row">
             <span class="role-name">DevOps</span>
-            <span class="role-share">10%</span>
-            <span>Sovereign Ops: K8s orchestration, CI/CD pipelines, security hardening, and auto-scaling.</span>
+            <span class="role-share">0–10%</span>
+            <span>Orchestration, deployment, CI/CD, and security hardening.</span>
           </div>
           <div class="dist-row">
-            <span class="role-name">The Shield</span>
-            <span class="role-share">15%</span>
-            <span>Stress testing, performance auditing, and stability verification.</span>
+            <span class="role-name">The Shield <em>(QA)</em></span>
+            <span class="role-share">10–15%</span>
+            <span>Bug hunting, stress testing, and final quality audit.</span>
           </div>
-        </div>
-        <div class="devops-why">
-          <span class="why-icon">💡</span>
-          <p>The 10% DevOps allocation ensures that the Engine (Developers) can focus entirely on features while the DevOps specialist ensures the product is <strong>unshakeable, secure, and ready for global traffic</strong>.</p>
         </div>
       </div>
     </section>
@@ -202,10 +169,79 @@
       </div>
     </section>
 
-    <!-- Section 4: Quality Shield -->
-    <section class="manifesto-section quality-section">
+    <!-- Section 4: The Sovereign Exchange -->
+    <section class="manifesto-section sovereign-section">
       <div class="container">
         <div class="section-label">04</div>
+        <h2>The Sovereign Exchange</h2>
+        <p class="section-subtitle">The 20% Rule — Keeping the Guild Growing</p>
+        <p class="section-intro">
+          To maintain our 15% "Golden Ratio" and keep the Guild growing, all members participate in the Sovereign Exchange. This ensures that while we thrive on high-value partnerships, our internal platform and the Rank 0 education mission never stop evolving.
+        </p>
+        <p class="section-intro">Members choose their monthly path based on their project load:</p>
+
+        <div class="exchange-paths">
+          <div class="exchange-path path-builder">
+            <div class="path-header">
+              <div class="path-label-badge">A</div>
+              <h3>The Builder Path</h3>
+              <span class="path-tag">Time + 15%</span>
+            </div>
+            <p class="path-desc">This path is for members with available bandwidth to invest in the Guild's foundation.</p>
+            <div class="path-details">
+              <div class="path-detail">
+                <span class="detail-label">The Contribution</span>
+                <p>You dedicate 20% of your monthly capacity (approx. 1 day per week) to building the Skill-Wanderer platform, maintaining our sovereign infrastructure, or creating educational materials.</p>
+              </div>
+              <div class="path-detail">
+                <span class="detail-label">The Focus</span>
+                <p>The specific nature of this work is rank-based, evolving in complexity and responsibility as you ascend through the Guild.</p>
+              </div>
+              <div class="path-detail">
+                <span class="detail-label">The Payout</span>
+                <p>This path is supported by the Guild's stipend system, effectively funding your time to master new technologies while building our collective assets.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="exchange-path path-rainmaker">
+            <div class="path-header">
+              <div class="path-label-badge">B</div>
+              <h3>The Rainmaker Path</h3>
+              <span class="path-tag">0% Time + 20%</span>
+            </div>
+            <p class="path-desc">This path is for members fully utilized on high-impact commercial projects for our global partners.</p>
+            <div class="path-details">
+              <div class="path-detail">
+                <span class="detail-label">The Contribution</span>
+                <p>You dedicate 0% of your time to internal platform tasks, allowing you to focus entirely on delivery.</p>
+              </div>
+              <div class="path-detail">
+                <span class="detail-label">The Tribute</span>
+                <p>You "buy back" your time by contributing a 20% Guild Tribute (the standard 15% + a 5% "Sovereignty Surcharge") on your project shares.</p>
+              </div>
+              <div class="path-detail">
+                <span class="detail-label">The Payout</span>
+                <p>Your extra 5% contribution is used by the Treasury to fund "Internal Bounties," paying other Guild members to complete the platform and education tasks that sustain our ecosystem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sovereign-why">
+          <span class="why-icon">💡</span>
+          <div>
+            <h3>Why we do this</h3>
+            <p>This "Work-or-Pay" model ensures the Skill-Wanderer ecosystem is anti-fragile. Whether we are in a season of heavy building or a season of high-profit delivery, our infrastructure remains sovereign and our mission to provide free education to the next generation remains funded.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Quality Shield -->
+    <section class="manifesto-section quality-section">
+      <div class="container">
+        <div class="section-label">05</div>
         <h2>The Quality Shield</h2>
         <p class="section-subtitle">Stability Points — Protecting our partners and our reputation</p>
         <div class="quality-visual">
@@ -235,10 +271,10 @@
       </div>
     </section>
 
-    <!-- Section 5: Disclaimer -->
+    <!-- Section 6: Disclaimer -->
     <section class="manifesto-section disclaimer-section">
       <div class="container">
-        <div class="section-label">05</div>
+        <div class="section-label">06</div>
         <h2>Disclaimer & Evolution</h2>
         <div class="disclaimer-content">
           <p>
@@ -888,6 +924,167 @@ useSEO({
 .btn-secondary:hover {
   transform: translateY(-2px);
   background: rgba(255, 107, 53, 0.1);
+}
+
+/* Sovereign Exchange Section */
+.sovereign-section {
+  background: rgba(255, 217, 61, 0.02);
+}
+
+.exchange-paths {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.exchange-path {
+  border-radius: 16px;
+  padding: 32px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+}
+
+.path-builder {
+  border-color: rgba(255, 107, 53, 0.2);
+  background: rgba(255, 107, 53, 0.04);
+}
+
+.path-rainmaker {
+  border-color: rgba(255, 217, 61, 0.2);
+  background: rgba(255, 217, 61, 0.04);
+}
+
+.path-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.path-label-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.path-builder .path-label-badge {
+  background: rgba(255, 107, 53, 0.15);
+  color: var(--primary-orange);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+}
+
+.path-rainmaker .path-label-badge {
+  background: rgba(255, 217, 61, 0.15);
+  color: var(--accent-yellow);
+  border: 1px solid rgba(255, 217, 61, 0.3);
+}
+
+.path-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.path-builder .path-header h3 { color: var(--primary-orange); }
+.path-rainmaker .path-header h3 { color: var(--accent-yellow); }
+
+.path-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.path-builder .path-tag {
+  background: rgba(255, 107, 53, 0.12);
+  color: var(--primary-orange);
+  border: 1px solid rgba(255, 107, 53, 0.25);
+}
+
+.path-rainmaker .path-tag {
+  background: rgba(255, 217, 61, 0.12);
+  color: var(--accent-yellow);
+  border: 1px solid rgba(255, 217, 61, 0.25);
+}
+
+.path-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.75;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.path-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.path-detail {
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  border-left: 3px solid rgba(255, 107, 53, 0.3);
+}
+
+.path-rainmaker .path-detail {
+  border-left-color: rgba(255, 217, 61, 0.3);
+}
+
+.detail-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  opacity: 0.55;
+  margin-bottom: 6px;
+}
+
+.path-detail p {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  opacity: 0.85;
+}
+
+.sovereign-why {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 24px 28px;
+  background: rgba(255, 107, 53, 0.06);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 12px;
+}
+
+.sovereign-why .why-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sovereign-why h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-bottom: 8px;
+}
+
+.sovereign-why p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.85;
 }
 
 /* Responsive */
