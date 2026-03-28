@@ -68,6 +68,15 @@
                 <span class="rich-menu-desc">The values that guide our social enterprise mission</span>
               </span>
             </NuxtLink>
+            <NuxtLink to="/manifesto" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Guild Manifesto</span>
+                <span class="rich-menu-desc">Mastery, transparency & shared prosperity</span>
+              </span>
+            </NuxtLink>
             <NuxtLink to="/roadmap" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
               <span class="rich-menu-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
@@ -105,6 +114,7 @@
             <NuxtLink to="/about" @click="closeMobileMenu">Our Story</NuxtLink>
             <NuxtLink to="/team" @click="closeMobileMenu">Guild Members</NuxtLink>
             <NuxtLink to="/principles" @click="closeMobileMenu">Guild Principles</NuxtLink>
+            <NuxtLink to="/manifesto" @click="closeMobileMenu">Guild Manifesto</NuxtLink>
             <NuxtLink to="/roadmap" @click="closeMobileMenu">Roadmap</NuxtLink>
             <NuxtLink to="/admiral-orion" @click="closeMobileMenu">Admiral Orion</NuxtLink>
           </div>

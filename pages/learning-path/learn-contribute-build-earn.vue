@@ -36,13 +36,14 @@
         <article class="journey-card">
           <span class="step-badge">02</span>
           <h3>Unlock Mentorship Through Contribution</h3>
-          <p>Real growth requires commitment. Instead of charging fixed tuition, we let you choose how to contribute:</p>
+          <p class="card-subheader">Mentorship is earned through effort, not bought with tuition.</p>
+          <p>Real growth requires commitment. Instead of charging fixed tuition, we let you choose how to contribute — and every option is a chance to grow:</p>
           <ul class="contribution-list">
-            <li><span class="list-icon">💰</span> Support financially (optional)</li>
-            <li><span class="list-icon">🛠</span> Build real features for the guild</li>
-            <li><span class="list-icon">🤝</span> Help and grow the community</li>
+            <li class="contribution-preferred"><span class="list-icon">🛠</span> <strong>Learn by building</strong> real features for the guild</li>
+            <li class="contribution-preferred"><span class="list-icon">🤝</span> <strong>Learn by teaching</strong> — help and grow the community</li>
+            <li class="contribution-secondary"><span class="list-icon">💰</span> Support financially <span class="optional-tag">(optional)</span></li>
           </ul>
-          <p class="card-emphasis">You don't have to pay — but you do have to show up.</p>
+          <p class="card-emphasis"><strong class="zero-tuition">Zero tuition.</strong> Just show up and contribute.</p>
         </article>
 
         <article class="journey-card">
@@ -333,6 +334,23 @@ h1 {
   font-style: italic;
 }
 
+.card-subheader {
+  margin: 0 0 10px !important;
+  font-size: 0.97rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #ffd93d !important;
+  line-height: 1.5;
+}
+
+.zero-tuition {
+  font-style: normal;
+  color: #ff8757;
+  background: rgba(255, 107, 53, 0.12);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
 .contribution-list {
   margin: 12px 0 0;
   padding-left: 4px;
@@ -346,6 +364,22 @@ h1 {
 
 .list-icon {
   margin-right: 8px;
+}
+
+.contribution-preferred {
+  color: rgba(243, 243, 243, 0.95) !important;
+  font-weight: 600;
+}
+
+.contribution-secondary {
+  color: rgba(243, 243, 243, 0.42) !important;
+  font-size: 0.9em;
+  margin-top: 6px;
+}
+
+.optional-tag {
+  font-style: italic;
+  font-weight: 400;
 }
 
 /* System / progression section */
