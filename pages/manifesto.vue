@@ -78,38 +78,38 @@
           </div>
         </div>
 
-        <h3 class="distribution-title">B. The Working Pool (85%)</h3>
-        <p class="distribution-note">Distributed to the "Makers" based on role contribution. Shares are flexible within the ranges below, calibrated per project scope.</p>
+        <h3 class="distribution-title">B. Project Role Matrix (Working Pool Distribution)</h3>
+        <p class="distribution-note">For every project or sprint, the Master fixes the percentages within these ranges before work begins. The total must always equal 100% of the Working Pool.</p>
         <div class="distribution-table">
           <div class="dist-row header-row">
             <span>Role</span>
-            <span>Share</span>
+            <span>Range (%)</span>
             <span>Responsibility</span>
           </div>
           <div class="dist-row">
-            <span class="role-name">The Closer</span>
-            <span class="role-share">15%</span>
-            <span>Lead generation, contract negotiation, and partner management.</span>
+            <span class="role-name">The Closer <em>(Sales)</em></span>
+            <span class="role-share">10% – 20%</span>
+            <span>Lead gen, negotiation, and partner management.</span>
           </div>
           <div class="dist-row">
             <span class="role-name">The Architect</span>
-            <span class="role-share">15–20%</span>
-            <span>System design, logic flow, and high-level project management.</span>
+            <span class="role-share">10% – 20%</span>
+            <span>System logic, documentation, technical lead, and project management.</span>
           </div>
           <div class="dist-row highlight-row">
             <span class="role-name">The Engine <em>(Dev)</em></span>
-            <span class="role-share">40–50%</span>
-            <span>Core coding, feature implementation, and technical execution.</span>
+            <span class="role-share">40% – 50%</span>
+            <span>Core implementation and feature coding.</span>
           </div>
           <div class="dist-row devops-row">
             <span class="role-name">DevOps</span>
-            <span class="role-share">0–10%</span>
-            <span>Orchestration, deployment, CI/CD, and security hardening.</span>
+            <span class="role-share">00% – 10%</span>
+            <span>Deployment, security hardening, and CI/CD.</span>
           </div>
           <div class="dist-row">
             <span class="role-name">The Shield <em>(QA)</em></span>
-            <span class="role-share">10–15%</span>
-            <span>Bug hunting, stress testing, and final quality audit.</span>
+            <span class="role-share">10% – 20%</span>
+            <span>Bug hunting, stress testing, and final audit.</span>
           </div>
         </div>
       </div>
@@ -647,6 +647,7 @@ useSEO({
   font-weight: 800;
   font-size: 1.1rem;
   color: var(--primary-orange);
+  white-space: nowrap;
 }
 
 .devops-why {
