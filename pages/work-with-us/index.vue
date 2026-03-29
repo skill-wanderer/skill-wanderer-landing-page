@@ -46,28 +46,70 @@
       </div>
     </section>
 
-    <!-- Two Pillars Section -->
+    <!-- Explore the Guild Section -->
     <section class="pillars-section">
       <div class="content">
         <div class="section-header">
           <h2>Explore the Guild</h2>
-          <p>Two pillars that power our social enterprise mission</p>
+          <p>Everything you need to know about working with us</p>
         </div>
 
-        <div class="pillars-grid">
+        <div class="pillars-grid pillars-grid--six">
+          <div class="pillar-card">
+            <div class="pillar-icon">🖥️</div>
+            <h3>What We Build</h3>
+            <p>
+              Custom web platforms, internal tools, and digital products—built from scratch with modern frameworks.
+              No WordPress, no templates, no lock-in.
+            </p>
+            <NuxtLink to="/work-with-us/what-we-build" class="pillar-link">
+              See What We Build <span>→</span>
+            </NuxtLink>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🎯</div>
+            <h3>Who We Work With</h3>
+            <p>
+              Non-profits, early-stage startups, and mission-driven organizations that value long-term thinking,
+              open technology, and practical learning.
+            </p>
+            <NuxtLink to="/work-with-us/who-we-work-with" class="pillar-link">
+              Is This For You? <span>→</span>
+            </NuxtLink>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🗂️</div>
+            <h3>Our Projects</h3>
+            <p>
+              From non-profits to startups to our own guild infrastructure—every project we take on creates real impact
+              and fuels free education.
+            </p>
+            <NuxtLink to="/work-with-us/our-projects" class="pillar-link">
+              View Our Work <span>→</span>
+            </NuxtLink>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">💰</div>
+            <h3>Pricing</h3>
+            <p>
+              Sprint-based packages with full transparency. Trust sprints, standard sprints, and equity/revenue-sharing
+              models for startups—pick what fits your stage.
+            </p>
+            <NuxtLink to="/work-with-us/pricing" class="pillar-link">
+              View Pricing <span>→</span>
+            </NuxtLink>
+          </div>
+
           <div class="pillar-card">
             <div class="pillar-icon">💡</div>
             <h3>Success Sharing Model</h3>
             <p>
-              We don't do outsourcing. As a tech guild, we become your true technology partner—sharing both the success and the risks with you.
-              Lower upfront costs. Revenue when you win. Guild-powered talent.
+              We don't do outsourcing. We become your true technology partner—sharing both the success and the risks.
+              Lower upfront costs. Revenue when you win.
             </p>
-            <ul class="pillar-highlights">
-              <li>Lower upfront investment</li>
-              <li>Revenue tied to your success</li>
-              <li>Risks shared together</li>
-              <li>Long-term, genuine partnership</li>
-            </ul>
             <NuxtLink to="/work-with-us/success-sharing-model" class="pillar-link">
               Learn How It Works <span>→</span>
             </NuxtLink>
@@ -77,15 +119,9 @@
             <div class="pillar-icon">🚀</div>
             <h3>Become a Guild Partner</h3>
             <p>
-              We're not a staffing agency or outsourcing shop. We're a tech guild that collaborates through long-term models including
-              outcome-based scopes, revenue sharing, and dedicated guild teams.
+              Ready to engage? We collaborate through long-term models including outcome-based scopes, revenue sharing,
+              and dedicated guild teams.
             </p>
-            <ul class="pillar-highlights">
-              <li>True risk partnership</li>
-              <li>Guild-powered delivery</li>
-              <li>Social enterprise vision</li>
-              <li>Apprentice growth pathways</li>
-            </ul>
             <NuxtLink to="/work-with-us/become-a-partner" class="pillar-link">
               Become a Partner <span>→</span>
             </NuxtLink>
@@ -328,7 +364,8 @@
           our guild sustains free education—we'd love to talk.
         </p>
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us/success-sharing-model" class="btn btn-primary">Explore the Model</NuxtLink>
+          <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-primary">Become a Partner</NuxtLink>
+          <NuxtLink to="/work-with-us/our-projects" class="btn btn-secondary">See Our Projects</NuxtLink>
           <NuxtLink to="/contact" class="btn btn-secondary">Start a Conversation</NuxtLink>
         </div>
       </div>
@@ -484,6 +521,10 @@ useSEO({
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
+}
+
+.pillars-grid--six {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .pillar-card {

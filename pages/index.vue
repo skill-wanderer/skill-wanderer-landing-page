@@ -21,6 +21,14 @@
             Our Principles
           </NuxtLink>
         </div>
+        <div class="hero-cta-secondary">
+          <NuxtLink to="/manifesto" class="btn btn-ghost">
+            📜 See the Guild Manifesto
+          </NuxtLink>
+          <NuxtLink to="/work-with-us" class="btn btn-ghost">
+            🤝 Engage with the Guild
+          </NuxtLink>
+        </div>
       </div>
       <svg class="wandering-path" viewBox="0 0 1200 200">
         <path class="path" d="M0,150 Q300,100 600,130 T1200,100" />
@@ -126,6 +134,86 @@
       </div>
     </section>
 
+
+    <!-- Guild Services Section -->
+    <section class="guild-services">
+      <div class="guild-services-content">
+        <div class="section-header">
+          <h2>What the Guild Builds</h2>
+          <p>Senior-led, community-powered delivery—every engagement funds free education</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h3>Custom Software</h3>
+            <p>Web platforms, internal tools, and digital products—built from scratch with modern frameworks. No templates, no lock-in.</p>
+            <NuxtLink to="/work-with-us/what-we-build" class="service-link">See What We Build <span>→</span></NuxtLink>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🤝</div>
+            <h3>True Partnership</h3>
+            <p>We're not an outsourcing firm. We share risks and success through long-term collaboration models including equity and revenue sharing.</p>
+            <NuxtLink to="/work-with-us/success-sharing-model" class="service-link">Explore the Model <span>→</span></NuxtLink>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🎯</div>
+            <h3>Who We Work With</h3>
+            <p>Non-profits, early-stage startups, and mission-driven organizations that value long-term thinking and open technology.</p>
+            <NuxtLink to="/work-with-us/who-we-work-with" class="service-link">Is This For You? <span>→</span></NuxtLink>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💰</div>
+            <h3>Transparent Pricing</h3>
+            <p>Sprint-based packages with no hidden fees. Trust sprints, standard sprints, and partnership models—pick what fits your stage.</p>
+            <NuxtLink to="/work-with-us/pricing" class="service-link">View Pricing <span>→</span></NuxtLink>
+          </div>
+        </div>
+        <div class="services-cta">
+          <NuxtLink to="/work-with-us" class="btn btn-primary">
+            Engage the Guild
+            <span>→</span>
+          </NuxtLink>
+          <NuxtLink to="/work-with-us/our-projects" class="btn btn-secondary">
+            See Our Projects
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guild Manifesto Section -->
+    <section class="manifesto-teaser">
+      <div class="manifesto-teaser-content">
+        <div class="manifesto-badge-label">Guild Document · 2026</div>
+        <h2>The Guild Manifesto</h2>
+        <p class="manifesto-tagline">Mastery. Transparency. Shared Prosperity.</p>
+        <p class="manifesto-description">
+          We believe the traditional corporate model is obsolete. The Guild Manifesto defines our commitment to a
+          sovereign, meritocratic ecosystem—where contribution replaces tuition, real work replaces fake projects,
+          and every member knows exactly where every coin goes.
+        </p>
+        <div class="manifesto-pillars">
+          <div class="manifesto-pillar">
+            <span class="pillar-icon">🚫</span>
+            <h4>No Spectators</h4>
+            <p>Free to start, but we demand commitment. The guild has no place for passive learners.</p>
+          </div>
+          <div class="manifesto-pillar">
+            <span class="pillar-icon">💰</span>
+            <h4>15 / 85 Split</h4>
+            <p>85% of net profit goes directly to the craftspeople who build. Full financial transparency, always.</p>
+          </div>
+          <div class="manifesto-pillar">
+            <span class="pillar-icon">🏗️</span>
+            <h4>Real Work Only</h4>
+            <p>Production-level projects for real partners. Not todo apps—real solutions to real problems.</p>
+          </div>
+        </div>
+        <NuxtLink to="/manifesto" class="btn btn-primary">
+          Read the Manifesto
+          <span>→</span>
+        </NuxtLink>
+      </div>
+    </section>
 
     <!-- Work With Us Brief Section -->
     <section class="tech-services">
@@ -308,6 +396,15 @@ body {
   animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
+.hero-cta-secondary {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  animation: fadeInUp 0.8s ease-out 0.8s both;
+}
+
 .btn {
   padding: 15px 30px;
   border: none;
@@ -354,6 +451,21 @@ body {
 .btn-outline:hover {
   background: rgba(255, 107, 53, 0.1);
   border-color: var(--primary-orange);
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: rgba(224, 224, 224, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+  padding: 10px 22px;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 107, 53, 0.08);
+  border-color: rgba(255, 107, 53, 0.35);
+  color: var(--primary-orange);
   transform: translateY(-2px);
 }
 
@@ -591,6 +703,167 @@ body {
   font-size: 0.9rem;
   opacity: 0.7;
   margin-top: 10px;
+}
+
+/* Guild Services Section */
+.guild-services {
+  padding: 100px 20px;
+  background: var(--darker-bg);
+}
+
+.guild-services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 107, 53, 0.4);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary-orange);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.service-link:hover {
+  gap: 12px;
+}
+
+.services-cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Guild Manifesto Teaser Section */
+.manifesto-teaser {
+  padding: 100px 20px;
+  background: var(--dark-bg);
+  text-align: center;
+}
+
+.manifesto-teaser-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.manifesto-badge-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 50px;
+  padding: 6px 18px;
+  margin-bottom: 20px;
+}
+
+.manifesto-teaser h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.manifesto-tagline {
+  font-size: 1.2rem;
+  color: var(--primary-orange);
+  font-style: italic;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.manifesto-description {
+  font-size: 1.05rem;
+  opacity: 0.8;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.manifesto-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.manifesto-pillar {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 16px;
+  padding: 28px;
+  transition: all 0.3s ease;
+}
+
+.manifesto-pillar:hover {
+  border-color: rgba(255, 107, 53, 0.4);
+  transform: translateY(-4px);
+}
+
+.pillar-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.manifesto-pillar h4 {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.manifesto-pillar p {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  line-height: 1.6;
 }
 
 /* Tech Services Section */
