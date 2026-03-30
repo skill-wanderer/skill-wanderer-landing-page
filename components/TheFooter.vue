@@ -11,6 +11,7 @@
         <NuxtLink to="/contact">Contact</NuxtLink>
         <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
         <NuxtLink to="/terms-of-service">Terms of Service</NuxtLink>
+        <NuxtLink to="/cookie-policy">Cookie Policy</NuxtLink>
         <!-- Easter egg: Hidden link to mission page -->
         <NuxtLink to="/mission" class="easter-egg-footer" title="The Heart of Skill-Wanderer (Motivation for Founder)">❤️</NuxtLink>
       </div>

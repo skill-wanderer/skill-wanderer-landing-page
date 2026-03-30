@@ -53,7 +53,23 @@
 
     <!-- Contact Section -->
     <section class="contact">
-      <div class="contact-container">
+      <!-- Tab Switcher -->
+      <div class="tab-switcher">
+        <button
+          :class="['tab-btn', { active: activeTab === 'hire' }]"
+          @click="activeTab = 'hire'"
+        >
+          Hire the Guild
+        </button>
+        <button
+          :class="['tab-btn', { active: activeTab === 'join' }]"
+          @click="activeTab = 'join'"
+        >
+          Join the Guild
+        </button>
+      </div>
+
+      <div v-if="activeTab === 'hire'" class="contact-container">
         <!-- Contact Form -->
         <div class="contact-form">
           <div class="form-header">
@@ -144,6 +160,103 @@
           </div>
         </div>
       </div>
+
+      <!-- Join the Guild Form -->
+      <div v-if="activeTab === 'join'" class="contact-container">
+        <div class="contact-form">
+          <div class="form-header">
+            <h2>Apply to Join</h2>
+            <p>Tell us about your craft and why you want to build with the Guild. We review every application personally.</p>
+          </div>
+          <form @submit.prevent="handleGuildSubmit">
+            <div class="form-group">
+              <label for="guild-name">Your Name</label>
+              <input type="text" id="guild-name" v-model="guildForm.name" required placeholder="How should we address you?">
+            </div>
+            <div class="form-group">
+              <label for="guild-email">Email Address</label>
+              <input type="email" id="guild-email" v-model="guildForm.email" required placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="guild-skill">Primary Skill</label>
+              <select id="guild-skill" v-model="guildForm.skill" required>
+                <option value="">What is your main craft?</option>
+                <option value="frontend">Frontend Development</option>
+                <option value="backend">Backend Development</option>
+                <option value="fullstack">Full-Stack Development</option>
+                <option value="mobile">Mobile Development</option>
+                <option value="devops">DevOps / Infrastructure</option>
+                <option value="ui-ux">UI / UX Design</option>
+                <option value="ai-ml">AI / Machine Learning</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guild-experience">Years of Experience</label>
+              <select id="guild-experience" v-model="guildForm.experience" required>
+                <option value="">Select experience level</option>
+                <option value="0-1">Less than 1 year</option>
+                <option value="1-3">1–3 years</option>
+                <option value="3-5">3–5 years</option>
+                <option value="5-10">5–10 years</option>
+                <option value="10+">10+ years</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guild-portfolio">Portfolio or GitHub URL <span class="label-optional">(optional)</span></label>
+              <input type="url" id="guild-portfolio" v-model="guildForm.portfolio" placeholder="https://github.com/yourname">
+            </div>
+            <div class="form-group">
+              <label for="guild-message">Why Do You Want to Join the Guild?</label>
+              <textarea id="guild-message" v-model="guildForm.message" required placeholder="Tell us about your background, what drives you, and what you hope to contribute and gain..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" :disabled="isGuildSubmitting">
+              {{ isGuildSubmitting ? 'Sending...' : 'Apply to Join the Guild' }}
+              <span>{{ isGuildSubmitting ? '⏳' : '→' }}</span>
+            </button>
+            <div class="form-footer-legal">
+              <NuxtLink to="/privacy-policy" class="legal-link">Privacy Policy</NuxtLink>
+              <span class="legal-separator">·</span>
+              <NuxtLink to="/terms-of-service" class="legal-link">Terms of Service</NuxtLink>
+            </div>
+            <div v-if="guildFormMessage.show" :class="['form-message', guildFormMessage.type]">
+              {{ guildFormMessage.text }}
+            </div>
+          </form>
+        </div>
+
+        <!-- Guild Info -->
+        <div class="contact-info">
+          <div class="info-header">
+            <h2>What to Expect</h2>
+            <p>We are selective but welcoming. Here's how the process works.</p>
+          </div>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-card-header">
+                <div class="info-icon">📝</div>
+                <h3>Application Review</h3>
+              </div>
+              <p>The Guild Master reviews every application personally. We look for passion, craftsmanship, and alignment with the Guild's values — not just years of experience.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-header">
+                <div class="info-icon">🤝</div>
+                <h3>Craft Interview</h3>
+              </div>
+              <p>Shortlisted candidates are invited for a relaxed craft conversation — no whiteboard puzzles, just a genuine discussion about how you think and build.</p>
+            </div>
+            <div class="info-card">
+              <div class="info-card-header">
+                <div class="info-icon">⚔️</div>
+                <h3>Guild Membership</h3>
+              </div>
+              <p>Guild artisans collaborate on real client projects, receive mentorship, and share in the mission of funding free tech education for emerging developers.</p>
+              <NuxtLink to="/guild-manifesto" class="info-card-link">Read the Guild Manifesto</NuxtLink>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
@@ -182,7 +295,10 @@ useSEO({
   type: 'website'
 })
 
-// Form state
+// Tab state
+const activeTab = ref<'hire' | 'join'>('hire')
+
+// Hire form state
 const form = reactive({
   name: '',
   email: '',
@@ -191,10 +307,27 @@ const form = reactive({
   valuesQuality: false
 })
 
+// Guild application form state
+const guildForm = reactive({
+  name: '',
+  email: '',
+  skill: '',
+  experience: '',
+  portfolio: '',
+  message: ''
+})
+
 const emailCopied = ref(false)
 
 const isSubmitting = ref(false)
 const formMessage = reactive({
+  show: false,
+  type: '',
+  text: ''
+})
+
+const isGuildSubmitting = ref(false)
+const guildFormMessage = reactive({
   show: false,
   type: '',
   text: ''
@@ -274,6 +407,47 @@ const handleSubmit = async () => {
     formMessage.text = 'Something went wrong. Please try again or contact me directly via email.'
   } finally {
     isSubmitting.value = false
+  }
+}
+
+const handleGuildSubmit = async () => {
+  isGuildSubmitting.value = true
+
+  try {
+    const { $firestore } = useNuxtApp()
+    const { collection, addDoc, serverTimestamp } = await import('firebase/firestore')
+
+    await addDoc(collection($firestore, 'guild-applications'), {
+      name: guildForm.name,
+      email: guildForm.email,
+      skill: guildForm.skill,
+      experience: guildForm.experience,
+      portfolio: guildForm.portfolio,
+      message: guildForm.message,
+      timestamp: serverTimestamp(),
+      status: 'new'
+    })
+
+    guildFormMessage.show = true
+    guildFormMessage.type = 'success'
+    guildFormMessage.text = "Thank you for applying! We'll review your application and get back to you within a few days."
+
+    Object.assign(guildForm, {
+      name: '',
+      email: '',
+      skill: '',
+      experience: '',
+      portfolio: '',
+      message: ''
+    })
+
+    setTimeout(() => { guildFormMessage.show = false }, 6000)
+  } catch {
+    guildFormMessage.show = true
+    guildFormMessage.type = 'error'
+    guildFormMessage.text = 'Something went wrong. Please try again or reach us directly via email.'
+  } finally {
+    isGuildSubmitting.value = false
   }
 }
 
@@ -508,6 +682,38 @@ body {
   background: var(--darker-bg);
 }
 
+/* Tab Switcher */
+.tab-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.tab-btn {
+  padding: 12px 32px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 107, 53, 0.4);
+  background: transparent;
+  color: var(--light-text);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  border-color: var(--primary-orange);
+  color: var(--primary-orange);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+}
+
 .contact-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -549,6 +755,12 @@ body {
   margin-bottom: 8px;
   font-weight: 500;
   color: var(--light-text);
+}
+
+.label-optional {
+  font-weight: 400;
+  opacity: 0.5;
+  font-size: 0.85em;
 }
 
 .form-group input,
