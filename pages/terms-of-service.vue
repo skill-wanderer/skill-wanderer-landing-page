@@ -5,7 +5,7 @@
       <div class="hero-content">
         <h1>Terms of Service</h1>
         <p class="hero-subtitle">The terms governing your use of our platform and services</p>
-        <p class="last-updated">Last updated: August 26, 2025</p>
+        <p class="last-updated">Last updated: March 30, 2026</p>
       </div>
     </section>
 
@@ -124,7 +124,10 @@
         <div class="terms-section">
           <h2>Privacy and Data</h2>
           <p>
-            Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference.
+            Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>, which is incorporated into these Terms by reference.
+          </p>
+          <p>
+            We use essential cookies only. Our cookie practices are described in our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>, which is also incorporated into these Terms by reference.
           </p>
         </div>
 

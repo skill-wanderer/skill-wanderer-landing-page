@@ -17,6 +17,11 @@
     <ClientOnly>
       <PathfinderChat />
     </ClientOnly>
+
+    <!-- Cookie Banner -->
+    <ClientOnly>
+      <CookieBanner />
+    </ClientOnly>
   </div>
 </template>
 

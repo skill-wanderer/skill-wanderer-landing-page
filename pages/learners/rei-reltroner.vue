@@ -7,7 +7,7 @@
           ← Back to Our Learners
         </NuxtLink>
         <div class="featured-badge">
-          <span>⭐ First Learner</span>
+          <span>⛵ Storm Sailer</span>
         </div>
         <h1>Rei Reltroner</h1>
         <p class="real-name">(Raidan Malik Sandra)</p>
@@ -132,6 +132,22 @@
           "Rei's story reminds us that growth isn't just about technical skills—it's about the courage 
           to keep moving forward, even when the sea is rough."
         </blockquote>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <div class="video-container">
+        <h2>🎬 Watch Rei's Story</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/aUp7-bO5Cbs"
+            title="Rei Reltroner's Story"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
 
@@ -542,6 +558,43 @@ useSEO({
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.95);
   text-align: left;
+}
+
+/* Video Section */
+.video-section {
+  padding: 80px 20px;
+  background: var(--dark-bg);
+}
+
+.video-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-container h2 {
+  color: var(--primary-orange);
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  margin-bottom: 40px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 /* CTA Section */

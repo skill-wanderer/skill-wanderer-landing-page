@@ -5,7 +5,7 @@
       <div class="hero-content">
         <h1>Privacy Policy</h1>
         <p class="hero-subtitle">How we protect and handle your information</p>
-        <p class="last-updated">Last updated: August 26, 2025</p>
+        <p class="last-updated">Last updated: March 30, 2026</p>
       </div>
     </section>
 
@@ -89,7 +89,13 @@
         <div class="policy-section">
           <h2>Cookies and Tracking Technologies</h2>
           <p>
-            Our website may use cookies and similar tracking technologies to enhance your experience. These technologies help us understand how you use our website and improve our services. You can control cookie settings through your browser preferences.
+            We use <strong>essential cookies only</strong> — the minimum required for our website to function correctly. We do not use tracking cookies, advertising cookies, analytics cookies, or any other non-essential cookies.
+          </p>
+          <p>
+            For embedded video content, we use YouTube's Privacy-Enhanced Mode (<code>youtube-nocookie.com</code>) to minimise third-party cookie impact. YouTube will not set cookies unless you actively play a video.
+          </p>
+          <p>
+            For full details on the specific cookies we use, please read our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>.
           </p>
         </div>
 
@@ -98,6 +104,9 @@
           <h2>Third-Party Services</h2>
           <p>
             Our website may contain links to third-party websites or services. This Privacy Policy does not apply to those third-party sites. We encourage you to review the privacy policies of any third-party services you use.
+          </p>
+          <p>
+            Where we embed third-party content (such as YouTube videos), we take steps to minimise data sharing — for example, using YouTube's Privacy-Enhanced Mode. However, interacting with embedded third-party content is subject to that third party's own privacy policy.
           </p>
         </div>
 
@@ -280,6 +289,15 @@ useSEO({
 
 .contact-info p:last-child {
   margin-bottom: 0;
+}
+
+.policy-section code {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #ff8a65;
 }
 
 /* Responsive Design */
