@@ -21,7 +21,7 @@
           <div class="guild-intro-icon">🏛️</div>
           <div class="guild-intro-body">
             <p>
-              Skill-Wanderer is a non-profit edtech platform built on a guild model — a community of developers at every
+              Skill-Wanderer is a mission-driven edtech platform built on a guild model — a community of developers at every
               stage of their craft, learning by building real things together.
             </p>
             <div class="guild-intro-divider"></div>
@@ -964,7 +964,7 @@
       <div class="content">
         <div class="section-header">
           <h2>Not Ready for a Paid Engagement?</h2>
-          <p>As a non-profit edtech guild, our core mission is accessible education — not gatekeeping knowledge behind a price tag</p>
+          <p>As a mission-driven edtech guild, our core mission is accessible education — not gatekeeping knowledge behind a price tag</p>
         </div>
 
         <div class="mentorship-intro">
