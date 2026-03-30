@@ -292,17 +292,17 @@
             <tbody>
               <tr>
                 <td><span class="package-name">Quick Build — Lite</span></td>
-                <td>Single custom landing page, basic contact form or CTA integration, mobile-responsive, deployed and handed over. Apprentice-built, Guild Master-reviewed. <span class="payment-split">Delivered within 1 week.</span></td>
+                <td>Single custom landing page, basic contact form or CTA integration, mobile-responsive, deployed and handed over. Apprentice-built, Guild Master-reviewed. <span class="payment-split">Delivered within 2 weeks.</span></td>
                 <td><span class="price-range">$300 – $500</span></td>
               </tr>
               <tr>
                 <td><span class="package-name">Quick Build — Standard</span></td>
-                <td>Multi-page custom site or workflow automation. Content updates handled by the guild on request — no CMS needed. Clean codebase with deployment guide. Journeyman-built, Guild Master-reviewed. <span class="payment-split">Delivered within 1 week.</span></td>
+                <td>Multi-page custom site or workflow automation. Content updates handled by the guild on request — no CMS needed. Clean codebase with deployment guide. Journeyman-built, Guild Master-reviewed. <span class="payment-split">Delivered within 2 weeks.</span></td>
                 <td><span class="price-range">$500 – $800</span></td>
               </tr>
               <tr>
                 <td><span class="package-name">Quick Build — Plus</span></td>
-                <td>Custom web app, API integration, automation pipeline, or replacing simple legacy platforms (WordPress, Moodle, etc.) with modern custom-built alternatives. For complex platform replacements, check our Sprint Packages or Retainer options. Guild Master-led. <span class="payment-split">Delivered within 1–2 weeks.</span></td>
+                <td>Custom web app, API integration, automation pipeline, or replacing simple legacy platforms (WordPress, Moodle, etc.) with modern custom-built alternatives. For complex platform replacements, check our Sprint Packages or Retainer options. Guild Master-led. <span class="payment-split">Delivered within 2 weeks.</span></td>
                 <td><span class="price-range">$800 – $1,500</span></td>
               </tr>
             </tbody>
@@ -314,7 +314,7 @@
             <h4>How It Works</h4>
             <p>
               Once the brief and requirements are confirmed, the guild builds your project using AI-assisted development.
-              You will receive a completed version within one week (Lite and Standard) or one to two weeks (Plus) for your review.
+              You will receive a completed version within two weeks for your review.
               After your feedback, we handle revisions, QA, and final deployment with basic documentation.
             </p>
             <p>
