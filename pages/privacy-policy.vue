@@ -16,24 +16,39 @@
         <div class="policy-section">
           <h2>Our Commitment to Your Privacy</h2>
           <p>
-            At Skill-Wanderer, we are committed to protecting your privacy and being transparent about how we collect, use, and protect your personal information. This Privacy Policy explains our practices regarding the data we collect when you use our website and services.
+            At Skill-Wanderer, we are committed to protecting your privacy and being transparent about how we collect, use, and protect your personal information. This Privacy Policy explains our practices regarding the data we collect when you use any Skill-Wanderer service.
+          </p>
+          <h3>Scope of This Policy</h3>
+          <p>
+            This Privacy Policy applies to all properties operated by Skill-Wanderer under the <strong>skill-wanderer.com</strong> domain, including:
+          </p>
+          <ul>
+            <li><strong>skill-wanderer.com</strong> — Main website and landing pages</li>
+            <li><strong>dojo.skill-wanderer.com</strong> — The Dojo learning platform (authentication managed by Keycloak)</li>
+            <li><strong>wandersings.skill-wanderer.com</strong> — Wandersings blog and community space (may use Firebase)</li>
+            <li>Any other subdomains we may introduce in the future</li>
+          </ul>
+          <p>
+            Different subdomains may use different backend services to power their features. Where relevant, this policy describes data practices specific to each part of the platform.
           </p>
         </div>
 
         <!-- Information We Collect -->
         <div class="policy-section">
           <h2>Information We Collect</h2>
-          
+
           <h3>Information You Provide Directly</h3>
           <ul>
             <li><strong>Contact Information:</strong> When you contact us through our contact form or subscribe to our newsletter, we collect your name and email address.</li>
-            <li><strong>Voluntary Information:</strong> Any additional information you choose to share with us through forms, surveys, or direct communication.</li>
+            <li><strong>Account Information (The Dojo):</strong> When you register for an account on dojo.skill-wanderer.com, we collect your name, email address, and any profile information you provide. This data is managed by our self-hosted Keycloak identity service.</li>
+            <li><strong>Comments and Community Content (Wandersings):</strong> If you choose to comment or engage on wandersings.skill-wanderer.com, we collect the content you submit along with any identity information associated with your account.</li>
+            <li><strong>Voluntary Information:</strong> Any additional information you choose to share through forms, surveys, or direct communication.</li>
           </ul>
 
           <h3>Information Collected Automatically</h3>
           <ul>
-            <li><strong>Usage Data:</strong> We may collect information about how you interact with our website, including pages visited, time spent, and navigation patterns.</li>
-            <li><strong>Device Information:</strong> Basic technical information about your device and browser to ensure our website functions properly.</li>
+            <li><strong>Device Information:</strong> Basic technical information about your device and browser to ensure our services function properly.</li>
+            <li><strong>Authentication Logs (The Dojo):</strong> Keycloak, our identity provider for the Dojo, may log login events, session activity, and authentication attempts as part of normal security operations.</li>
           </ul>
         </div>
 
@@ -44,8 +59,9 @@
           <ul>
             <li>To respond to your inquiries and provide customer support</li>
             <li>To send you updates about our educational platform and services (only if you've subscribed)</li>
-            <li>To improve our website and user experience</li>
-            <li>To analyze usage patterns and optimize our content</li>
+            <li>To authenticate your identity and maintain your account on the Dojo learning platform</li>
+            <li>To enable community features such as comments on Wandersings</li>
+            <li>To improve our platform and user experience</li>
             <li>To comply with legal obligations</li>
           </ul>
         </div>
@@ -54,8 +70,13 @@
         <div class="policy-section">
           <h2>Data Storage and Security</h2>
           <p>
-            We take the security of your personal information seriously. We use industry-standard security measures to protect your data from unauthorized access, alteration, disclosure, or destruction. Your information is stored securely using Firebase services, which comply with international security standards.
+            We take the security of your personal information seriously. We use industry-standard security measures to protect your data from unauthorised access, alteration, disclosure, or destruction.
           </p>
+          <ul>
+            <li><strong>Main site:</strong> Contact form submissions are stored securely using Firebase services.</li>
+            <li><strong>The Dojo (dojo.skill-wanderer.com):</strong> Account and authentication data is managed by our self-hosted Keycloak instance. Your credentials are never shared with third-party identity providers.</li>
+            <li><strong>Wandersings (wandersings.skill-wanderer.com):</strong> Community content such as comments may be stored using Firebase services, which comply with international security standards.</li>
+          </ul>
           <p>
             However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee its absolute security.
           </p>
@@ -66,20 +87,24 @@
           <h2>Sharing Your Information</h2>
           <p>We do not sell, trade, or otherwise transfer your personal information to third parties, except in the following limited circumstances:</p>
           <ul>
-            <li><strong>Service Providers:</strong> We may share information with trusted third-party service providers who assist us in operating our website and providing services to you.</li>
+            <li><strong>Service Providers:</strong> We may share information with trusted third-party service providers (such as Firebase for data storage) who assist us in operating our platform. These providers are contractually bound to protect your data.</li>
             <li><strong>Legal Requirements:</strong> We may disclose your information when required by law or to protect our rights, property, or safety, or that of others.</li>
             <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</li>
           </ul>
+          <p>
+            We never share your personal information with advertising networks, data brokers, or analytics companies.
+          </p>
         </div>
 
         <!-- Your Rights -->
         <div class="policy-section">
           <h2>Your Rights</h2>
-          <p>You have the following rights regarding your personal information:</p>
+          <p>You have the following rights regarding your personal information across all Skill-Wanderer properties:</p>
           <ul>
-            <li><strong>Access:</strong> You can request access to the personal information we have about you.</li>
+            <li><strong>Access:</strong> You can request access to the personal information we hold about you.</li>
             <li><strong>Correction:</strong> You can request that we correct any inaccurate or incomplete information.</li>
-            <li><strong>Deletion:</strong> You can request that we delete your personal information, subject to certain legal exceptions.</li>
+            <li><strong>Deletion:</strong> You can request that we delete your personal information, subject to certain legal exceptions. This includes account deletion from the Dojo and removal of comments from Wandersings.</li>
+            <li><strong>Account Management:</strong> On the Dojo, you can manage your account profile directly through the platform settings powered by Keycloak.</li>
             <li><strong>Unsubscribe:</strong> You can unsubscribe from our communications at any time by clicking the unsubscribe link in our emails or contacting us directly.</li>
           </ul>
           <p>To exercise any of these rights, please <NuxtLink to="/contact" class="contact-link">contact us through our contact form</NuxtLink>.</p>
@@ -89,13 +114,19 @@
         <div class="policy-section">
           <h2>Cookies and Tracking Technologies</h2>
           <p>
-            We use <strong>essential cookies only</strong> — the minimum required for our website to function correctly. We do not use tracking cookies, advertising cookies, analytics cookies, or any other non-essential cookies.
+            Across all Skill-Wanderer properties, we use <strong>essential cookies only</strong> — the minimum required for our services to function correctly. We do not use tracking cookies, advertising cookies, analytics cookies, or any other non-essential cookies on any subdomain.
+          </p>
+          <p>
+            On the Dojo (dojo.skill-wanderer.com), Keycloak sets essential session cookies to maintain your authenticated state. These are strictly necessary for login functionality.
+          </p>
+          <p>
+            On Wandersings (wandersings.skill-wanderer.com), Firebase may use browser localStorage or IndexedDB to persist authentication tokens if you use interactive features. Anonymous reading does not involve any storage.
           </p>
           <p>
             For embedded video content, we use YouTube's Privacy-Enhanced Mode (<code>youtube-nocookie.com</code>) to minimise third-party cookie impact. YouTube will not set cookies unless you actively play a video.
           </p>
           <p>
-            For full details on the specific cookies we use, please read our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>.
+            For full details on the specific cookies we use per subdomain, please read our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>.
           </p>
         </div>
 
@@ -103,11 +134,16 @@
         <div class="policy-section">
           <h2>Third-Party Services</h2>
           <p>
-            Our website may contain links to third-party websites or services. This Privacy Policy does not apply to those third-party sites. We encourage you to review the privacy policies of any third-party services you use.
+            Our platform may contain links to third-party websites or services. This Privacy Policy does not apply to those external sites. We encourage you to review the privacy policies of any third-party services you use.
           </p>
           <p>
-            Where we embed third-party content (such as YouTube videos), we take steps to minimise data sharing — for example, using YouTube's Privacy-Enhanced Mode. However, interacting with embedded third-party content is subject to that third party's own privacy policy.
+            The third-party services we integrate are limited to those essential for platform operation:
           </p>
+          <ul>
+            <li><strong>Keycloak (self-hosted):</strong> Identity and access management for the Dojo. No data is shared with Keycloak's creators (Red Hat) — this instance is operated by us.</li>
+            <li><strong>Firebase (Google):</strong> Used for data storage on the main site and potentially on Wandersings. Subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
+            <li><strong>YouTube (Privacy-Enhanced Mode):</strong> Used for embedded video content. Cookies are only set if you actively play a video.</li>
+          </ul>
         </div>
 
         <!-- Children's Privacy -->
