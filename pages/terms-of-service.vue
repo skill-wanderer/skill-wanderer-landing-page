@@ -16,7 +16,18 @@
         <div class="terms-section">
           <h2>Welcome to Skill-Wanderer</h2>
           <p>
-            These Terms of Service ("Terms") govern your access to and use of the Skill-Wanderer website, platform, and services (collectively, the "Services") operated by Skill-Wanderer ("we," "us," or "our"). By accessing or using our Services, you agree to be bound by these Terms.
+            These Terms of Service ("Terms") govern your access to and use of all Skill-Wanderer websites, platforms, and services (collectively, the "Services") operated by Skill-Wanderer ("we," "us," or "our"). By accessing or using our Services, you agree to be bound by these Terms.
+          </p>
+          <h3>Services Covered</h3>
+          <p>These Terms apply to all properties under the <strong>skill-wanderer.com</strong> domain, including:</p>
+          <ul>
+            <li><strong>skill-wanderer.com</strong> — Main website, information, and contact</li>
+            <li><strong>dojo.skill-wanderer.com</strong> — The Dojo, our learning platform where you can create an account and access educational courses (authentication powered by Keycloak)</li>
+            <li><strong>wandersings.skill-wanderer.com</strong> — Wandersings, our blog and community space where readers may engage with content and comments (may use Firebase)</li>
+            <li>Any other subdomains we operate now or in the future</li>
+          </ul>
+          <p>
+            Where specific subdomains have additional terms or conditions, those will be clearly indicated on the relevant service.
           </p>
         </div>
 
@@ -24,7 +35,10 @@
         <div class="terms-section">
           <h2>Acceptance of Terms</h2>
           <p>
-            By accessing, browsing, or using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, please do not use our Services.
+            By accessing, browsing, or using any of our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you do not agree to these Terms, please do not use our Services.
+          </p>
+          <p>
+            Creating an account on the Dojo, posting comments on Wandersings, or submitting any form on our main site constitutes acceptance of these Terms.
           </p>
         </div>
 
@@ -35,9 +49,9 @@
             Skill-Wanderer is dedicated to making quality technology education accessible to everyone. We provide:
           </p>
           <ul>
-            <li>Educational content and courses through our learning platform</li>
+            <li>Educational content and courses through the Dojo learning platform (<strong>dojo.skill-wanderer.com</strong>)</li>
+            <li>Articles, guides, and community discussions through Wandersings (<strong>wandersings.skill-wanderer.com</strong>)</li>
             <li>Technology consulting and development services</li>
-            <li>Community resources and guidance for learners</li>
             <li>Open-source educational materials and tools</li>
           </ul>
           <p>
@@ -45,18 +59,57 @@
           </p>
         </div>
 
+        <!-- Account Services -->
+        <div class="terms-section">
+          <h2>Account Services (The Dojo)</h2>
+          <p>
+            The Dojo learning platform requires an account to access course content and track your learning progress. Accounts are managed through our Keycloak identity service.
+          </p>
+          <ul>
+            <li>You are responsible for maintaining the confidentiality of your account credentials</li>
+            <li>You must provide accurate information when registering and keep it up to date</li>
+            <li>You are responsible for all activity that occurs under your account</li>
+            <li>You must notify us immediately of any unauthorised use of your account</li>
+            <li>We reserve the right to suspend or terminate accounts that violate these Terms</li>
+          </ul>
+          <p>
+            Account data including your name, email, and learning progress is processed in accordance with our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>.
+          </p>
+        </div>
+
+        <!-- Community Features -->
+        <div class="terms-section">
+          <h2>Community Features (Wandersings)</h2>
+          <p>
+            Wandersings allows readers to engage with content through comments and community interaction. When using these features, you agree to:
+          </p>
+          <ul>
+            <li>Post only content that is accurate, respectful, and relevant</li>
+            <li>Not post harmful, offensive, defamatory, or illegal content</li>
+            <li>Not impersonate others or misrepresent your identity</li>
+            <li>Not spam, self-promote excessively, or post commercial solicitations</li>
+            <li>Respect the intellectual property rights of others in your submissions</li>
+          </ul>
+          <p>
+            We reserve the right to remove any community content that violates these Terms or that we deem inappropriate, without prior notice.
+          </p>
+          <p>
+            Community features on Wandersings may be powered by Firebase services. By engaging with these features, you acknowledge that your submitted content will be stored and processed as described in our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>.
+          </p>
+        </div>
+
         <!-- User Responsibilities -->
         <div class="terms-section">
           <h2>User Responsibilities</h2>
-          <p>When using our Services, you agree to:</p>
+          <p>When using any of our Services, you agree to:</p>
           <ul>
             <li>Provide accurate and complete information when requested</li>
             <li>Use the Services only for lawful purposes and in accordance with these Terms</li>
             <li>Respect the intellectual property rights of Skill-Wanderer and third parties</li>
             <li>Not interfere with or disrupt the Services or servers or networks connected to the Services</li>
-            <li>Not attempt to gain unauthorized access to any portion of the Services</li>
+            <li>Not attempt to gain unauthorised access to any portion of the Services, including other users' accounts</li>
             <li>Not use the Services to transmit any harmful, offensive, or illegal content</li>
-            <li>Respect other users and maintain a positive learning environment</li>
+            <li>Respect other users and maintain a positive learning environment across all subdomains</li>
           </ul>
         </div>
 
@@ -124,10 +177,10 @@
         <div class="terms-section">
           <h2>Privacy and Data</h2>
           <p>
-            Your privacy is important to us. Our collection, use, and protection of your personal information is governed by our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>, which is incorporated into these Terms by reference.
+            Your privacy is important to us. Our collection, use, and protection of your personal information across all Skill-Wanderer properties is governed by our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>, which is incorporated into these Terms by reference.
           </p>
           <p>
-            We use essential cookies only. Our cookie practices are described in our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>, which is also incorporated into these Terms by reference.
+            We use essential cookies only — across all subdomains. On the Dojo, Keycloak sets session cookies necessary for authentication. On Wandersings, Firebase may use browser storage for interactive features. Our cookie practices are fully described in our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>, which is also incorporated into these Terms by reference.
           </p>
         </div>
 
