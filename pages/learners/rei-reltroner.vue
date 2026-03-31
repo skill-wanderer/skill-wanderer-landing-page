@@ -14,7 +14,7 @@
         <p class="tagline">Sailing Through the Storm</p>
         <div class="hero-meta">
           <span class="meta-tag">📍 Indonesia</span>
-          <span class="meta-tag">💼 Software Developer & Founder</span>
+          <span class="meta-tag">💼 Software Developer</span>
           <a href="https://www.linkedin.com/in/rei-reltroner-a3a7b8173/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🔗 LinkedIn</a>
         </div>
       </div>
@@ -29,12 +29,18 @@
         
         <div class="profile-intro">
           <h2>The First Wanderer</h2>
-          <p>
-            Rei holds a special place in our community as the <strong>very first learner and mentee</strong> 
-            to get in touch with Skill-Wanderer. As a true "student of life," Rei's journey has been 
-            defined by profound resilience. Navigating the complexities of ADHD and the mental "roller coasters" 
-            that life can present, Rei has shown what it means to truly sail through adversity.
-          </p>
+            <p>
+              Rei holds a special place in our community as the <strong>very first learner and mentee</strong> 
+              to get in touch with Skill-Wanderer. As a true "student of life," Rei's journey has been 
+              defined by resilience, introspection, and continuous growth. Navigating the challenges of 
+              neurodivergence and the complex mental landscapes that come with it, Rei has demonstrated 
+              what it means to move forward with awareness, discipline, and purpose—truly sailing through adversity.
+            </p>
+            <p>
+              Even before connecting with Skill-Wanderer, Rei was already actively building his own systems 
+              and exploring architecture-driven development. Through mentorship, he continues to refine his 
+              approach—combining technical depth, structured thinking, and long-term vision in the systems he creates:
+            </p>
         </div>
       </div>
     </section>
@@ -43,10 +49,11 @@
     <section class="journey-section">
       <div class="journey-container">
         <h2>🌟 A Personal & Professional Transformation</h2>
-        <p class="section-intro">
-          Since beginning his mentorship journey, Rei has experienced a shift that goes far beyond 
-          technical skills. He has worked hard to improve his mental well-being and reclaim his confidence.
-        </p>
+          <p class="section-intro">
+            Since beginning his mentorship journey, Rei has experienced a transformation that goes beyond 
+            technical development. He has worked consistently to strengthen his mental resilience, rebuild 
+            confidence, and align his personal growth with his engineering path.
+          </p>
 
         <div class="milestones-grid">
           <div class="milestone-card">
