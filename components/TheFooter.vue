@@ -101,7 +101,8 @@ footer {
   font-size: 1.1rem;
   opacity: 0.7;
   transition: all 0.3s ease;
-  animation: heartBeat 2s infinite;
+  animation: heartBeat 1.2s ease-in-out infinite;
+  display: inline-block;
 }
 
 .easter-egg-footer:hover {
@@ -112,10 +113,11 @@ footer {
 
 @keyframes heartBeat {
   0% { transform: scale(1); }
-  14% { transform: scale(1.1); }
-  28% { transform: scale(1); }
-  42% { transform: scale(1.1); }
-  70% { transform: scale(1); }
+  15% { transform: scale(1.3); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.3); }
+  60% { transform: scale(1); }
+  100% { transform: scale(1); }
 }
 
 /* Responsive */

@@ -4,13 +4,7 @@
     <section class="hero">
       <div class="hero-content">
         <div class="admiral-badge" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            <polygon points="12 7 13.45 10.18 16.91 10.64 14.45 13.05 14.91 16.5 12 14.93 9.09 16.5 9.55 13.05 7.09 10.64 10.55 10.18 12 7" fill="currentColor" opacity="0.5" />
-            <circle cx="18" cy="6" r="1" fill="currentColor" opacity="0.6" />
-            <circle cx="6" cy="18" r="0.5" fill="currentColor" opacity="0.4" />
-          </svg>
+          <img src="/orion.webp" alt="Admiral Orion" class="admiral-avatar-img" />
         </div>
         <h1>Meet Admiral Orion</h1>
         <p class="tagline">Your AI-Powered Guide to the Skill-Wanderer Universe</p>
@@ -189,8 +183,19 @@ function askQuestion(question: string) {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
-  color: var(--primary-orange);
   animation: float 3s ease-in-out infinite;
+}
+
+.admiral-avatar-img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 75% 15%;
+  border: 3px solid rgba(255, 107, 53, 0.4);
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.3), 0 0 60px rgba(255, 107, 53, 0.1);
 }
 
 @keyframes float {

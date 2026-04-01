@@ -66,7 +66,7 @@ export const teamMembers: TeamMember[] = [
     avatar: '/learners/Rei-Reltroner.jpeg',
     tagline: 'Designing deterministic systems with architecture-first thinking',
     location: 'Indonesia',
-    title: 'Full-Cycle Solutions Associate (Backend Focus)',
+    title: 'Full-Cycle Solutions Associate',
     github: 'https://github.com/Reltroner',
     linkedin: 'https://www.linkedin.com/in/rei-reltroner-a3a7b8173/',
     website: 'https://www.reltroner.com',
