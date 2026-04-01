@@ -27,12 +27,8 @@
       <!-- Header -->
       <div class="pathfinder-header">
         <div class="flex items-center gap-2">
-          <!-- Admiral shield icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="pathfinder-planet-icon">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-            <polygon points="12 8 13.09 10.26 15.64 10.64 13.82 12.41 14.18 14.96 12 13.77 9.82 14.96 10.18 12.41 8.36 10.64 10.91 10.26 12 8" fill="currentColor" opacity="0.5" />
-          </svg>
+          <!-- Admiral Orion avatar -->
+          <img src="/orion.webp" alt="Admiral Orion" class="pathfinder-header-avatar" />
           <div class="flex flex-col leading-tight">
             <span class="font-bold text-sm pathfinder-title-text">Admiral Orion</span>
             <span class="text-[10px] opacity-50 tracking-wide">FLEET COMMANDER</span>
@@ -71,13 +67,7 @@
         <!-- Welcome screen -->
         <div v-if="history.length === 0" class="pathfinder-welcome">
           <div class="pathfinder-welcome-planet" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              <polygon points="12 7 13.45 10.18 16.91 10.64 14.45 13.05 14.91 16.5 12 14.93 9.09 16.5 9.55 13.05 7.09 10.64 10.55 10.18 12 7" fill="currentColor" opacity="0.5" />
-              <circle cx="18" cy="6" r="1" fill="currentColor" opacity="0.6" />
-              <circle cx="6" cy="18" r="0.5" fill="currentColor" opacity="0.4" />
-            </svg>
+            <img src="/orion.webp" alt="Admiral Orion" class="pathfinder-welcome-avatar" />
           </div>
           <p class="text-sm font-semibold mb-1">Welcome aboard, Cadet!</p>
           <p class="text-xs opacity-60 leading-relaxed">Admiral Orion at your command. Report your inquiries about our mission, principles, learning paths, and fleet operations.</p>
@@ -95,10 +85,7 @@
         >
           <!-- Admiral avatar -->
           <div v-if="msg.role === 'assistant'" class="pathfinder-avatar" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-            </svg>
+            <img src="/orion.webp" alt="Admiral Orion" class="pathfinder-avatar-img" />
           </div>
           <div class="pathfinder-bubble" v-html="formatMessage(getDisplayedContent(msg, i))" />
         </div>
@@ -125,10 +112,7 @@
         <!-- Loading indicator -->
         <div v-if="loading" class="pathfinder-msg pathfinder-msg-assistant">
           <div class="pathfinder-avatar" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-            </svg>
+            <img src="/orion.webp" alt="Admiral Orion" class="pathfinder-avatar-img" />
           </div>
           <div class="pathfinder-bubble pathfinder-typing">
             <span /><span /><span />
@@ -490,8 +474,13 @@ onUnmounted(() => {
   border-bottom: 1px solid rgba(255, 217, 61, 0.08);
   color: #e0e0e0;
 }
-.pathfinder-planet-icon {
-  color: #FF8C42;
+.pathfinder-header-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 75% 15%;
+  border: 1.5px solid rgba(255, 140, 66, 0.5);
   animation: pathfinder-orbit-bob 6s ease-in-out infinite;
 }
 @keyframes pathfinder-orbit-bob {
@@ -544,9 +533,17 @@ onUnmounted(() => {
   color: #b0b0b0;
 }
 .pathfinder-welcome-planet {
-  color: #FF8C42;
   margin-bottom: 0.75rem;
   animation: pathfinder-orbit-bob 5s ease-in-out infinite;
+}
+.pathfinder-welcome-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 75% 15%;
+  border: 2px solid rgba(255, 140, 66, 0.4);
+  box-shadow: 0 0 16px rgba(255, 107, 53, 0.3);
 }
 .pathfinder-suggestions {
   display: flex;
@@ -589,12 +586,15 @@ onUnmounted(() => {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: rgba(255, 107, 53, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FF8C42;
+  overflow: hidden;
   margin-top: 2px;
+}
+.pathfinder-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 75% 15%;
+  border-radius: 50%;
 }
 
 /* Bubbles */
