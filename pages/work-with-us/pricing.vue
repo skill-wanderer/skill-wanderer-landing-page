@@ -292,12 +292,12 @@
             <tbody>
               <tr>
                 <td><span class="package-name">Quick Build — Standard</span></td>
-                <td>Your clean, professional online presence — done right, fast. A focused multi-page site designed to clearly communicate your offer and build trust with potential clients. Clear messaging and structure, mobile-optimized, fast-loading, built to convert visitors into inquiries. We handle all updates for you — no CMS, no tech headaches. <span class="payment-split">Delivered in 2 weeks.</span></td>
+                <td>Your clean, professional online presence — done right, fast. A focused multi-page site designed to clearly communicate your offer and build trust with potential clients. Clear messaging and structure, mobile-optimized, fast-loading, built to convert visitors into inquiries. We handle all updates for you — no CMS, no tech headaches. <span class="payment-split">Discovery &amp; mock-up → 2-week build → QA &amp; launch.</span></td>
                 <td><span class="price-range">$500 – $800</span></td>
               </tr>
               <tr>
                 <td><span class="package-name">Quick Build — Plus</span></td>
-                <td>Everything in Standard, plus the core functionality needed to turn your site into a working acquisition tool. Lead capture flows (forms, onboarding, basic funnels), booking or client intake workflows, light automation or integrations where needed. Clean, custom-built system tailored to your process — no CMS, no plugins, no ongoing maintenance headaches. Can replace simple setups built on platforms like WordPress or Moodle. For more complex systems, see Sprint Packages. <span class="payment-split">Delivered in 2 weeks.</span></td>
+                <td>Everything in Standard, plus the core functionality needed to turn your site into a working acquisition tool. Lead capture flows (forms, onboarding, basic funnels), booking or client intake workflows, light automation or integrations where needed. Clean, custom-built system tailored to your process — no CMS, no plugins, no ongoing maintenance headaches. Can replace simple setups built on platforms like WordPress or Moodle. For more complex systems, see Sprint Packages. <span class="payment-split">Discovery &amp; mock-up → 2-week build → QA &amp; launch.</span></td>
                 <td><span class="price-range">$800 – $1,500</span></td>
               </tr>
             </tbody>
@@ -308,9 +308,17 @@
           <div class="quick-build-detail-block">
             <h4>How It Works</h4>
             <p>
-              Once the brief and requirements are confirmed, the guild builds your project using AI-assisted development.
-              You will receive a completed version within two weeks for your review.
-              After your feedback, we handle revisions, QA, and final deployment with basic documentation.
+              <strong>Phase 1 — Discovery &amp; Mock-up (20% upfront):</strong> We begin with a discovery session to understand your goals,
+              audience, and brand. From there, the guild delivers a mock-up of your site with up to 2 revisions included.
+              This phase ensures alignment before any building begins.
+            </p>
+            <p>
+              <strong>Phase 2 — Build (30% deposit):</strong> Once the mock-up is approved, the 30% deposit kicks off development.
+              The guild builds your project using AI-assisted development over a focused 2-week build cycle.
+            </p>
+            <p>
+              <strong>Phase 3 — QA &amp; Launch (50% final):</strong> After the 2-week build, you receive the completed site for
+              final QA and review. Once you approve, the remaining 50% is due and we take it live — deployment, handover, and done.
             </p>
             <p>
               The guild handles multiple engagements in parallel, so your delivery window is a turnaround guarantee —
@@ -322,7 +330,7 @@
             <span class="info-icon">💳</span>
             <div>
               <span>
-                <strong>Payment is 50% upfront to begin work, 50% on delivery.</strong>
+                <strong>Payment: 20% upfront (discovery &amp; mock-up) → 30% after mock-up approval (build) → 50% on final approval (go live).</strong>
                 Quick Build pricing covers design, development, and deployment. Hosting, domain registration, and any
                 third-party service costs are the client's responsibility. The guild can recommend and help set up
                 appropriate infrastructure, but these are billed separately or paid directly by the client to the provider.
