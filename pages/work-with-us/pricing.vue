@@ -189,11 +189,11 @@
             </thead>
             <tbody>
               <tr>
-                <td>I need a landing page or simple site, fast.</td>
-                <td><span class="package-name">Quick Build Lite or Standard</span> <span class="price-range">($300–$800)</span></td>
+                <td>I need a clean, professional site that communicates my offer clearly.</td>
+                <td><span class="package-name">Quick Build Standard</span> <span class="price-range">($500–$800)</span></td>
               </tr>
               <tr>
-                <td>I want to replace a simple legacy platform with something custom.</td>
+                <td>I need a site with lead capture, booking, or client intake built in.</td>
                 <td><span class="package-name">Quick Build Plus</span> <span class="price-range">($800–$1,500)</span></td>
               </tr>
               <tr>
@@ -247,7 +247,7 @@
       <div class="content">
         <div class="section-header">
           <h2>Quick Build</h2>
-          <p>Small, focused engagements with a one-week turnaround — for ideas that need to ship fast</p>
+          <p>Focused engagements delivered in two weeks — your professional online presence, done right</p>
         </div>
 
         <div class="quick-build-features">
@@ -291,18 +291,13 @@
             </thead>
             <tbody>
               <tr>
-                <td><span class="package-name">Quick Build — Lite</span></td>
-                <td>Single custom landing page, basic contact form or CTA integration, mobile-responsive, deployed and handed over. Apprentice-built, Guild Master-reviewed. <span class="payment-split">Delivered within 2 weeks.</span></td>
-                <td><span class="price-range">$300 – $500</span></td>
-              </tr>
-              <tr>
                 <td><span class="package-name">Quick Build — Standard</span></td>
-                <td>Multi-page custom site or workflow automation. Content updates handled by the guild on request — no CMS needed. Clean codebase with deployment guide. Journeyman-built, Guild Master-reviewed. <span class="payment-split">Delivered within 2 weeks.</span></td>
+                <td>Your clean, professional online presence — done right, fast. A focused multi-page site designed to clearly communicate your offer and build trust with potential clients. Clear messaging and structure, mobile-optimized, fast-loading, built to convert visitors into inquiries. We handle all updates for you — no CMS, no tech headaches. <span class="payment-split">Delivered in 2 weeks.</span></td>
                 <td><span class="price-range">$500 – $800</span></td>
               </tr>
               <tr>
                 <td><span class="package-name">Quick Build — Plus</span></td>
-                <td>Custom web app, API integration, automation pipeline, or replacing simple legacy platforms (WordPress, Moodle, etc.) with modern custom-built alternatives. For complex platform replacements, check our Sprint Packages or Retainer options. Guild Master-led. <span class="payment-split">Delivered within 2 weeks.</span></td>
+                <td>Everything in Standard, plus the core functionality needed to turn your site into a working acquisition tool. Lead capture flows (forms, onboarding, basic funnels), booking or client intake workflows, light automation or integrations where needed. Clean, custom-built system tailored to your process — no CMS, no plugins, no ongoing maintenance headaches. Can replace simple setups built on platforms like WordPress or Moodle. For more complex systems, see Sprint Packages. <span class="payment-split">Delivered in 2 weeks.</span></td>
                 <td><span class="price-range">$800 – $1,500</span></td>
               </tr>
             </tbody>
