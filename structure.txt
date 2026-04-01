@@ -1,40 +1,6 @@
-﻿.dockerignore
-.env
-.env.example
-.github/workflows/docker-build.yml
-.gitignore
-.nuxt/app.config.mjs
-.nuxt/components.d.ts
-.nuxt/dev/index.mjs
-.nuxt/dev/index.mjs.map
-.nuxt/dist/server/client.manifest.json
-.nuxt/dist/server/client.manifest.mjs
-.nuxt/dist/server/server.mjs
-.nuxt/imports.d.ts
-.nuxt/manifest/latest.json
-.nuxt/manifest/meta/4c5c8e59-0a2f-404a-903b-2fee8c2f40d0.json
-.nuxt/manifest/meta/dev.json
-.nuxt/module/@nuxtjs-sitemap.d.ts
-.nuxt/module/nuxt-site-config.d.ts
-.nuxt/nitro.json
-.nuxt/nuxt.d.ts
-.nuxt/nuxt.json
-.nuxt/schema/nuxt.schema.d.ts
-.nuxt/schema/nuxt.schema.json
-.nuxt/tsconfig.json
-.nuxt/tsconfig.server.json
-.nuxt/types/app.config.d.ts
-.nuxt/types/app-defaults.d.ts
-.nuxt/types/build.d.ts
-.nuxt/types/builder-env.d.ts
-.nuxt/types/imports.d.ts
-.nuxt/types/layouts.d.ts
-.nuxt/types/middleware.d.ts
-.nuxt/types/nitro.d.ts
-.nuxt/types/nitro-config.d.ts
-.nuxt/types/nitro-imports.d.ts
-.nuxt/types/nitro-middleware.d.ts
-.nuxt/types/nitro-nuxt.d.ts
+This file previously contained a generated snapshot of the repository tree (including build output and environment-related paths).
+It is intentionally left without such content to avoid tracking generated artifacts and sensitive or noisy paths in version control.
+If documentation of the repository structure is needed, please add it to the project’s documentation (e.g., README or docs/) instead.
 .nuxt/types/nitro-routes.d.ts
 .nuxt/types/plugins.d.ts
 .nuxt/types/schema.d.ts
