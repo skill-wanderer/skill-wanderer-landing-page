@@ -359,12 +359,15 @@ const faqs = ref([
 // Methods
 const handleSubmit = async () => {
   isSubmitting.value = true
-  
+
   try {
-    // Get Firebase Firestore instance
-    const { $firestore } = useNuxtApp()
-    const { collection, addDoc, serverTimestamp } = await import('firebase/firestore')
-    
+    // Dynamic Firebase initialization to ensure runtime config is used (not build-time)
+    const { initializeApp, getApps, getApp } = await import('firebase/app')
+    const { getFirestore, collection, addDoc, serverTimestamp } = await import('firebase/firestore')
+    const config = useRuntimeConfig()
+    const app = getApps().length ? getApp() : initializeApp(config.public.firebase)
+    const firestore = getFirestore(app)
+
     // Prepare the message data
     const messageData = {
       name: form.name,
@@ -375,12 +378,9 @@ const handleSubmit = async () => {
       timestamp: serverTimestamp(),
       status: 'new'
     }
-    
+
     // Save to Firestore
-    await addDoc(collection($firestore, 'contact-messages'), messageData)
-    .catch((error) => {
-      throw error
-    })
+    await addDoc(collection(firestore, 'contact-messages'), messageData)
 
     
     // Show success message
@@ -414,10 +414,13 @@ const handleGuildSubmit = async () => {
   isGuildSubmitting.value = true
 
   try {
-    const { $firestore } = useNuxtApp()
-    const { collection, addDoc, serverTimestamp } = await import('firebase/firestore')
+    const { initializeApp, getApps, getApp } = await import('firebase/app')
+    const { getFirestore, collection, addDoc, serverTimestamp } = await import('firebase/firestore')
+    const config = useRuntimeConfig()
+    const app = getApps().length ? getApp() : initializeApp(config.public.firebase)
+    const firestore = getFirestore(app)
 
-    await addDoc(collection($firestore, 'guild-applications'), {
+    await addDoc(collection(firestore, 'guild-applications'), {
       name: guildForm.name,
       email: guildForm.email,
       skill: guildForm.skill,
