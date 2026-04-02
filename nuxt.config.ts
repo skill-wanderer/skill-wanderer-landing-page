@@ -113,6 +113,7 @@ export default defineNuxtConfig({
     preset: 'cloudflare-pages',
     prerender: {
       crawlLinks: true,
+      failOnError: false,
       routes: [
         '/',
         '/about',
@@ -138,8 +139,8 @@ export default defineNuxtConfig({
     '/principles/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/learners': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
     '/learners/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
-    '/expertise-impact': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
-    '/expertise-impact/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
+    '/work-with-us': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
+    '/work-with-us/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/technology-partner': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/privacy-policy': { sitemap: { changefreq: 'yearly', priority: 0.3 } },
     '/terms-of-service': { sitemap: { changefreq: 'yearly', priority: 0.3 } },
