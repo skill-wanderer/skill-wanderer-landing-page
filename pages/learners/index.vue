@@ -109,6 +109,29 @@
               View Full Story →
             </div>
           </NuxtLink>
+
+          <!-- Vincent Onotu Bello Card -->
+          <NuxtLink to="/learners/vincent-onotu-bello" class="learner-card featured">
+            <div class="first-badge">🪨 The Stoic</div>
+            <div class="learner-avatar">
+              <img src="/learners/Vincent-Onotu-Bello.jpeg" alt="Vincent Onotu Bello" class="avatar-image" />
+            </div>
+            <div class="learner-info">
+              <h3>Vincent Onotu Bello</h3>
+              <p class="learner-realname">Software Development Mentee</p>
+              <p class="learner-tagline">The Stoic</p>
+              <div class="learner-meta">
+                <span>📍 Nigeria</span>
+                <span>💻 Software Development</span>
+              </div>
+              <div class="learner-path">
+                <span class="path-badge">💻 Software Dev Path</span>
+              </div>
+            </div>
+            <div class="view-story">
+              View Full Story →
+            </div>
+          </NuxtLink>
         </div>
 
         <div class="more-learners-notice">
@@ -144,7 +167,7 @@ import { useSEO } from '~/composables/useSEO'
 useSEO({
   title: 'Our Learners - Skill-Wanderer',
   description: 'Meet the learners who are growing with Skill-Wanderer. Discover their stories, progress, and achievements on their learning journeys.',
-  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'Alfredo Salazar', 'Khouja Nasreddine', 'skill-wanderer'],
+  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'Alfredo Salazar', 'Khouja Nasreddine', 'Vincent Onotu Bello', 'skill-wanderer'],
 })
 </script>
 

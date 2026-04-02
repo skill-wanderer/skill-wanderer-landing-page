@@ -109,7 +109,26 @@ export default defineNuxtConfig({
     }
   },
 
+  nitro: {
+    preset: 'cloudflare-pages',
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/about',
+        '/mission',
+        '/contact',
+        '/roadmap',
+        '/principles',
+        '/learners',
+        '/team',
+        '/learning-path',
+      ],
+    },
+  },
+
   routeRules: {
+    '/**': { prerender: true },
     '/': { sitemap: { changefreq: 'weekly', priority: 1.0 } },
     '/about': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/mission': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
