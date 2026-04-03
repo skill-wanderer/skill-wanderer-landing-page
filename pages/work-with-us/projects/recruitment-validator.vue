@@ -325,6 +325,13 @@ useSEO({
   description:
     'An automated recruitment data validation tool built with FastAPI and Python for a Vietnamese EdTech & OPM provider — reducing days of manual Excel checking to minutes with severity-rated mismatch detection.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['data validation tool', 'FastAPI Python', 'recruitment automation', 'EdTech data processing', 'Excel validation automation', 'enterprise data tool'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Our Projects', url: 'https://skill-wanderer.com/work-with-us/our-projects' },
+    { name: 'Recruitment Validator', url: 'https://skill-wanderer.com/work-with-us/projects/recruitment-validator' },
+  ]),
 })
 </script>
 

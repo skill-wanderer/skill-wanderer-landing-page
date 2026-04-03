@@ -378,6 +378,13 @@ useSEO({
   description:
     'A multi-tenant AI platform enabling start-ups to deploy customized chatbots — built with Next.js, Docker Compose on EU cloud, and a defense-in-depth security strategy.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['AI chatbot platform', 'multi-tenant SaaS', 'startup AI development', 'Next.js platform', 'EU cloud deployment', 'custom chatbot solution'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Our Projects', url: 'https://skill-wanderer.com/work-with-us/our-projects' },
+    { name: 'MindyMinds', url: 'https://skill-wanderer.com/work-with-us/projects/mindyminds' },
+  ]),
 })
 </script>
 

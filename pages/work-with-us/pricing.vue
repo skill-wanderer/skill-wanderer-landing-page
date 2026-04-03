@@ -1084,7 +1084,13 @@ useSEO({
   title: 'Pricing | Skill-Wanderer',
   description:
     'Guild sprint packages, retainer models, tech partnerships, and mentorship paths. Transparent pricing built around two-week sprints with a craftsman-led guild model.',
-  image: '/cropped-skill-wanderer-logo-768x256.webp'
+  image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['software development pricing', 'sprint packages', 'tech retainer', 'development partnership pricing', 'transparent pricing', 'guild sprint model'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Pricing', url: 'https://skill-wanderer.com/work-with-us/pricing' },
+  ]),
 })
 </script>
 

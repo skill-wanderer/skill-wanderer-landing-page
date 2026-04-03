@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"useSEO\\\\|useHead\\\\|useSeoMeta\" /d/Github/skill-wanderer-landing-page/pages/work-with-us/*.vue)"
+    ]
+  }
+}
