@@ -129,6 +129,8 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '/expertise-impact': { redirect: { to: '/work-with-us', statusCode: 301 } },
+    '/expertise-impact/**': { redirect: { to: '/work-with-us', statusCode: 301 } },
     '/**': { prerender: true },
     '/': { sitemap: { changefreq: 'weekly', priority: 1.0 } },
     '/about': { sitemap: { changefreq: 'monthly', priority: 0.8 } },

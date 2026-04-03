@@ -26,7 +26,7 @@
         </p>
       </div>
       
-      <p>&copy; 2025 Skill-Wanderer. A tech guild for social good. All resources reinvested for social impact.</p>
+      <p>Licensed under the <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>. Skill-Wanderer is open source.</p>
     </div>
   </footer>
 </template>
