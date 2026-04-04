@@ -42,7 +42,7 @@
 
           <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="project-card project-card--link">
             <div class="project-image-wrapper">
-              <img src="/projects/chanhdao/favicon.svg" alt="ChanhDao.vn" class="project-image project-image--logo" />
+              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" class="project-image" />
             </div>
             <div class="project-info">
               <h3>ChanhDao.vn</h3>

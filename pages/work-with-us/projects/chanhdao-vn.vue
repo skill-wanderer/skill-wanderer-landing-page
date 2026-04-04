@@ -9,7 +9,7 @@
         <div class="status-badge">
           <span>Active Development</span>
         </div>
-        <img src="/projects/chanhdao/favicon.svg" alt="ChanhDao.vn Logo" class="hero-logo" />
+        <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn Logo" class="hero-logo" />
         <h1>ChanhDao.vn</h1>
         <p class="tagline">Digitalizing Buddhism for Vietnamese Learners</p>
         <div class="hero-meta">
