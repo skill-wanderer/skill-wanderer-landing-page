@@ -9,7 +9,7 @@
         <div class="status-badge">
           <span>Active Development</span>
         </div>
-        <img src="/projects/chanhdao/favicon.svg" alt="ChanhDao.vn Logo" class="hero-logo" />
+        <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn Logo" class="hero-logo" />
         <h1>ChanhDao.vn</h1>
         <p class="tagline">Digitalizing Buddhism for Vietnamese Learners</p>
         <div class="hero-meta">
@@ -527,6 +527,13 @@ useSEO({
   description:
     'A non-profit, open-source platform to digitalize Buddhism and make it accessible to Vietnamese communities worldwide through AI-powered content and interactive learning.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['Buddhism digital platform', 'Vietnamese Buddhist education', 'open-source non-profit', 'AI-powered learning', 'religious education technology'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Our Projects', url: 'https://skill-wanderer.com/work-with-us/our-projects' },
+    { name: 'ChanhDao.vn', url: 'https://skill-wanderer.com/work-with-us/projects/chanhdao-vn' },
+  ]),
 })
 </script>
 

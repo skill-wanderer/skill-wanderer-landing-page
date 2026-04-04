@@ -42,7 +42,7 @@
 
           <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="project-card project-card--link">
             <div class="project-image-wrapper">
-              <img src="/projects/chanhdao/favicon.svg" alt="ChanhDao.vn" class="project-image project-image--logo" />
+              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" class="project-image" />
             </div>
             <div class="project-info">
               <h3>ChanhDao.vn</h3>
@@ -305,7 +305,13 @@ useSEO({
   title: 'Our Projects | Skill-Wanderer',
   description:
     'Explore the real-world projects the Skill-Wanderer guild has built—from non-profits and start-ups to enterprise solutions and our own guild infrastructure.',
-  image: '/cropped-skill-wanderer-logo-768x256.webp'
+  image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['software portfolio', 'web development projects', 'non-profit technology', 'startup projects', 'guild project showcase', 'case studies'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Our Projects', url: 'https://skill-wanderer.com/work-with-us/our-projects' },
+  ]),
 })
 </script>
 

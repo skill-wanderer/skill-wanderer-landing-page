@@ -284,6 +284,13 @@ useSEO({
   description:
     'A mobile game digitalization project built with Flutter, Flame Engine, Firebase, and Keycloak — developed by a Guild Master and 2 mentees who went on to join the partner company.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['Flutter game development', 'Flame Engine', 'mobile game project', 'game digitalization', 'startup mobile development', 'Firebase game backend'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Our Projects', url: 'https://skill-wanderer.com/work-with-us/our-projects' },
+    { name: 'MindyPlay', url: 'https://skill-wanderer.com/work-with-us/projects/mindyplay' },
+  ]),
 })
 </script>
 

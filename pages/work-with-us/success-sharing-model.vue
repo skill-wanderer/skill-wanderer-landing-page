@@ -267,7 +267,13 @@ useSEO({
   title: 'Success Sharing Model | Skill-Wanderer',
   description:
     'Our collaboration model is based on shared progress rather than fixed delivery contracts. Iterative sprints, client ownership, and systems designed for long-term growth.',
-  image: '/cropped-skill-wanderer-logo-768x256.webp'
+  image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['success sharing model', 'agile sprint collaboration', 'iterative development', 'shared risk partnership', 'client ownership model', 'software delivery model'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Success Sharing Model', url: 'https://skill-wanderer.com/work-with-us/success-sharing-model' },
+  ]),
 })
 </script>
 

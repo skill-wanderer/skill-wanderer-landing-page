@@ -378,7 +378,15 @@ useSEO({
   title: 'Engage the Guild | Skill-Wanderer',
   description:
     'A tech guild delivering real-world technology projects. Every guild engagement funds free education. Learn about our social enterprise model and partnership approach.',
-  image: '/cropped-skill-wanderer-logo-768x256.webp'
+  image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['tech guild', 'software development partner', 'social enterprise technology', 'guild engagement', 'custom software', 'hire developers', 'technology partnership'],
+  structuredData: [
+    createOrganizationSchema(),
+    createBreadcrumbSchema([
+      { name: 'Home', url: 'https://skill-wanderer.com/' },
+      { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    ]),
+  ],
 })
 </script>
 

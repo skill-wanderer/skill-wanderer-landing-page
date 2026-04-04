@@ -130,7 +130,13 @@ useSEO({
   title: 'Who We Work With | Skill-Wanderer',
   description:
     'We collaborate with education organizations, startups, businesses, and independent builders. Find out if the Skill-Wanderer guild is the right partner for you.',
-  image: '/cropped-skill-wanderer-logo-768x256.webp'
+  image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['education technology partner', 'startup software partner', 'non-profit web development', 'small business technology', 'guild collaboration'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Who We Work With', url: 'https://skill-wanderer.com/work-with-us/who-we-work-with' },
+  ]),
 })
 </script>
 

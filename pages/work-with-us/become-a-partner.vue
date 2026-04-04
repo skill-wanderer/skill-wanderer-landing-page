@@ -196,7 +196,13 @@ useSEO({
   title: 'Become a Technology Partner | Skill-Wanderer',
   description:
     'Not outsourcing—true guild partnership. We share success and risks with you, require less upfront cost, and deliver through our global guild of craftspeople.',
-  image: '/cropped-skill-wanderer-logo-768x256.webp'
+  image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['technology partner', 'guild partnership', 'software development partnership', 'shared success model', 'tech collaboration', 'startup technology partner'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Become a Partner', url: 'https://skill-wanderer.com/work-with-us/become-a-partner' },
+  ]),
 })
 </script>
 

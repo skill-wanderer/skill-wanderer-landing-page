@@ -321,6 +321,13 @@ useSEO({
   description:
     'How Skill-Wanderer designed and built the official website for WM Smile Generation Uganda — a non-profit transforming lives through education, environmental conservation, and refugee child protection.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['non-profit website development', 'Uganda NGO website', 'education charity website', 'refugee child protection', 'guild project case study'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'Our Projects', url: 'https://skill-wanderer.com/work-with-us/our-projects' },
+    { name: 'WM Smile Generation Uganda', url: 'https://skill-wanderer.com/work-with-us/projects/wm-smile-generation-uganda' },
+  ]),
 })
 </script>
 

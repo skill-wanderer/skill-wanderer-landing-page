@@ -570,7 +570,13 @@ useSEO({
   title: 'What We Build | Skill-Wanderer',
   description:
     'Custom software built by the Skill-Wanderer Guild. Websites, web apps, e-commerce, EdTech, AI applications, mobile apps, APIs, automation, and legacy system replacement.',
-  image: '/cropped-skill-wanderer-logo-768x256.webp'
+  image: '/cropped-skill-wanderer-logo-768x256.webp',
+  keywords: ['custom software development', 'web application development', 'e-commerce development', 'EdTech platform', 'AI application', 'mobile app development', 'API development', 'legacy system replacement'],
+  structuredData: createBreadcrumbSchema([
+    { name: 'Home', url: 'https://skill-wanderer.com/' },
+    { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
+    { name: 'What We Build', url: 'https://skill-wanderer.com/work-with-us/what-we-build' },
+  ]),
 })
 </script>
 
