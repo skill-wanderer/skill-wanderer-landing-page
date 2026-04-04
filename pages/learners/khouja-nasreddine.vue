@@ -49,7 +49,7 @@
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon">🛡️</div>
+            <div class="milestone-icon"><Shield :size="24" color="white" :stroke-width="2" /></div>
             <h3>Unbreakable Resilience</h3>
             <p>
               Sickness? He codes through it. Holidays? He's still pushing commits. Khouja
@@ -59,7 +59,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">⚡</div>
+            <div class="milestone-icon"><Zap :size="24" color="white" :stroke-width="2" /></div>
             <h3>Lightning-Fast Development</h3>
             <p>
               Khouja's <strong>speed of development is extraordinary</strong>. He doesn't just complete tasks —
@@ -69,7 +69,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">🧭</div>
+            <div class="milestone-icon"><Compass :size="24" color="white" :stroke-width="2" /></div>
             <h3>Self-Guided Navigator</h3>
             <p>
               He requires <strong>very little guidance</strong>. Point him in a direction and he'll find the
@@ -79,7 +79,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">🔨</div>
+            <div class="milestone-icon"><Hammer :size="24" color="white" :stroke-width="2" /></div>
             <h3>Blockage Breaker</h3>
             <p>
               Where others see blockers, Khouja sees puzzles to solve. <strong>Never will he let any blockage
@@ -103,7 +103,7 @@
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon">🎮</span>
+          <span class="path-icon"><Gamepad2 :size="24" :stroke-width="2" /></span>
           <span class="path-text">Completed: Mobile Game Dev Path</span>
         </div>
 
@@ -137,6 +137,7 @@
 </template>
 
 <script setup lang="ts">
+import { Compass, Gamepad2, Hammer, Shield, Zap } from 'lucide-vue-next'
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({

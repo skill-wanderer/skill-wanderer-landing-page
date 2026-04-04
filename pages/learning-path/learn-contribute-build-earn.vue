@@ -39,9 +39,9 @@
           <p class="card-subheader">Mentorship is earned through effort, not bought with tuition.</p>
           <p>Real growth requires commitment. Instead of charging fixed tuition, we let you choose how to contribute — and every option is a chance to grow:</p>
           <ul class="contribution-list">
-            <li class="contribution-preferred"><span class="list-icon">🛠</span> <strong>Learn by building</strong> real features for the guild</li>
-            <li class="contribution-preferred"><span class="list-icon">🤝</span> <strong>Learn by teaching</strong> — help and grow the community</li>
-            <li class="contribution-secondary"><span class="list-icon">💰</span> Support financially <span class="optional-tag">(optional)</span></li>
+            <li class="contribution-preferred"><span class="list-icon"><Wrench :size="16" :stroke-width="2" /></span> <strong>Learn by building</strong> real features for the guild</li>
+            <li class="contribution-preferred"><span class="list-icon"><Handshake :size="16" :stroke-width="2" /></span> <strong>Learn by teaching</strong> — help and grow the community</li>
+            <li class="contribution-secondary"><span class="list-icon"><Coins :size="16" :stroke-width="2" /></span> Support financially <span class="optional-tag">(optional)</span></li>
           </ul>
           <p class="card-emphasis"><strong class="zero-tuition">Zero tuition.</strong> Just show up and contribute.</p>
         </article>
@@ -109,19 +109,19 @@
 
       <div class="why-grid">
         <div class="why-card">
-          <span class="why-icon">⚖️</span>
+          <span class="why-icon"><Scale :size="24" :stroke-width="2" /></span>
           <p>Free to start, but not free to stay passive</p>
         </div>
         <div class="why-card">
-          <span class="why-icon">🔄</span>
+          <span class="why-icon"><RotateCw :size="24" :stroke-width="2" /></span>
           <p>Contribution replaces tuition</p>
         </div>
         <div class="why-card">
-          <span class="why-icon">🛠</span>
+          <span class="why-icon"><Wrench :size="24" :stroke-width="2" /></span>
           <p>Real work replaces fake projects</p>
         </div>
         <div class="why-card">
-          <span class="why-icon">📈</span>
+          <span class="why-icon"><TrendingUp :size="24" :stroke-width="2" /></span>
           <p>Growth is earned, not given</p>
         </div>
       </div>
@@ -172,6 +172,8 @@
 </template>
 
 <script setup lang="ts">
+import { Coins, Handshake, RotateCw, Scale, TrendingUp, Wrench } from 'lucide-vue-next'
+
 useSEO({
   title: 'Learn. Contribute. Build. Earn. | Skill-Wanderer Education Philosophy',
   description: 'Skill-Wanderer\'s education philosophy: start for free, contribute to unlock mentorship, build on real projects, earn through growth. A tech guild built for builders.',

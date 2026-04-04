@@ -50,7 +50,7 @@
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon">🗺️</div>
+            <div class="milestone-icon"><MapIcon :size="24" color="white" :stroke-width="2" /></div>
             <h3>Into Uncharted Territory</h3>
             <p>
               Most of the time, the wild territory ended up biting him — things would break,
@@ -60,7 +60,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">⚡</div>
+            <div class="milestone-icon"><Zap :size="24" color="white" :stroke-width="2" /></div>
             <h3>Jaw-Dropping Speed</h3>
             <p>
               Prabhat finished the entire DevOps mentorship in <strong>under 2 months</strong> — a
@@ -83,7 +83,7 @@
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon">⚙️</span>
+          <span class="path-icon"><Settings :size="24" :stroke-width="2" /></span>
           <span class="path-text">Completed: DevOps Path</span>
         </div>
 
@@ -116,6 +116,7 @@
 </template>
 
 <script setup lang="ts">
+import { MapIcon, Settings, Zap } from 'lucide-vue-next'
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({

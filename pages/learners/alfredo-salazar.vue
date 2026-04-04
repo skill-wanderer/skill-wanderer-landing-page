@@ -50,7 +50,7 @@
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon">🗣️</div>
+            <div class="milestone-icon"><MessageSquare :size="24" color="white" :stroke-width="2" /></div>
             <h3>Master of Words</h3>
             <p>
               Alfredo has a rare gift — the ability to <strong>articulate complex ideas</strong> with remarkable
@@ -60,7 +60,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">🦅</div>
+            <div class="milestone-icon"><Bird :size="24" color="white" :stroke-width="2" /></div>
             <h3>Fiercely Independent</h3>
             <p>
               While many learners rely on guidance at every turn, Alfredo <strong>blazes his own trail</strong>.
@@ -70,7 +70,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">🔥</div>
+            <div class="milestone-icon"><Flame :size="24" color="white" :stroke-width="2" /></div>
             <h3>Relentless Drive</h3>
             <p>
               The fire in Alfredo isn't just a spark — it's a <strong>sustained blaze</strong>. He brings
@@ -80,7 +80,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">💬</div>
+            <div class="milestone-icon"><MessageCircle :size="24" color="white" :stroke-width="2" /></div>
             <h3>Never Short on Words</h3>
             <p>
               Alfredo is never one to stay silent. He <strong>always has something to contribute</strong>,
@@ -104,7 +104,7 @@
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon">🎮</span>
+          <span class="path-icon"><Gamepad2 :size="24" :stroke-width="2" /></span>
           <span class="path-text">Completed: Mobile Game Dev Path</span>
         </div>
 
@@ -138,6 +138,7 @@
 </template>
 
 <script setup lang="ts">
+import { Bird, Flame, Gamepad2, MessageCircle, MessageSquare } from 'lucide-vue-next'
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({

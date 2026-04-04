@@ -10,6 +10,10 @@
       <span class="launch-badge">Real Work. Real Impact. Real Learning.</span>
     </section>
 
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SHIPPED WORK — Case Study Cards                -->
+    <!-- ═══════════════════════════════════════════════ -->
+
     <!-- Non-Profit Section -->
     <section class="projects-section">
       <div class="content">
@@ -19,43 +23,48 @@
           <p>We apply our skills where they matter most—supporting missions that serve communities for free.</p>
         </div>
 
-        <div class="projects-grid">
-          <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="project-card project-card--link">
-            <div class="project-image-wrapper">
-              <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" class="project-image" />
-              <img src="/projects/wmsmile/og-image.jpeg" alt="WM Smile Generation Uganda Logo" class="project-logo-overlay" />
+        <div class="case-study-grid">
+          <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" class="case-study-image" />
+              <span class="status-badge status-badge--maintenance">On Maintenance</span>
+              <img src="/projects/wmsmile/og-image.jpeg" alt="WM Smile Generation Uganda Logo" class="case-study-logo" />
             </div>
-            <div class="project-info">
+            <div class="case-study-body">
               <h3>WM Smile Generation Uganda</h3>
-              <p>
-                A website built for WM Smile Generation Uganda—a non-profit dedicated to supporting
-                communities through healthcare, education, and sustainable development in Uganda.
+              <p class="case-study-result">
+                Built a full website for a Ugandan non-profit—giving them a digital presence to attract donors,
+                share impact stories, and coordinate community healthcare and education programmes.
               </p>
-              <div class="project-tags">
-                <span class="tag">Website</span>
-                <span class="tag">Non-Profit</span>
-                <span class="tag">Uganda</span>
+              <div class="case-study-stack">
+                <span class="stack-tag">Nuxt 3</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">Tailwind</span>
+                <span class="stack-tag">Kubernetes</span>
               </div>
-              <span class="view-detail">View Project Detail →</span>
+              <span class="case-study-link">View Case Study →</span>
             </div>
           </NuxtLink>
 
-          <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="project-card project-card--link">
-            <div class="project-image-wrapper">
-              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" class="project-image" />
+          <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" class="case-study-image" />
+              <span class="status-badge status-badge--active">Active Development</span>
             </div>
-            <div class="project-info">
+            <div class="case-study-body">
               <h3>ChanhDao.vn</h3>
-              <p>
-                A non-profit, open-source platform digitalizing Buddhism for Vietnamese learners—162 lessons,
-                AI-powered Q&A, and structured learning paths, all running on a self-hosted Kubernetes cluster.
+              <p class="case-study-result">
+                Digitalised 162 Buddhist lessons with AI-powered Q&A and structured learning paths for Vietnamese
+                learners—running entirely on a self-hosted Kubernetes cluster with zero hosting cost to the client.
               </p>
-              <div class="project-tags">
-                <span class="tag">AI Platform</span>
-                <span class="tag">Buddhism</span>
-                <span class="tag">Vietnam</span>
+              <div class="case-study-stack">
+                <span class="stack-tag">Nuxt 3</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">OpenAI</span>
+                <span class="stack-tag">Kubernetes</span>
+                <span class="stack-tag">PostgreSQL</span>
               </div>
-              <span class="view-detail">View Project Detail →</span>
+              <span class="case-study-link">View Case Study →</span>
             </div>
           </NuxtLink>
         </div>
@@ -71,43 +80,47 @@
           <p>We partner with ambitious start-ups to turn bold ideas into real products—sharing the journey from zero to launch.</p>
         </div>
 
-        <div class="projects-grid">
-          <NuxtLink to="/work-with-us/projects/mindyminds" class="project-card project-card--link">
-            <div class="project-image-wrapper">
-              <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds" class="project-image project-image--contain" />
+        <div class="case-study-grid">
+          <NuxtLink to="/work-with-us/projects/mindyminds" class="case-study-card">
+            <div class="case-study-hero case-study-hero--contain">
+              <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds" class="case-study-image" />
+              <span class="status-badge status-badge--active">Active Development</span>
             </div>
-            <div class="project-info">
+            <div class="case-study-body">
               <h3>MindyMinds</h3>
-              <p>
-                A multi-tenant AI platform for start-ups—enabling customizable AI chatbots per client, built with
-                Next.js, hosted via Docker Compose on an EU cloud server with a defense-in-depth security strategy.
-                MVP developed from start to finish in under 3 months.
+              <p class="case-study-result">
+                Delivered a multi-tenant AI chatbot platform from concept to production in under 3 months—enabling
+                the client to onboard multiple B2B customers with customisable AI assistants and a defence-in-depth security model.
               </p>
-              <div class="project-tags">
-                <span class="tag">AI Platform</span>
-                <span class="tag">Multi-Tenant</span>
-                <span class="tag">Start-up</span>
+              <div class="case-study-stack">
+                <span class="stack-tag">Next.js</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">OpenAI</span>
+                <span class="stack-tag">Docker</span>
+                <span class="stack-tag">PostgreSQL</span>
               </div>
-              <span class="view-detail">View Project Detail →</span>
+              <span class="case-study-link">View Case Study →</span>
             </div>
           </NuxtLink>
 
-          <NuxtLink to="/work-with-us/projects/mindyplay" class="project-card project-card--link">
-            <div class="project-image-wrapper">
-              <img src="/projects/mindyplay/mindyplay-logo.jpg" alt="MindyPlay" class="project-image project-image--contain" />
+          <NuxtLink to="/work-with-us/projects/mindyplay" class="case-study-card">
+            <div class="case-study-hero case-study-hero--contain">
+              <img src="/projects/mindyplay/mindyplay-logo.jpg" alt="MindyPlay" class="case-study-image" />
+              <span class="status-badge status-badge--active">Active Development</span>
             </div>
-            <div class="project-info">
+            <div class="case-study-body">
               <h3>MindyPlay</h3>
-              <p>
-                A mobile game digitalization project built with Flutter and Flame Engine—turning a client's game
-                concept into an interactive mobile experience, powered by Firebase and Keycloak.
+              <p class="case-study-result">
+                Turned a client's board game concept into an interactive mobile experience—built with Flutter
+                and Flame Engine, powered by Firebase for real-time multiplayer and Keycloak for secure authentication.
               </p>
-              <div class="project-tags">
-                <span class="tag">Mobile Games</span>
-                <span class="tag">Flutter</span>
-                <span class="tag">Start-up</span>
+              <div class="case-study-stack">
+                <span class="stack-tag">Flutter</span>
+                <span class="stack-tag">Flame Engine</span>
+                <span class="stack-tag">Firebase</span>
+                <span class="stack-tag">Keycloak</span>
               </div>
-              <span class="view-detail">View Project Detail →</span>
+              <span class="case-study-link">View Case Study →</span>
             </div>
           </NuxtLink>
         </div>
@@ -123,39 +136,46 @@
           <p>We tackle complex operational challenges for large organisations, delivering automation and tools that scale.</p>
         </div>
 
-        <div class="projects-grid projects-grid--single">
-          <NuxtLink to="/work-with-us/projects/recruitment-validator" class="project-card project-card--link">
-            <div class="project-image-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">📊</span>
-                <span class="placeholder-text">Recruitment Validator</span>
+        <div class="case-study-grid case-study-grid--single">
+          <NuxtLink to="/work-with-us/projects/recruitment-validator" class="case-study-card">
+            <div class="case-study-hero case-study-hero--placeholder">
+              <div class="hero-placeholder-inner">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-placeholder-icon">
+                  <rect x="6" y="8" width="36" height="32" rx="4" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M6 16h36" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M14 24h8M14 30h12M14 36h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="34" cy="30" r="6" stroke="currentColor" stroke-width="2"/>
+                  <path d="M32 30l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </div>
+              <span class="status-badge status-badge--shipped">Shipped</span>
             </div>
-            <div class="project-info">
+            <div class="case-study-body">
               <h3>Recruitment Validator</h3>
-              <p>
-                A recruitment data validation tool built for a Vietnamese EdTech & OPM provider—automating
-                mismatch detection across hundreds to thousands of applications, reducing days of manual
-                Excel checking to minutes with severity-rated alerts.
+              <p class="case-study-result">
+                Automated mismatch detection across hundreds to thousands of recruitment applications for a Vietnamese
+                EdTech provider—reducing days of manual Excel checking to minutes with severity-rated alerts and detailed reports.
               </p>
-              <div class="project-tags">
-                <span class="tag">FastAPI</span>
-                <span class="tag">Python</span>
-                <span class="tag">Automation</span>
-                <span class="tag">Enterprise</span>
+              <div class="case-study-stack">
+                <span class="stack-tag">FastAPI</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">Pandas</span>
+                <span class="stack-tag">Docker</span>
               </div>
-              <span class="view-detail">View Project Detail →</span>
+              <span class="case-study-link">View Case Study →</span>
             </div>
           </NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- Skill-Wanderer Platform Section -->
-    <section class="projects-section alt-bg">
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- GUILD PLATFORM ROADMAP — Simpler Cards         -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="roadmap-section">
       <div class="content">
         <div class="section-header">
-          <div class="section-tag">Skill-Wanderer Guild</div>
+          <div class="section-tag">Guild Platform</div>
           <h2>What We Are Building</h2>
           <p>
             Skill-Wanderer is not just a product—it is our mission made tangible. Every module below is being
@@ -163,122 +183,101 @@
           </p>
         </div>
 
-        <div class="platform-grid">
-          <div class="platform-card">
-            <div class="project-image-placeholder platform-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">🏠</span>
-                <span class="placeholder-text">Landing Page</span>
+        <div class="roadmap-grid">
+          <div class="roadmap-card roadmap-card--live">
+            <div class="roadmap-icon"><Home :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-body">
+              <div class="roadmap-header">
+                <h4>This Landing Page</h4>
+                <span class="roadmap-status roadmap-status--live">Live</span>
               </div>
-            </div>
-            <div class="project-info">
-              <h3>This Landing Page</h3>
               <p>The public face of the guild—communicating our mission, model, and community to the world.</p>
-              <div class="project-tags">
-                <span class="tag">Nuxt</span>
-                <span class="tag">Live</span>
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">Nuxt</span>
               </div>
             </div>
           </div>
 
-          <div class="platform-card">
-            <div class="project-image-placeholder platform-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">📚</span>
-                <span class="placeholder-text">LMS</span>
+          <div class="roadmap-card">
+            <div class="roadmap-icon"><Library :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-body">
+              <div class="roadmap-header">
+                <h4>LMS</h4>
+                <span class="roadmap-status">In Progress</span>
               </div>
-            </div>
-            <div class="project-info">
-              <h3>LMS</h3>
               <p>A Learning Management System purpose-built for structured, guild-driven education at scale.</p>
-              <div class="project-tags">
-                <span class="tag">Education</span>
-                <span class="tag">In Progress</span>
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">Education</span>
               </div>
             </div>
           </div>
 
-          <div class="platform-card">
-            <div class="project-image-placeholder platform-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">✍️</span>
-                <span class="placeholder-text">Blog System</span>
+          <div class="roadmap-card">
+            <div class="roadmap-icon"><PenLine :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-body">
+              <div class="roadmap-header">
+                <h4>Blog System</h4>
+                <span class="roadmap-status">In Progress</span>
               </div>
-            </div>
-            <div class="project-info">
-              <h3>Blog System</h3>
-              <p>A publishing system for knowledge sharing—enabling guild members and mentors to document their journeys.</p>
-              <div class="project-tags">
-                <span class="tag">Content</span>
-                <span class="tag">In Progress</span>
+              <p>A publishing system for knowledge sharing—enabling guild members to document their journeys.</p>
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">Content</span>
               </div>
             </div>
           </div>
 
-          <div class="platform-card">
-            <div class="project-image-placeholder platform-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">🧭</span>
-                <span class="placeholder-text">PathFinder AI</span>
+          <div class="roadmap-card">
+            <div class="roadmap-icon"><Compass :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-body">
+              <div class="roadmap-header">
+                <h4>PathFinder AI Fleet</h4>
+                <span class="roadmap-status">In Progress</span>
               </div>
-            </div>
-            <div class="project-info">
-              <h3>PathFinder AI Fleet</h3>
-              <p>A fleet of AI agents that guide guild members through personalised learning paths based on their goals and progress.</p>
-              <div class="project-tags">
-                <span class="tag">AI</span>
-                <span class="tag">In Progress</span>
+              <p>AI agents guiding guild members through personalised learning paths based on goals and progress.</p>
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">AI</span>
               </div>
             </div>
           </div>
 
-          <div class="platform-card">
-            <div class="project-image-placeholder platform-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">🛠️</span>
-                <span class="placeholder-text">Admin & Teacher Panel</span>
+          <div class="roadmap-card">
+            <div class="roadmap-icon"><Wrench :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-body">
+              <div class="roadmap-header">
+                <h4>Admin & Teacher Panel</h4>
+                <span class="roadmap-status">In Progress</span>
               </div>
-            </div>
-            <div class="project-info">
-              <h3>Admin & Teacher Panel</h3>
-              <p>A control centre for administrators and mentors to manage content, guild members, and guild operations.</p>
-              <div class="project-tags">
-                <span class="tag">Dashboard</span>
-                <span class="tag">In Progress</span>
+              <p>A control centre for administrators and mentors to manage content and guild operations.</p>
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">Dashboard</span>
               </div>
             </div>
           </div>
 
-          <div class="platform-card">
-            <div class="project-image-placeholder platform-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">💬</span>
-                <span class="placeholder-text">Communication Module</span>
+          <div class="roadmap-card">
+            <div class="roadmap-icon"><MessageCircle :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-body">
+              <div class="roadmap-header">
+                <h4>Communication Module</h4>
+                <span class="roadmap-status">In Progress</span>
               </div>
-            </div>
-            <div class="project-info">
-              <h3>Communication Module</h3>
-              <p>Real-time messaging and notifications connecting guild members, mentors, and the wider Skill-Wanderer community.</p>
-              <div class="project-tags">
-                <span class="tag">Messaging</span>
-                <span class="tag">In Progress</span>
+              <p>Real-time messaging and notifications connecting guild members, mentors, and the community.</p>
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">Messaging</span>
               </div>
             </div>
           </div>
 
-          <div class="platform-card">
-            <div class="project-image-placeholder platform-placeholder">
-              <div class="placeholder-inner">
-                <span class="placeholder-icon">🔐</span>
-                <span class="placeholder-text">Authorization Module</span>
+          <div class="roadmap-card">
+            <div class="roadmap-icon"><Lock :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-body">
+              <div class="roadmap-header">
+                <h4>Authorization Module</h4>
+                <span class="roadmap-status">In Progress</span>
               </div>
-            </div>
-            <div class="project-info">
-              <h3>Authorization Module</h3>
-              <p>A robust identity and access management layer ensuring secure, role-based access across all guild modules.</p>
-              <div class="project-tags">
-                <span class="tag">Security</span>
-                <span class="tag">In Progress</span>
+              <p>Robust identity and access management ensuring secure, role-based access across all guild modules.</p>
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">Security</span>
               </div>
             </div>
           </div>
@@ -301,6 +300,7 @@
 </template>
 
 <script setup lang="ts">
+import { Compass, Home, Library, Lock, MessageCircle, PenLine, Wrench } from 'lucide-vue-next'
 useSEO({
   title: 'Our Projects | Skill-Wanderer',
   description:
@@ -417,201 +417,283 @@ useSEO({
   background: var(--darker-bg);
 }
 
-/* ── Project Cards ─────────────────────────────────── */
-.projects-grid {
+/* ═══════════════════════════════════════════════════ */
+/* CASE STUDY CARDS — Shipped Project Premium Cards   */
+/* ═══════════════════════════════════════════════════ */
+.case-study-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 36px;
 }
 
-.projects-grid--single {
-  grid-template-columns: minmax(340px, 600px);
+.case-study-grid--single {
+  grid-template-columns: minmax(440px, 640px);
   justify-content: center;
 }
 
-.project-card {
+.case-study-card {
   background: var(--card-bg);
   border: 1px solid rgba(255, 107, 53, 0.15);
   border-radius: 20px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.35s ease;
   display: flex;
   flex-direction: column;
-}
-
-.project-card:hover {
-  border-color: rgba(255, 107, 53, 0.4);
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
-  background: var(--card-hover);
-}
-
-.project-card--link {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
 
-.view-detail {
-  display: inline-block;
-  color: var(--primary-orange);
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-top: 12px;
-  transition: all 0.3s ease;
+.case-study-card:hover {
+  border-color: rgba(255, 107, 53, 0.5);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
 }
 
-.project-card--link:hover .view-detail {
-  color: #FFD93D;
-  transform: translateX(4px);
-}
-
-/* ── Project Image ─────────────────────────────────── */
-.project-image-wrapper {
+/* Hero Image */
+.case-study-hero {
   width: 100%;
-  height: 180px;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.03) 100%);
-  border-bottom: 1px solid rgba(255, 107, 53, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+  height: 260px;
   overflow: hidden;
   position: relative;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08) 0%, rgba(255, 107, 53, 0.02) 100%);
 }
 
-.project-image {
+.case-study-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
-.project-card--link:hover .project-image {
-  transform: scale(1.05);
+.case-study-card:hover .case-study-image {
+  transform: scale(1.06);
 }
 
-.project-image--logo {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-
-.project-image--contain {
+.case-study-hero--contain .case-study-image {
   object-fit: contain;
   background: #0d0b2e;
 }
 
-.project-logo-overlay {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(255, 107, 53, 0.5);
-  background: var(--darker-bg);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* ── Image Placeholder ─────────────────────────────── */
-.project-image-placeholder {
-  width: 100%;
-  height: 180px;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.03) 100%);
-  border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+.case-study-hero--placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.03) 100%);
 }
 
-.placeholder-inner {
+.hero-placeholder-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.placeholder-icon {
-  font-size: 3rem;
-}
-
-.placeholder-text {
+.hero-placeholder-icon {
+  width: 80px;
+  height: 80px;
   color: var(--primary-orange);
-  opacity: 0.45;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  opacity: 0.5;
 }
 
-/* ── Project Info ──────────────────────────────────── */
-.project-info {
-  padding: 28px;
+/* Status Badge */
+.status-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.status-badge--shipped {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  box-shadow: 0 2px 12px rgba(34, 197, 94, 0.3);
+}
+
+.status-badge--active {
+  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  color: white;
+  box-shadow: 0 2px 12px rgba(245, 158, 11, 0.3);
+}
+
+.status-badge--maintenance {
+  background: linear-gradient(135deg, #64748b, #475569);
+  color: white;
+  box-shadow: 0 2px 12px rgba(100, 116, 139, 0.3);
+}
+
+/* Logo Overlay */
+.case-study-logo {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 107, 53, 0.5);
+  background: var(--darker-bg);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+/* Card Body */
+.case-study-body {
+  padding: 30px 28px 28px;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.project-info h3 {
-  font-size: 1.25rem;
+.case-study-body h3 {
+  font-size: 1.4rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.project-info p {
-  opacity: 0.82;
-  font-size: 0.95rem;
-  line-height: 1.7;
+.case-study-result {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  opacity: 0.85;
   margin-bottom: 20px;
   flex: 1;
 }
 
-.project-tags {
+.case-study-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: auto;
+  margin-bottom: 18px;
 }
 
-.tag {
+.stack-tag {
   background: rgba(255, 107, 53, 0.1);
   border: 1px solid rgba(255, 107, 53, 0.25);
   color: var(--primary-orange);
-  padding: 4px 13px;
+  padding: 5px 14px;
   border-radius: 50px;
   font-size: 0.78rem;
   font-weight: 600;
 }
 
-/* ── Platform Grid ─────────────────────────────────── */
-.platform-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 28px;
-}
-
-.platform-card {
-  background: var(--card-bg);
-  border: 1px solid rgba(255, 107, 53, 0.15);
-  border-radius: 20px;
-  overflow: hidden;
+.case-study-link {
+  display: inline-block;
+  color: var(--primary-orange);
+  font-size: 0.95rem;
+  font-weight: 600;
   transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.case-study-card:hover .case-study-link {
+  color: #FFD93D;
+  transform: translateX(4px);
+}
+
+/* ═══════════════════════════════════════════════════ */
+/* ROADMAP — Simpler Internal Module Cards            */
+/* ═══════════════════════════════════════════════════ */
+.roadmap-section {
+  padding: 90px 20px;
+  background: var(--darker-bg);
+  border-top: 1px solid rgba(255, 107, 53, 0.08);
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.roadmap-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 20px 22px;
   display: flex;
-  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  transition: all 0.25s ease;
 }
 
-.platform-card:hover {
-  border-color: rgba(255, 107, 53, 0.4);
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
-  background: var(--card-hover);
+.roadmap-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
-.platform-placeholder {
-  height: 130px;
+.roadmap-card--live {
+  border-color: rgba(34, 197, 94, 0.2);
+  background: rgba(34, 197, 94, 0.03);
+}
+
+.roadmap-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.roadmap-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.roadmap-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.roadmap-header h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.roadmap-status {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+}
+
+.roadmap-status--live {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+}
+
+.roadmap-body p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  opacity: 0.65;
+  margin-bottom: 10px;
+}
+
+.roadmap-tags {
+  display: flex;
+  gap: 6px;
+}
+
+.roadmap-tag {
+  font-size: 0.72rem;
+  padding: 2px 10px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* ── CTA Section ───────────────────────────────────── */
@@ -697,17 +779,17 @@ useSEO({
     font-size: 2rem;
   }
 
-  .projects-grid,
-  .projects-grid--single,
-  .platform-grid,
-  .audience-grid {
+  .case-study-grid,
+  .case-study-grid--single {
     grid-template-columns: 1fr;
   }
 
-  .audience-callout {
-    flex-direction: column;
-    text-align: center;
-    padding: 24px 20px;
+  .case-study-hero {
+    height: 200px;
+  }
+
+  .roadmap-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>

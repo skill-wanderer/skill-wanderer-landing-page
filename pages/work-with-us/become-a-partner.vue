@@ -24,19 +24,19 @@
 
         <div class="karma-cycle">
           <div class="cycle-item">
-            <div class="cycle-icon">🤝</div>
+            <div class="cycle-icon"><Handshake :size="24" :stroke-width="2" /></div>
             <h3>Shared Risk</h3>
             <p>We invest in your success together</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon">💰</div>
+            <div class="cycle-icon"><Coins :size="24" :stroke-width="2" /></div>
             <h3>Lower Upfront Costs</h3>
             <p>Pay less now, share success later</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon">🌱</div>
+            <div class="cycle-icon"><Sprout :size="24" :stroke-width="2" /></div>
             <h3>Mutual Growth</h3>
             <p>Your success funds free education</p>
           </div>
@@ -54,7 +54,7 @@
 
         <div class="partner-features">
           <div class="feature-card">
-            <div class="feature-icon">💸</div>
+            <div class="feature-icon"><Banknote :size="24" color="white" :stroke-width="2" /></div>
             <h4>Reduced Upfront Investment</h4>
             <p>
               Unlike traditional outsourcing, we don't ask for large upfront payments. Start building with minimal
@@ -63,7 +63,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">📈</div>
+            <div class="feature-icon"><TrendingUp :size="24" color="white" :stroke-width="2" /></div>
             <h4>Success Sharing Model</h4>
             <p>
               We earn when you succeed. Our revenue comes from sharing in your success, aligning our incentives
@@ -72,7 +72,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">🌐</div>
+            <div class="feature-icon"><Globe :size="24" color="white" :stroke-width="2" /></div>
             <h4>Guild-Powered Talent</h4>
             <p>
               Work gets done by motivated guild members from our global community—apprentices and journeymen eager to prove themselves
@@ -81,7 +81,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">⚖️</div>
+            <div class="feature-icon"><Scale :size="24" color="white" :stroke-width="2" /></div>
             <h4>True Risk Partnership</h4>
             <p>
               We share both success and setbacks. When you face challenges, we're right there with you—because
@@ -91,7 +91,7 @@
         </div>
 
         <div class="impact-statement">
-          <div class="impact-icon">💫</div>
+          <div class="impact-icon"><Sparkles :size="28" :stroke-width="1.8" /></div>
           <h3>The True Partnership Difference</h3>
           <p>
             This isn't outsourcing with a different name. We invest our time, expertise, and guild alongside your vision.
@@ -119,7 +119,7 @@
 
         <div class="model-details">
           <div class="model-card">
-            <div class="model-icon">💫</div>
+            <div class="model-icon"><Sparkles :size="24" color="white" :stroke-width="2" /></div>
             <h4>Mission-Support Fee</h4>
             <p>
               When applicable, a modest monthly mission-support fee sustains the ecosystem—coordination, mentorship, and
@@ -128,7 +128,7 @@
           </div>
 
           <div class="model-card">
-            <div class="model-icon">🏗️</div>
+            <div class="model-icon"><Building2 :size="24" color="white" :stroke-width="2" /></div>
             <h4>Infrastructure Costs</h4>
             <p>
               Product infrastructure costs—cloud, tooling, and operations—are borne by the partner, keeping spend focused
@@ -137,7 +137,7 @@
           </div>
 
           <div class="model-card">
-            <div class="model-icon">🎓</div>
+            <div class="model-icon"><GraduationCap :size="24" color="white" :stroke-width="2" /></div>
             <h4>Guild Member Pathways</h4>
             <p>
               Guild members are not treated as short-term resources. The goal is stable pathways and durable value for
@@ -150,15 +150,15 @@
           <h3>Why This Works Better Than Outsourcing:</h3>
           <div class="alignment-points">
             <div class="alignment-item">
-              <span class="alignment-icon">💸</span>
+              <span class="alignment-icon"><Banknote :size="24" :stroke-width="2" /></span>
               <p><strong>For You:</strong> Lower risk with reduced upfront costs—we succeed together or not at all.</p>
             </div>
             <div class="alignment-item">
-              <span class="alignment-icon">🎯</span>
+              <span class="alignment-icon"><Target :size="24" :stroke-width="2" /></span>
               <p><strong>For Us:</strong> We're motivated by your success, not just billing hours.</p>
             </div>
             <div class="alignment-item">
-              <span class="alignment-icon">🌟</span>
+              <span class="alignment-icon"><Star :size="24" :stroke-width="2" /></span>
               <p><strong>For Learners:</strong> Real projects with real stakes create real skills.</p>
             </div>
           </div>
@@ -192,6 +192,8 @@
 </template>
 
 <script setup lang="ts">
+import { Banknote, Building2, Coins, Globe, GraduationCap, Handshake, Scale, Sparkles, Sprout, Star, Target, TrendingUp } from 'lucide-vue-next'
+
 useSEO({
   title: 'Become a Technology Partner | Skill-Wanderer',
   description:

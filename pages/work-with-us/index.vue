@@ -20,25 +20,25 @@
 
         <div class="cycle-flow">
           <div class="cycle-step">
-            <div class="cycle-icon">🤝</div>
+            <div class="cycle-icon"><Handshake :size="24" :stroke-width="2" /></div>
             <h3>Guild Partnerships</h3>
             <p>We partner with organizations as their tech guild—sharing risks, sharing success through our social enterprise model.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
-            <div class="cycle-icon">🛠️</div>
+            <div class="cycle-icon"><Wrench :size="24" :stroke-width="2" /></div>
             <h3>Guild Delivery</h3>
             <p>Our guild members deliver real products, gaining hands-on experience—apprentices, journeymen, and masters working together.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
-            <div class="cycle-icon">📚</div>
+            <div class="cycle-icon"><Library :size="24" :stroke-width="2" /></div>
             <h3>Free Education</h3>
             <p>Revenue from guild work funds free education—no ads, no donations, no compromise.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
-            <div class="cycle-icon">🌱</div>
+            <div class="cycle-icon"><Sprout :size="24" :stroke-width="2" /></div>
             <h3>Guild Growth</h3>
             <p>Apprentices grow into skilled craftspeople, ready to take on the next guild engagement.</p>
           </div>
@@ -56,7 +56,7 @@
 
         <div class="pillars-grid pillars-grid--six">
           <div class="pillar-card">
-            <div class="pillar-icon">🖥️</div>
+            <div class="pillar-icon"><Monitor :size="24" :stroke-width="2" /></div>
             <h3>What We Build</h3>
             <p>
               Custom web platforms, internal tools, and digital products—built from scratch with modern frameworks.
@@ -68,7 +68,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon">🎯</div>
+            <div class="pillar-icon"><Target :size="24" :stroke-width="2" /></div>
             <h3>Who We Work With</h3>
             <p>
               Non-profits, early-stage startups, and mission-driven organizations that value long-term thinking,
@@ -80,7 +80,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon">🗂️</div>
+            <div class="pillar-icon"><FolderOpen :size="24" :stroke-width="2" /></div>
             <h3>Our Projects</h3>
             <p>
               From non-profits to startups to our own guild infrastructure—every project we take on creates real impact
@@ -92,7 +92,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon">💰</div>
+            <div class="pillar-icon"><Coins :size="24" :stroke-width="2" /></div>
             <h3>Pricing</h3>
             <p>
               Sprint-based packages with full transparency. Trust sprints, standard sprints, and equity/revenue-sharing
@@ -104,7 +104,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon">💡</div>
+            <div class="pillar-icon"><Lightbulb :size="24" :stroke-width="2" /></div>
             <h3>Success Sharing Model</h3>
             <p>
               We don't do outsourcing. We become your true technology partner—sharing both the success and the risks.
@@ -116,7 +116,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon">🚀</div>
+            <div class="pillar-icon"><Rocket :size="24" :stroke-width="2" /></div>
             <h3>Become a Guild Partner</h3>
             <p>
               Ready to engage? We collaborate through long-term models including outcome-based scopes, revenue sharing,
@@ -126,6 +126,79 @@
               Become a Partner <span>→</span>
             </NuxtLink>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof of Work — Project Showcase Strip -->
+    <section class="proof-of-work-section">
+      <div class="content">
+        <div class="section-header">
+          <h2>Guild Projects in Motion</h2>
+          <p>Real client work across active development, maintenance, and shipped delivery.</p>
+        </div>
+        <div class="proof-strip">
+          <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="proof-card">
+            <div class="proof-image">
+              <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" loading="lazy" />
+              <span class="proof-badge">Non-Profit</span>
+            </div>
+            <div class="proof-meta">
+              <h4>WM Smile Generation</h4>
+              <p>Full website for a Ugandan non-profit supporting healthcare and education.</p>
+              <div class="proof-tags">
+                <span>Nuxt 3</span>
+                <span>Kubernetes</span>
+              </div>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="proof-card">
+            <div class="proof-image">
+              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" loading="lazy" />
+              <span class="proof-badge">Non-Profit</span>
+            </div>
+            <div class="proof-meta">
+              <h4>ChanhDao.vn</h4>
+              <p>162 Buddhist lessons with AI Q&A on a self-hosted Kubernetes cluster.</p>
+              <div class="proof-tags">
+                <span>AI</span>
+                <span>Python</span>
+              </div>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/work-with-us/projects/mindyminds" class="proof-card">
+            <div class="proof-image">
+              <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds" loading="lazy" />
+              <span class="proof-badge">Start-up</span>
+            </div>
+            <div class="proof-meta">
+              <h4>MindyMinds</h4>
+              <p>Multi-tenant AI chatbot platform delivered in under 3 months.</p>
+              <div class="proof-tags">
+                <span>Next.js</span>
+                <span>OpenAI</span>
+              </div>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/work-with-us/projects/mindyplay" class="proof-card">
+            <div class="proof-image">
+              <img src="/projects/mindyplay/mindyplay-logo.jpg" alt="MindyPlay" loading="lazy" />
+              <span class="proof-badge">Start-up</span>
+            </div>
+            <div class="proof-meta">
+              <h4>MindyPlay</h4>
+              <p>Board game concept turned into an interactive Flutter mobile experience.</p>
+              <div class="proof-tags">
+                <span>Flutter</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+          </NuxtLink>
+        </div>
+        <div class="proof-cta">
+          <NuxtLink to="/work-with-us/our-projects" class="btn btn-outline">
+            View All Projects <span>→</span>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -147,14 +220,14 @@
             We focus on building systems that are stable, maintainable, and capable of evolving over time.
           </p>
           <div class="funding-banner">
-            <span class="funding-icon">🎓</span>
+            <span class="funding-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
             <div>
               <strong>Revenue funds free education.</strong>
               <span> Every sprint you fund goes directly toward keeping Skill-Wanderer's education free and accessible to all learners—no ads, no paywalls, no compromise.</span>
             </div>
           </div>
           <div class="lockin-banner">
-            <span class="lockin-icon">🔓</span>
+            <span class="lockin-icon"><Unlock :size="24" :stroke-width="2" /></span>
             <div>
               <strong>Zero Vendor Lock-In. By Design.</strong>
               <span>
@@ -219,138 +292,18 @@
           </div>
         </div>
 
-        <!-- Working Together Cards -->
-        <div class="working-grid">
-          <div class="working-card">
-            <div class="working-icon">🏢</div>
-            <h4>Communication & Workflow</h4>
-            <p>Each sprint begins with a short planning phase where scope and expectations are aligned. During the sprint, the guild provides progress updates, and each cycle concludes with a review and demonstration of completed work. This structure ensures transparency while allowing focused craft.</p>
-          </div>
-          <div class="working-card">
-            <div class="working-icon">🐛</div>
-            <h4>Bug Fixes & Change Requests</h4>
-            <p>If implemented functionality does not behave as agreed, it is considered a bug and will be corrected as part of the development process. Requests that modify or extend agreed functionality are change requests, scheduled in a future sprint. Minor visual or content adjustments may be accommodated at sprint review.</p>
-          </div>
-          <div class="working-card">
-            <div class="working-icon">🌱</div>
-            <h4>Startup Collaboration</h4>
-            <p>For early-stage startups, the guild may offer hybrid collaboration models combining development sprints with equity or revenue sharing. These arrangements are evaluated on a case-by-case basis and always include a partial cash component to support the guild's ongoing operations.</p>
-          </div>
-          <div class="working-card">
-            <div class="working-icon">🏗️</div>
-            <h4>Maintaining System Health</h4>
-            <p>As systems grow, we schedule dedicated stabilisation sprints focused on performance, reliability, and long-term maintainability. These may not introduce new features, but they are essential for keeping your system solid and ready for future growth.</p>
-          </div>
-        </div>
+        <!-- Operational Details — FAQ Accordion -->
+        <div class="faq-section">
+          <h3 class="faq-heading">Operational Details</h3>
 
-        <!-- Payment Structure -->
-        <div class="payment-block">
-          <div class="payment-header">
-            <h3>Payment Structure</h3>
-            <p>Simple, transparent, and tied to delivered work.</p>
-          </div>
-          <div class="payment-grid">
-            <div class="payment-card trust-card">
-              <div class="payment-type">Trust Sprint</div>
-              <div class="payment-splits">
-                <div class="split-item">
-                  <span class="split-pct">30%</span>
-                  <span class="split-desc">Before sprint begins</span>
-                </div>
-                <div class="split-plus">+</div>
-                <div class="split-item">
-                  <span class="split-pct">70%</span>
-                  <span class="split-desc">After sprint review</span>
-                </div>
-              </div>
-            </div>
-            <div class="payment-card standard-card">
-              <div class="payment-type">Standard Sprints</div>
-              <div class="payment-splits">
-                <div class="split-item">
-                  <span class="split-pct">50%</span>
-                  <span class="split-desc">Before sprint begins</span>
-                </div>
-                <div class="split-plus">+</div>
-                <div class="split-item">
-                  <span class="split-pct">50%</span>
-                  <span class="split-desc">After sprint completion</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="payment-note">Each sprint is scheduled once the initial payment is confirmed.</p>
-        </div>
-
-        <!-- Ownership Cards -->
-        <div class="ownership-grid">
-          <div class="ownership-card">
-            <div class="ownership-icon">⚖️</div>
-            <h4>Code Ownership & Open Source</h4>
-            <p>
-              All custom code developed for a project belongs to the client once the corresponding milestone payment has been completed.
-              Our systems may incorporate reusable components from the Skill-Wanderer ecosystem, which are released as open-source under the
-              <strong>Apache 2.0 license</strong>. These components remain part of the open-source project and may be reused across systems.
-            </p>
-          </div>
-          <div class="ownership-card">
-            <div class="ownership-icon">🔓</div>
-            <h4>No Vendor Lock-In</h4>
-            <p>
-              As a tech guild, we measure our success by your independence—not your dependency. We use open standards,
-              well-documented architectures, and industry-standard tools so you are never locked into working with us.
-              After each milestone, you receive full code, documentation, and knowledge transfer. If you choose to continue
-              on your own, we consider that a proud outcome—it means we did our job as educators.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why This Matters Section -->
-    <section class="why-section">
-      <div class="content">
-        <div class="section-header">
-          <h2>Why This Matters</h2>
-          <p>This isn't just a business model—it's the engine of our social enterprise mission</p>
-        </div>
-
-        <div class="why-grid">
-          <div class="why-card">
-            <div class="why-icon">🎓</div>
-            <h3>Education Stays Free</h3>
-            <p>
-              Revenue from guild engagements directly funds free education. No ads, no affiliate marketing, 
-              no paywalls—every dollar of surplus goes back into learning and community.
-            </p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon">⚡</div>
-            <h3>Content Stays Relevant</h3>
-            <p>
-              Because the guild works on real projects, our educational content reflects real challenges, real tools, 
-              and real solutions. Craft grounded in practice.
-            </p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon">🔄</div>
-            <h3>Guild Members Get Real Experience</h3>
-            <p>
-              Apprentices and journeymen work on real projects with real stakes. This isn't a simulation—it's 
-              genuine hands-on craft that builds real careers.
-            </p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon">🛡️</div>
-            <h3>Self-Sustaining Guild Model</h3>
-            <p>
-              We don't rely on charity to sustain our mission. The guild earns its way through craft and partnership, 
-              ensuring long-term sustainability and complete mission integrity.
-            </p>
-          </div>
+          <details v-for="item in operationalFAQ" :key="item.q" class="faq-item">
+            <summary class="faq-question">
+              <span class="faq-icon">{{ item.icon }}</span>
+              <span>{{ item.q }}</span>
+              <span class="faq-chevron">▸</span>
+            </summary>
+            <div class="faq-answer" v-html="item.a" />
+          </details>
         </div>
       </div>
     </section>
@@ -374,6 +327,40 @@
 </template>
 
 <script setup lang="ts">
+import { Coins, FolderOpen, GraduationCap, Handshake, Library, Lightbulb, Monitor, Rocket, Sprout, Target, Unlock, Wrench } from 'lucide-vue-next'
+const operationalFAQ = [
+  {
+    icon: '🏢',
+    q: 'Communication & Workflow',
+    a: 'Each sprint begins with a short planning phase where scope and expectations are aligned. During the sprint, the guild provides progress updates, and each cycle concludes with a review and demonstration of completed work.'
+  },
+  {
+    icon: '🐛',
+    q: 'Bug Fixes & Change Requests',
+    a: 'If implemented functionality does not behave as agreed, it is considered a bug and will be corrected as part of the development process. Requests that modify or extend agreed functionality are change requests, scheduled in a future sprint.'
+  },
+  {
+    icon: '🌱',
+    q: 'Startup Collaboration',
+    a: 'For early-stage startups, the guild may offer hybrid models combining development sprints with equity or revenue sharing. These arrangements are evaluated on a case-by-case basis and always include a partial cash component.'
+  },
+  {
+    icon: '💰',
+    q: 'Payment Structure',
+    a: '<strong>Trust Sprint:</strong> 30% before sprint begins + 70% after sprint review.<br/><strong>Standard Sprints:</strong> 50% before sprint begins + 50% after sprint completion.<br/>Each sprint is scheduled once the initial payment is confirmed.'
+  },
+  {
+    icon: '⚖️',
+    q: 'Code Ownership & Open Source',
+    a: 'All custom code belongs to the client once milestone payment is completed. Reusable components from the Skill-Wanderer ecosystem are released as open-source under the <strong>Apache 2.0 license</strong>.'
+  },
+  {
+    icon: '🔓',
+    q: 'No Vendor Lock-In',
+    a: 'We use open standards, well-documented architectures, and industry-standard tools so you are never locked into working with us. After each milestone, you receive full code, documentation, and knowledge transfer.'
+  }
+]
+
 useSEO({
   title: 'Engage the Guild | Skill-Wanderer',
   description:
@@ -462,6 +449,128 @@ useSEO({
 .section-header p {
   font-size: 1.2rem;
   opacity: 0.85;
+}
+
+/* Proof of Work Strip */
+.proof-of-work-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.04) 0%, transparent 60%);
+  border-top: 1px solid rgba(255, 107, 53, 0.08);
+  border-bottom: 1px solid rgba(255, 107, 53, 0.08);
+}
+
+.proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.proof-card {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.12);
+  transition: all 0.3s ease;
+}
+
+.proof-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 107, 53, 0.4);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.3);
+}
+
+.proof-image {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.proof-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.proof-card:hover .proof-image img {
+  transform: scale(1.06);
+}
+
+.proof-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+}
+
+.proof-meta {
+  padding: 16px 18px;
+}
+
+.proof-meta h4 {
+  font-size: 1.05rem;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.proof-meta p {
+  font-size: 0.85rem;
+  opacity: 0.65;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.proof-tags {
+  display: flex;
+  gap: 6px;
+}
+
+.proof-tags span {
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 50px;
+  background: rgba(255, 107, 53, 0.08);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
+.proof-cta {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-orange);
+  border: 2px solid rgba(255, 107, 53, 0.3);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--primary-orange);
+  background: rgba(255, 107, 53, 0.1);
+  transform: translateY(-2px);
 }
 
 /* Cycle Flow Section */
@@ -611,48 +720,6 @@ useSEO({
 
 .pillar-link:hover span {
   transform: translateX(4px);
-}
-
-/* Why Section */
-.why-section {
-  padding: 80px 20px;
-  background: var(--darker-bg);
-}
-
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.why-card {
-  background: var(--card-bg);
-  border-radius: 20px;
-  padding: 35px;
-  border: 1px solid rgba(255, 107, 53, 0.1);
-  transition: all 0.3s ease;
-}
-
-.why-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255, 107, 53, 0.3);
-}
-
-.why-icon {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  display: block;
-}
-
-.why-card h3 {
-  color: var(--primary-orange);
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
-
-.why-card p {
-  opacity: 0.85;
-  line-height: 1.7;
 }
 
 /* CTA Section */
@@ -864,182 +931,73 @@ useSEO({
   padding: 8px 0;
 }
 
-/* Working Together Cards */
-.working-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin-bottom: 64px;
-}
-
-.working-card {
-  background: var(--card-bg);
-  border: 1px solid rgba(255, 107, 53, 0.12);
-  border-radius: 14px;
-  padding: 30px 28px;
-  transition: all 0.3s ease;
-}
-
-.working-card:hover {
-  border-color: rgba(255, 107, 53, 0.35);
-  transform: translateY(-4px);
-}
-
-.working-icon {
-  font-size: 2rem;
-  margin-bottom: 14px;
-}
-
-.working-card h4 {
-  color: var(--primary-orange);
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.working-card p {
-  opacity: 0.8;
-  font-size: 0.92rem;
-  line-height: 1.65;
-  margin: 0;
-}
-
-/* Payment Block */
-.payment-block {
-  margin-bottom: 64px;
-}
-
-.payment-header {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.payment-header h3 {
-  color: var(--primary-orange);
-  font-size: 1.8rem;
-  margin-bottom: 8px;
-}
-
-.payment-header p {
-  opacity: 0.75;
-  font-size: 1rem;
-}
-
-.payment-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  max-width: 720px;
+/* Working Together — FAQ Accordion */
+.faq-section {
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.payment-card {
-  border-radius: 14px;
-  padding: 32px 28px;
+.faq-heading {
   text-align: center;
-}
-
-.trust-card {
-  background: rgba(255, 107, 53, 0.07);
-  border: 2px solid rgba(255, 107, 53, 0.3);
-}
-
-.standard-card {
-  background: var(--card-bg);
-  border: 2px solid rgba(255, 107, 53, 0.15);
-}
-
-.payment-type {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
   color: var(--primary-orange);
-  margin-bottom: 24px;
+  font-size: 1.6rem;
+  margin-bottom: 28px;
 }
 
-.payment-splits {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-
-.split-item {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.split-pct {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: white;
-  line-height: 1;
-}
-
-.split-desc {
-  font-size: 0.8rem;
-  opacity: 0.65;
-  line-height: 1.3;
-}
-
-.split-plus {
-  font-size: 1.4rem;
-  color: var(--primary-orange);
-  opacity: 0.4;
-  padding-bottom: 18px;
-}
-
-.payment-note {
-  text-align: center;
-  font-size: 0.88rem;
-  opacity: 0.55;
-  margin-top: 20px;
-}
-
-/* Ownership Cards */
-.ownership-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-}
-
-.ownership-card {
+.faq-item {
   background: var(--card-bg);
   border: 1px solid rgba(255, 107, 53, 0.12);
-  border-radius: 14px;
-  padding: 32px 28px;
-  transition: all 0.3s ease;
-}
-
-.ownership-card:hover {
-  border-color: rgba(255, 107, 53, 0.35);
-  transform: translateY(-4px);
-}
-
-.ownership-icon {
-  font-size: 2rem;
-  margin-bottom: 14px;
-}
-
-.ownership-card h4 {
-  color: var(--primary-orange);
-  font-size: 1.05rem;
-  font-weight: 700;
+  border-radius: 12px;
   margin-bottom: 12px;
+  transition: border-color 0.3s ease;
 }
 
-.ownership-card p {
-  opacity: 0.8;
-  font-size: 0.92rem;
-  line-height: 1.65;
-  margin: 0;
+.faq-item[open] {
+  border-color: rgba(255, 107, 53, 0.35);
 }
 
-.ownership-card strong {
+.faq-question {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.02rem;
   color: white;
-  opacity: 1;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.faq-chevron {
+  margin-left: auto;
+  color: var(--primary-orange);
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-chevron {
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  padding: 0 24px 20px 52px;
+  opacity: 0.82;
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.faq-answer :deep(strong) {
+  color: var(--primary-orange);
 }
 
 /* Responsive */
@@ -1068,6 +1026,10 @@ useSEO({
     grid-template-columns: 1fr;
   }
 
+  .proof-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .funding-banner,
   .lockin-banner {
     flex-direction: column;
@@ -1078,20 +1040,6 @@ useSEO({
   .journey-step {
     flex-direction: column;
     gap: 12px;
-  }
-
-  .working-grid,
-  .ownership-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .journey-step {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .payment-grid {
-    grid-template-columns: 1fr;
   }
 }
 </style>

@@ -52,7 +52,7 @@
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon">🔌</div>
+            <div class="milestone-icon"><Plug :size="24" color="white" :stroke-width="2" /></div>
             <h3>Powering Through Blackouts</h3>
             <p>
               Frequent electrical blackouts are a daily reality in Nigeria. Where others would log off and wait,
@@ -62,7 +62,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">📡</div>
+            <div class="milestone-icon"><Radio :size="24" color="white" :stroke-width="2" /></div>
             <h3>Sailing on Weak Signals</h3>
             <p>
               With internet connectivity that most would consider unusable, Vincent still makes it to
@@ -72,7 +72,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">👨‍👩‍👧‍👦</div>
+            <div class="milestone-icon"><Users :size="24" color="white" :stroke-width="2" /></div>
             <h3>Provider and Learner</h3>
             <p>
               Vincent works a side job to <strong>keep his family fed</strong>. He carries the weight of
@@ -82,7 +82,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">🤐</div>
+            <div class="milestone-icon"><LockKeyhole :size="24" color="white" :stroke-width="2" /></div>
             <h3>Never Complains</h3>
             <p>
               Perhaps the most remarkable trait of all: Vincent <strong>never complains</strong>. He doesn't
@@ -108,7 +108,7 @@
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon">💻</span>
+          <span class="path-icon"><Monitor :size="24" :stroke-width="2" /></span>
           <span class="path-text">Currently In: Software Development Path</span>
         </div>
 
@@ -142,6 +142,7 @@
 </template>
 
 <script setup lang="ts">
+import { LockKeyhole, Monitor, Plug, Radio, Users } from 'lucide-vue-next'
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({

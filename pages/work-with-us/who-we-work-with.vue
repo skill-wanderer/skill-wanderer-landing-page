@@ -25,7 +25,7 @@
 
         <div class="audience-grid">
           <div class="audience-card">
-            <div class="audience-icon">🎓</div>
+            <div class="audience-icon"><GraduationCap :size="24" :stroke-width="2" /></div>
             <h3>Education & Non-Profit Organizations</h3>
             <p>
               We support organizations building learning systems, community tools, and educational initiatives.
@@ -35,7 +35,7 @@
           </div>
 
           <div class="audience-card">
-            <div class="audience-icon">🚀</div>
+            <div class="audience-icon"><Rocket :size="24" :stroke-width="2" /></div>
             <h3>Startups</h3>
             <p>
               We work with early-stage teams developing new digital products. Through iterative
@@ -45,7 +45,7 @@
           </div>
 
           <div class="audience-card">
-            <div class="audience-icon">🏗️</div>
+            <div class="audience-icon"><Building2 :size="24" :stroke-width="2" /></div>
             <h3>Organizations Building Digital Infrastructure</h3>
             <p>
               We collaborate with teams that need to build internal systems, automation tools, or scalable
@@ -55,7 +55,7 @@
           </div>
 
           <div class="audience-card">
-            <div class="audience-icon">💼</div>
+            <div class="audience-icon"><Briefcase :size="24" :stroke-width="2" /></div>
             <h3>Small Businesses & Independent Professionals</h3>
             <p>
               We support freelancers, consultants, and small businesses looking to establish or improve their
@@ -65,7 +65,7 @@
           </div>
 
           <div class="audience-card audience-card--highlight">
-            <div class="audience-icon">🌱</div>
+            <div class="audience-icon"><Sprout :size="24" :stroke-width="2" /></div>
             <h3>Builders & Guild Apprentices</h3>
             <p>
               For individuals exploring ideas or learning to build systems, we encourage starting with our
@@ -110,7 +110,7 @@
     <section class="callout-section">
       <div class="content">
         <div class="audience-callout">
-          <span class="callout-icon">💬</span>
+          <span class="callout-icon"><MessageCircle :size="24" :stroke-width="2" /></span>
           <div class="callout-body">
             <h3>Not sure if your project fits?</h3>
             <p>
@@ -126,6 +126,7 @@
 </template>
 
 <script setup lang="ts">
+import { Briefcase, Building2, GraduationCap, MessageCircle, Rocket, Sprout } from 'lucide-vue-next'
 useSEO({
   title: 'Who We Work With | Skill-Wanderer',
   description:

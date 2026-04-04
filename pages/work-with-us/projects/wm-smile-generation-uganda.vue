@@ -7,7 +7,7 @@
           ← Back to Our Projects
         </NuxtLink>
         <div class="status-badge">
-          <span>Completed</span>
+          <span>On Maintenance</span>
         </div>
         <img src="/projects/wmsmile/og-image.jpeg" alt="WM Smile Generation Uganda Logo" class="hero-logo" />
         <h1>WM Smile Generation Uganda</h1>
@@ -77,7 +77,7 @@
 
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon">🏠</div>
+            <div class="feature-icon"><Home :size="24" color="white" :stroke-width="2" /></div>
             <h3>Landing Page</h3>
             <p>
               Clear value proposition, mission pillars (Education, Nature Awareness, Refugee Support), and prominent
@@ -86,7 +86,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">📖</div>
+            <div class="feature-icon"><BookOpen :size="24" color="white" :stroke-width="2" /></div>
             <h3>About Page</h3>
             <p>
               The founder's personal story, organizational vision and mission, guiding principles, and a full team
@@ -95,7 +95,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">🎯</div>
+            <div class="feature-icon"><Target :size="24" color="white" :stroke-width="2" /></div>
             <h3>Our Mission Page</h3>
             <p>
               Deeper context on each of the three focus areas: education, nature awareness, and refugee support.
@@ -103,7 +103,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">🤝</div>
+            <div class="feature-icon"><Handshake :size="24" color="white" :stroke-width="2" /></div>
             <h3>Partnership Page</h3>
             <p>
               Designed to attract and onboard organizational partners with clear pathways to collaboration.
@@ -111,7 +111,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">🏅</div>
+            <div class="feature-icon"><Medal :size="24" color="white" :stroke-width="2" /></div>
             <h3>Our Partners Page</h3>
             <p>
               Showcasing existing partnerships to build credibility and trust with potential supporters.
@@ -119,7 +119,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">💛</div>
+            <div class="feature-icon"><Heart :size="24" color="white" :stroke-width="2" /></div>
             <h3>Donation Page</h3>
             <p>
               A clear, accessible path for supporters to contribute directly to the mission.
@@ -127,7 +127,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">✉️</div>
+            <div class="feature-icon"><Mail :size="24" color="white" :stroke-width="2" /></div>
             <h3>Contact Page</h3>
             <p>
               For general inquiries and engagement from around the world.
@@ -143,28 +143,28 @@
         <h2>Design Priorities</h2>
         <div class="priorities-list">
           <div class="priority-item">
-            <div class="priority-icon">🎨</div>
+            <div class="priority-icon"><Palette :size="24" color="white" :stroke-width="2" /></div>
             <div class="priority-content">
               <h3>Professional Visual Identity</h3>
               <p>Appropriate for an NGO seeking international donors and partners.</p>
             </div>
           </div>
           <div class="priority-item">
-            <div class="priority-icon">📱</div>
+            <div class="priority-icon"><Smartphone :size="24" color="white" :stroke-width="2" /></div>
             <div class="priority-content">
               <h3>Mobile-Responsive Layout</h3>
               <p>Accommodating visitors from regions with mobile-first internet usage.</p>
             </div>
           </div>
           <div class="priority-item">
-            <div class="priority-icon">📐</div>
+            <div class="priority-icon"><Ruler :size="24" color="white" :stroke-width="2" /></div>
             <div class="priority-content">
               <h3>Clear Information Hierarchy</h3>
               <p>Visitors can understand who the organization is, what they do, and how to help within seconds.</p>
             </div>
           </div>
           <div class="priority-item">
-            <div class="priority-icon">❤️</div>
+            <div class="priority-icon"><Heart :size="24" color="white" :stroke-width="2" /></div>
             <div class="priority-content">
               <h3>Human-Centered Storytelling</h3>
               <p>Warm imagery and storytelling that reflects the reality on the ground.</p>
@@ -220,12 +220,12 @@
       <div class="detail-container">
         <h2>Project Status</h2>
         <div class="status-box">
-          <span class="status-indicator">Completed</span>
+          <span class="status-indicator">On Maintenance</span>
           <p>
-            The website is live and stable. There is no active development planned at this time. The site was
-            built to be low-maintenance by design — static generation means no server-side dependencies to manage,
-            and free hosting on Vercel eliminates recurring infrastructure costs. If the organization's needs grow,
-            the Astro architecture makes it straightforward to extend.
+            The website is live and stable, and it is currently in maintenance mode rather than active feature
+            development. The site was built to stay lightweight — static generation means no server-side dependencies
+            to manage, and free hosting on Vercel eliminates recurring infrastructure costs. If the organization's
+            needs grow, the Astro architecture makes it straightforward to extend.
           </p>
         </div>
       </div>
@@ -251,41 +251,41 @@
         <h2>Team</h2>
         <div class="team-grid">
           <div class="team-card">
-            <div class="team-role-icon">👤</div>
+            <div class="team-role-icon"><User :size="24" :stroke-width="2" /></div>
             <h3>Joseph Bumpenje</h3>
             <span class="team-role">CEO & Founder</span>
             <span class="team-location">Kampala, Uganda</span>
           </div>
           <div class="team-card">
-            <div class="team-role-icon">👤</div>
+            <div class="team-role-icon"><User :size="24" :stroke-width="2" /></div>
             <h3>Ornella Gigante</h3>
             <span class="team-role">Director of Operations / Founder of MindyCore</span>
           </div>
           <div class="team-card">
-            <div class="team-role-icon">👤</div>
+            <div class="team-role-icon"><User :size="24" :stroke-width="2" /></div>
             <h3>Quan Nguyen</h3>
             <span class="team-role">Website Administrator / Founder of Skill-Wanderer</span>
           </div>
           <div class="team-card">
-            <div class="team-role-icon">👤</div>
+            <div class="team-role-icon"><User :size="24" :stroke-width="2" /></div>
             <h3>Kayla Pillay</h3>
             <span class="team-role">Content Specialist</span>
             <span class="team-location">South Africa</span>
           </div>
           <div class="team-card">
-            <div class="team-role-icon">👤</div>
+            <div class="team-role-icon"><User :size="24" :stroke-width="2" /></div>
             <h3>Precious Pabalelo Matlala</h3>
             <span class="team-role">Donations & Fundraising Lead</span>
             <span class="team-location">South Africa</span>
           </div>
           <div class="team-card">
-            <div class="team-role-icon">👤</div>
+            <div class="team-role-icon"><User :size="24" :stroke-width="2" /></div>
             <h3>Muhammad Hanif Danladi</h3>
             <span class="team-role">Coach & Content Creator</span>
             <span class="team-location">Nigeria</span>
           </div>
           <div class="team-card">
-            <div class="team-role-icon">👤</div>
+            <div class="team-role-icon"><User :size="24" :stroke-width="2" /></div>
             <h3>Davide Celentano</h3>
             <span class="team-role">Agro-Environmental Content Specialist</span>
             <span class="team-location">Italy</span>
@@ -316,6 +316,8 @@
 </template>
 
 <script setup lang="ts">
+import { BookOpen, Handshake, Heart, Home, Mail, Medal, Palette, Ruler, Smartphone, Target, User } from 'lucide-vue-next'
+
 useSEO({
   title: 'WM Smile Generation Uganda — Project Detail | Skill-Wanderer',
   description:

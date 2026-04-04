@@ -25,19 +25,19 @@
 
         <div class="approach-cycle">
           <div class="cycle-item">
-            <div class="cycle-icon">🔄</div>
+            <div class="cycle-icon"><RotateCw :size="24" :stroke-width="2" /></div>
             <h3>Iterative Sprints</h3>
             <p>Development evolves through structured sprints, not fixed-scope delivery</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon">📈</div>
+            <div class="cycle-icon"><TrendingUp :size="24" :stroke-width="2" /></div>
             <h3>Ongoing Growth</h3>
             <p>Continuous improvements, new features, and system enhancements over time</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon">🤝</div>
+            <div class="cycle-icon"><Handshake :size="24" :stroke-width="2" /></div>
             <h3>Shared Success</h3>
             <p>Our incentives align with the long-term outcomes of the systems we build</p>
           </div>
@@ -46,7 +46,7 @@
         <div class="model-steps">
           <div class="step-card">
             <div class="step-number">1</div>
-            <div class="step-icon">🔄</div>
+            <div class="step-icon"><RotateCw :size="24" :stroke-width="2" /></div>
             <h3>Iterative Development</h3>
             <p>
               We work alongside our partners through iterative development sprints. As systems evolve,
@@ -57,7 +57,7 @@
 
           <div class="step-card">
             <div class="step-number">2</div>
-            <div class="step-icon">🌱</div>
+            <div class="step-icon"><Sprout :size="24" :stroke-width="2" /></div>
             <h3>Hybrid Models for Startups</h3>
             <p>
               For early-stage startups, we may explore hybrid collaboration models that combine development
@@ -68,7 +68,7 @@
 
           <div class="step-card">
             <div class="step-number">3</div>
-            <div class="step-icon">🎯</div>
+            <div class="step-icon"><Target :size="24" :stroke-width="2" /></div>
             <h3>Aligned Incentives</h3>
             <p>
               This model aligns our work with the success of the systems we help build, encouraging
@@ -93,7 +93,7 @@
 
         <div class="practice-grid">
           <div class="practice-card">
-            <div class="practice-icon">🏗️</div>
+            <div class="practice-icon"><Building2 :size="24" :stroke-width="2" /></div>
             <h4>Long-Term System Stability</h4>
             <p>
               We design systems with longevity in mind. Architecture decisions are made to support
@@ -102,7 +102,7 @@
           </div>
 
           <div class="practice-card">
-            <div class="practice-icon">🧩</div>
+            <div class="practice-icon"><Component :size="24" :stroke-width="2" /></div>
             <h4>Maintainable Architecture</h4>
             <p>
               Clean, well-structured codebases that your team can understand, extend, and take full
@@ -111,7 +111,7 @@
           </div>
 
           <div class="practice-card">
-            <div class="practice-icon">📚</div>
+            <div class="practice-icon"><Library :size="24" :stroke-width="2" /></div>
             <h4>Knowledge Sharing</h4>
             <p>
               We document, explain, and transfer knowledge throughout the engagement. You are never
@@ -120,7 +120,7 @@
           </div>
 
           <div class="practice-card">
-            <div class="practice-icon">🔓</div>
+            <div class="practice-icon"><Unlock :size="24" :stroke-width="2" /></div>
             <h4>Client Ownership</h4>
             <p>
               Clients are not locked into ongoing contracts. You are free to take full ownership of
@@ -183,7 +183,7 @@
 
         <div class="positioning-block">
           <div class="positioning-item">
-            <span class="positioning-icon">🤝</span>
+            <span class="positioning-icon"><Handshake :size="24" :stroke-width="2" /></span>
             <div>
               <strong>Partnership</strong>
               <span class="positioning-separator">over</span>
@@ -192,7 +192,7 @@
           </div>
           <div class="positioning-divider"></div>
           <div class="positioning-item">
-            <span class="positioning-icon">🏛️</span>
+            <span class="positioning-icon"><Landmark :size="24" :stroke-width="2" /></span>
             <div>
               <strong>Long-term systems</strong>
               <span class="positioning-separator">over</span>
@@ -201,7 +201,7 @@
           </div>
           <div class="positioning-divider"></div>
           <div class="positioning-item">
-            <span class="positioning-icon">🔓</span>
+            <span class="positioning-icon"><Unlock :size="24" :stroke-width="2" /></span>
             <div>
               <strong>Ownership</strong>
               <span class="positioning-separator">over</span>
@@ -263,6 +263,7 @@
 </template>
 
 <script setup lang="ts">
+import { Building2, Component, Handshake, Landmark, Library, RotateCw, Sprout, Target, TrendingUp, Unlock } from 'lucide-vue-next'
 useSEO({
   title: 'Success Sharing Model | Skill-Wanderer',
   description:

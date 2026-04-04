@@ -26,7 +26,7 @@
           <div class="cycle-ring">
             <div class="cycle-step" style="--step-index: 0;">
               <div class="cycle-node" @mouseenter="activeStep = 0" @mouseleave="activeStep = -1">
-                <span class="node-icon">🤝</span>
+                <span class="node-icon"><Handshake :size="24" :stroke-width="2" /></span>
               </div>
               <div class="node-label">Donate or Partner</div>
               <p class="node-detail" :class="{ visible: activeStep === 0 }">Donate for our teaching and/or work with us as tech partners</p>
@@ -36,7 +36,7 @@
 
             <div class="cycle-step" style="--step-index: 1;">
               <div class="cycle-node" @mouseenter="activeStep = 1" @mouseleave="activeStep = -1">
-                <span class="node-icon">💻</span>
+                <span class="node-icon"><Monitor :size="24" :stroke-width="2" /></span>
               </div>
               <div class="node-label">Build the Platform</div>
               <p class="node-detail" :class="{ visible: activeStep === 1 }">Learn and gain experience by developing with us</p>
@@ -46,7 +46,7 @@
 
             <div class="cycle-step" style="--step-index: 2;">
               <div class="cycle-node" @mouseenter="activeStep = 2" @mouseleave="activeStep = -1">
-                <span class="node-icon">🌱</span>
+                <span class="node-icon"><Sprout :size="24" :stroke-width="2" /></span>
               </div>
               <div class="node-label">Grow the Community</div>
               <p class="node-detail" :class="{ visible: activeStep === 2 }">Contribute and build meaningful connections</p>
@@ -56,7 +56,7 @@
 
             <div class="cycle-step" style="--step-index: 3;">
               <div class="cycle-node" @mouseenter="activeStep = 3" @mouseleave="activeStep = -1">
-                <span class="node-icon">🔄</span>
+                <span class="node-icon"><RotateCw :size="24" :stroke-width="2" /></span>
               </div>
               <div class="node-label">Mission Sustained</div>
               <p class="node-detail" :class="{ visible: activeStep === 3 }">Every contribution fuels quality education for all</p>
@@ -76,25 +76,25 @@
 
         <div class="elements-grid">
           <div class="element-card" style="animation-delay: 0.1s;">
-            <div class="element-icon">👨‍🏫</div>
+            <div class="element-icon"><GraduationCap :size="24" :stroke-width="2" /></div>
             <h3>Human Mentors</h3>
             <p>The most critical element—real human mentors who guide you, answer your questions, and share hard-won industry experience.</p>
           </div>
 
           <div class="element-card" style="animation-delay: 0.2s;">
-            <div class="element-icon">🎯</div>
+            <div class="element-icon"><Target :size="24" :stroke-width="2" /></div>
             <h3>Real Projects</h3>
             <p>Work on actual projects with real stakes, deadlines, and the pressure that drives true learning and career readiness.</p>
           </div>
 
           <div class="element-card" style="animation-delay: 0.3s;">
-            <div class="element-icon">🌱</div>
+            <div class="element-icon"><Sprout :size="24" :stroke-width="2" /></div>
             <h3>Start-Up Support</h3>
             <p>Guidance to help you launch your own ideas, with mentorship and resources tailored to aspiring founders.</p>
           </div>
 
           <div class="element-card" style="animation-delay: 0.4s;">
-            <div class="element-icon">🧭</div>
+            <div class="element-icon"><Compass :size="24" :stroke-width="2" /></div>
             <h3>Pre-Learning Advisory</h3>
             <p>Personalized advice before you even begin—helping you choose the right path based on your goals, background, and strengths.</p>
           </div>
@@ -130,7 +130,7 @@
 
         <div class="payback-grid">
           <div class="payback-card" style="animation-delay: 0.1s;">
-            <span class="payback-icon">🤝</span>
+            <span class="payback-icon"><Handshake :size="24" :stroke-width="2" /></span>
             <h3>Donate for Our Teaching and/or Work with Us as Tech Partners</h3>
             <p>
               Support our mission by donating directly to fund quality teaching,
@@ -142,7 +142,7 @@
           </div>
 
           <div class="payback-card" style="animation-delay: 0.2s;">
-            <span class="payback-icon">💻</span>
+            <span class="payback-icon"><Monitor :size="24" :stroke-width="2" /></span>
             <h3>Platform Development</h3>
             <p>
               Join us in building the Skill-Wanderer platform itself. Learners gain
@@ -153,7 +153,7 @@
           </div>
 
           <div class="payback-card" style="animation-delay: 0.3s;">
-            <span class="payback-icon">🌱</span>
+            <span class="payback-icon"><Sprout :size="24" :stroke-width="2" /></span>
             <h3>Contribute to the Community</h3>
             <p>
               Give back by mentoring newer learners, creating content, moderating discussions,
@@ -175,7 +175,7 @@
 
         <div class="impact-content">
           <div class="impact-card">
-            <span class="impact-icon">🛡️</span>
+            <span class="impact-icon"><Shield :size="48" :stroke-width="1.5" /></span>
             <h3>For Learners Who Truly Cannot Afford It</h3>
             <p>
               If you're in a situation where financial contribution simply isn't possible,
@@ -187,7 +187,7 @@
           </div>
 
           <div class="impact-card">
-            <span class="impact-icon">⚖️</span>
+            <span class="impact-icon"><Scale :size="48" :stroke-width="1.5" /></span>
             <h3>Why Social Enterprise, Not Charity</h3>
             <p>
               This principle once leaned more toward a purely charitable model. But I
@@ -223,6 +223,7 @@
 </template>
 
 <script setup lang="ts">
+import { Compass, GraduationCap, Handshake, Monitor, RotateCw, Scale, Shield, Sprout, Target } from 'lucide-vue-next'
 import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management

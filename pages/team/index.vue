@@ -3,11 +3,12 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Our Development Team</h1>
-        <p class="tagline">The People Behind Skill-Wanderer</p>
+        <h1>Guild Members</h1>
+        <p class="tagline">The Craftspeople Behind Skill-Wanderer</p>
         <p class="hero-description">
-          Meet the passionate developers, designers, and educators building the future of free tech education.
-          We're an open-source team united by a shared mission to make quality learning accessible to everyone.
+          A guild is only as strong as the people in it. Ours is intentionally small—a tight-knit crew of
+          craftspeople who build, ship, and mentor together across borders. Every member carries real
+          responsibility on real projects from day one.
         </p>
         <div class="hero-cta">
           <a href="https://github.com/skill-wanderer" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
@@ -18,10 +19,24 @@
       </div>
     </section>
 
+    <!-- Guild Philosophy Intro -->
+    <section class="guild-philosophy">
+      <div class="philosophy-container">
+        <h2>Small by Design</h2>
+        <p>
+          We don't scale the team—we scale the craft. Three members isn't a limitation; it's a deliberate
+          choice. In a small guild, everyone builds, everyone ships, and everyone mentors. There are no
+          passengers. Each person's work is visible, meaningful, and directly tied to the guild's mission.
+          As the guild grows, it will grow one craftsperson at a time—each one chosen for their commitment
+          to the work, not to fill a seat.
+        </p>
+      </div>
+    </section>
+
     <!-- Team Grid Section -->
     <section class="team-grid-section">
       <div class="team-container">
-        <h2 class="section-title">Active Team Members</h2>
+        <h2 class="section-title">Active Guild Members</h2>
 
         <div class="team-grid">
           <NuxtLink
@@ -95,9 +110,9 @@ import { useSEO } from '~/composables/useSEO'
 import { teamMembers } from '~/data/team'
 
 useSEO({
-  title: 'Development Team - Skill-Wanderer',
-  description: 'Meet the development team behind Skill-Wanderer. Passionate developers and educators building free, practical tech education.',
-  keywords: ['team', 'developers', 'open source', 'skill-wanderer', 'Quan Nguyen'],
+  title: 'Guild Members - Skill-Wanderer',
+  description: 'Meet the guild members behind Skill-Wanderer. A small, intentional team of craftspeople building free, practical tech education.',
+  keywords: ['guild members', 'team', 'developers', 'open source', 'skill-wanderer', 'Quan Nguyen'],
 })
 
 const onImageError = (e: Event) => {
@@ -159,6 +174,32 @@ const onImageError = (e: Event) => {
 .team-grid-section {
   padding: 80px 20px;
   background: var(--darker-bg);
+}
+
+/* Guild Philosophy */
+.guild-philosophy {
+  padding: 60px 20px;
+  background: var(--dark-bg);
+  border-bottom: 1px solid rgba(255, 107, 53, 0.08);
+}
+
+.philosophy-container {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.philosophy-container h2 {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  color: var(--primary-orange);
+  margin-bottom: 20px;
+}
+
+.philosophy-container p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  opacity: 0.8;
+  color: var(--light-text);
 }
 
 .team-container {
