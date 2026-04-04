@@ -12,12 +12,13 @@
         </p>
         <div class="hero-cta">
           <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-primary">
-            Join the Guild
+            Start Learning
             <span>→</span>
           </NuxtLink>
-          <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            Explore Learning Paths
-          </a>
+          <NuxtLink to="/work-with-us" class="btn btn-secondary">
+            Work With Us
+            <span>→</span>
+          </NuxtLink>
         </div>
       </div>
       <svg class="wandering-path" viewBox="0 0 1200 200">
@@ -25,93 +26,73 @@
       </svg>
     </section>
 
-    <!-- Audience Fork — clear split for learners vs clients -->
-    <section class="audience-fork">
-      <div class="fork-content">
+    <!-- How Can We Help? — two-path CTA -->
+    <section class="help-paths">
+      <div class="help-paths-content">
         <h2>How Can We Help?</h2>
-        <div class="fork-grid">
-          <NuxtLink to="/learning-path/learn-contribute-build-earn" class="fork-card">
-            <div class="fork-icon">
-              <!-- Stacked layers / book icon -->
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 4L4 14l20 10 20-10L24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
-                <path d="M4 24l20 10 20-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4 34l20 10 20-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+        <div class="help-cards">
+          <NuxtLink to="/learning-path/learn-contribute-build-earn" class="help-card">
+            <div class="help-card-icon">
+              <Layers :size="32" color="var(--primary-orange)" :stroke-width="1.5" />
             </div>
             <h3>I Want to Learn</h3>
             <p>Free learning paths, mentorship, and real-world projects. Progress from Apprentice to Master at your own pace.</p>
-            <span class="fork-link">Start Learning <span>→</span></span>
+            <span class="help-card-cta">Start Learning <span>→</span></span>
           </NuxtLink>
-          <NuxtLink to="/work-with-us" class="fork-card">
-            <div class="fork-icon">
-              <!-- Hammer & anvil icon -->
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="6" y="34" width="36" height="6" rx="2" stroke="currentColor" stroke-width="2.5"/>
-                <path d="M14 34v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" stroke="currentColor" stroke-width="2.5"/>
-                <path d="M24 24v-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M16 12h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M18 8h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              </svg>
+          <NuxtLink to="/work-with-us" class="help-card">
+            <div class="help-card-icon">
+              <Building2 :size="32" color="var(--primary-orange)" :stroke-width="1.5" />
             </div>
             <h3>I Need a Builder</h3>
             <p>Senior-led, community-powered delivery. Custom software, transparent pricing, and every engagement funds education.</p>
-            <span class="fork-link">Work With Us <span>→</span></span>
+            <span class="help-card-cta">Work With Us <span>→</span></span>
           </NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- Guild Model — alternating layout, SVG icons, 3 pillars only -->
-    <section id="platform" class="guild-model">
-      <div class="section-header">
-        <h2>The Tech Guild Model</h2>
-        <p>A social enterprise in the making—where education and real work are one and the same</p>
-      </div>
-      <div class="model-items">
-        <div class="model-item">
-          <div class="model-icon">
-            <!-- Compass / guild hall -->
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/>
-              <polygon points="24,10 28,22 24,20 20,22" fill="currentColor" opacity="0.6"/>
-              <polygon points="24,38 20,26 24,28 28,26" fill="currentColor" opacity="0.3"/>
-              <circle cx="24" cy="24" r="3" stroke="currentColor" stroke-width="2"/>
-            </svg>
-          </div>
-          <div class="model-text">
-            <h3>Guild-Based Learning</h3>
-            <p>Progress from Apprentice to Journeyman to Master through structured mentorship, hands-on projects, and peer collaboration—just like the craft guilds of old.</p>
-          </div>
+    <!-- Why a Guild? + The Tech Guild Model — merged narrative + visual features -->
+    <section id="platform" class="guild-narrative">
+      <div class="narrative-content">
+        <div class="narrative-header">
+          <h2>Why a Guild?</h2>
+          <p class="narrative-lead">A social enterprise in the making—where education and real work are one and the same</p>
         </div>
-        <div class="model-item model-item--reverse">
-          <div class="model-icon">
-            <!-- Chisel & stone -->
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 40l12-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M17 31l-6 6" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-              <rect x="22" y="14" width="18" height="22" rx="3" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M28 20h8M28 26h6M28 32h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="model-text">
-            <h3>Learn by Building</h3>
-            <p>Guild members work on real projects for real clients. Every line of code shipped is a lesson learned—failures included. That's how craft is forged.</p>
-          </div>
+        <div class="narrative-body">
+          <p>
+            Centuries ago, guilds were communities where apprentices, journeymen, and masters worked side by side—
+            learning not from lectures but from doing. The master didn't just teach; they built alongside you.
+            Skill-Wanderer brings that model to technology.
+          </p>
         </div>
-        <div class="model-item">
-          <div class="model-icon">
-            <!-- Cycle arrows -->
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 8a16 16 0 0 1 22 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M38 14l-2-6 6-2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M34 40a16 16 0 0 1-22-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M10 34l2 6-6 2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+
+        <div class="guild-model-features">
+          <div class="guild-feature">
+            <div class="guild-feature-icon">
+              <Compass :size="28" color="var(--primary-orange)" :stroke-width="1.5" />
+            </div>
+            <div class="guild-feature-text">
+              <h3>Guild-Based Learning</h3>
+              <p>Progress from Apprentice to Journeyman to Master through structured mentorship, hands-on projects, and peer collaboration—just like the craft guilds of old.</p>
+            </div>
           </div>
-          <div class="model-text">
-            <h3>Work Funds Education</h3>
-            <p>Revenue from guild engagements is reinvested into free education, mentorship, and community infrastructure. No ads, no donations needed—just purposeful work.</p>
+          <div class="guild-feature guild-feature--reverse">
+            <div class="guild-feature-text">
+              <h3>Learn by Building</h3>
+              <p>Guild members work on real projects for real clients. Every line of code shipped is a lesson learned—failures included. That's how craft is forged.</p>
+            </div>
+            <div class="guild-feature-icon">
+              <FileCode :size="28" color="var(--primary-orange)" :stroke-width="1.5" />
+            </div>
+          </div>
+          <div class="guild-feature">
+            <div class="guild-feature-icon">
+              <RefreshCw :size="28" color="var(--primary-orange)" :stroke-width="1.5" />
+            </div>
+            <div class="guild-feature-text">
+              <h3>Work Funds Education</h3>
+              <p>Revenue from guild engagements is reinvested into free education, mentorship, and community infrastructure. No ads, no donations needed—just purposeful work.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -127,44 +108,98 @@
         <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="project-thumb">
           <div class="project-image-wrap">
             <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" loading="lazy" />
+            <span class="project-type-badge">Non-Profit</span>
           </div>
           <div class="project-meta">
             <h4>WM Smile Generation</h4>
-            <span class="project-tag">Non-Profit · Uganda</span>
+            <p class="project-summary">Website for a Ugandan non-profit supporting healthcare and education communities.</p>
+            <div class="project-stack-tags">
+              <span>Nuxt 3</span>
+              <span>Kubernetes</span>
+            </div>
           </div>
         </NuxtLink>
         <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="project-thumb">
           <div class="project-image-wrap">
             <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" loading="lazy" />
+            <span class="project-type-badge">Non-Profit</span>
           </div>
           <div class="project-meta">
             <h4>ChanhDao.vn</h4>
-            <span class="project-tag">AI Platform · Vietnam</span>
+            <p class="project-summary">162 Buddhist lessons with AI-powered Q&A on a self-hosted cluster.</p>
+            <div class="project-stack-tags">
+              <span>Python</span>
+              <span>OpenAI</span>
+            </div>
           </div>
         </NuxtLink>
         <NuxtLink to="/work-with-us/projects/mindyminds" class="project-thumb">
           <div class="project-image-wrap">
             <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds" loading="lazy" />
+            <span class="project-type-badge">Start-up</span>
           </div>
           <div class="project-meta">
             <h4>MindyMinds</h4>
-            <span class="project-tag">AI Platform · Start-up</span>
+            <p class="project-summary">Multi-tenant AI chatbot platform delivered concept-to-production in 3 months.</p>
+            <div class="project-stack-tags">
+              <span>Next.js</span>
+              <span>Docker</span>
+            </div>
           </div>
         </NuxtLink>
-        <NuxtLink to="/work-with-us/projects/mindyplay" class="project-thumb">
-          <div class="project-image-wrap">
-            <img src="/projects/mindyplay/mindyplay-logo.jpg" alt="MindyPlay" loading="lazy" />
-          </div>
-          <div class="project-meta">
-            <h4>MindyPlay</h4>
-            <span class="project-tag">Mobile Game · Start-up</span>
-          </div>
-        </NuxtLink>
+
       </div>
       <div class="projects-cta">
         <NuxtLink to="/work-with-us/our-projects" class="btn btn-outline">
           View All Projects <span>→</span>
         </NuxtLink>
+      </div>
+    </section>
+
+    <!-- Guild Voices — testimonial block for visual rhythm -->
+    <section class="testimonials">
+      <div class="testimonials-content">
+        <div class="section-header">
+          <h2>Guild Voices</h2>
+          <p>Stories from the apprentices, journeymen, and mentors who walk the path</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <blockquote>"Nothing stops The Warrior. Khouja doesn't wait for the storm to pass—he charges straight through it. His resilience and self-reliance make him one of the most impressive learners we've ever had."</blockquote>
+            <div class="testimonial-author">
+              <img src="/learners/khouja-nasreddine.jpeg" alt="Khouja Nasreddine" loading="lazy" />
+              <div>
+                <strong>Khouja Nasreddine</strong>
+                <span>Mobile Game Dev Path · Tunisia</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"Alfredo carries his own torch. His words inspire, his independence impresses, and his fire is contagious. The firebrand has a future as bright as the flame he carries."</blockquote>
+            <div class="testimonial-author">
+              <img src="/learners/Alfredo-Salazar.jpeg" alt="Alfredo Salazar" loading="lazy" />
+              <div>
+                <strong>Alfredo Salazar</strong>
+                <span>Mobile Game Dev Path · Venezuela</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"Vincent doesn't have the luxury of stable power or fast internet—yet he shows up every day with the same calm determination. The Stoic will sail through this."</blockquote>
+            <div class="testimonial-author">
+              <img src="/learners/Vincent-Onotu-Bello.jpeg" alt="Vincent Onotu Bello" loading="lazy" />
+              <div>
+                <strong>Vincent Onotu Bello</strong>
+                <span>Software Dev Path · Nigeria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-cta">
+          <NuxtLink to="/learners" class="btn btn-outline">
+            Meet Our Learners <span>→</span>
+          </NuxtLink>
+        </div>
       </div>
     </section>
 
@@ -227,6 +262,8 @@
 </template>
 
 <script setup lang="ts">
+import { Layers, Building2, Compass, FileCode, RefreshCw } from 'lucide-vue-next'
+
 // SEO and meta management
 useSEO({
   title: 'Skill-Wanderer - Tech Guild for Education & Social Good',
@@ -428,94 +465,185 @@ onUnmounted(() => {
   transform: translateY(-2px);
 }
 
-/* Audience Fork */
-.audience-fork {
-  padding: 80px 20px;
+/* Guild Narrative */
+.guild-narrative {
+  padding: 100px 20px;
   background: var(--darker-bg);
 }
 
-.fork-content {
-  max-width: 900px;
+.narrative-content {
+  max-width: 800px;
   margin: 0 auto;
+}
+
+.narrative-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.narrative-header h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--primary-orange);
+  margin-bottom: 16px;
+}
+
+.narrative-lead {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  color: var(--light-text);
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+.narrative-body p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  opacity: 0.8;
+  margin-bottom: 24px;
   text-align: center;
 }
 
-.fork-content h2 {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  margin-bottom: 50px;
-  color: var(--primary-orange);
-}
-
-.fork-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.fork-card {
-  background: var(--card-bg);
-  border: 2px solid rgba(255, 107, 53, 0.15);
-  border-radius: 24px;
-  padding: 50px 36px;
-  text-decoration: none;
-  color: var(--light-text);
-  transition: all 0.35s ease;
+/* Guild Model Features — alternating icon + text */
+.guild-model-features {
   display: flex;
   flex-direction: column;
+  gap: 48px;
+  margin-top: 56px;
+}
+
+.guild-feature {
+  display: flex;
   align-items: center;
-  text-align: center;
+  gap: 40px;
 }
 
-.fork-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--primary-orange);
-  box-shadow: 0 12px 40px rgba(255, 107, 53, 0.15);
+.guild-feature--reverse {
+  flex-direction: row-reverse;
 }
 
-.fork-icon {
+.guild-feature-icon {
+  flex-shrink: 0;
   width: 72px;
   height: 72px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
-  border-radius: 20px;
+  border-radius: 50%;
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
 }
 
-.fork-icon svg {
-  width: 36px;
-  height: 36px;
+.guild-feature-text h3 {
+  font-size: 1.3rem;
   color: white;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
-.fork-card h3 {
-  font-size: 1.6rem;
-  color: white;
-  margin-bottom: 14px;
-}
-
-.fork-card p {
-  opacity: 0.8;
+.guild-feature-text p {
   font-size: 1rem;
   line-height: 1.7;
+  opacity: 0.75;
+}
+
+/* How Can We Help? */
+.help-paths {
+  padding: 100px 20px;
+  background: var(--dark-bg);
+}
+
+.help-paths-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.help-paths-content h2 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.help-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.help-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  padding: 48px 36px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--light-text);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 107, 53, 0.5);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.help-card-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.help-card h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.help-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.75;
   margin-bottom: 24px;
   flex-grow: 1;
 }
 
-.fork-link {
+.help-card-cta {
   color: var(--primary-orange);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1rem;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   transition: gap 0.3s ease;
 }
 
-.fork-card:hover .fork-link {
-  gap: 12px;
+.help-card:hover .help-card-cta {
+  gap: 14px;
 }
+
+.narrative-highlight {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  color: var(--primary-orange) !important;
+  opacity: 1 !important;
+  border-left: 3px solid var(--primary-orange);
+  padding-left: 20px;
+  margin-top: 32px !important;
+}
+
+/* Guild Model — removed, replaced by narrative */
 
 /* Section Header */
 .section-header {
@@ -530,69 +658,15 @@ onUnmounted(() => {
   color: var(--primary-orange);
 }
 
-/* Guild Model — alternating layout */
-.guild-model {
+/* Projects Showcase */
+.projects-showcase {
   padding: 100px 20px;
   background: var(--dark-bg);
 }
 
-.model-items {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-
-.model-item {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-}
-
-.model-item--reverse {
-  flex-direction: row-reverse;
-}
-
-.model-icon {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 107, 53, 0.05));
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.model-icon svg {
-  width: 52px;
-  height: 52px;
-  color: var(--primary-orange);
-}
-
-.model-text h3 {
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 12px;
-}
-
-.model-text p {
-  opacity: 0.8;
-  line-height: 1.8;
-  font-size: 1.05rem;
-}
-
-/* Projects Showcase */
-.projects-showcase {
-  padding: 100px 20px;
-  background: var(--darker-bg);
-}
-
 .projects-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
@@ -619,6 +693,7 @@ onUnmounted(() => {
   height: 160px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.03);
+  position: relative;
 }
 
 .project-image-wrap img {
@@ -632,17 +707,17 @@ onUnmounted(() => {
   transform: scale(1.05);
 }
 
-.project-image-wrap--logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-}
-
-.project-image-wrap--logo img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
+.project-type-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
 }
 
 .project-meta {
@@ -652,15 +727,99 @@ onUnmounted(() => {
 .project-meta h4 {
   font-size: 1.1rem;
   color: white;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
-.project-tag {
+.project-summary {
   font-size: 0.85rem;
   opacity: 0.6;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.project-stack-tags {
+  display: flex;
+  gap: 6px;
+}
+
+.project-stack-tags span {
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 50px;
+  background: rgba(255, 107, 53, 0.08);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  color: var(--primary-orange);
+  font-weight: 600;
 }
 
 .projects-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 100px 20px;
+  background: var(--darker-bg);
+}
+
+.testimonials-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.1);
+  border-radius: 20px;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testimonial-card blockquote {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--light-text);
+  opacity: 0.9;
+  font-style: italic;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.testimonial-author img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 107, 53, 0.3);
+}
+
+.testimonial-author strong {
+  display: block;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.testimonial-author span {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.testimonials-cta {
   text-align: center;
   margin-top: 40px;
 }
@@ -783,18 +942,22 @@ onUnmounted(() => {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .fork-grid {
+  .help-cards {
     grid-template-columns: 1fr;
   }
 
-  .model-item,
-  .model-item--reverse {
+  .guild-feature,
+  .guild-feature--reverse {
     flex-direction: column;
     text-align: center;
   }
 
   .projects-strip {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
   }
 
   .values-grid {

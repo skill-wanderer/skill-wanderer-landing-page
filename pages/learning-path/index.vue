@@ -16,22 +16,47 @@
 
     <section class="topics-section">
       <div class="topics-wrapper">
+        <!-- Foundational Paths -->
         <div class="section-header">
-          <h2>Topic Hub</h2>
-          <p>Tap any topic to explore the dedicated learning path page.</p>
+          <h2>Foundational Paths</h2>
+          <p>Core disciplines for starting your guild journey</p>
         </div>
 
-        <div class="topics-grid">
+        <div class="topics-grid topics-grid--foundation">
           <NuxtLink
-            v-for="topic in topics"
+            v-for="topic in foundationalTopics"
             :key="topic.slug"
             :to="`/learning-path/${topic.slug}`"
-            class="topic-card"
+            class="topic-card topic-card--foundation"
             :aria-label="`Open learning path for ${topic.title}`"
           >
             <div class="topic-top">
               <span class="topic-icon" aria-hidden="true">{{ topic.icon }}</span>
-              <span class="topic-index">{{ topic.id }}</span>
+              <span class="topic-badge topic-badge--foundation">Foundation</span>
+            </div>
+            <h3>{{ topic.title }}</h3>
+            <p>{{ topic.description }}</p>
+            <span class="topic-action">Open Path →</span>
+          </NuxtLink>
+        </div>
+
+        <!-- Advanced & Specialized Paths -->
+        <div class="section-header section-header--advanced">
+          <h2>Advanced &amp; Specialized</h2>
+          <p>Deeper disciplines for experienced practitioners</p>
+        </div>
+
+        <div class="topics-grid topics-grid--advanced">
+          <NuxtLink
+            v-for="topic in advancedTopics"
+            :key="topic.slug"
+            :to="`/learning-path/${topic.slug}`"
+            class="topic-card topic-card--advanced"
+            :aria-label="`Open learning path for ${topic.title}`"
+          >
+            <div class="topic-top">
+              <span class="topic-icon" aria-hidden="true">{{ topic.icon }}</span>
+              <span class="topic-badge topic-badge--advanced">Advanced</span>
             </div>
             <h3>{{ topic.title }}</h3>
             <p>{{ topic.description }}</p>
@@ -61,93 +86,83 @@ useSEO({
 })
 
 interface LearningTopic {
-  id: string
   slug: string
   title: string
   icon: string
   description: string
 }
 
-const topics: LearningTopic[] = [
+const foundationalTopics: LearningTopic[] = [
   {
-    id: '00',
     slug: 'web-development',
     title: 'Web Development',
     icon: '🌐',
     description: 'Frontend, backend, and full-stack foundations to ship modern web products.'
   },
   {
-    id: '01',
     slug: 'mobile-development',
     title: 'Mobile Development',
     icon: '📱',
     description: 'Build native and cross-platform apps with production-ready workflows.'
   },
   {
-    id: '02',
-    slug: 'ai-and-machine-learning',
-    title: 'AI and Machine Learning',
-    icon: '🤖',
-    description: 'Learn core ML concepts, model building, and practical AI integration.'
-  },
-  {
-    id: '03',
-    slug: 'devops',
-    title: 'DevOps',
-    icon: '⚙️',
-    description: 'Automate delivery, improve reliability, and scale systems with confidence.'
-  },
-  {
-    id: '04',
-    slug: 'mlops',
-    title: 'MLOps',
-    icon: '🧪',
-    description: 'Operationalize ML pipelines from training and validation to monitoring.'
-  },
-  {
-    id: '05',
     slug: 'qa-tester',
     title: 'QA / Tester',
     icon: '🔍',
     description: 'Build quality-first testing skills across manual, automation, and strategy.'
   },
   {
-    id: '06',
-    slug: 'software-development-roles-and-career',
-    title: 'Software Development Roles & Career',
-    icon: '🧭',
-    description: 'Understand role pathways, growth plans, and career transitions in tech.'
-  },
-  {
-    id: '07',
-    slug: 'project-management',
-    title: 'Project Management',
-    icon: '📌',
-    description: 'Plan, execute, and deliver projects with practical frameworks and tools.'
-  },
-  {
-    id: '08',
     slug: 'business-analyst',
     title: 'Business Analyst',
     icon: '📊',
     description: 'Bridge business and technical teams with strong analysis and communication.'
   },
   {
-    id: '09',
+    slug: 'software-development-roles-and-career',
+    title: 'Software Development Roles & Career',
+    icon: '🧭',
+    description: 'Understand role pathways, growth plans, and career transitions in tech.'
+  },
+  {
+    slug: 'project-management',
+    title: 'Project Management',
+    icon: '📌',
+    description: 'Plan, execute, and deliver projects with practical frameworks and tools.'
+  }
+]
+
+const advancedTopics: LearningTopic[] = [
+  {
+    slug: 'ai-and-machine-learning',
+    title: 'AI and Machine Learning',
+    icon: '🤖',
+    description: 'Learn core ML concepts, model building, and practical AI integration.'
+  },
+  {
+    slug: 'devops',
+    title: 'DevOps',
+    icon: '⚙️',
+    description: 'Automate delivery, improve reliability, and scale systems with confidence.'
+  },
+  {
+    slug: 'mlops',
+    title: 'MLOps',
+    icon: '🧪',
+    description: 'Operationalize ML pipelines from training and validation to monitoring.'
+  },
+  {
     slug: 'start-up-foundation',
     title: 'Start-Up Foundation',
     icon: '🚀',
     description: 'Learn startup essentials from validation and MVP planning to execution.'
   },
   {
-    id: '10',
     slug: 'advanced-software-development-skills',
     title: 'Advanced Software Development Skills',
     icon: '🛠️',
     description: 'Strengthen architecture, performance, testing, and advanced engineering craft.'
   },
   {
-    id: '11',
     slug: 'software-architecture-and-design-patterns',
     title: 'Software Architecture & Design Patterns',
     icon: '🏗️',
@@ -247,6 +262,35 @@ const topics: LearningTopic[] = [
   gap: 30px;
 }
 
+.topics-grid--advanced {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.section-header--advanced {
+  margin-top: 64px;
+}
+
+.topic-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 50px;
+}
+
+.topic-badge--foundation {
+  background: rgba(76, 175, 80, 0.12);
+  border: 1px solid rgba(76, 175, 80, 0.35);
+  color: #4caf50;
+}
+
+.topic-badge--advanced {
+  background: rgba(156, 39, 176, 0.12);
+  border: 1px solid rgba(156, 39, 176, 0.35);
+  color: #ce93d8;
+}
+
 .topic-card {
   background: var(--card-bg);
   border: 1px solid rgba(255, 107, 53, 0.2);
@@ -259,6 +303,22 @@ const topics: LearningTopic[] = [
   min-height: 220px;
   transition: all 0.3s ease;
   animation: riseIn 0.6s ease both;
+}
+
+.topic-card--foundation {
+  border-color: rgba(76, 175, 80, 0.2);
+}
+
+.topic-card--foundation:hover {
+  border-color: #4caf50;
+}
+
+.topic-card--advanced {
+  border-color: rgba(156, 39, 176, 0.2);
+}
+
+.topic-card--advanced:hover {
+  border-color: #ce93d8;
 }
 
 .topic-card:nth-child(2n) {
@@ -284,12 +344,6 @@ const topics: LearningTopic[] = [
 
 .topic-icon {
   font-size: 1.35rem;
-}
-
-.topic-index {
-  font-size: 0.86rem;
-  letter-spacing: 0.12em;
-  color: var(--primary-orange);
 }
 
 .topic-card h3 {
@@ -325,7 +379,8 @@ const topics: LearningTopic[] = [
 }
 
 @media (max-width: 1024px) {
-  .topics-grid {
+  .topics-grid,
+  .topics-grid--advanced {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -335,7 +390,8 @@ const topics: LearningTopic[] = [
     padding-top: 112px;
   }
 
-  .topics-grid {
+  .topics-grid,
+  .topics-grid--advanced {
     grid-template-columns: 1fr;
   }
 

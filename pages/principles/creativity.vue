@@ -24,7 +24,7 @@
         <div class="comparison-grid">
           <div class="comparison-card failure" style="animation-delay: 0.1s;">
             <div class="comparison-header">
-              <div class="comparison-icon">❌</div>
+              <div class="comparison-icon"><X :size="24" :stroke-width="2" /></div>
               <h3>Examined Failure</h3>
             </div>
             <ul class="comparison-points">
@@ -38,7 +38,7 @@
           
           <div class="comparison-card success" style="animation-delay: 0.3s;">
             <div class="comparison-header">
-              <div class="comparison-icon">✅</div>
+              <div class="comparison-icon"><Check :size="24" :stroke-width="2" /></div>
               <h3>Unexamined Success</h3>
             </div>
             <ul class="comparison-points">
@@ -149,6 +149,7 @@
 </template>
 
 <script setup lang="ts">
+import { Check, X } from 'lucide-vue-next'
 import type { StoryChapter, StoryContent, PracticeExample } from '~/types'
 
 // SEO and meta management

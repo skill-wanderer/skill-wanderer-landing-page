@@ -57,7 +57,7 @@
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon">👥</div>
+            <div class="milestone-icon"><Users :size="24" color="white" :stroke-width="2" /></div>
             <h3>Socially Active</h3>
             <p>
               He has been going out more and meeting with more people, showing incredible personal growth 
@@ -66,7 +66,7 @@
           </div>
           
           <div class="milestone-card">
-            <div class="milestone-icon">🚀</div>
+            <div class="milestone-icon"><Rocket :size="24" color="white" :stroke-width="2" /></div>
             <h3>Launching a Freelancing Career</h3>
             <p>
               Marking a significant milestone, Rei has officially launched his freelancing career 
@@ -89,7 +89,7 @@
         <div class="projects-grid">
           <a href="https://www.reltroner.com/" target="_blank" class="project-card">
             <div class="project-header">
-              <span class="project-icon">🎨</span>
+              <span class="project-icon"><Palette :size="24" :stroke-width="2" /></span>
               <h3>Creative Studio</h3>
             </div>
             <p>
@@ -104,7 +104,7 @@
           
           <a href="https://hrm.reltroner.com/" target="_blank" rel="noopener noreferrer" class="project-card">
             <div class="project-header">
-              <span class="project-icon">📊</span>
+              <span class="project-icon"><BarChart3 :size="24" :stroke-width="2" /></span>
               <h3>Custom HRM System</h3>
             </div>
             <p>
@@ -131,7 +131,7 @@
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon">🔍</span>
+          <span class="path-icon"><Search :size="24" :stroke-width="2" /></span>
           <span class="path-text">Currently pursuing: QA / Tester Path</span>
         </div>
 
@@ -180,6 +180,7 @@
 </template>
 
 <script setup lang="ts">
+import { BarChart3, Palette, Rocket, Search, Users } from 'lucide-vue-next'
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({

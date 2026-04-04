@@ -33,22 +33,22 @@
           </div>
           
           <div class="engine-component services">
-            <span class="component-icon">💼</span>
+            <span class="component-icon"><Briefcase :size="24" :stroke-width="2" /></span>
             <span class="component-label">Tech Partnerships</span>
           </div>
           
           <div class="engine-component education">
-            <span class="component-icon">🎓</span>
+            <span class="component-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
             <span class="component-label">Education</span>
           </div>
           
           <div class="engine-component revenue">
-            <span class="component-icon">💰</span>
+            <span class="component-icon"><Coins :size="24" :stroke-width="2" /></span>
             <span class="component-label">Revenue</span>
           </div>
           
           <div class="engine-component impact">
-            <span class="component-icon">🌟</span>
+            <span class="component-icon"><Star :size="24" :stroke-width="2" /></span>
             <span class="component-label">Real Impact</span>
           </div>
         </div>
@@ -64,7 +64,7 @@
         </div>
         <div class="role-comparison">
           <div class="role-card practitioner" style="animation-delay: 0.1s;">
-            <div class="role-icon">💸</div>
+            <div class="role-icon"><Banknote :size="24" :stroke-width="2" /></div>
             <h3>Lower Upfront Costs</h3>
             <ul class="role-benefits">
               <li>No large upfront payments</li>
@@ -80,7 +80,7 @@
           </div>
           
           <div class="role-card educator" style="animation-delay: 0.3s;">
-            <div class="role-icon">📈</div>
+            <div class="role-icon"><TrendingUp :size="24" :stroke-width="2" /></div>
             <h3>Success Sharing</h3>
             <ul class="role-benefits">
               <li>We earn when you succeed</li>
@@ -106,7 +106,7 @@
           <p style="font-size: 1.2rem; opacity: 0.9;">Two roles that strengthen each other</p>
         </div>        <div class="role-comparison">
           <div class="role-card practitioner" style="animation-delay: 0.1s;">
-            <div class="role-icon">💻</div>
+            <div class="role-icon"><Monitor :size="24" :stroke-width="2" /></div>
             <h3>As Practitioners</h3>
             <ul class="role-benefits">
               <li>Solve real client problems</li>
@@ -122,7 +122,7 @@
           </div>
           
           <div class="role-card educator" style="animation-delay: 0.3s;">
-            <div class="role-icon">📚</div>
+            <div class="role-icon"><Library :size="24" :stroke-width="2" /></div>
             <h3>As Educators</h3>
             <ul class="role-benefits">
               <li>Share real experiences</li>
@@ -152,7 +152,7 @@
         <div class="benefit-grid">
           <div class="benefit-card" style="animation-delay: 0.1s;">
             <div class="benefit-number">1</div>
-            <span class="benefit-icon">🔄</span>
+            <span class="benefit-icon"><RotateCw :size="24" :stroke-width="2" /></span>
             <h3>Always Current Curriculum</h3>
             <p>
               Our courses reflect the technologies and challenges we face today, not five years ago. 
@@ -162,7 +162,7 @@
           
           <div class="benefit-card" style="animation-delay: 0.3s;">
             <div class="benefit-number">2</div>
-            <span class="benefit-icon">💪</span>
+            <span class="benefit-icon"><Dumbbell :size="24" :stroke-width="2" /></span>
             <h3>Sustainable Independence</h3>
             <p>
               Revenue from services funds free education without relying on donations or compromising 
@@ -172,7 +172,7 @@
           
           <div class="benefit-card" style="animation-delay: 0.5s;">
             <div class="benefit-number">3</div>
-            <span class="benefit-icon">🌍</span>
+            <span class="benefit-icon"><Globe :size="24" :stroke-width="2" /></span>
             <h3>Double Impact</h3>
             <p>
               We help organizations solve real problems while simultaneously creating educational content 
@@ -203,6 +203,7 @@
 </template>
 
 <script setup>
+import { Banknote, Briefcase, Coins, Dumbbell, Globe, GraduationCap, Library, Monitor, RotateCw, Star, TrendingUp } from 'lucide-vue-next'
 import { computed } from 'vue'
 
 // SEO and meta management

@@ -11,21 +11,21 @@
       <div class="authority-container">
         <!-- Senior Architect Oversight -->
         <div class="authority-card authority-leadership">
-          <div class="authority-icon">🏛️</div>
+          <div class="authority-icon"><Landmark :size="24" color="white" :stroke-width="2" /></div>
           <h3>Who Will Work on Your Project?</h3>
           <p>Every engagement receives <strong>senior architect oversight</strong> from the Guild Master — a solution architect with over a decade of experience across startups and enterprises. Your project is never handed off to juniors. The Guild Master personally leads architecture, code review, and quality assurance, hand-picking skilled artisans for each engagement.</p>
         </div>
 
         <!-- Mission Highlight -->
         <div class="authority-card authority-mission">
-          <div class="authority-icon">🌱</div>
+          <div class="authority-icon"><Sprout :size="24" color="white" :stroke-width="2" /></div>
           <h3>Your Project Fuels a Mission</h3>
           <p>Every guild engagement directly funds <strong>free mentorship</strong> for passionate learners like <NuxtLink to="/learners/rei-reltroner" class="authority-link">Rei</NuxtLink> and <NuxtLink to="/team/thanh-nguyen" class="authority-link">Thanh</NuxtLink>. When you build with the Guild, you invest in the next generation of developers.</p>
         </div>
 
         <!-- Impact Counter -->
         <div class="authority-card authority-impact">
-          <div class="authority-icon">📊</div>
+          <div class="authority-icon"><BarChart3 :size="24" color="white" :stroke-width="2" /></div>
           <div class="impact-counter">
             <span class="impact-number">100%</span>
             <span class="impact-label">of projects fund local tech education</span>
@@ -40,7 +40,7 @@
       <div class="orion-container">
         <div class="orion-card">
           <div class="orion-header">
-            <div class="orion-icon">🧭</div>
+            <div class="orion-icon"><Compass :size="24" color="white" :stroke-width="2" /></div>
             <div>
               <h2>Need Answers Now?</h2>
               <p>Talk to <strong>Admiral Orion</strong>, our AI assistant, for instant project guidance — no waiting required.</p>
@@ -136,7 +136,7 @@
           <div class="info-cards">
             <div class="info-card">
               <div class="info-card-header">
-                <div class="info-icon">📧</div>
+                <div class="info-icon"><Mail :size="24" color="white" :stroke-width="2" /></div>
                 <h3>Email</h3>
               </div>
               <p>For project proposals or detailed discussions</p>
@@ -151,7 +151,7 @@
 
             <div class="info-card">
               <div class="info-card-header">
-                <div class="info-icon">💰</div>
+                <div class="info-icon"><Coins :size="24" color="white" :stroke-width="2" /></div>
                 <h3>Pricing</h3>
               </div>
               <p>Explore our transparent sprint packages and partnership models</p>
@@ -234,21 +234,21 @@
           <div class="info-cards">
             <div class="info-card">
               <div class="info-card-header">
-                <div class="info-icon">📝</div>
+                <div class="info-icon"><PenSquare :size="24" color="white" :stroke-width="2" /></div>
                 <h3>Application Review</h3>
               </div>
               <p>The Guild Master reviews every application personally. We look for passion, craftsmanship, and alignment with the Guild's values — not just years of experience.</p>
             </div>
             <div class="info-card">
               <div class="info-card-header">
-                <div class="info-icon">🤝</div>
+                <div class="info-icon"><Handshake :size="24" color="white" :stroke-width="2" /></div>
                 <h3>Craft Interview</h3>
               </div>
               <p>Shortlisted candidates are invited for a relaxed craft conversation — no whiteboard puzzles, just a genuine discussion about how you think and build.</p>
             </div>
             <div class="info-card">
               <div class="info-card-header">
-                <div class="info-icon">⚔️</div>
+                <div class="info-icon"><Swords :size="24" color="white" :stroke-width="2" /></div>
                 <h3>Guild Membership</h3>
               </div>
               <p>Guild artisans collaborate on real client projects, receive mentorship, and share in the mission of funding free tech education for emerging developers.</p>
@@ -285,6 +285,7 @@
 </template>
 
 <script setup lang="ts">
+import { BarChart3, Coins, Compass, Handshake, Landmark, Mail, PenSquare, Sprout, Swords } from 'lucide-vue-next'
 import { ref, reactive } from 'vue'
 
 // SEO and meta management

@@ -188,7 +188,7 @@
         <h2>Features</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon">📚</div>
+            <div class="feature-icon"><Library :size="24" color="white" :stroke-width="2" /></div>
             <h3>162 Structured Lessons</h3>
             <p>
               "Phat Hoc Pho Thong" (General Buddhist Studies) across 3 volumes — based on the
@@ -196,12 +196,12 @@
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🧠</div>
+            <div class="feature-icon"><Brain :size="24" color="white" :stroke-width="2" /></div>
             <h3>Interactive Multi-Learn UI</h3>
             <p>Multiple learning modes with quizzes per lesson for active engagement and retention.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">☸️</div>
+            <div class="feature-icon"><Compass :size="24" color="white" :stroke-width="2" /></div>
             <h3>Thien Thu — AI Companion</h3>
             <p>
               An AI learning companion that helps users find lessons, trace reference sources, and connect
@@ -209,7 +209,7 @@
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🛤️</div>
+            <div class="feature-icon"><Route :size="24" color="white" :stroke-width="2" /></div>
             <h3>Phap Lo — Learning Pathways</h3>
             <p>
               Structured learning progressions from Basic to Intermediate to Advanced, so learners can
@@ -217,7 +217,7 @@
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🤖</div>
+            <div class="feature-icon"><Bot :size="24" color="white" :stroke-width="2" /></div>
             <h3>An Lac Vien — AI Fleet</h3>
             <p>
               FastAPI + Qdrant-powered AI chatbot fleet for Buddhist Q&A, semantic search, and
@@ -225,12 +225,12 @@
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🇻🇳</div>
+            <div class="feature-icon"><Globe :size="24" color="white" :stroke-width="2" /></div>
             <h3>Full Vietnamese Localization</h3>
             <p>All UI, content, and quizzes in Vietnamese for native accessibility.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">📊</div>
+            <div class="feature-icon"><BarChart3 :size="24" color="white" :stroke-width="2" /></div>
             <h3>Progress Tracking</h3>
             <p>
               Users can mark completed lessons and monitor their advancement through each volume
@@ -238,27 +238,27 @@
             </p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🔍</div>
+            <div class="feature-icon"><Search :size="24" color="white" :stroke-width="2" /></div>
             <h3>SEO & Structured Data</h3>
             <p>Schema.org markup, sitemap, robots.txt, breadcrumb navigation for discoverability.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🔎</div>
+            <div class="feature-icon"><SearchCheck :size="24" color="white" :stroke-width="2" /></div>
             <h3>Content Search</h3>
             <p>Search across all lessons and dharma texts to find relevant teachings quickly.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">🔐</div>
+            <div class="feature-icon"><Lock :size="24" color="white" :stroke-width="2" /></div>
             <h3>Keycloak Auth</h3>
             <p>Login for progress tracking, shared SSO with skill-wanderer.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">📖</div>
+            <div class="feature-icon"><BookOpen :size="24" color="white" :stroke-width="2" /></div>
             <h3>100% Open Content</h3>
             <p>All course data stored as TypeScript in the repo — fully transparent, nothing to hide.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">📱</div>
+            <div class="feature-icon"><Smartphone :size="24" color="white" :stroke-width="2" /></div>
             <h3>Multi-Device Responsive</h3>
             <p>
               Compatible with desktop, tablet, and mobile — reaching Vietnamese communities
@@ -309,28 +309,28 @@
         </p>
         <div class="infra-list">
           <div class="infra-item">
-            <div class="infra-icon">🔑</div>
+            <div class="infra-icon"><Key :size="24" :stroke-width="2" /></div>
             <div class="infra-content">
               <h3>Keycloak Realm</h3>
               <p>Single Keycloak instance, separate realms per app. One deployment, reusable auth.</p>
             </div>
           </div>
           <div class="infra-item">
-            <div class="infra-icon">🤖</div>
+            <div class="infra-icon"><Bot :size="24" :stroke-width="2" /></div>
             <div class="infra-content">
               <h3>AI Fleet Architecture</h3>
               <p>Common FastAPI microservice patterns for AI capabilities.</p>
             </div>
           </div>
           <div class="infra-item">
-            <div class="infra-icon">🚀</div>
+            <div class="infra-icon"><Rocket :size="24" :stroke-width="2" /></div>
             <div class="infra-content">
               <h3>Deployment Pipeline</h3>
               <p>Shared CI/CD and hosting setup.</p>
             </div>
           </div>
           <div class="infra-item">
-            <div class="infra-icon">🏠</div>
+            <div class="infra-icon"><Home :size="24" :stroke-width="2" /></div>
             <div class="infra-content">
               <h3>Home k8s</h3>
               <p>Both projects run side-by-side on the same cluster, maximizing hardware utilization at zero cloud cost.</p>
@@ -522,6 +522,8 @@
 </template>
 
 <script setup lang="ts">
+import { BarChart3, BookOpen, Bot, Brain, Compass, Globe, Home, Key, Library, Lock, Rocket, Route, Search, SearchCheck, Smartphone } from 'lucide-vue-next'
+
 useSEO({
   title: 'ChanhDao.vn — Digitalizing Buddhism for Vietnamese Learners | Skill-Wanderer',
   description:

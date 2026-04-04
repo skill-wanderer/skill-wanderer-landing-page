@@ -18,7 +18,7 @@
         </div>
 
         <div class="guild-intro-card">
-          <div class="guild-intro-icon">🏛️</div>
+          <div class="guild-intro-icon"><Landmark :size="24" :stroke-width="2" /></div>
           <div class="guild-intro-body">
             <p>
               Skill-Wanderer is a mission-driven edtech platform built on a guild model — a community of developers at every
@@ -46,7 +46,7 @@
 
         <div class="guild-roles-grid">
           <div class="guild-role-card guild-master-card">
-            <div class="guild-role-icon">⚔️</div>
+            <div class="guild-role-icon"><Swords :size="24" :stroke-width="2" /></div>
             <h3>Guild Master</h3>
             <p>
               The principal architect who leads every engagement. Handles client communication, system design,
@@ -54,7 +54,7 @@
             </p>
           </div>
           <div class="guild-role-card">
-            <div class="guild-role-icon">🛡️</div>
+            <div class="guild-role-icon"><Shield :size="24" :stroke-width="2" /></div>
             <h3>Journeymen</h3>
             <p>
               Mid-level community members with proven skills, hand-picked for the engagement. They carry significant
@@ -62,7 +62,7 @@
             </p>
           </div>
           <div class="guild-role-card">
-            <div class="guild-role-icon">🔨</div>
+            <div class="guild-role-icon"><Hammer :size="24" :stroke-width="2" /></div>
             <h3>Apprentices</h3>
             <p>
               Junior developers selected from the community for their commitment and potential. They contribute under
@@ -72,7 +72,7 @@
         </div>
 
         <div class="info-banner">
-          <span class="info-icon">🎓</span>
+          <span class="info-icon"><GraduationCap :size="24" color="white" :stroke-width="2" /></span>
           <div>
             <span>
               Guild members are compensated through a flexible arrangement that may include project-based payment,
@@ -93,7 +93,7 @@
 
         <div class="guild-value-grid">
           <div class="guild-value-card">
-            <div class="guild-value-icon">🎯</div>
+            <div class="guild-value-icon"><Target :size="24" color="white" :stroke-width="2" /></div>
             <h4>Senior-Led Execution</h4>
             <p>
               Your project gets the strategic depth of a senior architect and the execution capacity of a motivated
@@ -101,7 +101,7 @@
             </p>
           </div>
           <div class="guild-value-card">
-            <div class="guild-value-icon">🌱</div>
+            <div class="guild-value-icon"><Sprout :size="24" color="white" :stroke-width="2" /></div>
             <h4>Funding Free Education</h4>
             <p>
               Every sprint you commission directly funds free education. Revenue from client
@@ -131,7 +131,7 @@
 
         <div class="approach-cards">
           <div class="approach-card">
-            <div class="approach-card-icon">📅</div>
+            <div class="approach-card-icon"><Calendar :size="24" :stroke-width="2" /></div>
             <h4>Two-Week Sprints</h4>
             <p>
               Our pricing is structured around two-week development sprints. This approach provides clear expectations,
@@ -139,7 +139,7 @@
             </p>
           </div>
           <div class="approach-card">
-            <div class="approach-card-icon">🔄</div>
+            <div class="approach-card-icon"><RotateCw :size="24" :stroke-width="2" /></div>
             <h4>Iterative Collaboration</h4>
             <p>
               Rather than fixed project contracts, we focus on delivering value through iterative collaboration.
@@ -147,7 +147,7 @@
             </p>
           </div>
           <div class="approach-card">
-            <div class="approach-card-icon">⚙️</div>
+            <div class="approach-card-icon"><Settings :size="24" :stroke-width="2" /></div>
             <h4>Flexible Capacity</h4>
             <p>
               Sprint pricing reflects the guild capacity assigned to your engagement. Lighter sprints may involve one artisan
@@ -168,7 +168,7 @@
         </div>
 
         <div class="admiral-orion-tip">
-          <span class="tip-icon">🧭</span>
+          <span class="tip-icon"><Compass :size="24" :stroke-width="2" /></span>
           <div>
             <p>
               <strong>Not sure where you fit?</strong> The detail across all packages can get confusing.
@@ -252,7 +252,7 @@
 
         <div class="quick-build-features">
           <div class="approach-card">
-            <div class="approach-card-icon">🛠️</div>
+            <div class="approach-card-icon"><Wrench :size="24" :stroke-width="2" /></div>
             <h4>Custom-Built, Not Template-Based</h4>
             <p>
               Every Quick Build is coded from scratch using modern frameworks and AI-assisted development. No WordPress,
@@ -261,7 +261,7 @@
             </p>
           </div>
           <div class="approach-card">
-            <div class="approach-card-icon">✏️</div>
+            <div class="approach-card-icon"><Pencil :size="24" :stroke-width="2" /></div>
             <h4>Content Updates Without a CMS</h4>
             <p>
               We do not build content management systems into Quick Builds. Instead, the guild handles content updates
@@ -270,7 +270,7 @@
             </p>
           </div>
           <div class="approach-card">
-            <div class="approach-card-icon">🤖</div>
+            <div class="approach-card-icon"><Bot :size="24" :stroke-width="2" /></div>
             <h4>AI-Assisted Speed</h4>
             <p>
               AI tooling allows the guild to build at speed without sacrificing quality. What used to take weeks of
@@ -327,7 +327,7 @@
           </div>
 
           <div class="info-banner">
-            <span class="info-icon">💳</span>
+            <span class="info-icon"><CreditCard :size="24" color="white" :stroke-width="2" /></span>
             <div>
               <span>
                 <strong>Payment: 20% upfront (discovery &amp; mock-up) → 30% after mock-up approval (build) → 50% on final approval (go live).</strong>
@@ -339,7 +339,7 @@
           </div>
 
           <div class="info-banner example-banner">
-            <span class="info-icon">🎁</span>
+            <span class="info-icon"><Gift :size="24" color="white" :stroke-width="2" /></span>
             <div>
               <span>
                 <strong>Included: 3 Months of Content Care</strong> — Every Quick Build comes with 3 months of Content Care
@@ -412,7 +412,7 @@
 
         <div class="retainer-cards retainer-cards-4">
           <div class="retainer-card">
-            <div class="retainer-icon">🔑</div>
+            <div class="retainer-icon"><Key :size="24" :stroke-width="2" /></div>
             <h3>Guild Access</h3>
             <div class="retainer-price">$800 – $1,500<span>/month</span></div>
             <ul class="retainer-features">
@@ -423,7 +423,7 @@
             </ul>
           </div>
           <div class="retainer-card">
-            <div class="retainer-icon">⚡</div>
+            <div class="retainer-icon"><Zap :size="24" :stroke-width="2" /></div>
             <h3>Steady Retainer</h3>
             <div class="retainer-price">$1,500 – $3,000<span>/month</span></div>
             <ul class="retainer-features">
@@ -434,7 +434,7 @@
             </ul>
           </div>
           <div class="retainer-card">
-            <div class="retainer-icon">📈</div>
+            <div class="retainer-icon"><TrendingUp :size="24" :stroke-width="2" /></div>
             <h3>Growth Retainer</h3>
             <div class="retainer-price">$3,000 – $5,500<span>/month</span></div>
             <ul class="retainer-features">
@@ -445,7 +445,7 @@
             </ul>
           </div>
           <div class="retainer-card featured">
-            <div class="retainer-icon">🚀</div>
+            <div class="retainer-icon"><Rocket :size="24" :stroke-width="2" /></div>
             <h3>Scale Retainer</h3>
             <div class="retainer-price">$6,500 – $12,000<span>/month</span></div>
             <ul class="retainer-features">
@@ -458,7 +458,7 @@
         </div>
 
         <div class="info-banner">
-          <span class="info-icon">📋</span>
+          <span class="info-icon"><ClipboardList :size="24" color="white" :stroke-width="2" /></span>
           <div>
             <span>
               Retainer commitments are month-to-month with a minimum initial period of two months.
@@ -486,17 +486,17 @@
 
         <div class="partnership-grid">
           <div class="partnership-card">
-            <div class="partnership-icon">📊</div>
+            <div class="partnership-icon"><BarChart3 :size="24" :stroke-width="2" /></div>
             <h4>Equity / Revenue Share</h4>
             <p>A percentage of equity or revenue is allocated in exchange for reduced sprint pricing. The exact split is determined based on project stage, risk profile, and expected development scope.</p>
           </div>
           <div class="partnership-card">
-            <div class="partnership-icon">🤝</div>
+            <div class="partnership-icon"><Handshake :size="24" :stroke-width="2" /></div>
             <h4>Long-Term Retainer</h4>
             <p>A commitment of 3–6 months or longer provides access to preferred rates. Longer commitments unlock deeper discounts, reflecting the stability and planning benefits for both sides.</p>
           </div>
           <div class="partnership-card">
-            <div class="partnership-icon">🧭</div>
+            <div class="partnership-icon"><Compass :size="24" :stroke-width="2" /></div>
             <h4>Advisory + Dev Hybrid</h4>
             <p>Development sprints are paired with strategic advisory responsibilities such as architecture reviews, technical due diligence, or investor-facing technical documentation. The advisory component offsets part of the cash rate.</p>
           </div>
@@ -536,35 +536,35 @@
 
         <div class="maintenance-cards maintenance-cards-5">
           <div class="maintenance-card">
-            <div class="maintenance-icon">📝</div>
+            <div class="maintenance-icon"><PenSquare :size="24" :stroke-width="2" /></div>
             <h3>Content Care</h3>
             <div class="maintenance-price">$50 – $100<span>/month</span></div>
             <p>Content-only updates handled by a guild apprentice. Text changes, image swaps, link updates, and minor copy edits. No development or design work included.</p>
             <div class="hours-badge">Up to 8 requests/month</div>
           </div>
           <div class="maintenance-card">
-            <div class="maintenance-icon">🌐</div>
+            <div class="maintenance-icon"><Globe :size="24" :stroke-width="2" /></div>
             <h3>Site Care</h3>
             <div class="maintenance-price">$150 – $300<span>/month</span></div>
             <p>Everything in Content Care (8 content requests/month) plus up to 5 hours of light development: minor bug fixes, small UI tweaks, dependency updates, and basic uptime monitoring. Apprentice or journeyman-handled.</p>
             <div class="hours-badge">Content + 5 dev hours/month</div>
           </div>
           <div class="maintenance-card">
-            <div class="maintenance-icon">🔧</div>
+            <div class="maintenance-icon"><Wrench :size="24" :stroke-width="2" /></div>
             <h3>Maintenance</h3>
             <div class="maintenance-price">$400 – $800<span>/month</span></div>
             <p>Handled by a guild artisan. Small bug fixes, security patches, server health checks, dependency updates, content updates, and minor adjustments.</p>
             <div class="hours-badge">Up to 10 hours/month</div>
           </div>
           <div class="maintenance-card">
-            <div class="maintenance-icon">💡</div>
+            <div class="maintenance-icon"><Lightbulb :size="24" :stroke-width="2" /></div>
             <h3>Advisory &amp; Consultancy</h3>
             <div class="maintenance-price">$600 – $1,200<span>/month</span></div>
             <p>Direct access to the Guild Master. Technical strategy sessions, architecture reviews, code audits, technology selection guidance, and investor-facing technical documentation.</p>
             <div class="hours-badge">Up to 8 hours/month</div>
           </div>
           <div class="maintenance-card featured">
-            <div class="maintenance-icon">⚡</div>
+            <div class="maintenance-icon"><Zap :size="24" :stroke-width="2" /></div>
             <h3>Maintenance + Advisory</h3>
             <div class="maintenance-price">$800 – $1,600<span>/month</span></div>
             <p>Combined: guild artisan for maintenance + Guild Master for advisory.</p>
@@ -603,7 +603,7 @@
         </div>
 
         <div class="info-banner">
-          <span class="info-icon">📋</span>
+          <span class="info-icon"><ClipboardList :size="24" color="white" :stroke-width="2" /></span>
           <div>
             <span>
               Maintenance and advisory packages are billed monthly with a minimum commitment of one month.
@@ -625,7 +625,7 @@
 
         <div class="kt-cards">
           <div class="kt-card">
-            <div class="kt-icon">📘</div>
+            <div class="kt-icon"><BookOpen :size="24" :stroke-width="2" /></div>
             <h3>KT Essentials</h3>
             <div class="kt-price">$600 – $1,200</div>
             <div class="kt-duration">1–2 weeks</div>
@@ -637,7 +637,7 @@
             </ul>
           </div>
           <div class="kt-card featured">
-            <div class="kt-icon">📗</div>
+            <div class="kt-icon"><BookOpen :size="24" :stroke-width="2" /></div>
             <h3>KT Complete</h3>
             <div class="kt-price">$1,200 – $2,500</div>
             <div class="kt-duration">Full program</div>
@@ -662,7 +662,7 @@
     <section class="improvement-section">
       <div class="content">
         <div class="improvement-block">
-          <div class="improvement-icon">🛠️</div>
+          <div class="improvement-icon"><Wrench :size="24" :stroke-width="2" /></div>
           <div>
             <h3>System Improvement Sprint</h3>
             <p>
@@ -686,7 +686,7 @@
         <!-- Early Partner Program -->
         <div class="incentive-block">
           <div class="incentive-block-header">
-            <div class="incentive-block-icon">🏛️</div>
+            <div class="incentive-block-icon"><Landmark :size="24" :stroke-width="2" /></div>
             <div>
               <h3>Early Partner Program</h3>
               <p>The guild is young. Partners who commit early are taking a bet on us before we have a long track record — and that trust deserves to be recognized.</p>
@@ -715,7 +715,7 @@
           </div>
 
           <div class="info-banner">
-            <span class="info-icon">⏳</span>
+            <span class="info-icon"><Hourglass :size="24" color="white" :stroke-width="2" /></span>
             <div>
               <span>
                 The Early Partner Program is <strong>limited by design</strong>. Once the guild reaches a critical mass of active engagements,
@@ -737,7 +737,7 @@
         <!-- Guild Capacity Pricing -->
         <div class="incentive-block">
           <div class="incentive-block-header">
-            <div class="incentive-block-icon">⚡</div>
+            <div class="incentive-block-icon"><Zap :size="24" :stroke-width="2" /></div>
             <div>
               <h3>Guild Capacity Pricing</h3>
               <p>When the guild has available capacity between engagements, that idle time benefits no one. Guild Capacity Pricing makes these windows available at a reduced rate.</p>
@@ -764,7 +764,7 @@
           </div>
 
           <div class="info-banner">
-            <span class="info-icon">🔗</span>
+            <span class="info-icon"><Link :size="24" color="white" :stroke-width="2" /></span>
             <div>
               <span>
                 Guild Capacity Pricing can be combined with Regional Pricing adjustments for partners in eligible regions.
@@ -778,7 +778,7 @@
         <!-- Startup Collaboration -->
         <div class="incentive-block compact">
           <div class="incentive-block-header">
-            <div class="incentive-block-icon">🌱</div>
+            <div class="incentive-block-icon"><Sprout :size="24" :stroke-width="2" /></div>
             <div>
               <h3>Startup Collaboration</h3>
               <p>
@@ -801,7 +801,7 @@
         </div>
 
         <div class="regional-intro">
-          <div class="regional-intro-icon">🌍</div>
+          <div class="regional-intro-icon"><Globe :size="32" :stroke-width="1.5" /></div>
           <p>
             Our standard rates are denominated in USD and reflect the cost of delivering professional-grade development.
             However, we recognize that these rates carry different weight depending on where you operate.
@@ -810,7 +810,7 @@
 
         <div class="regional-details-grid">
           <div class="regional-detail-card">
-            <div class="regional-detail-icon">🌏</div>
+            <div class="regional-detail-icon"><Globe :size="24" color="white" :stroke-width="2" /></div>
             <h4>Emerging Market Adjustments</h4>
             <p>
               For clients and partners based in emerging markets — including Southeast Asia, South Asia, Sub-Saharan Africa,
@@ -820,7 +820,7 @@
             </p>
           </div>
           <div class="regional-detail-card">
-            <div class="regional-detail-icon">📊</div>
+            <div class="regional-detail-icon"><BarChart3 :size="24" color="white" :stroke-width="2" /></div>
             <h4>Case-by-Case Assessment</h4>
             <p>
               For countries with significant internal economic variation — such as China, Brazil, or India — the adjustment is
@@ -855,7 +855,7 @@
         </div>
 
         <div class="trust-intro">
-          <div class="trust-intro-icon">🤝</div>
+          <div class="trust-intro-icon"><Handshake :size="32" :stroke-width="1.5" /></div>
           <p>
             By default, all payments are handled directly between you and Skill-Wanderer. Our sprint payment
             structures — with upfront/delivery splits — are designed to build trust incrementally, especially
@@ -874,7 +874,7 @@
 
         <div class="trust-options-grid">
           <div class="trust-option-card">
-            <div class="trust-option-icon">🔒</div>
+            <div class="trust-option-icon"><Lock :size="24" color="white" :stroke-width="2" /></div>
             <h4>Escrow Service</h4>
             <p>
               Funds are held by a neutral third party and released only when agreed milestones are met.
@@ -882,7 +882,7 @@
             </p>
           </div>
           <div class="trust-option-card">
-            <div class="trust-option-icon">💼</div>
+            <div class="trust-option-icon"><Briefcase :size="24" color="white" :stroke-width="2" /></div>
             <h4>Upwork Direct Contract</h4>
             <p>
               Engage through Upwork's Direct Contract feature with built-in payment protection, hourly tracking,
@@ -890,7 +890,7 @@
             </p>
           </div>
           <div class="trust-option-card">
-            <div class="trust-option-icon">📄</div>
+            <div class="trust-option-icon"><FileText :size="24" color="white" :stroke-width="2" /></div>
             <h4>Deel Contract</h4>
             <p>
               Use Deel for compliant international contracts with built-in invoicing, payment processing,
@@ -900,7 +900,7 @@
         </div>
 
         <div class="info-banner trust-fee-banner">
-          <span class="info-icon">💡</span>
+          <span class="info-icon"><Lightbulb :size="24" color="white" :stroke-width="2" /></span>
           <div>
             <span>
               <strong>Third-party platforms charge their own service fees</strong> (typically a percentage of the contract value
@@ -922,13 +922,13 @@
     <section class="notes-section">
       <div class="content">
         <div class="notes-header">
-          <span class="notes-header-icon">📋</span>
+          <span class="notes-header-icon"><ClipboardList :size="24" :stroke-width="2" /></span>
           <h2>Pricing Notes</h2>
         </div>
 
         <div class="notes-block">
           <div class="notes-disclaimer">
-            <span class="notes-disclaimer-icon">⚠️</span>
+            <span class="notes-disclaimer-icon"><AlertTriangle :size="20" :stroke-width="2" /></span>
             <div>
               All prices listed on this page are subject to change. Pricing is reviewed periodically and may be adjusted
               based on market conditions, team capacity, operational costs, and the evolving scope of our services.
@@ -947,7 +947,7 @@
         </div>
 
         <div class="admiral-orion-tip">
-          <span class="tip-icon">🧭</span>
+          <span class="tip-icon"><Compass :size="24" :stroke-width="2" /></span>
           <div>
             <p>
               <strong>Feeling overwhelmed by all the options?</strong> This page covers a lot of ground.
@@ -997,7 +997,7 @@
 
         <div class="mentorship-grid">
           <div class="mentorship-card">
-            <div class="mentorship-icon">💰</div>
+            <div class="mentorship-icon"><Coins :size="24" :stroke-width="2" /></div>
             <h4>Pay by Cash</h4>
             <p>
               A modest contribution that helps sustain the platform and covers the mentor's time. Rates are significantly
@@ -1005,7 +1005,7 @@
             </p>
           </div>
           <div class="mentorship-card">
-            <div class="mentorship-icon">🛠️</div>
+            <div class="mentorship-icon"><Wrench :size="24" :stroke-width="2" /></div>
             <h4>Help Build the Platform</h4>
             <p>
               Contribute development time to Skill-Wanderer itself — fixing bugs, building features, improving documentation,
@@ -1014,7 +1014,7 @@
             </p>
           </div>
           <div class="mentorship-card">
-            <div class="mentorship-icon">🌍</div>
+            <div class="mentorship-icon"><Globe :size="24" :stroke-width="2" /></div>
             <h4>Help Build the Community</h4>
             <p>
               Support the guild network through mentoring others, organizing events, writing tutorials,
@@ -1080,6 +1080,8 @@
 </template>
 
 <script setup lang="ts">
+import { AlertTriangle, BarChart3, BookOpen, Bot, Briefcase, Calendar, ClipboardList, Coins, Compass, CreditCard, FileText, Gift, Globe, GraduationCap, Hammer, Handshake, Hourglass, Key, Landmark, Lightbulb, Link, Lock, PenSquare, Pencil, Rocket, RotateCw, Settings, Shield, Sprout, Swords, Target, TrendingUp, Wrench, Zap } from 'lucide-vue-next'
+
 useSEO({
   title: 'Pricing | Skill-Wanderer',
   description:

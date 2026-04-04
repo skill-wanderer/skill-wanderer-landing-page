@@ -20,7 +20,7 @@
         
         <div class="disconnect-grid">
           <div class="disconnect-card" style="animation-delay: 0.1s;">
-            <div class="disconnect-icon">💻</div>
+            <div class="disconnect-icon"><Monitor :size="24" :stroke-width="2" /></div>
             <h3>The Unused System</h3>
             <p>A technically perfect system that users avoided because we never asked what they actually needed.</p>
             <div class="lesson-learned">
@@ -29,7 +29,7 @@
           </div>
           
           <div class="disconnect-card" style="animation-delay: 0.2s;">
-            <div class="disconnect-icon">🎓</div>
+            <div class="disconnect-icon"><GraduationCap :size="24" :stroke-width="2" /></div>
             <h3>The Unprepared Graduate</h3>
             <p>Students who know theory but can't apply it, or worse, who bought their way through.</p>
             <div class="lesson-learned">
@@ -38,7 +38,7 @@
           </div>
           
           <div class="disconnect-card" style="animation-delay: 0.3s;">
-            <div class="disconnect-icon">🏢</div>
+            <div class="disconnect-icon"><Building :size="24" :stroke-width="2" /></div>
             <h3>The Broken Promise</h3>
             <p>Institutions that promise job placement but lack the quality or connections to deliver.</p>
             <div class="lesson-learned">
@@ -58,19 +58,19 @@
         <div class="loop-visual">
           <div class="loop-circle">
             <div class="loop-node learn">
-              <span class="loop-node-icon">📚</span>
+              <span class="loop-node-icon"><Library :size="24" :stroke-width="2" /></span>
               <span>Learners Study</span>
             </div>
             <div class="loop-node join">
-              <span class="loop-node-icon">🤝</span>
+              <span class="loop-node-icon"><Handshake :size="24" :stroke-width="2" /></span>
               <span>Best Join Team</span>
             </div>
             <div class="loop-node teach">
-              <span class="loop-node-icon">🎯</span>
+              <span class="loop-node-icon"><Target :size="24" :stroke-width="2" /></span>
               <span>Team Creates Content</span>
             </div>
             <div class="loop-node improve">
-              <span class="loop-node-icon">⚡</span>
+              <span class="loop-node-icon"><Zap :size="24" :stroke-width="2" /></span>
               <span>Platform Improves</span>
             </div>
           </div>
@@ -150,6 +150,7 @@
 </template>
 
 <script setup lang="ts">
+import { Building, GraduationCap, Handshake, Library, Monitor, Target, Zap } from 'lucide-vue-next'
 import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management
