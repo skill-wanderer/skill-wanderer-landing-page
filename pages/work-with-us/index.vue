@@ -22,7 +22,7 @@
           <div class="cycle-step">
             <div class="cycle-icon"><Handshake :size="24" :stroke-width="2" /></div>
             <h3>Guild Partnerships</h3>
-            <p>We partner with organizations as their tech guild—sharing risks, sharing success through our social enterprise model.</p>
+            <p>We partner with organizations as their tech guild—providing senior-led sprint delivery through a scalable, transparent model.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
@@ -95,8 +95,8 @@
             <div class="pillar-icon"><Coins :size="24" :stroke-width="2" /></div>
             <h3>Pricing</h3>
             <p>
-              Sprint-based packages with full transparency. Trust sprints, standard sprints, and equity/revenue-sharing
-              models for startups—pick what fits your stage.
+              Two segments — Individuals and Organizations — with clear starting anchors.
+              From quick builds at $1,500 to dedicated engineering pods at $15,000/month.
             </p>
             <NuxtLink to="/work-with-us/pricing" class="pillar-link">
               View Pricing <span>→</span>
@@ -105,12 +105,12 @@
 
           <div class="pillar-card">
             <div class="pillar-icon"><Lightbulb :size="24" :stroke-width="2" /></div>
-            <h3>Success Sharing Model</h3>
+            <h3>Our Delivery Model</h3>
             <p>
-              We don't do outsourcing. We become your true technology partner—sharing both the success and the risks.
-              Lower upfront costs. Revenue when you win.
+              A senior-led system you plug into — not outsourcing. Senior architectural oversight,
+              parallel sprint execution, and full knowledge transfer at every milestone.
             </p>
-            <NuxtLink to="/work-with-us/success-sharing-model" class="pillar-link">
+            <NuxtLink to="/work-with-us/delivery-model" class="pillar-link">
               Learn How It Works <span>→</span>
             </NuxtLink>
           </div>
@@ -119,8 +119,8 @@
             <div class="pillar-icon"><Rocket :size="24" :stroke-width="2" /></div>
             <h3>Become a Guild Partner</h3>
             <p>
-              Ready to engage? We collaborate through long-term models including outcome-based scopes, revenue sharing,
-              and dedicated guild teams.
+              Ready to engage? Start with a single sprint, scale into a dedicated pod,
+              and stay as long as we're useful. Predictable pricing, zero lock-in.
             </p>
             <NuxtLink to="/work-with-us/become-a-partner" class="pillar-link">
               Become a Partner <span>→</span>
@@ -342,7 +342,7 @@ const operationalFAQ = [
   {
     icon: '🌱',
     q: 'Startup Collaboration',
-    a: 'For early-stage startups, the guild may offer hybrid models combining development sprints with equity or revenue sharing. These arrangements are evaluated on a case-by-case basis and always include a partial cash component.'
+    a: 'For early-stage startups, the guild offers sprint-based engagement at accessible price points — starting from $1,500 for a Quick Build Foundation. Scope and cadence are tailored to your stage and budget.'
   },
   {
     icon: '💰',

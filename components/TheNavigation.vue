@@ -233,7 +233,7 @@
                 <span class="rich-menu-desc">Real work creating real-world impact</span>
               </span>
             </NuxtLink>
-            <NuxtLink to="/work-with-us/success-sharing-model" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+            <NuxtLink to="/work-with-us/delivery-model" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
               <span class="rich-menu-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </span>
@@ -280,7 +280,7 @@
             <NuxtLink to="/work-with-us/who-we-work-with" @click="closeMobileMenu">Ideal Partners</NuxtLink>
             <NuxtLink to="/work-with-us/what-we-build" @click="closeMobileMenu">What We Build</NuxtLink>
             <NuxtLink to="/work-with-us/our-projects" @click="closeMobileMenu">Projects</NuxtLink>
-            <NuxtLink to="/work-with-us/success-sharing-model" @click="closeMobileMenu">Success Sharing</NuxtLink>
+            <NuxtLink to="/work-with-us/delivery-model" @click="closeMobileMenu">Delivery Model</NuxtLink>
             <NuxtLink to="/work-with-us/pricing" @click="closeMobileMenu">Guild Engagements</NuxtLink>
             <NuxtLink to="/work-with-us/become-a-partner" @click="closeMobileMenu">Partner With Us</NuxtLink>
           </div>
