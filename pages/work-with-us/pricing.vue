@@ -337,7 +337,7 @@
           <div class="section-header section-header--left">
             <h2>For Agencies &amp; Partners</h2>
             <p>
-              If you need reliable backend delivery for your own clients, the guild operates
+              If you need reliable, full-cycle development for your own clients, the guild operates
               as a white-label engineering partner.
             </p>
           </div>
@@ -352,8 +352,8 @@
               <p>Our rates are structured so you can resell with healthy margins built in.</p>
             </div>
             <div class="agency-card">
-              <h4>Reliable backend partner</h4>
-              <p>Consistent sprint capacity you can plan around. No scrambling for freelancers.</p>
+              <h4>Reliable development partner</h4>
+              <p>Full-cycle delivery — design, build, and launch. Consistent sprint capacity you can plan around.</p>
             </div>
             <div class="agency-card">
               <h4>Mission advantage</h4>
