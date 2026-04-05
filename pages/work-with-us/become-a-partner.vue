@@ -2,172 +2,175 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Become a Technology Partner</h1>
+      <h1>Become a Guild Partner</h1>
       <p>
-        We're not outsourcing—we're your technology partner. We share both the success and the risks with you,
-        requiring less upfront cost while our guild of craftspeople helps bring your vision to life.
+        We work with organizations that need reliable, senior-led engineering capacity.
+        Not outsourcing. Not staff augmentation. A delivery system you plug into —
+        with predictable cadence, transparent pricing, and architectural oversight built in.
       </p>
-      <NuxtLink to="/work-with-us/success-sharing-model" class="launch-badge-link">Shared Success. Shared Risk. Real Partnership.</NuxtLink>
+      <NuxtLink to="/work-with-us/delivery-model" class="launch-badge-link">How Our Delivery Model Works</NuxtLink>
     </section>
 
-    <!-- Why Partner Section -->
+    <!-- Why Partner -->
     <section class="philosophy">
       <div class="philosophy-content">
-        <h2>Why We're Different From Outsourcing</h2>
+        <h2>What Makes a Guild Partnership Different</h2>
         <p class="philosophy-description">
-          Traditional outsourcing asks you to pay upfront for work without shared accountability. We do it differently—
-          we become your true technology partner. We invest alongside you, share in your success, and take on the risks together.
+          A guild partnership is not a vendor contract. It is a long-term delivery relationship
+          where the same senior architect leads your work, the same artisans build your system,
+          and the same sprint rhythm keeps progress visible.
           <strong style="color: var(--primary-orange);">
-            Lower upfront costs. Revenue sharing when you succeed. Genuine partnership.
+            You get a system, not a person. And the system is designed to scale with you.
           </strong>
         </p>
 
         <div class="karma-cycle">
           <div class="cycle-item">
-            <div class="cycle-icon"><Handshake :size="24" :stroke-width="2" /></div>
-            <h3>Shared Risk</h3>
-            <p>We invest in your success together</p>
+            <div class="cycle-icon"><Shield :size="24" :stroke-width="2" /></div>
+            <h3>Senior-Led Delivery</h3>
+            <p>Every engagement architected and reviewed by the Guild Master</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon"><Coins :size="24" :stroke-width="2" /></div>
-            <h3>Lower Upfront Costs</h3>
-            <p>Pay less now, share success later</p>
+            <div class="cycle-icon"><Layers :size="24" :stroke-width="2" /></div>
+            <h3>Scalable Capacity</h3>
+            <p>From single sprints to dedicated engineering pods</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon"><Sprout :size="24" :stroke-width="2" /></div>
-            <h3>Mutual Growth</h3>
-            <p>Your success funds free education</p>
+            <div class="cycle-icon"><Landmark :size="24" :stroke-width="2" /></div>
+            <h3>Mission-Backed</h3>
+            <p>Your work funds free education — a genuine impact story</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Partnership Benefits -->
+    <!-- Partnership Advantages -->
     <section class="services-preview">
       <div class="services-content">
         <div class="section-header">
           <h2>The Partnership Advantage</h2>
-          <p>Why shared success beats traditional outsourcing</p>
+          <p>Why teams choose the guild over traditional outsourcing or agency models</p>
         </div>
 
         <div class="partner-features">
           <div class="feature-card">
-            <div class="feature-icon"><Banknote :size="24" color="white" :stroke-width="2" /></div>
-            <h4>Reduced Upfront Investment</h4>
+            <div class="feature-icon"><Shield :size="24" color="white" :stroke-width="2" /></div>
+            <h4>Architectural Oversight</h4>
             <p>
-              Unlike traditional outsourcing, we don't ask for large upfront payments. Start building with minimal
-              initial cost while we share the journey with you.
+              The Guild Master leads architecture, reviews code, and maintains quality
+              standards across every sprint. You're never relying on unsupervised work.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon"><TrendingUp :size="24" color="white" :stroke-width="2" /></div>
-            <h4>Success Sharing Model</h4>
+            <div class="feature-icon"><Calculator :size="24" color="white" :stroke-width="2" /></div>
+            <h4>Predictable Pricing</h4>
             <p>
-              We earn when you succeed. Our revenue comes from sharing in your success, aligning our incentives
-              with your business outcomes.
+              Sprint bands are confirmed before work begins. Retainer capacity is fixed monthly.
+              No surprise invoices, no scope-creep billing.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon"><Globe :size="24" color="white" :stroke-width="2" /></div>
-            <h4>Guild-Powered Talent</h4>
+            <div class="feature-icon"><Users :size="24" color="white" :stroke-width="2" /></div>
+            <h4>No Hiring Overhead</h4>
             <p>
-              Work gets done by motivated guild members from our global community—apprentices and journeymen eager to prove themselves
-              on real projects with real stakes.
+              Skip recruiting, onboarding, and HR complexity. The guild provides
+              ready-to-deploy engineering capacity under a single relationship.
             </p>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon"><Scale :size="24" color="white" :stroke-width="2" /></div>
-            <h4>True Risk Partnership</h4>
+            <div class="feature-icon"><Unlock :size="24" color="white" :stroke-width="2" /></div>
+            <h4>Full Ownership, Zero Lock-In</h4>
             <p>
-              We share both success and setbacks. When you face challenges, we're right there with you—because
-              that's what real partners do.
+              All code belongs to you. Open standards, clear documentation, and knowledge
+              transfer at every milestone. Walk away whenever you want.
             </p>
           </div>
         </div>
 
         <div class="impact-statement">
-          <div class="impact-icon"><Sparkles :size="28" :stroke-width="1.8" /></div>
-          <h3>The True Partnership Difference</h3>
+          <div class="impact-icon"><Landmark :size="28" :stroke-width="1.8" /></div>
+          <h3>The Mission Advantage</h3>
           <p>
-            This isn't outsourcing with a different name. We invest our time, expertise, and guild alongside your vision.
-            <strong>You pay less upfront</strong>, <strong>we share in your success</strong>, and <strong>our guild members gain
-            real-world experience</strong>—creating a model where everyone wins when you win.
+            Every engagement through the guild funds free education and trains the next generation
+            of developers. This is not a marketing angle — it's the economic model.
+            <strong>Your sprint dollars sustain the learning ecosystem.</strong>
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Partnership Model -->
+    <!-- How Partnership Works -->
     <section class="partnership-model">
       <div class="model-content">
         <div class="section-header">
-          <h2>How Our Partnership Model Works</h2>
+          <h2>How a Guild Partnership Works</h2>
         </div>
 
         <div class="model-intro">
-          <p class="model-statement">We’re not a traditional outsourcing or staffing shop.</p>
+          <p class="model-statement">Start with a sprint. Scale into a pod. Stay as long as we're useful.</p>
           <p class="model-description">
-            We collaborate through long-term models that may include outcome-based scopes, revenue sharing, or building
-            dedicated teams from our guild.
+            Most partnerships begin with a single sprint cycle to validate the working relationship.
+            From there, teams scale into retainer capacity or dedicated engineering pods
+            based on roadmap needs.
           </p>
         </div>
 
         <div class="model-details">
           <div class="model-card">
-            <div class="model-icon"><Sparkles :size="24" color="white" :stroke-width="2" /></div>
-            <h4>Mission-Support Fee</h4>
+            <div class="model-icon"><Compass :size="24" color="white" :stroke-width="2" /></div>
+            <h4>Start with a Sprint</h4>
             <p>
-              When applicable, a modest monthly mission-support fee sustains the ecosystem—coordination, mentorship, and
-              educational oversight.
+              A two-week cycle to validate the working relationship. Real deliverables,
+              senior oversight, and a clear picture of how the guild operates.
             </p>
           </div>
 
           <div class="model-card">
-            <div class="model-icon"><Building2 :size="24" color="white" :stroke-width="2" /></div>
-            <h4>Infrastructure Costs</h4>
+            <div class="model-icon"><RefreshCw :size="24" color="white" :stroke-width="2" /></div>
+            <h4>Scale into Cadence</h4>
             <p>
-              Product infrastructure costs—cloud, tooling, and operations—are borne by the partner, keeping spend focused
-              on your delivery.
+              Move to ongoing sprint cycles or a monthly engineering pod.
+              The same team, the same standards, predictable cost and capacity.
             </p>
           </div>
 
           <div class="model-card">
-            <div class="model-icon"><GraduationCap :size="24" color="white" :stroke-width="2" /></div>
-            <h4>Guild Member Pathways</h4>
+            <div class="model-icon"><FileCheck :size="24" color="white" :stroke-width="2" /></div>
+            <h4>Full Knowledge Transfer</h4>
             <p>
-              Guild members are not treated as short-term resources. The goal is stable pathways and durable value for
-              partners.
+              Documentation, walkthroughs, and handover support built into every engagement.
+              Your team can take ownership at any point.
             </p>
           </div>
         </div>
 
         <div class="model-alignment">
-          <h3>Why This Works Better Than Outsourcing:</h3>
+          <h3>Why This Works</h3>
           <div class="alignment-points">
             <div class="alignment-item">
-              <span class="alignment-icon"><Banknote :size="24" :stroke-width="2" /></span>
-              <p><strong>For You:</strong> Lower risk with reduced upfront costs—we succeed together or not at all.</p>
+              <span class="alignment-icon"><Calculator :size="24" :stroke-width="2" /></span>
+              <p><strong>For You:</strong> Predictable cost, senior oversight, and delivery you can plan around.</p>
             </div>
             <div class="alignment-item">
-              <span class="alignment-icon"><Target :size="24" :stroke-width="2" /></span>
-              <p><strong>For Us:</strong> We're motivated by your success, not just billing hours.</p>
+              <span class="alignment-icon"><Shield :size="24" :stroke-width="2" /></span>
+              <p><strong>For the Guild:</strong> Stable engagements fund the mission and develop guild artisans.</p>
             </div>
             <div class="alignment-item">
-              <span class="alignment-icon"><Star :size="24" :stroke-width="2" /></span>
-              <p><strong>For Learners:</strong> Real projects with real stakes create real skills.</p>
+              <span class="alignment-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
+              <p><strong>For Learners:</strong> Real projects under senior oversight create real skills.</p>
             </div>
           </div>
         </div>
 
         <div class="transparency-note">
           <p>
-            Partnerships are listed for transparency about collaboration and learning opportunities, not as endorsements
-            or paid promotion.
+            Partnerships are listed for transparency about collaboration and learning opportunities,
+            not as endorsements or paid promotion.
           </p>
         </div>
       </div>
@@ -176,15 +179,15 @@
     <!-- CTA -->
     <section class="coming-soon-cta">
       <div class="cta-content">
-        <h2>Ready for a Real Partnership?</h2>
+        <h2>Ready to Start?</h2>
         <p>
-          Forget the outsourcing playbook. Let's build together—with shared risk, shared success, and a guild
-          ready to help you win.
+          Review the pricing structure, or reach out directly to scope a starting point.
+          No pitch deck required — just a clear conversation about what you need.
         </p>
 
         <div class="cta-buttons">
-          <NuxtLink to="/contact" class="btn btn-primary">Start the Conversation</NuxtLink>
-          <NuxtLink to="/work-with-us/success-sharing-model" class="btn btn-secondary">Learn About Success Sharing</NuxtLink>
+          <NuxtLink to="/work-with-us/pricing" class="btn btn-primary">View Pricing</NuxtLink>
+          <NuxtLink to="/contact" class="btn btn-secondary">Start a Conversation</NuxtLink>
         </div>
       </div>
     </section>
@@ -192,14 +195,14 @@
 </template>
 
 <script setup lang="ts">
-import { Banknote, Building2, Coins, Globe, GraduationCap, Handshake, Scale, Sparkles, Sprout, Star, Target, TrendingUp } from 'lucide-vue-next'
+import { Calculator, Compass, FileCheck, GraduationCap, Landmark, Layers, RefreshCw, Shield, Unlock, Users } from 'lucide-vue-next'
 
 useSEO({
-  title: 'Become a Technology Partner | Skill-Wanderer',
+  title: 'Become a Guild Partner | Skill-Wanderer',
   description:
-    'Not outsourcing—true guild partnership. We share success and risks with you, require less upfront cost, and deliver through our global guild of craftspeople.',
+    'Senior-led engineering partnerships with predictable sprint delivery, scalable capacity, and mission-backed sustainability. Not outsourcing — a system you plug into.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['technology partner', 'guild partnership', 'software development partnership', 'shared success model', 'tech collaboration', 'startup technology partner'],
+  keywords: ['technology partner', 'guild partnership', 'engineering pod', 'sprint delivery', 'senior-led development', 'software development partner'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
@@ -245,18 +248,7 @@ useSEO({
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.launch-badge {
-  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
-  color: white;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
+  line-height: 1.8;
 }
 
 .launch-badge-link {
@@ -300,6 +292,10 @@ useSEO({
   font-size: 1.1rem;
   opacity: 0.9;
   margin-bottom: 40px;
+  line-height: 1.8;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .karma-cycle {
@@ -464,6 +460,7 @@ useSEO({
   opacity: 0.9;
   max-width: 900px;
   margin: 0 auto;
+  line-height: 1.75;
 }
 
 .model-details {
@@ -564,6 +561,7 @@ useSEO({
   font-size: 1.1rem;
   opacity: 0.85;
   margin-bottom: 30px;
+  line-height: 1.75;
 }
 
 .cta-buttons {

@@ -3,77 +3,78 @@
     <!-- Hero Section -->
     <section class="hero">
       <span class="hero-eyebrow">Work With Us</span>
-      <h1>Success Sharing Model</h1>
+      <h1>Our Delivery Model</h1>
       <p>
-        Our approach to collaboration is based on shared progress rather than fixed delivery contracts.
-        Instead of treating development as a one-time transaction, we work alongside our partners
-        through iterative development sprints.
+        A senior-led system you plug into — not a service you buy.
+        The guild delivers through structured sprint cycles, parallel execution,
+        and direct architectural oversight on every engagement.
       </p>
-      <span class="launch-badge">Guild Partnership, Not Outsourcing</span>
+      <span class="launch-badge">Senior-Led. Sprint-Driven. Mission-Backed.</span>
     </section>
 
-    <!-- Our Collaboration Approach -->
+    <!-- How the System Works -->
     <section class="approach-section">
       <div class="approach-content">
         <div class="section-header">
-          <h2>Our Collaboration Approach</h2>
+          <h2>How the System Works</h2>
           <p>
-            We work alongside our partners over time — not as a vendor completing a scope,
-            but as a team invested in the long-term success of what we build together.
+            Every engagement follows the same rhythm: two-week cycles, senior oversight,
+            and parallel artisan execution. The model is designed for clarity, predictability,
+            and sustainable momentum.
           </p>
         </div>
 
         <div class="approach-cycle">
           <div class="cycle-item">
-            <div class="cycle-icon"><RotateCw :size="24" :stroke-width="2" /></div>
-            <h3>Iterative Sprints</h3>
-            <p>Development evolves through structured sprints, not fixed-scope delivery</p>
+            <div class="cycle-icon"><Shield :size="24" :stroke-width="2" /></div>
+            <h3>Senior-Led</h3>
+            <p>The Guild Master architects every engagement and reviews every deliverable</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon"><TrendingUp :size="24" :stroke-width="2" /></div>
-            <h3>Ongoing Growth</h3>
-            <p>Continuous improvements, new features, and system enhancements over time</p>
+            <div class="cycle-icon"><Layers :size="24" :stroke-width="2" /></div>
+            <h3>Parallel Execution</h3>
+            <p>Guild artisans work in coordinated tracks to move faster within each cycle</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon"><Handshake :size="24" :stroke-width="2" /></div>
-            <h3>Shared Success</h3>
-            <p>Our incentives align with the long-term outcomes of the systems we build</p>
+            <div class="cycle-icon"><RefreshCw :size="24" :stroke-width="2" /></div>
+            <h3>Sprint Rhythm</h3>
+            <p>Scope is confirmed, built, and reviewed in focused two-week blocks</p>
           </div>
         </div>
 
         <div class="model-steps">
           <div class="step-card">
             <div class="step-number">1</div>
-            <div class="step-icon"><RotateCw :size="24" :stroke-width="2" /></div>
-            <h3>Iterative Development</h3>
+            <div class="step-icon"><Compass :size="24" :stroke-width="2" /></div>
+            <h3>Discovery &amp; Scoping</h3>
             <p>
-              We work alongside our partners through iterative development sprints. As systems evolve,
-              we continue contributing through ongoing improvements, new features, and system enhancements.
-              This allows the product to grow gradually while maintaining stability and quality.
+              Every engagement begins with a short discovery phase. We understand your goals,
+              constraints, and technical landscape — then confirm the right starting point
+              from our pricing structure.
             </p>
           </div>
 
           <div class="step-card">
             <div class="step-number">2</div>
-            <div class="step-icon"><Sprout :size="24" :stroke-width="2" /></div>
-            <h3>Hybrid Models for Startups</h3>
+            <div class="step-icon"><Calendar :size="24" :stroke-width="2" /></div>
+            <h3>Sprint Delivery</h3>
             <p>
-              For early-stage startups, we may explore hybrid collaboration models that combine development
-              sprints with equity or revenue sharing. These arrangements are evaluated on a case-by-case basis
-              and reflect a shared commitment to long-term outcomes.
+              Work is delivered in two-week cycles. Each cycle includes planning, parallel
+              implementation by guild artisans, senior code review, and a structured
+              review session with you.
             </p>
           </div>
 
           <div class="step-card">
             <div class="step-number">3</div>
-            <div class="step-icon"><Target :size="24" :stroke-width="2" /></div>
-            <h3>Aligned Incentives</h3>
+            <div class="step-icon"><TrendingUp :size="24" :stroke-width="2" /></div>
+            <h3>Evolve &amp; Scale</h3>
             <p>
-              This model aligns our work with the success of the systems we help build, encouraging
-              thoughtful decisions and sustainable development. We are invested in long-term outcomes,
-              not just short-term delivery.
+              Priorities can shift between cycles. As your product grows, the guild
+              scales with you — from individual sprints to dedicated engineering pods
+              with consistent capacity.
             </p>
           </div>
         </div>
@@ -86,18 +87,18 @@
         <div class="section-header">
           <h2>What This Means in Practice</h2>
           <p>
-            Rather than optimizing for short-term delivery, we focus on building systems
-            that can grow, adapt, and remain sustainable over time.
+            The guild is built for continuity, not just delivery.
+            Every engagement is structured so you maintain full ownership and control.
           </p>
         </div>
 
         <div class="practice-grid">
           <div class="practice-card">
-            <div class="practice-icon"><Building2 :size="24" :stroke-width="2" /></div>
-            <h4>Long-Term System Stability</h4>
+            <div class="practice-icon"><Shield :size="24" :stroke-width="2" /></div>
+            <h4>Senior Oversight on Every Sprint</h4>
             <p>
-              We design systems with longevity in mind. Architecture decisions are made to support
-              growth and change — not just to ship fast.
+              The Guild Master leads architecture decisions and reviews all code.
+              You're never relying on unsupervised junior work.
             </p>
           </div>
 
@@ -105,26 +106,26 @@
             <div class="practice-icon"><Component :size="24" :stroke-width="2" /></div>
             <h4>Maintainable Architecture</h4>
             <p>
-              Clean, well-structured codebases that your team can understand, extend, and take full
-              ownership of at any point.
+              Clean, well-structured codebases that your team can understand, extend,
+              and take full ownership of at any point.
             </p>
           </div>
 
           <div class="practice-card">
             <div class="practice-icon"><Library :size="24" :stroke-width="2" /></div>
-            <h4>Knowledge Sharing</h4>
+            <h4>Knowledge Transfer Built In</h4>
             <p>
-              We document, explain, and transfer knowledge throughout the engagement. You are never
-              dependent on us to understand your own system.
+              Documentation, walkthroughs, and knowledge sharing happen throughout
+              every engagement. You are never dependent on the guild.
             </p>
           </div>
 
           <div class="practice-card">
             <div class="practice-icon"><Unlock :size="24" :stroke-width="2" /></div>
-            <h4>Client Ownership</h4>
+            <h4>Full Client Ownership</h4>
             <p>
-              Clients are not locked into ongoing contracts. You are free to take full ownership of
-              your systems at any point — no strings attached.
+              No vendor lock-in. All code belongs to you. Open standards, clear
+              documentation, and the freedom to walk away at any time.
             </p>
           </div>
         </div>
@@ -140,16 +141,16 @@
 
         <div class="philosophy-block">
           <p>
-            Traditional outsourcing typically focuses on delivering predefined requirements within a fixed scope.
-            While this can be effective for well-defined projects, it often leads to rigid processes, limited
-            flexibility, and systems that are difficult to evolve over time.
+            Traditional outsourcing optimizes for output at the lowest cost.
+            Premium agencies optimize for margin at the highest price.
+            The guild sits in a different position entirely.
           </p>
-          <p class="philosophy-emphasis">Our approach is different.</p>
+          <p class="philosophy-emphasis">We are a delivery system, not a service provider.</p>
           <p>
-            We work as technology partners, not just implementers. Development is delivered through structured
-            sprints, allowing systems to evolve based on real-world feedback and changing needs. We emphasize
-            long-term system stability, maintainable architecture, and knowledge sharing — and clients are free
-            to take ownership of their systems at any point.
+            Work is led by a senior architect, executed in parallel by guild artisans,
+            and structured around two-week cycles with clear scope. Revenue sustains
+            the guild and reinvests directly into free education. That's the model —
+            no investors demanding margins, no overhead demanding bloated rates.
           </p>
         </div>
 
@@ -157,11 +158,11 @@
           <div class="comparison-card outsourcing">
             <div class="card-label card-label--red">Traditional Outsourcing</div>
             <ul class="comparison-list">
-              <li>Fixed scope and rigid requirements</li>
-              <li>Vendor-controlled systems</li>
-              <li>Limited flexibility after delivery</li>
-              <li>Optimized for short-term delivery</li>
+              <li>Optimized for lowest cost, not quality</li>
+              <li>Unsupervised junior execution</li>
+              <li>Rigid scope, limited flexibility</li>
               <li>Knowledge stays with the vendor</li>
+              <li>Vendor lock-in by design</li>
             </ul>
           </div>
 
@@ -169,41 +170,39 @@
             <span>VS</span>
           </div>
 
-          <div class="comparison-card success-sharing">
-            <div class="card-label card-label--green">Skill-Wanderer Approach</div>
+          <div class="comparison-card guild-model">
+            <div class="card-label card-label--green">Guild Delivery System</div>
             <ul class="comparison-list">
-              <li>Iterative development through sprints</li>
-              <li>Client ownership and independence</li>
-              <li>Systems designed for long-term growth</li>
-              <li>Focused on sustainable outcomes</li>
-              <li>Knowledge transferred to your team</li>
+              <li>Senior-led oversight on every engagement</li>
+              <li>Parallel artisan execution under review</li>
+              <li>Scope evolves within sprint cycles</li>
+              <li>Knowledge transfer built into the process</li>
+              <li>Full client ownership from day one</li>
             </ul>
           </div>
         </div>
 
         <div class="positioning-block">
           <div class="positioning-item">
-            <span class="positioning-icon"><Handshake :size="24" :stroke-width="2" /></span>
+            <span class="positioning-icon"><Shield :size="24" :stroke-width="2" /></span>
             <div>
-              <strong>Partnership</strong>
+              <strong>Senior-led system</strong>
               <span class="positioning-separator">over</span>
-              <span class="positioning-contrast">outsourcing</span>
+              <span class="positioning-contrast">unsupervised outsourcing</span>
             </div>
           </div>
-          <div class="positioning-divider"></div>
           <div class="positioning-item">
             <span class="positioning-icon"><Landmark :size="24" :stroke-width="2" /></span>
             <div>
-              <strong>Long-term systems</strong>
+              <strong>Mission-backed sustainability</strong>
               <span class="positioning-separator">over</span>
-              <span class="positioning-contrast">short-term delivery</span>
+              <span class="positioning-contrast">investor-driven margins</span>
             </div>
           </div>
-          <div class="positioning-divider"></div>
           <div class="positioning-item">
             <span class="positioning-icon"><Unlock :size="24" :stroke-width="2" /></span>
             <div>
-              <strong>Ownership</strong>
+              <strong>Client ownership</strong>
               <span class="positioning-separator">over</span>
               <span class="positioning-contrast">vendor lock-in</span>
             </div>
@@ -212,34 +211,34 @@
       </div>
     </section>
 
-    <!-- Final Positioning -->
+    <!-- Mission Value-Add -->
     <section class="final-positioning">
       <div class="final-content">
         <div class="section-header">
-          <h2>What Makes This Model Unique</h2>
-          <p>Four pillars that set our guild apart from any typical tech vendor.</p>
+          <h2>The Mission Advantage</h2>
+          <p>Your engagement does more than build your product.</p>
         </div>
 
         <div class="pillars-grid">
           <div class="pillar-card">
             <div class="pillar-number">01</div>
-            <h4>Open Education</h4>
-            <p>Free, high-quality learning resources available to everyone — no paywalls, no gatekeeping.</p>
+            <h4>Funds Free Education</h4>
+            <p>100% of guild revenue reinvests into free learning infrastructure — no ads, no paywalls.</p>
           </div>
           <div class="pillar-card">
             <div class="pillar-number">02</div>
-            <h4>Open Technology</h4>
-            <p>We build with and advocate for open standards, transparent tooling, and systems you control.</p>
+            <h4>Trains the Next Generation</h4>
+            <p>Guild artisans grow through real client work under senior oversight — apprentice to master.</p>
           </div>
           <div class="pillar-card">
             <div class="pillar-number">03</div>
-            <h4>Guild Partnership</h4>
-            <p>We work alongside you as a long-term guild partner — aligned with your goals, not just your scope.</p>
+            <h4>Open Standards</h4>
+            <p>We build with and advocate for open technology. Reusable components are released as open-source.</p>
           </div>
           <div class="pillar-card">
             <div class="pillar-number">04</div>
-            <h4>Shared Success</h4>
-            <p>Revenue models tied to outcomes, not hours — so we win only when the systems we build succeed.</p>
+            <h4>CSR-Ready</h4>
+            <p>Every project through the guild is a genuine social impact story for your reports and proposals.</p>
           </div>
         </div>
       </div>
@@ -248,14 +247,14 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-content">
-        <h2>Let's Build Something Together</h2>
+        <h2>See How It Works for You</h2>
         <p>
-          If you are looking for a guild partner rather than a vendor, we would be glad to explore
-          how this model can work for your project.
+          Whether you're an individual looking for a quick build or an organization
+          that needs ongoing sprint capacity — the delivery model stays the same.
         </p>
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-primary">Start the Conversation</NuxtLink>
-          <NuxtLink to="/work-with-us/our-projects" class="btn btn-secondary">See Our Projects</NuxtLink>
+          <NuxtLink to="/work-with-us/pricing" class="btn btn-primary">View Pricing</NuxtLink>
+          <NuxtLink to="/contact" class="btn btn-secondary">Start a Conversation</NuxtLink>
         </div>
       </div>
     </section>
@@ -263,17 +262,17 @@
 </template>
 
 <script setup lang="ts">
-import { Building2, Component, Handshake, Landmark, Library, RotateCw, Sprout, Target, TrendingUp, Unlock } from 'lucide-vue-next'
+import { Calendar, Compass, Component, Landmark, Layers, Library, RefreshCw, Shield, TrendingUp, Unlock } from 'lucide-vue-next'
 useSEO({
-  title: 'Success Sharing Model | Skill-Wanderer',
+  title: 'Our Delivery Model | Skill-Wanderer',
   description:
-    'Our collaboration model is based on shared progress rather than fixed delivery contracts. Iterative sprints, client ownership, and systems designed for long-term growth.',
+    'Senior-led sprint delivery with parallel execution, predictable cycles, and full client ownership. A system you plug into — not a service you buy.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['success sharing model', 'agile sprint collaboration', 'iterative development', 'shared risk partnership', 'client ownership model', 'software delivery model'],
+  keywords: ['delivery model', 'sprint delivery', 'senior-led development', 'guild model', 'software development process', 'agile sprints'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
-    { name: 'Success Sharing Model', url: 'https://skill-wanderer.com/work-with-us/success-sharing-model' },
+    { name: 'Our Delivery Model', url: 'https://skill-wanderer.com/work-with-us/delivery-model' },
   ]),
 })
 </script>
@@ -594,7 +593,7 @@ useSEO({
   border-color: rgba(239, 68, 68, 0.3);
 }
 
-.comparison-card.success-sharing {
+.comparison-card.guild-model {
   border-color: rgba(34, 197, 94, 0.3);
   background: rgba(34, 197, 94, 0.04);
 }
