@@ -48,18 +48,18 @@
       
       <div class="impact-grid">
         <div class="impact-card" style="animation-delay: 0.1s;">
-          <span class="impact-icon"><GraduationCap :size="48" :stroke-width="1.5" /></span>
+          <span class="impact-icon">🎓</span>
           <h3>For the Struggling Junior</h3>
           <p>Complete learning paths without spending a penny. All content is free—and through our social enterprise model, human mentors and support are available to those in need via Social Impact Tokens.</p>
         </div>
         
         <div class="impact-card" style="animation-delay: 0.2s;">
-          <span class="impact-icon"><Compass :size="48" :stroke-width="1.5" /></span>
+          <span class="impact-icon">🧭</span>
           <h3>For the Confused Mid Level</h3>
           <p>Expert curation of both free and paid third-party resources, plus transparency about our social enterprise services including human mentoring and pre-learning advisory.</p>
         </div>
           <div class="impact-card" style="animation-delay: 0.3s;">
-          <span class="impact-icon"><Globe :size="48" :stroke-width="1.5" /></span>
+          <span class="impact-icon">🌍</span>
           <h3>For the Global Learner</h3>
           <p>No geographic restrictions. Whether you're in Silicon Valley or rural Vietnam, quality education is yours.</p>
         </div>
@@ -82,7 +82,7 @@
 </template>
 
 <script setup lang="ts">
-import { GraduationCap, Compass, Globe } from 'lucide-vue-next'
+// Icons replaced with emojis
 
 // SEO and meta management
 useSEO({
@@ -141,7 +141,7 @@ const storyChapters = [
     ]
   },
   {
-    icon: '☯️',
+    icon: '☸️',
     title: 'The Karma of Knowledge',
     content: [
       {

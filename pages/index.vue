@@ -33,7 +33,7 @@
         <div class="help-cards">
           <NuxtLink to="/learning-path/learn-contribute-build-earn" class="help-card">
             <div class="help-card-icon">
-              <Layers :size="32" color="var(--primary-orange)" :stroke-width="1.5" />
+              📚
             </div>
             <h3>I Want to Learn</h3>
             <p>Free learning paths, mentorship, and real-world projects. Progress from Apprentice to Master at your own pace.</p>
@@ -41,7 +41,7 @@
           </NuxtLink>
           <NuxtLink to="/work-with-us" class="help-card">
             <div class="help-card-icon">
-              <Building2 :size="32" color="var(--primary-orange)" :stroke-width="1.5" />
+              🏢
             </div>
             <h3>I Need a Builder</h3>
             <p>Senior-led, community-powered delivery. Custom software, transparent pricing, and every engagement funds education.</p>
@@ -69,7 +69,7 @@
         <div class="guild-model-features">
           <div class="guild-feature">
             <div class="guild-feature-icon">
-              <Compass :size="28" color="var(--primary-orange)" :stroke-width="1.5" />
+              🧭
             </div>
             <div class="guild-feature-text">
               <h3>Guild-Based Learning</h3>
@@ -82,12 +82,12 @@
               <p>Guild members work on real projects for real clients. Every line of code shipped is a lesson learned—failures included. That's how craft is forged.</p>
             </div>
             <div class="guild-feature-icon">
-              <FileCode :size="28" color="var(--primary-orange)" :stroke-width="1.5" />
+              💻
             </div>
           </div>
           <div class="guild-feature">
             <div class="guild-feature-icon">
-              <RefreshCw :size="28" color="var(--primary-orange)" :stroke-width="1.5" />
+              🔄
             </div>
             <div class="guild-feature-text">
               <h3>Work Funds Education</h3>
@@ -262,7 +262,7 @@
 </template>
 
 <script setup lang="ts">
-import { Layers, Building2, Compass, FileCode, RefreshCw } from 'lucide-vue-next'
+// Icons replaced with emojis
 
 // SEO and meta management
 useSEO({

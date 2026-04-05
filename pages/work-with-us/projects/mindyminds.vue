@@ -161,22 +161,22 @@
         </p>
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon"><Building :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">🏢</div>
             <h3>Tenant Isolation</h3>
             <p>Each client operates in their own isolated tenant space with dedicated configurations and data boundaries.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon"><Palette :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">🎨</div>
             <h3>Per-Tenant Customization</h3>
             <p>Each AI chatbot can be customized to fit the client's specific use case, branding, and conversation style.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon"><Zap :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">⚡</div>
             <h3>Shared Infrastructure</h3>
             <p>One frontend, one backend — serving all tenants efficiently without duplicating resources.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon"><TrendingUp :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">📈</div>
             <h3>Scalable by Design</h3>
             <p>Adding new tenants requires configuration, not infrastructure — enabling rapid client onboarding.</p>
           </div>
@@ -194,28 +194,28 @@
         </p>
         <div class="infra-list">
           <div class="infra-item">
-            <div class="infra-icon"><Shield :size="24" :stroke-width="2" /></div>
+            <div class="infra-icon">🛡️</div>
             <div class="infra-content">
               <h3>Cloudflare Protection</h3>
               <p>WAF, DDoS mitigation, SSL termination, and bot management as the first line of defense.</p>
             </div>
           </div>
           <div class="infra-item">
-            <div class="infra-icon"><Lock :size="24" :stroke-width="2" /></div>
+            <div class="infra-icon">🔒</div>
             <div class="infra-content">
               <h3>Application-Level Security</h3>
               <p>Authentication, authorization, input validation, and tenant-level access controls.</p>
             </div>
           </div>
           <div class="infra-item">
-            <div class="infra-icon"><Container :size="24" :stroke-width="2" /></div>
+            <div class="infra-icon">📦</div>
             <div class="infra-content">
               <h3>Container Isolation</h3>
               <p>Docker Compose with isolated services — each component runs in its own container with minimal privileges.</p>
             </div>
           </div>
           <div class="infra-item">
-            <div class="infra-icon"><Globe :size="24" :stroke-width="2" /></div>
+            <div class="infra-icon">🌍</div>
             <div class="infra-content">
               <h3>EU Cloud Hosting</h3>
               <p>Data hosted on EU cloud servers with staging and production environments fully separated.</p>
@@ -302,22 +302,22 @@
         </p>
         <div class="roles-grid">
           <div class="role-card">
-            <div class="role-icon"><Monitor :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">💻</div>
             <h3>Full-Stack Development</h3>
             <p>Next.js frontend and shared backend — built, tested, and deployed by the same two-person team.</p>
           </div>
           <div class="role-card">
-            <div class="role-icon"><Building2 :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">🏢</div>
             <h3>Solution Architecture</h3>
             <p>Multi-tenant design, defense-in-depth security, and EU cloud infrastructure — all architected in-house.</p>
           </div>
           <div class="role-card">
-            <div class="role-icon"><Settings :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">⚙️</div>
             <h3>DevOps</h3>
             <p>Docker Compose, staging/production environments, Cloudflare integration, and CI/CD — set up and maintained by the team.</p>
           </div>
           <div class="role-card">
-            <div class="role-icon"><ClipboardList :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">📋</div>
             <h3>Project Management</h3>
             <p>Managed using Scrum and Scrumban — sprints, backlogs, and continuous delivery with a lean two-person workflow.</p>
           </div>
@@ -344,15 +344,15 @@
         </p>
         <div class="cta-highlights">
           <div class="cta-highlight">
-            <span class="cta-highlight-icon"><Rocket :size="24" :stroke-width="2" /></span>
+            <span class="cta-highlight-icon">🚀</span>
             <span>Ship real products, not toy projects</span>
           </div>
           <div class="cta-highlight">
-            <span class="cta-highlight-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
+            <span class="cta-highlight-icon">🎓</span>
             <span>Learn from experienced Guild Masters</span>
           </div>
           <div class="cta-highlight">
-            <span class="cta-highlight-icon"><Wrench :size="24" :stroke-width="2" /></span>
+            <span class="cta-highlight-icon">🔧</span>
             <span>Own every layer — from code to cloud</span>
           </div>
         </div>
@@ -373,7 +373,7 @@
 </template>
 
 <script setup lang="ts">
-import { Building, Building2, ClipboardList, Container, Globe, Lock, Monitor, Palette, Rocket, Settings, Shield, TrendingUp, Wrench, Zap } from 'lucide-vue-next'
+// Icons replaced with emojis
 
 useSEO({
   title: 'MindyMinds — AI Platform for Start-ups | Skill-Wanderer',

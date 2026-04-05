@@ -6,7 +6,7 @@
         <h1 class="hero-title">The Heart of the Guild</h1>
         <p class="hero-subtitle">Our Mission, Vision & Guild Principles</p>
         <div class="hero-visual">
-          <div class="heart-icon"><Heart :size="24" :stroke-width="2" /></div>
+          <div class="heart-icon">🧡</div>
           <div class="pulse-rings">
             <div class="pulse-ring"></div>
             <div class="pulse-ring"></div>
@@ -22,20 +22,20 @@
         <div class="mission-visual">
           <div class="mission-flow">
             <div class="flow-step">
-              <div class="step-icon"><Rocket :size="24" :stroke-width="2" /></div>
+              <div class="step-icon">🚀</div>
               <h3>Guild Engagements</h3>
               <p>Real-world projects & partnerships</p>
             </div>
             <div class="flow-arrow">→</div>
             <div class="flow-step">
-              <div class="step-icon"><Library :size="24" :stroke-width="2" /></div>
-              <h3>Free Education</h3>
+              <div class="step-icon">📚</div>
+              <h3>📚 Free Education</h3>
               <p>Guild-powered, community-funded learning</p>
             </div>
             <div class="flow-arrow">→</div>
             <div class="flow-step">
-              <div class="step-icon"><Globe :size="24" :stroke-width="2" /></div>
-              <h3>Social Impact</h3>
+              <div class="step-icon">🌍</div>
+              <h3>🌍 Social Impact</h3>
               <p>Lasting change through craft & community</p>
             </div>
           </div>
@@ -50,12 +50,12 @@
           </p>
           <div class="mission-impact">
             <div class="impact-stat">
-              <span class="stat-icon"><Coins :size="24" :stroke-width="2" /></span>
+              <span class="stat-icon">💰</span>
               <strong>Every guild engagement delivered</strong>
               <p>becomes free education shared</p>
             </div>
             <div class="impact-stat">
-              <span class="stat-icon"><Sprout :size="24" :stroke-width="2" /></span>
+              <span class="stat-icon">🌱</span>
               <strong>Every project built by the guild</strong>
               <p>plants seeds of knowledge for future craftspeople</p>
             </div>
@@ -72,7 +72,7 @@
           
           <!-- Accessible -->
           <div class="principle-card">
-            <div class="principle-icon"><Globe :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🌍</div>
             <h3>Accessible</h3>
             <p>All guild learning content is completely free. Our guided learning paths help you navigate both free resources and optional paid services like personalized mentoring from guild masters.</p>
             <div class="principle-visual">
@@ -86,21 +86,21 @@
 
           <!-- Integrity -->
           <div class="principle-card">
-            <div class="principle-icon"><Shield :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🛡️</div>
             <h3>Integrity & Impartiality</h3>
             <p>Upholding trust by avoiding conflicts of interest. No paid advertisements, affiliate marketing, or revenue from third-party resources we recommend.</p>
             <div class="principle-visual">
               <div class="integrity-badges">
-                <div class="badge no-ads">❌ No Ads</div>
-                <div class="badge no-affiliate">❌ No Affiliate</div>
-                <div class="badge unbiased">✅ Unbiased</div>
+                <div class="badge no-ads">🚫 No Ads</div>
+                <div class="badge no-affiliate">🚫 No Affiliate</div>
+                <div class="badge unbiased">💎 Unbiased</div>
               </div>
             </div>
           </div>
 
           <!-- Individualized -->
           <div class="principle-card">
-            <div class="principle-icon"><Target :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🎯</div>
             <h3>Individualized</h3>
             <p>Supporting diverse learning styles by outlining necessary knowledge and skills, then offering a variety of resources for learners to choose their path.</p>
             <div class="principle-visual">
@@ -114,7 +114,7 @@
 
           <!-- Engaging -->
           <div class="principle-card">
-            <div class="principle-icon"><Gamepad2 :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🎮</div>
             <h3>Engaging & Rewarding</h3>
             <p>Cultivating an environment where tackling challenges, showcasing achievements, and applying new knowledge brings accomplishment and enjoyment.</p>
             <div class="principle-visual">
@@ -127,7 +127,7 @@
 
           <!-- Creativity -->
           <div class="principle-card">
-            <div class="principle-icon"><Palette :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🎨</div>
             <h3>Creativity & Learning Through Failure</h3>
             <p>We believe deep learning flourishes when creativity is embraced, even if it leads to setbacks. Failure is a crucial learning opportunity.</p>
             <div class="principle-visual">
@@ -145,7 +145,7 @@
 
           <!-- Relevant -->
           <div class="principle-card">
-            <div class="principle-icon"><Rocket :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🚀</div>
             <h3>Relevant & Impactful</h3>
             <p>Providing education that directly addresses the need for reskilling and upskilling, helping people navigate evolving landscapes.</p>
             <div class="principle-visual">
@@ -159,7 +159,7 @@
 
           <!-- Pathways -->
           <div class="principle-card">
-            <div class="principle-icon"><Route :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🛤️</div>
             <h3>Pathways for Our Learners</h3>
             <p>Creating opportunities for qualified learners to join our team as we grow—validating our curriculum and fostering community growth.</p>
             <div class="principle-visual">
@@ -174,7 +174,7 @@
 
           <!-- Tech Partnerships -->
           <div class="principle-card">
-            <div class="principle-icon"><Settings :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">⚙️</div>
             <h3>Guild Engagements Fueling Mission</h3>
             <p>We're not outsourcing—we're a tech guild. Through our social enterprise model, we deliver real work with guild members at every level, and every engagement funds free education.</p>
             <div class="principle-visual">
@@ -189,7 +189,7 @@
 
           <!-- Respect IP -->
           <div class="principle-card">
-            <div class="principle-icon"><Shield :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🛡️</div>
             <h3>Respect IP</h3>
             <p>Honoring intellectual property boundaries and attribution practices as a core principle, while leveraging AI to generate learning materials from our own curriculum.</p>
             <div class="principle-visual">
@@ -208,7 +208,7 @@
 
           <!-- Community -->
           <div class="principle-card">
-            <div class="principle-icon"><Handshake :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🤝</div>
             <h3>Guild Community</h3>
             <p>Fostering a vibrant guild where apprentices, journeymen, masters, educators, and contributors collaborate to build and enrich our collective craft.</p>
             <div class="principle-visual">
@@ -223,7 +223,7 @@
 
           <!-- Social Enterprise Model -->
           <div class="principle-card">
-            <div class="principle-icon"><Sprout :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🌱</div>
             <h3>Social Enterprise Model</h3>
             <p>Same quality learning with guild mentors, start-up support, and pre-learning advisory—sustained through our social enterprise model where guild work funds education and members give back by paying forward.</p>
             <div class="principle-visual">
@@ -237,7 +237,7 @@
 
           <!-- Mission-Centric -->
           <div class="principle-card">
-            <div class="principle-icon"><Target :size="32" :stroke-width="1.5" /></div>
+            <div class="principle-icon">🎯</div>
             <h3>Mission-Centric Reinvestment</h3>
             <p>All net revenue is entirely reinvested into our mission, team development, and platform growth. No dividends, pure mission focus.</p>
             <div class="principle-visual">
@@ -269,28 +269,28 @@
             <div class="impact-step">
               <div class="step-number">1</div>
               <div class="step-content">
-                <h3>🏢 Guild Engagements</h3>
+                <h3>⚡ Guild Engagements</h3>
                 <p>Real-world projects generate sustainable revenue for the guild's social enterprise mission</p>
               </div>
             </div>
             <div class="impact-step">
               <div class="step-number">2</div>
               <div class="step-content">
-                <h3>📖 Free Education</h3>
+                <h3> Free Education</h3>
                 <p>Revenue funds free, high-quality learning content</p>
               </div>
             </div>
             <div class="impact-step">
               <div class="step-number">3</div>
               <div class="step-content">
-                <h3>🎓 Skilled Craftspeople</h3>
+                <h3> Skilled Craftspeople</h3>
                 <p>Guild members gain practical, job-ready skills through real work</p>
               </div>
             </div>
             <div class="impact-step">
               <div class="step-number">4</div>
               <div class="step-content">
-                <h3>🌍 Social Impact</h3>
+                <h3> Social Impact</h3>
                 <p>Skilled craftspeople create positive change worldwide</p>
               </div>
             </div>
@@ -333,7 +333,7 @@
 </template>
 
 <script setup>
-import { Coins, Gamepad2, Globe, Handshake, Heart, Library, Palette, Rocket, Route, Settings, Shield, Sprout, Target } from 'lucide-vue-next'
+// Icons replaced with emojis
 useSEO({
   title: 'The Heart of the Guild - Mission & Principles',
   description: 'Discover our mission as a tech guild working toward social enterprise. Free education funded by real-world craft. Explore our guild principles and commitment to social impact.',

@@ -108,13 +108,13 @@ const foundationalTopics: LearningTopic[] = [
   {
     slug: 'qa-tester',
     title: 'QA / Tester',
-    icon: '🔍',
+    icon: '🧪',
     description: 'Build quality-first testing skills across manual, automation, and strategy.'
   },
   {
     slug: 'business-analyst',
     title: 'Business Analyst',
-    icon: '📊',
+    icon: '📈',
     description: 'Bridge business and technical teams with strong analysis and communication.'
   },
   {
@@ -126,7 +126,7 @@ const foundationalTopics: LearningTopic[] = [
   {
     slug: 'project-management',
     title: 'Project Management',
-    icon: '📌',
+    icon: '🎯',
     description: 'Plan, execute, and deliver projects with practical frameworks and tools.'
   }
 ]
@@ -141,13 +141,13 @@ const advancedTopics: LearningTopic[] = [
   {
     slug: 'devops',
     title: 'DevOps',
-    icon: '⚙️',
+    icon: '🔧',
     description: 'Automate delivery, improve reliability, and scale systems with confidence.'
   },
   {
     slug: 'mlops',
     title: 'MLOps',
-    icon: '🧪',
+    icon: '⚗️',
     description: 'Operationalize ML pipelines from training and validation to monitoring.'
   },
   {
@@ -159,13 +159,13 @@ const advancedTopics: LearningTopic[] = [
   {
     slug: 'advanced-software-development-skills',
     title: 'Advanced Software Development Skills',
-    icon: '🛠️',
+    icon: '⚙️',
     description: 'Strengthen architecture, performance, testing, and advanced engineering craft.'
   },
   {
     slug: 'software-architecture-and-design-patterns',
     title: 'Software Architecture & Design Patterns',
-    icon: '🏗️',
+    icon: '🏛️',
     description: 'Design scalable systems with proven patterns and architecture principles.'
   }
 ]

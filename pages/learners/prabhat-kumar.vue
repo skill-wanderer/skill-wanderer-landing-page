@@ -13,8 +13,8 @@
         <p class="tagline">The Fearless Adventurer</p>
         <div class="hero-meta">
           <span class="meta-tag">📍 India</span>
-          <span class="meta-tag">💼 DevOps</span>
-          <a href="https://www.linkedin.com/in/prabhat-kumar-1260a5259/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🔗 LinkedIn</a>
+          <span class="meta-tag">🛠️ DevOps</span>
+          <a href="https://www.linkedin.com/in/prabhat-kumar-1260a5259/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🌐 LinkedIn</a>
         </div>
       </div>
     </section>
@@ -41,7 +41,7 @@
     <!-- Journey Section -->
     <section class="journey-section">
       <div class="journey-container">
-        <h2>🌟 The Eccentric Explorer</h2>
+        <h2>✨ The Eccentric Explorer</h2>
         <p class="section-intro">
           However, what was even more impressive than his initial knowledge was his eccentricity.
           Prabhat always refused to simply follow instructions on how to do things the safe and simple way.
@@ -50,7 +50,7 @@
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon"><MapIcon :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">🗺️</div>
             <h3>Into Uncharted Territory</h3>
             <p>
               Most of the time, the wild territory ended up biting him — things would break,
@@ -60,7 +60,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon"><Zap :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">⚡</div>
             <h3>Jaw-Dropping Speed</h3>
             <p>
               Prabhat finished the entire DevOps mentorship in <strong>under 2 months</strong> — a
@@ -75,7 +75,7 @@
     <!-- Current Chapter Section -->
     <section class="next-chapter-section">
       <div class="next-container">
-        <h2>🏗️ Proving Himself in the Real World</h2>
+        <h2>⛰️ Proving Himself in the Real World</h2>
         <p>
           Prabhat is currently working with our partner <strong>MindyCore</strong> to gain more experience
           and adventure in the real world. He is out there now, proving himself with hands-on, real-life
@@ -83,7 +83,7 @@
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon"><Settings :size="24" :stroke-width="2" /></span>
+          <span class="path-icon">⚙️</span>
           <span class="path-text">Completed: DevOps Path</span>
         </div>
 
@@ -116,7 +116,7 @@
 </template>
 
 <script setup lang="ts">
-import { MapIcon, Settings, Zap } from 'lucide-vue-next'
+// Icons replaced with emojis
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({

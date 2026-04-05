@@ -36,17 +36,17 @@
         </p>
         <div class="principles-cards">
           <div class="principle-card">
-            <div class="card-icon"><Ban :size="24" color="white" :stroke-width="2" /></div>
+            <div class="card-icon">🚫</div>
             <h3>Free to Start, Not Free to Stay Passive</h3>
             <p>We remove the financial barriers, but we demand commitment. The guild has no place for spectators.</p>
           </div>
           <div class="principle-card">
-            <div class="card-icon"><RotateCw :size="24" color="white" :stroke-width="2" /></div>
+            <div class="card-icon">🔄</div>
             <h3>Contribution Replaces Tuition</h3>
             <p>Instead of charging fixed fees, we value your work, your mentorship, and your growth. What you give is what you earn.</p>
           </div>
           <div class="principle-card">
-            <div class="card-icon"><Building2 :size="24" color="white" :stroke-width="2" /></div>
+            <div class="card-icon">🏢</div>
             <h3>Real Work Replaces Fake Projects</h3>
             <p>You won't build "todo apps." You will build production-level products for real partners, solving real problems.</p>
           </div>
@@ -229,7 +229,7 @@
         </div>
 
         <div class="sovereign-why">
-          <span class="why-icon"><Lightbulb :size="24" :stroke-width="2" /></span>
+          <span class="why-icon">💡</span>
           <div>
             <h3>Why we do this</h3>
             <p>This "Work-or-Pay" model ensures the Skill-Wanderer ecosystem is anti-fragile. Whether we are in a season of heavy building or a season of high-profit delivery, our infrastructure remains sovereign and our mission to provide free education to the next generation remains funded.</p>
@@ -285,17 +285,17 @@
           </p>
           <div class="pillars">
             <div class="pillar">
-              <span class="pillar-icon"><Swords :size="24" :stroke-width="2" /></span>
+              <span class="pillar-icon">⚔️</span>
               <h3>Mastery</h3>
               <p>The standard is always excellence.</p>
             </div>
             <div class="pillar">
-              <span class="pillar-icon"><Search :size="24" :stroke-width="2" /></span>
+              <span class="pillar-icon">🔍</span>
               <h3>Transparency</h3>
               <p>Every coin, every decision — visible.</p>
             </div>
             <div class="pillar">
-              <span class="pillar-icon"><Handshake :size="24" :stroke-width="2" /></span>
+              <span class="pillar-icon">🤝</span>
               <h3>Shared Prosperity</h3>
               <p>Growth belongs to those who build it.</p>
             </div>
@@ -322,7 +322,7 @@
 </template>
 
 <script setup lang="ts">
-import { Ban, Building2, Handshake, Lightbulb, RotateCw, Search, Swords } from 'lucide-vue-next'
+// Icons replaced with emojis
 useSEO({
   title: 'Guild Manifesto | Skill-Wanderer',
   description: 'The Skill-Wanderer Guild Manifesto: Mastery, Transparency, Shared Prosperity. Learn about our meritocratic guild model, the 15/85 profit split, guild ranks, and our philosophy of earn-your-way learning.',

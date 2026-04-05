@@ -14,8 +14,8 @@
         <p class="tagline">Sailing Through the Storm</p>
         <div class="hero-meta">
           <span class="meta-tag">📍 Indonesia</span>
-          <span class="meta-tag">💼 Software Developer</span>
-          <a href="https://www.linkedin.com/in/rei-reltroner-a3a7b8173/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🔗 LinkedIn</a>
+          <span class="meta-tag">🛠️ Software Developer</span>
+          <a href="https://www.linkedin.com/in/rei-reltroner-a3a7b8173/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🌐 LinkedIn</a>
         </div>
       </div>
     </section>
@@ -48,7 +48,7 @@
     <!-- Journey Section -->
     <section class="journey-section">
       <div class="journey-container">
-        <h2>🌟 A Personal & Professional Transformation</h2>
+        <h2>✨ A Personal & Professional Transformation</h2>
           <p class="section-intro">
             Since beginning his mentorship journey, Rei has experienced a transformation that goes beyond 
             technical development. He has worked consistently to strengthen his mental resilience, rebuild 
@@ -57,7 +57,7 @@
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon"><Users :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">👥</div>
             <h3>Socially Active</h3>
             <p>
               He has been going out more and meeting with more people, showing incredible personal growth 
@@ -66,7 +66,7 @@
           </div>
           
           <div class="milestone-card">
-            <div class="milestone-icon"><Rocket :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">🚀</div>
             <h3>Launching a Freelancing Career</h3>
             <p>
               Marking a significant milestone, Rei has officially launched his freelancing career 
@@ -80,7 +80,7 @@
     <!-- Ongoing Work Section -->
     <section class="ongoing-section">
       <div class="ongoing-container">
-        <h2>🏗️ Building the Future</h2>
+        <h2>🛠️ Building the Future</h2>
         <p class="section-intro">
           Even before connecting with Skill-Wanderer, Rei was already hard at work building his vision. 
           Through our mentorship, we've been providing guidance and advice as he continues to develop:
@@ -89,7 +89,7 @@
         <div class="projects-grid">
           <a href="https://www.reltroner.com/" target="_blank" class="project-card">
             <div class="project-header">
-              <span class="project-icon"><Palette :size="24" :stroke-width="2" /></span>
+              <span class="project-icon">🎨</span>
               <h3>Creative Studio</h3>
             </div>
             <p>
@@ -104,7 +104,7 @@
           
           <a href="https://hrm.reltroner.com/" target="_blank" rel="noopener noreferrer" class="project-card">
             <div class="project-header">
-              <span class="project-icon"><BarChart3 :size="24" :stroke-width="2" /></span>
+              <span class="project-icon">📊</span>
               <h3>Custom HRM System</h3>
             </div>
             <p>
@@ -123,7 +123,7 @@
     <!-- Next Chapter Section -->
     <section class="next-chapter-section">
       <div class="next-container">
-        <h2>📚 The Next Chapter: Quality & Excellence</h2>
+        <h2>✨ The Next Chapter: Quality & Excellence</h2>
         <p>
           Rei continues to sharpen his technical edge through career mentorship, focusing on mastering 
           the <strong>Tester/QA path</strong>. His commitment to constant learning and his courage to face 
@@ -131,7 +131,7 @@
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon"><Search :size="24" :stroke-width="2" /></span>
+          <span class="path-icon">🔍</span>
           <span class="path-text">Currently pursuing: QA / Tester Path</span>
         </div>
 
@@ -180,7 +180,7 @@
 </template>
 
 <script setup lang="ts">
-import { BarChart3, Palette, Rocket, Search, Users } from 'lucide-vue-next'
+// Icons replaced with emojis
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({

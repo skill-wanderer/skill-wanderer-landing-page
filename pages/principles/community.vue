@@ -23,7 +23,7 @@
         <div class="reasons-grid">
           <div class="reason-card" style="animation-delay: 0.1s;">
             <div class="reason-number">1</div>
-            <span class="reason-icon"><Waypoints :size="24" :stroke-width="2" /></span>
+            <span class="reason-icon">🔗</span>
             <h3>The Bridge is Shorter</h3>
             <p>
               When someone just learned something, they still remember the confusion, the "aha" moments, 
@@ -34,7 +34,7 @@
           
           <div class="reason-card" style="animation-delay: 0.2s;">
             <div class="reason-number">2</div>
-            <span class="reason-icon"><RotateCw :size="24" :stroke-width="2" /></span>
+            <span class="reason-icon">🔄</span>
             <h3>Teaching Deepens Understanding</h3>
             <p>
               Preparing to teach forces you to organize thoughts, fill knowledge gaps, and truly master 
@@ -44,7 +44,7 @@
           
           <div class="reason-card" style="animation-delay: 0.3s;">
             <div class="reason-number">3</div>
-            <span class="reason-icon"><Star :size="24" :stroke-width="2" /></span>
+            <span class="reason-icon">⭐</span>
             <h3>Community Creates Culture</h3>
             <p>
               When everyone is both teacher and student, ego disappears. Knowledge flows freely, 
@@ -70,32 +70,32 @@
           </div>
           
           <div class="ecosystem-node learner">
-            <span class="node-icon"><Library :size="24" :stroke-width="2" /></span>
+            <span class="node-icon">📚</span>
             <span>Learners</span>
           </div>
           
           <div class="ecosystem-node mentor">
-            <span class="node-icon"><Compass :size="24" :stroke-width="2" /></span>
+            <span class="node-icon">🧭</span>
             <span>Mentors</span>
           </div>
           
           <div class="ecosystem-node creator">
-            <span class="node-icon"><Palette :size="24" :stroke-width="2" /></span>
+            <span class="node-icon">🎨</span>
             <span>Creators</span>
           </div>
           
           <div class="ecosystem-node supporter">
-            <span class="node-icon"><Heart :size="24" :stroke-width="2" /></span>
+            <span class="node-icon">❤️</span>
             <span>Supporters</span>
           </div>
           
           <div class="ecosystem-node educator">
-            <span class="node-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
+            <span class="node-icon">🎓</span>
             <span>Educators</span>
           </div>
           
           <div class="ecosystem-node contributor">
-            <span class="node-icon"><Handshake :size="24" :stroke-width="2" /></span>
+            <span class="node-icon">🤝</span>
             <span>Contributors</span>
           </div>
         </div>
@@ -117,7 +117,7 @@
         
         <div class="vision-grid">
           <div class="vision-card" style="animation-delay: 0.1s;">
-            <span class="vision-icon"><Globe :size="24" :stroke-width="2" /></span>
+            <span class="vision-icon">🌍</span>
             <h3>Global Reach</h3>
             <p>
               Connecting learners from every corner of the world, breaking down geographical barriers 
@@ -126,7 +126,7 @@
           </div>
           
           <div class="vision-card" style="animation-delay: 0.2s;">
-            <span class="vision-icon"><Heart :size="24" :stroke-width="2" /></span>
+            <span class="vision-icon">❤️</span>
             <h3>Mutual Support</h3>
             <p>
               Creating systems where those who can give—whether time, knowledge, or resources—can 
@@ -135,7 +135,7 @@
           </div>
           
           <div class="vision-card" style="animation-delay: 0.3s;">
-            <span class="vision-icon"><TrendingUp :size="24" :stroke-width="2" /></span>
+            <span class="vision-icon">📈</span>
             <h3>Collective Growth</h3>
             <p>
               Measuring success not by individual achievements but by how much the entire community 
@@ -144,7 +144,7 @@
           </div>
           
           <div class="vision-card" style="animation-delay: 0.4s;">
-            <span class="vision-icon"><Sparkles :size="24" :stroke-width="2" /></span>
+            <span class="vision-icon">✨</span>
             <h3>Lasting Impact</h3>
             <p>
               Building a self-sustaining ecosystem that continues to grow and help people long into 
@@ -173,7 +173,7 @@
 </template>
 
 <script setup lang="ts">
-import { Compass, Globe, GraduationCap, Handshake, Heart, Library, Palette, RotateCw, Sparkles, Star, TrendingUp, Waypoints } from 'lucide-vue-next'
+// Icons replaced with emojis
 import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management
@@ -201,7 +201,7 @@ const storyIntro = 'I call our tenth principle <strong>Collaborative Community E
 
 const storyChapters: StoryChapter[] = [
   {
-    icon: '👥',
+    icon: '🧑‍🤝‍🧑',
     title: 'The Power of Peer Teaching',
     content: [
       {
@@ -237,7 +237,7 @@ const storyChapters: StoryChapter[] = [
     ]
   },
   {
-    icon: '🌍',
+    icon: '🚀',
     title: 'Scaling to Global Impact',
     content: [
       {

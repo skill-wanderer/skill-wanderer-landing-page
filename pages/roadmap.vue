@@ -29,7 +29,7 @@
             </div>
             <div class="timeline-card">
               <div class="card-header">
-                <span class="card-icon"><Library :size="24" color="white" :stroke-width="2" /></span>
+                <span class="card-icon">📚</span>
                 <div class="card-status status-active">
                   <span class="status-dot"></span>
                   In Progress
@@ -65,7 +65,7 @@
             </div>
             <div class="timeline-card">
               <div class="card-header">
-                <span class="card-icon"><Home :size="24" color="white" :stroke-width="2" /></span>
+                <span class="card-icon">🏠</span>
                 <div class="card-status status-planned">
                   <span class="status-dot"></span>
                   Planned
@@ -100,7 +100,7 @@
             </div>
             <div class="timeline-card">
               <div class="card-header">
-                <span class="card-icon"><MessageCircle :size="24" color="white" :stroke-width="2" /></span>
+                <span class="card-icon">💬</span>
                 <div class="card-status status-planned">
                   <span class="status-dot"></span>
                   Planned
@@ -136,7 +136,7 @@
             </div>
             <div class="timeline-card">
               <div class="card-header">
-                <span class="card-icon"><Handshake :size="24" color="white" :stroke-width="2" /></span>
+                <span class="card-icon">🤝</span>
                 <div class="card-status status-planned">
                   <span class="status-dot"></span>
                   Planned
@@ -177,7 +177,7 @@
 
         <div class="modules-grid">
           <div class="module-card">
-            <span class="module-icon"><Mail :size="24" :stroke-width="2" /></span>
+            <span class="module-icon">✉️</span>
             <h3>Contact & Outreach</h3>
             <p>
               A dedicated contact and outreach module to streamline communication with potential
@@ -192,7 +192,7 @@
           </div>
 
           <div class="module-card">
-            <span class="module-icon"><ClipboardList :size="24" :stroke-width="2" /></span>
+            <span class="module-icon">📋</span>
             <h3>Project Management</h3>
             <p>
               An internal project management tool to coordinate guild development, track feature
@@ -207,7 +207,7 @@
           </div>
 
           <div class="module-card">
-            <span class="module-icon"><Coins :size="24" :stroke-width="2" /></span>
+            <span class="module-icon">💰</span>
             <h3>Fundraising & Sustainability</h3>
             <p>
               Tools and integrations to raise funding for the project — from donation campaigns
@@ -222,7 +222,7 @@
           </div>
 
           <div class="module-card">
-            <span class="module-icon"><BarChart3 :size="24" :stroke-width="2" /></span>
+            <span class="module-icon">📊</span>
             <h3>Analytics & Insights</h3>
             <p>
               A privacy-respecting analytics module to understand learning patterns, measure
@@ -237,7 +237,7 @@
           </div>
 
           <div class="module-card">
-            <span class="module-icon"><Plug :size="24" :stroke-width="2" /></span>
+            <span class="module-icon">🔌</span>
             <h3>Integration & API</h3>
             <p>
               Open APIs and integration points that allow the guild modules to work together
@@ -252,7 +252,7 @@
           </div>
 
           <div class="module-card">
-            <span class="module-icon"><Shield :size="24" :stroke-width="2" /></span>
+            <span class="module-icon">🛡️</span>
             <h3>Security & Compliance</h3>
             <p>
               Ensuring the guild meets the highest standards of security and data protection.
@@ -316,7 +316,7 @@
 </template>
 
 <script setup lang="ts">
-import { BarChart3, ClipboardList, Coins, Handshake, Home, Library, Mail, MessageCircle, Plug, Shield } from 'lucide-vue-next'
+// Icons replaced with emojis
 import { onMounted, ref } from 'vue'
 
 // SEO and meta management

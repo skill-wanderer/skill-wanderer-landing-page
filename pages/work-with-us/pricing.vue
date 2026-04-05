@@ -36,7 +36,7 @@
             :class="{ 'path-tab--active': activeTab === 'individual' }"
             @click="activeTab = 'individual'"
           >
-            <User :size="22" :stroke-width="2" />
+            👤
             <span class="path-tab-label">I'm an Individual</span>
             <span class="path-tab-desc">Coaches, consultants, teachers, solo founders</span>
           </button>
@@ -46,7 +46,7 @@
             :class="{ 'path-tab--active': activeTab === 'organization' }"
             @click="activeTab = 'organization'"
           >
-            <Building2 :size="22" :stroke-width="2" />
+            🏢
             <span class="path-tab-label">I'm an Organization</span>
             <span class="path-tab-desc">Agencies, startups, institutions</span>
           </button>
@@ -60,7 +60,7 @@
     <section v-show="activeTab === 'individual'" id="individual" class="segment-section segment-individual">
       <div class="content">
         <div class="segment-label">
-          <User :size="20" :stroke-width="2" />
+          👤
           <span>For Individuals</span>
         </div>
         <div class="section-header section-header--left">
@@ -105,7 +105,7 @@
             </div>
             <div class="package-price">
               <span class="price-amount">$2,200 – $3,500</span>
-              <span class="price-note">~2 week build after discovery & mock-up sign-off</span>
+              <span class="price-note">~3 week build after discovery & mock-up sign-off</span>
             </div>
             <ul class="package-outcomes">
               <li>Advanced lead capture and intake forms</li>
@@ -163,7 +163,7 @@
           </div>
 
           <div class="helper-banner">
-            <span class="helper-icon"><Compass :size="22" :stroke-width="2" /></span>
+            <span class="helper-icon">🧭</span>
             <p>
               Not sure which one fits?
               <NuxtLink to="/admiral-orion" class="inline-link">Ask Admiral Orion</NuxtLink>
@@ -182,7 +182,7 @@
     <section v-show="activeTab === 'organization'" id="organization" class="segment-section segment-org">
       <div class="content">
         <div class="segment-label">
-          <Building2 :size="20" :stroke-width="2" />
+          🏢
           <span>For Organizations</span>
         </div>
         <div class="section-header section-header--left">
@@ -210,28 +210,28 @@
           </p>
           <div class="org-grid">
             <div class="org-detail">
-              <Shield :size="20" :stroke-width="2" />
+              🛡️
               <div>
                 <strong>Senior oversight</strong>
                 <span>Guild Master leads architecture and code review</span>
               </div>
             </div>
             <div class="org-detail">
-              <Layers :size="20" :stroke-width="2" />
+              📚
               <div>
                 <strong>Parallel execution</strong>
                 <span>Multiple artisans working in coordinated tracks</span>
               </div>
             </div>
             <div class="org-detail">
-              <ShieldCheck :size="20" :stroke-width="2" />
+              ✅
               <div>
                 <strong>Risk mitigation</strong>
                 <span>Scope locked per cycle, reviewed before next</span>
               </div>
             </div>
             <div class="org-detail">
-              <Calculator :size="20" :stroke-width="2" />
+              🧮
               <div>
                 <strong>Predictable cost</strong>
                 <span>Sprint band confirmed before commitment</span>
@@ -256,28 +256,28 @@
           </p>
           <div class="org-grid">
             <div class="org-detail">
-              <Users :size="20" :stroke-width="2" />
+              👥
               <div>
                 <strong>Scalable capacity</strong>
                 <span>Adjust team size as priorities shift</span>
               </div>
             </div>
             <div class="org-detail">
-              <Briefcase :size="20" :stroke-width="2" />
+              💼
               <div>
                 <strong>No hiring overhead</strong>
                 <span>Skip recruiting, onboarding, and HR complexity</span>
               </div>
             </div>
             <div class="org-detail">
-              <RefreshCw :size="20" :stroke-width="2" />
+              🔄
               <div>
                 <strong>Consistent delivery</strong>
                 <span>Same team, same standards, sprint after sprint</span>
               </div>
             </div>
             <div class="org-detail">
-              <Handshake :size="20" :stroke-width="2" />
+              🤝
               <div>
                 <strong>Long-term collaboration</strong>
                 <span>Strategic partnership, not transactional billing</span>
@@ -302,28 +302,28 @@
           </p>
           <div class="org-grid">
             <div class="org-detail">
-              <Cpu :size="20" :stroke-width="2" />
+              🧠
               <div>
                 <strong>AI &amp; automation</strong>
                 <span>Custom models, pipelines, intelligent workflows</span>
               </div>
             </div>
             <div class="org-detail">
-              <Cloud :size="20" :stroke-width="2" />
+              ☁️
               <div>
                 <strong>Cloud architecture</strong>
                 <span>Kubernetes, serverless, multi-region deployments</span>
               </div>
             </div>
             <div class="org-detail">
-              <Network :size="20" :stroke-width="2" />
+              🌐
               <div>
                 <strong>Platform engineering</strong>
                 <span>SaaS, marketplaces, multi-tenant systems</span>
               </div>
             </div>
             <div class="org-detail">
-              <FileCheck :size="20" :stroke-width="2" />
+              ✅
               <div>
                 <strong>Full lifecycle</strong>
                 <span>Discovery, build, launch, and knowledge transfer</span>
@@ -386,8 +386,8 @@
         <div class="rhythm-grid">
           <div class="rhythm-card">
             <div class="rhythm-number">01</div>
-            <h4>Two-week sprint cycles</h4>
-            <p>Work is scoped, planned, and delivered in focused two-week blocks. Each cycle ends with a review.</p>
+            <h4>Two-to-three-week work blocks</h4>
+            <p>Work is scoped, planned, and delivered in focused two-to-three-week blocks. Each cycle ends with a review.</p>
           </div>
           <div class="rhythm-card">
             <div class="rhythm-number">02</div>
@@ -405,6 +405,30 @@
             <p>The focus is on measurable forward movement, not checkbox compliance against an outdated plan.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- SECTION — Ongoing Support -->
+    <section class="continuity-section">
+      <div class="content continuity-content">
+        <h2>After Launch, We Stay With Your System</h2>
+        <p>
+          Software doesn't stop evolving the day it ships. Once delivery wraps,
+          many clients continue working with the guild — not as a maintenance
+          contract, but as an ongoing collaboration. Small improvements,
+          performance checks, adjustments as your context changes.
+        </p>
+        <ul class="continuity-list">
+          <li>Incremental improvements and refinements</li>
+          <li>Dependency updates and performance monitoring</li>
+          <li>Adjustments as your audience or goals evolve</li>
+          <li>Flexible scope — scaled to what you actually need</li>
+        </ul>
+        <p class="continuity-note">
+          Ongoing support typically starts from <strong>$300/month</strong> and
+          is tailored to each system. It's usually discussed after the initial
+          delivery, once you've seen how things run.
+        </p>
       </div>
     </section>
 
@@ -429,23 +453,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import {
-  Briefcase,
-  Building2,
-  Calculator,
-  Cloud,
-  Compass,
-  Cpu,
-  FileCheck,
-  Handshake,
-  Layers,
-  Network,
-  RefreshCw,
-  Shield,
-  ShieldCheck,
-  User,
-  Users,
-} from 'lucide-vue-next'
+// Icons replaced with emojis
 
 const activeTab = ref<'individual' | 'organization'>('individual')
 
@@ -1024,6 +1032,71 @@ useSEO({
   margin: 0;
   color: rgba(255, 255, 255, 0.78);
   line-height: 1.7;
+}
+
+/* ── Ongoing Support (Continuity) ───────────────────── */
+.continuity-section {
+  padding: 72px 20px;
+  background: var(--darker-bg);
+  border-top: 1px solid rgba(255, 107, 53, 0.1);
+}
+
+.continuity-content {
+  max-width: 720px;
+}
+
+.continuity-content h2 {
+  margin: 0 0 16px;
+  font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+  color: white;
+}
+
+.continuity-content > p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.continuity-list {
+  margin: 22px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.continuity-list li {
+  position: relative;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.75;
+}
+
+.continuity-list li + li {
+  margin-top: 6px;
+}
+
+.continuity-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-orange);
+  font-weight: 700;
+}
+
+.continuity-note {
+  margin-top: 18px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.continuity-note strong {
+  color: var(--primary-orange);
+  font-weight: 800;
 }
 
 /* ── CTA ───────────────────────────────────────────── */

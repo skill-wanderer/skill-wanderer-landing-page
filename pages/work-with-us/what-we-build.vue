@@ -29,7 +29,7 @@
         </div>
 
         <div class="admiral-orion-tip">
-          <span class="tip-icon"><Compass :size="24" :stroke-width="2" /></span>
+          <span class="tip-icon">🧭</span>
           <div>
             <p>
               <strong>Need quick answers?</strong> Talk to
@@ -46,7 +46,7 @@
     <section class="category-section">
       <div class="content">
         <div class="category-header">
-          <div class="category-icon"><Globe :size="24" :stroke-width="2" /></div>
+          <div class="category-icon">🌍</div>
           <div>
             <h2>Websites &amp; Landing Pages</h2>
             <p>
@@ -97,7 +97,7 @@
     <section class="category-section alt">
       <div class="content">
         <div class="category-header">
-          <div class="category-icon"><Settings :size="24" :stroke-width="2" /></div>
+          <div class="category-icon">⚙️</div>
           <div>
             <h2>Web Applications</h2>
             <p>
@@ -147,7 +147,7 @@
     <section class="category-section">
       <div class="content">
         <div class="category-header">
-          <div class="category-icon"><ShoppingCart :size="24" :stroke-width="2" /></div>
+          <div class="category-icon">🛒</div>
           <div>
             <h2>E-Commerce &amp; Marketplaces</h2>
             <p>
@@ -190,7 +190,7 @@
     <section class="category-section alt">
       <div class="content">
         <div class="category-header">
-          <div class="category-icon"><GraduationCap :size="24" :stroke-width="2" /></div>
+          <div class="category-icon">🎓</div>
           <div>
             <h2>EdTech &amp; LMS Platforms</h2>
             <p>
@@ -233,7 +233,7 @@
     <section class="category-section">
       <div class="content">
         <div class="category-header">
-          <div class="category-icon"><Bot :size="24" :stroke-width="2" /></div>
+          <div class="category-icon">🤖</div>
           <div>
             <h2>AI Applications &amp; Platforms</h2>
             <p>
@@ -283,7 +283,7 @@
     <section class="category-section alt">
       <div class="content">
         <div class="category-header">
-          <div class="category-icon"><Smartphone :size="24" :stroke-width="2" /></div>
+          <div class="category-icon">📱</div>
           <div>
             <h2>Mobile Apps &amp; Progressive Web Apps</h2>
             <p>
@@ -327,7 +327,7 @@
     <section class="category-section">
       <div class="content">
         <div class="category-header">
-          <div class="category-icon"><Plug :size="24" :stroke-width="2" /></div>
+          <div class="category-icon">🔌</div>
           <div>
             <h2>API Development &amp; Integrations</h2>
             <p>
@@ -370,7 +370,7 @@
     <section class="category-section alt">
       <div class="content">
         <div class="category-header">
-          <div class="category-icon"><Zap :size="24" :stroke-width="2" /></div>
+          <div class="category-icon">⚡</div>
           <div>
             <h2>Automation &amp; Workflow Tools</h2>
             <p>
@@ -413,7 +413,7 @@
     <section class="category-section">
       <div class="content">
         <div class="category-header">
-          <div class="category-icon"><RotateCw :size="24" :stroke-width="2" /></div>
+          <div class="category-icon">🔄</div>
           <div>
             <h2>Legacy System Replacement</h2>
             <p>
@@ -479,7 +479,7 @@
 
         <div class="package-options-grid">
           <div class="package-option-card">
-            <div class="package-option-icon"><ClipboardList :size="24" :stroke-width="2" /></div>
+            <div class="package-option-icon">📋</div>
             <h3>Check Our Pricing Guide</h3>
             <p>
               Our pricing page has a full breakdown of Quick Builds, Sprint Packages, Retainers, Maintenance tiers, and partnership
@@ -488,7 +488,7 @@
             <NuxtLink to="/work-with-us/pricing" class="card-link">View Pricing &rarr;</NuxtLink>
           </div>
           <div class="package-option-card featured">
-            <div class="package-option-icon"><Bot :size="24" :stroke-width="2" /></div>
+            <div class="package-option-icon">🤖</div>
             <h3>Talk to Our AI Assistant</h3>
             <p>
               Describe your project to our AI assistant on the website and it will recommend the right package, estimate scope,
@@ -497,7 +497,7 @@
             <NuxtLink to="/admiral-orion" class="card-link">Talk to Admiral Orion &rarr;</NuxtLink>
           </div>
           <div class="package-option-card">
-            <div class="package-option-icon"><Phone :size="24" :stroke-width="2" /></div>
+            <div class="package-option-icon">📞</div>
             <h3>Book a Call</h3>
             <p>
               For complex projects or partnership discussions, schedule a call directly with the Guild Master. We will scope
@@ -566,7 +566,7 @@
 </template>
 
 <script setup lang="ts">
-import { Bot, ClipboardList, Compass, Globe, GraduationCap, Phone, Plug, RotateCw, Settings, ShoppingCart, Smartphone, Zap } from 'lucide-vue-next'
+// Icons replaced with emojis
 useSEO({
   title: 'What We Build | Skill-Wanderer',
   description:

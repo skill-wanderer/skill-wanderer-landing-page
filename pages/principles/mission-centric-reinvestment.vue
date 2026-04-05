@@ -24,7 +24,7 @@
         <div class="failure-cards">
           <div class="failure-card" style="animation-delay: 0.1s;">
             <div class="failure-number">1</div>
-            <span class="failure-icon"><HeartCrack :size="24" :stroke-width="2" /></span>
+            <span class="failure-icon">💔</span>
             <h3>The Profitable Startup That Died</h3>
             <p>
               We had product-market fit. We had revenue. We had growth. But when it came time to 
@@ -38,7 +38,7 @@
           
           <div class="failure-card" style="animation-delay: 0.2s;">
             <div class="failure-number">2</div>
-            <span class="failure-icon"><Drama :size="24" :stroke-width="2" /></span>
+            <span class="failure-icon">🎭</span>
             <h3>The Passion Project We Abandoned</h3>
             <p>
               We started with a mission, but money called louder. We abandoned the project that held 
@@ -173,7 +173,7 @@
 </template>
 
 <script setup lang="ts">
-import { Drama, HeartCrack } from 'lucide-vue-next'
+// Icons replaced with emojis
 import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management
