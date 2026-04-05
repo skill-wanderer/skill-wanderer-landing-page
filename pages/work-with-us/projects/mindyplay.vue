@@ -138,22 +138,22 @@
         </p>
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon"><Dice5 :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">🎲</div>
             <h3>Physical to Digital</h3>
             <p>Converting a traditional game into a rich mobile experience with touch controls, animations, and real-time feedback.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon"><Palette :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">🎨</div>
             <h3>Visual &amp; Interactive Design</h3>
             <p>Sprite-based graphics, smooth animations, and engaging UI built with the Flame engine and Flutter widgets.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon"><Smartphone :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">📱</div>
             <h3>Cross-Platform</h3>
             <p>One codebase targeting both iOS and Android — consistent gameplay experience across all devices.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon"><Lock :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">🔒</div>
             <h3>Secure Access</h3>
             <p>Keycloak-powered authorization ensuring secure user authentication and role-based game access.</p>
           </div>
@@ -207,22 +207,22 @@
         </p>
         <div class="roles-grid">
           <div class="role-card">
-            <div class="role-icon"><Gamepad2 :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">🎮</div>
             <h3>Game Development</h3>
             <p>Flutter and Flame Engine — building game mechanics, rendering, and interactive gameplay from scratch.</p>
           </div>
           <div class="role-card">
-            <div class="role-icon"><Wrench :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">🔧</div>
             <h3>Backend Integration</h3>
             <p>Firebase setup for real-time data, cloud functions, and analytics — powering the game's backend services.</p>
           </div>
           <div class="role-card">
-            <div class="role-icon"><Lock :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">🔒</div>
             <h3>Authorization</h3>
             <p>Keycloak integration for secure user identity management, SSO, and role-based access control.</p>
           </div>
           <div class="role-card">
-            <div class="role-icon"><ClipboardList :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">📋</div>
             <h3>Technical Project Management</h3>
             <p>Guild Master led the project as TPM — coordinating sprints, unblocking the team, and ensuring delivery.</p>
           </div>
@@ -250,15 +250,15 @@
         </p>
         <div class="cta-highlights">
           <div class="cta-highlight">
-            <span class="cta-highlight-icon"><Rocket :size="24" :stroke-width="2" /></span>
+            <span class="cta-highlight-icon">🚀</span>
             <span>Ship real products, not toy projects</span>
           </div>
           <div class="cta-highlight">
-            <span class="cta-highlight-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
+            <span class="cta-highlight-icon">🎓</span>
             <span>Learn from experienced Guild Masters</span>
           </div>
           <div class="cta-highlight">
-            <span class="cta-highlight-icon"><Briefcase :size="24" :stroke-width="2" /></span>
+            <span class="cta-highlight-icon">💼</span>
             <span>Real projects lead to real career opportunities</span>
           </div>
         </div>
@@ -279,7 +279,7 @@
 </template>
 
 <script setup lang="ts">
-import { Briefcase, ClipboardList, Dice5, Gamepad2, GraduationCap, Lock, Palette, Rocket, Smartphone, Wrench } from 'lucide-vue-next'
+// Icons replaced with emojis
 
 useSEO({
   title: 'MindyPlay — Mobile Game Development | Skill-Wanderer',

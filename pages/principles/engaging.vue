@@ -37,7 +37,7 @@
             
             <div class="journey-stop" style="animation-delay: 0.3s;">
               <div class="stop-marker breakthrough">
-                <span class="stop-icon"><Lightbulb :size="24" :stroke-width="2" /></span>
+                <span class="stop-icon">💡</span>
               </div>
               <div class="stop-content">
                 <h3>The Breakthrough</h3>
@@ -47,7 +47,7 @@
             
             <div class="journey-stop" style="animation-delay: 0.5s;">
               <div class="stop-marker euphoria">
-                <span class="stop-icon"><Sparkles :size="24" :stroke-width="2" /></span>
+                <span class="stop-icon">✨</span>
               </div>
               <div class="stop-content">
                 <h3>The Euphoria</h3>
@@ -89,37 +89,37 @@
       
       <div class="celebration-grid">
         <div class="celebration-card" style="animation-delay: 0.1s;">
-          <span class="celebration-icon"><Trophy :size="24" :stroke-width="2" /></span>
+          <span class="celebration-icon">🏆</span>
           <h3>Milestone Recognition</h3>
           <p>Every breakthrough is celebrated—from your first working function to your first deployed app.</p>
         </div>
         
         <div class="celebration-card" style="animation-delay: 0.2s;">
-          <span class="celebration-icon"><BookOpen :size="24" :stroke-width="2" /></span>
+          <span class="celebration-icon">📖</span>
           <h3>Success Stories</h3>
           <p>Your journey becomes inspiration for others. We share learner victories to light the path ahead.</p>
         </div>
         
         <div class="celebration-card" style="animation-delay: 0.3s;">
-          <span class="celebration-icon"><MessageCircle :size="24" :stroke-width="2" /></span>
+          <span class="celebration-icon">💬</span>
           <h3>Community Cheering</h3>
           <p>A supportive community that understands the struggle and celebrates every win together.</p>
         </div>
         
         <div class="celebration-card" style="animation-delay: 0.4s;">
-          <span class="celebration-icon"><Target :size="24" :stroke-width="2" /></span>
+          <span class="celebration-icon">🎯</span>
           <h3>Progress Tracking</h3>
           <p>Visual progress that shows how far you've come, reminding you that every step counts.</p>
         </div>
         
         <div class="celebration-card" style="animation-delay: 0.5s;">
-          <span class="celebration-icon"><Star :size="24" :stroke-width="2" /></span>
+          <span class="celebration-icon">⭐</span>
           <h3>Struggle Recognition</h3>
           <p>We honor the struggle itself. Every bug fixed, every concept grasped is a victory worth noting.</p>
         </div>
         
         <div class="celebration-card" style="animation-delay: 0.6s;">
-          <span class="celebration-icon"><Flame :size="24" :stroke-width="2" /></span>
+          <span class="celebration-icon">🔥</span>
           <h3>Passion Projects</h3>
           <p>Showcase your creations. Your projects inspire others and prove what's possible.</p>
         </div>
@@ -144,7 +144,7 @@
 </template>
 
 <script setup lang="ts">
-import { BookOpen, Flame, Lightbulb, MessageCircle, Sparkles, Star, Target, Trophy } from 'lucide-vue-next'
+// Icons replaced with emojis
 import type { StoryChapter, StoryContent, PracticeExample } from '~/types'
 
 // SEO and meta management
@@ -194,7 +194,7 @@ const storyChapters: StoryChapter[] = [
     ]
   },
   {
-    icon: "⚔️",
+    icon: "🏹",
     title: "The Samurai's Wisdom",
     content: [
       {

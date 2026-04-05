@@ -30,32 +30,32 @@
       </div>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon"><Compass :size="24" color="white" :stroke-width="2" /></div>
+          <div class="feature-icon">🧭</div>
           <h3>Navigate Learning Paths</h3>
           <p>Ask about available courses, recommended learning sequences, and how to get started on your tech journey — from beginner to advanced.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><ScrollText :size="24" color="white" :stroke-width="2" /></div>
+          <div class="feature-icon">📜</div>
           <h3>Explain Our Principles</h3>
           <p>Curious about our 12 guiding principles? Admiral Orion can break them down and explain how they shape everything we build.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><Search :size="24" color="white" :stroke-width="2" /></div>
+          <div class="feature-icon">🔍</div>
           <h3>Search Across the Platform</h3>
           <p>Admiral Orion searches across skill-wanderer.com, the Dojo, and the Blog to find the most relevant answers for your questions.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><Handshake :size="24" color="white" :stroke-width="2" /></div>
+          <div class="feature-icon">🤝</div>
           <h3>Partnership &amp; Impact Info</h3>
           <p>Learn about our social enterprise model, success sharing, and how to become a technology partner — all through a simple conversation.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><Rocket :size="24" color="white" :stroke-width="2" /></div>
+          <div class="feature-icon">🚀</div>
           <h3>Platform Guidance</h3>
           <p>Not sure where to start? Admiral Orion provides mission briefings tailored to your interests and experience level.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><Shield :size="24" color="white" :stroke-width="2" /></div>
+          <div class="feature-icon">🛡️</div>
           <h3>Privacy-First Design</h3>
           <p>No personal data is stored beyond your current session. Conversations expire automatically and are never shared with third parties.</p>
         </div>
@@ -104,7 +104,7 @@
 </template>
 
 <script setup lang="ts">
-import { Compass, ScrollText, Search, Handshake, Rocket, Shield } from 'lucide-vue-next'
+// Icons replaced with emojis
 
 useSEO({
   title: 'Admiral Orion — AI Chatbot | Skill-Wanderer',

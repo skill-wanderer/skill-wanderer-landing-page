@@ -7,13 +7,13 @@
           ← Back to Our Learners
         </NuxtLink>
         <div class="featured-badge">
-          <span>⚔️ The Warrior</span>
+          <span>🛡️ The Warrior</span>
         </div>
         <h1>Khouja Nasreddine</h1>
         <p class="tagline">The Warrior</p>
         <div class="hero-meta">
-          <span class="meta-tag">📍 Tunisia</span>
-          <span class="meta-tag">🎮 Mobile Game Development</span>
+          <span class="meta-tag">🗺️ Tunisia</span>
+          <span class="meta-tag">🕹️ Mobile Game Development</span>
         </div>
       </div>
     </section>
@@ -40,7 +40,7 @@
     <!-- Journey Section -->
     <section class="journey-section">
       <div class="journey-container">
-        <h2>⚔️ Built Different</h2>
+        <h2>🛡️ Built Different</h2>
         <p class="section-intro">
           What makes Khouja remarkable isn't just his skill — it's his unbreakable spirit. While others pause,
           he pushes forward. While others ask for guidance, he's already three steps ahead, solving the problem
@@ -49,7 +49,7 @@
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon"><Shield :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">🛡️</div>
             <h3>Unbreakable Resilience</h3>
             <p>
               Sickness? He codes through it. Holidays? He's still pushing commits. Khouja
@@ -59,7 +59,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon"><Zap :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">⚡</div>
             <h3>Lightning-Fast Development</h3>
             <p>
               Khouja's <strong>speed of development is extraordinary</strong>. He doesn't just complete tasks —
@@ -69,7 +69,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon"><Compass :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">🧭</div>
             <h3>Self-Guided Navigator</h3>
             <p>
               He requires <strong>very little guidance</strong>. Point him in a direction and he'll find the
@@ -79,7 +79,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon"><Hammer :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">🔨</div>
             <h3>Blockage Breaker</h3>
             <p>
               Where others see blockers, Khouja sees puzzles to solve. <strong>Never will he let any blockage
@@ -94,7 +94,7 @@
     <!-- Current Chapter Section -->
     <section class="next-chapter-section">
       <div class="next-container">
-        <h2>🏔️ From Warrior to Professional</h2>
+        <h2>⛰️ From Warrior to Professional</h2>
         <p>
           Khouja completed the <strong>Mobile Game Dev Path</strong> with the same warrior spirit that defined
           his entire journey. He is now working with one of our partners, bringing his unstoppable energy and
@@ -103,7 +103,7 @@
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon"><Gamepad2 :size="24" :stroke-width="2" /></span>
+          <span class="path-icon">🎮</span>
           <span class="path-text">Completed: Mobile Game Dev Path</span>
         </div>
 
@@ -137,7 +137,7 @@
 </template>
 
 <script setup lang="ts">
-import { Compass, Gamepad2, Hammer, Shield, Zap } from 'lucide-vue-next'
+// Icons replaced with emojis
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({

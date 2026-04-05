@@ -34,7 +34,7 @@
 
         <div class="model-cards">
           <div class="model-card">
-            <div class="model-icon"><Banknote :size="24" color="white" :stroke-width="2" /></div>
+            <div class="model-icon">💵</div>
             <h3>Lower Upfront Investment</h3>
             <p>
               Unlike traditional outsourcing, we don't ask for large upfront payments. Start building with minimal 
@@ -43,7 +43,7 @@
           </div>
 
           <div class="model-card">
-            <div class="model-icon"><TrendingUp :size="24" color="white" :stroke-width="2" /></div>
+            <div class="model-icon">📈</div>
             <h3>Success Sharing Model</h3>
             <p>
               Our earnings come from sharing in your success. This keeps us genuinely invested in your outcomes, 
@@ -52,7 +52,7 @@
           </div>
 
           <div class="model-card">
-            <div class="model-icon"><Users :size="24" color="white" :stroke-width="2" /></div>
+            <div class="model-icon">👥</div>
             <h3>Community-Powered Talent</h3>
             <p>
               Work gets done by talented learners from our global community—people eager to prove themselves 
@@ -70,17 +70,17 @@
         
         <div class="alignment-grid">
           <div class="alignment-card">
-            <span class="alignment-icon"><Banknote :size="32" :stroke-width="1.5" /></span>
+            <span class="alignment-icon">💵</span>
             <h3>For You</h3>
             <p>Lower risk with reduced upfront costs—we succeed together or not at all.</p>
           </div>
           <div class="alignment-card">
-            <span class="alignment-icon"><Target :size="32" :stroke-width="1.5" /></span>
+            <span class="alignment-icon">🎯</span>
             <h3>For Us</h3>
             <p>We're motivated by your success, not just billing hours. Real outcomes drive our revenue.</p>
           </div>
           <div class="alignment-card">
-            <span class="alignment-icon"><Star :size="32" :stroke-width="1.5" /></span>
+            <span class="alignment-icon">⭐</span>
             <h3>For Learners</h3>
             <p>Real projects with real stakes create real skills and genuine career pathways.</p>
           </div>
@@ -115,22 +115,22 @@
           </div>
           
           <div class="engine-component services">
-            <span class="component-icon"><Briefcase :size="24" :stroke-width="2" /></span>
+            <span class="component-icon">💼</span>
             <span class="component-label">Tech Partnerships</span>
           </div>
           
           <div class="engine-component education">
-            <span class="component-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
+            <span class="component-icon">🎓</span>
             <span class="component-label">Education</span>
           </div>
           
           <div class="engine-component revenue">
-            <span class="component-icon"><Coins :size="24" :stroke-width="2" /></span>
+            <span class="component-icon">💰</span>
             <span class="component-label">Revenue</span>
           </div>
           
           <div class="engine-component impact">
-            <span class="component-icon"><Star :size="24" :stroke-width="2" /></span>
+            <span class="component-icon">⭐</span>
             <span class="component-label">Real Impact</span>
           </div>
         </div>
@@ -147,7 +147,7 @@
         
         <div class="role-comparison">
           <div class="role-card practitioner">
-            <div class="role-icon"><Monitor :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">💻</div>
             <h3>As Practitioners</h3>
             <ul class="role-benefits">
               <li>Solve real client problems</li>
@@ -164,7 +164,7 @@
           </div>
           
           <div class="role-card educator">
-            <div class="role-icon"><Library :size="24" :stroke-width="2" /></div>
+            <div class="role-icon">📚</div>
             <h3>As Educators</h3>
             <ul class="role-benefits">
               <li>Share real experiences</li>
@@ -194,7 +194,7 @@
         <div class="benefit-grid">
           <div class="benefit-card">
             <div class="benefit-number">1</div>
-            <span class="benefit-icon"><RotateCw :size="24" :stroke-width="2" /></span>
+            <span class="benefit-icon">🔄</span>
             <h3>Always Current Curriculum</h3>
             <p>
               Our courses reflect the technologies and challenges we face today, not five years ago. 
@@ -204,7 +204,7 @@
           
           <div class="benefit-card">
             <div class="benefit-number">2</div>
-            <span class="benefit-icon"><Dumbbell :size="24" :stroke-width="2" /></span>
+            <span class="benefit-icon">💪</span>
             <h3>Sustainable Independence</h3>
             <p>
               Revenue from partnerships funds free education without relying on donations or compromising 
@@ -214,7 +214,7 @@
           
           <div class="benefit-card">
             <div class="benefit-number">3</div>
-            <span class="benefit-icon"><Globe :size="24" :stroke-width="2" /></span>
+            <span class="benefit-icon">🌍</span>
             <h3>Double Impact</h3>
             <p>
               We help organizations solve real problems while simultaneously creating educational content 
@@ -257,7 +257,7 @@
 </template>
 
 <script setup>
-import { Banknote, Briefcase, Coins, Dumbbell, Globe, GraduationCap, Library, Monitor, RotateCw, Star, Target, TrendingUp, Users } from 'lucide-vue-next'
+// Icons replaced with emojis
 import { computed } from 'vue'
 
 // SEO and meta management

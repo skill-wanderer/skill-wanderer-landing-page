@@ -6,32 +6,32 @@
     </div>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon"><Target :size="24" color="white" :stroke-width="2" /></div>
+        <div class="feature-icon">🎯</div>
         <h3>Curated Learning Paths</h3>
         <p>Expert-selected resources and AI-assisted content, organized into clear pathways from beginner to advanced, always with practical application in mind.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><Lightbulb :size="24" color="white" :stroke-width="2" /></div>
+        <div class="feature-icon">💡</div>
         <h3>Learn Through Failure</h3>
         <p>We celebrate mistakes as learning opportunities. Every challenge, every "oops" moment is a valuable lesson on your journey to mastery.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><Star :size="24" color="white" :stroke-width="2" /></div>
+        <div class="feature-icon">⭐</div>
         <h3>Real-World Integration</h3>
         <p>Content directly informed by active real-world expertise and impact work, ensuring what you learn is immediately applicable in the real world.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><GraduationCap :size="24" color="white" :stroke-width="2" /></div>
+        <div class="feature-icon">🎓</div>
         <h3>100% Free Learning Content</h3>
         <p>All course content and learning materials are completely free. Human mentors and support are sustained through our social enterprise model with Social Impact Tokens.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><Handshake :size="24" color="white" :stroke-width="2" /></div>
+        <div class="feature-icon">🤝</div>
         <h3>Community-Driven</h3>
         <p>Join a supportive community of learners where questions are welcomed, achievements are celebrated, and everyone grows together.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon"><Rocket :size="24" color="white" :stroke-width="2" /></div>
+        <div class="feature-icon">🚀</div>
         <h3>Future Pathways</h3>
         <p>Long-term vision includes pathways for learners to join our team or launch their own ventures, fostering a cycle of growth and opportunity.</p>
       </div>
@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import { Target, Lightbulb, Star, GraduationCap, Handshake, Rocket } from 'lucide-vue-next'
+// Icons replaced with emojis
 </script>
 
 <style scoped>

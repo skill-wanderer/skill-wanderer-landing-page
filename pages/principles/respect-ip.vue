@@ -22,7 +22,7 @@
         
         <div class="ai-flow-visual">
           <div class="flow-node curriculum">
-            <div class="flow-icon"><ClipboardList :size="24" :stroke-width="2" /></div>
+            <div class="flow-icon">📋</div>
             <h3>Our Curriculum</h3>
             <p>Skill-Wanderer's own intellectual property and structured learning pathways</p>
           </div>
@@ -42,7 +42,7 @@
           </div>
           
           <div class="flow-node content">
-            <div class="flow-icon"><Library :size="24" :stroke-width="2" /></div>
+            <div class="flow-icon">📚</div>
             <h3>Learning Materials</h3>
             <p>High-quality content generated from our own IP, with full attribution where due</p>
           </div>
@@ -62,7 +62,7 @@
           </div>
           
           <div class="flow-node learners">
-            <div class="flow-icon"><GraduationCap :size="24" :stroke-width="2" /></div>
+            <div class="flow-icon">🎓</div>
             <h3>Learners</h3>
             <p>Free, accessible education built on a foundation of integrity and respect</p>
           </div>
@@ -81,7 +81,7 @@
         <div class="strategy-grid">
           <div class="strategy-card ai-gen" style="animation-delay: 0.1s;">
             <div class="strategy-header">
-              <div class="strategy-icon"><Bot :size="24" :stroke-width="2" /></div>
+              <div class="strategy-icon">🤖</div>
               <h3>AI-Generated from Our Own Curriculum</h3>
             </div>
             
@@ -101,7 +101,7 @@
           
           <div class="strategy-card attribution" style="animation-delay: 0.3s;">
             <div class="strategy-header">
-              <div class="strategy-icon"><Tag :size="24" :stroke-width="2" /></div>
+              <div class="strategy-icon">🏷️</div>
               <h3>Respect, Attribute & Honor Third-Party IP</h3>
             </div>
             
@@ -143,7 +143,7 @@
 </template>
 
 <script setup lang="ts">
-import { Bot, ClipboardList, GraduationCap, Library, Tag } from 'lucide-vue-next'
+// Icons replaced with emojis
 import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management

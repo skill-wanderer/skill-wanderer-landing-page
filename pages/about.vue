@@ -10,7 +10,7 @@
     <section class="story">
       <div class="story-content">
         <div class="story-section" style="animation-delay: 0.1s;">
-          <h2><span class="section-icon"><Sunrise :size="24" :stroke-width="2" /></span> The Beginning</h2>
+          <h2><span class="section-icon">🌅</span> The Beginning</h2>
           <p>
             My story didn't start in tech—it began in international trade at Toyota Tsusho Vietnam, where I learned 
             <span class="highlight">the most fundamental skill of all: how to learn rapidly and adapt</span>. When I 
@@ -31,7 +31,7 @@
         </div>
 
         <div class="story-section" style="animation-delay: 0.3s;">
-          <h2><span class="section-icon"><Lightbulb :size="24" :stroke-width="2" /></span> The Realization</h2>
+          <h2><span class="section-icon">💡</span> The Realization</h2>
           <p>
             Having transitioned from business to tech myself, I understood firsthand how daunting the journey can be. 
             Traditional education often fails to capture the messy, non-linear reality of learning technology. 
@@ -59,7 +59,7 @@
         </div>
 
         <div class="story-section" style="animation-delay: 0.5s;">
-          <h2><span class="section-icon"><Rocket :size="24" :stroke-width="2" /></span> The Vision</h2>
+          <h2><span class="section-icon">🚀</span> The Vision</h2>
           <p>
             Skill-Wanderer is built on a profound truth: <span class="highlight">teaching is the best way to learn, 
             and building is the best way to teach</span>. The guild model unites education and professional work into 
@@ -96,22 +96,22 @@
       </div>
       <div class="philosophy-grid">
         <div class="philosophy-card">
-          <span class="philosophy-icon"><Landmark :size="48" :stroke-width="1.5" /></span>
+          <span class="philosophy-icon">🏛️</span>
           <h3>Craft Through Practice</h3>
           <p>Like the guilds of old, we believe mastery comes through doing. Every real project is a lesson, every engagement is a classroom. Teaching and building are one and the same.</p>
         </div>
         <div class="philosophy-card">
-          <span class="philosophy-icon"><Sprout :size="48" :stroke-width="1.5" /></span>
+          <span class="philosophy-icon">🌱</span>
           <h3>Growth Through Failure</h3>
           <p>We celebrate mistakes as learning opportunities. Every bug fixed, every error resolved is a step towards mastery within the guild.</p>
         </div>
         <div class="philosophy-card">
-          <span class="philosophy-icon"><RefreshCw :size="48" :stroke-width="1.5" /></span>
+          <span class="philosophy-icon">🔄</span>
           <h3>Work Funds Education</h3>
           <p>All revenue from guild engagements flows back into free education, mentorship, and community infrastructure. No profit extraction, ever.</p>
         </div>
         <div class="philosophy-card">
-          <span class="philosophy-icon"><Handshake :size="48" :stroke-width="1.5" /></span>
+          <span class="philosophy-icon">🤝</span>
           <h3>Guild Over Competition</h3>
           <p>Learning is not a solo journey. The guild fosters collaboration, peer mentorship, and collective growth—apprentices, journeymen, and masters building together.</p>
         </div>
@@ -147,7 +147,7 @@
       </div>
       <div class="open-platform-content">
         <div class="open-platform-card">
-          <span class="open-platform-icon"><BookOpen :size="48" :stroke-width="1.5" /></span>
+          <span class="open-platform-icon">📖</span>
           <h3>Open Knowledge</h3>
           <p>
             We believe knowledge should be freely accessible to everyone. The guild is built as a community that
@@ -156,7 +156,7 @@
           </p>
         </div>
         <div class="open-platform-card">
-          <span class="open-platform-icon"><Unlock :size="48" :stroke-width="1.5" /></span>
+          <span class="open-platform-icon">🔓</span>
           <h3>Open Source at Heart</h3>
           <p>
             Open source isn't just a development model—it's a philosophy we live by. We embrace
@@ -166,7 +166,7 @@
           </p>
         </div>
         <div class="open-platform-card">
-          <span class="open-platform-icon"><Wrench :size="48" :stroke-width="1.5" /></span>
+          <span class="open-platform-icon">🔧</span>
           <h3>Actively Forging</h3>
           <p>
             The guild is in <span class="highlight">active development</span> with an ambitious roadmap ahead.
@@ -177,7 +177,7 @@
       </div>
       <div class="open-platform-banner">
         <p>
-          🚧 <strong>The guild is growing!</strong> Skill-Wanderer is a living project—growing, improving, and
+          🌱 <strong>The guild is growing!</strong> Skill-Wanderer is a living project—growing, improving, and
           expanding every day. Stay tuned for new learning paths, guild engagements, and community initiatives.
         </p>
       </div>
@@ -300,7 +300,7 @@
 </template>
 
 <script setup lang="ts">
-import { BookOpen, Handshake, Landmark, Lightbulb, RefreshCw, Rocket, Sprout, Sunrise, Unlock, Wrench } from 'lucide-vue-next'
+// Icons replaced with emojis
 import { onMounted } from 'vue'
 
 // SEO and meta management

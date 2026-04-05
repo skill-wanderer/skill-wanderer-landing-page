@@ -185,7 +185,7 @@
 
         <div class="roadmap-grid">
           <div class="roadmap-card roadmap-card--live">
-            <div class="roadmap-icon"><Home :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-icon">🏠</div>
             <div class="roadmap-body">
               <div class="roadmap-header">
                 <h4>This Landing Page</h4>
@@ -199,7 +199,7 @@
           </div>
 
           <div class="roadmap-card">
-            <div class="roadmap-icon"><Library :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-icon">📚</div>
             <div class="roadmap-body">
               <div class="roadmap-header">
                 <h4>LMS</h4>
@@ -213,7 +213,7 @@
           </div>
 
           <div class="roadmap-card">
-            <div class="roadmap-icon"><PenLine :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-icon">✏️</div>
             <div class="roadmap-body">
               <div class="roadmap-header">
                 <h4>Blog System</h4>
@@ -227,7 +227,7 @@
           </div>
 
           <div class="roadmap-card">
-            <div class="roadmap-icon"><Compass :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-icon">🧭</div>
             <div class="roadmap-body">
               <div class="roadmap-header">
                 <h4>PathFinder AI Fleet</h4>
@@ -241,7 +241,7 @@
           </div>
 
           <div class="roadmap-card">
-            <div class="roadmap-icon"><Wrench :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-icon">🔧</div>
             <div class="roadmap-body">
               <div class="roadmap-header">
                 <h4>Admin & Teacher Panel</h4>
@@ -255,7 +255,7 @@
           </div>
 
           <div class="roadmap-card">
-            <div class="roadmap-icon"><MessageCircle :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-icon">💬</div>
             <div class="roadmap-body">
               <div class="roadmap-header">
                 <h4>Communication Module</h4>
@@ -269,7 +269,7 @@
           </div>
 
           <div class="roadmap-card">
-            <div class="roadmap-icon"><Lock :size="24" color="white" :stroke-width="2" /></div>
+            <div class="roadmap-icon">🔒</div>
             <div class="roadmap-body">
               <div class="roadmap-header">
                 <h4>Authorization Module</h4>
@@ -300,7 +300,7 @@
 </template>
 
 <script setup lang="ts">
-import { Compass, Home, Library, Lock, MessageCircle, PenLine, Wrench } from 'lucide-vue-next'
+// Icons replaced with emojis
 useSEO({
   title: 'Our Projects | Skill-Wanderer',
   description:

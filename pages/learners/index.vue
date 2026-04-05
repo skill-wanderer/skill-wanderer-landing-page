@@ -30,10 +30,10 @@
               <p class="learner-tagline">Sailing Through the Storm</p>
               <div class="learner-meta">
                 <span>📍 Indonesia</span>
-                <span>💼 Software Developer</span>
+                <span>🛠️ Software Developer</span>
               </div>
               <div class="learner-path">
-                <span class="path-badge">🔍 QA / Tester Path</span>
+                <span class="path-badge">🧪 QA / Tester Path</span>
               </div>
             </div>
             <div class="view-story">
@@ -53,7 +53,7 @@
               <p class="learner-tagline">The Fearless Adventurer</p>
               <div class="learner-meta">
                 <span>📍 India</span>
-                <span>💼 DevOps Engineer</span>
+                <span>🛠️ DevOps Engineer</span>
               </div>
               <div class="learner-path">
                 <span class="path-badge">⚙️ DevOps Path</span>
@@ -76,7 +76,7 @@
               <p class="learner-tagline">The Firebrand</p>
               <div class="learner-meta">
                 <span>📍 Venezuela</span>
-                <span>💼 Mobile Game Development</span>
+                <span>🕹️ Mobile Game Development</span>
               </div>
               <div class="learner-path">
                 <span class="path-badge">🎮 Mobile Game Dev Path</span>
@@ -89,7 +89,7 @@
 
           <!-- Khouja Nasreddine Card -->
           <NuxtLink to="/learners/khouja-nasreddine" class="learner-card featured">
-            <div class="first-badge">⚔️ The Warrior</div>
+            <div class="first-badge">🛡️ The Warrior</div>
             <div class="learner-avatar">
               <img src="/learners/khouja-nasreddine.jpeg" alt="Khouja Nasreddine" class="avatar-image" />
             </div>
@@ -99,7 +99,7 @@
               <p class="learner-tagline">The Warrior</p>
               <div class="learner-meta">
                 <span>📍 Tunisia</span>
-                <span>💼 Mobile Game Development</span>
+                <span>🕹️ Mobile Game Development</span>
               </div>
               <div class="learner-path">
                 <span class="path-badge">🎮 Mobile Game Dev Path</span>
@@ -135,7 +135,7 @@
         </div>
 
         <div class="more-learners-notice">
-          <p>🌍 There are many more learners on their journey with Skill-Wanderer — their stories are yet to be featured. Stay tuned!</p>
+          <p>✨ There are many more learners on their journey with Skill-Wanderer — their stories are yet to be featured. Stay tuned!</p>
         </div>
       </div>
     </section>

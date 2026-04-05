@@ -12,9 +12,9 @@
         <h1>Alfredo Salazar</h1>
         <p class="tagline">The Firebrand</p>
         <div class="hero-meta">
-          <span class="meta-tag">📍 Venezuela</span>
-          <span class="meta-tag">🎮 Mobile Game Development</span>
-          <a href="https://www.linkedin.com/in/alfredo-salazar-175712159/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🔗 LinkedIn</a>
+          <span class="meta-tag">🗺️ Venezuela</span>
+          <span class="meta-tag">🕹️ Mobile Game Development</span>
+          <a href="https://www.linkedin.com/in/alfredo-salazar-175712159/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🌐 LinkedIn</a>
         </div>
       </div>
     </section>
@@ -41,7 +41,7 @@
     <!-- Journey Section -->
     <section class="journey-section">
       <div class="journey-container">
-        <h2>🔥 The Self-Made Learner</h2>
+        <h2>📖 The Self-Made Learner</h2>
         <p class="section-intro">
           What sets Alfredo apart is his fierce independence. He doesn't wait for instructions or hand-holding.
           He charts his own course, dives headfirst into challenges, and emerges on the other side with
@@ -50,7 +50,7 @@
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon"><MessageSquare :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">💬</div>
             <h3>Master of Words</h3>
             <p>
               Alfredo has a rare gift — the ability to <strong>articulate complex ideas</strong> with remarkable
@@ -60,7 +60,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon"><Bird :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">🐦</div>
             <h3>Fiercely Independent</h3>
             <p>
               While many learners rely on guidance at every turn, Alfredo <strong>blazes his own trail</strong>.
@@ -70,7 +70,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon"><Flame :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">🔥</div>
             <h3>Relentless Drive</h3>
             <p>
               The fire in Alfredo isn't just a spark — it's a <strong>sustained blaze</strong>. He brings
@@ -80,7 +80,7 @@
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon"><MessageCircle :size="24" color="white" :stroke-width="2" /></div>
+            <div class="milestone-icon">💬</div>
             <h3>Never Short on Words</h3>
             <p>
               Alfredo is never one to stay silent. He <strong>always has something to contribute</strong>,
@@ -95,7 +95,7 @@
     <!-- Current Chapter Section -->
     <section class="next-chapter-section">
       <div class="next-container">
-        <h2>🏔️ Proving Himself in the Real World</h2>
+        <h2>⛰️ Proving Himself in the Real World</h2>
         <p>
           Alfredo graduated the <strong>Mobile Game Dev Path</strong> with the same fire and independence
           that defined his entire learning journey. Now, he is working with one of our partners to gain
@@ -104,7 +104,7 @@
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon"><Gamepad2 :size="24" :stroke-width="2" /></span>
+          <span class="path-icon">🎮</span>
           <span class="path-text">Completed: Mobile Game Dev Path</span>
         </div>
 
@@ -138,7 +138,7 @@
 </template>
 
 <script setup lang="ts">
-import { Bird, Flame, Gamepad2, MessageCircle, MessageSquare } from 'lucide-vue-next'
+// Icons replaced with emojis
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({

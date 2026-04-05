@@ -9,7 +9,7 @@
         <div class="status-badge">
           <span>Shipped</span>
         </div>
-        <div class="hero-icon"><BarChart3 :size="24" :stroke-width="2" /></div>
+        <div class="hero-icon">📊</div>
         <h1>Recruitment Validator</h1>
         <p class="tagline">Recruitment Data Validation at Scale</p>
         <div class="hero-meta">
@@ -240,22 +240,22 @@
         <h2>Impact</h2>
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon"><Zap :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">⚡</div>
             <h3>Speed</h3>
             <p>What took days of manual Excel checking is now completed in minutes — freeing the operations team to focus on resolution instead of detection.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon"><Target :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">🎯</div>
             <h3>Accuracy</h3>
             <p>Automated cross-referencing eliminates human error — no more missed mismatches in thousands of records.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon"><ClipboardList :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">📋</div>
             <h3>Clarity</h3>
             <p>Every mismatch is documented with what went wrong and how severe it is — no guesswork for the team.</p>
           </div>
           <div class="feature-card">
-            <div class="feature-icon"><TrendingUp :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">📈</div>
             <h3>Scalability</h3>
             <p>Handles hundreds to thousands of applications per cycle without performance degradation — ready for growth.</p>
           </div>
@@ -294,15 +294,15 @@
         </p>
         <div class="cta-highlights">
           <div class="cta-highlight">
-            <span class="cta-highlight-icon"><Search :size="24" :stroke-width="2" /></span>
+            <span class="cta-highlight-icon">🔍</span>
             <span>Automated mismatch detection</span>
           </div>
           <div class="cta-highlight">
-            <span class="cta-highlight-icon"><Zap :size="24" :stroke-width="2" /></span>
+            <span class="cta-highlight-icon">⚡</span>
             <span>Days to minutes</span>
           </div>
           <div class="cta-highlight">
-            <span class="cta-highlight-icon"><BarChart3 :size="24" :stroke-width="2" /></span>
+            <span class="cta-highlight-icon">📊</span>
             <span>Severity-rated reporting</span>
           </div>
         </div>
@@ -320,7 +320,7 @@
 </template>
 
 <script setup lang="ts">
-import { BarChart3, ClipboardList, Search, Target, TrendingUp, Zap } from 'lucide-vue-next'
+// Icons replaced with emojis
 
 useSEO({
   title: 'Recruitment Validator — Data Validation Tool | Skill-Wanderer',

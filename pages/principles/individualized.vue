@@ -20,37 +20,37 @@
         
         <div class="styles-grid">
           <div class="style-card breaker" style="animation-delay: 0.1s;">
-            <div class="style-icon"><Zap :size="24" :stroke-width="2" /></div>
+            <div class="style-icon">⚡</div>
             <h3>The Code Breaker</h3>
             <p>Learns by diving in, breaking things, and fixing them. Every error is a teacher, every bug a lesson.</p>
           </div>
           
           <div class="style-card watcher" style="animation-delay: 0.2s;">
-            <div class="style-icon"><Eye :size="24" :stroke-width="2" /></div>
+            <div class="style-icon">👁️</div>
             <h3>The Course Watcher</h3>
             <p>Needs the full picture before starting. Watches complete courses, building confidence through comprehensive understanding.</p>
           </div>
           
           <div class="style-card collaborator" style="animation-delay: 0.3s;">
-            <div class="style-icon"><Users :size="24" :stroke-width="2" /></div>
+            <div class="style-icon">👥</div>
             <h3>The Collaborator</h3>
             <p>Thrives in pair programming, absorbing knowledge through shared experiences and real-time feedback.</p>
           </div>
           
           <div class="style-card reader" style="animation-delay: 0.4s;">
-            <div class="style-icon"><Library :size="24" :stroke-width="2" /></div>
+            <div class="style-icon">📚</div>
             <h3>The Documentation Reader</h3>
             <p>Prefers written words to videos. Finds clarity in official docs and technical specifications.</p>
           </div>
           
           <div class="style-card planner" style="animation-delay: 0.5s;">
-            <div class="style-icon"><ClipboardList :size="24" :stroke-width="2" /></div>
+            <div class="style-icon">📋</div>
             <h3>The Meticulous Planner</h3>
             <p>Maps out every step before starting. Learns just what's needed for each phase of the journey.</p>
           </div>
           
           <div class="style-card teacher" style="animation-delay: 0.6s;">
-            <div class="style-icon"><Target :size="24" :stroke-width="2" /></div>
+            <div class="style-icon">🎯</div>
             <h3>The Teacher-Learner</h3>
             <p>Masters concepts by teaching them. Transforms learning into sharing, deepening understanding through explanation.</p>
           </div>
@@ -68,7 +68,7 @@
         
         <div class="pace-comparison">
           <div class="pace-card">
-            <span class="pace-icon"><Rocket :size="24" :stroke-width="2" /></span>
+            <span class="pace-icon">🚀</span>
             <h3>The Rapid Learner</h3>
             <ul class="pace-benefits">
               <li>Absorbs new frameworks in days</li>
@@ -79,7 +79,7 @@
           </div>
           
           <div class="pace-card">
-            <span class="pace-icon"><Blocks :size="24" :stroke-width="2" /></span>
+            <span class="pace-icon">🧱</span>
             <h3>The Methodical Builder</h3>
             <ul class="pace-benefits">
               <li>Builds unshakeable foundations</li>
@@ -107,19 +107,19 @@
         <div class="journey-path"></div>
         <div class="journey-steps">
           <div class="journey-step" style="animation-delay: 0.1s;">
-            <div class="step-icon"><MapIcon :size="24" :stroke-width="2" /></div>
+            <div class="step-icon">🗺️</div>
             <h4>We Provide the Map</h4>
             <p>All resources laid out</p>
           </div>
           
           <div class="journey-step active" style="animation-delay: 0.3s;">
-            <div class="step-icon"><Compass :size="24" :stroke-width="2" /></div>
+            <div class="step-icon">🧭</div>
             <h4>You Choose the Path</h4>
             <p>Your way, your pace</p>
           </div>
           
           <div class="journey-step" style="animation-delay: 0.5s;">
-            <div class="step-icon"><Trophy :size="24" :stroke-width="2" /></div>
+            <div class="step-icon">🏆</div>
             <h4>You Reach Mastery</h4>
             <p>On your own terms</p>
           </div>
@@ -144,7 +144,7 @@
 </template>
 
 <script setup lang="ts">
-import { Blocks, ClipboardList, Compass, Eye, Library, MapIcon, Rocket, Target, Trophy, Users, Zap } from 'lucide-vue-next'
+// Icons replaced with emojis
 import { onMounted } from 'vue'
 
 // SEO and meta management

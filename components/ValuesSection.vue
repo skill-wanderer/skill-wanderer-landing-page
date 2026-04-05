@@ -7,22 +7,22 @@
       </div>
       <div class="values-grid">
         <div class="value-item" style="animation-delay: 0.1s;">
-          <span class="value-icon"><Shield :size="48" :stroke-width="1.5" /></span>
+          <span class="value-icon">🛡️</span>
           <h3>Complete Integrity</h3>
           <p>No ads, no affiliate marketing, no commissions. Our recommendations are purely for your benefit.</p>
         </div>
         <div class="value-item" style="animation-delay: 0.2s;">
-          <span class="value-icon"><RefreshCw :size="48" :stroke-width="1.5" /></span>
+          <span class="value-icon">🔄</span>
           <h3>Mission-Centric Reinvestment</h3>
           <p>All net revenue is reinvested into the platform, community, and global educational impact.</p>
         </div>
         <div class="value-item" style="animation-delay: 0.3s;">
-          <span class="value-icon"><Globe :size="48" :stroke-width="1.5" /></span>
+          <span class="value-icon">🌍</span>
           <h3>Accessible Education</h3>
           <p>Free learning content with quality human mentors sustained through our social enterprise model and open Social Impact Tokens.</p>
         </div>
         <div class="value-item" style="animation-delay: 0.4s;">
-          <span class="value-icon"><Palette :size="48" :stroke-width="1.5" /></span>
+          <span class="value-icon">🎨</span>
           <h3>Creative Learning</h3>
           <p>Encouraging experimentation, celebrating failures, and finding joy in the learning process.</p>
         </div>
@@ -38,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-import { Shield, RefreshCw, Globe, Palette } from 'lucide-vue-next'
+// Icons replaced with emojis
 
 let observer: IntersectionObserver | null = null
 

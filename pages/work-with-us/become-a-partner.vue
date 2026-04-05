@@ -26,19 +26,19 @@
 
         <div class="karma-cycle">
           <div class="cycle-item">
-            <div class="cycle-icon"><Shield :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">🛡️</div>
             <h3>Senior-Led Delivery</h3>
             <p>Every engagement architected and reviewed by the Guild Master</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon"><Layers :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">📚</div>
             <h3>Scalable Capacity</h3>
             <p>From single sprints to dedicated engineering pods</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon"><Landmark :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">🏛️</div>
             <h3>Mission-Backed</h3>
             <p>Your work funds free education — a genuine impact story</p>
           </div>
@@ -56,7 +56,7 @@
 
         <div class="partner-features">
           <div class="feature-card">
-            <div class="feature-icon"><Shield :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">🛡️</div>
             <h4>Architectural Oversight</h4>
             <p>
               The Guild Master leads architecture, reviews code, and maintains quality
@@ -65,7 +65,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon"><Calculator :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">🧮</div>
             <h4>Predictable Pricing</h4>
             <p>
               Sprint bands are confirmed before work begins. Retainer capacity is fixed monthly.
@@ -74,7 +74,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon"><Users :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">👥</div>
             <h4>No Hiring Overhead</h4>
             <p>
               Skip recruiting, onboarding, and HR complexity. The guild provides
@@ -83,7 +83,7 @@
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon"><Unlock :size="24" color="white" :stroke-width="2" /></div>
+            <div class="feature-icon">🔓</div>
             <h4>Full Ownership, Zero Lock-In</h4>
             <p>
               All code belongs to you. Open standards, clear documentation, and knowledge
@@ -93,7 +93,7 @@
         </div>
 
         <div class="impact-statement">
-          <div class="impact-icon"><Landmark :size="28" :stroke-width="1.8" /></div>
+          <div class="impact-icon">🏛️</div>
           <h3>The Mission Advantage</h3>
           <p>
             Every engagement through the guild funds free education and trains the next generation
@@ -122,7 +122,7 @@
 
         <div class="model-details">
           <div class="model-card">
-            <div class="model-icon"><Compass :size="24" color="white" :stroke-width="2" /></div>
+            <div class="model-icon">🧭</div>
             <h4>Start with a Sprint</h4>
             <p>
               A two-week cycle to validate the working relationship. Real deliverables,
@@ -131,7 +131,7 @@
           </div>
 
           <div class="model-card">
-            <div class="model-icon"><RefreshCw :size="24" color="white" :stroke-width="2" /></div>
+            <div class="model-icon">🔄</div>
             <h4>Scale into Cadence</h4>
             <p>
               Move to ongoing sprint cycles or a monthly engineering pod.
@@ -140,7 +140,7 @@
           </div>
 
           <div class="model-card">
-            <div class="model-icon"><FileCheck :size="24" color="white" :stroke-width="2" /></div>
+            <div class="model-icon">✅</div>
             <h4>Full Knowledge Transfer</h4>
             <p>
               Documentation, walkthroughs, and handover support built into every engagement.
@@ -153,15 +153,15 @@
           <h3>Why This Works</h3>
           <div class="alignment-points">
             <div class="alignment-item">
-              <span class="alignment-icon"><Calculator :size="24" :stroke-width="2" /></span>
+              <span class="alignment-icon">🧮</span>
               <p><strong>For You:</strong> Predictable cost, senior oversight, and delivery you can plan around.</p>
             </div>
             <div class="alignment-item">
-              <span class="alignment-icon"><Shield :size="24" :stroke-width="2" /></span>
+              <span class="alignment-icon">🛡️</span>
               <p><strong>For the Guild:</strong> Stable engagements fund the mission and develop guild artisans.</p>
             </div>
             <div class="alignment-item">
-              <span class="alignment-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
+              <span class="alignment-icon">🎓</span>
               <p><strong>For Learners:</strong> Real projects under senior oversight create real skills.</p>
             </div>
           </div>
@@ -195,7 +195,7 @@
 </template>
 
 <script setup lang="ts">
-import { Calculator, Compass, FileCheck, GraduationCap, Landmark, Layers, RefreshCw, Shield, Unlock, Users } from 'lucide-vue-next'
+// Icons replaced with emojis
 
 useSEO({
   title: 'Become a Guild Partner | Skill-Wanderer',

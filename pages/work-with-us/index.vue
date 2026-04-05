@@ -20,25 +20,25 @@
 
         <div class="cycle-flow">
           <div class="cycle-step">
-            <div class="cycle-icon"><Handshake :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">🤝</div>
             <h3>Guild Partnerships</h3>
             <p>We partner with organizations as their tech guild—providing senior-led sprint delivery through a scalable, transparent model.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
-            <div class="cycle-icon"><Wrench :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">🔧</div>
             <h3>Guild Delivery</h3>
             <p>Our guild members deliver real products, gaining hands-on experience—apprentices, journeymen, and masters working together.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
-            <div class="cycle-icon"><Library :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">📚</div>
             <h3>Free Education</h3>
             <p>Revenue from guild work funds free education—no ads, no donations, no compromise.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
-            <div class="cycle-icon"><Sprout :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">🌱</div>
             <h3>Guild Growth</h3>
             <p>Apprentices grow into skilled craftspeople, ready to take on the next guild engagement.</p>
           </div>
@@ -56,7 +56,7 @@
 
         <div class="pillars-grid pillars-grid--six">
           <div class="pillar-card">
-            <div class="pillar-icon"><Monitor :size="24" :stroke-width="2" /></div>
+            <div class="pillar-icon">💻</div>
             <h3>What We Build</h3>
             <p>
               Custom web platforms, internal tools, and digital products—built from scratch with modern frameworks.
@@ -68,7 +68,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon"><Target :size="24" :stroke-width="2" /></div>
+            <div class="pillar-icon">🎯</div>
             <h3>Who We Work With</h3>
             <p>
               Non-profits, early-stage startups, and mission-driven organizations that value long-term thinking,
@@ -80,7 +80,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon"><FolderOpen :size="24" :stroke-width="2" /></div>
+            <div class="pillar-icon">📁</div>
             <h3>Our Projects</h3>
             <p>
               From non-profits to startups to our own guild infrastructure—every project we take on creates real impact
@@ -92,7 +92,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon"><Coins :size="24" :stroke-width="2" /></div>
+            <div class="pillar-icon">💰</div>
             <h3>Pricing</h3>
             <p>
               Two segments — Individuals and Organizations — with clear starting anchors.
@@ -104,7 +104,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon"><Lightbulb :size="24" :stroke-width="2" /></div>
+            <div class="pillar-icon">💡</div>
             <h3>Our Delivery Model</h3>
             <p>
               A senior-led system you plug into — not outsourcing. Senior architectural oversight,
@@ -116,7 +116,7 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon"><Rocket :size="24" :stroke-width="2" /></div>
+            <div class="pillar-icon">🚀</div>
             <h3>Become a Guild Partner</h3>
             <p>
               Ready to engage? Start with a single sprint, scale into a dedicated pod,
@@ -220,14 +220,14 @@
             We focus on building systems that are stable, maintainable, and capable of evolving over time.
           </p>
           <div class="funding-banner">
-            <span class="funding-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
+            <span class="funding-icon">🎓</span>
             <div>
               <strong>Revenue funds free education.</strong>
               <span> Every sprint you fund goes directly toward keeping Skill-Wanderer's education free and accessible to all learners—no ads, no paywalls, no compromise.</span>
             </div>
           </div>
           <div class="lockin-banner">
-            <span class="lockin-icon"><Unlock :size="24" :stroke-width="2" /></span>
+            <span class="lockin-icon">🔓</span>
             <div>
               <strong>Zero Vendor Lock-In. By Design.</strong>
               <span>
@@ -327,10 +327,10 @@
 </template>
 
 <script setup lang="ts">
-import { Coins, FolderOpen, GraduationCap, Handshake, Library, Lightbulb, Monitor, Rocket, Sprout, Target, Unlock, Wrench } from 'lucide-vue-next'
+// Icons replaced with emojis
 const operationalFAQ = [
   {
-    icon: '🏢',
+    icon: '⚡',
     q: 'Communication & Workflow',
     a: 'Each sprint begins with a short planning phase where scope and expectations are aligned. During the sprint, the guild provides progress updates, and each cycle concludes with a review and demonstration of completed work.'
   },
@@ -345,12 +345,12 @@ const operationalFAQ = [
     a: 'For early-stage startups, the guild offers sprint-based engagement at accessible price points — starting from $1,500 for a Quick Build Foundation. Scope and cadence are tailored to your stage and budget.'
   },
   {
-    icon: '💰',
+    icon: '💳',
     q: 'Payment Structure',
     a: '<strong>Trust Sprint:</strong> 30% before sprint begins + 70% after sprint review.<br/><strong>Standard Sprints:</strong> 50% before sprint begins + 50% after sprint completion.<br/>Each sprint is scheduled once the initial payment is confirmed.'
   },
   {
-    icon: '⚖️',
+    icon: '📜',
     q: 'Code Ownership & Open Source',
     a: 'All custom code belongs to the client once milestone payment is completed. Reusable components from the Skill-Wanderer ecosystem are released as open-source under the <strong>Apache 2.0 license</strong>.'
   },

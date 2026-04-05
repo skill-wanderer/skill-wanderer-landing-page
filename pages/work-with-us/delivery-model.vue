@@ -26,19 +26,19 @@
 
         <div class="approach-cycle">
           <div class="cycle-item">
-            <div class="cycle-icon"><Shield :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">🛡️</div>
             <h3>Senior-Led</h3>
             <p>The Guild Master architects every engagement and reviews every deliverable</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon"><Layers :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">📚</div>
             <h3>Parallel Execution</h3>
             <p>Guild artisans work in coordinated tracks to move faster within each cycle</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
-            <div class="cycle-icon"><RefreshCw :size="24" :stroke-width="2" /></div>
+            <div class="cycle-icon">🔄</div>
             <h3>Sprint Rhythm</h3>
             <p>Scope is confirmed, built, and reviewed in focused two-week blocks</p>
           </div>
@@ -47,7 +47,7 @@
         <div class="model-steps">
           <div class="step-card">
             <div class="step-number">1</div>
-            <div class="step-icon"><Compass :size="24" :stroke-width="2" /></div>
+            <div class="step-icon">🧭</div>
             <h3>Discovery &amp; Scoping</h3>
             <p>
               Every engagement begins with a short discovery phase. We understand your goals,
@@ -58,7 +58,7 @@
 
           <div class="step-card">
             <div class="step-number">2</div>
-            <div class="step-icon"><Calendar :size="24" :stroke-width="2" /></div>
+            <div class="step-icon">📅</div>
             <h3>Sprint Delivery</h3>
             <p>
               Work is delivered in two-week cycles. Each cycle includes planning, parallel
@@ -69,7 +69,7 @@
 
           <div class="step-card">
             <div class="step-number">3</div>
-            <div class="step-icon"><TrendingUp :size="24" :stroke-width="2" /></div>
+            <div class="step-icon">📈</div>
             <h3>Evolve &amp; Scale</h3>
             <p>
               Priorities can shift between cycles. As your product grows, the guild
@@ -94,7 +94,7 @@
 
         <div class="practice-grid">
           <div class="practice-card">
-            <div class="practice-icon"><Shield :size="24" :stroke-width="2" /></div>
+            <div class="practice-icon">🛡️</div>
             <h4>Senior Oversight on Every Sprint</h4>
             <p>
               The Guild Master leads architecture decisions and reviews all code.
@@ -103,7 +103,7 @@
           </div>
 
           <div class="practice-card">
-            <div class="practice-icon"><Component :size="24" :stroke-width="2" /></div>
+            <div class="practice-icon">🧩</div>
             <h4>Maintainable Architecture</h4>
             <p>
               Clean, well-structured codebases that your team can understand, extend,
@@ -112,7 +112,7 @@
           </div>
 
           <div class="practice-card">
-            <div class="practice-icon"><Library :size="24" :stroke-width="2" /></div>
+            <div class="practice-icon">📚</div>
             <h4>Knowledge Transfer Built In</h4>
             <p>
               Documentation, walkthroughs, and knowledge sharing happen throughout
@@ -121,7 +121,7 @@
           </div>
 
           <div class="practice-card">
-            <div class="practice-icon"><Unlock :size="24" :stroke-width="2" /></div>
+            <div class="practice-icon">🔓</div>
             <h4>Full Client Ownership</h4>
             <p>
               No vendor lock-in. All code belongs to you. Open standards, clear
@@ -184,7 +184,7 @@
 
         <div class="positioning-block">
           <div class="positioning-item">
-            <span class="positioning-icon"><Shield :size="24" :stroke-width="2" /></span>
+            <span class="positioning-icon">🛡️</span>
             <div>
               <strong>Senior-led system</strong>
               <span class="positioning-separator">over</span>
@@ -192,7 +192,7 @@
             </div>
           </div>
           <div class="positioning-item">
-            <span class="positioning-icon"><Landmark :size="24" :stroke-width="2" /></span>
+            <span class="positioning-icon">🏛️</span>
             <div>
               <strong>Mission-backed sustainability</strong>
               <span class="positioning-separator">over</span>
@@ -200,7 +200,7 @@
             </div>
           </div>
           <div class="positioning-item">
-            <span class="positioning-icon"><Unlock :size="24" :stroke-width="2" /></span>
+            <span class="positioning-icon">🔓</span>
             <div>
               <strong>Client ownership</strong>
               <span class="positioning-separator">over</span>
@@ -262,7 +262,7 @@
 </template>
 
 <script setup lang="ts">
-import { Calendar, Compass, Component, Landmark, Layers, Library, RefreshCw, Shield, TrendingUp, Unlock } from 'lucide-vue-next'
+// Icons replaced with emojis
 useSEO({
   title: 'Our Delivery Model | Skill-Wanderer',
   description:

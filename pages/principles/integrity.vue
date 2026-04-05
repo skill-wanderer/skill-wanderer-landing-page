@@ -19,7 +19,7 @@
         
         <div class="trust-visual">
           <div class="trust-card" style="animation-delay: 0.1s;">
-            <span class="trust-icon"><Users :size="24" :stroke-width="2" /></span>
+            <span class="trust-icon">👥</span>
             <h3>Family & Friends</h3>
             <p>Highest trust level because there's no financial motive—just genuine care for your success.</p>
             <div class="trust-meter">
@@ -28,7 +28,7 @@
           </div>
           
           <div class="trust-card" style="animation-delay: 0.2s;">
-            <span class="trust-icon"><GraduationCap :size="24" :stroke-width="2" /></span>
+            <span class="trust-icon">🎓</span>
             <h3>Pure Educators</h3>
             <p>High trust when education is the only goal, with no hidden financial agenda.</p>
             <div class="trust-meter">
@@ -37,7 +37,7 @@
           </div>
           
           <div class="trust-card broken" style="animation-delay: 0.3s;">
-            <span class="trust-icon"><Coins :size="24" :stroke-width="2" /></span>
+            <span class="trust-icon">💰</span>
             <h3>Affiliate Marketers</h3>
             <p>Trust erodes when recommendations might be influenced by commission rates.</p>
             <div class="trust-meter">
@@ -58,25 +58,25 @@
 
         <div class="banned-items">
           <div class="banned-item" style="animation-delay: 0.1s;">
-            <span class="banned-icon"><Tag :size="24" :stroke-width="2" /></span>
+            <span class="banned-icon">🏷️</span>
             <h3>No Affiliate Links</h3>
             <p>Zero commissions from course platforms or tools</p>
           </div>
           
           <div class="banned-item" style="animation-delay: 0.2s;">
-            <span class="banned-icon"><Megaphone :size="24" :stroke-width="2" /></span>
+            <span class="banned-icon">📢</span>
             <h3>No Paid Promotions</h3>
             <p>Never accepting money to recommend resources</p>
           </div>
           
           <div class="banned-item" style="animation-delay: 0.3s;">
-            <span class="banned-icon"><Gift :size="24" :stroke-width="2" /></span>
+            <span class="banned-icon">🎁</span>
             <h3>No Kickbacks</h3>
             <p>Refusing all forms of referral rewards</p>
           </div>
           
           <div class="banned-item" style="animation-delay: 0.4s;">
-            <span class="banned-icon"><Handshake :size="24" :stroke-width="2" /></span>
+            <span class="banned-icon">🤝</span>
             <h3>No Hidden Deals</h3>
             <p>Transparent about all our relationships</p>
           </div>
@@ -124,7 +124,7 @@
 </template>
 
 <script setup lang="ts">
-import { Coins, Gift, GraduationCap, Handshake, Megaphone, Tag, Users } from 'lucide-vue-next'
+// Icons replaced with emojis
 import { onMounted } from 'vue'
 import type { PracticeExample } from '~/types'
 
