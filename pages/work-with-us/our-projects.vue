@@ -292,7 +292,7 @@
         <p>If you have a project that needs a guild partner committed to real impact, let's talk.</p>
         <div class="cta-buttons">
           <NuxtLink to="/work-with-us/become-a-partner" class="btn-primary">Become a Partner</NuxtLink>
-          <NuxtLink to="/work-with-us/delivery-model" class="btn-secondary">How It Works</NuxtLink>
+          <NuxtLink to="/work-with-us/success-sharing-model" class="btn-secondary">How It Works</NuxtLink>
         </div>
       </div>
     </section>
