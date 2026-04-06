@@ -69,6 +69,9 @@
           <div class="pathfinder-welcome-planet" aria-hidden="true">
             <img src="/orion.webp" alt="Admiral Orion" class="pathfinder-welcome-avatar" />
           </div>
+          <div class="pathfinder-welcome-orion">
+            <img src="/orion.webp" alt="Admiral Orion" />
+          </div>
           <p class="text-sm font-semibold mb-1">Welcome aboard, Cadet!</p>
           <p class="text-xs opacity-60 leading-relaxed">Admiral Orion at your command. Report your inquiries about our mission, principles, learning paths, and fleet operations.</p>
           <div class="pathfinder-suggestions">
@@ -812,6 +815,26 @@ onUnmounted(() => {
 .pathfinder-slide-leave-to {
   opacity: 0;
   transform: translateY(24px) scale(0.92);
+}
+
+.pathfinder-welcome-orion {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.pathfinder-welcome-orion img {
+  width: 180px;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 16px;
+
+  border: 1px solid rgba(255, 107, 53, 0.4);
+
+  box-shadow: 
+    0 0 20px rgba(255, 107, 53, 0.3);
+
+  animation: pathfinder-orbit-bob 5s ease-in-out infinite;
 }
 
 /* Mobile responsive */
