@@ -19,6 +19,20 @@
       </div>
     </section>
 
+    <!-- Pricing Disclaimer -->
+    <section class="pricing-disclaimer">
+      <div class="content">
+        <div class="disclaimer-banner">
+          <span class="disclaimer-icon">ℹ️</span>
+          <p>
+            All prices shown are indicative and subject to change based on project scope,
+            complexity, and specific requirements. Final pricing is confirmed during the
+            discovery and scoping phase of each engagement.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION 2 — Choose Your Path -->
     <section id="choose-path" class="path-section">
       <div class="content">
@@ -540,6 +554,36 @@ useSEO({
   gap: 14px;
   flex-wrap: wrap;
   margin-top: 32px;
+}
+
+/* ── Pricing Disclaimer ────────────────────────────── */
+.pricing-disclaimer {
+  padding: 0 20px;
+}
+
+.disclaimer-banner {
+  max-width: 860px;
+  margin: -30px auto 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  background: rgba(255, 107, 53, 0.06);
+}
+
+.disclaimer-icon {
+  flex-shrink: 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.disclaimer-banner p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 /* ── Buttons ───────────────────────────────────────── */

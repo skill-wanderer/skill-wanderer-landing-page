@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <span class="hero-eyebrow">Work With Us</span>
-      <h1>Our Delivery Model</h1>
+      <h1>Success Sharing Model</h1>
       <p>
         A senior-led system you plug into — not a service you buy.
         The guild delivers through structured sprint cycles, parallel execution,
@@ -244,6 +244,81 @@
       </div>
     </section>
 
+    <!-- Success Sharing Model -->
+    <section class="success-sharing-section">
+      <div class="success-sharing-content">
+        <div class="section-header">
+          <h2>The Success Sharing Model</h2>
+          <p>
+            We're not outsourcing — we're your true technology partner.
+            We share both the success and the risks with you, requiring less upfront cost
+            while our community of learners helps bring your vision to life.
+          </p>
+        </div>
+
+        <div class="success-sharing-grid">
+          <div class="success-sharing-card">
+            <div class="success-sharing-icon">💵</div>
+            <h4>Lower Upfront Investment</h4>
+            <p>
+              Unlike traditional outsourcing, we don't ask for large upfront payments.
+              Start building with minimal initial cost because we believe in earning
+              through shared success — not billing for hours.
+            </p>
+          </div>
+
+          <div class="success-sharing-card">
+            <div class="success-sharing-icon">📈</div>
+            <h4>Success Sharing Earnings</h4>
+            <p>
+              Our earnings come from sharing in your success. This keeps us genuinely
+              invested in your outcomes, not just completing tasks. When you win, we win.
+            </p>
+          </div>
+
+          <div class="success-sharing-card">
+            <div class="success-sharing-icon">👥</div>
+            <h4>Community-Powered Talent</h4>
+            <p>
+              Work gets done by talented learners from our global community — people eager
+              to prove themselves on real projects while gaining invaluable experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="success-sharing-why">
+          <h3>Why Success Sharing Works</h3>
+          <div class="why-grid">
+            <div class="why-card">
+              <span class="why-icon">💵</span>
+              <h4>For You</h4>
+              <p>Lower risk with reduced upfront costs — we succeed together or not at all.</p>
+            </div>
+            <div class="why-card">
+              <span class="why-icon">🎯</span>
+              <h4>For Us</h4>
+              <p>We're motivated by your success, not just billing hours. Real outcomes drive our revenue.</p>
+            </div>
+            <div class="why-card">
+              <span class="why-icon">⭐</span>
+              <h4>For Learners</h4>
+              <p>Real projects with real stakes create real skills and genuine career pathways.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="success-sharing-cta">
+          <p>
+            This isn't outsourcing with a different name. We put skin in the game alongside you,
+            sharing both success and setbacks — because that's what real partners do.
+          </p>
+          <NuxtLink to="/principles/technology-partnership" class="principle-link">
+            Read about our Technology Partnership principle →
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-content">
@@ -264,15 +339,15 @@
 <script setup lang="ts">
 // Icons replaced with emojis
 useSEO({
-  title: 'Our Delivery Model | Skill-Wanderer',
+  title: 'Success Sharing Model | Skill-Wanderer',
   description:
-    'Senior-led sprint delivery with parallel execution, predictable cycles, and full client ownership. A system you plug into — not a service you buy.',
+    'Senior-led sprint delivery with a success sharing partnership model. Lower upfront cost, shared risk and reward, and full client ownership.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: ['delivery model', 'sprint delivery', 'senior-led development', 'guild model', 'software development process', 'agile sprints'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
-    { name: 'Our Delivery Model', url: 'https://skill-wanderer.com/work-with-us/delivery-model' },
+    { name: 'Success Sharing Model', url: 'https://skill-wanderer.com/work-with-us/success-sharing-model' },
   ]),
 })
 </script>
@@ -765,6 +840,134 @@ useSEO({
   opacity: 0.75;
   font-size: 0.9rem;
   line-height: 1.65;
+}
+
+/* ── Success Sharing Section ────────────────────────── */
+.success-sharing-section {
+  padding: 90px 20px;
+  background: var(--darker-bg);
+}
+
+.success-sharing-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.success-sharing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 55px;
+}
+
+.success-sharing-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 20px;
+  padding: 35px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.success-sharing-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 107, 53, 0.45);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.1);
+}
+
+.success-sharing-icon {
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+}
+
+.success-sharing-card h4 {
+  color: var(--primary-orange);
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+}
+
+.success-sharing-card p {
+  opacity: 0.85;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+.success-sharing-why {
+  margin-bottom: 50px;
+}
+
+.success-sharing-why h3 {
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.why-card {
+  background: rgba(255, 107, 53, 0.05);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 107, 53, 0.1);
+}
+
+.why-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.why-card h4 {
+  color: var(--primary-orange);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  opacity: 0.85;
+  line-height: 1.7;
+  font-size: 0.93rem;
+}
+
+.success-sharing-cta {
+  text-align: center;
+  background: rgba(255, 107, 53, 0.05);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-left: 4px solid var(--primary-orange);
+  border-radius: 0 20px 20px 0;
+  padding: 35px 40px;
+}
+
+.success-sharing-cta p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.principle-link {
+  display: inline-block;
+  color: var(--primary-orange);
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.principle-link:hover {
+  color: white;
+  transform: translateX(4px);
 }
 
 /* ── CTA Section ───────────────────────────────────── */

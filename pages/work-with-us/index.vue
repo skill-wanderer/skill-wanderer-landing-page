@@ -110,7 +110,7 @@
               A senior-led system you plug into — not outsourcing. Senior architectural oversight,
               parallel sprint execution, and full knowledge transfer at every milestone.
             </p>
-            <NuxtLink to="/work-with-us/delivery-model" class="pillar-link">
+            <NuxtLink to="/work-with-us/success-sharing-model" class="pillar-link">
               Learn How It Works <span>→</span>
             </NuxtLink>
           </div>

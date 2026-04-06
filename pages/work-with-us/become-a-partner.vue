@@ -8,7 +8,7 @@
         Not outsourcing. Not staff augmentation. A delivery system you plug into —
         with predictable cadence, transparent pricing, and architectural oversight built in.
       </p>
-      <NuxtLink to="/work-with-us/delivery-model" class="launch-badge-link">How Our Delivery Model Works</NuxtLink>
+      <NuxtLink to="/work-with-us/success-sharing-model" class="launch-badge-link">How Our Success Sharing Model Works</NuxtLink>
     </section>
 
     <!-- Why Partner -->
