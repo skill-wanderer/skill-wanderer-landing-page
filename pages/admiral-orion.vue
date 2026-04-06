@@ -3,10 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <div class="admiral-badge" aria-hidden="true">
-          <img src="/orion.webp" alt="Admiral Orion" class="admiral-avatar-img" />
-        </div>
-                  <div class="orion-visual">
+        <div class="orion-visual">
             <img 
               src="/orion.webp" 
               alt="Admiral Orion"

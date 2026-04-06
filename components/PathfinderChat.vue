@@ -28,7 +28,6 @@
       <div class="pathfinder-header">
         <div class="flex items-center gap-2">
           <!-- Admiral Orion avatar -->
-          <img src="/orion.webp" alt="Admiral Orion" class="pathfinder-header-avatar" />
           <div class="flex flex-col leading-tight">
             <span class="font-bold text-sm pathfinder-title-text">Admiral Orion</span>
             <span class="text-[10px] opacity-50 tracking-wide">FLEET COMMANDER</span>
@@ -66,9 +65,6 @@
       <div ref="messagesContainer" class="pathfinder-messages">
         <!-- Welcome screen -->
         <div v-if="history.length === 0" class="pathfinder-welcome">
-          <div class="pathfinder-welcome-planet" aria-hidden="true">
-            <img src="/orion.webp" alt="Admiral Orion" class="pathfinder-welcome-avatar" />
-          </div>
           <div class="pathfinder-welcome-orion">
             <img src="/orion.webp" alt="Admiral Orion" />
           </div>
