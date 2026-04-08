@@ -110,6 +110,29 @@
             </div>
           </NuxtLink>
 
+          <!-- Thanh Nguyen Card -->
+          <NuxtLink to="/learners/thanh-nguyen" class="learner-card featured">
+            <div class="first-badge">⚔️ The Vanguard</div>
+            <div class="learner-avatar">
+              <img src="/learners/Thanh-Nguyen.jpeg" alt="Thanh Nguyen" class="avatar-image" />
+            </div>
+            <div class="learner-info">
+              <h3>Thanh Nguyen</h3>
+              <p class="learner-realname">Guild Member</p>
+              <p class="learner-tagline">The Vanguard</p>
+              <div class="learner-meta">
+                <span>📍 Vietnam</span>
+                <span>🛡️ Guild Member</span>
+              </div>
+              <div class="learner-path">
+                <span class="path-badge">⚔️ Guild Vanguard</span>
+              </div>
+            </div>
+            <div class="view-story">
+              View Full Story →
+            </div>
+          </NuxtLink>
+
           <!-- Vincent Onotu Bello Card -->
           <NuxtLink to="/learners/vincent-onotu-bello" class="learner-card featured">
             <div class="first-badge">🪨 The Stoic</div>
@@ -167,7 +190,7 @@ import { useSEO } from '~/composables/useSEO'
 useSEO({
   title: 'Our Learners - Skill-Wanderer',
   description: 'Meet the learners who are growing with Skill-Wanderer. Discover their stories, progress, and achievements on their learning journeys.',
-  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'Alfredo Salazar', 'Khouja Nasreddine', 'Vincent Onotu Bello', 'skill-wanderer'],
+  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'Alfredo Salazar', 'Khouja Nasreddine', 'Vincent Onotu Bello', 'Thanh Nguyen', 'skill-wanderer'],
 })
 </script>
 
