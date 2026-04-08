@@ -7,14 +7,13 @@
           ← Back to Our Learners
         </NuxtLink>
         <div class="featured-badge">
-          <span>🧭 The Fearless Adventurer</span>
+          <span>⚔️ The Vanguard</span>
         </div>
-        <h1>Prabhat Kumar</h1>
-        <p class="tagline">The Fearless Adventurer</p>
+        <h1>Thanh Nguyen</h1>
+        <p class="tagline">The Vanguard</p>
         <div class="hero-meta">
-          <span class="meta-tag">📍 India</span>
-          <span class="meta-tag">🛠️ DevOps</span>
-          <a href="https://www.linkedin.com/in/prabhat-kumar-1260a5259/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🌐 LinkedIn</a>
+          <span class="meta-tag">🗺️ Vietnam</span>
+          <span class="meta-tag">🛡️ Guild Associate</span>
         </div>
       </div>
     </section>
@@ -23,16 +22,16 @@
     <section class="profile-section">
       <div class="profile-container">
         <div class="profile-avatar">
-          <img src="/learners/Prabhat-Kumar.jpeg" alt="Prabhat Kumar" class="profile-photo" />
+          <img src="/learners/Thanh-Nguyen.jpeg" alt="Thanh Nguyen" class="profile-photo" />
         </div>
 
         <div class="profile-intro">
-          <h2>A Bold Beginning</h2>
+          <h2>A Meeting Written by Fate</h2>
           <p>
-            I met this adventurer when he enrolled and claimed to already know <strong>Kubernetes</strong>,
-            <strong>AWS</strong>, and <strong>Docker</strong> — which is quite impressive by itself for a
-            Computer Science undergraduate. Even though there was still a lot of knowledge he was lacking,
-            the confidence and ambition behind that claim immediately caught my attention.
+            I met Thanh while scrolling to find the next mentee for our guild associate program — and it
+            felt like <strong>fate</strong>. Her LinkedIn profile simply popped up on my screen, and her
+            profile and her posts were exactly what I was looking for: <strong>eager to learn and
+            passionate</strong>. That is all I want from a mentee and a guild member — no more, no less.
           </p>
         </div>
       </div>
@@ -41,31 +40,52 @@
     <!-- Journey Section -->
     <section class="journey-section">
       <div class="journey-container">
-        <h2>✨ The Eccentric Explorer</h2>
+        <h2>📖 An Honest Beginning</h2>
         <p class="section-intro">
-          However, what was even more impressive than his initial knowledge was his eccentricity.
-          Prabhat always refused to simply follow instructions on how to do things the safe and simple way.
-          Instead, he relentlessly pushed beyond into uncharted territory.
+          We had a quick talk and I was honest with her. Our guild is still in its early days, so there
+          will be a rocky road ahead. I could not guarantee a stable income for her — nor any income at
+          all — but I could guarantee one thing: <strong>she would learn a lot with me</strong>. She
+          accepted right away.
         </p>
 
         <div class="milestones-grid">
           <div class="milestone-card">
-            <div class="milestone-icon">🗺️</div>
-            <h3>Into Uncharted Territory</h3>
+            <div class="milestone-icon">🔥</div>
+            <h3>Eager and Passionate</h3>
             <p>
-              Most of the time, the wild territory ended up biting him — things would break,
-              configurations would fail, and debugging sessions would stretch long into the night.
-              But that's the good part: <strong>he learned a lot, and so quickly</strong>.
+              From the very first conversation, Thanh's <strong>eagerness to learn</strong> was
+              unmistakable. She doesn't wait to be told what's interesting — she goes looking for it,
+              and she brings that same hunger to every task the guild puts in front of her.
             </p>
           </div>
 
           <div class="milestone-card">
-            <div class="milestone-icon">⚡</div>
-            <h3>Jaw-Dropping Speed</h3>
+            <div class="milestone-icon">📝</div>
+            <h3>Nothing Lost in Transfer</h3>
             <p>
-              Prabhat finished the entire DevOps mentorship in <strong>under 2 months</strong> — a
-              jaw-dropping pace that speaks to his fearless approach and relentless drive to learn
-              by doing, no matter how many times the path fought back.
+              Thanh is <strong>quick to jot down</strong> the knowledge the guild master shares with
+              her during her work. None of that knowledge transfer has been lost — and honestly, as the
+              guild master, I am very impressed.
+            </p>
+          </div>
+
+          <div class="milestone-card">
+            <div class="milestone-icon">⚔️</div>
+            <h3>The Guild's Vanguard</h3>
+            <p>
+              As the guild's workload grows and the guild master must split his attention across many
+              fronts, Thanh has become the <strong>vanguard</strong> on most of our recent work —
+              moving first, holding the line, and clearing the path for the rest of the guild.
+            </p>
+          </div>
+
+          <div class="milestone-card">
+            <div class="milestone-icon">💎</div>
+            <h3>Quickly Indispensable</h3>
+            <p>
+              In just <strong>one month</strong> of working together, Thanh has quickly become
+              indispensable to the guild. The kind of teammate you didn't know you needed — until
+              you can't imagine the guild without her.
             </p>
           </div>
         </div>
@@ -75,52 +95,40 @@
     <!-- Current Chapter Section -->
     <section class="next-chapter-section">
       <div class="next-container">
-        <h2>⛰️ Proving Himself in the Real World</h2>
+        <h2>🛡️ Why This Guild Exists</h2>
         <p>
-          Prabhat is currently working with our partner <strong>MindyCore</strong> to gain more experience
-          and adventure in the real world. He is out there now, proving himself with hands-on, real-life
-          challenges — exactly the kind of environment where a fearless adventurer thrives.
+          The AI era hasn't done passionate learners like Thanh any justice. Companies today ask for
+          intern positions with at least <strong>two years of experience</strong>, and a fresh
+          graduate's chance to ever earn those two years grows thinner by the day. AI is rising — sure
+          — but it still needs humans to control it, and it needs <strong>experienced</strong> humans
+          to do it well. That is exactly why our guild was born: to give people the experience they
+          deserve.
         </p>
 
         <div class="learner-path-badge">
-          <span class="path-icon">⚙️</span>
-          <span class="path-text">Completed: DevOps Path</span>
+          <span class="path-icon">⚔️</span>
+          <span class="path-text">Active: Guild Vanguard</span>
         </div>
 
         <blockquote class="featured-quote">
-          "Only time will prove his ability and his personality, but I believe in him to have a bright
-          future. With real-life experience now under his belt, the fearless adventurer is just getting started."
+          "Thanh is the kind of mentee every guild master hopes to find — eager, passionate, and
+          trustworthy with the work. In a single month she went from a stranger on my LinkedIn feed
+          to the vanguard of the guild. The future she deserves is the one we are building together."
         </blockquote>
-      </div>
-    </section>
-
-    <!-- Video Section -->
-    <section class="video-section">
-      <div class="video-container">
-        <h2>🎬 Watch Prabhat's Story</h2>
-        <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/m48AXuIzzRs"
-            title="Prabhat Kumar's Story"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-container">
-        <h2>Inspired by Prabhat's Journey?</h2>
+        <h2>Inspired by Thanh's Journey?</h2>
         <p>
           Start your own learning adventure and join a community of passionate learners
           who support each other on the path to mastery.
         </p>
         <div class="cta-buttons">
           <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Explore DevOps Path
+            Explore Learning Paths
           </a>
           <a href="/contact" class="btn btn-secondary">
             Get in Touch
@@ -132,13 +140,12 @@
 </template>
 
 <script setup lang="ts">
-// Icons replaced with emojis
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
-  title: 'Prabhat Kumar - The Fearless Adventurer | Skill-Wanderer',
-  description: 'Meet Prabhat Kumar, a fearless DevOps learner from India who completed his mentorship in under 2 months. Discover his bold journey of pushing beyond boundaries.',
-  keywords: ['Prabhat Kumar', 'DevOps', 'learner', 'success story', 'Kubernetes', 'AWS', 'Docker', 'skill-wanderer'],
+  title: 'Thanh Nguyen - The Vanguard | Skill-Wanderer',
+  description: 'Meet Thanh Nguyen, a passionate mentee and guild associate who became the Vanguard of the Skill-Wanderer guild in just one month. Discover her story.',
+  keywords: ['Thanh Nguyen', 'The Vanguard', 'guild associate', 'mentee', 'success story', 'skill-wanderer'],
 })
 </script>
 
@@ -230,17 +237,6 @@ useSEO({
   font-size: 1rem;
 }
 
-.linkedin-tag {
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.linkedin-tag:hover {
-  background: rgba(10, 102, 194, 0.3);
-  color: #fff;
-}
-
 /* Profile Section */
 .profile-section {
   padding: 80px 20px;
@@ -321,9 +317,13 @@ useSEO({
   margin: 0 auto 50px;
 }
 
+.section-intro strong {
+  color: var(--accent-yellow);
+}
+
 .milestones-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -426,43 +426,6 @@ useSEO({
   text-align: left;
 }
 
-/* Video Section */
-.video-section {
-  padding: 80px 20px;
-  background: var(--dark-bg);
-}
-
-.video-container {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.video-container h2 {
-  color: var(--primary-orange);
-  font-size: clamp(1.8rem, 4vw, 2.2rem);
-  margin-bottom: 40px;
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 107, 53, 0.3);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-}
-
 /* CTA Section */
 .cta-section {
   padding: 80px 20px;
@@ -549,7 +512,7 @@ useSEO({
   }
 
   .milestones-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .cta-buttons {
