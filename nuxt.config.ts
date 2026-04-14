@@ -110,29 +110,13 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'cloudflare-pages',
-    prerender: {
-      crawlLinks: true,
-      failOnError: false,
-      routes: [
-        '/',
-        '/about',
-        '/mission',
-        '/contact',
-        '/roadmap',
-        '/principles',
-        '/learners',
-        '/team',
-        '/learning-path',
-      ],
-    },
+    preset: 'cloudflare_module',
   },
 
   routeRules: {
     '/expertise-impact': { redirect: { to: '/work-with-us', statusCode: 301 } },
     '/expertise-impact/**': { redirect: { to: '/work-with-us', statusCode: 301 } },
     '/work-with-us/delivery-model': { redirect: { to: '/work-with-us/success-sharing-model', statusCode: 301 } },
-    '/**': { prerender: true },
     '/': { sitemap: { changefreq: 'weekly', priority: 1.0 } },
     '/about': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/mission': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
