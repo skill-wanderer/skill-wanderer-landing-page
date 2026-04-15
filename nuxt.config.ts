@@ -12,7 +12,6 @@ export default defineNuxtConfig({
   sitemap: {
     // Exclude empty directory routes and dynamic catch-all
     exclude: [
-      '/learning-path',
       '/learning-path/**',
       '/partners',
       '/partners/**',
@@ -34,11 +33,38 @@ export default defineNuxtConfig({
         'tech-services',
         'technology-partnership',
       ]
-      return principles.map((slug) => ({
+      const principleUrls = principles.map((slug) => ({
         loc: `/principles/${slug}`,
-        changefreq: 'monthly',
-        priority: 0.8,
+        changefreq: 'monthly' as const,
+        priority: 0.8 as const,
       }))
+
+      // Learning path canonical slugs (matching hub links, served via [slug].vue)
+      const learningPaths = [
+        'web-development',
+        'mobile-development',
+        'business-analyst',
+        'qa-tester',
+        'ai-and-machine-learning',
+        'devops',
+        'mlops',
+        'project-management',
+        'start-up-foundation',
+        'advanced-software-development-skills',
+        'software-architecture-and-design-patterns',
+        'software-development-roles-and-career',
+        'learn-contribute-build-earn',
+      ]
+      const learningPathUrls = [
+        { loc: '/learning-path', changefreq: 'weekly' as const, priority: 0.9 as const },
+        ...learningPaths.map((slug) => ({
+          loc: `/learning-path/${slug}`,
+          changefreq: 'monthly' as const,
+          priority: 0.8 as const,
+        })),
+      ]
+
+      return [...principleUrls, ...learningPathUrls]
     },
     defaults: {
       changefreq: 'weekly',
@@ -68,13 +94,13 @@ export default defineNuxtConfig({
         // Open Graph / social media meta tags for the logo
         { property: 'og:site_name', content: 'Skill-Wanderer' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
+        { property: 'og:image', content: 'https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp' },
         { property: 'og:image:width', content: '768' },
         { property: 'og:image:height', content: '256' },
         { property: 'og:image:alt', content: 'Skill-Wanderer Logo' },
         // Twitter meta tags
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
+        { name: 'twitter:image', content: 'https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp' },
         { name: 'twitter:image:alt', content: 'Skill-Wanderer Logo' }
       ],
       link: [
@@ -117,6 +143,11 @@ export default defineNuxtConfig({
     '/expertise-impact': { redirect: { to: '/work-with-us', statusCode: 301 } },
     '/expertise-impact/**': { redirect: { to: '/work-with-us', statusCode: 301 } },
     '/work-with-us/delivery-model': { redirect: { to: '/work-with-us/success-sharing-model', statusCode: 301 } },
+    '/learning-path/ai-machine-learning': { redirect: { to: '/learning-path/ai-and-machine-learning', statusCode: 301 } },
+    '/learning-path/startup-foundation': { redirect: { to: '/learning-path/start-up-foundation', statusCode: 301 } },
+    '/learning-path/advanced-software-development': { redirect: { to: '/learning-path/advanced-software-development-skills', statusCode: 301 } },
+    '/learning-path/software-architecture-design-patterns': { redirect: { to: '/learning-path/software-architecture-and-design-patterns', statusCode: 301 } },
+    '/learning-path/software-development-roles-career': { redirect: { to: '/learning-path/software-development-roles-and-career', statusCode: 301 } },
     '/': { sitemap: { changefreq: 'weekly', priority: 1.0 } },
     '/about': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/mission': { sitemap: { changefreq: 'monthly', priority: 0.8 } },

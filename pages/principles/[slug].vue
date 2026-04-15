@@ -3,9 +3,10 @@ const route = useRoute()
 const slug = route.params.slug
 
 // Basic SEO for dynamic principle pages
+const slugTitle = String(slug).replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 useSEO({
-  title: `${String(slug).charAt(0).toUpperCase() + String(slug).slice(1)} Principle | Skill-Wanderer`,
-  description: `Learn about the ${slug} principle that guides Skill-Wanderer\'s mission to provide free, quality tech education with integrity.`,
+  title: `${slugTitle} Principle | Skill-Wanderer`,
+  description: `Learn about the ${slugTitle.toLowerCase()} principle that guides Skill-Wanderer's mission to provide free, quality tech education with integrity.`,
   keywords: [`${slug} principle`, 'skill-wanderer principles', 'tech education', 'learning philosophy'],
   type: 'article'
 })

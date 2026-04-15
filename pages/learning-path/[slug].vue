@@ -29,6 +29,102 @@ import { reusablePathOverviews } from '~/data/learning-path-overviews'
 
 const route = useRoute()
 
+const keywordMap: Record<string, string[]> = {
+  'web-development': [
+    'web development learning path',
+    'frontend backend roadmap',
+    'full stack learning path',
+    'skill wanderer web development',
+    'coming soon lessons'
+  ],
+  'mobile-development': [
+    'mobile development learning path',
+    'flutter game development',
+    'ios android cross-platform roadmap',
+    'flutter flame engine',
+    'skill wanderer mobile development'
+  ],
+  'business-analyst': [
+    'business analyst learning path',
+    'requirement analysis roadmap',
+    'stakeholder communication',
+    'user stories acceptance criteria',
+    'skill wanderer business analyst'
+  ],
+  'qa-tester': [
+    'qa tester learning path',
+    'qc quality assurance roadmap',
+    'test automation manual testing',
+    'bug reporting defect lifecycle',
+    'skill wanderer qa tester'
+  ],
+  'ai-and-machine-learning': [
+    'ai machine learning learning path',
+    'deep learning roadmap',
+    'machine learning career path',
+    'neural networks transformers',
+    'skill wanderer ai machine learning'
+  ],
+  devops: [
+    'devops learning path',
+    'ci cd pipeline roadmap',
+    'kubernetes docker infrastructure as code',
+    'sre site reliability engineering',
+    'skill wanderer devops'
+  ],
+  mlops: [
+    'mlops learning path',
+    'machine learning operations roadmap',
+    'ml pipeline deployment monitoring',
+    'model serving experiment tracking',
+    'skill wanderer mlops'
+  ],
+  'project-management': [
+    'project management learning path',
+    'agile scrum roadmap',
+    'software project delivery',
+    'tech project manager career',
+    'skill wanderer project management'
+  ],
+  'start-up-foundation': [
+    'startup foundation learning path',
+    'how to build a startup',
+    'mvp product validation roadmap',
+    'founder skills tech startup',
+    'skill wanderer startup foundation'
+  ],
+  'advanced-software-development-skills': [
+    'advanced software development learning path',
+    'clean code solid principles',
+    'system design performance engineering',
+    'technical leadership roadmap',
+    'skill wanderer advanced software development'
+  ],
+  'software-architecture-and-design-patterns': [
+    'software architecture learning path',
+    'design patterns roadmap',
+    'clean architecture microservices',
+    'gang of four patterns system design',
+    'skill wanderer software architecture'
+  ],
+  'software-development-roles-and-career': [
+    'software development career path',
+    'software engineering roles roadmap',
+    'tech career growth',
+    'developer career guide',
+    'skill wanderer software development roles career'
+  ],
+  'learn-contribute-build-earn': [
+    'learn contribute build earn',
+    'skill-wanderer',
+    'education philosophy',
+    'tech guild',
+    'real project learning',
+    'free to learn',
+    'contribution model'
+  ]
+}
+
 const topicMap: Record<string, { title: string; description: string }> = {
   'learn-contribute-build-earn': {
     title: 'Education Philosophy',
@@ -88,19 +184,27 @@ const slug = computed(() => String(route.params.slug || ''))
 const reusableOverview = computed(() => reusablePathOverviews[slug.value])
 const topic = computed(() => topicMap[slug.value])
 
-const topicTitle = computed(() => topic.value?.title || 'Learning Path Not Found')
+const topicTitle = computed(() => reusableOverview.value?.title || topic.value?.title || 'Learning Path Not Found')
 const topicDescription = computed(() =>
-  topic.value?.description || 'The requested learning path does not exist. Please return to the Learning Path hub.'
+  reusableOverview.value?.description ||
+  topic.value?.description ||
+  'The requested learning path does not exist. Please return to the Learning Path hub.'
 )
+const seoTitle = computed(() =>
+  slug.value === 'learn-contribute-build-earn'
+    ? 'Learn. Contribute. Build. Earn. | Skill-Wanderer Education Philosophy'
+    : `${topicTitle.value} Learning Path | Skill-Wanderer`
+)
+const seoKeywords = computed(() => keywordMap[slug.value] || ['learning path', 'skill-wanderer', topicTitle.value])
 
 if (!topic.value) {
   throw createError({ statusCode: 404, statusMessage: 'Learning Path Not Found' })
 }
 
 useSEO({
-  title: `${topicTitle.value} | Skill-Wanderer Learning Path`,
+  title: seoTitle.value,
   description: topicDescription.value,
-  keywords: ['learning path', 'skill-wanderer', topicTitle.value]
+  keywords: seoKeywords.value
 })
 </script>
 
