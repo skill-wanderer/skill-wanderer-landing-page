@@ -197,7 +197,7 @@ const seoTitle = computed(() =>
 )
 const seoKeywords = computed(() => keywordMap[slug.value] || ['learning path', 'skill-wanderer', topicTitle.value])
 
-if (!topic.value) {
+if (!topic.value && !reusableOverview.value) {
   throw createError({ statusCode: 404, statusMessage: 'Learning Path Not Found' })
 }
 
