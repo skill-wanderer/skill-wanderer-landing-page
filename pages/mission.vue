@@ -337,7 +337,7 @@
 useSEO({
   title: 'The Heart of the Guild - Mission & Principles | Skill-Wanderer',
   description: 'Discover our mission as a tech guild working toward social enterprise. Free education funded by real-world craft. Explore our guild principles and commitment to social impact.',
-  ogImage: '/skill-wanderer-avatar.jpg'
+  image: '/skill-wanderer-avatar.jpg'
 });
 </script>
 
