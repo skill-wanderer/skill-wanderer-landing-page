@@ -12,7 +12,6 @@ export default defineNuxtConfig({
   sitemap: {
     // Exclude empty directory routes and dynamic catch-all
     exclude: [
-      '/learning-path/**',
       '/partners',
       '/partners/**',
     ],
