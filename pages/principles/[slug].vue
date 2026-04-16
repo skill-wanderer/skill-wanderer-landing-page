@@ -12,6 +12,7 @@ const slug = typeof rawSlug === 'string' ? rawSlug : ''
 if (!validPrinciples.has(slug)) {
   useSEO({
     title: 'Principle Not Found | Skill-Wanderer',
+    description: 'This principle page does not exist. Discover Skill-Wanderer’s core values and learning philosophy for free, high-quality tech education.',
     robots: 'noindex, nofollow'
   })
 

@@ -8,6 +8,7 @@ export interface SEOConfig {
   author?: string
   keywords?: string[]
   structuredData?: any | any[]
+  robots?: string // SEO: e.g. 'index,follow' or 'noindex,nofollow'
 }
 
 export const useSEO = (config: SEOConfig) => {
@@ -37,6 +38,7 @@ export const useSEO = (config: SEOConfig) => {
       // Basic meta tags
       { name: 'description', content: optimizedDescription },
       { name: 'author', content: config.author || 'Quan Nguyen' },
+      ...(config.robots ? [{ name: 'robots', content: config.robots }] : []),
       
       // Keywords (if provided)
       ...(config.keywords ? [{ name: 'keywords', content: config.keywords.join(', ') }] : []),
