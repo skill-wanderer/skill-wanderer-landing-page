@@ -92,4 +92,28 @@ export const teamMembers: TeamMember[] = [
       'Collaborating with international contributors across engineering and product discussions',
     ],
   },
+  {
+    slug: 'logicalaryan',
+    name: 'Aryan',
+    role: ' Associate',
+    badge: '⭐ Team Member',
+    avatar: '/learners/Aryan.jpeg',
+    tagline: 'Debugging under pressure, delivering with precision',
+    location: 'India',
+    title: 'Full-Cycle Associate',
+    github: 'https://github.com/logicalaryan',
+    bio: `Aryan is just a rookie — but he’s stepping in with a builder’s mindset and a strong foundation in development.
+
+  He may not know everything yet, but he understands how to build. With hands-on experience in full stack development, Aryan has worked on few projects involving modern web technologies, creating responsive UIs, handling backend logic, and connecting systems end-to-end. He believes in learning by doing — not just watching, but actually building, breaking, and improving.
+
+  Instead of waiting to feel ready, Aryan puts himself under pressure, takes on challenges, and figures things out along the way. Every bug he fixes and every feature he ships adds to his growing understanding of software development.
+
+  He is still learning, still evolving — but with each step, his skills, confidence, and problem-solving ability are getting stronger.`,
+    skills: ['Nuxt 3', 'Vue', 'TypeScript','React','JavaScript',],
+contributions: [
+  'Learning and contributing to UI development',
+  'Fixing minor UI issues',
+  'Gradually contributing to frontend features'
+]  },
 ]
+
