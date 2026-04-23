@@ -3,8 +3,12 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <div class="admiral-badge" aria-hidden="true">
-          <img src="/orion.webp" alt="Admiral Orion" class="admiral-avatar-img" />
+        <div class="orion-visual">
+            <img 
+              src="/orion.webp" 
+              alt="Admiral Orion"
+              class="orion-image"
+            />
         </div>
         <h1>Meet Admiral Orion</h1>
         <p class="tagline">Your AI-Powered Guide to the Skill-Wanderer Universe</p>
@@ -412,6 +416,32 @@ function askQuestion(question: string) {
   background: rgba(255, 107, 53, 0.18);
   border-color: var(--primary-orange);
   transform: translateY(-2px);
+}
+
+.orion-visual {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+
+.orion-image {
+  width: 900px;
+  height: 600px;
+  object-fit: cover;
+
+  /* Ubah jadi persegi rounded (bukan lingkaran) */
+  border-radius: 16px;
+
+  /* Frame feel (lebih "panel AI") */
+  border: 1px solid rgba(255, 107, 53, 0.4);
+
+  /* Glow subtle */
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(255, 107, 53, 0.2);
+
+  transition: all 0.3s ease;
 }
 
 /* Animations */
