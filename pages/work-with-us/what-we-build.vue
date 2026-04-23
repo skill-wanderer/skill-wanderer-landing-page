@@ -23,8 +23,8 @@
         <div class="intro-text">
           <p>
             We work across a wide range of project types, from simple landing pages to complex platforms. Below is a guide
-            to the kinds of projects the guild takes on, with suggested starting packages from our
-            <NuxtLink to="/work-with-us/pricing" class="inline-link">pricing guide</NuxtLink>.
+            to the kinds of projects the guild takes on, with suggested starting packages based on the work we scope through our
+            <NuxtLink to="/contact" class="inline-link">contact page</NuxtLink>.
           </p>
         </div>
 
@@ -480,12 +480,11 @@
         <div class="package-options-grid">
           <div class="package-option-card">
             <div class="package-option-icon">📋</div>
-            <h3>Check Our Pricing Guide</h3>
+            <h3>Talk Through Scope</h3>
             <p>
-              Our pricing page has a full breakdown of Quick Builds, Sprint Packages, Retainers, Maintenance tiers, and partnership
-              models &mdash; including a "Choosing Your Path" guide that maps your situation to the right starting point.
+              Tell us what you are building and we will recommend the right starting point, delivery model, and next step for your project.
             </p>
-            <NuxtLink to="/work-with-us/pricing" class="card-link">View Pricing &rarr;</NuxtLink>
+            <NuxtLink to="/contact" class="card-link">Start the Conversation &rarr;</NuxtLink>
           </div>
           <div class="package-option-card featured">
             <div class="package-option-icon">🤖</div>
@@ -558,7 +557,7 @@
         <p>Tell us what you are building. We will tell you how the guild can help.</p>
         <div class="cta-buttons">
           <NuxtLink to="/contact" class="btn btn-primary">Start a Conversation</NuxtLink>
-          <NuxtLink to="/work-with-us/pricing" class="btn btn-secondary">View Pricing</NuxtLink>
+          <NuxtLink to="/work-with-us" class="btn btn-secondary">See How We Work</NuxtLink>
         </div>
       </div>
     </section>

@@ -181,12 +181,12 @@
       <div class="cta-content">
         <h2>Ready to Start?</h2>
         <p>
-          Review the pricing structure, or reach out directly to scope a starting point.
+          Explore how the guild works, or reach out directly to scope a starting point.
           No pitch deck required — just a clear conversation about what you need.
         </p>
 
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us/pricing" class="btn btn-primary">View Pricing</NuxtLink>
+          <NuxtLink to="/work-with-us" class="btn btn-primary">See How We Work</NuxtLink>
           <NuxtLink to="/contact" class="btn btn-secondary">Start a Conversation</NuxtLink>
         </div>
       </div>

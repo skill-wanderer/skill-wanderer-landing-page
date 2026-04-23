@@ -14,7 +14,7 @@
         </p>
         <div class="hero-actions">
           <a href="#choose-path" class="btn btn-primary">Find Your Path</a>
-          <NuxtLink to="/work-with-us/pricing-faq" class="btn btn-secondary">Pricing FAQ &amp; Terms</NuxtLink>
+          <NuxtLink to="/contact" class="btn btn-secondary">Contact the Guild</NuxtLink>
         </div>
       </div>
     </section>
@@ -468,6 +468,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 // Icons replaced with emojis
+
+throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
 
 const activeTab = ref<'individual' | 'organization'>('individual')
 

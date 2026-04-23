@@ -328,7 +328,7 @@
           that needs ongoing sprint capacity — the delivery model stays the same.
         </p>
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us/pricing" class="btn btn-primary">View Pricing</NuxtLink>
+          <NuxtLink to="/work-with-us" class="btn btn-primary">See How We Work</NuxtLink>
           <NuxtLink to="/contact" class="btn btn-secondary">Start a Conversation</NuxtLink>
         </div>
       </div>
