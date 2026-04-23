@@ -8,7 +8,7 @@
           Regional pricing guidance, payment protection options, and baseline pricing notes — the supporting detail that keeps the main pricing page focused on decisions.
         </p>
         <div class="hero-actions">
-          <NuxtLink to="/work-with-us/pricing" class="btn btn-primary">Back to Pricing</NuxtLink>
+          <NuxtLink to="/work-with-us" class="btn btn-primary">Explore Work With Us</NuxtLink>
           <NuxtLink to="/contact" class="btn btn-secondary">Ask a Specific Question</NuxtLink>
         </div>
       </div>
@@ -156,6 +156,8 @@
 </template>
 
 <script setup lang="ts">
+throw createError({ statusCode: 404, statusMessage: 'Page Not Found' })
+
 useSEO({
   title: 'Pricing FAQ & Terms | Skill-Wanderer',
   description:

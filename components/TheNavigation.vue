@@ -242,15 +242,6 @@
                 <span class="rich-menu-desc">Partnership over outsourcing — shared risk, shared reward</span>
               </span>
             </NuxtLink>
-            <NuxtLink to="/work-with-us/pricing" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
-              <span class="rich-menu-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-              </span>
-              <span class="rich-menu-text">
-                <span class="rich-menu-label">Guild Engagements</span>
-                <span class="rich-menu-desc">Sprint packages, retainers & partnership models</span>
-              </span>
-            </NuxtLink>
             <div class="rich-menu-divider"></div>
             <NuxtLink to="/work-with-us/become-a-partner" class="rich-menu-item rich-menu-cta" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
               <span class="rich-menu-icon">
@@ -281,7 +272,6 @@
             <NuxtLink to="/work-with-us/what-we-build" @click="closeMobileMenu">What We Build</NuxtLink>
             <NuxtLink to="/work-with-us/our-projects" @click="closeMobileMenu">Projects</NuxtLink>
             <NuxtLink to="/work-with-us/success-sharing-model" @click="closeMobileMenu">Success Sharing</NuxtLink>
-            <NuxtLink to="/work-with-us/pricing" @click="closeMobileMenu">Guild Engagements</NuxtLink>
             <NuxtLink to="/work-with-us/become-a-partner" @click="closeMobileMenu">Partner With Us</NuxtLink>
           </div>
         </div>

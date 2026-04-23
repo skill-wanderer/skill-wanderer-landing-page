@@ -92,14 +92,14 @@
           </div>
 
           <div class="pillar-card">
-            <div class="pillar-icon">💰</div>
-            <h3>Pricing</h3>
+            <div class="pillar-icon">🧭</div>
+            <h3>Project Scoping</h3>
             <p>
-              Two segments — Individuals and Organizations — with clear starting anchors.
-              From quick builds at $1,500 to dedicated engineering pods at $15,000/month.
+              Tell us what you are building and we will recommend the right engagement model,
+              timeline, and first step.
             </p>
-            <NuxtLink to="/work-with-us/pricing" class="pillar-link">
-              View Pricing <span>→</span>
+            <NuxtLink to="/contact" class="pillar-link">
+              Start the Conversation <span>→</span>
             </NuxtLink>
           </div>
 

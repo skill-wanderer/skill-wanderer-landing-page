@@ -1,11 +1,32 @@
 <script setup lang="ts">
 const route = useRoute()
-const slug = route.params.slug
 
-// Basic SEO for dynamic principle pages
+// Keep this allowlist in sync with the real principle pages supported by the site.
+const validPrinciples = new Set([
+  'integrity'
+])
+
+const rawSlug = route.params.slug
+const slug = typeof rawSlug === 'string' ? rawSlug : ''
+
+if (!validPrinciples.has(slug)) {
+  useSEO({
+    title: 'Principle Not Found | Skill-Wanderer',
+    description: 'This principle page does not exist. Discover Skill-Wanderer’s core values and learning philosophy for free, high-quality tech education.',
+    robots: 'noindex, nofollow'
+  })
+
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Principle not found'
+  })
+}
+
+// Basic SEO for valid dynamic principle pages
+const slugTitle = slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 useSEO({
-  title: `${String(slug).charAt(0).toUpperCase() + String(slug).slice(1)} Principle | Skill-Wanderer`,
-  description: `Learn about the ${slug} principle that guides Skill-Wanderer\'s mission to provide free, quality tech education with integrity.`,
+  title: `${slugTitle} Principle | Skill-Wanderer`,
+  description: `Learn about the ${slugTitle.toLowerCase()} principle that guides Skill-Wanderer's mission to provide free, quality tech education with integrity.`,
   keywords: [`${slug} principle`, 'skill-wanderer principles', 'tech education', 'learning philosophy'],
   type: 'article'
 })

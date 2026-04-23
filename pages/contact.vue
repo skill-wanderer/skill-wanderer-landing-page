@@ -151,11 +151,11 @@
 
             <div class="info-card">
               <div class="info-card-header">
-                <div class="info-icon">💰</div>
-                <h3>Pricing</h3>
+                <div class="info-icon">🧭</div>
+                <h3>How We Work</h3>
               </div>
-              <p>Explore our transparent sprint packages and partnership models</p>
-              <NuxtLink to="/work-with-us/pricing" class="info-card-link">View Pricing</NuxtLink>
+              <p>Explore our delivery model, project fit, and partnership approach</p>
+              <NuxtLink to="/work-with-us" class="info-card-link">See Engagement Options</NuxtLink>
             </div>
           </div>
         </div>
@@ -344,7 +344,7 @@ const faqs = ref([
   },
   {
     question: "How does pricing work?",
-    answer: "We offer transparent sprint-based packages. Each sprint is scoped with clear deliverables, timelines, and fixed pricing. No hidden fees, no surprise invoices. Visit our pricing page for package details, or describe your project and we'll recommend the right fit."
+    answer: "We scope engagements around clear deliverables, timelines, and fixed proposals. Describe your project and we'll recommend the right fit, timeline, and next step."
   },
 
   {
