@@ -1,3 +1,61 @@
+import { readdirSync } from 'node:fs'
+import { basename, extname, resolve } from 'node:path'
+
+import { reusablePathOverviews } from './data/learning-path-overviews'
+
+const principleSlugs = [
+  'accessible',
+  'community',
+  'creativity',
+  'engaging',
+  'individualized',
+  'integrity',
+  'mission-centric-reinvestment',
+  'pathways',
+  'relevant',
+  'respect-ip',
+  'social-enterprise',
+  'tech-services',
+  'technology-partnership',
+]
+
+const principleUrls = principleSlugs.map((slug) => ({
+  loc: `/principles/${slug}`,
+  changefreq: 'monthly' as const,
+  priority: 0.8 as const,
+}))
+
+const learningPathPageSlugs = readdirSync(resolve('./pages/learning-path'))
+  .filter((file) => extname(file) === '.vue')
+  .map((file) => basename(file, '.vue'))
+  .filter((slug) => slug !== 'index' && slug !== '[slug]')
+
+const legacyLearningPathRedirects = {
+  'advanced-software-development': 'advanced-software-development-skills',
+  'ai-machine-learning': 'ai-and-machine-learning',
+  'software-architecture-design-patterns': 'software-architecture-and-design-patterns',
+  'software-development-roles-career': 'software-development-roles-and-career',
+  'startup-foundation': 'start-up-foundation',
+} as const
+
+const legacyLearningPathRouteSlugs = Object.keys(legacyLearningPathRedirects)
+const staticLearningPathRouteSlugs = new Set(learningPathPageSlugs)
+
+const learningPathUrls = [
+  {
+    loc: '/learning-path',
+    changefreq: 'weekly' as const,
+    priority: 0.9 as const,
+  },
+  ...Object.values(reusablePathOverviews)
+    .filter(({ slug }) => !staticLearningPathRouteSlugs.has(slug))
+    .map((pathOverview) => ({
+      loc: `/learning-path/${pathOverview.slug}`,
+      changefreq: 'monthly' as const,
+      priority: 0.8 as const,
+    })),
+]
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -9,60 +67,16 @@ export default defineNuxtConfig({
   site: {
     url: 'https://skill-wanderer.com',
   },
+  // NOTE:
+  // Learning-path sitemap restored using dynamic source-of-truth.
+  // Not part of Phase 1 scope, but required to preserve SEO integrity.
   sitemap: {
-    // Exclude empty directory routes and dynamic catch-all
     exclude: [
+      ...legacyLearningPathRouteSlugs.map((slug) => `/learning-path/${slug}`),
       '/partners',
       '/partners/**',
     ],
     urls: async () => {
-      // Static principle pages with proper metadata
-      const principles = [
-        'accessible',
-        'community',
-        'creativity',
-        'engaging',
-        'individualized',
-        'integrity',
-        'mission-centric-reinvestment',
-        'pathways',
-        'relevant',
-        'respect-ip',
-        'social-enterprise',
-        'tech-services',
-        'technology-partnership',
-      ]
-      const principleUrls = principles.map((slug) => ({
-        loc: `/principles/${slug}`,
-        changefreq: 'monthly' as const,
-        priority: 0.8 as const,
-      }))
-
-      // Learning path canonical slugs (matching hub links, served via [slug].vue)
-      const learningPaths = [
-        'web-development',
-        'mobile-development',
-        'business-analyst',
-        'qa-tester',
-        'ai-and-machine-learning',
-        'devops',
-        'mlops',
-        'project-management',
-        'start-up-foundation',
-        'advanced-software-development-skills',
-        'software-architecture-and-design-patterns',
-        'software-development-roles-and-career',
-        'learn-contribute-build-earn',
-      ]
-      const learningPathUrls = [
-        { loc: '/learning-path', changefreq: 'weekly' as const, priority: 0.9 as const },
-        ...learningPaths.map((slug) => ({
-          loc: `/learning-path/${slug}`,
-          changefreq: 'monthly' as const,
-          priority: 0.8 as const,
-        })),
-      ]
-
       return [...principleUrls, ...learningPathUrls]
     },
     defaults: {
@@ -93,13 +107,13 @@ export default defineNuxtConfig({
         // Open Graph / social media meta tags for the logo
         { property: 'og:site_name', content: 'Skill-Wanderer' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp' },
+        { property: 'og:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
         { property: 'og:image:width', content: '768' },
         { property: 'og:image:height', content: '256' },
         { property: 'og:image:alt', content: 'Skill-Wanderer Logo' },
         // Twitter meta tags
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:image', content: 'https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp' },
+        { name: 'twitter:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
         { name: 'twitter:image:alt', content: 'Skill-Wanderer Logo' }
       ],
       link: [
@@ -125,6 +139,9 @@ export default defineNuxtConfig({
         messagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || '801841516442',
         appId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID || '1:801841516442:web:77c33043420a581b95f423',
       },
+      web3forms: {
+        accessKey: process.env.NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+      },
       pathfinder: {
         apiUrl: process.env.NUXT_PUBLIC_PATHFINDER_API_URL || '',
         domains: process.env.NUXT_PUBLIC_PATHFINDER_DOMAINS || 'skill-wanderer.com,wanderings.skill-wanderer.com,dojo.skill-wanderer.com',
@@ -142,15 +159,42 @@ export default defineNuxtConfig({
     '/expertise-impact': { redirect: { to: '/work-with-us', statusCode: 301 } },
     '/expertise-impact/**': { redirect: { to: '/work-with-us', statusCode: 301 } },
     '/work-with-us/delivery-model': { redirect: { to: '/work-with-us/success-sharing-model', statusCode: 301 } },
-    '/learning-path/ai-machine-learning': { redirect: { to: '/learning-path/ai-and-machine-learning', statusCode: 301 } },
-    '/learning-path/startup-foundation': { redirect: { to: '/learning-path/start-up-foundation', statusCode: 301 } },
-    '/learning-path/advanced-software-development': { redirect: { to: '/learning-path/advanced-software-development-skills', statusCode: 301 } },
-    '/learning-path/software-architecture-design-patterns': { redirect: { to: '/learning-path/software-architecture-and-design-patterns', statusCode: 301 } },
-    '/learning-path/software-development-roles-career': { redirect: { to: '/learning-path/software-development-roles-and-career', statusCode: 301 } },
     '/': { sitemap: { changefreq: 'weekly', priority: 1.0 } },
     '/about': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/mission': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/contact': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
+    '/learning-path': { sitemap: { changefreq: 'weekly', priority: 0.9 } },
+    '/learning-path/advanced-software-development': {
+      redirect: {
+        to: '/learning-path/advanced-software-development-skills',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/ai-machine-learning': {
+      redirect: {
+        to: '/learning-path/ai-and-machine-learning',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/software-architecture-design-patterns': {
+      redirect: {
+        to: '/learning-path/software-architecture-and-design-patterns',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/software-development-roles-career': {
+      redirect: {
+        to: '/learning-path/software-development-roles-and-career',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/startup-foundation': {
+      redirect: {
+        to: '/learning-path/start-up-foundation',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/roadmap': { sitemap: { changefreq: 'weekly', priority: 0.7 } },
     '/principles': { sitemap: { changefreq: 'monthly', priority: 0.9 } },
     '/principles/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
