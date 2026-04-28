@@ -1,3 +1,61 @@
+import { readdirSync } from 'node:fs'
+import { basename, extname, resolve } from 'node:path'
+
+import { reusablePathOverviews } from './data/learning-path-overviews'
+
+const principleSlugs = [
+  'accessible',
+  'community',
+  'creativity',
+  'engaging',
+  'individualized',
+  'integrity',
+  'mission-centric-reinvestment',
+  'pathways',
+  'relevant',
+  'respect-ip',
+  'social-enterprise',
+  'tech-services',
+  'technology-partnership',
+]
+
+const principleUrls = principleSlugs.map((slug) => ({
+  loc: `/principles/${slug}`,
+  changefreq: 'monthly' as const,
+  priority: 0.8 as const,
+}))
+
+const learningPathPageSlugs = readdirSync(resolve('./pages/learning-path'))
+  .filter((file) => extname(file) === '.vue')
+  .map((file) => basename(file, '.vue'))
+  .filter((slug) => slug !== 'index' && slug !== '[slug]')
+
+const legacyLearningPathRedirects = {
+  'advanced-software-development': 'advanced-software-development-skills',
+  'ai-machine-learning': 'ai-and-machine-learning',
+  'software-architecture-design-patterns': 'software-architecture-and-design-patterns',
+  'software-development-roles-career': 'software-development-roles-and-career',
+  'startup-foundation': 'start-up-foundation',
+} as const
+
+const legacyLearningPathRouteSlugs = Object.keys(legacyLearningPathRedirects)
+const staticLearningPathRouteSlugs = new Set(learningPathPageSlugs)
+
+const learningPathUrls = [
+  {
+    loc: '/learning-path',
+    changefreq: 'weekly' as const,
+    priority: 0.9 as const,
+  },
+  ...Object.values(reusablePathOverviews)
+    .filter(({ slug }) => !staticLearningPathRouteSlugs.has(slug))
+    .map((pathOverview) => ({
+      loc: `/learning-path/${pathOverview.slug}`,
+      changefreq: 'monthly' as const,
+      priority: 0.8 as const,
+    })),
+]
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -9,36 +67,17 @@ export default defineNuxtConfig({
   site: {
     url: 'https://skill-wanderer.com',
   },
+  // NOTE:
+  // Learning-path sitemap restored using dynamic source-of-truth.
+  // Not part of Phase 1 scope, but required to preserve SEO integrity.
   sitemap: {
-    // Exclude empty directory routes and dynamic catch-all
     exclude: [
-      '/learning-path',
-      '/learning-path/**',
+      ...legacyLearningPathRouteSlugs.map((slug) => `/learning-path/${slug}`),
       '/partners',
       '/partners/**',
     ],
     urls: async () => {
-      // Static principle pages with proper metadata
-      const principles = [
-        'accessible',
-        'community',
-        'creativity',
-        'engaging',
-        'individualized',
-        'integrity',
-        'mission-centric-reinvestment',
-        'pathways',
-        'relevant',
-        'respect-ip',
-        'social-enterprise',
-        'tech-services',
-        'technology-partnership',
-      ]
-      return principles.map((slug) => ({
-        loc: `/principles/${slug}`,
-        changefreq: 'monthly',
-        priority: 0.8,
-      }))
+      return [...principleUrls, ...learningPathUrls]
     },
     defaults: {
       changefreq: 'weekly',
@@ -124,6 +163,38 @@ export default defineNuxtConfig({
     '/about': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/mission': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/contact': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
+    '/learning-path': { sitemap: { changefreq: 'weekly', priority: 0.9 } },
+    '/learning-path/advanced-software-development': {
+      redirect: {
+        to: '/learning-path/advanced-software-development-skills',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/ai-machine-learning': {
+      redirect: {
+        to: '/learning-path/ai-and-machine-learning',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/software-architecture-design-patterns': {
+      redirect: {
+        to: '/learning-path/software-architecture-and-design-patterns',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/software-development-roles-career': {
+      redirect: {
+        to: '/learning-path/software-development-roles-and-career',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/startup-foundation': {
+      redirect: {
+        to: '/learning-path/start-up-foundation',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/roadmap': { sitemap: { changefreq: 'weekly', priority: 0.7 } },
     '/principles': { sitemap: { changefreq: 'monthly', priority: 0.9 } },
     '/principles/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
