@@ -4,8 +4,9 @@
     <section class="hero">
       <h1>Engage the Guild</h1>
       <p>
-        A tech guild that applies real-world craft to solve real problems—and every challenge we tackle funds free education.
-        This is how our social enterprise model sustains its mission without ads, donations, or compromise.
+        A tech guild for organizations that need senior-led delivery, practical collaboration,
+        and systems they can fully own. Explore what we build, who we work with,
+        and how a guild partnership works in practice.
       </p>
       <span class="launch-badge">Real Craft. Real Learning. Real Impact.</span>
     </section>
@@ -15,32 +16,32 @@
       <div class="content">
         <div class="section-header">
           <h2>How the Guild Works</h2>
-          <p>A self-sustaining cycle where craft creates impact, and impact creates learning</p>
+          <p>A simple path from first conversation to long-term collaboration</p>
         </div>
 
         <div class="cycle-flow">
           <div class="cycle-step">
             <div class="cycle-icon">🤝</div>
-            <h3>Guild Partnerships</h3>
-            <p>We partner with organizations as their tech guild—providing senior-led sprint delivery through a scalable, transparent model.</p>
+            <h3>Discovery &amp; Scoping</h3>
+            <p>We start by understanding the problem, the constraints, and the right first step for the work ahead.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
             <div class="cycle-icon">🔧</div>
             <h3>Guild Delivery</h3>
-            <p>Our guild members deliver real products, gaining hands-on experience—apprentices, journeymen, and masters working together.</p>
+            <p>Senior-led sprint delivery keeps progress visible while guild members work in coordinated tracks.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
             <div class="cycle-icon">📚</div>
-            <h3>Free Education</h3>
-            <p>Revenue from guild work funds free education—no ads, no donations, no compromise.</p>
+            <h3>Knowledge Transfer</h3>
+            <p>Documentation, walkthroughs, and shared context are built into the work from the start.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
             <div class="cycle-icon">🌱</div>
-            <h3>Guild Growth</h3>
-            <p>Apprentices grow into skilled craftspeople, ready to take on the next guild engagement.</p>
+            <h3>Long-Term Fit</h3>
+            <p>Continue with the guild while it adds value, or take full ownership when your team is ready.</p>
           </div>
         </div>
       </div>
@@ -83,8 +84,8 @@
             <div class="pillar-icon">📁</div>
             <h3>Our Projects</h3>
             <p>
-              From non-profits to startups to our own guild infrastructure—every project we take on creates real impact
-              and fuels free education.
+              From non-profits to startups to our own guild infrastructure—these projects show how
+              the guild designs, ships, and supports real systems.
             </p>
             <NuxtLink to="/work-with-us/our-projects" class="pillar-link">
               View Our Work <span>→</span>
@@ -119,8 +120,8 @@
             <div class="pillar-icon">🚀</div>
             <h3>Become a Guild Partner</h3>
             <p>
-              Ready to engage? Start with a single sprint, scale into a dedicated pod,
-              and stay as long as we're useful. Predictable pricing, zero lock-in.
+              Ready to engage? Start with a sprint, scale into a steady rhythm,
+              and keep full ownership at every stage.
             </p>
             <NuxtLink to="/work-with-us/become-a-partner" class="pillar-link">
               Become a Partner <span>→</span>
@@ -211,21 +212,13 @@
           <p>Our collaboration model for building sustainable systems</p>
         </div>
 
-        <!-- Intro + Revenue callout -->
+        <!-- Intro + Guild callout -->
         <div class="intro-callout">
           <p>
-            Our collaboration model is designed to support both learning and sustainable development.
-            While knowledge and exploration are supported through free mentorship and educational resources,
-            professional development work is delivered through structured development sprints.
-            We focus on building systems that are stable, maintainable, and capable of evolving over time.
+            Our collaboration model is built around discovery, focused sprint delivery,
+            and steady ownership transfer. We work in short cycles, keep scope visible,
+            and build systems that remain stable, maintainable, and easy to evolve over time.
           </p>
-          <div class="funding-banner">
-            <span class="funding-icon">🎓</span>
-            <div>
-              <strong>Revenue funds free education.</strong>
-              <span> Every sprint you fund goes directly toward keeping Skill-Wanderer's education free and accessible to all learners—no ads, no paywalls, no compromise.</span>
-            </div>
-          </div>
           <div class="lockin-banner">
             <span class="lockin-icon">🔓</span>
             <div>
@@ -246,65 +239,52 @@
           <div class="journey-step">
             <div class="step-number">01</div>
             <div class="step-body">
-              <h4>Discovery</h4>
-              <p>Projects typically begin with a short discovery phase to understand the problem, goals, and technical direction. This phase focuses on high-level understanding and feasibility rather than detailed system design. For those still exploring ideas, we encourage starting with our free mentorship resources.</p>
+              <h4>Discovery &amp; Scoping</h4>
+              <p>We begin with a short discovery phase to understand your goals, constraints, and the right first step.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
           <div class="journey-step">
             <div class="step-number">02</div>
             <div class="step-body">
-              <h4>Trust Sprint</h4>
-              <p>New collaborations often begin with a Trust Sprint — a two-week development cycle designed to establish a productive working relationship. This allows both sides to evaluate communication, workflow, and technical direction through real implementation rather than extended planning.</p>
+              <h4>Start with a Sprint</h4>
+              <p>Most new collaborations begin with a focused sprint so both sides can establish the working rhythm through real delivery.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
           <div class="journey-step">
             <div class="step-number">03</div>
             <div class="step-body">
-              <h4>Development Sprints</h4>
-              <p>All development work is delivered through two-week sprints. Each sprint includes planning, implementation, and a review session. Larger systems are developed across multiple sprints, allowing the product to evolve gradually while maintaining stability.</p>
+              <h4>Sprint Delivery</h4>
+              <p>Work moves in structured cycles with planning, implementation, review, and room to adjust priorities between iterations.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
           <div class="journey-step">
             <div class="step-number">04</div>
             <div class="step-body">
-              <h4>Maintaining System Health</h4>
-              <p>As systems evolve, occasional sprints may focus on improving stability, performance, and maintainability. These improvements may not always introduce visible features, but they ensure the system remains reliable and easier to evolve over time.</p>
+              <h4>Knowledge Transfer</h4>
+              <p>Documentation, walkthroughs, and architecture decisions are shared as the work evolves, not left until the end.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
           <div class="journey-step">
             <div class="step-number">05</div>
             <div class="step-body">
-              <h4>Client Independence</h4>
-              <p>We take pride in building systems you can fully own and operate without us. After each sprint milestone, you receive everything—code, documentation, and knowledge transfer. If you can take over and run it yourself, it means we succeeded as educators. We actively ensure there is no vendor lock-in at any stage.</p>
+              <h4>Ownership &amp; Independence</h4>
+              <p>You receive the context needed to operate, extend, and fully own the system without dependency on the guild.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
           <div class="journey-step">
             <div class="step-number">06</div>
             <div class="step-body">
-              <h4>Long-Term Collaboration</h4>
-              <p>We design systems with long-term stability in mind. Through iterative development sprints, platforms can grow gradually while remaining maintainable and reliable. We continue working with partners as long as we provide meaningful value, while always supporting their ability to take ownership.</p>
+              <h4>Continue or Transition</h4>
+              <p>Stay in an ongoing rhythm while the guild adds value, or transition fully to your own team when the time is right.</p>
             </div>
           </div>
         </div>
 
-        <!-- Operational Details — FAQ Accordion -->
-        <div class="faq-section">
-          <h3 class="faq-heading">Operational Details</h3>
-
-          <details v-for="item in operationalFAQ" :key="item.q" class="faq-item">
-            <summary class="faq-question">
-              <span class="faq-icon">{{ item.icon }}</span>
-              <span>{{ item.q }}</span>
-              <span class="faq-chevron">▸</span>
-            </summary>
-            <div class="faq-answer" v-html="item.a" />
-          </details>
-        </div>
       </div>
     </section>
 
@@ -313,8 +293,8 @@
       <div class="cta-content">
         <h2>Ready to Engage the Guild?</h2>
         <p>
-          Whether you're looking for a true technology partner or curious about how 
-          our guild sustains free education—we'd love to talk.
+          Whether you're looking for a true technology partner or want to explore
+          whether the guild is the right fit for your project, we'd love to talk.
         </p>
         <div class="cta-buttons">
           <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-primary">Become a Partner</NuxtLink>
@@ -327,46 +307,12 @@
 </template>
 
 <script setup lang="ts">
-// Icons replaced with emojis
-const operationalFAQ = [
-  {
-    icon: '⚡',
-    q: 'Communication & Workflow',
-    a: 'Each sprint begins with a short planning phase where scope and expectations are aligned. During the sprint, the guild provides progress updates, and each cycle concludes with a review and demonstration of completed work.'
-  },
-  {
-    icon: '🐛',
-    q: 'Bug Fixes & Change Requests',
-    a: 'If implemented functionality does not behave as agreed, it is considered a bug and will be corrected as part of the development process. Requests that modify or extend agreed functionality are change requests, scheduled in a future sprint.'
-  },
-  {
-    icon: '🌱',
-    q: 'Startup Collaboration',
-    a: 'For early-stage startups, the guild offers sprint-based engagement at accessible price points — starting from $1,500 for a Quick Build Foundation. Scope and cadence are tailored to your stage and budget.'
-  },
-  {
-    icon: '💳',
-    q: 'Payment Structure',
-    a: '<strong>Trust Sprint:</strong> 30% before sprint begins + 70% after sprint review.<br/><strong>Standard Sprints:</strong> 50% before sprint begins + 50% after sprint completion.<br/>Each sprint is scheduled once the initial payment is confirmed.'
-  },
-  {
-    icon: '📜',
-    q: 'Code Ownership & Open Source',
-    a: 'All custom code belongs to the client once milestone payment is completed. Reusable components from the Skill-Wanderer ecosystem are released as open-source under the <strong>Apache 2.0 license</strong>.'
-  },
-  {
-    icon: '🔓',
-    q: 'No Vendor Lock-In',
-    a: 'We use open standards, well-documented architectures, and industry-standard tools so you are never locked into working with us. After each milestone, you receive full code, documentation, and knowledge transfer.'
-  }
-]
-
 useSEO({
   title: 'Engage the Guild | Skill-Wanderer',
   description:
-    'A tech guild delivering real-world technology projects. Every guild engagement funds free education. Learn about our social enterprise model and partnership approach.',
+    'A tech guild for senior-led technology projects, clear collaboration, and long-term ownership. Explore what we build, who we work with, and how the guild works.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['tech guild', 'software development partner', 'social enterprise technology', 'guild engagement', 'custom software', 'hire developers', 'technology partnership'],
+  keywords: ['tech guild', 'software development partner', 'senior-led delivery', 'guild engagement', 'custom software', 'technology partnership', 'long-term ownership'],
   structuredData: [
     createOrganizationSchema(),
     createBreadcrumbSchema([
@@ -805,34 +751,6 @@ useSEO({
   margin-bottom: 28px;
 }
 
-.funding-banner {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.12), rgba(255, 107, 53, 0.05));
-  border: 1px solid rgba(255, 107, 53, 0.35);
-  border-radius: 14px;
-  padding: 22px 28px;
-  text-align: left;
-}
-
-.funding-icon {
-  font-size: 1.8rem;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.funding-banner strong {
-  color: var(--primary-orange);
-  font-size: 1rem;
-}
-
-.funding-banner span {
-  font-size: 0.95rem;
-  opacity: 0.85;
-  line-height: 1.6;
-}
-
 .lockin-banner {
   display: flex;
   align-items: flex-start;
@@ -1030,7 +948,6 @@ useSEO({
     grid-template-columns: 1fr 1fr;
   }
 
-  .funding-banner,
   .lockin-banner {
     flex-direction: column;
     align-items: center;
