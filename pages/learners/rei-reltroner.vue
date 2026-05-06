@@ -14,7 +14,7 @@
         <p class="tagline">Sailing Through the Storm</p>
         <div class="hero-meta">
           <span class="meta-tag">📍 Indonesia</span>
-          <span class="meta-tag">🛠️ Software Developer</span>
+          <span class="meta-tag">🛠️ Software Engineer</span>
           <a href="https://www.linkedin.com/in/rei-reltroner-a3a7b8173/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🌐 LinkedIn</a>
         </div>
       </div>
