@@ -11,11 +11,6 @@ export default defineNuxtConfig({
   },
   sitemap: {
     exclude: [
-      '/learning-path/advanced-software-development',
-      '/learning-path/ai-machine-learning',
-      '/learning-path/software-architecture-design-patterns',
-      '/learning-path/software-development-roles-career',
-      '/learning-path/startup-foundation',
       '/partners',
       '/partners/**',
     ],
