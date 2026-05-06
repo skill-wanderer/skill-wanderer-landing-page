@@ -334,6 +334,56 @@ const guildFormMessage = reactive({
   text: ''
 })
 
+type SubmissionErrorType = 'config' | 'api' | 'network' | 'unknown'
+
+class SubmissionError extends Error {
+  constructor(
+    message: string,
+    readonly errorType: SubmissionErrorType,
+    readonly status?: number
+  ) {
+    super(message)
+    this.name = 'SubmissionError'
+  }
+}
+
+const logFormSubmissionEvent = (_event: Record<string, unknown>) => {
+  // Reserved for future telemetry integration.
+  // Intentionally silent in current Phase 1 implementation.
+}
+
+const getDurationMs = (startTime: number) => Math.round(performance.now() - startTime)
+
+const getSubmissionErrorType = (error: unknown): SubmissionErrorType => {
+  if (error instanceof SubmissionError) {
+    return error.errorType
+  }
+
+  if (error instanceof TypeError) {
+    return 'network'
+  }
+
+  return 'unknown'
+}
+
+const getWeb3FormsAccessKey = () => {
+  const config = useRuntimeConfig()
+  const publicConfig = config.public as Record<string, unknown>
+
+  const web3formsConfig = (publicConfig.web3forms ?? publicConfig.web3Forms) as {
+    accessKey?: string
+    access_key?: string
+  } | undefined
+
+  return (
+    (typeof web3formsConfig?.accessKey === 'string' && web3formsConfig.accessKey) ||
+    (typeof web3formsConfig?.access_key === 'string' && web3formsConfig.access_key) ||
+    (typeof publicConfig.web3formsAccessKey === 'string' && publicConfig.web3formsAccessKey) ||
+    (typeof publicConfig.web3forms_access_key === 'string' && publicConfig.web3forms_access_key) ||
+    ''
+  )
+}
+
 const activeFaq = ref(-1)
 
 // FAQ data
@@ -358,34 +408,79 @@ const faqs = ref([
 ])
 
 // Methods
-const handleSubmit = async () => {
+const handleSubmit_v2 = async () => {
+  const formType = 'hire-the-guild'
+  let requestStartTime: number | null = null
+
   isSubmitting.value = true
+  logFormSubmissionEvent({
+    event: 'form_submit_start',
+    form_type: formType
+  })
 
   try {
-    // Get Firebase Firestore instance
-    const { $firestore } = useNuxtApp()
-    const { collection, addDoc, serverTimestamp } = await import('firebase/firestore')
+    const accessKey = getWeb3FormsAccessKey()
 
-    // Prepare the message data
-    const messageData = {
-      name: form.name,
-      email: form.email,
-      topic: form.topic,
-      message: form.message,
-      valuesQuality: form.valuesQuality,
-      timestamp: serverTimestamp(),
-      status: 'new'
+    if (!accessKey) {
+      throw new SubmissionError('Missing Web3Forms access key', 'config')
     }
 
-    // Save to Firestore
-    await addDoc(collection($firestore, 'contact-messages'), messageData)
+    const payload = {
+      access_key: accessKey,
+      name: form.name,
+      email: form.email,
+      message: form.message,
+      topic: form.topic,
+      valuesQuality: form.valuesQuality,
+      form_type: formType,
+      source: '/contact',
+      subject: 'Hire the Guild inquiry'
+    }
 
-    
+    requestStartTime = performance.now()
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify(payload)
+    })
+
+    const responseData = await response.json() as {
+      success?: boolean
+      message?: string
+    }
+
+    const durationMs = getDurationMs(requestStartTime)
+    logFormSubmissionEvent({
+      event: 'form_submit_response_time',
+      form_type: formType,
+      duration_ms: durationMs,
+      status: response.status,
+      success: Boolean(response.ok && responseData.success)
+    })
+
+    if (!response.ok || !responseData.success) {
+      throw new SubmissionError(
+        responseData.message || 'Web3Forms submission failed',
+        'api',
+        response.status
+      )
+    }
+
+    logFormSubmissionEvent({
+      event: 'form_submit_success',
+      form_type: formType,
+      duration_ms: durationMs,
+      status: response.status
+    })
+
     // Show success message
     formMessage.show = true
     formMessage.type = 'success'
     formMessage.text = "Thank you for your message! I'll get back to you within 24-48 hours."
-    
+
     // Reset form
     Object.assign(form, {
       name: '',
@@ -394,36 +489,100 @@ const handleSubmit = async () => {
       message: '',
       valuesQuality: false
     })
-    
+
     // Hide message after 5 seconds
     setTimeout(() => {
       formMessage.show = false
     }, 5000)
   } catch (error) {
+    logFormSubmissionEvent({
+      event: 'form_submit_error',
+      form_type: formType,
+      duration_ms: requestStartTime === null ? null : getDurationMs(requestStartTime),
+      error_type: getSubmissionErrorType(error),
+      error_message: error instanceof Error ? error.message : 'Unknown submission error',
+      status: error instanceof SubmissionError ? error.status ?? null : null
+    })
+
     formMessage.show = true
     formMessage.type = 'error'
-    formMessage.text = 'Something went wrong. Please try again or contact me directly via email.'
+    formMessage.text = error instanceof SubmissionError && error.errorType === 'config'
+      ? 'Contact form configuration is incomplete. Please contact me directly via email.'
+      : 'Something went wrong. Please try again or contact me directly via email.'
   } finally {
     isSubmitting.value = false
   }
 }
 
+const handleSubmit = handleSubmit_v2
+
 const handleGuildSubmit = async () => {
+  const formType = 'join-the-guild'
+  let requestStartTime: number | null = null
+
   isGuildSubmitting.value = true
+  logFormSubmissionEvent({
+    event: 'form_submit_start',
+    form_type: formType
+  })
 
   try {
-    const { $firestore } = useNuxtApp()
-    const { collection, addDoc, serverTimestamp } = await import('firebase/firestore')
+    const accessKey = getWeb3FormsAccessKey()
 
-    await addDoc(collection($firestore, 'guild-applications'), {
+    if (!accessKey) {
+      throw new SubmissionError('Missing Web3Forms access key', 'config')
+    }
+
+    const payload = {
+      access_key: accessKey,
       name: guildForm.name,
       email: guildForm.email,
       skill: guildForm.skill,
       experience: guildForm.experience,
       portfolio: guildForm.portfolio,
       message: guildForm.message,
-      timestamp: serverTimestamp(),
-      status: 'new'
+      form_type: formType,
+      source: '/contact',
+      subject: 'Join the Guild application'
+    }
+
+    requestStartTime = performance.now()
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify(payload)
+    })
+
+    const responseData = await response.json() as {
+      success?: boolean
+      message?: string
+    }
+
+    const durationMs = getDurationMs(requestStartTime)
+    logFormSubmissionEvent({
+      event: 'form_submit_response_time',
+      form_type: formType,
+      duration_ms: durationMs,
+      status: response.status,
+      success: Boolean(response.ok && responseData.success)
+    })
+
+    if (!response.ok || !responseData.success) {
+      throw new SubmissionError(
+        responseData.message || 'Web3Forms submission failed',
+        'api',
+        response.status
+      )
+    }
+
+    logFormSubmissionEvent({
+      event: 'form_submit_success',
+      form_type: formType,
+      duration_ms: durationMs,
+      status: response.status
     })
 
     guildFormMessage.show = true
@@ -440,10 +599,21 @@ const handleGuildSubmit = async () => {
     })
 
     setTimeout(() => { guildFormMessage.show = false }, 6000)
-  } catch {
+  } catch (error) {
+    logFormSubmissionEvent({
+      event: 'form_submit_error',
+      form_type: formType,
+      duration_ms: requestStartTime === null ? null : getDurationMs(requestStartTime),
+      error_type: getSubmissionErrorType(error),
+      error_message: error instanceof Error ? error.message : 'Unknown submission error',
+      status: error instanceof SubmissionError ? error.status ?? null : null
+    })
+
     guildFormMessage.show = true
     guildFormMessage.type = 'error'
-    guildFormMessage.text = 'Something went wrong. Please try again or reach us directly via email.'
+    guildFormMessage.text = error instanceof SubmissionError && error.errorType === 'config'
+      ? 'Application form configuration is incomplete. Please reach us directly via email.'
+      : 'Something went wrong. Please try again or reach us directly via email.'
   } finally {
     isGuildSubmitting.value = false
   }

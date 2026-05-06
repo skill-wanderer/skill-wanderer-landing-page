@@ -30,10 +30,10 @@
               <p class="learner-tagline">Sailing Through the Storm</p>
               <div class="learner-meta">
                 <span>📍 Indonesia</span>
-                <span>🛠️ Software Developer</span>
+                <span>🛠️ Software Engineer</span>
               </div>
               <div class="learner-path">
-                <span class="path-badge">🧪 QA / Tester Path</span>
+                <span class="path-badge">🛠️ Full-Cycle Solutions Associate Path</span>
               </div>
             </div>
             <div class="view-story">
