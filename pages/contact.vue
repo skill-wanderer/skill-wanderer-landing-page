@@ -347,11 +347,9 @@ class SubmissionError extends Error {
   }
 }
 
-const logFormSubmissionEvent = (event: Record<string, unknown>) => {
-  console.log({
-    source: 'contact_form',
-    ...event
-  })
+const logFormSubmissionEvent = (_event: Record<string, unknown>) => {
+  // Reserved for future telemetry integration.
+  // Intentionally silent in current Phase 1 implementation.
 }
 
 const getDurationMs = (startTime: number) => Math.round(performance.now() - startTime)
@@ -508,7 +506,7 @@ const handleSubmit_v2 = async () => {
 
     formMessage.show = true
     formMessage.type = 'error'
-    formMessage.text = error instanceof Error && error.message === 'Missing Web3Forms access key'
+    formMessage.text = error instanceof SubmissionError && error.errorType === 'config'
       ? 'Contact form configuration is incomplete. Please contact me directly via email.'
       : 'Something went wrong. Please try again or contact me directly via email.'
   } finally {
@@ -613,7 +611,7 @@ const handleGuildSubmit = async () => {
 
     guildFormMessage.show = true
     guildFormMessage.type = 'error'
-    guildFormMessage.text = error instanceof Error && error.message === 'Missing Web3Forms access key'
+    guildFormMessage.text = error instanceof SubmissionError && error.errorType === 'config'
       ? 'Application form configuration is incomplete. Please reach us directly via email.'
       : 'Something went wrong. Please try again or reach us directly via email.'
   } finally {

@@ -1,13 +1,3 @@
-const legacyLearningPathRedirects = {
-  'advanced-software-development': 'advanced-software-development-skills',
-  'ai-machine-learning': 'ai-and-machine-learning',
-  'software-architecture-design-patterns': 'software-architecture-and-design-patterns',
-  'software-development-roles-career': 'software-development-roles-and-career',
-  'startup-foundation': 'start-up-foundation',
-} as const
-
-const legacyLearningPathRouteSlugs = Object.keys(legacyLearningPathRedirects)
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -21,7 +11,11 @@ export default defineNuxtConfig({
   },
   sitemap: {
     exclude: [
-      ...legacyLearningPathRouteSlugs.map((slug) => `/learning-path/${slug}`),
+      '/learning-path/advanced-software-development',
+      '/learning-path/ai-machine-learning',
+      '/learning-path/software-architecture-design-patterns',
+      '/learning-path/software-development-roles-career',
+      '/learning-path/startup-foundation',
       '/partners',
       '/partners/**',
     ],
