@@ -47,13 +47,13 @@ export default defineNuxtConfig({
         // Open Graph / social media meta tags for the logo
         { property: 'og:site_name', content: 'Skill-Wanderer' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
+        { property: 'og:image', content: 'https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp' },
         { property: 'og:image:width', content: '768' },
         { property: 'og:image:height', content: '256' },
         { property: 'og:image:alt', content: 'Skill-Wanderer Logo' },
         // Twitter meta tags
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
+        { name: 'twitter:image', content: 'https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp' },
         { name: 'twitter:image:alt', content: 'Skill-Wanderer Logo' }
       ],
       link: [
