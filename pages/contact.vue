@@ -76,14 +76,15 @@
             <h2>We're Ready to Build</h2>
             <p>Describe your vision and we'll respond within 24–48 hours with an architectural assessment and next steps.</p>
           </div>
-          <form id="contactForm" @submit.prevent="handleSubmit">
+          <form id="contactForm" @submit.prevent="handleHireSubmit">
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" id="name" v-model="form.name" required placeholder="How should we address you?">
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" v-model="form.email" required placeholder="your.email@example.com">
+              <input type="email" id="email" v-model="form.email" required autocomplete="email" spellcheck="false" aria-describedby="hire-email-note" placeholder="your.email@example.com">
+              <p id="hire-email-note" class="field-hint">We check email format only. A guild member replies manually to this address after submission; there is no automatic verification email.</p>
             </div>
             <div class="form-group">
               <label for="topic">How Can the Guild Support Your Vision?</label>
@@ -111,6 +112,10 @@
                 <input type="checkbox" v-model="form.valuesQuality">
                 <span>I value senior-led quality that fuels social impact</span>
               </label>
+              <p class="checkbox-note">This helps us tailor our reply. It does not change whether you can submit this inquiry.</p>
+            </div>
+            <div v-if="!isWeb3FormsConfigured && !formMessage.show" class="form-message error">
+              {{ hireConfigErrorMessage }}
             </div>
             <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
               {{ isSubmitting ? 'Sending...' : 'Request an Architectural Audit' }}
@@ -121,7 +126,7 @@
               <span class="legal-separator">·</span>
               <NuxtLink to="/terms-of-service" class="legal-link">Terms of Service</NuxtLink>
             </div>
-            <div v-if="formMessage.show" :class="['form-message', formMessage.type]">
+            <div v-if="formMessage.show" :class="['form-message', formMessage.type]" :role="formMessage.type === 'error' ? 'alert' : 'status'" :aria-live="formMessage.type === 'error' ? 'assertive' : 'polite'">
               {{ formMessage.text }}
             </div>
           </form>
@@ -168,14 +173,15 @@
             <h2>Apply to Join</h2>
             <p>Tell us about your craft and why you want to build with the Guild. We review every application personally.</p>
           </div>
-          <form @submit.prevent="handleGuildSubmit">
+          <form @submit.prevent="handleJoinSubmit">
             <div class="form-group">
               <label for="guild-name">Your Name</label>
               <input type="text" id="guild-name" v-model="guildForm.name" required placeholder="How should we address you?">
             </div>
             <div class="form-group">
               <label for="guild-email">Email Address</label>
-              <input type="email" id="guild-email" v-model="guildForm.email" required placeholder="your.email@example.com">
+              <input type="email" id="guild-email" v-model="guildForm.email" required autocomplete="email" spellcheck="false" aria-describedby="guild-email-note" placeholder="your.email@example.com">
+              <p id="guild-email-note" class="field-hint">We check email format only. We use this address for manual follow-up on your application; there is no automatic verification email.</p>
             </div>
             <div class="form-group">
               <label for="guild-skill">Primary Skill</label>
@@ -210,6 +216,9 @@
               <label for="guild-message">Why Do You Want to Join the Guild?</label>
               <textarea id="guild-message" v-model="guildForm.message" required placeholder="Tell us about your background, what drives you, and what you hope to contribute and gain..."></textarea>
             </div>
+            <div v-if="!isWeb3FormsConfigured && !guildFormMessage.show" class="form-message error">
+              {{ guildConfigErrorMessage }}
+            </div>
             <button type="submit" class="btn btn-primary" :disabled="isGuildSubmitting">
               {{ isGuildSubmitting ? 'Sending...' : 'Apply to Join the Guild' }}
               <span>{{ isGuildSubmitting ? '⏳' : '→' }}</span>
@@ -219,7 +228,7 @@
               <span class="legal-separator">·</span>
               <NuxtLink to="/terms-of-service" class="legal-link">Terms of Service</NuxtLink>
             </div>
-            <div v-if="guildFormMessage.show" :class="['form-message', guildFormMessage.type]">
+            <div v-if="guildFormMessage.show" :class="['form-message', guildFormMessage.type]" :role="guildFormMessage.type === 'error' ? 'alert' : 'status'" :aria-live="guildFormMessage.type === 'error' ? 'assertive' : 'polite'">
               {{ guildFormMessage.text }}
             </div>
           </form>
@@ -252,7 +261,7 @@
                 <h3>Guild Membership</h3>
               </div>
               <p>Guild artisans collaborate on real client projects, receive mentorship, and share in the mission of funding free tech education for emerging developers.</p>
-              <NuxtLink to="/guild-manifesto" class="info-card-link">Read the Guild Manifesto</NuxtLink>
+              <NuxtLink to="/manifesto" class="info-card-link">Read the Guild Manifesto</NuxtLink>
             </div>
           </div>
         </div>
@@ -286,7 +295,7 @@
 
 <script setup lang="ts">
 // Icons replaced with emojis
-import { ref, reactive } from 'vue'
+import { computed, reactive, ref } from 'vue'
 
 // SEO and meta management
 useSEO({
@@ -334,7 +343,40 @@ const guildFormMessage = reactive({
   text: ''
 })
 
+type ContactFormType = 'hire-the-guild' | 'join-the-guild'
 type SubmissionErrorType = 'config' | 'api' | 'network' | 'unknown'
+type SubmissionLifecycleState =
+  | 'started'
+  | 'duplicate_blocked'
+  | 'vendor_request_started'
+  | 'vendor_accepted'
+  | 'vendor_rejected'
+  | 'network_failed'
+  | 'config_missing'
+  | 'operator_pending'
+  | 'unknown_failed'
+
+type ContactFormAuditEvent = {
+  event: string
+  lifecycle_state: SubmissionLifecycleState
+  form_type: ContactFormType
+  submission_reference?: string
+  duration_ms?: number | null
+  status?: number | null
+  success?: boolean
+  error_type?: SubmissionErrorType
+  error_message?: string
+  reply_email?: string
+}
+
+type ContactAuditEntry = ContactFormAuditEvent & {
+  page: string
+  timestamp: string
+}
+
+type ContactAuditWindow = Window & {
+  __SKILL_WANDERER_CONTACT_AUDIT_LOG__?: ContactAuditEntry[]
+}
 
 class SubmissionError extends Error {
   constructor(
@@ -347,9 +389,32 @@ class SubmissionError extends Error {
   }
 }
 
-const logFormSubmissionEvent = (_event: Record<string, unknown>) => {
-  // Reserved for future telemetry integration.
-  // Intentionally silent in current Phase 1 implementation.
+const CONTACT_AUDIT_EVENT_NAME = 'skill-wanderer:contact-form-event'
+const CONTACT_AUDIT_LOG_LIMIT = 50
+const CONTACT_AUDIT_PAGE = '/contact'
+
+const logFormSubmissionEvent = (event: ContactFormAuditEvent) => {
+  if (!import.meta.client || !import.meta.dev) {
+    return
+  }
+
+  const auditEntry: ContactAuditEntry = {
+    ...event,
+    page: CONTACT_AUDIT_PAGE,
+    timestamp: new Date().toISOString()
+  }
+
+  const auditWindow = window as ContactAuditWindow
+  const auditLog = auditWindow.__SKILL_WANDERER_CONTACT_AUDIT_LOG__ ?? []
+
+  auditLog.push(auditEntry)
+
+  if (auditLog.length > CONTACT_AUDIT_LOG_LIMIT) {
+    auditLog.shift()
+  }
+
+  auditWindow.__SKILL_WANDERER_CONTACT_AUDIT_LOG__ = auditLog
+  window.dispatchEvent(new CustomEvent(CONTACT_AUDIT_EVENT_NAME, { detail: auditEntry }))
 }
 
 const getDurationMs = (startTime: number) => Math.round(performance.now() - startTime)
@@ -366,23 +431,88 @@ const getSubmissionErrorType = (error: unknown): SubmissionErrorType => {
   return 'unknown'
 }
 
-const getWeb3FormsAccessKey = () => {
-  const config = useRuntimeConfig()
-  const publicConfig = config.public as Record<string, unknown>
+const hireConfigErrorMessage = 'Contact form configuration is incomplete. Please contact me directly via email.'
+const guildConfigErrorMessage = 'Application form configuration is incomplete. Please reach us directly via email.'
 
-  const web3formsConfig = (publicConfig.web3forms ?? publicConfig.web3Forms) as {
-    accessKey?: string
-    access_key?: string
-  } | undefined
+const createSubmissionReference = (formType: ContactFormType) => {
+  const prefix = formType === 'hire-the-guild' ? 'HIRE' : 'JOIN'
+  const timestamp = new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14)
+  const entropy = globalThis.crypto?.randomUUID?.().split('-')[0].toUpperCase()
+    ?? Math.random().toString(36).slice(2, 8).toUpperCase()
 
-  return (
-    (typeof web3formsConfig?.accessKey === 'string' && web3formsConfig.accessKey) ||
-    (typeof web3formsConfig?.access_key === 'string' && web3formsConfig.access_key) ||
-    (typeof publicConfig.web3formsAccessKey === 'string' && publicConfig.web3formsAccessKey) ||
-    (typeof publicConfig.web3forms_access_key === 'string' && publicConfig.web3forms_access_key) ||
-    ''
-  )
+  return `${prefix}-${timestamp}-${entropy}`
 }
+
+const getFailureLifecycleState = (errorType: SubmissionErrorType): SubmissionLifecycleState => {
+  if (errorType === 'config') {
+    return 'config_missing'
+  }
+
+  if (errorType === 'api') {
+    return 'vendor_rejected'
+  }
+
+  if (errorType === 'network') {
+    return 'network_failed'
+  }
+
+  return 'unknown_failed'
+}
+
+const buildHireSuccessMessage = (replyEmail: string, submissionReference: string) =>
+  `Message accepted for delivery. Reference: ${submissionReference}. We'll reply to ${replyEmail} within 24-48 hours. If you do not hear from us, please check spam or email us directly with this reference.`
+
+const buildGuildSuccessMessage = (replyEmail: string, submissionReference: string) =>
+  `Application accepted for delivery. Reference: ${submissionReference}. We'll reply to ${replyEmail} after review. If you do not hear from us within a few days, please check spam or email us directly with this reference.`
+
+const getHireSubmissionErrorMessage = (error: unknown) => {
+  if (error instanceof SubmissionError) {
+    if (error.errorType === 'config') {
+      return hireConfigErrorMessage
+    }
+
+    if (error.errorType === 'api') {
+      return 'We could not confirm delivery with our form provider. Your message was not sent. Please try again or contact me directly via email.'
+    }
+  }
+
+  if (getSubmissionErrorType(error) === 'network') {
+    return 'We could not reach our form provider. Your message was not sent. Please try again or contact me directly via email.'
+  }
+
+  return 'We could not confirm that your message was received. Please try again or contact me directly via email.'
+}
+
+const getGuildSubmissionErrorMessage = (error: unknown) => {
+  if (error instanceof SubmissionError) {
+    if (error.errorType === 'config') {
+      return guildConfigErrorMessage
+    }
+
+    if (error.errorType === 'api') {
+      return 'We could not confirm delivery with our form provider. Your application was not sent. Please try again or reach us directly via email.'
+    }
+  }
+
+  if (getSubmissionErrorType(error) === 'network') {
+    return 'We could not reach our form provider. Your application was not sent. Please try again or reach us directly via email.'
+  }
+
+  return 'We could not confirm that your application was received. Please try again or reach us directly via email.'
+}
+
+type ContactPublicRuntimeConfig = {
+  web3forms?: {
+    accessKey?: string
+  }
+}
+
+const getWeb3FormsAccessKey = () => {
+  const accessKey = (useRuntimeConfig().public as ContactPublicRuntimeConfig).web3forms?.accessKey
+  return typeof accessKey === 'string' ? accessKey.trim() : ''
+}
+
+const isWeb3FormsConfigured = computed(() => getWeb3FormsAccessKey().length > 0)
 
 const activeFaq = ref(-1)
 
@@ -408,14 +538,32 @@ const faqs = ref([
 ])
 
 // Methods
-const handleSubmit_v2 = async () => {
-  const formType = 'hire-the-guild'
+const handleHireSubmit = async () => {
+  const formType: ContactFormType = 'hire-the-guild'
   let requestStartTime: number | null = null
+  const replyEmail = form.email.trim()
+  const submissionReference = createSubmissionReference(formType)
+  const submittedAt = new Date().toISOString()
+
+  if (isSubmitting.value) {
+    logFormSubmissionEvent({
+      event: 'contact_form_duplicate_blocked',
+      lifecycle_state: 'duplicate_blocked',
+      form_type: formType,
+      reply_email: replyEmail || undefined
+    })
+
+    return
+  }
 
   isSubmitting.value = true
+  formMessage.show = false
   logFormSubmissionEvent({
-    event: 'form_submit_start',
-    form_type: formType
+    event: 'contact_form_submission_started',
+    lifecycle_state: 'started',
+    form_type: formType,
+    submission_reference: submissionReference,
+    reply_email: replyEmail || undefined
   })
 
   try {
@@ -428,14 +576,24 @@ const handleSubmit_v2 = async () => {
     const payload = {
       access_key: accessKey,
       name: form.name,
-      email: form.email,
+      email: replyEmail,
       message: form.message,
       topic: form.topic,
       valuesQuality: form.valuesQuality,
       form_type: formType,
+      submission_reference: submissionReference,
+      submitted_at: submittedAt,
       source: '/contact',
       subject: 'Hire the Guild inquiry'
     }
+
+    logFormSubmissionEvent({
+      event: 'contact_form_vendor_request_started',
+      lifecycle_state: 'vendor_request_started',
+      form_type: formType,
+      submission_reference: submissionReference,
+      reply_email: replyEmail || undefined
+    })
 
     requestStartTime = performance.now()
     const response = await fetch('https://api.web3forms.com/submit', {
@@ -453,15 +611,20 @@ const handleSubmit_v2 = async () => {
     }
 
     const durationMs = getDurationMs(requestStartTime)
+    const vendorAccepted = Boolean(response.ok && responseData.success)
+
     logFormSubmissionEvent({
-      event: 'form_submit_response_time',
+      event: vendorAccepted ? 'contact_form_vendor_accepted' : 'contact_form_vendor_rejected',
+      lifecycle_state: vendorAccepted ? 'vendor_accepted' : 'vendor_rejected',
       form_type: formType,
+      submission_reference: submissionReference,
       duration_ms: durationMs,
       status: response.status,
-      success: Boolean(response.ok && responseData.success)
+      success: vendorAccepted,
+      reply_email: replyEmail || undefined
     })
 
-    if (!response.ok || !responseData.success) {
+    if (!vendorAccepted) {
       throw new SubmissionError(
         responseData.message || 'Web3Forms submission failed',
         'api',
@@ -470,16 +633,19 @@ const handleSubmit_v2 = async () => {
     }
 
     logFormSubmissionEvent({
-      event: 'form_submit_success',
+      event: 'contact_form_operator_pending',
+      lifecycle_state: 'operator_pending',
       form_type: formType,
+      submission_reference: submissionReference,
       duration_ms: durationMs,
-      status: response.status
+      status: response.status,
+      reply_email: replyEmail || undefined
     })
 
     // Show success message
     formMessage.show = true
     formMessage.type = 'success'
-    formMessage.text = "Thank you for your message! I'll get back to you within 24-48 hours."
+    formMessage.text = buildHireSuccessMessage(replyEmail, submissionReference)
 
     // Reset form
     Object.assign(form, {
@@ -489,41 +655,55 @@ const handleSubmit_v2 = async () => {
       message: '',
       valuesQuality: false
     })
-
-    // Hide message after 5 seconds
-    setTimeout(() => {
-      formMessage.show = false
-    }, 5000)
   } catch (error) {
+    const errorType = getSubmissionErrorType(error)
+
     logFormSubmissionEvent({
-      event: 'form_submit_error',
+      event: 'contact_form_submission_failed',
+      lifecycle_state: getFailureLifecycleState(errorType),
       form_type: formType,
+      submission_reference: submissionReference,
       duration_ms: requestStartTime === null ? null : getDurationMs(requestStartTime),
-      error_type: getSubmissionErrorType(error),
+      error_type: errorType,
       error_message: error instanceof Error ? error.message : 'Unknown submission error',
-      status: error instanceof SubmissionError ? error.status ?? null : null
+      status: error instanceof SubmissionError ? error.status ?? null : null,
+      reply_email: replyEmail || undefined
     })
 
     formMessage.show = true
     formMessage.type = 'error'
-    formMessage.text = error instanceof SubmissionError && error.errorType === 'config'
-      ? 'Contact form configuration is incomplete. Please contact me directly via email.'
-      : 'Something went wrong. Please try again or contact me directly via email.'
+    formMessage.text = getHireSubmissionErrorMessage(error)
   } finally {
     isSubmitting.value = false
   }
 }
 
-const handleSubmit = handleSubmit_v2
-
-const handleGuildSubmit = async () => {
-  const formType = 'join-the-guild'
+const handleJoinSubmit = async () => {
+  const formType: ContactFormType = 'join-the-guild'
   let requestStartTime: number | null = null
+  const replyEmail = guildForm.email.trim()
+  const submissionReference = createSubmissionReference(formType)
+  const submittedAt = new Date().toISOString()
+
+  if (isGuildSubmitting.value) {
+    logFormSubmissionEvent({
+      event: 'contact_form_duplicate_blocked',
+      lifecycle_state: 'duplicate_blocked',
+      form_type: formType,
+      reply_email: replyEmail || undefined
+    })
+
+    return
+  }
 
   isGuildSubmitting.value = true
+  guildFormMessage.show = false
   logFormSubmissionEvent({
-    event: 'form_submit_start',
-    form_type: formType
+    event: 'contact_form_submission_started',
+    lifecycle_state: 'started',
+    form_type: formType,
+    submission_reference: submissionReference,
+    reply_email: replyEmail || undefined
   })
 
   try {
@@ -536,15 +716,25 @@ const handleGuildSubmit = async () => {
     const payload = {
       access_key: accessKey,
       name: guildForm.name,
-      email: guildForm.email,
+      email: replyEmail,
       skill: guildForm.skill,
       experience: guildForm.experience,
       portfolio: guildForm.portfolio,
       message: guildForm.message,
       form_type: formType,
+      submission_reference: submissionReference,
+      submitted_at: submittedAt,
       source: '/contact',
       subject: 'Join the Guild application'
     }
+
+    logFormSubmissionEvent({
+      event: 'contact_form_vendor_request_started',
+      lifecycle_state: 'vendor_request_started',
+      form_type: formType,
+      submission_reference: submissionReference,
+      reply_email: replyEmail || undefined
+    })
 
     requestStartTime = performance.now()
     const response = await fetch('https://api.web3forms.com/submit', {
@@ -562,15 +752,20 @@ const handleGuildSubmit = async () => {
     }
 
     const durationMs = getDurationMs(requestStartTime)
+    const vendorAccepted = Boolean(response.ok && responseData.success)
+
     logFormSubmissionEvent({
-      event: 'form_submit_response_time',
+      event: vendorAccepted ? 'contact_form_vendor_accepted' : 'contact_form_vendor_rejected',
+      lifecycle_state: vendorAccepted ? 'vendor_accepted' : 'vendor_rejected',
       form_type: formType,
+      submission_reference: submissionReference,
       duration_ms: durationMs,
       status: response.status,
-      success: Boolean(response.ok && responseData.success)
+      success: vendorAccepted,
+      reply_email: replyEmail || undefined
     })
 
-    if (!response.ok || !responseData.success) {
+    if (!vendorAccepted) {
       throw new SubmissionError(
         responseData.message || 'Web3Forms submission failed',
         'api',
@@ -579,15 +774,18 @@ const handleGuildSubmit = async () => {
     }
 
     logFormSubmissionEvent({
-      event: 'form_submit_success',
+      event: 'contact_form_operator_pending',
+      lifecycle_state: 'operator_pending',
       form_type: formType,
+      submission_reference: submissionReference,
       duration_ms: durationMs,
-      status: response.status
+      status: response.status,
+      reply_email: replyEmail || undefined
     })
 
     guildFormMessage.show = true
     guildFormMessage.type = 'success'
-    guildFormMessage.text = "Thank you for applying! We'll review your application and get back to you within a few days."
+    guildFormMessage.text = buildGuildSuccessMessage(replyEmail, submissionReference)
 
     Object.assign(guildForm, {
       name: '',
@@ -597,23 +795,24 @@ const handleGuildSubmit = async () => {
       portfolio: '',
       message: ''
     })
-
-    setTimeout(() => { guildFormMessage.show = false }, 6000)
   } catch (error) {
+    const errorType = getSubmissionErrorType(error)
+
     logFormSubmissionEvent({
-      event: 'form_submit_error',
+      event: 'contact_form_submission_failed',
+      lifecycle_state: getFailureLifecycleState(errorType),
       form_type: formType,
+      submission_reference: submissionReference,
       duration_ms: requestStartTime === null ? null : getDurationMs(requestStartTime),
-      error_type: getSubmissionErrorType(error),
+      error_type: errorType,
       error_message: error instanceof Error ? error.message : 'Unknown submission error',
-      status: error instanceof SubmissionError ? error.status ?? null : null
+      status: error instanceof SubmissionError ? error.status ?? null : null,
+      reply_email: replyEmail || undefined
     })
 
     guildFormMessage.show = true
     guildFormMessage.type = 'error'
-    guildFormMessage.text = error instanceof SubmissionError && error.errorType === 'config'
-      ? 'Application form configuration is incomplete. Please reach us directly via email.'
-      : 'Something went wrong. Please try again or reach us directly via email.'
+    guildFormMessage.text = getGuildSubmissionErrorMessage(error)
   } finally {
     isGuildSubmitting.value = false
   }
@@ -642,9 +841,6 @@ const copyEmail = async () => {
     setTimeout(() => { emailCopied.value = false }, 2000)
   }
 }
-
-
-
 </script>
 
 <style scoped>
@@ -929,6 +1125,13 @@ body {
   font-weight: 400;
   opacity: 0.5;
   font-size: 0.85em;
+}
+
+.field-hint {
+  margin-top: 8px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  opacity: 0.7;
 }
 
 .form-group input,
@@ -1228,6 +1431,13 @@ body {
   accent-color: var(--primary-orange);
   flex-shrink: 0;
   cursor: pointer;
+}
+
+.checkbox-note {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  opacity: 0.7;
 }
 
 /* Form Footer Legal */
