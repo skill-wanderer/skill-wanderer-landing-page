@@ -110,7 +110,7 @@
             <div class="form-group form-checkbox-group">
               <label class="checkbox-label">
                 <input type="checkbox" v-model="form.valuesQuality">
-                <span>Optional preference: senior-led quality and social impact matter in my decision</span>
+                <span>I value senior-led quality that fuels social impact</span>
               </label>
               <p class="checkbox-note">This helps us tailor our reply. It does not change whether you can submit this inquiry.</p>
             </div>
