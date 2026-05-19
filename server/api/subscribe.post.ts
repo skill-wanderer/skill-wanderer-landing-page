@@ -75,8 +75,9 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
     }
   }
 
-  const resendApiKey = process.env.RESEND_API_KEY
-  const resendFromEmail = process.env.RESEND_FROM_EMAIL
+  const runtimeConfig = useRuntimeConfig(event)
+  const resendApiKey = runtimeConfig.resendApiKey || runtimeConfig.NUXT_RESEND_API_KEY || process.env.RESEND_API_KEY
+  const resendFromEmail = runtimeConfig.resendFromEmail || runtimeConfig.NUXT_RESEND_FROM_EMAIL || process.env.RESEND_FROM_EMAIL
 
   if (!resendApiKey || resendApiKey === RESEND_API_KEY_PLACEHOLDER || !resendFromEmail) {
     console.error('[SUBSCRIBE_FLOW]', {
