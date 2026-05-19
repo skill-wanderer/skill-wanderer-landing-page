@@ -27,7 +27,18 @@ export const teamMembers: TeamMember[] = [
     title: 'Founder & Project Leader',
     github: 'https://github.com/skill-wanderer',
     bio: 'Quan is the founder and leader of Skill-Wanderer. With a journey that began in international trade and evolved through four startups, leading 50+ members, and wandering through roles from Frontend to DevOps, from Business Analyst to Solution Architect, Quan brings a unique perspective to tech education. His unconventional path taught him that the most fundamental skill is learning how to learn—and that every failure is a stepping stone to mastery. Skill-Wanderer is the culmination of that belief: a platform where honest, practical education meets real-world experience, completely free and without bias.',
-    skills: ['Solution Architecture', 'Full-Stack Development', 'DevOps & Kubernetes', 'AI & Machine Learning', 'Mobile Development', 'Project Management', 'Team Leadership', 'Community Building', 'Mentorship', 'One-Man Army'],
+    skills: [
+      'Solution Architecture',
+      'Full-Stack Development',
+      'DevOps & Kubernetes',
+      'AI & Machine Learning',
+      'Mobile Development',
+      'Project Management',
+      'Team Leadership',
+      'Community Building',
+      'Mentorship',
+      'One-Man Army',
+    ],
     contributions: [
       'Founded Skill-Wanderer and established its 12 guiding principles',
       'Built the entire platform on a self-hosted Kubernetes cluster using just an old laptop and Orange Pi',
@@ -41,18 +52,18 @@ export const teamMembers: TeamMember[] = [
     name: 'Thanh Nguyen',
     role: 'Full-Cycle Associate',
     badge: '💫 Team Member',
-    avatar: '/thanh-nguyen-avatar.jpg', 
+    avatar: '/thanh-nguyen-avatar.jpg',
     tagline: 'Fueling Innovation through Lifelong Learning and Adaptability',
     location: 'Vietnam',
     title: 'Full-Cycle Associate',
-    github: 'https://github.com/Thanh-Nguyen-Valerie', 
+    github: 'https://github.com/Thanh-Nguyen-Valerie',
     bio: "As a fresh graduate with a 'learn-it-all' rather than 'know-it-all' philosophy, Thanh joins Skill-Wanderer with a vibrant energy and a relentless drive for excellence. Embracing the 'Full-Cycle' mindset, Thanh is dedicated to mastering the entire product lifecycle—from initial concept to deployment. With a belief that the tech landscape is an infinite classroom, Thanh views every challenge as a strategic stepping stone to mastery, aiming to bridge the gap between academic theory and high-impact, real-world solutions.",
     skills: [
-      'Full-Stack Development', 
-      'Problem-Solving', 
-      'Rapid Prototyping', 
-      'Growth Mindset', 
-      'Cross-functional Collaboration'
+      'Full-Stack Development',
+      'Problem-Solving',
+      'Rapid Prototyping',
+      'Growth Mindset',
+      'Cross-functional Collaboration',
     ],
     contributions: [
       'Currently undergoing onboarding and deep-diving into the Skill-Wanderer ecosystem',
@@ -109,11 +120,57 @@ export const teamMembers: TeamMember[] = [
   Instead of waiting to feel ready, Aryan puts himself under pressure, takes on challenges, and figures things out along the way. Every bug he fixes and every feature he ships adds to his growing understanding of software development.
 
   He is still learning, still evolving — but with each step, his skills, confidence, and problem-solving ability are getting stronger.`,
-    skills: ['Nuxt 3', 'Vue', 'TypeScript','React','JavaScript',],
-contributions: [
-  'Learning and contributing to UI development',
-  'Fixing minor UI issues',
-  'Gradually contributing to frontend features'
-]  },
-]
+    skills: ['Nuxt 3', 'Vue', 'TypeScript', 'React', 'JavaScript'],
+    contributions: [
+      'Learning and contributing to UI development',
+      'Fixing minor UI issues',
+      'Gradually contributing to frontend features',
+    ],
+  },
+  {
+    slug: 'nkiru-onyebinime',
+    name: 'Nkiru Onyebinime',
+    role: 'QA Tester',
+    badge: '⭐ Team Member',
+    avatar: '/learners/Nkiru-Onyebinime.jpg',
+    tagline: 'Testing with user empathy, security awareness, and curiosity',
+    location: 'Nigeria',
+    title: 'QA Tester',
+    bio: `Nkiru Onyebinime’s path into tech is anything but straight — and that is exactly what makes her strong at what she does.
 
+She studied Microbiology at Federal University Lafia, where she learned observation, pattern recognition, and accurate documentation. Those skills now transfer directly into QA testing, helping her notice details, analyze behavior, and document issues clearly.
+
+Before entering tech, Nkiru spent over five years in customer support across Nigeria, Dubai, and the UK. She handled angry customers, resolved escalations, trained new team members, and maintained 100% response rates under pressure. This experience gives her a deep understanding of how real users feel when something is broken. She does not just find bugs — she understands why they matter.
+
+Her experience in CCTV monitoring also strengthened her attention to detail. Watching for real-time anomalies, documenting incidents, and staying alert to anything that looks slightly wrong are all skills that closely reflect strong testing discipline.
+
+Nkiru is currently training as a SOC Analyst in cybersecurity and holds certifications from ISC2, Google, TryHackMe, and others. Her security background allows her to test beyond standard functionality by looking for exposed system data, unvalidated inputs, and insecure flows.
+
+In her QA mentorship, she scored 90 out of 100 on her first module and 98 out of 100 on her second. Her instructor described her work as an exceptional submission demonstrating professional discipline and QA maturity. She has also completed real client testing at Skill-Wanderer, delivering structured bug reports across three batches on desktop and mobile.
+
+Outside of work, Nkiru makes music videos, creates content, and runs a YouTube channel. She believes creativity and curiosity are connected — and both make her a better tester.
+
+She is here to grow, contribute, and prove that the best testers are the ones who think like users, communicate like professionals, and never stop being curious.`,
+    skills: [
+      'QA Testing',
+      'Manual Testing',
+      'Bug Reporting',
+      'User Empathy',
+      'Customer Support',
+      'Incident Documentation',
+      'Security Testing Awareness',
+      'SOC Analysis Fundamentals',
+      'Anomaly Detection',
+      'Cross-platform Testing',
+      'Communication',
+      'Creative Problem-Solving',
+    ],
+    contributions: [
+      'Completed real client testing at Skill-Wanderer across desktop and mobile',
+      'Delivered structured bug reports across three testing batches',
+      'Applied user empathy from customer support experience to identify high-impact issues',
+      'Used cybersecurity awareness to look for exposed data, unvalidated inputs, and insecure flows',
+      'Demonstrated strong QA discipline through high-scoring mentorship submissions',
+    ],
+  },
+]
