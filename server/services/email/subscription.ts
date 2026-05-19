@@ -1,7 +1,7 @@
 const confirmationBody = [
-  '<p>Thank you for subscribing to Skill Wanderer.</p>',
-  '<p>You are now signed up to receive future updates, learning path releases, and community news.</p>',
-  '<p>We appreciate your interest and will keep our messages concise and relevant.</p>'
+  '<p>Thank you for your interest in Skill Wanderer.</p>',
+  '<p>This email confirms that we received your request.</p>',
+  '<p>We appreciate your interest in our learning paths and community.</p>'
 ].join('')
 
 export const createSubscriptionConfirmationEmail = (email: string, fromEmail: string) => ({
