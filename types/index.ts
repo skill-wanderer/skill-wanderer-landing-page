@@ -39,11 +39,18 @@ export interface PracticeExample {
   items: string[]
 }
 
-export interface Subscriber {
+export interface SubscribeRequest {
   email: string
-  subscribedAt: any // Firebase ServerTimestamp
-  source: string
 }
+
+export type SubscribeResponse =
+  | {
+      success: true
+    }
+  | {
+      success: false
+      message: string
+    }
 
 // Extend global types if needed
 declare global {

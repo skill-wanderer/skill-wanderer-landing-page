@@ -40,10 +40,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
-import type { Subscriber } from '~/types'
-
-const { $firestore } = useNuxtApp()
+import type { SubscribeResponse } from '~/types'
 
 const email = ref('')
 const isSubmitting = ref(false)
@@ -57,20 +54,29 @@ const handleSubscribe = async () => {
   message.value = ''
 
   try {
-    // Add email to Firestore
-    const subscriberData: Omit<Subscriber, 'subscribedAt'> & { subscribedAt: any } = {
-      email: email.value,
-      subscribedAt: serverTimestamp(),
-      source: 'landing-page'
-    }
+    const response = await fetch('/api/subscribe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email: email.value
+      })
+    })
 
-    await addDoc(collection($firestore, 'subscribers'), subscriberData)
+    const result = await response.json() as SubscribeResponse
+
+    if (!response.ok || !result.success) {
+      message.value = result.success ? 'Something went wrong. Please try again.' : result.message
+      messageType.value = 'error'
+      return
+    }
 
     message.value = 'Thanks for subscribing! We\'ll keep you updated.'
     messageType.value = 'success'
     email.value = ''
   } catch (error) {
-    console.error('Error adding subscriber:', error)
+    console.error('Error subscribing:', error)
     message.value = 'Something went wrong. Please try again.'
     messageType.value = 'error'
   } finally {
