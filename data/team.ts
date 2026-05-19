@@ -128,6 +128,52 @@ export const teamMembers: TeamMember[] = [
     ],
   },
   {
+    slug: 'nkiru-onyebinime',
+    name: 'Nkiru Onyebinime',
+    role: 'QA Tester',
+    badge: '⭐ Team Member',
+    avatar: '/learners/Nkiru-Onyebinime.jpg',
+    tagline: 'Testing with user empathy, security awareness, and curiosity',
+    location: 'Nigeria',
+    title: 'QA Tester',
+    bio: `Nkiru Onyebinime’s path into tech is anything but straight — and that is exactly what makes her strong at what she does.
+
+She studied Microbiology at Federal University Lafia, where she learned observation, pattern recognition, and accurate documentation. Those skills now transfer directly into QA testing, helping her notice details, analyze behavior, and document issues clearly.
+
+Before entering tech, Nkiru spent over five years in customer support across Nigeria, Dubai, and the UK. She handled angry customers, resolved escalations, trained new team members, and maintained 100% response rates under pressure. This experience gives her a deep understanding of how real users feel when something is broken. She does not just find bugs — she understands why they matter.
+
+Her experience in CCTV monitoring also strengthened her attention to detail. Watching for real-time anomalies, documenting incidents, and staying alert to anything that looks slightly wrong are all skills that closely reflect strong testing discipline.
+
+Nkiru is currently training as a SOC Analyst in cybersecurity and holds certifications from ISC2, Google, TryHackMe, and others. Her security background allows her to test beyond standard functionality by looking for exposed system data, unvalidated inputs, and insecure flows.
+
+In her QA mentorship, she scored 90 out of 100 on her first module and 98 out of 100 on her second. Her instructor described her work as an exceptional submission demonstrating professional discipline and QA maturity. She has also completed real client testing at Skill-Wanderer, delivering structured bug reports across three batches on desktop and mobile.
+
+Outside of work, Nkiru makes music videos, creates content, and runs a YouTube channel. She believes creativity and curiosity are connected — and both make her a better tester.
+
+She is here to grow, contribute, and prove that the best testers are the ones who think like users, communicate like professionals, and never stop being curious.`,
+    skills: [
+      'QA Testing',
+      'Manual Testing',
+      'Bug Reporting',
+      'User Empathy',
+      'Customer Support',
+      'Incident Documentation',
+      'Security Testing Awareness',
+      'SOC Analysis Fundamentals',
+      'Anomaly Detection',
+      'Cross-platform Testing',
+      'Communication',
+      'Creative Problem-Solving',
+    ],
+    contributions: [
+      'Completed real client testing at Skill-Wanderer across desktop and mobile',
+      'Delivered structured bug reports across three testing batches',
+      'Applied user empathy from customer support experience to identify high-impact issues',
+      'Used cybersecurity awareness to look for exposed data, unvalidated inputs, and insecure flows',
+      'Demonstrated strong QA discipline through high-scoring mentorship submissions',
+    ],
+  },
+  {
     slug: 'duy-anh-dao',
     name: 'Duy Anh Dao',
     role: 'Software Engineering Associate',
