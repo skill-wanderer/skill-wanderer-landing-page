@@ -75,8 +75,7 @@ const handleSubscribe = async () => {
     message.value = 'Thanks for subscribing! We\'ll keep you updated.'
     messageType.value = 'success'
     email.value = ''
-  } catch (error) {
-    console.error('Error subscribing:', error)
+  } catch {
     message.value = 'Something went wrong. Please try again.'
     messageType.value = 'error'
   } finally {

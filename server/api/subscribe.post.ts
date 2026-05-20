@@ -1,6 +1,8 @@
 import { Resend } from 'resend'
+import type { ConsolaInstance } from 'consola/core'
 import { getHeader } from 'h3'
 import type { H3Event } from 'h3'
+import { useNitroApp } from 'nitropack/runtime'
 import type { SubscribeRequest, SubscribeResponse } from '~/types'
 import { createSubscriptionConfirmationEmail } from '~/server/services/email/subscription'
 
@@ -58,6 +60,11 @@ const createSubscriptionIdempotencyKey = async (email: string) => {
 const pickRuntimeString = (...values: unknown[]) =>
   values.find((value): value is string => typeof value === 'string' && value.length > 0)
 
+type SubscriptionLogger = Pick<ConsolaInstance, 'info' | 'warn' | 'error'>
+
+const getSubscriptionLogger = () =>
+  (useNitroApp() as ReturnType<typeof useNitroApp> & { logger: SubscriptionLogger }).logger
+
 export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   let body: Partial<SubscribeRequest> | null = null
 
@@ -81,8 +88,9 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
 
   const email = typeof body?.email === 'string' ? body.email.trim().toLowerCase() : ''
   const maskedEmail = email ? maskEmail(email) : 'missing-email'
+  const logger = getSubscriptionLogger()
 
-  console.info('[SUBSCRIBE_FLOW]', {
+  logger.info('[SUBSCRIBE_FLOW]', {
     stage: 'request_received',
     method: event.method,
     path: getRequestURL(event).pathname,
@@ -90,7 +98,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   })
 
   if (!email) {
-    console.info('[SUBSCRIBE_FLOW]', {
+    logger.info('[SUBSCRIBE_FLOW]', {
       stage: 'validation_failed',
       reason: 'missing_email',
       recipient: maskedEmail
@@ -103,7 +111,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   }
 
   if (!EMAIL_PATTERN.test(email)) {
-    console.info('[SUBSCRIBE_FLOW]', {
+    logger.info('[SUBSCRIBE_FLOW]', {
       stage: 'validation_failed',
       reason: 'invalid_email_format',
       recipient: maskedEmail
@@ -123,7 +131,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   const lastAttemptAt = subscriptionThrottle.get(clientThrottleKey)
 
   if (typeof lastAttemptAt === 'number' && now - lastAttemptAt < SUBSCRIPTION_THROTTLE_WINDOW_MS) {
-    console.warn('[SUBSCRIBE_FLOW]', {
+    logger.warn('[SUBSCRIBE_FLOW]', {
       stage: 'throttled',
       reason: 'cooldown_active',
       recipient: maskedEmail,
@@ -149,7 +157,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   )
 
   if (!resendApiKey || resendApiKey === RESEND_API_KEY_PLACEHOLDER || !resendFromEmail) {
-    console.error('[SUBSCRIBE_FLOW]', {
+    logger.error('[SUBSCRIBE_FLOW]', {
       stage: 'configuration_failed',
       reason: 'missing_resend_env',
       recipient: maskedEmail
@@ -175,7 +183,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
     )
 
     if (error) {
-      console.error('[RESEND_SEND_ERROR]', {
+      logger.error('[RESEND_SEND_ERROR]', {
         success: false,
         recipient: maskedEmail,
         provider: 'resend',
@@ -189,7 +197,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
     }
 
     if (!data) {
-      console.error('[RESEND_SEND_ERROR]', {
+      logger.error('[RESEND_SEND_ERROR]', {
         success: false,
         recipient: maskedEmail,
         provider: 'resend',
@@ -202,7 +210,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
       }
     }
 
-    console.info('[RESEND_SEND_SUCCESS]', {
+    logger.info('[RESEND_SEND_SUCCESS]', {
       success: true,
       recipient: maskedEmail,
       provider: 'resend',
@@ -214,7 +222,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
       success: true
     }
   } catch (error) {
-    console.error('[RESEND_SEND_ERROR]', {
+    logger.error('[RESEND_SEND_ERROR]', {
       success: false,
       recipient: maskedEmail,
       provider: 'resend',
