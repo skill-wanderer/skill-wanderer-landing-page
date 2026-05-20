@@ -1,8 +1,6 @@
 import { Resend } from 'resend'
-import type { ConsolaInstance } from 'consola/core'
 import { getHeader } from 'h3'
 import type { H3Event } from 'h3'
-import { useNitroApp } from 'nitropack/runtime'
 import type { SubscribeRequest, SubscribeResponse } from '~/types'
 import { createSubscriptionConfirmationEmail } from '~/server/services/email/subscription'
 
@@ -60,11 +58,6 @@ const createSubscriptionIdempotencyKey = async (email: string) => {
 const pickRuntimeString = (...values: unknown[]) =>
   values.find((value): value is string => typeof value === 'string' && value.length > 0)
 
-type SubscriptionLogger = Pick<ConsolaInstance, 'info' | 'warn' | 'error'>
-
-const getSubscriptionLogger = () =>
-  (useNitroApp() as ReturnType<typeof useNitroApp> & { logger: SubscriptionLogger }).logger
-
 export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   let body: Partial<SubscribeRequest> | null = null
 
@@ -88,21 +81,8 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
 
   const email = typeof body?.email === 'string' ? body.email.trim().toLowerCase() : ''
   const maskedEmail = email ? maskEmail(email) : 'missing-email'
-  const logger = getSubscriptionLogger()
-
-  logger.info('[SUBSCRIBE_FLOW]', {
-    stage: 'request_received',
-    method: event.method,
-    path: getRequestURL(event).pathname,
-    recipient: maskedEmail
-  })
 
   if (!email) {
-    logger.info('[SUBSCRIBE_FLOW]', {
-      stage: 'validation_failed',
-      reason: 'missing_email',
-      recipient: maskedEmail
-    })
     setResponseStatus(event, 400)
     return {
       success: false,
@@ -111,11 +91,6 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   }
 
   if (!EMAIL_PATTERN.test(email)) {
-    logger.info('[SUBSCRIBE_FLOW]', {
-      stage: 'validation_failed',
-      reason: 'invalid_email_format',
-      recipient: maskedEmail
-    })
     setResponseStatus(event, 400)
     return {
       success: false,
@@ -131,12 +106,6 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   const lastAttemptAt = subscriptionThrottle.get(clientThrottleKey)
 
   if (typeof lastAttemptAt === 'number' && now - lastAttemptAt < SUBSCRIPTION_THROTTLE_WINDOW_MS) {
-    logger.warn('[SUBSCRIBE_FLOW]', {
-      stage: 'throttled',
-      reason: 'cooldown_active',
-      recipient: maskedEmail,
-      retryAfterMs: getRetryAfterMs(now, lastAttemptAt)
-    })
     setResponseStatus(event, 429)
     return {
       success: false,
@@ -157,11 +126,6 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   )
 
   if (!resendApiKey || resendApiKey === RESEND_API_KEY_PLACEHOLDER || !resendFromEmail) {
-    logger.error('[SUBSCRIBE_FLOW]', {
-      stage: 'configuration_failed',
-      reason: 'missing_resend_env',
-      recipient: maskedEmail
-    })
     setResponseStatus(event, 503)
     return {
       success: false,
@@ -183,12 +147,6 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
     )
 
     if (error) {
-      logger.error('[RESEND_SEND_ERROR]', {
-        success: false,
-        recipient: maskedEmail,
-        provider: 'resend',
-        providerResponse: error
-      })
       setResponseStatus(event, 502)
       return {
         success: false,
@@ -197,12 +155,6 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
     }
 
     if (!data) {
-      logger.error('[RESEND_SEND_ERROR]', {
-        success: false,
-        recipient: maskedEmail,
-        provider: 'resend',
-        providerResponse: 'missing_data'
-      })
       setResponseStatus(event, 502)
       return {
         success: false,
@@ -210,24 +162,10 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
       }
     }
 
-    logger.info('[RESEND_SEND_SUCCESS]', {
-      success: true,
-      recipient: maskedEmail,
-      provider: 'resend',
-      resendId: data.id,
-      providerResponse: data
-    })
-
     return {
       success: true
     }
   } catch (error) {
-    logger.error('[RESEND_SEND_ERROR]', {
-      success: false,
-      recipient: maskedEmail,
-      provider: 'resend',
-      providerResponse: error instanceof Error ? error.message : error
-    })
     setResponseStatus(event, 502)
     return {
       success: false,
