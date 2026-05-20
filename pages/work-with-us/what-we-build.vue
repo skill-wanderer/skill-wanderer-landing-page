@@ -581,168 +581,115 @@ useSEO({
 </script>
 
 <style scoped>
+@reference "tailwindcss";
+
 /* ── Hero ─────────────────────────────────────────── */
 .hero {
+  @apply relative overflow-hidden text-center;
   background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
   padding: 150px 20px 80px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
 }
 
 .hero::before {
   content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  @apply absolute inset-0;
   background:
     radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.12) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.06) 0%, transparent 40%);
 }
 
 .hero-eyebrow {
-  display: inline-block;
+  @apply relative z-[1] mb-4 inline-block text-[0.9rem] font-semibold uppercase opacity-[0.85];
   font-size: 0.9rem;
-  font-weight: 600;
   letter-spacing: 0.12em;
-  text-transform: uppercase;
   color: var(--primary-orange);
-  opacity: 0.85;
-  margin-bottom: 16px;
-  position: relative;
-  z-index: 1;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  color: white;
-  margin-bottom: 24px;
-  position: relative;
-  z-index: 1;
+  @apply relative z-[1] mb-6 text-[3.5rem] text-white;
 }
 
 .hero p {
-  font-size: 1.25rem;
+  @apply relative z-[1] mx-auto mb-8 max-w-[720px] text-[1.25rem] opacity-90;
   color: var(--light-text);
-  opacity: 0.9;
-  max-width: 720px;
-  margin: 0 auto 32px;
   line-height: 1.8;
-  position: relative;
-  z-index: 1;
 }
 
 .launch-badge {
+  @apply relative z-[1] inline-block rounded-[50px] px-[30px] py-3 text-base font-bold text-white;
   background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
-  color: white;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 1rem;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
 }
 
 /* ── Shared ────────────────────────────────────────── */
 .content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  @apply mx-auto max-w-[1200px] px-5;
 }
 
 .section-header {
-  text-align: center;
-  margin-bottom: 50px;
+  @apply mb-[50px] text-center;
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  @apply mb-4 text-[2.5rem];
   color: var(--primary-orange);
-  margin-bottom: 16px;
 }
 
 .section-header p {
-  font-size: 1.15rem;
-  opacity: 0.82;
-  max-width: 680px;
-  margin: 0 auto;
+  @apply mx-auto max-w-[680px] text-[1.15rem] opacity-[0.82];
   line-height: 1.75;
 }
 
 /* ── How We Work ──────────────────────────────────── */
 .how-we-work-section {
-  padding: 90px 20px;
+  @apply px-5 py-[90px];
   background: var(--darker-bg);
 }
 
 .intro-text {
-  max-width: 800px;
-  margin: 0 auto 30px;
-  text-align: center;
+  @apply mx-auto mb-[30px] max-w-[800px] text-center;
 }
 
 .intro-text p {
-  font-size: 1.05rem;
+  @apply text-[1.05rem] opacity-[0.85];
   line-height: 1.8;
-  opacity: 0.85;
 }
 
 .inline-link {
+  @apply font-bold no-underline transition-opacity duration-300 ease-in-out;
   color: var(--primary-orange);
-  font-weight: 700;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
 }
 
 .inline-link:hover {
-  opacity: 0.8;
-  text-decoration: underline;
+  @apply opacity-80 underline;
 }
 
 .admiral-orion-tip {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  @apply mx-auto flex max-w-[800px] items-start gap-4 rounded-[14px] px-7 py-[22px] text-left;
   background: linear-gradient(135deg, rgba(100, 181, 246, 0.08), rgba(100, 181, 246, 0.02));
   border: 1px solid rgba(100, 181, 246, 0.2);
-  border-radius: 14px;
-  padding: 22px 28px;
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .tip-icon {
-  font-size: 1.8rem;
-  flex-shrink: 0;
-  margin-top: 2px;
+  @apply mt-0.5 shrink-0 text-[1.8rem];
 }
 
 .admiral-orion-tip p {
-  font-size: 0.95rem;
-  opacity: 0.9;
+  @apply m-0 text-[0.95rem] opacity-90;
   line-height: 1.7;
-  margin: 0;
 }
 
 .orion-link {
+  @apply font-bold no-underline transition-opacity duration-300 ease-in-out;
   color: var(--primary-orange);
-  font-weight: 700;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
 }
 
 .orion-link:hover {
-  opacity: 0.8;
-  text-decoration: underline;
+  @apply opacity-80 underline;
 }
 
 /* ── Category Sections ────────────────────────────── */
 .category-section {
-  padding: 80px 20px;
+  @apply px-5 py-20;
   background: var(--dark-bg);
 }
 
@@ -751,70 +698,47 @@ useSEO({
 }
 
 .category-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  margin-bottom: 40px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+  @apply mx-auto mb-10 flex max-w-[900px] items-start gap-6;
 }
 
 .category-icon {
-  font-size: 2.8rem;
-  flex-shrink: 0;
-  margin-top: 4px;
+  @apply mt-1 shrink-0 text-[2.8rem];
 }
 
 .category-header h2 {
-  font-size: 2rem;
+  @apply mb-3 text-[2rem];
   color: var(--primary-orange);
-  margin-bottom: 12px;
 }
 
 .category-header p {
-  font-size: 1.02rem;
-  opacity: 0.82;
+  @apply m-0 text-[1.02rem] opacity-[0.82];
   line-height: 1.75;
-  margin: 0;
 }
 
 /* ── Pricing Tables ───────────────────────────────── */
 .pricing-table-wrapper {
-  overflow-x: auto;
-  max-width: 900px;
-  margin: 0 auto;
+  @apply mx-auto max-w-[900px] overflow-x-auto;
 }
 
 .pricing-table {
-  width: 100%;
+  @apply w-full overflow-hidden rounded-[14px];
   border-collapse: separate;
   border-spacing: 0;
-  border-radius: 14px;
-  overflow: hidden;
   border: 1px solid rgba(255, 107, 53, 0.15);
 }
 
 .pricing-table thead th {
+  @apply px-6 py-[18px] text-left text-[0.8rem] font-bold uppercase;
   background: rgba(255, 107, 53, 0.1);
   color: var(--primary-orange);
-  font-size: 0.8rem;
-  font-weight: 700;
   letter-spacing: 1.5px;
-  text-transform: uppercase;
-  padding: 18px 24px;
-  text-align: left;
   border-bottom: 1px solid rgba(255, 107, 53, 0.2);
 }
 
 .pricing-table tbody td {
-  padding: 20px 24px;
+  @apply px-6 py-5 align-top text-[0.95rem] opacity-[0.85];
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  font-size: 0.95rem;
-  opacity: 0.85;
   line-height: 1.6;
-  vertical-align: top;
 }
 
 .pricing-table tbody tr:last-child td {
@@ -822,7 +746,7 @@ useSEO({
 }
 
 .pricing-table tbody tr {
-  transition: all 0.3s ease;
+  @apply transition-all duration-300 ease-in-out;
 }
 
 .pricing-table tbody tr:hover {
@@ -830,47 +754,36 @@ useSEO({
 }
 
 .package-name {
+  @apply whitespace-nowrap font-bold text-white opacity-100;
   color: white;
-  font-weight: 700;
-  opacity: 1;
-  white-space: nowrap;
 }
 
 .examples {
+  @apply text-[0.88rem] italic;
   color: rgba(255, 255, 255, 0.55);
-  font-size: 0.88rem;
-  font-style: italic;
 }
 
 /* ── Not Sure Section ─────────────────────────────── */
 .not-sure-section {
-  padding: 70px 20px;
+  @apply px-5 py-[70px];
   background: var(--darker-bg);
 }
 
 /* ── Find the Right Package ───────────────────────── */
 .find-package-section {
-  padding: 80px 20px;
+  @apply px-5 py-20;
   background: var(--dark-bg);
 }
 
 .package-options-grid {
-  display: grid;
+  @apply mx-auto grid max-w-[1000px] gap-6;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .package-option-card {
+  @apply flex flex-col rounded-2xl px-7 py-8 text-center transition-all duration-300 ease-in-out;
   background: var(--card-bg);
   border: 1px solid rgba(255, 107, 53, 0.12);
-  border-radius: 16px;
-  padding: 32px 28px;
-  text-align: center;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
 }
 
 .package-option-card:hover {
@@ -884,33 +797,22 @@ useSEO({
 }
 
 .package-option-icon {
-  font-size: 2.2rem;
-  margin-bottom: 14px;
+  @apply mb-[14px] text-[2.2rem];
 }
 
 .package-option-card h3 {
+  @apply mb-3 text-[1.15rem] font-bold;
   color: var(--primary-orange);
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 12px;
 }
 
 .package-option-card p {
-  opacity: 0.8;
-  font-size: 0.92rem;
+  @apply m-0 flex-1 text-[0.92rem] opacity-80;
   line-height: 1.7;
-  margin: 0;
-  flex: 1;
 }
 
 .card-link {
-  display: inline-block;
-  margin-top: 18px;
+  @apply mt-[18px] inline-block text-[0.92rem] font-bold no-underline transition-[letter-spacing] duration-200 ease-in-out;
   color: var(--primary-orange);
-  font-weight: 700;
-  font-size: 0.92rem;
-  text-decoration: none;
-  transition: letter-spacing 0.2s ease;
 }
 
 .card-link:hover {
@@ -919,7 +821,7 @@ useSEO({
 
 /* ── Journey Section ──────────────────────────────── */
 .journey-section {
-  padding: 80px 20px;
+  @apply px-5 py-20;
   background: var(--darker-bg);
 }
 
@@ -929,48 +831,33 @@ useSEO({
 
 /* ── CTA Section ──────────────────────────────────── */
 .cta-section {
-  padding: 80px 20px;
+  @apply px-5 py-20 text-center;
   background: var(--dark-bg);
-  text-align: center;
 }
 
 .cta-content {
-  max-width: 800px;
-  margin: 0 auto;
+  @apply mx-auto max-w-[800px];
 }
 
 .cta-content h2 {
-  color: white;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  @apply mb-5 text-[2.5rem] text-white;
 }
 
 .cta-content p {
-  font-size: 1.1rem;
-  opacity: 0.85;
-  margin-bottom: 35px;
+  @apply mb-[35px] text-[1.1rem] opacity-[0.85];
 }
 
 .cta-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+  @apply flex flex-wrap justify-center gap-5;
 }
 
 .btn {
-  padding: 15px 35px;
-  border-radius: 50px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
-  font-size: 1rem;
+  @apply inline-block rounded-[50px] px-[35px] py-[15px] text-base font-bold no-underline transition-all duration-300 ease-in-out;
 }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
-  color: white;
+  @apply text-white;
 }
 
 .btn-primary:hover {
@@ -987,8 +874,7 @@ useSEO({
 
 .btn-secondary:hover {
   background: var(--primary-orange);
-  color: white;
-  transform: translateY(-2px);
+  @apply -translate-y-0.5 text-white;
 }
 
 /* ── Responsive ───────────────────────────────────── */
