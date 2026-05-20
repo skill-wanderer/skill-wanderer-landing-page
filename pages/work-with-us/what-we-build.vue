@@ -1021,14 +1021,97 @@ useSEO({
     grid-template-columns: 1fr;
   }
 
-  .pricing-table thead th {
-    padding: 12px 14px;
-    font-size: 0.72rem;
+  .pricing-table-wrapper {
+    overflow-x: visible;
+    max-width: 100%;
+  }
+
+  .pricing-table,
+  .pricing-table tbody,
+  .pricing-table tbody tr,
+  .pricing-table tbody td {
+    box-sizing: border-box;
+    min-width: 0;
+  }
+
+  .pricing-table {
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+    overflow: visible;
+    background: rgba(255, 255, 255, 0.015);
+  }
+
+  .pricing-table thead {
+    display: none;
+  }
+
+  .pricing-table tbody {
+    display: grid;
+    gap: 14px;
+    padding: 12px;
+  }
+
+  .pricing-table tbody tr {
+    display: grid;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 107, 53, 0.14);
+    border-radius: 12px;
+  }
+
+  .pricing-table tbody tr:hover {
+    background: rgba(255, 107, 53, 0.045);
   }
 
   .pricing-table tbody td {
-    padding: 14px;
-    font-size: 0.88rem;
+    display: grid;
+    gap: 6px;
+    min-width: 0;
+    padding: 0;
+    border-bottom: none;
+    font-size: 0.92rem;
+  }
+
+  .pricing-table tbody td::before {
+    color: var(--primary-orange);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+  }
+
+  .pricing-table tbody td:first-child::before {
+    content: 'Project';
+  }
+
+  .pricing-table tbody td:nth-child(2)::before {
+    content: 'Details';
+  }
+
+  .journey-table tbody td:first-child::before {
+    content: 'Stage';
+  }
+
+  .journey-table tbody td:nth-child(2)::before {
+    content: 'What Happens';
+  }
+
+  .package-name {
+    display: block;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.35;
+  }
+
+  .examples {
+    display: block;
+    margin-top: 8px;
+    line-height: 1.55;
   }
 
   .category-header h2 {
