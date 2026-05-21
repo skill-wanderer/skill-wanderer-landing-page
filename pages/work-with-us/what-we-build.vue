@@ -14,16 +14,19 @@
         <div class="section-header">
           <h2>How We Work</h2>
           <p>
-            The Skill-Wanderer Guild builds custom software from scratch. Every project is coded with modern frameworks
-            and AI-assisted development &mdash; no WordPress, no page builders, no off-the-shelf templates. The result is
-            clean, fast, and fully yours.
+            The Skill-Wanderer Guild builds custom software from scratch. Every
+            project is coded with modern frameworks and AI-assisted development
+            &mdash; no WordPress, no page builders, no off-the-shelf templates.
+            The result is clean, fast, and fully yours.
           </p>
         </div>
 
         <div class="intro-text">
           <p>
-            We work across a wide range of project types, from simple landing pages to complex platforms. Below is a guide
-            to the kinds of projects the guild takes on, with suggested starting packages based on the work we scope through our
+            We work across a wide range of project types, from simple landing
+            pages to complex platforms. Below is a guide to the kinds of
+            projects the guild takes on, with suggested starting packages based
+            on the work we scope through our
             <NuxtLink to="/contact" class="inline-link">contact page</NuxtLink>.
           </p>
         </div>
@@ -33,9 +36,13 @@
           <div>
             <p>
               <strong>Need quick answers?</strong> Talk to
-              <NuxtLink to="/admiral-orion" class="orion-link">Admiral Orion</NuxtLink> &mdash; our AI assistant
-              can help you figure out what kind of project you have, recommend the right package, and answer questions
-              about how the guild works. Available anytime, no appointment needed.
+              <NuxtLink to="/admiral-orion" class="orion-link"
+                >Admiral Orion</NuxtLink
+              >
+              &mdash; our AI assistant can help you figure out what kind of
+              project you have, recommend the right package, and answer
+              questions about how the guild works. Available anytime, no
+              appointment needed.
             </p>
           </div>
         </div>
@@ -50,8 +57,9 @@
           <div>
             <h2>Websites &amp; Landing Pages</h2>
             <p>
-              Custom-built marketing sites, personal portfolios, startup landing pages, and business websites.
-              Every site is lightweight, mobile-responsive, and built for speed &mdash; with no CMS bloat.
+              Custom-built marketing sites, personal portfolios, startup landing
+              pages, and business websites. Every site is lightweight,
+              mobile-responsive, and built for speed &mdash; with no CMS bloat.
               Content updates are handled by the guild on request.
             </p>
           </div>
@@ -69,22 +77,36 @@
               <tr>
                 <td><span class="package-name">Single Landing Page</span></td>
                 <td>
-                  One-page sites designed to convert: product launches, event signups, waitlists, or personal brand pages.
-                  <br /><span class="examples">Examples: Startup launch page, event registration site, personal portfolio, coming soon page.</span>
+                  One-page sites designed to convert: product launches, event
+                  signups, waitlists, or personal brand pages.
+                  <br /><span class="examples"
+                    >Examples: Startup launch page, event registration site,
+                    personal portfolio, coming soon page.</span
+                  >
                 </td>
               </tr>
               <tr>
                 <td><span class="package-name">Multi-Page Website</span></td>
                 <td>
-                  Full business websites with multiple pages, navigation, and structured content. Custom design, no templates.
-                  <br /><span class="examples">Examples: Company website, agency portfolio, restaurant site, professional services.</span>
+                  Full business websites with multiple pages, navigation, and
+                  structured content. Custom design, no templates.
+                  <br /><span class="examples"
+                    >Examples: Company website, agency portfolio, restaurant
+                    site, professional services.</span
+                  >
                 </td>
               </tr>
               <tr>
-                <td><span class="package-name">Complex Marketing Site</span></td>
                 <td>
-                  Feature-rich sites with animations, interactive elements, multi-language support, or advanced integrations.
-                  <br /><span class="examples">Examples: Investor-facing startup site, product showcase with demos, content-heavy editorial site.</span>
+                  <span class="package-name">Complex Marketing Site</span>
+                </td>
+                <td>
+                  Feature-rich sites with animations, interactive elements,
+                  multi-language support, or advanced integrations.
+                  <br /><span class="examples"
+                    >Examples: Investor-facing startup site, product showcase
+                    with demos, content-heavy editorial site.</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -101,8 +123,10 @@
           <div>
             <h2>Web Applications</h2>
             <p>
-              Full-stack custom web applications including SaaS products, internal tools, admin dashboards, customer portals,
-              and data-driven platforms. Built with modern frameworks, deployed for scale.
+              Full-stack custom web applications including SaaS products,
+              internal tools, admin dashboards, customer portals, and
+              data-driven platforms. Built with modern frameworks, deployed for
+              scale.
             </p>
           </div>
         </div>
@@ -117,24 +141,40 @@
             </thead>
             <tbody>
               <tr>
-                <td><span class="package-name">Internal Tools &amp; Dashboards</span></td>
                 <td>
-                  Admin panels, reporting dashboards, data visualization tools, and internal workflow apps built for your team.
-                  <br /><span class="examples">Examples: HR dashboard, inventory tracker, analytics portal, project management board.</span>
+                  <span class="package-name"
+                    >Internal Tools &amp; Dashboards</span
+                  >
+                </td>
+                <td>
+                  Admin panels, reporting dashboards, data visualization tools,
+                  and internal workflow apps built for your team.
+                  <br /><span class="examples"
+                    >Examples: HR dashboard, inventory tracker, analytics
+                    portal, project management board.</span
+                  >
                 </td>
               </tr>
               <tr>
                 <td><span class="package-name">Customer-Facing Apps</span></td>
                 <td>
-                  User-facing applications with authentication, profiles, real-time features, and payment integration.
-                  <br /><span class="examples">Examples: Booking platform, client portal, subscription service, community platform.</span>
+                  User-facing applications with authentication, profiles,
+                  real-time features, and payment integration.
+                  <br /><span class="examples"
+                    >Examples: Booking platform, client portal, subscription
+                    service, community platform.</span
+                  >
                 </td>
               </tr>
               <tr>
                 <td><span class="package-name">SaaS Products</span></td>
                 <td>
-                  Multi-tenant software-as-a-service products built for scale. Architecture, MVP development, and iterative feature building.
-                  <br /><span class="examples">Examples: Project management SaaS, CRM tool, invoicing platform, scheduling system.</span>
+                  Multi-tenant software-as-a-service products built for scale.
+                  Architecture, MVP development, and iterative feature building.
+                  <br /><span class="examples"
+                    >Examples: Project management SaaS, CRM tool, invoicing
+                    platform, scheduling system.</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -151,8 +191,10 @@
           <div>
             <h2>E-Commerce &amp; Marketplaces</h2>
             <p>
-              Custom e-commerce solutions and marketplace platforms. No Shopify templates &mdash; fully custom storefronts
-              with payment processing, inventory management, and order workflows built to your exact needs.
+              Custom e-commerce solutions and marketplace platforms. No Shopify
+              templates &mdash; fully custom storefronts with payment
+              processing, inventory management, and order workflows built to
+              your exact needs.
             </p>
           </div>
         </div>
@@ -169,15 +211,24 @@
               <tr>
                 <td><span class="package-name">Simple Storefront</span></td>
                 <td>
-                  A clean, custom online store with product listings, cart, and checkout. Integrated with payment providers like Stripe or PayPal.
-                  <br /><span class="examples">Examples: Artisan product shop, digital goods store, small business e-commerce.</span>
+                  A clean, custom online store with product listings, cart, and
+                  checkout. Integrated with payment providers like Stripe or
+                  PayPal.
+                  <br /><span class="examples"
+                    >Examples: Artisan product shop, digital goods store, small
+                    business e-commerce.</span
+                  >
                 </td>
               </tr>
               <tr>
                 <td><span class="package-name">Marketplace Platform</span></td>
                 <td>
-                  Multi-vendor marketplaces with seller management, commission handling, reviews, and complex order routing.
-                  <br /><span class="examples">Examples: Service marketplace, freelancer platform, local goods marketplace.</span>
+                  Multi-vendor marketplaces with seller management, commission
+                  handling, reviews, and complex order routing.
+                  <br /><span class="examples"
+                    >Examples: Service marketplace, freelancer platform, local
+                    goods marketplace.</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -194,8 +245,10 @@
           <div>
             <h2>EdTech &amp; LMS Platforms</h2>
             <p>
-              Education technology is core to the guild's DNA. We build custom learning management systems, course platforms,
-              and educational tools &mdash; replacing bloated legacy systems like Moodle with modern, purpose-built alternatives.
+              Education technology is core to the guild's DNA. We build custom
+              learning management systems, course platforms, and educational
+              tools &mdash; replacing bloated legacy systems like Moodle with
+              modern, purpose-built alternatives.
             </p>
           </div>
         </div>
@@ -212,15 +265,25 @@
               <tr>
                 <td><span class="package-name">Course Platform</span></td>
                 <td>
-                  Custom course delivery with lesson structures, progress tracking, quizzes, and certificates. Replacing Moodle, Teachable, or Thinkific with something you actually own.
-                  <br /><span class="examples">Examples: Online academy, corporate training portal, coding bootcamp platform.</span>
+                  Custom course delivery with lesson structures, progress
+                  tracking, quizzes, and certificates. Replacing Moodle,
+                  Teachable, or Thinkific with something you actually own.
+                  <br /><span class="examples"
+                    >Examples: Online academy, corporate training portal, coding
+                    bootcamp platform.</span
+                  >
                 </td>
               </tr>
               <tr>
                 <td><span class="package-name">Learning Community</span></td>
                 <td>
-                  Platforms combining learning content with community features: forums, mentorship matching, project collaboration, and guild-style progression systems.
-                  <br /><span class="examples">Examples: Developer community, study group platform, peer learning network.</span>
+                  Platforms combining learning content with community features:
+                  forums, mentorship matching, project collaboration, and
+                  guild-style progression systems.
+                  <br /><span class="examples"
+                    >Examples: Developer community, study group platform, peer
+                    learning network.</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -237,8 +300,10 @@
           <div>
             <h2>AI Applications &amp; Platforms</h2>
             <p>
-              Custom AI-powered products and integrations. From chatbots and content generators to intelligent automation
-              and AI-assisted workflows. We build practical AI applications that solve real problems &mdash; not demos.
+              Custom AI-powered products and integrations. From chatbots and
+              content generators to intelligent automation and AI-assisted
+              workflows. We build practical AI applications that solve real
+              problems &mdash; not demos.
             </p>
           </div>
         </div>
@@ -253,24 +318,43 @@
             </thead>
             <tbody>
               <tr>
-                <td><span class="package-name">AI Chatbots &amp; Assistants</span></td>
                 <td>
-                  Custom conversational AI built on top of LLMs, tailored to your business data, tone, and workflows. Embeddable in websites, apps, or internal tools.
-                  <br /><span class="examples">Examples: Customer support bot, knowledge base assistant, onboarding guide, sales qualification chatbot.</span>
+                  <span class="package-name">AI Chatbots &amp; Assistants</span>
+                </td>
+                <td>
+                  Custom conversational AI built on top of LLMs, tailored to
+                  your business data, tone, and workflows. Embeddable in
+                  websites, apps, or internal tools.
+                  <br /><span class="examples"
+                    >Examples: Customer support bot, knowledge base assistant,
+                    onboarding guide, sales qualification chatbot.</span
+                  >
                 </td>
               </tr>
               <tr>
                 <td><span class="package-name">AI-Powered Tools</span></td>
                 <td>
-                  Standalone applications that use AI for content generation, data analysis, summarization, classification, or recommendation.
-                  <br /><span class="examples">Examples: Document summarizer, AI writing assistant, product recommendation engine, resume screener.</span>
+                  Standalone applications that use AI for content generation,
+                  data analysis, summarization, classification, or
+                  recommendation.
+                  <br /><span class="examples"
+                    >Examples: Document summarizer, AI writing assistant,
+                    product recommendation engine, resume screener.</span
+                  >
                 </td>
               </tr>
               <tr>
-                <td><span class="package-name">AI Platform Integration</span></td>
                 <td>
-                  Embedding AI capabilities into existing systems: smart search, automated tagging, predictive features, or intelligent workflows.
-                  <br /><span class="examples">Examples: AI-enhanced CRM, smart inventory forecasting, automated content moderation, intelligent routing.</span>
+                  <span class="package-name">AI Platform Integration</span>
+                </td>
+                <td>
+                  Embedding AI capabilities into existing systems: smart search,
+                  automated tagging, predictive features, or intelligent
+                  workflows.
+                  <br /><span class="examples"
+                    >Examples: AI-enhanced CRM, smart inventory forecasting,
+                    automated content moderation, intelligent routing.</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -287,9 +371,11 @@
           <div>
             <h2>Mobile Apps &amp; Progressive Web Apps</h2>
             <p>
-              Native-feel mobile experiences built as progressive web apps (PWAs) or cross-platform mobile applications.
-              PWAs are our recommended approach for most use cases &mdash; they work across all devices, install like native apps,
-              and don't require app store approval.
+              Native-feel mobile experiences built as progressive web apps
+              (PWAs) or cross-platform mobile applications. PWAs are our
+              recommended approach for most use cases &mdash; they work across
+              all devices, install like native apps, and don't require app store
+              approval.
             </p>
           </div>
         </div>
@@ -306,15 +392,26 @@
               <tr>
                 <td><span class="package-name">Progressive Web App</span></td>
                 <td>
-                  Web applications that behave like native mobile apps: offline support, push notifications, home screen installation. One codebase, all devices.
-                  <br /><span class="examples">Examples: Field service app, event companion app, mobile dashboard, offline-capable tool.</span>
+                  Web applications that behave like native mobile apps: offline
+                  support, push notifications, home screen installation. One
+                  codebase, all devices.
+                  <br /><span class="examples"
+                    >Examples: Field service app, event companion app, mobile
+                    dashboard, offline-capable tool.</span
+                  >
                 </td>
               </tr>
               <tr>
-                <td><span class="package-name">Cross-Platform Mobile App</span></td>
                 <td>
-                  Mobile applications built with React Native or similar frameworks for both iOS and Android from a single codebase.
-                  <br /><span class="examples">Examples: Consumer app, delivery tracking, health tracker, social app.</span>
+                  <span class="package-name">Cross-Platform Mobile App</span>
+                </td>
+                <td>
+                  Mobile applications built with React Native or similar
+                  frameworks for both iOS and Android from a single codebase.
+                  <br /><span class="examples"
+                    >Examples: Consumer app, delivery tracking, health tracker,
+                    social app.</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -331,8 +428,10 @@
           <div>
             <h2>API Development &amp; Integrations</h2>
             <p>
-              Custom APIs, third-party integrations, and backend services. Whether you need to connect existing systems,
-              build a new API for your product, or integrate with payment providers, CRMs, or external data sources.
+              Custom APIs, third-party integrations, and backend services.
+              Whether you need to connect existing systems, build a new API for
+              your product, or integrate with payment providers, CRMs, or
+              external data sources.
             </p>
           </div>
         </div>
@@ -349,15 +448,26 @@
               <tr>
                 <td><span class="package-name">Custom API</span></td>
                 <td>
-                  RESTful or GraphQL APIs designed for your product or internal systems. Documented, tested, and built for scale.
-                  <br /><span class="examples">Examples: Product API for mobile app, data access layer, webhook system, public API for partners.</span>
+                  RESTful or GraphQL APIs designed for your product or internal
+                  systems. Documented, tested, and built for scale.
+                  <br /><span class="examples"
+                    >Examples: Product API for mobile app, data access layer,
+                    webhook system, public API for partners.</span
+                  >
                 </td>
               </tr>
               <tr>
-                <td><span class="package-name">Third-Party Integration</span></td>
                 <td>
-                  Connecting your systems with external services: payment gateways, CRMs, email providers, analytics, or any service with an API.
-                  <br /><span class="examples">Examples: Stripe/PayPal integration, HubSpot sync, email automation, calendar integration.</span>
+                  <span class="package-name">Third-Party Integration</span>
+                </td>
+                <td>
+                  Connecting your systems with external services: payment
+                  gateways, CRMs, email providers, analytics, or any service
+                  with an API.
+                  <br /><span class="examples"
+                    >Examples: Stripe/PayPal integration, HubSpot sync, email
+                    automation, calendar integration.</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -374,8 +484,10 @@
           <div>
             <h2>Automation &amp; Workflow Tools</h2>
             <p>
-              Custom automation that eliminates repetitive work. From simple task automation to complex multi-step workflows
-              connecting multiple systems. Built as standalone tools or integrated into your existing stack.
+              Custom automation that eliminates repetitive work. From simple
+              task automation to complex multi-step workflows connecting
+              multiple systems. Built as standalone tools or integrated into
+              your existing stack.
             </p>
           </div>
         </div>
@@ -392,15 +504,25 @@
               <tr>
                 <td><span class="package-name">Simple Automation</span></td>
                 <td>
-                  Single-purpose automations: scheduled tasks, data syncs, notification triggers, report generation, or file processing.
-                  <br /><span class="examples">Examples: Daily report emailer, lead notification bot, invoice generator, data backup automation.</span>
+                  Single-purpose automations: scheduled tasks, data syncs,
+                  notification triggers, report generation, or file processing.
+                  <br /><span class="examples"
+                    >Examples: Daily report emailer, lead notification bot,
+                    invoice generator, data backup automation.</span
+                  >
                 </td>
               </tr>
               <tr>
                 <td><span class="package-name">Workflow Systems</span></td>
                 <td>
-                  Multi-step workflow engines connecting multiple tools and systems. Approval chains, pipeline management, and conditional logic.
-                  <br /><span class="examples">Examples: Order processing pipeline, content approval workflow, employee onboarding automation, multi-step sales funnel.</span>
+                  Multi-step workflow engines connecting multiple tools and
+                  systems. Approval chains, pipeline management, and conditional
+                  logic.
+                  <br /><span class="examples"
+                    >Examples: Order processing pipeline, content approval
+                    workflow, employee onboarding automation, multi-step sales
+                    funnel.</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -417,8 +539,10 @@
           <div>
             <h2>Legacy System Replacement</h2>
             <p>
-              Replacing outdated platforms with modern, custom-built alternatives. WordPress, Moodle, legacy PHP apps, aging CRMs
-              &mdash; if your current system is slow, expensive to maintain, or holding you back, the guild builds its replacement.
+              Replacing outdated platforms with modern, custom-built
+              alternatives. WordPress, Moodle, legacy PHP apps, aging CRMs
+              &mdash; if your current system is slow, expensive to maintain, or
+              holding you back, the guild builds its replacement.
             </p>
           </div>
         </div>
@@ -435,15 +559,25 @@
               <tr>
                 <td><span class="package-name">WordPress Replacement</span></td>
                 <td>
-                  Migrate from WordPress to a custom-built site with no plugins, no security vulnerabilities, and no performance bottlenecks. Content updates handled by the guild.
-                  <br /><span class="examples">Examples: Business site migration, blog migration, membership site replacement.</span>
+                  Migrate from WordPress to a custom-built site with no plugins,
+                  no security vulnerabilities, and no performance bottlenecks.
+                  Content updates handled by the guild.
+                  <br /><span class="examples"
+                    >Examples: Business site migration, blog migration,
+                    membership site replacement.</span
+                  >
                 </td>
               </tr>
               <tr>
                 <td><span class="package-name">Platform Migration</span></td>
                 <td>
-                  Full platform replacement for larger systems: LMS, CRM, ERP, or custom internal tools. Includes data migration, feature parity analysis, and phased rollout.
-                  <br /><span class="examples">Examples: Moodle to custom LMS, legacy CRM replacement, outdated internal tools modernization.</span>
+                  Full platform replacement for larger systems: LMS, CRM, ERP,
+                  or custom internal tools. Includes data migration, feature
+                  parity analysis, and phased rollout.
+                  <br /><span class="examples"
+                    >Examples: Moodle to custom LMS, legacy CRM replacement,
+                    outdated internal tools modernization.</span
+                  >
                 </td>
               </tr>
             </tbody>
@@ -458,9 +592,11 @@
         <div class="section-header">
           <h2>Not Sure Where Your Project Fits?</h2>
           <p>
-            The categories above are a guide, not a constraint. Many projects span multiple categories &mdash; an EdTech
-            platform with AI features, a marketplace with custom automation, a mobile app with API integrations. The guild
-            is built to handle cross-cutting complexity.
+            The categories above are a guide, not a constraint. Many projects
+            span multiple categories &mdash; an EdTech platform with AI
+            features, a marketplace with custom automation, a mobile app with
+            API integrations. The guild is built to handle cross-cutting
+            complexity.
           </p>
         </div>
       </div>
@@ -472,8 +608,9 @@
         <div class="section-header">
           <h2>Find the Right Package</h2>
           <p>
-            Every project is different, and the right starting point depends on your scope, timeline, and budget.
-            There are three ways to find the best fit:
+            Every project is different, and the right starting point depends on
+            your scope, timeline, and budget. There are three ways to find the
+            best fit:
           </p>
         </div>
 
@@ -482,27 +619,38 @@
             <div class="package-option-icon">📋</div>
             <h3>Talk Through Scope</h3>
             <p>
-              Tell us what you are building and we will recommend the right starting point, delivery model, and next step for your project.
+              Tell us what you are building and we will recommend the right
+              starting point, delivery model, and next step for your project.
             </p>
-            <NuxtLink to="/contact" class="card-link">Start the Conversation &rarr;</NuxtLink>
+            <NuxtLink to="/contact" class="card-link"
+              >Start the Conversation &rarr;</NuxtLink
+            >
           </div>
           <div class="package-option-card featured">
             <div class="package-option-icon">🤖</div>
             <h3>Talk to Our AI Assistant</h3>
             <p>
-              Describe your project to our AI assistant on the website and it will recommend the right package, estimate scope,
-              and answer questions about how the guild works &mdash; available anytime, no appointment needed.
+              Describe your project to our AI assistant on the website and it
+              will recommend the right package, estimate scope, and answer
+              questions about how the guild works &mdash; available anytime, no
+              appointment needed.
             </p>
-            <NuxtLink to="/admiral-orion" class="card-link">Talk to Admiral Orion &rarr;</NuxtLink>
+            <NuxtLink to="/admiral-orion" class="card-link"
+              >Talk to Admiral Orion &rarr;</NuxtLink
+            >
           </div>
           <div class="package-option-card">
             <div class="package-option-icon">📞</div>
             <h3>Book a Call</h3>
             <p>
-              For complex projects or partnership discussions, schedule a call directly with the Guild Master. We will scope
-              the work together, identify the right approach, and map a path from first delivery to long-term development.
+              For complex projects or partnership discussions, schedule a call
+              directly with the Guild Master. We will scope the work together,
+              identify the right approach, and map a path from first delivery to
+              long-term development.
             </p>
-            <NuxtLink to="/contact" class="card-link">Get in Touch &rarr;</NuxtLink>
+            <NuxtLink to="/contact" class="card-link"
+              >Get in Touch &rarr;</NuxtLink
+            >
           </div>
         </div>
       </div>
@@ -526,23 +674,38 @@
             <tbody>
               <tr>
                 <td><span class="package-name">Explore</span></td>
-                <td>You have an idea or a problem. We have a conversation. No commitment, no cost.</td>
+                <td>
+                  You have an idea or a problem. We have a conversation. No
+                  commitment, no cost.
+                </td>
               </tr>
               <tr>
                 <td><span class="package-name">Validate</span></td>
-                <td>A Quick Build or Trust Sprint to test the concept, establish workflow, and deliver something real.</td>
+                <td>
+                  A Quick Build or Trust Sprint to test the concept, establish
+                  workflow, and deliver something real.
+                </td>
               </tr>
               <tr>
                 <td><span class="package-name">Build</span></td>
-                <td>Sprint-based development: the guild ships features iteratively with your feedback shaping every cycle.</td>
+                <td>
+                  Sprint-based development: the guild ships features iteratively
+                  with your feedback shaping every cycle.
+                </td>
               </tr>
               <tr>
                 <td><span class="package-name">Sustain</span></td>
-                <td>Retainer or maintenance to keep the product healthy, evolving, and supported long-term.</td>
+                <td>
+                  Retainer or maintenance to keep the product healthy, evolving,
+                  and supported long-term.
+                </td>
               </tr>
               <tr>
                 <td><span class="package-name">Transfer</span></td>
-                <td>When you are ready, Knowledge Transfer ensures your team or next partner can take over with confidence.</td>
+                <td>
+                  When you are ready, Knowledge Transfer ensures your team or
+                  next partner can take over with confidence.
+                </td>
               </tr>
             </tbody>
           </table>
@@ -554,10 +717,17 @@
     <section class="cta-section">
       <div class="cta-content">
         <h2>Ready to Build with the Guild?</h2>
-        <p>Tell us what you are building. We will tell you how the guild can help.</p>
+        <p>
+          Tell us what you are building. We will tell you how the guild can
+          help.
+        </p>
         <div class="cta-buttons">
-          <NuxtLink to="/contact" class="btn btn-primary">Start a Conversation</NuxtLink>
-          <NuxtLink to="/work-with-us" class="btn btn-secondary">See How We Work</NuxtLink>
+          <NuxtLink to="/contact" class="btn btn-primary"
+            >Start a Conversation</NuxtLink
+          >
+          <NuxtLink to="/work-with-us" class="btn btn-secondary"
+            >See How We Work</NuxtLink
+          >
         </div>
       </div>
     </section>
@@ -571,11 +741,23 @@ useSEO({
   description:
     'Custom software built by the Skill-Wanderer Guild. Websites, web apps, e-commerce, EdTech, AI applications, mobile apps, APIs, automation, and legacy system replacement.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['custom software development', 'web application development', 'e-commerce development', 'EdTech platform', 'AI application', 'mobile app development', 'API development', 'legacy system replacement'],
+  keywords: [
+    'custom software development',
+    'web application development',
+    'e-commerce development',
+    'EdTech platform',
+    'AI application',
+    'mobile app development',
+    'API development',
+    'legacy system replacement',
+  ],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
-    { name: 'What We Build', url: 'https://skill-wanderer.com/work-with-us/what-we-build' },
+    {
+      name: 'What We Build',
+      url: 'https://skill-wanderer.com/work-with-us/what-we-build',
+    },
   ]),
 })
 </script>
@@ -594,8 +776,16 @@ useSEO({
   content: '';
   @apply absolute inset-0;
   background:
-    radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.06) 0%, transparent 40%);
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(255, 107, 53, 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 107, 53, 0.06) 0%,
+      transparent 40%
+    );
 }
 
 .hero-eyebrow {
@@ -617,7 +807,11 @@ useSEO({
 
 .launch-badge {
   @apply relative z-[1] inline-block rounded-[50px] px-[30px] py-3 text-base font-bold text-white;
-  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  background: linear-gradient(
+    135deg,
+    var(--primary-orange),
+    var(--deep-orange)
+  );
 }
 
 /* ── Shared ────────────────────────────────────────── */
@@ -665,7 +859,11 @@ useSEO({
 
 .admiral-orion-tip {
   @apply mx-auto flex max-w-[800px] items-start gap-4 rounded-[14px] px-7 py-[22px] text-left;
-  background: linear-gradient(135deg, rgba(100, 181, 246, 0.08), rgba(100, 181, 246, 0.02));
+  background: linear-gradient(
+    135deg,
+    rgba(100, 181, 246, 0.08),
+    rgba(100, 181, 246, 0.02)
+  );
   border: 1px solid rgba(100, 181, 246, 0.2);
 }
 
@@ -793,7 +991,11 @@ useSEO({
 
 .package-option-card.featured {
   border-color: rgba(255, 107, 53, 0.3);
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 107, 53, 0.02));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 53, 0.08),
+    rgba(255, 107, 53, 0.02)
+  );
 }
 
 .package-option-icon {
@@ -856,12 +1058,20 @@ useSEO({
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  background: linear-gradient(
+    135deg,
+    var(--primary-orange),
+    var(--deep-orange)
+  );
   @apply text-white;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--deep-orange), var(--primary-orange));
+  background: linear-gradient(
+    135deg,
+    var(--deep-orange),
+    var(--primary-orange)
+  );
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
 }
@@ -880,73 +1090,57 @@ useSEO({
 /* ── Responsive ───────────────────────────────────── */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem;
+    @apply text-[2.5rem];
   }
 
   .hero p {
-    font-size: 1.1rem;
+    @apply text-[1.1rem];
   }
 
   .section-header h2 {
-    font-size: 2rem;
+    @apply text-[2rem];
   }
 
   .category-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    @apply flex-col items-center text-center;
   }
 
   .admiral-orion-tip {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    @apply flex-col items-center text-center;
   }
 
   .package-options-grid {
-    grid-template-columns: 1fr;
+    @apply grid-cols-1;
   }
 
   .pricing-table-wrapper {
-    overflow-x: visible;
-    max-width: 100%;
+    @apply max-w-full overflow-x-visible;
   }
 
   .pricing-table,
   .pricing-table tbody,
   .pricing-table tbody tr,
   .pricing-table tbody td {
-    box-sizing: border-box;
-    min-width: 0;
+    @apply box-border min-w-0;
   }
 
   .pricing-table {
-    display: block;
-    width: 100%;
-    border-radius: 14px;
-    overflow: visible;
+    @apply block w-full overflow-visible rounded-[14px];
     background: rgba(255, 255, 255, 0.015);
   }
 
   .pricing-table thead {
-    display: none;
+    @apply hidden;
   }
 
   .pricing-table tbody {
-    display: grid;
-    gap: 14px;
-    padding: 12px;
+    @apply grid gap-[14px] p-3;
   }
 
   .pricing-table tbody tr {
-    display: grid;
-    gap: 12px;
-    width: 100%;
-    min-width: 0;
-    padding: 18px;
+    @apply grid w-full min-w-0 gap-3 rounded-xl p-[18px];
     background: rgba(255, 255, 255, 0.025);
     border: 1px solid rgba(255, 107, 53, 0.14);
-    border-radius: 12px;
   }
 
   .pricing-table tbody tr:hover {
@@ -954,21 +1148,12 @@ useSEO({
   }
 
   .pricing-table tbody td {
-    display: grid;
-    gap: 6px;
-    min-width: 0;
-    padding: 0;
-    border-bottom: none;
-    font-size: 0.92rem;
+    @apply grid min-w-0 gap-1.5 border-b-0 p-0 text-[0.92rem];
   }
 
   .pricing-table tbody td::before {
+    @apply text-[0.72rem] font-bold uppercase opacity-90 tracking-[1.5px];
     color: var(--primary-orange);
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    opacity: 0.9;
   }
 
   .pricing-table tbody td:first-child::before {
@@ -988,20 +1173,16 @@ useSEO({
   }
 
   .package-name {
-    display: block;
-    white-space: normal;
+    @apply block whitespace-normal leading-[1.35];
     overflow-wrap: anywhere;
-    line-height: 1.35;
   }
 
   .examples {
-    display: block;
-    margin-top: 8px;
-    line-height: 1.55;
+    @apply mt-2 block leading-[1.55];
   }
 
   .category-header h2 {
-    font-size: 1.6rem;
+    @apply text-[1.6rem];
   }
 }
 </style>
