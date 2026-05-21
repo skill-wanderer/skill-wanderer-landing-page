@@ -6,7 +6,7 @@
         <NuxtLink to="/principles">Guild Principles</NuxtLink>
         <NuxtLink to="/work-with-us">Engage the Guild</NuxtLink>
         <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
-        <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
+        <NuxtLink to="https://wanderings.skill-wanderer.com">Wanderings Blog</NuxtLink>
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
         <NuxtLink to="/contact">Contact</NuxtLink>
         <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
