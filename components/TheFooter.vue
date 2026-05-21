@@ -1,39 +1,73 @@
 <template>
-  <footer>    <div class="footer-content">
+  <footer>
+    <div class="footer-content">
       <div class="footer-links">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/principles">Guild Principles</NuxtLink>
         <NuxtLink to="/work-with-us">Engage the Guild</NuxtLink>
-        <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
-        <NuxtLink to="https://wanderings.skill-wanderer.com">Wanderings Blog</NuxtLink>
-        <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
+        <a
+          href="https://dojo.skill-wanderer.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Dojo</a
+        >
+        <a
+          href="https://wanderings.skill-wanderer.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Wanderings Blog</a
+        >
+        <a
+          href="https://linkedin.com/company/skill-wanderer"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Company LinkedIn</a
+        >
         <NuxtLink to="/contact">Contact</NuxtLink>
         <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
         <NuxtLink to="/terms-of-service">Terms of Service</NuxtLink>
         <NuxtLink to="/cookie-policy">Cookie Policy</NuxtLink>
         <!-- Easter egg: Hidden link to mission page -->
-        <NuxtLink to="/mission" class="easter-egg-footer" title="The Heart of Skill-Wanderer (Motivation for Founder)">❤️</NuxtLink>
+        <NuxtLink
+          to="/mission"
+          class="easter-egg-footer"
+          title="The Heart of Skill-Wanderer (Motivation for Founder)"
+          >❤️</NuxtLink
+        >
       </div>
-      
+
       <div class="open-source-info">
         <p>
-          This website is open source! 
-          <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">
+          This website is open source!
+          <a
+            href="https://github.com/skill-wanderer/skill-wanderer-landing-page"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View source code on GitHub"
+          >
             <span aria-hidden="true">⚡</span> View the source code
-          </a> 
+          </a>
           and contribute to the guild's mission.
         </p>
       </div>
-      
-      <p>Licensed under the <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>. Skill-Wanderer is open source.</p>
+
+      <p>
+        Licensed under the
+        <a
+          href="https://github.com/skill-wanderer/skill-wanderer-landing-page/blob/main/LICENSE"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Apache License 2.0</a
+        >. Skill-Wanderer is open source.
+      </p>
     </div>
   </footer>
 </template>
 
 <style scoped>
 :root {
-  --primary-orange: #FF6B35;
+  --primary-orange: #ff6b35;
   --deeper-bg: #0f0f0f;
   --light-text: #e0e0e0;
 }
@@ -112,12 +146,24 @@ footer {
 }
 
 @keyframes heartBeat {
-  0% { transform: scale(1); }
-  15% { transform: scale(1.3); }
-  30% { transform: scale(1); }
-  45% { transform: scale(1.3); }
-  60% { transform: scale(1); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.3);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.3);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Responsive */
