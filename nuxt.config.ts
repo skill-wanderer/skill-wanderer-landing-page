@@ -65,6 +65,8 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    resendApiKey: process.env.NUXT_RESEND_API_KEY || process.env.RESEND_API_KEY || '',
+    resendFromEmail: process.env.NUXT_RESEND_FROM_EMAIL || process.env.RESEND_FROM_EMAIL || '',
     public: {
       firebase: {
         apiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY || 'AIzaSyCr_1Fo6hzJDsKZrjw2u3HlrFhBnfeHmxE',

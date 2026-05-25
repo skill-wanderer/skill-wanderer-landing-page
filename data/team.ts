@@ -173,4 +173,38 @@ She is here to grow, contribute, and prove that the best testers are the ones wh
       'Demonstrated strong QA discipline through high-scoring mentorship submissions',
     ],
   },
+  {
+    slug: 'duy-anh-dao',
+    name: 'Duy Anh Dao',
+    role: 'Software Engineering Associate',
+    badge: '⭐ Team Member',
+    avatar: '/learners/duy-anh-dao.jpg',
+    tagline:
+      'Building scalable backend systems while continuously mastering the craft of software engineering',
+    location: 'Vietnam',
+    title: 'Software Engineering Associate',
+    github: 'https://github.com/your-github-username',
+    linkedin: 'https://www.linkedin.com/in/your-linkedin',
+    bio: `Duy Anh is a software engineer focused on backend development, system design, and continuous learning. With hands-on experience building full-stack applications using Java Spring Boot, React, TypeScript, and MySQL, he approaches software engineering with a strong problem-solving mindset and a passion for building practical, production-oriented systems.
+
+  At Skill-Wanderer, Duy Anh is expanding his experience in collaborative development, open-source contribution, and full-cycle product delivery while sharpening both his technical depth and engineering discipline.`,
+    skills: [
+      'Java',
+      'Spring Boot',
+      'REST API Development',
+      'React',
+      'TypeScript',
+      'MySQL',
+      'Git & GitHub',
+      'Problem Solving',
+      'System Design Fundamentals',
+    ],
+    contributions: [
+      'Contributing to frontend and backend development tasks',
+      'Participating in collaborative agile workflows and Jira-based task management',
+      'Building and maintaining full-stack application features',
+      'Exploring scalable backend architecture and deployment practices',
+      'Supporting continuous improvement through learning, debugging, and iteration',
+    ],
+  },
 ]
