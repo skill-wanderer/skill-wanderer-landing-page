@@ -162,19 +162,19 @@ const restorePendingRequestNotice = () => {
   }
 }
 
-onMounted(() => {
-  const handlePageHide = () => {
-    isPageUnloading.value = true
-  }
+const handlePageHide = () => {
+  isPageUnloading.value = true
+}
 
+onMounted(() => {
   window.addEventListener('pagehide', handlePageHide)
   window.addEventListener('beforeunload', handlePageHide)
   restorePendingRequestNotice()
+})
 
-  onBeforeUnmount(() => {
-    window.removeEventListener('pagehide', handlePageHide)
-    window.removeEventListener('beforeunload', handlePageHide)
-  })
+onBeforeUnmount(() => {
+  window.removeEventListener('pagehide', handlePageHide)
+  window.removeEventListener('beforeunload', handlePageHide)
 })
 
 const handleSubscribe = async () => {
