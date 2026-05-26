@@ -7,8 +7,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "wrangler dev",
-    "deploy": "nuxt build && wrangler deploy",
+    "preview": "nuxt build && wrangler dev .output/server/index.mjs --assets .output/public",
+    "deploy": "nuxt build && wrangler deploy .output/server/index.mjs --assets .output/public",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck"
   },
@@ -29,6 +29,6 @@
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.10",
-    "wrangler": "^3.90.0"
+    "wrangler": "^4.94.0"
   }
 }
