@@ -41,15 +41,39 @@ export interface PracticeExample {
 
 export interface SubscribeRequest {
   email: string
+  source?: 'home' | 'contact'
 }
+
+export type SubscribeSuccessStatus = 'accepted' | 'confirmed'
+
+export type SubscribeFailureStatus = 'invalid' | 'throttled' | 'unavailable' | 'failed'
+
+export type SubscribeFailureCode =
+  | 'SUBSCRIBE_INVALID_BODY'
+  | 'SUBSCRIBE_EMAIL_REQUIRED'
+  | 'SUBSCRIBE_INVALID_EMAIL'
+  | 'SUBSCRIBE_EMAIL_TOO_LONG'
+  | 'SUBSCRIBE_THROTTLED'
+  | 'SUBSCRIBE_CONFIG_MISSING'
+  | 'SUBSCRIBE_PROVIDER_REJECTED'
+  | 'SUBSCRIBE_PROVIDER_NO_DATA'
+  | 'SUBSCRIBE_PROVIDER_EXCEPTION'
 
 export type SubscribeResponse =
   | {
-      success: true
+      ok: true
+      status: SubscribeSuccessStatus
+      message: string
+      requestId: string
     }
   | {
-      success: false
+      ok: false
+      status: SubscribeFailureStatus
+      code: SubscribeFailureCode
       message: string
+      requestId: string
+      retryable: boolean
+      retryAfterSeconds?: number
     }
 
 // Extend global types if needed
