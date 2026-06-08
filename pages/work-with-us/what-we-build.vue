@@ -789,6 +789,7 @@ useSEO({
 
 .pricing-table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 14px;
@@ -833,7 +834,9 @@ useSEO({
   color: white;
   font-weight: 700;
   opacity: 1;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .examples {
@@ -1021,14 +1024,31 @@ useSEO({
     grid-template-columns: 1fr;
   }
 
+  .pricing-table-wrapper {
+    overflow-x: visible;
+  }
+
   .pricing-table thead th {
     padding: 12px 14px;
     font-size: 0.72rem;
+    letter-spacing: 0.08em;
   }
 
   .pricing-table tbody td {
     padding: 14px;
     font-size: 0.88rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .pricing-table thead th:first-child,
+  .pricing-table tbody td:first-child {
+    width: 38%;
+  }
+
+  .pricing-table thead th:last-child,
+  .pricing-table tbody td:last-child {
+    width: 62%;
   }
 
   .category-header h2 {
