@@ -123,8 +123,17 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .footer-links {
-    flex-direction: column;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 20px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 16px;
   }
 }
 </style>
