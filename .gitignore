@@ -25,3 +25,6 @@ logs
 
 # Design files
 design/
+
+package-lock.json
+yarn.lock

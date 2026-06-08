@@ -10,36 +10,10 @@ export default defineNuxtConfig({
     url: 'https://skill-wanderer.com',
   },
   sitemap: {
-    // Exclude empty directory routes and dynamic catch-all
     exclude: [
-      '/learning-path',
-      '/learning-path/**',
       '/partners',
       '/partners/**',
     ],
-    urls: async () => {
-      // Static principle pages with proper metadata
-      const principles = [
-        'accessible',
-        'community',
-        'creativity',
-        'engaging',
-        'individualized',
-        'integrity',
-        'mission-centric-reinvestment',
-        'pathways',
-        'relevant',
-        'resourceful',
-        'social-enterprise',
-        'tech-services',
-        'technology-partnership',
-      ]
-      return principles.map((slug) => ({
-        loc: `/principles/${slug}`,
-        changefreq: 'monthly',
-        priority: 0.8,
-      }))
-    },
     defaults: {
       changefreq: 'weekly',
       priority: 0.7,
@@ -68,13 +42,13 @@ export default defineNuxtConfig({
         // Open Graph / social media meta tags for the logo
         { property: 'og:site_name', content: 'Skill-Wanderer' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
+        { property: 'og:image', content: 'https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp' },
         { property: 'og:image:width', content: '768' },
         { property: 'og:image:height', content: '256' },
         { property: 'og:image:alt', content: 'Skill-Wanderer Logo' },
         // Twitter meta tags
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:image', content: '/cropped-skill-wanderer-logo-768x256.webp' },
+        { name: 'twitter:image', content: 'https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp' },
         { name: 'twitter:image:alt', content: 'Skill-Wanderer Logo' }
       ],
       link: [
@@ -91,15 +65,19 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    resendApiKey: process.env.NUXT_RESEND_API_KEY || process.env.RESEND_API_KEY || '',
+    resendFromEmail: process.env.NUXT_RESEND_FROM_EMAIL || process.env.RESEND_FROM_EMAIL || '',
     public: {
       firebase: {
-        apiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY,
-        authDomain: process.env.NUXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-        projectId: process.env.NUXT_PUBLIC_FIREBASE_PROJECT_ID,
-        storageBucket: process.env.NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-        messagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-        appId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID,
-        measurementId: process.env.NUXT_PUBLIC_FIREBASE_MEASUREMENT_ID || '',
+        apiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY || 'AIzaSyCr_1Fo6hzJDsKZrjw2u3HlrFhBnfeHmxE',
+        authDomain: process.env.NUXT_PUBLIC_FIREBASE_AUTH_DOMAIN || 'skill-wanderer-hub.firebaseapp.com',
+        projectId: process.env.NUXT_PUBLIC_FIREBASE_PROJECT_ID || 'skill-wanderer-hub',
+        storageBucket: process.env.NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET || 'skill-wanderer-hub.appspot.com',
+        messagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || '801841516442',
+        appId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID || '1:801841516442:web:77c33043420a581b95f423',
+      },
+      web3forms: {
+        accessKey: process.env.NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY
       },
       pathfinder: {
         apiUrl: process.env.NUXT_PUBLIC_PATHFINDER_API_URL || '',
@@ -110,18 +88,57 @@ export default defineNuxtConfig({
     }
   },
 
+  nitro: {
+    preset: 'cloudflare_module',
+  },
+
   routeRules: {
+    '/expertise-impact': { redirect: { to: '/work-with-us', statusCode: 301 } },
+    '/expertise-impact/**': { redirect: { to: '/work-with-us', statusCode: 301 } },
+    '/work-with-us/delivery-model': { redirect: { to: '/work-with-us/success-sharing-model', statusCode: 301 } },
     '/': { sitemap: { changefreq: 'weekly', priority: 1.0 } },
     '/about': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/mission': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/contact': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
+    '/learning-path': { sitemap: { changefreq: 'weekly', priority: 0.9 } },
+    '/learning-path/advanced-software-development': {
+      redirect: {
+        to: '/learning-path/advanced-software-development-skills',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/ai-machine-learning': {
+      redirect: {
+        to: '/learning-path/ai-and-machine-learning',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/software-architecture-design-patterns': {
+      redirect: {
+        to: '/learning-path/software-architecture-and-design-patterns',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/software-development-roles-career': {
+      redirect: {
+        to: '/learning-path/software-development-roles-and-career',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/startup-foundation': {
+      redirect: {
+        to: '/learning-path/start-up-foundation',
+        statusCode: 301,
+      },
+    },
+    '/learning-path/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/roadmap': { sitemap: { changefreq: 'weekly', priority: 0.7 } },
     '/principles': { sitemap: { changefreq: 'monthly', priority: 0.9 } },
     '/principles/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/learners': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
     '/learners/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
-    '/expertise-impact': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
-    '/expertise-impact/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
+    '/work-with-us': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
+    '/work-with-us/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/technology-partner': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/privacy-policy': { sitemap: { changefreq: 'yearly', priority: 0.3 } },
     '/terms-of-service': { sitemap: { changefreq: 'yearly', priority: 0.3 } },

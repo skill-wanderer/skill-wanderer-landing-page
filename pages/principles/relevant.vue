@@ -112,7 +112,7 @@
           
           <div class="gap-card practice" style="animation-delay: 0.3s;">
             <div class="gap-header">
-              <div class="gap-icon">🛠️</div>
+              <div class="gap-icon">🔧</div>
               <h3>The Self-Taught Practitioner</h3>
             </div>
             
@@ -187,6 +187,7 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
 import type { StoryChapter, StoryContent, PracticeExample } from '~/types'
 
 // SEO and meta management

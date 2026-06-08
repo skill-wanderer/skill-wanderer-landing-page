@@ -7,8 +7,8 @@
       <slot />
     </main>
 
-    <!-- Subscribe Section -->
-    <TheSubscribe />
+    <!-- Subscribe Section — shown only on homepage and contact -->
+    <TheSubscribe v-if="showSubscribe" />
 
     <!-- Footer -->
     <TheFooter />
@@ -17,11 +17,21 @@
     <ClientOnly>
       <PathfinderChat />
     </ClientOnly>
+
+    <!-- Cookie Banner -->
+    <ClientOnly>
+      <CookieBanner />
+    </ClientOnly>
   </div>
 </template>
 
 <script setup lang="ts">
-// No longer need currentYear since TheFooter handles its own copyright
+const route = useRoute()
+
+const showSubscribe = computed(() => {
+  const path = route.path
+  return path === '/' || path === '/contact'
+})
 </script>
 
 <style scoped>

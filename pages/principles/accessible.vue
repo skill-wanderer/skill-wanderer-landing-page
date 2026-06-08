@@ -82,6 +82,8 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
+
 // SEO and meta management
 useSEO({
   title: 'Accessible: Free Knowledge for All | Principle #1 - Skill-Wanderer',
@@ -139,7 +141,7 @@ const storyChapters = [
     ]
   },
   {
-    icon: '☯️',
+    icon: '☸️',
     title: 'The Karma of Knowledge',
     content: [
       {
@@ -323,9 +325,11 @@ const practiceExamples = [
 }
 
 .impact-icon {
-  font-size: 3rem;
+  color: var(--primary-orange);
   margin-bottom: 20px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .impact-card h3 {

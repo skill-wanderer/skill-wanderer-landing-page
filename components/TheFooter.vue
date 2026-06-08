@@ -8,10 +8,10 @@
         <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Dojo</a>
         <a href="https://wanderings.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Wanderings Blog</a>
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
-        <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank" rel="noopener noreferrer">Personal LinkedIn</a>
         <NuxtLink to="/contact">Contact</NuxtLink>
         <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
         <NuxtLink to="/terms-of-service">Terms of Service</NuxtLink>
+        <NuxtLink to="/cookie-policy">Cookie Policy</NuxtLink>
         <!-- Easter egg: Hidden link to mission page -->
         <NuxtLink to="/mission" class="easter-egg-footer" title="The Heart of Skill-Wanderer (Motivation for Founder)">❤️</NuxtLink>
       </div>
@@ -22,11 +22,11 @@
           <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">
             <span aria-hidden="true">⚡</span> View the source code
           </a> 
-          and contribute to our mission.
+          and contribute to the guild's mission.
         </p>
       </div>
       
-      <p>&copy; 2025 Skill-Wanderer. All resources reinvested for global impact.</p>
+      <p>Licensed under the <a href="https://github.com/skill-wanderer/skill-wanderer-landing-page/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">Apache License 2.0</a>. Skill-Wanderer is open source.</p>
     </div>
   </footer>
 </template>
@@ -101,7 +101,8 @@ footer {
   font-size: 1.1rem;
   opacity: 0.7;
   transition: all 0.3s ease;
-  animation: heartBeat 2s infinite;
+  animation: heartBeat 1.2s ease-in-out infinite;
+  display: inline-block;
 }
 
 .easter-egg-footer:hover {
@@ -112,17 +113,27 @@ footer {
 
 @keyframes heartBeat {
   0% { transform: scale(1); }
-  14% { transform: scale(1.1); }
-  28% { transform: scale(1); }
-  42% { transform: scale(1.1); }
-  70% { transform: scale(1); }
+  15% { transform: scale(1.3); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.3); }
+  60% { transform: scale(1); }
+  100% { transform: scale(1); }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .footer-links {
-    flex-direction: column;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 20px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 16px;
   }
 }
 </style>

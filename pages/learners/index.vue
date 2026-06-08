@@ -20,7 +20,7 @@
         <div class="learners-grid">
           <!-- Rei Reltroner Card -->
           <NuxtLink to="/learners/rei-reltroner" class="learner-card featured">
-            <div class="first-badge">⭐ First Learner</div>
+            <div class="first-badge">⛵ Storm Sailor</div>
             <div class="learner-avatar">
               <img src="/learners/Rei-Reltroner.jpeg" alt="Rei Reltroner" class="avatar-image" />
             </div>
@@ -30,10 +30,10 @@
               <p class="learner-tagline">Sailing Through the Storm</p>
               <div class="learner-meta">
                 <span>📍 Indonesia</span>
-                <span>💼 Software Developer & Founder</span>
+                <span>🛠️ Software Engineer</span>
               </div>
               <div class="learner-path">
-                <span class="path-badge">🔍 QA / Tester Path</span>
+                <span class="path-badge">🛠️ Full-Cycle Solutions Associate Path</span>
               </div>
             </div>
             <div class="view-story">
@@ -53,7 +53,7 @@
               <p class="learner-tagline">The Fearless Adventurer</p>
               <div class="learner-meta">
                 <span>📍 India</span>
-                <span>💼 DevOps Engineer</span>
+                <span>🛠️ DevOps Engineer</span>
               </div>
               <div class="learner-path">
                 <span class="path-badge">⚙️ DevOps Path</span>
@@ -63,10 +63,102 @@
               View Full Story →
             </div>
           </NuxtLink>
+
+          <!-- Alfredo Salazar Card -->
+          <NuxtLink to="/learners/alfredo-salazar" class="learner-card featured">
+            <div class="first-badge">🔥 The Firebrand</div>
+            <div class="learner-avatar">
+              <img src="/learners/Alfredo-Salazar.jpeg" alt="Alfredo Salazar" class="avatar-image" />
+            </div>
+            <div class="learner-info">
+              <h3>Alfredo Salazar</h3>
+              <p class="learner-realname">Mobile Game Development Mentee</p>
+              <p class="learner-tagline">The Firebrand</p>
+              <div class="learner-meta">
+                <span>📍 Venezuela</span>
+                <span>🕹️ Mobile Game Development</span>
+              </div>
+              <div class="learner-path">
+                <span class="path-badge">🎮 Mobile Game Dev Path</span>
+              </div>
+            </div>
+            <div class="view-story">
+              View Full Story →
+            </div>
+          </NuxtLink>
+
+          <!-- Khouja Nasreddine Card -->
+          <NuxtLink to="/learners/khouja-nasreddine" class="learner-card featured">
+            <div class="first-badge">🛡️ The Warrior</div>
+            <div class="learner-avatar">
+              <img src="/learners/khouja-nasreddine.jpeg" alt="Khouja Nasreddine" class="avatar-image" />
+            </div>
+            <div class="learner-info">
+              <h3>Khouja Nasreddine</h3>
+              <p class="learner-realname">Mobile Game Development Mentee</p>
+              <p class="learner-tagline">The Warrior</p>
+              <div class="learner-meta">
+                <span>📍 Tunisia</span>
+                <span>🕹️ Mobile Game Development</span>
+              </div>
+              <div class="learner-path">
+                <span class="path-badge">🎮 Mobile Game Dev Path</span>
+              </div>
+            </div>
+            <div class="view-story">
+              View Full Story →
+            </div>
+          </NuxtLink>
+
+          <!-- Thanh Nguyen Card -->
+          <NuxtLink to="/learners/thanh-nguyen" class="learner-card featured">
+            <div class="first-badge">⚔️ The Vanguard</div>
+            <div class="learner-avatar">
+              <img src="/learners/Thanh-Nguyen.jpeg" alt="Thanh Nguyen" class="avatar-image" />
+            </div>
+            <div class="learner-info">
+              <h3>Thanh Nguyen</h3>
+              <p class="learner-realname">Guild Member</p>
+              <p class="learner-tagline">The Vanguard</p>
+              <div class="learner-meta">
+                <span>📍 Vietnam</span>
+                <span>🛡️ Guild Member</span>
+              </div>
+              <div class="learner-path">
+                <span class="path-badge">⚔️ Guild Vanguard</span>
+              </div>
+            </div>
+            <div class="view-story">
+              View Full Story →
+            </div>
+          </NuxtLink>
+
+          <!-- Vincent Onotu Bello Card -->
+          <NuxtLink to="/learners/vincent-onotu-bello" class="learner-card featured">
+            <div class="first-badge">🪨 The Stoic</div>
+            <div class="learner-avatar">
+              <img src="/learners/Vincent-Onotu-Bello.jpeg" alt="Vincent Onotu Bello" class="avatar-image" />
+            </div>
+            <div class="learner-info">
+              <h3>Vincent Onotu Bello</h3>
+              <p class="learner-realname">Software Development Mentee</p>
+              <p class="learner-tagline">The Stoic</p>
+              <div class="learner-meta">
+                <span>📍 Nigeria</span>
+                <span>💻 Software Development</span>
+              </div>
+              <div class="learner-path">
+                <span class="path-badge">💻 Software Dev Path</span>
+              </div>
+            </div>
+            <div class="view-story">
+              View Full Story →
+            </div>
+          </NuxtLink>
         </div>
 
         <div class="more-learners-notice">
-          <p>🌍 There are many more learners on their journey with Skill-Wanderer — their stories are yet to be featured. Stay tuned!</p>
+          <p>✨ There are many more learners on their journey with Skill-Wanderer — their stories are yet to be featured. Stay tuned!</p>
         </div>
       </div>
     </section>
@@ -98,7 +190,7 @@ import { useSEO } from '~/composables/useSEO'
 useSEO({
   title: 'Our Learners - Skill-Wanderer',
   description: 'Meet the learners who are growing with Skill-Wanderer. Discover their stories, progress, and achievements on their learning journeys.',
-  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'skill-wanderer'],
+  keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'Alfredo Salazar', 'Khouja Nasreddine', 'Vincent Onotu Bello', 'Thanh Nguyen', 'skill-wanderer'],
 })
 </script>
 
@@ -176,9 +268,9 @@ useSEO({
 
 .learners-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -268,6 +360,7 @@ useSEO({
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
 }
+
 
 .avatar-placeholder {
   width: 120px;
@@ -427,6 +520,12 @@ useSEO({
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .learners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .learners-grid {
     grid-template-columns: 1fr;

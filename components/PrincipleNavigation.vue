@@ -55,10 +55,10 @@ const principles = [
   { slug: 'engaging', name: 'Engaging & Rewarding' },
   { slug: 'creativity', name: 'Creativity & Learning Through Failure' },
   { slug: 'relevant', name: 'Relevant & Impactful' },
-  { slug: 'pathways', name: 'Pathways for Our Learners' },
-  { slug: 'technology-partnership', name: 'Technology Partnerships Fueling Mission' },
-  { slug: 'resourceful', name: 'Resourceful Curation' },
-  { slug: 'community', name: 'Collaborative Community' },
+  { slug: 'pathways', name: 'Pathways for Guild Members' },
+  { slug: 'technology-partnership', name: 'Guild Engagements Fueling Mission' },
+  { slug: 'respect-ip', name: 'Respect IP' },
+  { slug: 'community', name: 'Guild Community' },
   { slug: 'social-enterprise', name: 'Social Enterprise Model' },
   { slug: 'mission-centric-reinvestment', name: 'Mission-Centric Reinvestment' }
 ]

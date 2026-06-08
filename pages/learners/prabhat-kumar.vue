@@ -13,8 +13,8 @@
         <p class="tagline">The Fearless Adventurer</p>
         <div class="hero-meta">
           <span class="meta-tag">📍 India</span>
-          <span class="meta-tag">💼 DevOps</span>
-          <a href="https://www.linkedin.com/in/prabhat-kumar-1260a5259/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🔗 LinkedIn</a>
+          <span class="meta-tag">🛠️ DevOps</span>
+          <a href="https://www.linkedin.com/in/prabhat-kumar-1260a5259/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🌐 LinkedIn</a>
         </div>
       </div>
     </section>
@@ -41,7 +41,7 @@
     <!-- Journey Section -->
     <section class="journey-section">
       <div class="journey-container">
-        <h2>🌟 The Eccentric Explorer</h2>
+        <h2>✨ The Eccentric Explorer</h2>
         <p class="section-intro">
           However, what was even more impressive than his initial knowledge was his eccentricity.
           Prabhat always refused to simply follow instructions on how to do things the safe and simple way.
@@ -75,7 +75,7 @@
     <!-- Current Chapter Section -->
     <section class="next-chapter-section">
       <div class="next-container">
-        <h2>🏗️ Proving Himself in the Real World</h2>
+        <h2>⛰️ Proving Himself in the Real World</h2>
         <p>
           Prabhat is currently working with our partner <strong>MindyCore</strong> to gain more experience
           and adventure in the real world. He is out there now, proving himself with hands-on, real-life
@@ -91,6 +91,22 @@
           "Only time will prove his ability and his personality, but I believe in him to have a bright
           future. With real-life experience now under his belt, the fearless adventurer is just getting started."
         </blockquote>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <div class="video-container">
+        <h2>🎬 Watch Prabhat's Story</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/m48AXuIzzRs"
+            title="Prabhat Kumar's Story"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
 
@@ -116,6 +132,7 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
@@ -407,6 +424,43 @@ useSEO({
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.95);
   text-align: left;
+}
+
+/* Video Section */
+.video-section {
+  padding: 80px 20px;
+  background: var(--dark-bg);
+}
+
+.video-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-container h2 {
+  color: var(--primary-orange);
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  margin-bottom: 40px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 /* CTA Section */

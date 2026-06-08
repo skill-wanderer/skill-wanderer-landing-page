@@ -19,7 +19,7 @@
         
         <div class="trust-visual">
           <div class="trust-card" style="animation-delay: 0.1s;">
-            <span class="trust-icon">👨‍👩‍👧‍👦</span>
+            <span class="trust-icon">👥</span>
             <h3>Family & Friends</h3>
             <p>Highest trust level because there's no financial motive—just genuine care for your success.</p>
             <div class="trust-meter">
@@ -124,6 +124,7 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
 import { onMounted } from 'vue'
 import type { PracticeExample } from '~/types'
 

@@ -173,6 +173,7 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
 import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management

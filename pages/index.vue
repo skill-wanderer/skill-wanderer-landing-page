@@ -1,24 +1,23 @@
 <template>
   <div>
-    <!-- Hero Section -->
+    <!-- Hero Section — 1 primary CTA + 1 secondary -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Learn Tech, Savor the Journey</h1>
-        <p class="tagline">Free, Practical Education That Celebrates Learning Through Failure</p>
+        <h1>A Tech Guild for Social Good</h1>
+        <p class="tagline">Learn by Building. Grow by Contributing. Sustain Through Craft.</p>
         <p class="hero-description">
-          Quality education shapes brighter futures. Skill-Wanderer integrates real-world insights 
-          into practical tech learning paths, creating an honest educational platform with no ads, 
-          no affiliate bias—just pure, passionate learning.
-        </p>        <div class="hero-cta">
-          <NuxtLink to="/learners" class="btn btn-primary">
-            Meet Our Learners
+          Skill-Wanderer is a tech guild working toward becoming a social enterprise—where apprentices,
+          journeymen, and masters learn and work together on real projects. Every engagement funds free
+          education. No ads, no hidden agendas—just craft, community, and purpose.
+        </p>
+        <div class="hero-cta">
+          <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-primary">
+            Start Learning
             <span>→</span>
           </NuxtLink>
-          <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            View Learning Path
-          </a>
-          <NuxtLink to="/principles" class="btn btn-secondary">
-            Our Principles
+          <NuxtLink to="/work-with-us" class="btn btn-secondary">
+            Work With Us
+            <span>→</span>
           </NuxtLink>
         </div>
       </div>
@@ -27,72 +26,218 @@
       </svg>
     </section>
 
-    <!-- Platform Features Section -->
-    <section id="platform" class="features">
-      <div class="section-header">
-        <h2>The Skill-Wanderer Platform</h2>
-        <p>A revolutionary approach to tech education, currently in development</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🎯</div>
-          <h3>Curated Learning Paths</h3>
-          <p>Expert-selected resources and AI-assisted content, organized into clear pathways from beginner to advanced, always with practical application in mind.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💡</div>
-          <h3>Learn Through Failure</h3>
-          <p>We celebrate mistakes as learning opportunities. Every challenge, every "oops" moment is a valuable lesson on your journey to mastery.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🌟</div>
-          <h3>Real-World Integration</h3>
-          <p>Content directly informed by active real-world expertise and impact work, ensuring what you learn is immediately applicable in the real world.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎓</div>
-          <h3>100% Free Learning Content</h3>
-          <p>All course content and learning materials are completely free. Human mentors and support are sustained through our social enterprise model with Social Impact Tokens.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🤝</div>
-          <h3>Community-Driven</h3>
-          <p>Join a supportive community of learners where questions are welcomed, achievements are celebrated, and everyone grows together.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🚀</div>
-          <h3>Future Pathways</h3>
-          <p>Long-term vision includes pathways for learners to join our team or launch their own ventures, fostering a cycle of growth and opportunity.</p>
+    <!-- How Can We Help? — two-path CTA -->
+    <section class="help-paths">
+      <div class="help-paths-content">
+        <h2>How Can We Help?</h2>
+        <div class="help-cards">
+          <NuxtLink to="/learning-path/learn-contribute-build-earn" class="help-card">
+            <div class="help-card-icon">
+              📚
+            </div>
+            <h3>I Want to Learn</h3>
+            <p>Free learning paths, mentorship, and real-world projects. Progress from Apprentice to Master at your own pace.</p>
+            <span class="help-card-cta">Start Learning <span>→</span></span>
+          </NuxtLink>
+          <NuxtLink to="/work-with-us" class="help-card">
+            <div class="help-card-icon">
+              🏢
+            </div>
+            <h3>I Need a Builder</h3>
+            <p>Senior-led, community-powered delivery. Custom software, transparent pricing, and every engagement funds education.</p>
+            <span class="help-card-cta">Work With Us <span>→</span></span>
+          </NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- Values Section -->
+    <!-- Why a Guild? + The Tech Guild Model — merged narrative + visual features -->
+    <section id="platform" class="guild-narrative">
+      <div class="narrative-content">
+        <div class="narrative-header">
+          <h2>Why a Guild?</h2>
+          <p class="narrative-lead">A social enterprise in the making—where education and real work are one and the same</p>
+        </div>
+        <div class="narrative-body">
+          <p>
+            Centuries ago, guilds were communities where apprentices, journeymen, and masters worked side by side—
+            learning not from lectures but from doing. The master didn't just teach; they built alongside you.
+            Skill-Wanderer brings that model to technology.
+          </p>
+        </div>
+
+        <div class="guild-model-features">
+          <div class="guild-feature">
+            <div class="guild-feature-icon">
+              🧭
+            </div>
+            <div class="guild-feature-text">
+              <h3>Guild-Based Learning</h3>
+              <p>Progress from Apprentice to Journeyman to Master through structured mentorship, hands-on projects, and peer collaboration—just like the craft guilds of old.</p>
+            </div>
+          </div>
+          <div class="guild-feature guild-feature--reverse">
+            <div class="guild-feature-text">
+              <h3>Learn by Building</h3>
+              <p>Guild members work on real projects for real clients. Every line of code shipped is a lesson learned—failures included. That's how craft is forged.</p>
+            </div>
+            <div class="guild-feature-icon">
+              💻
+            </div>
+          </div>
+          <div class="guild-feature">
+            <div class="guild-feature-icon">
+              🔄
+            </div>
+            <div class="guild-feature-text">
+              <h3>Work Funds Education</h3>
+              <p>Revenue from guild engagements is reinvested into free education, mentorship, and community infrastructure. No ads, no donations needed—just purposeful work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Guild Projects — visual proof of work -->
+    <section class="projects-showcase">
+      <div class="section-header">
+        <h2>Recent Guild Projects</h2>
+        <p>Real solutions built for real partners—every project funds free education</p>
+      </div>
+      <div class="projects-strip">
+        <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="project-thumb">
+          <div class="project-image-wrap">
+            <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" loading="lazy" />
+            <span class="project-type-badge">Non-Profit</span>
+          </div>
+          <div class="project-meta">
+            <h4>WM Smile Generation</h4>
+            <p class="project-summary">Website for a Ugandan non-profit supporting healthcare and education communities.</p>
+            <div class="project-stack-tags">
+              <span>Nuxt 3</span>
+              <span>Kubernetes</span>
+            </div>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="project-thumb">
+          <div class="project-image-wrap">
+            <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" loading="lazy" />
+            <span class="project-type-badge">Non-Profit</span>
+          </div>
+          <div class="project-meta">
+            <h4>ChanhDao.vn</h4>
+            <p class="project-summary">162 Buddhist lessons with AI-powered Q&A on a self-hosted cluster.</p>
+            <div class="project-stack-tags">
+              <span>Python</span>
+              <span>OpenAI</span>
+            </div>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/work-with-us/projects/mindyminds" class="project-thumb">
+          <div class="project-image-wrap">
+            <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds" loading="lazy" />
+            <span class="project-type-badge">Start-up</span>
+          </div>
+          <div class="project-meta">
+            <h4>MindyMinds</h4>
+            <p class="project-summary">Multi-tenant AI chatbot platform delivered concept-to-production in 3 months.</p>
+            <div class="project-stack-tags">
+              <span>Next.js</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </NuxtLink>
+
+      </div>
+      <div class="projects-cta">
+        <NuxtLink to="/work-with-us/our-projects" class="btn btn-outline">
+          View All Projects <span>→</span>
+        </NuxtLink>
+      </div>
+    </section>
+
+    <!-- Guild Voices — testimonial block for visual rhythm -->
+    <section class="testimonials">
+      <div class="testimonials-content">
+        <div class="section-header">
+          <h2>Guild Voices</h2>
+          <p>Stories from the apprentices, journeymen, and mentors who walk the path</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <blockquote>"Nothing stops The Warrior. Khouja doesn't wait for the storm to pass—he charges straight through it. His resilience and self-reliance make him one of the most impressive learners we've ever had."</blockquote>
+            <div class="testimonial-author">
+              <img src="/learners/khouja-nasreddine.jpeg" alt="Khouja Nasreddine" loading="lazy" />
+              <div>
+                <strong>Khouja Nasreddine</strong>
+                <span>Mobile Game Dev Path · Tunisia</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"Alfredo carries his own torch. His words inspire, his independence impresses, and his fire is contagious. The firebrand has a future as bright as the flame he carries."</blockquote>
+            <div class="testimonial-author">
+              <img src="/learners/Alfredo-Salazar.jpeg" alt="Alfredo Salazar" loading="lazy" />
+              <div>
+                <strong>Alfredo Salazar</strong>
+                <span>Mobile Game Dev Path · Venezuela</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"Vincent doesn't have the luxury of stable power or fast internet—yet he shows up every day with the same calm determination. The Stoic will sail through this."</blockquote>
+            <div class="testimonial-author">
+              <img src="/learners/Vincent-Onotu-Bello.jpeg" alt="Vincent Onotu Bello" loading="lazy" />
+              <div>
+                <strong>Vincent Onotu Bello</strong>
+                <span>Software Dev Path · Nigeria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-cta">
+          <NuxtLink to="/learners" class="btn btn-outline">
+            Meet Our Learners <span>→</span>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guild Principles — SVG icons, kept concise -->
     <section id="values" class="values">
       <div class="values-content">
         <div class="section-header">
-          <h2>Our Guiding Principles</h2>
-          <p>The foundation of everything we build and teach</p>
+          <h2>Guild Principles</h2>
+          <p>The values that guide our social enterprise mission</p>
         </div>
         <div class="values-grid">
           <div class="value-item" style="animation-delay: 0.1s;">
-            <span class="value-icon">🛡️</span>
+            <span class="value-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4L6 12v16l14 8 14-8V12L20 4z" stroke="currentColor" stroke-width="2"/><path d="M20 12v8l7-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
             <h3>Complete Integrity</h3>
-            <p>No ads, no affiliate marketing, no commissions. Our recommendations are purely for your benefit.</p>
+            <p>No ads, no affiliate marketing, no commissions. Our only agenda is your growth and the guild's mission.</p>
           </div>
           <div class="value-item" style="animation-delay: 0.2s;">
-            <span class="value-icon">♻️</span>
-            <h3>Mission-Centric Reinvestment</h3>
-            <p>All net revenue is reinvested into the platform, community, and global educational impact.</p>
+            <span class="value-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 14a10 10 0 0 1 14-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M25 12l-1-4 4-1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 26a10 10 0 0 1-14 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M15 28l1 4-4 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>100% Reinvestment</h3>
+            <p>All net revenue from guild engagements is reinvested into education, community, and social impact. Zero profit extraction.</p>
           </div>
           <div class="value-item" style="animation-delay: 0.3s;">
-            <span class="value-icon">🌍</span>
-            <h3>Accessible Education</h3>
-            <p>Free learning content with quality human mentors sustained through our social enterprise model and open Social Impact Tokens.</p>
-          </div>          <div class="value-item" style="animation-delay: 0.4s;">
-            <span class="value-icon">🎨</span>
-            <h3>Creative Learning</h3>
-            <p>Encouraging experimentation, celebrating failures, and finding joy in the learning process.</p>
+            <span class="value-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/><path d="M8 16h24M8 24h24" stroke="currentColor" stroke-width="2"/><ellipse cx="20" cy="20" rx="7" ry="14" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            <h3>Open & Accessible</h3>
+            <p>Free learning for everyone. Guild mentorship and support sustained through our social enterprise work—not tuition or donations.</p>
+          </div>
+          <div class="value-item" style="animation-delay: 0.4s;">
+            <span class="value-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 34V16l12-10 12 10v18H8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 34v-10h8v10" stroke="currentColor" stroke-width="2"/><path d="M4 16l16-12 16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Craft Over Credentials</h3>
+            <p>We value what you can build over what certificates you hold. Real skill is forged through practice, mentorship, and real-world craft.</p>
           </div>
         </div>
         <div class="principles-cta" style="animation-delay: 0.6s;">
@@ -104,157 +249,95 @@
       </div>
     </section>
 
-    <!-- Journey Section -->
-    <section class="journey">
-      <div class="journey-content">
-        <h2>The Wandering Saga</h2>
-        <p class="journey-quote">
-          Every expert was once a beginner who refused to give up. Every failure was a lesson that led to success.
-        </p>
-        <p class="journey-description">
-          Skill-Wanderer is born from a simple belief: the best teachers are those who remember what it's like to struggle, 
-          to fail, and to finally breakthrough. This platform captures that journey—the wandering path of continuous learning—and 
-          transforms it into accessible education for all. Whether you're taking your first steps in tech or seeking to master 
-          advanced concepts, you'll find a home here.
-        </p>
-        <p class="journey-description">
-          As we build this platform, we're learning too. Every line of code, every curated resource, every moment of creation 
-          is both a lesson for us and a future lesson we'll share with you. This is education built by learners, for learners.
-        </p>
-      </div>
-    </section>
-
-
-    <!-- Expertise & Impact Brief Section -->
-    <section class="tech-services">
-      <div class="tech-services-content">
-        <h3>Expertise &amp; Impact</h3>
-        <p>
-          We apply real-world technology expertise to solve real problems—and every challenge we tackle fuels free education.
-          Success sharing model. Community-powered talent. Impact that creates learning.
-        </p>
-        <NuxtLink to="/expertise-impact" class="btn btn-secondary">Learn More</NuxtLink>
+    <!-- Manifesto — subtle pull-quote instead of heavy block -->
+    <section class="manifesto-quote">
+      <div class="manifesto-quote-content">
+        <blockquote>
+          "The best way to learn is to build, and the best way to teach is to work alongside those who are learning."
+        </blockquote>
+        <NuxtLink to="/manifesto" class="manifesto-link">Read the Guild Manifesto →</NuxtLink>
       </div>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
+
 // SEO and meta management
 useSEO({
-  title: 'Skill-Wanderer - Free Tech Education for Everyone',
-  description: 'Free, practical tech education that celebrates learning through failure. Quality education shapes brighter futures with no ads or affiliate bias.',
-  keywords: ['tech education', 'programming courses', 'free coding bootcamp', 'web development', 'skill development', 'learning platform'],
+  title: 'Skill-Wanderer - Tech Guild for Education & Social Good',
+  description: 'A tech guild working toward social enterprise. Learn by building real projects, grow through mentorship, and sustain free education through craft.',
+  keywords: ['tech guild', 'social enterprise', 'free tech education', 'guild model', 'learn by building', 'apprenticeship', 'craft community'],
   type: 'website',
   structuredData: [
     createOrganizationSchema(),
     createFAQSchema([
       {
         question: 'Is Skill-Wanderer really free?',
-        answer: 'Yes, all Skill-Wanderer learning content is completely free. Human mentors and support are sustained through our social enterprise model with Social Impact Tokens.'
+        answer: 'Yes, all Skill-Wanderer learning content is completely free. Mentorship and guild support are sustained through our social enterprise model—real-world guild engagements fund education.'
       },
       {
         question: 'What makes Skill-Wanderer different from other learning platforms?',
-        answer: 'Skill-Wanderer operates with complete integrity — no ads, no affiliate marketing, no commissions. All recommendations are purely for your benefit. We integrate real-world expertise into practical tech education.'
+        answer: 'Skill-Wanderer is a tech guild working toward social enterprise. We combine education and real work—guild members learn by building real projects, and every engagement funds free education. No ads, no affiliate marketing.'
       },
       {
         question: 'Who is behind Skill-Wanderer?',
-        answer: 'Skill-Wanderer was founded by Quan Nguyen, a passionate educator who believes quality education shapes brighter futures. The platform is built by learners, for learners.'
+        answer: 'Skill-Wanderer was founded by Quan Nguyen as a tech guild with a social enterprise vision. It is built by guild members—apprentices, journeymen, and masters working and learning together.'
       },
       {
         question: 'How does Skill-Wanderer sustain itself financially?',
-        answer: 'Skill-Wanderer uses a success sharing model through its Expertise & Impact work. All net revenue is reinvested into the platform, community, and global educational impact.'
+        answer: 'Skill-Wanderer sustains itself through guild engagements—real technology projects delivered by our community. All net revenue is reinvested into education and the guild as we work toward formal social enterprise status.'
       }
     ])
   ]
 })
 
-// Client-side JavaScript for interactions
-onMounted(() => {
-  // Navbar scroll effect
-  const handleScroll = () => {
-    const navbar = document.getElementById('navbar')
-    if (navbar) {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
+// 🔷 Define handler outside (important for cleanup)
+const handleScroll = () => {
+  const navbar = document.getElementById('navbar')
+  if (navbar) {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled')
+    } else {
+      navbar.classList.remove('scrolled')
     }
   }
+}
 
-  window.addEventListener('scroll', handleScroll)
-  // Smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach((anchor: Element) => {
-    anchor.addEventListener('click', function (e: Event) {
-      e.preventDefault()
-      const element = e.currentTarget as HTMLAnchorElement
-      const href = element.getAttribute('href')
-      if (href) {
-        const target = document.querySelector(href)
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          })
-        }
-      }
+const handleAnchorClick = (e: Event) => {
+  const targetElement = e.target as HTMLElement | null
+  if (!targetElement) return
+
+  const anchor = targetElement.closest('a[href^="#"]') as HTMLAnchorElement | null
+  if (!anchor) return
+
+  const href = anchor.getAttribute('href')
+  if (!href) return
+
+  const target = document.querySelector(href)
+  if (target) {
+    e.preventDefault()
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
     })
-  })
-
-  // Intersection Observer for animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
   }
+}
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        (entry.target as HTMLElement).style.opacity = '1'
-      }
-    })
-  }, observerOptions)
+// 🔷 Mount
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+  document.addEventListener('click', handleAnchorClick)
+})
 
-  document.querySelectorAll('.value-item').forEach(item => {
-    observer.observe(item)
-  })
-
-  // Cleanup
-  onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll)
-  })
+// 🔷 Cleanup (TOP LEVEL ✅)
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+  document.removeEventListener('click', handleAnchorClick)
 })
 </script>
-
 <style scoped>
-/* CSS Variables */
-:root {
-  --primary-orange: #FF6B35;
-  --deep-orange: #E85D25;
-  --dark-bg: #1a1a1a;
-  --darker-bg: #0f0f0f;
-  --light-text: #e0e0e0;
-  --accent-yellow: #FFD93D;
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-hover: rgba(255, 255, 255, 0.08);
-}
-
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background-color: var(--dark-bg);
-  color: var(--light-text);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
 /* Hero Section */
 .hero {
   display: flex;
@@ -275,7 +358,8 @@ body {
 .hero h1 {
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 800;
-  margin-bottom: 20px;  background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -306,6 +390,32 @@ body {
   animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
+.wandering-path {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.path {
+  stroke: var(--primary-orange);
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawPath 3s ease-out forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Buttons */
 .btn {
   padding: 15px 30px;
   border: none;
@@ -355,46 +465,187 @@ body {
   transform: translateY(-2px);
 }
 
-/* Principles CTA */
-.principles-cta {
-  text-align: center;
-  margin-top: 60px;
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-/* Wandering Path Animation */
-.wandering-path {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  opacity: 0.3;
-  pointer-events: none;
-}
-
-.path {
-  stroke: var(--primary-orange);
-  stroke-width: 2;
-  fill: none;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: drawPath 3s ease-out forwards;
-}
-
-@keyframes drawPath {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-/* Platform Features Section */
-.features {
+/* Guild Narrative */
+.guild-narrative {
   padding: 100px 20px;
   background: var(--darker-bg);
 }
 
+.narrative-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.narrative-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.narrative-header h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--primary-orange);
+  margin-bottom: 16px;
+}
+
+.narrative-lead {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  color: var(--light-text);
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+.narrative-body p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  opacity: 0.8;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Guild Model Features — alternating icon + text */
+.guild-model-features {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 56px;
+}
+
+.guild-feature {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.guild-feature--reverse {
+  flex-direction: row-reverse;
+}
+
+.guild-feature-icon {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guild-feature-text h3 {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.guild-feature-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+/* How Can We Help? */
+.help-paths {
+  padding: 100px 20px;
+  background: var(--dark-bg);
+}
+
+.help-paths-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.help-paths-content h2 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.help-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.help-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  padding: 48px 36px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--light-text);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 107, 53, 0.5);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.help-card-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.help-card h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.help-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.75;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.help-card-cta {
+  color: var(--primary-orange);
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.3s ease;
+}
+
+.help-card:hover .help-card-cta {
+  gap: 14px;
+}
+
+.narrative-highlight {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  color: var(--primary-orange) !important;
+  opacity: 1 !important;
+  border-left: 3px solid var(--primary-orange);
+  padding-left: 20px;
+  margin-top: 32px !important;
+}
+
+/* Guild Model — removed, replaced by narrative */
+
+/* Section Header */
 .section-header {
   text-align: center;
   max-width: 800px;
@@ -407,70 +658,173 @@ body {
   color: var(--primary-orange);
 }
 
-.features-grid {
+/* Projects Showcase */
+.projects-showcase {
+  padding: 100px 20px;
+  background: var(--dark-bg);
+}
+
+.projects-strip {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.feature-card {
-  background: var(--card-bg);
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 20px;
-  padding: 40px;
-  transition: all 0.3s ease;
-  position: relative;
+.project-thumb {
+  text-decoration: none;
+  color: var(--light-text);
+  border-radius: 16px;
   overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.12);
+  transition: all 0.3s ease;
 }
 
-.feature-card::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(135deg, var(--primary-orange), transparent);
-  border-radius: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: -1;
-}
-
-.feature-card:hover {
+.project-thumb:hover {
   transform: translateY(-5px);
-  background: var(--card-hover);
+  border-color: rgba(255, 107, 53, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-.feature-card:hover::before {
-  opacity: 0.3;
+.project-image-wrap {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  position: relative;
 }
 
-.feature-icon {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
-  border-radius: 15px;
+.project-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-thumb:hover .project-image-wrap img {
+  transform: scale(1.05);
+}
+
+.project-type-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+}
+
+.project-meta {
+  padding: 16px 18px;
+}
+
+.project-meta h4 {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.project-summary {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.project-stack-tags {
+  display: flex;
+  gap: 6px;
+}
+
+.project-stack-tags span {
+  font-size: 0.7rem;
+  padding: 3px 10px;
+  border-radius: 50px;
+  background: rgba(255, 107, 53, 0.08);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
+.projects-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 100px 20px;
+  background: var(--darker-bg);
+}
+
+.testimonials-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.1);
+  border-radius: 20px;
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testimonial-card blockquote {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--light-text);
+  opacity: 0.9;
+  font-style: italic;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.testimonial-author {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-size: 24px;
+  gap: 14px;
 }
 
-.feature-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+.testimonial-author img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 107, 53, 0.3);
+}
+
+.testimonial-author strong {
+  display: block;
   color: white;
+  font-size: 0.95rem;
 }
 
-.feature-card p {
-  opacity: 0.8;
+.testimonial-author span {
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
 
-/* Values Section */
+.testimonials-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Values / Principles */
 .values {
   padding: 100px 20px;
   background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, transparent 50%);
@@ -495,9 +849,18 @@ body {
 }
 
 .value-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 20px;
+}
+
+.value-icon svg {
+  width: 48px;
+  height: 48px;
+  color: var(--primary-orange);
 }
 
 .value-item h3 {
@@ -512,106 +875,57 @@ body {
   font-size: 0.95rem;
 }
 
-/* Journey Section */
-.journey {
-  padding: 100px 20px;
+.principles-cta {
+  text-align: center;
+  margin-top: 60px;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Manifesto Pull Quote */
+.manifesto-quote {
+  padding: 80px 20px;
   background: var(--darker-bg);
+  border-top: 1px solid rgba(255, 107, 53, 0.1);
+  border-bottom: 1px solid rgba(255, 107, 53, 0.1);
 }
 
-.journey-content {
-  max-width: 900px;
+.manifesto-quote-content {
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
-.journey-quote {
-  font-size: 1.8rem;
+.manifesto-quote blockquote {
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
   font-style: italic;
-  margin-bottom: 40px;
-  color: var(--primary-orange);
-  position: relative;
-  padding: 0 40px;
-}
-
-.journey-quote::before,
-.journey-quote::after {
-  content: '"';
-  position: absolute;
-  font-size: 3rem;
-  opacity: 0.3;
-}
-
-.journey-quote::before {
-  left: 0;
-  top: -10px;
-}
-
-.journey-quote::after {
-  right: 0;
-  bottom: -30px;
-}
-
-.journey-description {
-  font-size: 1.1rem;
+  color: var(--light-text);
   opacity: 0.9;
-  margin-bottom: 40px;
   line-height: 1.8;
+  margin-bottom: 28px;
+  position: relative;
 }
 
-/* Coming Soon Section */
-.coming-soon {
-  padding: 100px 20px;
-  background: var(--dark-bg);
-  text-align: center;
-}
-
-.countdown {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.countdown-item {
-  text-align: center;
-}
-
-.countdown-number {
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--primary-orange);
+.manifesto-quote blockquote::before {
+  content: '';
   display: block;
-  line-height: 1;
+  width: 40px;
+  height: 3px;
+  background: var(--primary-orange);
+  margin: 0 auto 28px;
+  border-radius: 2px;
 }
 
-.countdown-label {
-  font-size: 0.9rem;
-  opacity: 0.7;
-  margin-top: 10px;
-}
-
-/* Tech Services Section */
-.tech-services {
-  padding: 60px 20px;
-  background: rgba(255, 107, 53, 0.05);
-  text-align: center;
-}
-
-.tech-services-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.tech-services h3 {
-  font-size: 1.8rem;
+.manifesto-link {
   color: var(--primary-orange);
-  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
-.tech-services p {
-  opacity: 0.9;
-  margin-bottom: 30px;
+.manifesto-link:hover {
+  opacity: 0.8;
 }
 
 /* Animations */
@@ -628,7 +942,24 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .features-grid,
+  .help-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .guild-feature,
+  .guild-feature--reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
   .values-grid {
     grid-template-columns: 1fr;
   }
@@ -643,9 +974,12 @@ body {
     max-width: 300px;
     justify-content: center;
   }
+}
 
-  .countdown {
-    gap: 20px;
+@media (max-width: 480px) {
+  .projects-strip {
+    grid-template-columns: 1fr;
   }
 }
 </style>
+

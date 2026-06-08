@@ -7,15 +7,15 @@
           ← Back to Our Learners
         </NuxtLink>
         <div class="featured-badge">
-          <span>⭐ First Learner</span>
+          <span>⛵ Storm Sailer</span>
         </div>
         <h1>Rei Reltroner</h1>
         <p class="real-name">(Raidan Malik Sandra)</p>
         <p class="tagline">Sailing Through the Storm</p>
         <div class="hero-meta">
           <span class="meta-tag">📍 Indonesia</span>
-          <span class="meta-tag">💼 Software Developer & Founder</span>
-          <a href="https://www.linkedin.com/in/rei-reltroner-a3a7b8173/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🔗 LinkedIn</a>
+          <span class="meta-tag">🛠️ Software Engineer</span>
+          <a href="https://www.linkedin.com/in/rei-reltroner-a3a7b8173/" target="_blank" rel="noopener noreferrer" class="meta-tag linkedin-tag">🌐 LinkedIn</a>
         </div>
       </div>
     </section>
@@ -29,12 +29,18 @@
         
         <div class="profile-intro">
           <h2>The First Wanderer</h2>
-          <p>
-            Rei holds a special place in our community as the <strong>very first learner and mentee</strong> 
-            to get in touch with Skill-Wanderer. As a true "student of life," Rei's journey has been 
-            defined by profound resilience. Navigating the complexities of ADHD and the mental "roller coasters" 
-            that life can present, Rei has shown what it means to truly sail through adversity.
-          </p>
+            <p>
+              Rei holds a special place in our community as the <strong>very first learner and mentee</strong> 
+              to get in touch with Skill-Wanderer. As a true "student of life," Rei's journey has been 
+              defined by resilience, introspection, and continuous growth. Navigating the challenges of 
+              neurodivergence and the complex mental landscapes that come with it, Rei has demonstrated 
+              what it means to move forward with awareness, discipline, and purpose—truly sailing through adversity.
+            </p>
+            <p>
+              Even before connecting with Skill-Wanderer, Rei was already actively building his own systems 
+              and exploring architecture-driven development. Through mentorship, he continues to refine his 
+              approach—combining technical depth, structured thinking, and long-term vision in the systems he creates:
+            </p>
         </div>
       </div>
     </section>
@@ -42,11 +48,12 @@
     <!-- Journey Section -->
     <section class="journey-section">
       <div class="journey-container">
-        <h2>🌟 A Personal & Professional Transformation</h2>
-        <p class="section-intro">
-          Since beginning his mentorship journey, Rei has experienced a shift that goes far beyond 
-          technical skills. He has worked hard to improve his mental well-being and reclaim his confidence.
-        </p>
+        <h2>✨ A Personal & Professional Transformation</h2>
+          <p class="section-intro">
+            Since beginning his mentorship journey, Rei has experienced a transformation that goes beyond 
+            technical development. He has worked consistently to strengthen his mental resilience, rebuild 
+            confidence, and align his personal growth with his engineering path.
+          </p>
 
         <div class="milestones-grid">
           <div class="milestone-card">
@@ -73,7 +80,7 @@
     <!-- Ongoing Work Section -->
     <section class="ongoing-section">
       <div class="ongoing-container">
-        <h2>🏗️ Building the Future</h2>
+        <h2>🛠️ Building the Future</h2>
         <p class="section-intro">
           Even before connecting with Skill-Wanderer, Rei was already hard at work building his vision. 
           Through our mentorship, we've been providing guidance and advice as he continues to develop:
@@ -116,7 +123,7 @@
     <!-- Next Chapter Section -->
     <section class="next-chapter-section">
       <div class="next-container">
-        <h2>📚 The Next Chapter: Quality & Excellence</h2>
+        <h2>✨ The Next Chapter: Quality & Excellence</h2>
         <p>
           Rei continues to sharpen his technical edge through career mentorship, focusing on mastering 
           the <strong>Tester/QA path</strong>. His commitment to constant learning and his courage to face 
@@ -132,6 +139,22 @@
           "Rei's story reminds us that growth isn't just about technical skills—it's about the courage 
           to keep moving forward, even when the sea is rough."
         </blockquote>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <div class="video-container">
+        <h2>🎬 Watch Rei's Story</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/aUp7-bO5Cbs"
+            title="Rei Reltroner's Story"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
 
@@ -157,6 +180,7 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
@@ -542,6 +566,43 @@ useSEO({
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.95);
   text-align: left;
+}
+
+/* Video Section */
+.video-section {
+  padding: 80px 20px;
+  background: var(--dark-bg);
+}
+
+.video-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-container h2 {
+  color: var(--primary-orange);
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  margin-bottom: 40px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 /* CTA Section */

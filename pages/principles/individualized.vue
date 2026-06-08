@@ -20,13 +20,13 @@
         
         <div class="styles-grid">
           <div class="style-card breaker" style="animation-delay: 0.1s;">
-            <div class="style-icon">💥</div>
+            <div class="style-icon">⚡</div>
             <h3>The Code Breaker</h3>
             <p>Learns by diving in, breaking things, and fixing them. Every error is a teacher, every bug a lesson.</p>
           </div>
           
           <div class="style-card watcher" style="animation-delay: 0.2s;">
-            <div class="style-icon">👀</div>
+            <div class="style-icon">👁️</div>
             <h3>The Course Watcher</h3>
             <p>Needs the full picture before starting. Watches complete courses, building confidence through comprehensive understanding.</p>
           </div>
@@ -79,7 +79,7 @@
           </div>
           
           <div class="pace-card">
-            <span class="pace-icon">🗿</span>
+            <span class="pace-icon">🧱</span>
             <h3>The Methodical Builder</h3>
             <ul class="pace-benefits">
               <li>Builds unshakeable foundations</li>
@@ -144,6 +144,7 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
 import { onMounted } from 'vue'
 
 // SEO and meta management

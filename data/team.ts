@@ -20,14 +20,25 @@ export const teamMembers: TeamMember[] = [
     slug: 'quan-nguyen',
     name: 'Quan Nguyen',
     role: 'Founder & Leader',
-    badge: '🚀 Founder',
+    badge: '🏅 Founder',
     avatar: '/skill-wanderer-avatar.jpg',
     tagline: 'Building the future of tech education',
     location: 'Vietnam',
     title: 'Founder & Project Leader',
     github: 'https://github.com/skill-wanderer',
     bio: 'Quan is the founder and leader of Skill-Wanderer. With a journey that began in international trade and evolved through four startups, leading 50+ members, and wandering through roles from Frontend to DevOps, from Business Analyst to Solution Architect, Quan brings a unique perspective to tech education. His unconventional path taught him that the most fundamental skill is learning how to learn—and that every failure is a stepping stone to mastery. Skill-Wanderer is the culmination of that belief: a platform where honest, practical education meets real-world experience, completely free and without bias.',
-    skills: ['Solution Architecture', 'Full-Stack Development', 'DevOps & Kubernetes', 'AI & Machine Learning', 'Mobile Development', 'Project Management', 'Team Leadership', 'Community Building', 'Mentorship', 'One-Man Army'],
+    skills: [
+      'Solution Architecture',
+      'Full-Stack Development',
+      'DevOps & Kubernetes',
+      'AI & Machine Learning',
+      'Mobile Development',
+      'Project Management',
+      'Team Leadership',
+      'Community Building',
+      'Mentorship',
+      'One-Man Army',
+    ],
     contributions: [
       'Founded Skill-Wanderer and established its 12 guiding principles',
       'Built the entire platform on a self-hosted Kubernetes cluster using just an old laptop and Orange Pi',
@@ -40,22 +51,160 @@ export const teamMembers: TeamMember[] = [
     slug: 'thanh-nguyen',
     name: 'Thanh Nguyen',
     role: 'Full-Cycle Associate',
-    badge: '🌱 Team Member',
-    avatar: '/thanh-nguyen-avatar.jpg', 
+    badge: '💫 Team Member',
+    avatar: '/thanh-nguyen-avatar.jpg',
     tagline: 'Fueling Innovation through Lifelong Learning and Adaptability',
     location: 'Vietnam',
     title: 'Full-Cycle Associate',
-    github: 'https://github.com/Thanh-Nguyen-Valerie', 
+    github: 'https://github.com/Thanh-Nguyen-Valerie',
     bio: "As a fresh graduate with a 'learn-it-all' rather than 'know-it-all' philosophy, Thanh joins Skill-Wanderer with a vibrant energy and a relentless drive for excellence. Embracing the 'Full-Cycle' mindset, Thanh is dedicated to mastering the entire product lifecycle—from initial concept to deployment. With a belief that the tech landscape is an infinite classroom, Thanh views every challenge as a strategic stepping stone to mastery, aiming to bridge the gap between academic theory and high-impact, real-world solutions.",
     skills: [
-      'Full-Stack Development', 
-      'Problem-Solving', 
-      'Rapid Prototyping', 
-      'Growth Mindset', 
-      'Cross-functional Collaboration'
+      'Full-Stack Development',
+      'Problem-Solving',
+      'Rapid Prototyping',
+      'Growth Mindset',
+      'Cross-functional Collaboration',
     ],
     contributions: [
       'Currently undergoing onboarding and deep-diving into the Skill-Wanderer ecosystem',
+    ],
+  },
+  {
+    slug: 'rei-reltroner',
+    name: 'Rei Reltroner',
+    role: 'Full-Cycle Solutions Associate',
+    badge: '⭐ Team Member',
+    avatar: '/learners/Rei-Reltroner.jpeg',
+    tagline: 'Designing deterministic systems with architecture-first thinking',
+    location: 'Indonesia',
+    title: 'Full-Cycle Solutions Associate',
+    github: 'https://github.com/Reltroner',
+    linkedin: 'https://www.linkedin.com/in/rei-reltroner-a3a7b8173/',
+    website: 'https://www.reltroner.com',
+    bio: 'Rei Reltroner is a system-oriented backend engineer focused on building deterministic, modular, and production-grade systems. With a strong foundation in Laravel, REST API architecture, and authentication systems (JWT, OIDC, Keycloak), Rei approaches engineering as a layered system—from infrastructure to logic—prioritizing root-cause analysis and long-term reliability. As an early contributor to Skill-Wanderer, Rei is expanding from independent system building into full-cycle solution delivery within a global, collaborative environment, bridging architecture thinking with real-world product development.',
+    skills: [
+      'Backend Architecture (Laravel)',
+      'REST API Design',
+      'Authentication Systems (JWT, OIDC, Keycloak)',
+      'Modular System Design',
+      'Deterministic System Engineering',
+      'Database Design (MySQL, PostgreSQL)',
+      'CI/CD (GitHub Actions)',
+      'Docker & Containerization',
+      'System Debugging (Root Cause Analysis)',
+      'Technical Documentation (ADR, Incident Reports)',
+    ],
+    contributions: [
+      'Contributing to the development of a distributed platform ecosystem (learner portal, microservices, community systems)',
+      'Participating in Jira-driven agile workflows including issue tracking and sprint collaboration',
+      'Applying backend system design principles in a multi-component, team-based environment',
+      'Supporting full-cycle product development from implementation to validation and iteration',
+      'Engaging in QA discussions and system validation to ensure reliability and consistency',
+      'Collaborating with international contributors across engineering and product discussions',
+    ],
+  },
+  {
+    slug: 'logicalaryan',
+    name: 'Aryan',
+    role: ' Associate',
+    badge: '⭐ Team Member',
+    avatar: '/learners/Aryan.jpeg',
+    tagline: 'Debugging under pressure, delivering with precision',
+    location: 'India',
+    title: 'Full-Cycle Associate',
+    github: 'https://github.com/logicalaryan',
+    bio: `Aryan is just a rookie — but he’s stepping in with a builder’s mindset and a strong foundation in development.
+
+  He may not know everything yet, but he understands how to build. With hands-on experience in full stack development, Aryan has worked on few projects involving modern web technologies, creating responsive UIs, handling backend logic, and connecting systems end-to-end. He believes in learning by doing — not just watching, but actually building, breaking, and improving.
+
+  Instead of waiting to feel ready, Aryan puts himself under pressure, takes on challenges, and figures things out along the way. Every bug he fixes and every feature he ships adds to his growing understanding of software development.
+
+  He is still learning, still evolving — but with each step, his skills, confidence, and problem-solving ability are getting stronger.`,
+    skills: ['Nuxt 3', 'Vue', 'TypeScript', 'React', 'JavaScript'],
+    contributions: [
+      'Learning and contributing to UI development',
+      'Fixing minor UI issues',
+      'Gradually contributing to frontend features',
+    ],
+  },
+  {
+    slug: 'nkiru-onyebinime',
+    name: 'Nkiru Onyebinime',
+    role: 'QA Tester',
+    badge: '⭐ Team Member',
+    avatar: '/learners/Nkiru-Onyebinime.jpg',
+    tagline: 'Testing with user empathy, security awareness, and curiosity',
+    location: 'Nigeria',
+    title: 'QA Tester',
+    bio: `Nkiru Onyebinime’s path into tech is anything but straight — and that is exactly what makes her strong at what she does.
+
+She studied Microbiology at Federal University Lafia, where she learned observation, pattern recognition, and accurate documentation. Those skills now transfer directly into QA testing, helping her notice details, analyze behavior, and document issues clearly.
+
+Before entering tech, Nkiru spent over five years in customer support across Nigeria, Dubai, and the UK. She handled angry customers, resolved escalations, trained new team members, and maintained 100% response rates under pressure. This experience gives her a deep understanding of how real users feel when something is broken. She does not just find bugs — she understands why they matter.
+
+Her experience in CCTV monitoring also strengthened her attention to detail. Watching for real-time anomalies, documenting incidents, and staying alert to anything that looks slightly wrong are all skills that closely reflect strong testing discipline.
+
+Nkiru is currently training as a SOC Analyst in cybersecurity and holds certifications from ISC2, Google, TryHackMe, and others. Her security background allows her to test beyond standard functionality by looking for exposed system data, unvalidated inputs, and insecure flows.
+
+In her QA mentorship, she scored 90 out of 100 on her first module and 98 out of 100 on her second. Her instructor described her work as an exceptional submission demonstrating professional discipline and QA maturity. She has also completed real client testing at Skill-Wanderer, delivering structured bug reports across three batches on desktop and mobile.
+
+Outside of work, Nkiru makes music videos, creates content, and runs a YouTube channel. She believes creativity and curiosity are connected — and both make her a better tester.
+
+She is here to grow, contribute, and prove that the best testers are the ones who think like users, communicate like professionals, and never stop being curious.`,
+    skills: [
+      'QA Testing',
+      'Manual Testing',
+      'Bug Reporting',
+      'User Empathy',
+      'Customer Support',
+      'Incident Documentation',
+      'Security Testing Awareness',
+      'SOC Analysis Fundamentals',
+      'Anomaly Detection',
+      'Cross-platform Testing',
+      'Communication',
+      'Creative Problem-Solving',
+    ],
+    contributions: [
+      'Completed real client testing at Skill-Wanderer across desktop and mobile',
+      'Delivered structured bug reports across three testing batches',
+      'Applied user empathy from customer support experience to identify high-impact issues',
+      'Used cybersecurity awareness to look for exposed data, unvalidated inputs, and insecure flows',
+      'Demonstrated strong QA discipline through high-scoring mentorship submissions',
+    ],
+  },
+  {
+    slug: 'duy-anh-dao',
+    name: 'Duy Anh Dao',
+    role: 'Software Engineering Associate',
+    badge: '⭐ Team Member',
+    avatar: '/learners/duy-anh-dao.jpg',
+    tagline:
+      'Building scalable backend systems while continuously mastering the craft of software engineering',
+    location: 'Vietnam',
+    title: 'Software Engineering Associate',
+    github: 'https://github.com/your-github-username',
+    linkedin: 'https://www.linkedin.com/in/your-linkedin',
+    bio: `Duy Anh is a software engineer focused on backend development, system design, and continuous learning. With hands-on experience building full-stack applications using Java Spring Boot, React, TypeScript, and MySQL, he approaches software engineering with a strong problem-solving mindset and a passion for building practical, production-oriented systems.
+
+  At Skill-Wanderer, Duy Anh is expanding his experience in collaborative development, open-source contribution, and full-cycle product delivery while sharpening both his technical depth and engineering discipline.`,
+    skills: [
+      'Java',
+      'Spring Boot',
+      'REST API Development',
+      'React',
+      'TypeScript',
+      'MySQL',
+      'Git & GitHub',
+      'Problem Solving',
+      'System Design Fundamentals',
+    ],
+    contributions: [
+      'Contributing to frontend and backend development tasks',
+      'Participating in collaborative agile workflows and Jira-based task management',
+      'Building and maintaining full-stack application features',
+      'Exploring scalable backend architecture and deployment practices',
+      'Supporting continuous improvement through learning, debugging, and iteration',
     ],
   },
 ]

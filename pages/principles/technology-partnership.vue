@@ -34,7 +34,7 @@
 
         <div class="model-cards">
           <div class="model-card">
-            <div class="model-icon">💸</div>
+            <div class="model-icon">💵</div>
             <h3>Lower Upfront Investment</h3>
             <p>
               Unlike traditional outsourcing, we don't ask for large upfront payments. Start building with minimal 
@@ -70,7 +70,7 @@
         
         <div class="alignment-grid">
           <div class="alignment-card">
-            <span class="alignment-icon">💸</span>
+            <span class="alignment-icon">💵</span>
             <h3>For You</h3>
             <p>Lower risk with reduced upfront costs—we succeed together or not at all.</p>
           </div>
@@ -80,7 +80,7 @@
             <p>We're motivated by your success, not just billing hours. Real outcomes drive our revenue.</p>
           </div>
           <div class="alignment-card">
-            <span class="alignment-icon">🌟</span>
+            <span class="alignment-icon">⭐</span>
             <h3>For Learners</h3>
             <p>Real projects with real stakes create real skills and genuine career pathways.</p>
           </div>
@@ -130,7 +130,7 @@
           </div>
           
           <div class="engine-component impact">
-            <span class="component-icon">🌟</span>
+            <span class="component-icon">⭐</span>
             <span class="component-label">Real Impact</span>
           </div>
         </div>
@@ -257,6 +257,7 @@
 </template>
 
 <script setup>
+// Icons replaced with emojis
 import { computed } from 'vue'
 
 // SEO and meta management

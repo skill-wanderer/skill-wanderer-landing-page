@@ -14,6 +14,11 @@ service cloud.firestore {
       allow write: if true; // Allow anyone to submit contact forms
       allow read: if request.auth != null; // Only authenticated users can read
     }
+
+    match /guild-applications/{document} {
+      allow write: if true; // Allow anyone to submit guild applications
+      allow read: if request.auth != null; // Only authenticated users can read
+    }
     
     // Deny access to all other collections by default
     match /{document=**} {

@@ -47,7 +47,7 @@
             
             <div class="journey-stop" style="animation-delay: 0.5s;">
               <div class="stop-marker euphoria">
-                <span class="stop-icon">🎉</span>
+                <span class="stop-icon">✨</span>
               </div>
               <div class="stop-content">
                 <h3>The Euphoria</h3>
@@ -113,7 +113,7 @@
         </div>
         
         <div class="celebration-card" style="animation-delay: 0.5s;">
-          <span class="celebration-icon">🌟</span>
+          <span class="celebration-icon">⭐</span>
           <h3>Struggle Recognition</h3>
           <p>We honor the struggle itself. Every bug fixed, every concept grasped is a victory worth noting.</p>
         </div>
@@ -144,6 +144,7 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
 import type { StoryChapter, StoryContent, PracticeExample } from '~/types'
 
 // SEO and meta management
@@ -193,7 +194,7 @@ const storyChapters: StoryChapter[] = [
     ]
   },
   {
-    icon: "⚔️",
+    icon: "🏹",
     title: "The Samurai's Wisdom",
     content: [
       {

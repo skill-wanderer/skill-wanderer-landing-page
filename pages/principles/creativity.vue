@@ -96,7 +96,7 @@
             </div>
             
             <div class="growth-point" style="animation-delay: 0.3s;">
-              <div class="growth-marker">💔</div>
+              <div class="growth-marker">💥</div>
               <div class="growth-content">
                 <h4>First Startup Failure</h4>
                 <p>Wrong market timing, understood customer needs</p>
@@ -104,7 +104,7 @@
             </div>
             
             <div class="growth-point" style="animation-delay: 0.4s;">
-              <div class="growth-marker">🐛</div>
+              <div class="growth-marker">🔥</div>
               <div class="growth-content">
                 <h4>Bad Architecture</h4>
                 <p>System crashed, mastered scalability principles</p>
@@ -112,7 +112,7 @@
             </div>
             
             <div class="growth-point" style="animation-delay: 0.5s;">
-              <div class="growth-marker">👥</div>
+              <div class="growth-marker">🧑‍🤝‍🧑</div>
               <div class="growth-content">
                 <h4>Team Conflicts</h4>
                 <p>Project failed, became better leader</p>
@@ -135,7 +135,7 @@
       subtitle="How we create a safe space for experimentation"
       :examples="practiceExamples"
       background-color="var(--darker-bg)"
-      list-icon="🌱"
+      list-icon="🎨"
     />
 
     <!-- Quote Section -->
@@ -149,6 +149,7 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
 import type { StoryChapter, StoryContent, PracticeExample } from '~/types'
 
 // SEO and meta management
@@ -190,7 +191,7 @@ const storyChapters: StoryChapter[] = [
     ]
   },
   {
-    icon: "📋",
+    icon: "📝",
     title: "The Annual Review That Changed Everything",
     content: [
       {
@@ -210,7 +211,7 @@ const storyChapters: StoryChapter[] = [
     ]
   },
   {
-    icon: "🔍",
+    icon: "💎",
     title: "The Deeper Truth",
     content: [
       {

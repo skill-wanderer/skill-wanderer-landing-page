@@ -1,9 +1,9 @@
 <template>
   <div>    <!-- Hero Section -->
     <section class="hero">
-      <h1>Our 12 Guiding Principles</h1>
+      <h1>Our 12 Guild Principles</h1>
       <p>
-        Each principle represents a promise, a story, and a commitment. Click on any principle 
+        Each principle represents a promise, a story, and a commitment to our tech guild mission. Click on any principle 
         to discover the journey and wisdom behind it.
       </p>
       <svg class="wandering-path" viewBox="0 0 1200 150">
@@ -110,12 +110,12 @@
             <div class="principle-header">
               <div class="principle-number">7</div>
               <div class="principle-title">
-                <h3>Pathways for Our Learners</h3>
-                <p class="principle-tagline">From Student to Teacher</p>
+                <h3>Pathways for Guild Members</h3>
+                <p class="principle-tagline">From Apprentice to Master</p>
               </div>
             </div>
             <p class="principle-description">
-              Creating real opportunities for learners to join our team and continue the cycle of growth.
+              Creating real opportunities for guild members to advance through the ranks and continue the cycle of growth.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -125,7 +125,7 @@
             <div class="principle-header">
               <div class="principle-number">8</div>
               <div class="principle-title">
-                <h3>Technology Partnerships Fueling Mission</h3>
+                <h3>Guild Engagements Fueling Mission</h3>
                 <p class="principle-tagline">Work That Gives Back</p>
               </div>
             </div>
@@ -136,16 +136,16 @@
           </a>
 
           <!-- Principle 9 -->
-          <a href="/principles/resourceful" class="principle-card" style="animation-delay: 0.9s;">
+          <a href="/principles/respect-ip" class="principle-card" style="animation-delay: 0.9s;">
             <div class="principle-header">
               <div class="principle-number">9</div>
               <div class="principle-title">
-                <h3>Resourceful Curation</h3>
-                <p class="principle-tagline">Best of All Worlds</p>
+                <h3>Respect IP</h3>
+                <p class="principle-tagline">Honoring IP in the Age of AI</p>
               </div>
             </div>
             <p class="principle-description">
-              Curating the best existing third-party resources while creating original free content where we add unique value.
+              Explicitly reinforcing intellectual property boundaries and attribution practices as we embrace AI-enabled content generation from our own curriculum.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -155,12 +155,12 @@
             <div class="principle-header">
               <div class="principle-number">10</div>
               <div class="principle-title">
-                <h3>Collaborative Community</h3>
+                <h3>Guild Community</h3>
                 <p class="principle-tagline">Together We Rise</p>
               </div>
             </div>
             <p class="principle-description">
-              Fostering an ecosystem where learners support each other and grow together.
+              Fostering a guild ecosystem where members support each other and grow together.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </a>
@@ -202,7 +202,7 @@
     <section class="mission">
       <div class="mission-content">
         <div class="mission-quote">
-We believe quality education shapes brighter futures. Our mission is to achieve this by integrating real-world insights from our expertise and impact work directly into highly practical e-learning. This approach builds a sustainable revenue model, enabling us to operate with complete integrity—forgoing any benefit that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every client project funded becomes free education shared. Every real-world challenge solved plants seeds of knowledge for countless learners.
+We believe quality education shapes brighter futures. Our mission as a tech guild is to achieve this by integrating real-world insights from our craft and guild engagements directly into highly practical, guild-based learning. This approach builds toward a sustainable social enterprise, enabling us to operate with complete integrity—forgoing any benefit that could cause doubt in our cause—and reinvest all resources for lasting global impact. Every guild engagement becomes free education shared. Every real-world challenge solved plants seeds of knowledge for countless guild members.
         </div>
       </div>
     </section>  </div>
@@ -213,14 +213,14 @@ import { onMounted } from 'vue'
 
 // SEO and meta management
 useSEO({
-  title: 'Our 12 Guiding Principles | Skill-Wanderer',
-  description: 'Discover the 12 guiding principles that shape Skill-Wanderer\'s mission to provide free, quality tech education with complete integrity and transparency.',
-  keywords: ['skill-wanderer principles', 'education philosophy', 'learning principles', 'tech education values', 'integrity in education'],
+  title: 'Our 12 Guild Principles | Skill-Wanderer',
+  description: 'Discover the 12 guild principles that shape Skill-Wanderer\'s tech guild mission to provide free, quality education with complete integrity and transparency.',
+  keywords: ['skill-wanderer principles', 'guild principles', 'tech guild values', 'social enterprise', 'integrity in education'],
   type: 'article',
   structuredData: [
     createArticleSchema(
-      'Our 12 Guiding Principles | Skill-Wanderer',
-      'Discover the 12 guiding principles that shape Skill-Wanderer\'s mission to provide free, quality tech education with complete integrity and transparency.',
+      'Our 12 Guild Principles | Skill-Wanderer',
+      'Discover the 12 guild principles that shape Skill-Wanderer\'s tech guild mission to provide free, quality education with complete integrity and transparency.',
       'https://skill-wanderer.com/principles'
     ),
     createBreadcrumbSchema([
@@ -229,12 +229,12 @@ useSEO({
     ]),
     createFAQSchema([
       {
-        question: 'What are Skill-Wanderer\'s guiding principles?',
-        answer: 'Skill-Wanderer is guided by 12 principles: Accessible, Integrity and Impartiality, Individualized, Relevant, Engaging, Creativity, Community, Social Enterprise, Mission-Centric Reinvestment, Pathways, Resourceful, and Technology Partnership.'
+        question: 'What are Skill-Wanderer\'s guild principles?',
+        answer: 'Skill-Wanderer is guided by 12 guild principles: Accessible, Integrity and Impartiality, Individualized, Relevant, Engaging, Creativity, Guild Community, Social Enterprise Model, Mission-Centric Reinvestment, Pathways, Respect IP, and Guild Engagements.'
       },
       {
         question: 'Why does Skill-Wanderer have no ads or affiliate marketing?',
-        answer: 'Integrity and Impartiality is one of Skill-Wanderer\'s core principles. The platform avoids ads, affiliate marketing, and commissions to ensure all recommendations are purely for the learner\'s benefit, with no hidden agendas or conflicts of interest.'
+        answer: 'Integrity and Impartiality is one of Skill-Wanderer\'s core guild principles. The guild avoids ads, affiliate marketing, and commissions to ensure all recommendations are purely for the member\'s benefit, with no hidden agendas or conflicts of interest.'
       }
     ])
   ]

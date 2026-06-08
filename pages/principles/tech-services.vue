@@ -48,7 +48,7 @@
           </div>
           
           <div class="engine-component impact">
-            <span class="component-icon">🌟</span>
+            <span class="component-icon">⭐</span>
             <span class="component-label">Real Impact</span>
           </div>
         </div>
@@ -64,7 +64,7 @@
         </div>
         <div class="role-comparison">
           <div class="role-card practitioner" style="animation-delay: 0.1s;">
-            <div class="role-icon">💸</div>
+            <div class="role-icon">💵</div>
             <h3>Lower Upfront Costs</h3>
             <ul class="role-benefits">
               <li>No large upfront payments</li>
@@ -203,24 +203,25 @@
 </template>
 
 <script setup>
+// Icons replaced with emojis
 import { computed } from 'vue'
 
 // SEO and meta management
 useSEO({
-  title: 'Technology Partnerships Fueling Mission: Work That Gives Back | Principle #8',
-  description: 'How Skill-Wanderer uses technology partnerships to create a self-sustaining engine that funds education while ensuring relevance through practice.',
-  keywords: ['technology partnerships', 'self-sustaining mission', 'skill-wanderer principle 8', 'real-world practice', 'funding education'],
+  title: 'Skill-Wanderer Tech Services: The Self-Sustaining Engine | Principle #8',
+  description: 'How Skill-Wanderer delivers technology services that power our educational mission — the self-sustaining engine connecting real-world client work with free, quality learning.',
+  keywords: ['skill-wanderer tech services', 'self-sustaining engine', 'skill-wanderer principle 8', 'real-world practice', 'mission-driven tech'],
   type: 'article',
   structuredData: [
     createArticleSchema(
-      'Technology Partnerships Fueling Mission: Work That Gives Back | Principle #8',
-      'How Skill-Wanderer uses technology partnerships to create a self-sustaining engine that funds education while ensuring relevance through real-world practice.',
+      'Skill-Wanderer Tech Services: The Self-Sustaining Engine | Principle #8',
+      'How Skill-Wanderer delivers technology services that power our educational mission — the self-sustaining engine connecting real-world client work with free, quality learning.',
       'https://skill-wanderer.com/principles/tech-services'
     ),
     createBreadcrumbSchema([
       { name: 'Home', url: 'https://skill-wanderer.com/' },
       { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
-      { name: 'Technology Partnership', url: 'https://skill-wanderer.com/principles/tech-services' }
+      { name: 'Tech Services', url: 'https://skill-wanderer.com/principles/tech-services' }
     ])
   ]
 })

@@ -8,6 +8,7 @@ export interface SEOConfig {
   author?: string
   keywords?: string[]
   structuredData?: any | any[]
+  robots?: string // SEO: e.g. 'index,follow' or 'noindex,nofollow'
 }
 
 export const useSEO = (config: SEOConfig) => {
@@ -37,6 +38,7 @@ export const useSEO = (config: SEOConfig) => {
       // Basic meta tags
       { name: 'description', content: optimizedDescription },
       { name: 'author', content: config.author || 'Quan Nguyen' },
+      ...(config.robots ? [{ name: 'robots', content: config.robots }] : []),
       
       // Keywords (if provided)
       ...(config.keywords ? [{ name: 'keywords', content: config.keywords.join(', ') }] : []),
@@ -90,15 +92,13 @@ export const createOrganizationSchema = () => {
     "name": "Skill-Wanderer",
     "url": "https://skill-wanderer.com",
     "logo": "https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp",
-    "description": "Free, practical tech education that celebrates learning through failure. Quality education shapes brighter futures.",
+    "description": "A tech guild for social good offering free, practical education. Learn by building. Grow by contributing. Sustain through craft.",
     "founder": {
       "@type": "Person",
       "name": "Quan Nguyen",
-      "jobTitle": "Founder & Lead Educator"
+      "jobTitle": "Founder & Guild Master"
     },
-    "sameAs": [
-      "https://www.linkedin.com/in/quan-nguyen-skill-wanderer"
-    ]
+    "sameAs": []
   }
 }
 

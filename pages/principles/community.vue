@@ -23,7 +23,7 @@
         <div class="reasons-grid">
           <div class="reason-card" style="animation-delay: 0.1s;">
             <div class="reason-number">1</div>
-            <span class="reason-icon">🌉</span>
+            <span class="reason-icon">🔗</span>
             <h3>The Bridge is Shorter</h3>
             <p>
               When someone just learned something, they still remember the confusion, the "aha" moments, 
@@ -44,7 +44,7 @@
           
           <div class="reason-card" style="animation-delay: 0.3s;">
             <div class="reason-number">3</div>
-            <span class="reason-icon">🌟</span>
+            <span class="reason-icon">⭐</span>
             <h3>Community Creates Culture</h3>
             <p>
               When everyone is both teacher and student, ego disappears. Knowledge flows freely, 
@@ -85,7 +85,7 @@
           </div>
           
           <div class="ecosystem-node supporter">
-            <span class="node-icon">💝</span>
+            <span class="node-icon">❤️</span>
             <span>Supporters</span>
           </div>
           
@@ -117,7 +117,7 @@
         
         <div class="vision-grid">
           <div class="vision-card" style="animation-delay: 0.1s;">
-            <span class="vision-icon">🌐</span>
+            <span class="vision-icon">🌍</span>
             <h3>Global Reach</h3>
             <p>
               Connecting learners from every corner of the world, breaking down geographical barriers 
@@ -126,7 +126,7 @@
           </div>
           
           <div class="vision-card" style="animation-delay: 0.2s;">
-            <span class="vision-icon">🤲</span>
+            <span class="vision-icon">❤️</span>
             <h3>Mutual Support</h3>
             <p>
               Creating systems where those who can give—whether time, knowledge, or resources—can 
@@ -144,7 +144,7 @@
           </div>
           
           <div class="vision-card" style="animation-delay: 0.4s;">
-            <span class="vision-icon">💫</span>
+            <span class="vision-icon">✨</span>
             <h3>Lasting Impact</h3>
             <p>
               Building a self-sustaining ecosystem that continues to grow and help people long into 
@@ -173,6 +173,7 @@
 </template>
 
 <script setup lang="ts">
+// Icons replaced with emojis
 import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management
@@ -200,7 +201,7 @@ const storyIntro = 'I call our tenth principle <strong>Collaborative Community E
 
 const storyChapters: StoryChapter[] = [
   {
-    icon: '👥',
+    icon: '🧑‍🤝‍🧑',
     title: 'The Power of Peer Teaching',
     content: [
       {
@@ -236,7 +237,7 @@ const storyChapters: StoryChapter[] = [
     ]
   },
   {
-    icon: '🌍',
+    icon: '🚀',
     title: 'Scaling to Global Impact',
     content: [
       {
