@@ -3,10 +3,10 @@
       <div class="footer-links">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/principles">Principles</NuxtLink>
-        <NuxtLink to="/expertise-impact">Expertise & Impact</NuxtLink>
-        <NuxtLink to="https://dojo.skill-wanderer.com">Dojo</NuxtLink>
-        <NuxtLink to="https://wanderings.skill-wanderer.com">Blog</NuxtLink>
+        <NuxtLink to="/principles">Guild Principles</NuxtLink>
+        <NuxtLink to="/work-with-us">Engage the Guild</NuxtLink>
+        <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Dojo</a>
+        <a href="https://wanderings.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Wanderings Blog</a>
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
         <a href="https://linkedin.com/in/quan-nguyen-skill-wanderer" target="_blank" rel="noopener noreferrer">Personal LinkedIn</a>
         <NuxtLink to="/contact">Contact</NuxtLink>
