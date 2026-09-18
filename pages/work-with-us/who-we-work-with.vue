@@ -18,7 +18,7 @@
         <div class="section-header">
           <h2>Our Partners & Collaborators</h2>
           <p>
-            We work across a range of contexts — from mission-driven non-profits to early-stage startups
+            We work across a range of contexts, from mission-driven non-profits to early-stage startups
             and independent builders. Here is where we tend to provide the most value.
           </p>
         </div>
@@ -38,9 +38,9 @@
             <div class="audience-icon">🚀</div>
             <h3>Startups</h3>
             <p>
-              We work with early-stage teams developing new digital products. Through iterative
-              development sprints and flexible collaboration models, we help startups validate ideas and evolve
-              their systems over time.
+              We work with early-stage teams developing new digital products. Starting from a working
+              prototype and continuing under ongoing technical care, we help startups validate ideas and
+              evolve their systems over time.
             </p>
           </div>
 
@@ -100,7 +100,7 @@
           <div class="mapping-card">
             <div class="mapping-label">Organizations</div>
             <div class="mapping-arrow">→</div>
-            <div class="mapping-value">Guild partnership & development sprints</div>
+            <div class="mapping-value">Guild partnership & ongoing technical care</div>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@
             <h3>Not sure if your project fits?</h3>
             <p>
               We are always open to discussing ideas and exploring potential collaborations.
-              Feel free to reach out — no commitment required.
+              Feel free to reach out. No commitment required.
             </p>
           </div>
           <NuxtLink to="/contact" class="callout-link">Get in Touch</NuxtLink>

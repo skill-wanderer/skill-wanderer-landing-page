@@ -220,7 +220,7 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: "text",
-        text: "The world of technology is in constant motion. Old skills become obsolete, making way for new ones. Job titles might stay the same, but the skills required are vastly different. The job of a developer today bears little resemblance to the era of punch cards. There even used to be a formal job title called \"Computer\" for people who performed calculations—a role that has since vanished entirely. This constant evolution means that lifelong learning isn't just a nice idea; it's a necessity for survival and growth."
+        text: "The world of technology is in constant motion. Old skills become obsolete, making way for new ones. Job titles might stay the same, but the skills required are vastly different. The job of a developer today bears little resemblance to the era of punch cards. There even used to be a formal job title called \"Computer\" for people who performed calculations, a role that has since vanished entirely. This constant evolution means that lifelong learning isn't just a nice idea; it's a necessity for survival and growth."
       },
       {
         type: "personal-story",
@@ -234,7 +234,7 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: "text",
-        text: "This also highlights a challenge I've repeatedly observed in formal education. Don't get me wrong, university education is valuable—I myself enrolled in a computer science program. However, in many parts of the world, it often lacks a crucial component: practical, real-world application. I've led many bright graduates who have a strong theoretical foundation but are unprepared for the realities of a development job, forcing them to be retrained from the ground up."
+        text: "This also highlights a challenge I've repeatedly observed in formal education. Don't get me wrong, university education is valuable, and I myself enrolled in a computer science program. However, in many parts of the world, it often lacks a crucial component: practical, real-world application. I've led many bright graduates who have a strong theoretical foundation but are unprepared for the realities of a development job, forcing them to be retrained from the ground up."
       },
       {
         type: "text",

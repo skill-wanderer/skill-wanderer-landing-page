@@ -238,8 +238,17 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </span>
               <span class="rich-menu-text">
-                <span class="rich-menu-label">Success Sharing</span>
-                <span class="rich-menu-desc">Partnership over outsourcing — shared risk, shared reward</span>
+                <span class="rich-menu-label">How We Deliver</span>
+                <span class="rich-menu-desc">Senior-led delivery, prototype first, no lock-in</span>
+              </span>
+            </NuxtLink>
+            <NuxtLink to="/work-with-us/service-model" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Service Model</span>
+                <span class="rich-menu-desc">No upfront development fee: how pricing actually works</span>
               </span>
             </NuxtLink>
             <div class="rich-menu-divider"></div>
@@ -271,7 +280,8 @@
             <NuxtLink to="/work-with-us/who-we-work-with" @click="closeMobileMenu">Ideal Partners</NuxtLink>
             <NuxtLink to="/work-with-us/what-we-build" @click="closeMobileMenu">What We Build</NuxtLink>
             <NuxtLink to="/work-with-us/our-projects" @click="closeMobileMenu">Projects</NuxtLink>
-            <NuxtLink to="/work-with-us/success-sharing-model" @click="closeMobileMenu">Success Sharing</NuxtLink>
+            <NuxtLink to="/work-with-us/success-sharing-model" @click="closeMobileMenu">How We Deliver</NuxtLink>
+            <NuxtLink to="/work-with-us/service-model" @click="closeMobileMenu">Service Model</NuxtLink>
             <NuxtLink to="/work-with-us/become-a-partner" @click="closeMobileMenu">Partner With Us</NuxtLink>
           </div>
         </div>
@@ -858,7 +868,7 @@ onUnmounted(() => {
   transform: translateX(0);
 }
 
-/* External link arrows — always visible but subtle */
+/* External link arrows: always visible but subtle */
 .rich-menu-item[target="_blank"] .rich-menu-arrow {
   opacity: 0.4;
   transform: translateX(0);

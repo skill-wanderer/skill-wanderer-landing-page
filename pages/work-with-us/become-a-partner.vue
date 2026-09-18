@@ -5,10 +5,11 @@
       <h1>Become a Guild Partner</h1>
       <p>
         We work with organizations that need reliable, senior-led engineering capacity.
-        Not outsourcing. Not staff augmentation. A delivery system you plug into —
-        with predictable cadence, transparent pricing, and architectural oversight built in.
+        Not outsourcing. Not staff augmentation. A delivery system you plug into,
+        with transparent pricing and architectural oversight built in. Projects are accepted
+        selectively, and accepted projects start with a free working prototype.
       </p>
-      <NuxtLink to="/work-with-us/success-sharing-model" class="launch-badge-link">How Our Success Sharing Model Works</NuxtLink>
+      <NuxtLink to="/work-with-us/service-model" class="launch-badge-link">How Our Service Model Works</NuxtLink>
     </section>
 
     <!-- Why Partner -->
@@ -18,7 +19,7 @@
         <p class="philosophy-description">
           A guild partnership is not a vendor contract. It is a long-term delivery relationship
           where the same senior architect leads your work, the same artisans build your system,
-          and the same sprint rhythm keeps progress visible.
+          and the same senior oversight keeps progress visible.
           <strong style="color: var(--primary-orange);">
             You get a system, not a person. And the system is designed to scale with you.
           </strong>
@@ -34,13 +35,13 @@
           <div class="cycle-item">
             <div class="cycle-icon">📚</div>
             <h3>Scalable Capacity</h3>
-            <p>From single sprints to dedicated engineering pods</p>
+            <p>From a single website to a system under continuous technical care</p>
           </div>
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
             <div class="cycle-icon">🏛️</div>
             <h3>Mission-Backed</h3>
-            <p>Your work funds free education — a genuine impact story</p>
+            <p>Your work funds free education, a genuine impact story</p>
           </div>
         </div>
       </div>
@@ -60,7 +61,7 @@
             <h4>Architectural Oversight</h4>
             <p>
               The Guild Master leads architecture, reviews code, and maintains quality
-              standards across every sprint. You're never relying on unsupervised work.
+              standards across every project. You're never relying on unsupervised work.
             </p>
           </div>
 
@@ -68,8 +69,8 @@
             <div class="feature-icon">🧮</div>
             <h4>Predictable Pricing</h4>
             <p>
-              Sprint bands are confirmed before work begins. Retainer capacity is fixed monthly.
-              No surprise invoices, no scope-creep billing.
+              No separate upfront development fee. The exact recurring price is confirmed after
+              the prototype review, then fixed monthly. No surprise invoices, no scope-creep billing.
             </p>
           </div>
 
@@ -86,8 +87,8 @@
             <div class="feature-icon">🔓</div>
             <h4>Full Ownership, Zero Lock-In</h4>
             <p>
-              All code belongs to you. Open standards, clear documentation, and knowledge
-              transfer at every milestone. Walk away whenever you want.
+              All code belongs to you. Open standards, and access to the source and project
+              materials where reasonably possible. Walk away whenever you want.
             </p>
           </div>
         </div>
@@ -97,8 +98,8 @@
           <h3>The Mission Advantage</h3>
           <p>
             Every engagement through the guild funds free education and trains the next generation
-            of developers. This is not a marketing angle — it's the economic model.
-            <strong>Your sprint dollars sustain the learning ecosystem.</strong>
+            of developers. This is not a marketing angle. It's the economic model.
+            <strong>Your service fees sustain the learning ecosystem.</strong>
           </p>
         </div>
       </div>
@@ -112,39 +113,40 @@
         </div>
 
         <div class="model-intro">
-          <p class="model-statement">Start with a sprint. Scale into a pod. Stay as long as we're useful.</p>
+          <p class="model-statement">Start with a prototype. Launch. Stay as long as we're useful.</p>
           <p class="model-description">
-            Most partnerships begin with a single sprint cycle to validate the working relationship.
-            From there, teams scale into retainer capacity or dedicated engineering pods
-            based on roadmap needs.
+            Accepted partnerships begin with a working prototype, built at no cost, so both sides
+            can judge real work before committing. From there the project runs under ongoing
+            hosting and technical care.
           </p>
         </div>
 
         <div class="model-details">
           <div class="model-card">
             <div class="model-icon">🧭</div>
-            <h4>Start with a Sprint</h4>
+            <h4>Start with a Prototype</h4>
             <p>
-              A two-week cycle to validate the working relationship. Real deliverables,
-              senior oversight, and a clear picture of how the guild operates.
+              A working prototype at no cost, to validate the direction and the working
+              relationship. Real deliverables, senior oversight, and a clear picture of how
+              the guild operates.
             </p>
           </div>
 
           <div class="model-card">
             <div class="model-icon">🔄</div>
-            <h4>Scale into Cadence</h4>
+            <h4>Settle into Care</h4>
             <p>
-              Move to ongoing sprint cycles or a monthly engineering pod.
-              The same team, the same standards, predictable cost and capacity.
+              After launch the project continues under ongoing hosting and technical care.
+              The same team, the same standards, one predictable monthly cost.
             </p>
           </div>
 
           <div class="model-card">
             <div class="model-icon">✅</div>
-            <h4>Full Knowledge Transfer</h4>
+            <h4>No Vendor Lock-In</h4>
             <p>
-              Documentation, walkthroughs, and handover support built into every engagement.
-              Your team can take ownership at any point.
+              You can inspect the code and project materials, and stop the service at any point.
+              Migrate the project yourself or bring in another provider to do it.
             </p>
           </div>
         </div>
@@ -182,7 +184,7 @@
         <h2>Ready to Start?</h2>
         <p>
           Explore how the guild works, or reach out directly to scope a starting point.
-          No pitch deck required — just a clear conversation about what you need.
+          No pitch deck required, just a clear conversation about what you need.
         </p>
 
         <div class="cta-buttons">
@@ -200,9 +202,9 @@
 useSEO({
   title: 'Become a Guild Partner | Skill-Wanderer',
   description:
-    'Senior-led engineering partnerships with predictable sprint delivery, scalable capacity, and mission-backed sustainability. Not outsourcing — a system you plug into.',
+    'Senior-led engineering partnerships with no upfront development fee, a free first prototype, and mission-backed sustainability. Not outsourcing, but a system you plug into.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['technology partner', 'guild partnership', 'engineering pod', 'sprint delivery', 'senior-led development', 'software development partner'],
+  keywords: ['technology partner', 'guild partnership', 'no upfront fee', 'free prototype', 'senior-led development', 'software development partner'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },

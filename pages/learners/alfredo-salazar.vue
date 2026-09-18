@@ -31,7 +31,7 @@
           <p>
             The first thing you notice about Alfredo is his <strong>words</strong>. He speaks with conviction,
             with clarity, and with a natural charisma that pulls people in. From the very first conversation,
-            it was clear that this learner wasn't going to sit quietly in the back row — he had things to say,
+            it was clear that this learner wasn't going to sit quietly in the back row. He had things to say,
             ideas to share, and a fire that refused to be contained.
           </p>
         </div>
@@ -45,7 +45,7 @@
         <p class="section-intro">
           What sets Alfredo apart is his fierce independence. He doesn't wait for instructions or hand-holding.
           He charts his own course, dives headfirst into challenges, and emerges on the other side with
-          knowledge that was truly earned — not simply given.
+          knowledge that was truly earned, not simply given.
         </p>
 
         <div class="milestones-grid">
@@ -53,7 +53,7 @@
             <div class="milestone-icon">💬</div>
             <h3>Master of Words</h3>
             <p>
-              Alfredo has a rare gift — the ability to <strong>articulate complex ideas</strong> with remarkable
+              Alfredo has a rare gift: the ability to <strong>articulate complex ideas</strong> with remarkable
               clarity. Whether explaining a concept to peers, debating an approach, or presenting his work,
               his words carry weight and his arguments are always sharp and well-constructed.
             </p>
@@ -64,7 +64,7 @@
             <h3>Fiercely Independent</h3>
             <p>
               While many learners rely on guidance at every turn, Alfredo <strong>blazes his own trail</strong>.
-              He researches, experiments, and problem-solves on his own terms. This independence isn't stubbornness —
+              He researches, experiments, and problem-solves on his own terms. This independence isn't stubbornness;
               it's a deep-rooted desire to truly understand, not just follow.
             </p>
           </div>
@@ -73,7 +73,7 @@
             <div class="milestone-icon">🔥</div>
             <h3>Relentless Drive</h3>
             <p>
-              The fire in Alfredo isn't just a spark — it's a <strong>sustained blaze</strong>. He brings
+              The fire in Alfredo isn't just a spark. It's a <strong>sustained blaze</strong>. He brings
               intensity and passion to everything he tackles. When he commits to learning something, he doesn't
               stop until he's mastered it on his own terms.
             </p>
@@ -99,7 +99,7 @@
         <p>
           Alfredo graduated the <strong>Mobile Game Dev Path</strong> with the same fire and independence
           that defined his entire learning journey. Now, he is working with one of our partners to gain
-          real-world experience — putting his skills to the test in a professional environment where his
+          real-world experience, putting his skills to the test in a professional environment where his
           words, drive, and self-reliance truly shine.
         </p>
 
@@ -109,7 +109,7 @@
         </div>
 
         <blockquote class="featured-quote">
-          "Alfredo is the kind of learner who doesn't need you to light the way — he carries his own torch.
+          "Alfredo is the kind of learner who doesn't need you to light the way. He carries his own torch.
           His words inspire, his independence impresses, and his fire is contagious. The firebrand has a
           future as bright as the flame he carries."
         </blockquote>

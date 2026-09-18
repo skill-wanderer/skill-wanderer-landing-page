@@ -28,10 +28,10 @@
         <div class="profile-intro">
           <h2>A Meeting Written by Fate</h2>
           <p>
-            I met Thanh while scrolling to find the next mentee for our guild associate program — and it
+            I met Thanh while scrolling to find the next mentee for our guild associate program, and it
             felt like <strong>fate</strong>. Her LinkedIn profile simply popped up on my screen, and her
             profile and her posts were exactly what I was looking for: <strong>eager to learn and
-            passionate</strong>. That is all I want from a mentee and a guild member — no more, no less.
+            passionate</strong>. That is all I want from a mentee and a guild member. No more, no less.
           </p>
         </div>
       </div>
@@ -43,8 +43,8 @@
         <h2>📖 An Honest Beginning</h2>
         <p class="section-intro">
           We had a quick talk and I was honest with her. Our guild is still in its early days, so there
-          will be a rocky road ahead. I could not guarantee a stable income for her — nor any income at
-          all — but I could guarantee one thing: <strong>she would learn a lot with me</strong>. She
+          will be a rocky road ahead. I could not guarantee a stable income for her, nor any income at
+          all, but I could guarantee one thing: <strong>she would learn a lot with me</strong>. She
           accepted right away.
         </p>
 
@@ -54,7 +54,7 @@
             <h3>Eager and Passionate</h3>
             <p>
               From the very first conversation, Thanh's <strong>eagerness to learn</strong> was
-              unmistakable. She doesn't wait to be told what's interesting — she goes looking for it,
+              unmistakable. She doesn't wait to be told what's interesting. She goes looking for it,
               and she brings that same hunger to every task the guild puts in front of her.
             </p>
           </div>
@@ -64,7 +64,7 @@
             <h3>Nothing Lost in Transfer</h3>
             <p>
               Thanh is <strong>quick to jot down</strong> the knowledge the guild master shares with
-              her during her work. None of that knowledge transfer has been lost — and honestly, as the
+              her during her work. None of that knowledge transfer has been lost, and honestly, as the
               guild master, I am very impressed.
             </p>
           </div>
@@ -74,7 +74,7 @@
             <h3>The Guild's Vanguard</h3>
             <p>
               As the guild's workload grows and the guild master must split his attention across many
-              fronts, Thanh has become the <strong>vanguard</strong> on most of our recent work —
+              fronts, Thanh has become the <strong>vanguard</strong> on most of our recent work,
               moving first, holding the line, and clearing the path for the rest of the guild.
             </p>
           </div>
@@ -84,7 +84,7 @@
             <h3>Quickly Indispensable</h3>
             <p>
               In just <strong>one month</strong> of working together, Thanh has quickly become
-              indispensable to the guild. The kind of teammate you didn't know you needed — until
+              indispensable to the guild. The kind of teammate you didn't know you needed, until
               you can't imagine the guild without her.
             </p>
           </div>
@@ -99,8 +99,8 @@
         <p>
           The AI era hasn't done passionate learners like Thanh any justice. Companies today ask for
           intern positions with at least <strong>two years of experience</strong>, and a fresh
-          graduate's chance to ever earn those two years grows thinner by the day. AI is rising — sure
-          — but it still needs humans to control it, and it needs <strong>experienced</strong> humans
+          graduate's chance to ever earn those two years grows thinner by the day. AI is rising, sure,
+          but it still needs humans to control it, and it needs <strong>experienced</strong> humans
           to do it well. That is exactly why our guild was born: to give people the experience they
           deserve.
         </p>
@@ -111,7 +111,7 @@
         </div>
 
         <blockquote class="featured-quote">
-          "Thanh is the kind of mentee every guild master hopes to find — eager, passionate, and
+          "Thanh is the kind of mentee every guild master hopes to find: eager, passionate, and
           trustworthy with the work. In a single month she went from a stranger on my LinkedIn feed
           to the vanguard of the guild. The future she deserves is the one we are building together."
         </blockquote>

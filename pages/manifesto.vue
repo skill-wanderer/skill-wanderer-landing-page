@@ -14,7 +14,7 @@
     <section class="intro">
       <div class="container">
         <p class="intro-text">
-          We believe the traditional corporate model is obsolete—it suppresses the potential of creators and obscures value from partners. This Manifesto defines our commitment to a <span class="highlight">sovereign, meritocratic ecosystem</span> where mastery is the standard, contribution replaces tuition, and transparency is the law.
+          We believe the traditional corporate model is obsolete. It suppresses the potential of creators and obscures value from partners. This Manifesto defines our commitment to a <span class="highlight">sovereign, meritocratic ecosystem</span> where mastery is the standard, contribution replaces tuition, and transparency is the law.
         </p>
       </div>
     </section>
@@ -32,7 +32,7 @@
           <span>Earn.</span>
         </div>
         <p class="section-intro">
-          Most platforms ask you to pay first, learn alone, and hope to get a job later. We do it differently. At Skill-Wanderer, you don't pay to learn — you earn your way by building.
+          Most platforms ask you to pay first, learn alone, and hope to get a job later. We do it differently. At Skill-Wanderer, you don't pay to learn. You earn your way by building.
         </p>
         <div class="principles-cards">
           <div class="principle-card">
@@ -59,7 +59,7 @@
       <div class="container">
         <div class="section-label">02</div>
         <h2>The Economic Engine</h2>
-        <p class="section-subtitle">The 15/85 Split — 100% Financial Transparency</p>
+        <p class="section-subtitle">The 15/85 Split: 100% Financial Transparency</p>
         <p class="section-intro">
           For every project, the Net Profit is divided into two clear buckets. No hidden fees. No black boxes. Every guild member knows exactly where every coin goes.
         </p>
@@ -74,7 +74,7 @@
           <div class="split-block pool">
             <div class="split-percent">85%</div>
             <div class="split-label">Working Pool</div>
-            <p>Distributed directly to the craftspeople who build the solution. Every line of code, every design decision, every quality check — rewarded transparently.</p>
+            <p>Distributed directly to the craftspeople who build the solution. Every line of code, every design decision, every quality check, rewarded transparently.</p>
           </div>
         </div>
 
@@ -120,7 +120,7 @@
       <div class="container">
         <div class="section-label">03</div>
         <h2>The Path to Mastery</h2>
-        <p class="section-subtitle">Guild Ranks — Progress determined solely by skill, consistency, and The Trials</p>
+        <p class="section-subtitle">Guild Ranks: progress determined solely by skill, consistency, and The Trials</p>
         <p class="section-intro">We do not have employees; we have Ranks.</p>
         <div class="ranks-list">
           <div class="rank-item rank-0">
@@ -174,7 +174,7 @@
       <div class="container">
         <div class="section-label">04</div>
         <h2>The Sovereign Exchange</h2>
-        <p class="section-subtitle">The 20% Rule — Keeping the Guild Growing</p>
+        <p class="section-subtitle">The 20% Rule: Keeping the Guild Growing</p>
         <p class="section-intro">
           To maintain our 15% "Golden Ratio" and keep the Guild growing, all members participate in the Sovereign Exchange. This ensures that while we thrive on high-value partnerships, our internal platform and the Rank 0 education mission never stop evolving.
         </p>
@@ -243,12 +243,12 @@
       <div class="container">
         <div class="section-label">05</div>
         <h2>The Quality Shield</h2>
-        <p class="section-subtitle">Stability Points — Protecting our partners and our reputation</p>
+        <p class="section-subtitle">Stability Points: protecting our partners and our reputation</p>
         <div class="quality-visual">
           <div class="stability-score">
             <div class="score-circle">
               <span class="score-label">Stability Score</span>
-              <span class="score-range">0 — 100</span>
+              <span class="score-range">0 to 100</span>
             </div>
           </div>
           <div class="quality-content">
@@ -281,7 +281,7 @@
             The Skill-Wanderer Tech Guild is a <span class="highlight">living organism</span>. Our percentages, stipends, and internal structures are subject to change at any time according to the "Guild Situation." This includes shifts in the global tech economy, infrastructure demands, and the collective needs of our members.
           </p>
           <p>
-            This is not a limitation — it is a strength. A guild that cannot adapt cannot survive. What never changes are the three pillars of our covenant:
+            This is not a limitation. It is a strength. A guild that cannot adapt cannot survive. What never changes are the three pillars of our covenant:
           </p>
           <div class="pillars">
             <div class="pillar">
@@ -292,7 +292,7 @@
             <div class="pillar">
               <span class="pillar-icon">🔍</span>
               <h3>Transparency</h3>
-              <p>Every coin, every decision — visible.</p>
+              <p>Every coin, every decision, visible.</p>
             </div>
             <div class="pillar">
               <span class="pillar-icon">🤝</span>
@@ -307,7 +307,7 @@
     <!-- CTA Section -->
     <section class="cta">
       <h2>Ready to Forge Your Path?</h2>
-      <p>The guild is open. The trials await. Start at Rank 0 — no cost, no barrier.</p>
+      <p>The guild is open. The trials await. Start at Rank 0, with no cost and no barrier.</p>
       <div class="cta-buttons">
         <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-primary">
           Discover the Philosophy

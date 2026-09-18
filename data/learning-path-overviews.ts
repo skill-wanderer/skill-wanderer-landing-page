@@ -101,7 +101,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
       {
         id: 'L03',
         title: 'HTML Foundations: Building with Purpose',
-        description: 'Learn how HTML gives meaning to content — from document structure and semantic elements to accessible forms and real-world markup patterns.',
+        description: 'Learn how HTML gives meaning to content, from document structure and semantic elements to accessible forms and real-world markup patterns.',
         status: 'available',
         url: 'https://dojo.skill-wanderer.com/courses/html-fundamentals-from-structure-to-forms'
       },
@@ -112,7 +112,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     title: 'Mobile Development',
     description: 'Create robust mobile apps with practical workflows for iOS, Android, cross-platform projects, and Flutter game development.',
     intro:
-      'This path helps learners understand mobile product thinking, UI patterns, app architecture, and release workflows across native and cross-platform development. It also covers Flutter game development — giving learners the skills to build interactive 2D games using the Flame engine on top of their mobile foundations.',
+      'This path helps learners understand mobile product thinking, UI patterns, app architecture, and release workflows across native and cross-platform development. It also covers Flutter game development, giving learners the skills to build interactive 2D games using the Flame engine on top of their mobile foundations.',
     goals: [
       'Understand platform fundamentals for Android, iOS, and cross-platform delivery.',
       'Build mobile-friendly UI flows with stronger UX and performance habits.',
@@ -313,7 +313,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     title: 'AI and Machine Learning',
     description: 'A structured path from understanding AI fundamentals to building and deploying production-ready machine learning systems.',
     intro:
-      'Artificial intelligence and machine learning are reshaping every industry. This path takes learners from foundational concepts and mathematics through core ML algorithms, deep learning architectures, and applied AI in production. Each stage builds on the previous so that learners do not just run models — they understand why they work, how to evaluate them rigorously, and how to deliver real value with them responsibly.',
+      'Artificial intelligence and machine learning are reshaping every industry. This path takes learners from foundational concepts and mathematics through core ML algorithms, deep learning architectures, and applied AI in production. Each stage builds on the previous so that learners do not just run models. They understand why they work, how to evaluate them rigorously, and how to deliver real value with them responsibly.',
     goals: [
       'Build a strong conceptual and mathematical foundation for understanding AI and ML systems.',
       'Apply core machine learning algorithms with confidence across supervised and unsupervised tasks.',
@@ -327,7 +327,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
         timeline: 'Stage One',
         description: 'Establish the conceptual, mathematical, and tooling foundations needed to learn machine learning with real understanding.',
         points: [
-          'Overview of AI, ML, and deep learning — how they relate and where each applies',
+          'Overview of AI, ML, and deep learning: how they relate and where each applies',
           'Essential mathematics: linear algebra, probability, statistics, and calculus intuition for ML',
           'Python for data science: NumPy, Pandas, and exploratory data analysis',
           'Understanding data: types, distributions, quality issues, and preprocessing'
@@ -390,7 +390,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     title: 'DevOps',
     description: 'Master the culture, tools, and practices that bridge software development and reliable production operations.',
     intro:
-      'DevOps is not a tool — it is a way of working. This path takes learners through the mindset, practices, and technical skills needed to build, ship, and operate software with speed and reliability. From version control and CI/CD pipelines to infrastructure as code and observability, every stage is designed to connect engineering work directly to production outcomes.',
+      'DevOps is not a tool. It is a way of working. This path takes learners through the mindset, practices, and technical skills needed to build, ship, and operate software with speed and reliability. From version control and CI/CD pipelines to infrastructure as code and observability, every stage is designed to connect engineering work directly to production outcomes.',
     goals: [
       'Understand the DevOps culture, principles, and how they improve delivery speed and system reliability.',
       'Build and maintain CI/CD pipelines that automate testing, integration, and deployment.',
@@ -467,7 +467,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     title: 'MLOps',
     description: 'Bridge machine learning and operations to deliver reliable, scalable, and governed ML systems in production.',
     intro:
-      'Building a model in a notebook is only the beginning. MLOps is the discipline of operationalizing machine learning — making it reproducible, automatable, observable, and maintainable at scale. This path covers the full ML lifecycle from experiment management through pipeline automation, model deployment, and ongoing governance. Learners will build the skills to treat ML systems with the same engineering discipline as any production software.',
+      'Building a model in a notebook is only the beginning. MLOps is the discipline of operationalizing machine learning, making it reproducible, automatable, observable, and maintainable at scale. This path covers the full ML lifecycle from experiment management through pipeline automation, model deployment, and ongoing governance. Learners will build the skills to treat ML systems with the same engineering discipline as any production software.',
     goals: [
       'Understand the ML lifecycle and where operational discipline is required at each stage.',
       'Implement reproducible experimentation with experiment tracking and data versioning.',
@@ -542,14 +542,14 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'software-development-roles-and-career': {
     slug: 'software-development-roles-and-career',
     title: 'Software Development Roles & Career',
-    description: 'Navigate the software industry with clarity — understanding roles, team dynamics, and how to grow with intention.',
+    description: 'Navigate the software industry with clarity, understanding roles, team dynamics, and how to grow with intention.',
     intro:
       'The software industry can feel overwhelming without a map. This path helps learners understand how software teams are structured, what different roles actually do, and how to grow from entry-level contributor to trusted professional. Beyond technical skills, it focuses on the habits, communication, and career decisions that separate those who grow fast from those who plateau.',
     goals: [
       'Understand the landscape of software roles and how they interact within product and engineering teams.',
       'Develop professional habits in code quality, collaboration, estimation, and documentation.',
       'Build strong communication and self-management skills for thriving in delivery environments.',
-      'Navigate career growth with intention — from first role to senior contributor and beyond.'
+      'Navigate career growth with intention, from first role to senior contributor and beyond.'
     ],
     stages: [
       {
@@ -621,7 +621,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     title: 'Project Management',
     description: 'Lead software projects from initiation to delivery with clear thinking, practical frameworks, and strong team habits.',
     intro:
-      'Project management in technology is not about bureaucracy — it is about creating the conditions for teams to deliver well. This path covers everything from understanding stakeholder goals and structuring delivery plans, to facilitating Agile ceremonies, managing risk, and driving continuous improvement. Learners will develop the judgment to adapt their approach to real constraints rather than following a methodology by rote.',
+      'Project management in technology is not about bureaucracy. It is about creating the conditions for teams to deliver well. This path covers everything from understanding stakeholder goals and structuring delivery plans, to facilitating Agile ceremonies, managing risk, and driving continuous improvement. Learners will develop the judgment to adapt their approach to real constraints rather than following a methodology by rote.',
     goals: [
       'Understand the full project lifecycle and the key decisions made at each phase.',
       'Apply Agile and Scrum practices effectively in software delivery contexts.',
@@ -698,7 +698,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     title: 'Start-up Foundation',
     description: 'Build the mindset, skills, and practices to turn an idea into a real, sustainable product and business.',
     intro:
-      'Starting a company is one of the hardest things a person can do — and one of the most rewarding. This path gives aspiring founders and early-stage builders a grounded, practical foundation in product thinking, lean validation, team building, and early business operations. It strips away the myths and focuses on what actually matters in the earliest stages: learning fast, building with purpose, and creating something people genuinely want.',
+      'Starting a company is one of the hardest things a person can do, and one of the most rewarding. This path gives aspiring founders and early-stage builders a grounded, practical foundation in product thinking, lean validation, team building, and early business operations. It strips away the myths and focuses on what actually matters in the earliest stages: learning fast, building with purpose, and creating something people genuinely want.',
     goals: [
       'Validate ideas quickly and cheaply before committing to full product development.',
       'Build and ship minimum viable products that generate real learning from real users.',
@@ -775,7 +775,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     title: 'Advanced Software Development Skills',
     description: 'Deepen engineering craft from clean code and system design to performance, reliability, and technical leadership.',
     intro:
-      'There is a significant gap between writing code that works and writing code that lasts. This path is for developers who want to close that gap — moving from functional to excellent by developing deep habits in code quality, system design, performance engineering, and technical influence. Each stage pushes beyond the basics to build the kind of skills that make engineers genuinely valuable at any level of seniority.',
+      'There is a significant gap between writing code that works and writing code that lasts. This path is for developers who want to close that gap, moving from functional to excellent by developing deep habits in code quality, system design, performance engineering, and technical influence. Each stage pushes beyond the basics to build the kind of skills that make engineers genuinely valuable at any level of seniority.',
     goals: [
       'Write clean, intentional code built on SOLID principles and strong design habits.',
       'Design systems that are scalable, maintainable, and resilient under real-world load.',
@@ -850,9 +850,9 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'software-architecture-and-design-patterns': {
     slug: 'software-architecture-and-design-patterns',
     title: 'Software Architecture & Design Patterns',
-    description: 'Learn to design software systems with intentional structure — from design patterns to architectural styles and real-world trade-offs.',
+    description: 'Learn to design software systems with intentional structure, from design patterns to architectural styles and real-world trade-offs.',
     intro:
-      'Software architecture is the set of decisions that are hardest to reverse. This path teaches learners to think architecturally — understanding quality attributes, evaluating trade-offs, applying the right design patterns for the right problems, and choosing architectural styles that serve long-term product goals. By the end, learners will be equipped not just to follow existing architectures but to reason about, communicate, and evolve them with confidence.',
+      'Software architecture is the set of decisions that are hardest to reverse. This path teaches learners to think architecturally: understanding quality attributes, evaluating trade-offs, applying the right design patterns for the right problems, and choosing architectural styles that serve long-term product goals. By the end, learners will be equipped not just to follow existing architectures but to reason about, communicate, and evolve them with confidence.',
     goals: [
       'Think in terms of system structure, quality attributes, and architectural trade-offs rather than just features.',
       'Apply design patterns from the Gang of Four and beyond to solve recurring structural problems.',

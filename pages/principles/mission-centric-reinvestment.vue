@@ -60,7 +60,7 @@
               miserable. The best talent fled, leaving behind a hollow shell of a company.
             </p>
             <div class="lesson-learned">
-              <strong>Lesson:</strong> Profit at the expense of people is not success—it's failure in disguise.
+              <strong>Lesson:</strong> Profit at the expense of people is not success. It's failure in disguise.
             </div>
           </div>
         </div>
@@ -210,7 +210,7 @@ const storyChapters = [
       },
       {
         type: 'personal-story',
-        text: 'I initially wanted to only reinvest the revenue from the educational platform, while allowing the technology partnership arm to operate more like a traditional business—maybe reinvesting 51% as the law in Vietnam requires for a social enterprise. The thought was simple: \'I\'m the one generating that tech revenue, so I deserve a larger share, right?\''
+        text: 'I initially wanted to only reinvest the revenue from the educational platform, while allowing the technology partnership arm to operate more like a traditional business, maybe reinvesting 51% as the law in Vietnam requires for a social enterprise. The thought was simple: \'I\'m the one generating that tech revenue, so I deserve a larger share, right?\''
       },
       {
         type: 'text',

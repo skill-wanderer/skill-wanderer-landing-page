@@ -71,7 +71,7 @@
         <div class="flame-text">
           <p>
             Every learner starts with a flame of passion. It might be curiosity, ambition, or necessity. 
-            But that flame is fragile. Without fuel—without those moments of success and recognition—it dies.
+            But that flame is fragile. Without fuel, without those moments of success and recognition, it dies.
           </p>
           <p style="margin-top: 20px;">
             <strong>Our job is to be the keepers of that flame.</strong>
@@ -91,7 +91,7 @@
         <div class="celebration-card" style="animation-delay: 0.1s;">
           <span class="celebration-icon">🏆</span>
           <h3>Milestone Recognition</h3>
-          <p>Every breakthrough is celebrated—from your first working function to your first deployed app.</p>
+          <p>Every breakthrough is celebrated, from your first working function to your first deployed app.</p>
         </div>
         
         <div class="celebration-card" style="animation-delay: 0.2s;">
@@ -199,7 +199,7 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: "text",
-        text: "I am a firm believer in \"no pain, no gain.\" Learning is <em>supposed</em> to be hard. But I know with absolute certainty that without those moments—the wonderful feeling of a working loop, the euphoria of a finished page—I would have given up a long time ago."
+        text: "I am a firm believer in \"no pain, no gain.\" Learning is <em>supposed</em> to be hard. But I know with absolute certainty that without those moments, the wonderful feeling of a working loop, the euphoria of a finished page, I would have given up a long time ago."
       },      {
         type: "text",
         text: "This experience is why I empathize so deeply with every learner. The journey is difficult, and it's my job to help them manage that stress. It reminds me of my old import-export boss when I was first learning that job and felt hopeless. He was a true character, like a modern-day samurai, and he encouraged me with a Japanese mindset:"

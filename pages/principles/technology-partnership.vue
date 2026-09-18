@@ -17,37 +17,37 @@
     <!-- How Our Partnership Model Works Section -->
     <section class="model-section">
       <div class="model-container">
-        <h2>How Our Success Sharing Model Works</h2>
+        <h2>How Our Service Model Works</h2>
         
         <div class="model-intro">
           <p class="model-statement">
-            We're not outsourcing—we're your true technology partner.
+            We're not outsourcing. We're your true technology partner.
           </p>
           <p class="model-statement">
-            We share both the success and the risks with you, requiring less upfront cost while our community of learners helps bring your vision to life.
+            For accepted projects we carry the build cost, so there is no separate upfront development fee on websites or apps, while our community of learners helps bring your vision to life.
           </p>
           <p class="model-description">
-            Our success sharing model means we earn when you succeed. We invest alongside you, take on risks together, 
-            and build dedicated teams from our global learning community.
+            We earn through ongoing hosting and technical care rather than a large upfront invoice. That keeps us
+            invested in the project long after launch, and it funds the guild's educational mission.
           </p>
         </div>
 
         <div class="model-cards">
           <div class="model-card">
             <div class="model-icon">💵</div>
-            <h3>Lower Upfront Investment</h3>
+            <h3>No Upfront Development Fee</h3>
             <p>
-              Unlike traditional outsourcing, we don't ask for large upfront payments. Start building with minimal 
-              initial cost because we believe in earning through shared success—not billing for hours.
+              Unlike traditional outsourcing, accepted projects pay no separate upfront build fee. We create the
+              first prototype at no cost, so you judge real work before committing to anything.
             </p>
           </div>
 
           <div class="model-card">
             <div class="model-icon">📈</div>
-            <h3>Success Sharing Model</h3>
+            <h3>Ongoing Technical Care</h3>
             <p>
-              Our earnings come from sharing in your success. This keeps us genuinely invested in your outcomes, 
-              not just completing tasks. When you win, we win.
+              Our earnings come from keeping your project running, maintained, and supported over
+              time. We are paid to keep things working, not to bill hours.
             </p>
           </div>
 
@@ -55,7 +55,7 @@
             <div class="model-icon">👥</div>
             <h3>Community-Powered Talent</h3>
             <p>
-              Work gets done by talented learners from our global community—people eager to prove themselves 
+              Work gets done by talented learners from our global community, people eager to prove themselves 
               on real projects while gaining invaluable experience.
             </p>
           </div>
@@ -66,18 +66,18 @@
     <!-- Aligned Incentives Section -->
     <section class="alignment-section">
       <div class="alignment-container">
-        <h2>Why Success Sharing Works Better Than Outsourcing</h2>
+        <h2>Why This Works Better Than Outsourcing</h2>
         
         <div class="alignment-grid">
           <div class="alignment-card">
             <span class="alignment-icon">💵</span>
             <h3>For You</h3>
-            <p>Lower risk with reduced upfront costs—we succeed together or not at all.</p>
+            <p>The upfront development barrier disappears, and you see working software before you decide.</p>
           </div>
           <div class="alignment-card">
             <span class="alignment-icon">🎯</span>
             <h3>For Us</h3>
-            <p>We're motivated by your success, not just billing hours. Real outcomes drive our revenue.</p>
+            <p>We are paid to keep things healthy, which keeps us invested long after launch.</p>
           </div>
           <div class="alignment-card">
             <span class="alignment-icon">⭐</span>
@@ -88,8 +88,8 @@
 
         <div class="alignment-benefit">
           <p>
-            This isn't outsourcing with a different name. We put skin in the game alongside you, sharing both 
-            success and setbacks—because that's what real partners do.
+            This isn't outsourcing with a different name. We carry the build cost up front and earn by keeping
+            your project healthy over time, because that's what real partners do.
           </p>
         </div>
       </div>

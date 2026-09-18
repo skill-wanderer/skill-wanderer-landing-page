@@ -141,7 +141,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote
-      quote="We are so committed to your success that our goal is to one day be your colleagues. This isn't just education—it's an invitation to join us in building something extraordinary."
+      quote="We are so committed to your success that our goal is to one day be your colleagues. This isn't just education. It's an invitation to join us in building something extraordinary."
     />
 
     <!-- Navigation Section -->
@@ -184,7 +184,7 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: 'text',
-        text: `Of the many systems I've built, one stands out in my memory the most—not for its success, but for 
+        text: `Of the many systems I've built, one stands out in my memory the most, not for its success, but for 
                what it taught me. It was an in-house system, and on paper, it was perfect. The development team 
                met every business requirement, we finished quickly, and we were proud of our work. There was just 
                one problem: the users didn't openly refuse to use it; they just... didn't. They were unwilling and 
@@ -199,7 +199,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'text',
-        text: `We had made a classic mistake: we left the most important stakeholder—the end-user—out of the process 
+        text: `We had made a classic mistake: we left the most important stakeholder, the end-user, out of the process 
                and then forced a system onto them. Unsurprisingly, when we tried to sell this "successful" system 
                to external customers, it failed completely.`
       }

@@ -30,7 +30,7 @@
           <h2>A Bold Beginning</h2>
           <p>
             I met this adventurer when he enrolled and claimed to already know <strong>Kubernetes</strong>,
-            <strong>AWS</strong>, and <strong>Docker</strong> — which is quite impressive by itself for a
+            <strong>AWS</strong>, and <strong>Docker</strong>, which is quite impressive by itself for a
             Computer Science undergraduate. Even though there was still a lot of knowledge he was lacking,
             the confidence and ambition behind that claim immediately caught my attention.
           </p>
@@ -53,7 +53,7 @@
             <div class="milestone-icon">🗺️</div>
             <h3>Into Uncharted Territory</h3>
             <p>
-              Most of the time, the wild territory ended up biting him — things would break,
+              Most of the time, the wild territory ended up biting him. Things would break,
               configurations would fail, and debugging sessions would stretch long into the night.
               But that's the good part: <strong>he learned a lot, and so quickly</strong>.
             </p>
@@ -63,7 +63,7 @@
             <div class="milestone-icon">⚡</div>
             <h3>Jaw-Dropping Speed</h3>
             <p>
-              Prabhat finished the entire DevOps mentorship in <strong>under 2 months</strong> — a
+              Prabhat finished the entire DevOps mentorship in <strong>under 2 months</strong>, a
               jaw-dropping pace that speaks to his fearless approach and relentless drive to learn
               by doing, no matter how many times the path fought back.
             </p>
@@ -79,7 +79,7 @@
         <p>
           Prabhat is currently working with our partner <strong>MindyCore</strong> to gain more experience
           and adventure in the real world. He is out there now, proving himself with hands-on, real-life
-          challenges — exactly the kind of environment where a fearless adventurer thrives.
+          challenges, exactly the kind of environment where a fearless adventurer thrives.
         </p>
 
         <div class="learner-path-badge">

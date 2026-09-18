@@ -8,7 +8,7 @@
         <p class="hero-subtitle">A New Way to Learn Tech</p>
         <p class="hero-description">
           Most platforms ask you to pay first, learn alone, and hope to get a job later.
-          We do it differently. At Skill-Wanderer, you don't pay to learn — you earn your way by building.
+          We do it differently. At Skill-Wanderer, you don't pay to learn. You earn your way by building.
         </p>
         <div class="hero-actions">
           <NuxtLink to="/learning-path" class="btn btn-primary">← Back to Topic Hub</NuxtLink>
@@ -37,10 +37,10 @@
           <span class="step-badge">02</span>
           <h3>Unlock Mentorship Through Contribution</h3>
           <p class="card-subheader">Mentorship is earned through effort, not bought with tuition.</p>
-          <p>Real growth requires commitment. Instead of charging fixed tuition, we let you choose how to contribute — and every option is a chance to grow:</p>
+          <p>Real growth requires commitment. Instead of charging fixed tuition, we let you choose how to contribute, and every option is a chance to grow:</p>
           <ul class="contribution-list">
             <li class="contribution-preferred"><span class="list-icon">🔧</span> <strong>Learn by building</strong> real features for the guild</li>
-            <li class="contribution-preferred"><span class="list-icon">🤝</span> <strong>Learn by teaching</strong> — help and grow the community</li>
+            <li class="contribution-preferred"><span class="list-icon">🤝</span> <strong>Learn by teaching</strong>: help and grow the community</li>
             <li class="contribution-secondary"><span class="list-icon">💰</span> Support financially <span class="optional-tag">(optional)</span></li>
           </ul>
           <p class="card-emphasis"><strong class="zero-tuition">Zero tuition.</strong> Just show up and contribute.</p>
@@ -61,7 +61,7 @@
 
         <article class="journey-card">
           <span class="step-badge">04</span>
-          <h3>Grow Into a Builder — or a Founder</h3>
+          <h3>Grow Into a Builder, or a Founder</h3>
           <p>Top members don't just get jobs. They:</p>
           <ul class="contribution-list">
             <li>Become mentors</li>

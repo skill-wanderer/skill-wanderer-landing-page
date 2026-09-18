@@ -19,16 +19,16 @@
             Cookies are small text files that are placed on your device when you visit a website. They are widely used to make websites work properly, improve performance, and provide a better user experience.
           </p>
           <p>
-            Modern web applications also use other forms of browser storage — such as <code>localStorage</code>, <code>sessionStorage</code>, and <code>IndexedDB</code> — to store data locally on your device. These serve similar purposes to cookies (for example, keeping you logged in) but work differently under the hood. This policy covers all of these technologies.
+            Modern web applications also use other forms of browser storage, such as <code>localStorage</code>, <code>sessionStorage</code>, and <code>IndexedDB</code>, to store data locally on your device. These serve similar purposes to cookies (for example, keeping you logged in) but work differently under the hood. This policy covers all of these technologies.
           </p>
           <h3>Scope of This Policy</h3>
           <p>
             This Cookie Policy applies to <strong>all</strong> Skill-Wanderer properties under the <strong>skill-wanderer.com</strong> domain, including every subdomain, whether listed here or introduced in the future:
           </p>
           <ul>
-            <li><strong>skill-wanderer.com</strong> — Main website and landing pages</li>
-            <li><strong>dojo.skill-wanderer.com</strong> — Learning platform (The Dojo)</li>
-            <li><strong>wandersings.skill-wanderer.com</strong> — Blog and community writings (Wandersings)</li>
+            <li><strong>skill-wanderer.com</strong>: Main website and landing pages</li>
+            <li><strong>dojo.skill-wanderer.com</strong>: Learning platform (The Dojo)</li>
+            <li><strong>wandersings.skill-wanderer.com</strong>: Blog and community writings (Wandersings)</li>
             <li>Any other current or future subdomains under skill-wanderer.com</li>
           </ul>
           <p>
@@ -38,16 +38,16 @@
 
         <!-- Our Approach -->
         <div class="policy-section essential-highlight">
-          <h2>Our Cookie Approach: Essential Only — Every Subdomain</h2>
+          <h2>Our Cookie Approach: Essential Only, on Every Subdomain</h2>
           <p>
-            Across all Skill-Wanderer properties — present and future — we keep things simple and privacy-respecting. <strong>We only use essential cookies and browser storage</strong>: the minimum necessary to make our services function correctly. This principle applies uniformly to every subdomain, regardless of which backend technology or third-party service powers it.
+            Across all Skill-Wanderer properties, present and future, we keep things simple and privacy-respecting. <strong>We only use essential cookies and browser storage</strong>: the minimum necessary to make our services function correctly. This principle applies uniformly to every subdomain, regardless of which backend technology or third-party service powers it.
           </p>
           <p>
             We do not use tracking cookies, advertising cookies, analytics cookies, or any other non-essential cookies or storage mechanisms on any part of our platform. If a subdomain requires authentication, commenting, learning progress tracking, or any other interactive feature, only the storage strictly needed for that feature is used.
           </p>
           <div class="essential-badge">
             <span class="badge-icon">&#x2713;</span>
-            <span>100% Essential Cookies &amp; Storage Only — No tracking, no advertising, no profiling. Across every subdomain.</span>
+            <span>100% Essential Cookies &amp; Storage Only. No tracking, no advertising, no profiling. Across every subdomain.</span>
           </div>
         </div>
 
@@ -81,8 +81,8 @@
             The main site currently uses Firebase for contact form submissions. Firebase may use browser storage (IndexedDB or localStorage) to manage form delivery. No persistent tracking data is stored.
           </p>
 
-          <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">The Dojo (dojo.skill-wanderer.com) — Learning Platform</h4>
-          <p>The Dojo uses <strong>Keycloak</strong> (self-hosted) as its identity and access management service for sign-in and learning management. Keycloak sets essential session cookies to keep you logged in and to secure your account. These cookies are strictly necessary — without them, authentication and course access cannot function.</p>
+          <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">The Dojo (dojo.skill-wanderer.com): Learning Platform</h4>
+          <p>The Dojo uses <strong>Keycloak</strong> (self-hosted) as its identity and access management service for sign-in and learning management. Keycloak sets essential session cookies to keep you logged in and to secure your account. These cookies are strictly necessary. Without them, authentication and course access cannot function.</p>
           <div class="cookie-table-wrapper">
             <table class="cookie-table">
               <thead>
@@ -120,10 +120,10 @@
             Note: Keycloak cookie names may vary slightly depending on the realm configuration. Only cookies strictly required for authentication are set. Keycloak is self-hosted and we do not share authentication data with third parties.
           </p>
           <p>
-            The Dojo may also use additional browser storage (such as localStorage or sessionStorage) for essential learning features — for example, saving your course progress or preferences locally. This data remains on your device and is never used for tracking.
+            The Dojo may also use additional browser storage (such as localStorage or sessionStorage) for essential learning features, for example saving your course progress or preferences locally. This data remains on your device and is never used for tracking.
           </p>
 
-          <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">Wandersings (wandersings.skill-wanderer.com) — Blog &amp; Community</h4>
+          <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">Wandersings (wandersings.skill-wanderer.com): Blog &amp; Community</h4>
           <p>Wandersings allows readers to engage with content through features such as commenting. It may use <strong>Firebase</strong> services to store and serve that content and to handle authentication. Firebase SDK typically uses browser <code>IndexedDB</code> and <code>localStorage</code> for token persistence rather than traditional cookies.</p>
           <div class="cookie-table-wrapper">
             <table class="cookie-table">
@@ -149,7 +149,7 @@
 
           <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">Future and Other Subdomains</h4>
           <p>
-            As our platform grows, we may introduce additional subdomains for new services — such as forums, tools, dashboards, or other educational resources. Each new subdomain may use its own backend technology stack, which could include (but is not limited to):
+            As our platform grows, we may introduce additional subdomains for new services, such as forums, tools, dashboards, or other educational resources. Each new subdomain may use its own backend technology stack, which could include (but is not limited to):
           </p>
           <ul>
             <li><strong>Identity providers</strong> (e.g., Keycloak, Firebase Authentication, or other self-hosted solutions) that set session cookies or store tokens in browser storage for authentication</li>
@@ -205,7 +205,7 @@
 
         <!-- What We Don't Use -->
         <div class="policy-section">
-          <h2>What We Do Not Use — On Any Subdomain, Ever</h2>
+          <h2>What We Do Not Use, On Any Subdomain, Ever</h2>
           <p>The following types of cookies and storage are <strong>never</strong> used on any Skill-Wanderer property, regardless of which backend technology powers the subdomain:</p>
           <ul>
             <li><strong>Analytics Cookies:</strong> We do not use Google Analytics, Hotjar, Mixpanel, or any other analytics service that tracks your behaviour across our properties.</li>
@@ -241,7 +241,7 @@
             <li><strong>Wandersings (wandersings.skill-wanderer.com):</strong> May use Firebase for authentication, storing comments, and community content. Anonymous reading does not involve any third-party services.</li>
           </ul>
           <p>
-            As our platform evolves, individual subdomains may adopt, replace, or remove third-party services. Some subdomains may use Firebase, others may not. Some may use Keycloak, others may use a different identity solution. The specific services are an implementation detail — our privacy commitment is not:
+            As our platform evolves, individual subdomains may adopt, replace, or remove third-party services. Some subdomains may use Firebase, others may not. Some may use Keycloak, others may use a different identity solution. The specific services are an implementation detail. Our privacy commitment is not:
           </p>
           <ul>
             <li>We will only integrate services that are necessary for platform functionality</li>
@@ -259,7 +259,7 @@
           <ul>
             <li>You can view, manage, and delete cookies through your browser's settings or developer tools.</li>
             <li>You can clear your localStorage, sessionStorage, and IndexedDB at any time through your browser's developer tools, which will reset preferences and sign you out of any services.</li>
-            <li>Blocking essential cookies may affect how our services function — for example, you may not be able to sign in to the Dojo or post comments on Wandersings.</li>
+            <li>Blocking essential cookies may affect how our services function. For example, you may not be able to sign in to the Dojo or post comments on Wandersings.</li>
           </ul>
           <p>For guidance on managing cookies in popular browsers:</p>
           <ul>
@@ -274,7 +274,7 @@
         <div class="policy-section">
           <h2>Changes to This Cookie Policy</h2>
           <p>
-            We may update this Cookie Policy from time to time — for example, when we add a new subdomain, adopt a new backend service, or change how an existing service stores data. Any changes will be posted on this page with an updated "Last updated" date. Our essential-only approach to cookies will not change, but the specific list of cookies and storage used may be updated as the platform evolves.
+            We may update this Cookie Policy from time to time, for example when we add a new subdomain, adopt a new backend service, or change how an existing service stores data. Any changes will be posted on this page with an updated "Last updated" date. Our essential-only approach to cookies will not change, but the specific list of cookies and storage used may be updated as the platform evolves.
           </p>
         </div>
 

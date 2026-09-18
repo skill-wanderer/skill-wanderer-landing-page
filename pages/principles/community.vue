@@ -129,7 +129,7 @@
             <span class="vision-icon">❤️</span>
             <h3>Mutual Support</h3>
             <p>
-              Creating systems where those who can give—whether time, knowledge, or resources—can 
+              Creating systems where those who can give, whether time, knowledge, or resources, can 
               easily help those who need.
             </p>
           </div>
@@ -166,7 +166,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote 
-      quote="To build something truly global, I cannot do it alone. Only with a community can we reach every corner of the world. When we create an ecosystem where everyone is both learner and teacher, we don't just transfer knowledge—we multiply it."
+      quote="To build something truly global, I cannot do it alone. Only with a community can we reach every corner of the world. When we create an ecosystem where everyone is both learner and teacher, we don't just transfer knowledge, we multiply it."
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />    <!-- Navigation Section -->
     <PrincipleNavigation current-slug="community" />  </div>
@@ -206,7 +206,7 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: 'text',
-        text: 'Over my career, I\'ve discovered that one of the most effective ways to upskill an entire team is to foster a culture of peer-to-peer teaching. I would encourage more senior members to teach the less senior ones—a mid-level developer might teach a junior, and a junior might teach a fresher or an intern.'
+        text: 'Over my career, I\'ve discovered that one of the most effective ways to upskill an entire team is to foster a culture of peer-to-peer teaching. I would encourage more senior members to teach the less senior ones. A mid-level developer might teach a junior, and a junior might teach a fresher or an intern.'
       },
       {
         type: 'text',
@@ -232,7 +232,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'personal-story',
-        text: 'I remember one particular junior developer who struggled with React hooks. A mid-level developer who had just mastered them the previous month spent hours teaching him. The beautiful part? While teaching, the mid-level developer discovered edge cases he hadn\'t considered. Six months later, that same junior was teaching a new hire, and the cycle continued. The knowledge didn\'t just transfer—it multiplied.'
+        text: 'I remember one particular junior developer who struggled with React hooks. A mid-level developer who had just mastered them the previous month spent hours teaching him. The beautiful part? While teaching, the mid-level developer discovered edge cases he hadn\'t considered. Six months later, that same junior was teaching a new hire, and the cycle continued. The knowledge didn\'t just transfer, it multiplied.'
       }
     ]
   },
@@ -261,7 +261,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'text',
-        text: '• Members who are more financially fortunate can give back through Social Impact Tokens—funding the next learner, contributing to the platform, or strengthening the community.'
+        text: '• Members who are more financially fortunate can give back through Social Impact Tokens, funding the next learner, contributing to the platform, or strengthening the community.'
       },
       {
         type: 'text',

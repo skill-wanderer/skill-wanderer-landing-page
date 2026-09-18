@@ -1,4 +1,4 @@
-# Pathfinder — Frontend Integration & Design Guide
+# Pathfinder: Frontend Integration & Design Guide
 
 A complete reference for frontend developers to integrate the Pathfinder chatbot **and** match its visual design. See `DESIGN_SYSTEM.md` for the broader Skill-Wanderer design tokens that Pathfinder inherits from.
 
@@ -21,7 +21,7 @@ A complete reference for frontend developers to integrate the Pathfinder chatbot
 13. [Animations & Motion](#13-animations--motion)
 14. [Responsive / Mobile](#14-responsive--mobile)
 15. [Typography](#15-typography)
-16. [Composable API — `usePathfinder`](#16-composable-api--usepathfinder)
+16. [Composable API: `usePathfinder`](#16-composable-api-usepathfinder)
 17. [Runtime Config](#17-runtime-config)
 18. [Chat API Reference](#18-chat-api-reference)
 19. [CSS Class Reference (quick-look)](#19-css-class-reference)
@@ -35,7 +35,7 @@ Pathfinder uses a **"Space Explorer"** visual metaphor layered on top of the cor
 | Attribute | Value |
 |---|---|
 | **Theme** | Deep-space dark, warm orange/gold accents |
-| **Metaphor** | Planet exploration — compass FAB, starfield background, rocket send button, "expedition" resets |
+| **Metaphor** | Planet exploration: compass FAB, starfield background, rocket send button, "expedition" resets |
 | **Mood** | Friendly, adventurous, lightweight |
 | **Panel style** | Floating card, bottom-right, glass-dark surface |
 
@@ -182,11 +182,11 @@ Appears in place of the FAB when opened.
 
 **Left side:**
 - Planet SVG icon (`22×22`, color `#FF8C42`, gentle bob animation `pathfinder-orbit-bob` 6 s)
-- Title "**Pathfinder**" — gradient text (`linear-gradient(135deg, #FFD93D, #FF6B35)` + `background-clip: text`)
-- Subtitle "EXPLORATION GUIDE" — `10px`, 50% opacity, wide tracking
+- Title "**Pathfinder**": gradient text (`linear-gradient(135deg, #FFD93D, #FF6B35)` + `background-clip: text`)
+- Subtitle "EXPLORATION GUIDE": `10px`, 50% opacity, wide tracking
 
 **Right side:**
-- **Reset button** (refresh icon) — clears conversation, tooltip "New expedition"
+- **Reset button** (refresh icon): clears conversation, tooltip "New expedition"
 - **Close button** (× icon)
 - Both: transparent bg, `rgba(255,255,255,0.45)` icon color; on hover → yellow `#FFD93D` + subtle bg tint
 
@@ -200,8 +200,8 @@ Shown when `history` is empty (no messages yet).
 |---|---|
 | Container | Centered text, `padding: 1.5rem 1rem 1rem`, color `#b0b0b0` |
 | Planet icon | `48×48` SVG (planet + orbit ring + small stars), color `#FF8C42`, bob animation |
-| Title | "Welcome, Explorer!" — `text-sm font-semibold` |
-| Description | "Chart your course through Skill-Wanderer's universe…" — `text-xs`, 60% opacity |
+| Title | "Welcome, Explorer!", `text-sm font-semibold` |
+| Description | "Chart your course through Skill-Wanderer's universe…", `text-xs`, 60% opacity |
 | Suggestion pills | Flex-wrap row, gap `6px`, centered |
 
 ### Suggestion pills
@@ -271,7 +271,7 @@ Appears below the last assistant message when `sources` are returned.
 | Property | Value |
 |---|---|
 | Margin left | `2rem` (aligns with bubble text, past the avatar) |
-| Label | "Discovered Sources" — `10px`, uppercase, wide tracking, 40% opacity |
+| Label | "Discovered Sources", `10px`, uppercase, wide tracking, 40% opacity |
 | Links | `0.6875rem`, color `#FFD93D`, 70% opacity → 100% on hover |
 | Icon | Star SVG `10×10`, inline, 60% opacity |
 | Overflow | `text-overflow: ellipsis; white-space: nowrap` |
@@ -315,7 +315,7 @@ Appears at the bottom of the messages area when `history` has at least one messa
 | Padding | `0.5rem 0.75rem` |
 | Font size | `0.8125rem` |
 | Text color | `#e0e0e0` |
-| Placeholder | `"Where shall we explore…"` — color `#555`, italic |
+| Placeholder | `"Where shall we explore…"`, color `#555`, italic |
 | Focus ring | border `rgba(255,107,53,0.4)` + `box-shadow: 0 0 0 2px rgba(255,107,53,0.08)` |
 | Max length | `2000` characters |
 
@@ -337,7 +337,7 @@ Appears at the bottom of the messages area when `history` has at least one messa
 Shown inside an assistant bubble while `loading` is true.
 
 - Three dots: `6px` circles, color `#FF8C42`
-- Animation: `pathfinder-dot` — scale 0.7 → 1, opacity 0.2 → 1, staggered delay `0s / 0.2s / 0.4s`, period `1.4s`
+- Animation: `pathfinder-dot`, scale 0.7 → 1, opacity 0.2 → 1, staggered delay `0s / 0.2s / 0.4s`, period `1.4s`
 
 ```css
 .pathfinder-typing span {
@@ -401,18 +401,18 @@ All text inside Pathfinder uses the system font stack inherited from the page bo
 |---|---|---|---|
 | Header title ("Pathfinder") | `text-sm` (~14 px) | **bold** | Gradient text |
 | Header subtitle | `10px` | normal | 50% opacity, `tracking-wide` |
-| Welcome heading | `text-sm` | **semibold** | — |
+| Welcome heading | `text-sm` | **semibold** | n/a |
 | Welcome description | `text-xs` (~12 px) | normal | 60% opacity, `leading-relaxed` |
-| Suggestion pills | `0.6875rem` (11 px) | normal | — |
+| Suggestion pills | `0.6875rem` (11 px) | normal | n/a |
 | Chat bubbles | `0.8125rem` (13 px) | normal | `line-height: 1.55` |
 | Source label | `10px` | normal | Uppercase, wide tracking, 40% opacity |
-| Source links | `0.6875rem` (11 px) | normal | — |
-| Input | `0.8125rem` (13 px) | normal | — |
-| Error text | `0.75rem` (12 px) | normal | — |
+| Source links | `0.6875rem` (11 px) | normal | n/a |
+| Input | `0.8125rem` (13 px) | normal | n/a |
+| Error text | `0.75rem` (12 px) | normal | n/a |
 
 ---
 
-## 16. Composable API — `usePathfinder`
+## 16. Composable API: `usePathfinder`
 
 Located at `composables/usePathfinder.ts`. Import it with the Nuxt auto-import:
 
@@ -488,7 +488,7 @@ http://localhost:8000
 
 All chat endpoints are under `/api`.
 
-### Send a Message — `POST /api/chat`
+### Send a Message: `POST /api/chat`
 
 **Request**
 
@@ -506,15 +506,15 @@ Content-Type: application/json
 | `personality` | `string \| null` | No       | Chatbot personality: `"librarian"` (Lyra the Archivist), `"storyteller"` (Nova the Weaver), or `"admiral"` (Admiral Orion). Omit for the default Pathfinder voice. |
 | `history`  | `array`           | No       | Previous conversation turns, oldest first (max 50).   |
 
-> **Note:** `domain` and `domains` can be used together — they are merged into a single list.
+> **Note:** `domain` and `domains` can be used together, and they are merged into a single list.
 
 > **Personalities:** The optional `personality` field changes the tone and style of Pathfinder's responses:
 >
 > | Value | Character | Best for | Vibe | Catchphrase |
 > |---|---|---|---|---|
-> | `"librarian"` | 📚 **Lyra the Archivist** | LMS / learning content | Keeper of ancient star charts and deep-space data — calm, scholarly, precise, and timeless | *"The records are clear. Here is the knowledge you seek."* |
-> | `"storyteller"` | ✍️ **Nova the Weaver** | Blog posts | Traveler who has seen a thousand suns — warm, vivid, narrative, turns every fact into a fable | *"Every star has a story, and this one begins with your question..."* |
-> | `"admiral"` | 🌌 **Admiral Orion** | Whole site | High-ranking officer overseeing the fleet — confident, commanding, mission-focused | *"Course plotted. Scanning the sector for answers."* |
+> | `"librarian"` | 📚 **Lyra the Archivist** | LMS / learning content | Keeper of ancient star charts and deep-space data: calm, scholarly, precise, and timeless | *"The records are clear. Here is the knowledge you seek."* |
+> | `"storyteller"` | ✍️ **Nova the Weaver** | Blog posts | Traveler who has seen a thousand suns: warm, vivid, narrative, turns every fact into a fable | *"Every star has a story, and this one begins with your question..."* |
+> | `"admiral"` | 🌌 **Admiral Orion** | Whole site | High-ranking officer overseeing the fleet: confident, commanding, mission-focused | *"Course plotted. Scanning the sector for answers."* |
 >
 > When omitted (or `null`), Pathfinder uses its default neutral assistant voice.
 
@@ -546,7 +546,7 @@ Each item in `history`:
   "answer": "To reset your password, go to Settings > Security …",
   "sources": [
     {
-      "title": "Account Security — Help Center",
+      "title": "Account Security: Help Center",
       "url": "https://help.example.com/security",
       "chunk_index": 2,
       "total_chunks": 5,
@@ -613,7 +613,7 @@ Quick-look table of every Pathfinder-specific CSS class. All classes are **scope
 
 ---
 
-### 2. List Available Domains — `GET /api/domains`
+### 2. List Available Domains: `GET /api/domains`
 
 Returns all domains present in the vector store. Useful for populating a domain dropdown/filter in the UI.
 
@@ -627,7 +627,7 @@ Returns all domains present in the vector store. Useful for populating a domain 
 
 ---
 
-### 3. Health Check — `GET /health`
+### 3. Health Check: `GET /health`
 
 Check API and Qdrant connectivity status.
 
@@ -664,23 +664,23 @@ async function askPathfinder(question, { domain, domains, personality, history =
   return res.json(); // { answer, sources }
 }
 
-// Usage — single domain
+// Usage: single domain
 let reply = await askPathfinder("What is Pathfinder?", { domain: "example.com" });
 console.log(reply.answer);
 
-// Usage — multiple domains
+// Usage: multiple domains
 reply = await askPathfinder("Compare the two products", {
   domains: ["product-a.example.com", "product-b.example.com"],
 });
 console.log(reply.answer);
 
-// Usage — with a personality
+// Usage: with a personality
 reply = await askPathfinder("Explain the 12 Principles", {
   personality: "storyteller",
 });
 console.log(reply.answer);
 
-// Usage — multi-turn conversation
+// Usage: multi-turn conversation
 const history = [];
 
 reply = await askPathfinder("What is Pathfinder?");

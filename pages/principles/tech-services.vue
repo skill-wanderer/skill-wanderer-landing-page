@@ -55,22 +55,22 @@
       </div>
     </section>
 
-    <!-- Success Sharing Model Section -->
+    <!-- Service Model Section -->
     <section class="dual-role-section">
       <div class="dual-role-container">
         <div style="text-align: center; margin-bottom: 50px;">
-          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">The Success Sharing Model</h2>
+          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">The Service Model</h2>
           <p style="font-size: 1.2rem; opacity: 0.9;">How we partner differently than outsourcing</p>
         </div>
         <div class="role-comparison">
           <div class="role-card practitioner" style="animation-delay: 0.1s;">
             <div class="role-icon">💵</div>
-            <h3>Lower Upfront Costs</h3>
+            <h3>No Upfront Development Fee</h3>
             <ul class="role-benefits">
-              <li>No large upfront payments</li>
-              <li>Minimal initial investment</li>
-              <li>Share the journey together</li>
-              <li>Risk shared, not transferred</li>
+              <li>No separate upfront build fee</li>
+              <li>A required free first prototype</li>
+              <li>Scope and price set after you see real work</li>
+              <li>Lower risk before you commit</li>
             </ul>
           </div>
           
@@ -81,19 +81,20 @@
           
           <div class="role-card educator" style="animation-delay: 0.3s;">
             <div class="role-icon">📈</div>
-            <h3>Success Sharing</h3>
+            <h3>Ongoing Technical Care</h3>
             <ul class="role-benefits">
-              <li>We earn when you succeed</li>
-              <li>Aligned incentives</li>
-              <li>Invested in outcomes</li>
+              <li>We earn by keeping it running</li>
+              <li>Priced to the project's real scope</li>
+              <li>Invested long after launch</li>
               <li>Community talent delivers</li>
             </ul>
           </div>
         </div>
         
         <p style="text-align: center; margin-top: 40px; font-size: 1.1rem; opacity: 0.9; max-width: 800px; margin-left: auto; margin-right: auto;">
-          This isn't outsourcing with a different name. We put skin in the game alongside you—sharing both 
-          success and setbacks. Our global community of learners delivers real work while gaining real experience.
+          This isn't outsourcing with a different name. We carry the build cost up front and earn through
+          keeping your project healthy over time. Our global community of learners delivers real work while
+          gaining real experience.
         </p>
       </div>
     </section>
@@ -209,13 +210,13 @@ import { computed } from 'vue'
 // SEO and meta management
 useSEO({
   title: 'Skill-Wanderer Tech Services: The Self-Sustaining Engine | Principle #8',
-  description: 'How Skill-Wanderer delivers technology services that power our educational mission — the self-sustaining engine connecting real-world client work with free, quality learning.',
+  description: 'How Skill-Wanderer delivers technology services that power our educational mission: the self-sustaining engine connecting real-world client work with free, quality learning.',
   keywords: ['skill-wanderer tech services', 'self-sustaining engine', 'skill-wanderer principle 8', 'real-world practice', 'mission-driven tech'],
   type: 'article',
   structuredData: [
     createArticleSchema(
       'Skill-Wanderer Tech Services: The Self-Sustaining Engine | Principle #8',
-      'How Skill-Wanderer delivers technology services that power our educational mission — the self-sustaining engine connecting real-world client work with free, quality learning.',
+      'How Skill-Wanderer delivers technology services that power our educational mission: the self-sustaining engine connecting real-world client work with free, quality learning.',
       'https://skill-wanderer.com/principles/tech-services'
     ),
     createBreadcrumbSchema([

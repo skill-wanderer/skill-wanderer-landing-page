@@ -7,7 +7,7 @@
       <slot />
     </main>
 
-    <!-- Subscribe Section — shown only on homepage and contact -->
+    <!-- Subscribe Section: shown only on homepage and contact -->
     <TheSubscribe v-if="showSubscribe" />
 
     <!-- Footer -->

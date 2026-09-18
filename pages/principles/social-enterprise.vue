@@ -78,7 +78,7 @@
           <div class="element-card" style="animation-delay: 0.1s;">
             <div class="element-icon">🎓</div>
             <h3>Human Mentors</h3>
-            <p>The most critical element—real human mentors who guide you, answer your questions, and share hard-won industry experience.</p>
+            <p>The most critical element: real human mentors who guide you, answer your questions, and share hard-won industry experience.</p>
           </div>
 
           <div class="element-card" style="animation-delay: 0.2s;">
@@ -96,7 +96,7 @@
           <div class="element-card" style="animation-delay: 0.4s;">
             <div class="element-icon">🧭</div>
             <h3>Pre-Learning Advisory</h3>
-            <p>Personalized advice before you even begin—helping you choose the right path based on your goals, background, and strengths.</p>
+            <p>Personalized advice before you even begin, helping you choose the right path based on your goals, background, and strengths.</p>
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@
             <span class="token-badge">🌍</span>
             <h3>How Our Social Enterprise Model Works</h3>
             <p>
-              Skill-Wanderer is working toward becoming a social enterprise—meaning <strong>100% of revenue is reinvested
+              Skill-Wanderer is working toward becoming a social enterprise, meaning <strong>100% of revenue is reinvested
               into our mission</strong> of making quality tech education accessible to everyone.
               There are three meaningful ways you can contribute to this mission,
               each creating value for you while sustaining education for those who need it most.
@@ -134,7 +134,7 @@
             <h3>Donate for Our Teaching and/or Work with Us as Tech Partners</h3>
             <p>
               Support our mission by donating directly to fund quality teaching,
-              and/or work with us as tech partners using our services—be it
+              and/or work with us as tech partners using our services, be it
               <strong>AI, web, mobile, DevOps, or platform development</strong>.
               All contributions are <strong>reinvested to fund the mission</strong>.
               Your challenges get solved, learners get funded. Everyone wins.
@@ -146,8 +146,8 @@
             <h3>Platform Development</h3>
             <p>
               Join us in building the Skill-Wanderer platform itself. Learners gain
-              <strong>real-world experience and learning at the same time</strong>—we
-              will teach you as you contribute. Design, code, test, write—grow your
+              <strong>real-world experience and learning at the same time</strong>, and we
+              will teach you as you contribute. Design, code, test, write, and grow your
               skills on a live product with real mentorship.
             </p>
           </div>
@@ -179,7 +179,7 @@
             <h3>For Learners Who Truly Cannot Afford It</h3>
             <p>
               If you're in a situation where financial contribution simply isn't possible,
-              we won't turn you away. We will support you with maximum impact—full
+              we won't turn you away. We will support you with maximum impact: full
               access to mentors, projects, advisory, and everything else. Your only
               obligation is to learn earnestly and, when you're able, give back to
               the community in whatever form you can.
@@ -195,7 +195,7 @@
               sustainable over time. A social enterprise model lets us maintain the
               <strong>same high-quality learning with human mentors</strong> while
               creating a cycle where today's learners fund tomorrow's. It's not about
-              profit—it's about building something that lasts.
+              profit. It's about building something that lasts.
             </p>
           </div>
         </div>
@@ -213,7 +213,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote
-      quote="I once believed that making education free was enough. But quality suffers without sustainability, and charity alone can't fund human mentors forever. The social enterprise model is our answer—whether you donate for our teaching, work with us as tech partners, help build the platform, or strengthen the community, every contribution is reinvested into the mission. This is how we build something that truly lasts."
+      quote="I once believed that making education free was enough. But quality suffers without sustainability, and charity alone can't fund human mentors forever. The social enterprise model is our answer. Whether you donate for our teaching, work with us as tech partners, help build the platform, or strengthen the community, every contribution is reinvested into the mission. This is how we build something that truly lasts."
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />
 
@@ -229,13 +229,13 @@ import type { StoryChapter, PracticeExample } from '~/types'
 // SEO and meta management
 useSEO({
   title: 'Social Enterprise Model: 3 Ways to Contribute to the Mission | Principle #11',
-  description: 'Discover Skill-Wanderer\'s social enterprise model—3 ways to contribute: donate for our teaching and/or work with us as tech partners, help develop our platform, or strengthen the community. All contributions reinvested into quality education.',
+  description: 'Discover Skill-Wanderer\'s social enterprise model, with 3 ways to contribute: donate for our teaching and/or work with us as tech partners, help develop our platform, or strengthen the community. All contributions reinvested into quality education.',
   keywords: ['social enterprise', 'tech partner', 'skill-wanderer principle 11', 'sustainable education', 'contribute to mission', 'human mentors', 'quality tech education'],
   type: 'article',
   structuredData: [
     createArticleSchema(
       'Social Enterprise Model: 3 Ways to Contribute to the Mission | Principle #11',
-      'Discover Skill-Wanderer\'s social enterprise model—3 ways to contribute: donate or become a tech partner, help develop our platform, or strengthen the community. All revenue reinvested into quality education.',
+      'Discover Skill-Wanderer\'s social enterprise model, with 3 ways to contribute: donate or become a tech partner, help develop our platform, or strengthen the community. All revenue reinvested into quality education.',
       'https://skill-wanderer.com/principles/social-enterprise'
     ),
     createBreadcrumbSchema([
@@ -250,7 +250,7 @@ useSEO({
 const activeStep = ref(-1)
 
 // Story content data
-const storyIntro = 'I call our eleventh principle <strong>Social Enterprise Model for Quality Education</strong>. We are working toward operating as a social enterprise with three clear ways to contribute to the mission—and its story is one of honest reflection about what truly works.'
+const storyIntro = 'I call our eleventh principle <strong>Social Enterprise Model for Quality Education</strong>. We are working toward operating as a social enterprise with three clear ways to contribute to the mission, and its story is one of honest reflection about what truly works.'
 
 const storyChapters: StoryChapter[] = [
   {
@@ -268,12 +268,12 @@ const storyChapters: StoryChapter[] = [
           'I had <strong>mentors and senior members</strong> who showed me the way.',
           'I had <strong>real projects</strong> to work on, not just theoretical exercises.',
           'I had <strong>real clients</strong> who gave me detailed feedback.',
-          'And I had the accountability that comes with <strong>real stress</strong>—the pressure to deliver on time and to a high standard.'
+          'And I had the accountability that comes with <strong>real stress</strong>: the pressure to deliver on time and to a high standard.'
         ]
       },
       {
         type: 'text',
-        text: 'The <strong>human mentor</strong> is the most critical—and the most difficult—element in this equation. No matter how hard you try with books, online courses, and solo projects, nothing replaces someone who has walked the path before you, sitting beside you, and helping you see what you can\'t see on your own.'
+        text: 'The <strong>human mentor</strong> is the most critical, and the most difficult, element in this equation. No matter how hard you try with books, online courses, and solo projects, nothing replaces someone who has walked the path before you, sitting beside you, and helping you see what you can\'t see on your own.'
       },
       {
         type: 'personal-story',
@@ -287,12 +287,12 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: 'challenge-highlight',
-        text: 'This principle has changed. It once leaned toward a charitable model—making everything free and hoping goodwill would sustain it. But I learned an honest truth: either the quality suffers, or the model simply isn\'t sustainable for the long run. Human mentors cost real resources. Quality learning materials require investment. You can\'t build something lasting on charity alone.',
+        text: 'This principle has changed. It once leaned toward a charitable model, making everything free and hoping goodwill would sustain it. But I learned an honest truth: either the quality suffers, or the model simply isn\'t sustainable for the long run. Human mentors cost real resources. Quality learning materials require investment. You can\'t build something lasting on charity alone.',
         additionalText: 'An Honest Evolution'
       },
       {
         type: 'text',
-        text: 'So I found a better balance: a <strong>social enterprise model</strong>. This means we still deliver the same quality—human mentors, real projects, start-up support, pre-learning advisory—but we sustain it through a cycle where learners who benefit today help fund and support the learners of tomorrow.'
+        text: 'So I found a better balance: a <strong>social enterprise model</strong>. This means we still deliver the same quality, including human mentors, real projects, start-up support and pre-learning advisory, but we sustain it through a cycle where learners who benefit today help fund and support the learners of tomorrow.'
       },
       {
         type: 'text',
@@ -312,9 +312,9 @@ const storyChapters: StoryChapter[] = [
         type: 'element-list',
         text: '',
         items: [
-          '<strong>Donate for our teaching and/or work with us as tech partners</strong>—support our mission by donating directly to fund quality teaching, and/or use our tech services including AI, web, mobile, DevOps, and platform development. All contributions are reinvested to fund the mission.',
-          '<strong>Platform development</strong>—join us in building the Skill-Wanderer platform, gaining real-world experience and learning at the same time while we teach you.',
-          '<strong>Contribute to the community</strong>—mentor newer learners, create content, moderate discussions, or organize events, and gain meaningful connections in return.'
+          '<strong>Donate for our teaching and/or work with us as tech partners</strong>: support our mission by donating directly to fund quality teaching, and/or use our tech services including AI, web, mobile, DevOps, and platform development. All contributions are reinvested to fund the mission.',
+          '<strong>Platform development</strong>: join us in building the Skill-Wanderer platform, gaining real-world experience and learning at the same time while we teach you.',
+          '<strong>Contribute to the community</strong>: mentor newer learners, create content, moderate discussions, or organize events, and gain meaningful connections in return.'
         ]
       }
     ]
@@ -329,7 +329,7 @@ const practiceExamples: PracticeExample[] = [
       'Donate directly to fund quality teaching and support learners',
       'Work with us as tech partners using our services: AI, web, mobile, DevOps, and platform development',
       'All contributions and revenue are reinvested into funding the mission',
-      'Whether you donate, partner, or both—every bit goes toward supporting the next learner'
+      'Whether you donate, partner, or both, every bit goes toward supporting the next learner'
     ]
   },
   {
@@ -337,7 +337,7 @@ const practiceExamples: PracticeExample[] = [
     items: [
       'Help build and improve the Skill-Wanderer platform hands-on',
       'Gain real-world experience and learning at the same time',
-      'We will teach you as you contribute—design, code, test, write',
+      'We will teach you as you contribute: design, code, test, write',
       'Work on a live product with real mentorship and meaningful outcomes'
     ]
   },

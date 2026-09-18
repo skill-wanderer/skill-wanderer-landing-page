@@ -31,7 +31,7 @@
           <p>
             Some learners announce their struggles. Vincent <strong>endures them in silence</strong>.
             In a country where the internet drops without warning, where electricity vanishes for hours at a time,
-            and where the cost of simply living doubles overnight — Vincent shows up. He doesn't complain.
+            and where the cost of simply living doubles overnight, Vincent shows up. He doesn't complain.
             He doesn't make excuses. He logs in, he listens, he asks his questions, and he keeps moving forward.
             He earned the title of "The Stoic" not because he feels nothing, but because he
             <strong>refuses to let hardship define his output</strong>.
@@ -45,7 +45,7 @@
       <div class="journey-container">
         <h2>💪 Forged Under Pressure</h2>
         <p class="section-intro">
-          What makes Vincent extraordinary is not what he achieves despite his circumstances — it's how he carries
+          What makes Vincent extraordinary is not what he achieves despite his circumstances. It's how he carries
           himself through them. In a world that constantly tests his resolve, he remains steady, present, and
           committed. His journey is a masterclass in perseverance with dignity.
         </p>
@@ -66,7 +66,7 @@
             <h3>Sailing on Weak Signals</h3>
             <p>
               With internet connectivity that most would consider unusable, Vincent still makes it to
-              <strong>daily stand-up meetings</strong>. His screen may freeze, his audio may cut — but his
+              <strong>daily stand-up meetings</strong>. His screen may freeze, his audio may cut, but his
               presence is constant. He finds a way, every single time.
             </p>
           </div>
@@ -76,7 +76,7 @@
             <h3>Provider and Learner</h3>
             <p>
               Vincent works a side job to <strong>keep his family fed</strong>. He carries the weight of
-              real-world responsibility on his shoulders — and still finds the energy and discipline to
+              real-world responsibility on his shoulders, and still finds the energy and discipline to
               invest in his growth as a developer. That balance is nothing short of heroic.
             </p>
           </div>
@@ -100,7 +100,7 @@
         <h2>⚓ Holding Steady in a Turbulent World</h2>
         <p>
           As global conflicts between the US and Israel vs Iran drive oil prices upward, the ripple effects hit
-          Nigeria hard — <strong>commodity prices have doubled</strong>, making everyday life even more
+          Nigeria hard. <strong>Commodity prices have doubled</strong>, making everyday life even more
           challenging. The cost of food, fuel, and internet access continues to climb. For someone already
           navigating blackouts, weak connectivity, and family responsibilities, the pressure is immense.
           Yet Vincent remains unmoved. He is currently in development, building his skills one line of code
@@ -114,8 +114,8 @@
 
         <blockquote class="featured-quote">
           "Vincent is the quiet force you never see coming. He doesn't have the luxury of stable power,
-          fast internet, or a life free from financial worry — yet he shows up every day with the same
-          calm determination. We all see what he's going through. And we all know — The Stoic will sail through this."
+          fast internet, or a life free from financial worry, yet he shows up every day with the same
+          calm determination. We all see what he's going through. And we all know: The Stoic will sail through this."
         </blockquote>
       </div>
     </section>

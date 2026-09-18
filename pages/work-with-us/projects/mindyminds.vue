@@ -25,14 +25,14 @@
       <div class="detail-container">
         <h2>Mission</h2>
         <p>
-          MindyMinds is an <strong>AI platform built for start-ups</strong> — enabling businesses to deploy
+          MindyMinds is an <strong>AI platform built for start-ups</strong> that enables businesses to deploy
           customizable AI chatbots tailored to their specific needs. Using a multi-tenant design pattern, each
           client gets a fully personalized AI experience while sharing the same robust frontend and backend
           infrastructure.
         </p>
         <div class="highlight-box">
           <span class="highlight-number">&lt; 3 months</span>
-          <span class="highlight-label">from zero to MVP — developed from start to finish</span>
+          <span class="highlight-label">from zero to MVP, developed from start to finish</span>
         </div>
       </div>
     </section>
@@ -66,7 +66,7 @@
       <div class="detail-container">
         <h2>Architecture</h2>
         <p class="section-intro">
-          Built with a similar architecture to chanhdao.vn — sharing the same backend patterns — but with a
+          Built with a similar architecture to chanhdao.vn, sharing the same backend patterns, but with a
           Next.js frontend and a multi-tenant design that allows each client to have a fully customized AI chatbot
           while running on a single shared platform.
         </p>
@@ -120,7 +120,7 @@
           <div class="tech-row">
             <div class="tech-layer">Frontend</div>
             <div class="tech-name">Next.js</div>
-            <div class="tech-why">React-based framework — SSR/SSG, optimized for performance and SEO</div>
+            <div class="tech-why">React-based framework: SSR/SSG, optimized for performance and SEO</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Backend</div>
@@ -140,7 +140,7 @@
           <div class="tech-row">
             <div class="tech-layer">Security</div>
             <div class="tech-name">Cloudflare + Defense in Depth</div>
-            <div class="tech-why">Layered security strategy — WAF, DDoS protection, SSL, and access controls</div>
+            <div class="tech-why">Layered security strategy: WAF, DDoS protection, SSL, and access controls</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Environments</div>
@@ -156,7 +156,7 @@
       <div class="detail-container">
         <h2>Multi-Tenant Design</h2>
         <p class="section-intro">
-          The tenant design pattern is the backbone of MindyMinds — allowing multiple customized AI chatbots to
+          The tenant design pattern is the backbone of MindyMinds, allowing multiple customized AI chatbots to
           run on the same frontend and backend while each tenant gets a tailored experience.
         </p>
         <div class="features-grid">
@@ -173,12 +173,12 @@
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
             <h3>Shared Infrastructure</h3>
-            <p>One frontend, one backend — serving all tenants efficiently without duplicating resources.</p>
+            <p>One frontend, one backend, serving all tenants efficiently without duplicating resources.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📈</div>
             <h3>Scalable by Design</h3>
-            <p>Adding new tenants requires configuration, not infrastructure — enabling rapid client onboarding.</p>
+            <p>Adding new tenants requires configuration, not infrastructure, enabling rapid client onboarding.</p>
           </div>
         </div>
       </div>
@@ -189,7 +189,7 @@
       <div class="detail-container">
         <h2>Defense in Depth Security</h2>
         <p class="section-intro">
-          MindyMinds implements a layered security strategy — no single point of failure, multiple barriers
+          MindyMinds implements a layered security strategy with no single point of failure, multiple barriers
           between threats and data.
         </p>
         <div class="infra-list">
@@ -211,7 +211,7 @@
             <div class="infra-icon">📦</div>
             <div class="infra-content">
               <h3>Container Isolation</h3>
-              <p>Docker Compose with isolated services — each component runs in its own container with minimal privileges.</p>
+              <p>Docker Compose with isolated services, so each component runs in its own container with minimal privileges.</p>
             </div>
           </div>
           <div class="infra-item">
@@ -250,7 +250,7 @@
             <div class="pipeline-number">3</div>
             <div class="pipeline-content">
               <h3>Production</h3>
-              <p>Promote to production behind Cloudflare protection — serving live tenants</p>
+              <p>Promote to production behind Cloudflare protection, serving live tenants</p>
             </div>
           </div>
         </div>
@@ -263,7 +263,7 @@
         <h2>Current Status</h2>
         <p>
           The MVP was <strong>developed from start to finish in under 3 months</strong>. The platform is currently
-          in active development, focusing on deeper customization capabilities per tenant — enabling more granular
+          in active development, focusing on deeper customization capabilities per tenant, enabling more granular
           control over AI behavior, UI theming, and conversation flows.
         </p>
         <div class="status-timeline">
@@ -298,32 +298,32 @@
         <h2>Built by Two People, End to End</h2>
         <p>
           MindyMinds was <strong>developed from start to finish by the Guild Master of Skill-Wanderer and a
-          mentee</strong> — single-handedly covering every discipline needed to ship a production platform.
+          mentee</strong>, single-handedly covering every discipline needed to ship a production platform.
         </p>
         <div class="roles-grid">
           <div class="role-card">
             <div class="role-icon">💻</div>
             <h3>Full-Stack Development</h3>
-            <p>Next.js frontend and shared backend — built, tested, and deployed by the same two-person team.</p>
+            <p>Next.js frontend and shared backend, built, tested, and deployed by the same two-person team.</p>
           </div>
           <div class="role-card">
             <div class="role-icon">🏢</div>
             <h3>Solution Architecture</h3>
-            <p>Multi-tenant design, defense-in-depth security, and EU cloud infrastructure — all architected in-house.</p>
+            <p>Multi-tenant design, defense-in-depth security, and EU cloud infrastructure, all architected in-house.</p>
           </div>
           <div class="role-card">
             <div class="role-icon">⚙️</div>
             <h3>DevOps</h3>
-            <p>Docker Compose, staging/production environments, Cloudflare integration, and CI/CD — set up and maintained by the team.</p>
+            <p>Docker Compose, staging/production environments, Cloudflare integration, and CI/CD, set up and maintained by the team.</p>
           </div>
           <div class="role-card">
             <div class="role-icon">📋</div>
             <h3>Project Management</h3>
-            <p>Managed using Scrum and Scrumban — sprints, backlogs, and continuous delivery with a lean two-person workflow.</p>
+            <p>Managed using Scrum and Scrumban: sprints, backlogs, and continuous delivery with a lean two-person workflow.</p>
           </div>
         </div>
         <div class="team-note">
-          <strong>Guild Master + Mentee</strong> — after the project, the mentee decided to join the client
+          <strong>Guild Master + Mentee</strong>. After the project, the mentee decided to join the client
           part-time while still attending university. A living example of Skill-Wanderer's mentorship model:
           real projects create real career opportunities, even before graduation.
         </div>
@@ -338,7 +338,7 @@
           Two people. Three months. One production-ready AI platform.
         </p>
         <p class="cta-body">
-          MindyMinds was built from zero to MVP by a Guild Master and a mentee — covering full-stack development,
+          MindyMinds was built from zero to MVP by a Guild Master and a mentee, covering full-stack development,
           DevOps, architecture, and project management. This is the kind of project you could be working on at
           Skill-Wanderer: real products, real users, real impact on your career.
         </p>
@@ -353,7 +353,7 @@
           </div>
           <div class="cta-highlight">
             <span class="cta-highlight-icon">🔧</span>
-            <span>Own every layer — from code to cloud</span>
+            <span>Own every layer, from code to cloud</span>
           </div>
         </div>
         <div class="cta-buttons">
@@ -376,9 +376,9 @@
 // Icons replaced with emojis
 
 useSEO({
-  title: 'MindyMinds — AI Platform for Start-ups | Skill-Wanderer',
+  title: 'MindyMinds: AI Platform for Start-ups | Skill-Wanderer',
   description:
-    'A multi-tenant AI platform enabling start-ups to deploy customized chatbots — built with Next.js, Docker Compose on EU cloud, and a defense-in-depth security strategy.',
+    'A multi-tenant AI platform enabling start-ups to deploy customized chatbots, built with Next.js, Docker Compose on EU cloud, and a defense-in-depth security strategy.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: ['AI chatbot platform', 'multi-tenant SaaS', 'startup AI development', 'Next.js platform', 'EU cloud deployment', 'custom chatbot solution'],
   structuredData: createBreadcrumbSchema([

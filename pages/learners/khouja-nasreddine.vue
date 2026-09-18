@@ -29,8 +29,8 @@
           <h2>A Force That Cannot Be Stopped</h2>
           <p>
             Some learners need encouragement. Some need direction. Khouja Nasreddine needs <strong>neither</strong>.
-            From the moment he joined, it was clear — this is someone who runs toward challenges, not away from them.
-            Sickness, holidays, obstacles — nothing slows him down. He earned the title of "The Warrior" not through
+            From the moment he joined, it was clear: this is someone who runs toward challenges, not away from them.
+            Sickness, holidays, obstacles: nothing slows him down. He earned the title of "The Warrior" not through
             words, but through relentless, unwavering action.
           </p>
         </div>
@@ -42,7 +42,7 @@
       <div class="journey-container">
         <h2>🛡️ Built Different</h2>
         <p class="section-intro">
-          What makes Khouja remarkable isn't just his skill — it's his unbreakable spirit. While others pause,
+          What makes Khouja remarkable isn't just his skill. It's his unbreakable spirit. While others pause,
           he pushes forward. While others ask for guidance, he's already three steps ahead, solving the problem
           on his own. His resilience and speed of development leave us consistently impressed.
         </p>
@@ -53,7 +53,7 @@
             <h3>Unbreakable Resilience</h3>
             <p>
               Sickness? He codes through it. Holidays? He's still pushing commits. Khouja
-              <strong>never lets anything stand in his way</strong>. His determination is not reckless —
+              <strong>never lets anything stand in his way</strong>. His determination is not reckless;
               it's a disciplined, warrior-like resolve that turns every setback into fuel.
             </p>
           </div>
@@ -62,7 +62,7 @@
             <div class="milestone-icon">⚡</div>
             <h3>Lightning-Fast Development</h3>
             <p>
-              Khouja's <strong>speed of development is extraordinary</strong>. He doesn't just complete tasks —
+              Khouja's <strong>speed of development is extraordinary</strong>. He doesn't just complete tasks;
               he blazes through them with a velocity that consistently exceeds expectations. What takes others
               days, he delivers in hours, without sacrificing quality.
             </p>
@@ -73,7 +73,7 @@
             <h3>Self-Guided Navigator</h3>
             <p>
               He requires <strong>very little guidance</strong>. Point him in a direction and he'll find the
-              path himself — researching, experimenting, and solving problems independently. His self-reliance
+              path himself, researching, experimenting, and solving problems independently. His self-reliance
               is not stubbornness; it's a deep confidence in his ability to figure things out.
             </p>
           </div>
@@ -98,7 +98,7 @@
         <p>
           Khouja completed the <strong>Mobile Game Dev Path</strong> with the same warrior spirit that defined
           his entire journey. He is now working with one of our partners, bringing his unstoppable energy and
-          rapid development skills to a professional environment — proving that the warrior mentality translates
+          rapid development skills to a professional environment, proving that the warrior mentality translates
           powerfully into the real world.
         </p>
 
@@ -108,7 +108,7 @@
         </div>
 
         <blockquote class="featured-quote">
-          "Khouja is the embodiment of a warrior. He doesn't wait for the storm to pass — he charges straight
+          "Khouja is the embodiment of a warrior. He doesn't wait for the storm to pass. He charges straight
           through it. His resilience, speed, and self-reliance make him one of the most impressive learners
           we've ever had. Nothing stops The Warrior."
         </blockquote>

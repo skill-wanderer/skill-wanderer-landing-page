@@ -48,7 +48,7 @@ function loadSession(storage: Storage | null): ChatMessage[] {
 
 function saveSession(storage: Storage | null, history: ChatMessage[], expiryMinutes: number) {
   if (!storage) return
-  // Reset expiry countdown from now — every new message extends the session
+  // Reset expiry countdown from now; every new message extends the session
   const session: StoredSession = {
     history,
     personality: DEFAULT_PERSONALITY,

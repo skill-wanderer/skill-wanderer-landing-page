@@ -4,7 +4,7 @@
     <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">Guild Roadmap</h1>
-        <p class="hero-subtitle">Building the Future of Skill-Wanderer — One Module at a Time</p>
+        <p class="hero-subtitle">Building the Future of Skill-Wanderer, One Module at a Time</p>
         <p class="hero-description">
           Our roadmap outlines the key modules we're developing to power a truly independent,
           community-driven tech guild. Every module is built with passion, transparency,
@@ -40,7 +40,7 @@
               <p class="card-description">
                 Building a fully customized Learning Management System from the ground up to replace our
                 existing Moodle setup. This new LMS is tailored to embrace our guild philosophy of learning
-                through failure, practical education, and community-driven content — with no limitations
+                through failure, practical education, and community-driven content, with no limitations
                 imposed by third-party tools.
               </p>
               <div class="card-features">
@@ -52,7 +52,7 @@
                 <div class="feature-tag">Self-Hosted Infrastructure</div>
               </div>
               <div class="card-goal">
-                <strong>Goal:</strong> Full ownership of the learning experience — no vendor lock-in,
+                <strong>Goal:</strong> Full ownership of the learning experience, with no vendor lock-in,
                 no compromises on our principles, and complete freedom to innovate.
               </div>
             </div>
@@ -76,7 +76,7 @@
               <p class="card-description">
                 A comprehensive member portal and administration system that gives guild members, mentors,
                 and administrators a personalized dashboard to manage their journey. From enrollment and
-                profile management to progress analytics and role-based access — everything in one place.
+                profile management to progress analytics and role-based access, everything in one place.
               </p>
               <div class="card-features">
                 <div class="feature-tag">Member Dashboards</div>
@@ -111,7 +111,7 @@
               <p class="card-description">
                 A built-in chat and communication system to enable real-time conversations between
                 guild members, mentors, and the community. Direct messages, group channels, study rooms,
-                and mentor Q&A sessions — all integrated seamlessly into the guild without relying
+                and mentor Q&A sessions, all integrated seamlessly into the guild without relying
                 on external tools.
               </p>
               <div class="card-features">
@@ -124,7 +124,7 @@
               </div>
               <div class="card-goal">
                 <strong>Goal:</strong> Foster meaningful, instant communication that strengthens the
-                bonds between guild members and mentors — keeping everything within our ecosystem.
+                bonds between guild members and mentors, keeping everything within our ecosystem.
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@
             <h3>Contact & Outreach</h3>
             <p>
               A dedicated contact and outreach module to streamline communication with potential
-              partners, guild members, and supporters — making it easy for anyone to reach out and
+              partners, guild members, and supporters, making it easy for anyone to reach out and
               engage with Skill-Wanderer.
             </p>
             <div class="module-tags">
@@ -210,7 +210,7 @@
             <span class="module-icon">💰</span>
             <h3>Fundraising & Sustainability</h3>
             <p>
-              Tools and integrations to raise funding for the project — from donation campaigns
+              Tools and integrations to raise funding for the project, from donation campaigns
               and grant applications to our Social Impact Token model that sustains free education
               through community trust and shared value.
             </p>
@@ -226,7 +226,7 @@
             <h3>Analytics & Insights</h3>
             <p>
               A privacy-respecting analytics module to understand learning patterns, measure
-              guild impact, and make data-driven decisions — all without compromising
+              guild impact, and make data-driven decisions, all without compromising
               member privacy or selling data.
             </p>
             <div class="module-tags">
@@ -241,7 +241,7 @@
             <h3>Integration & API</h3>
             <p>
               Open APIs and integration points that allow the guild modules to work together
-              seamlessly and enable third-party tools to connect where needed — built on our
+              seamlessly and enable third-party tools to connect where needed, built on our
               microservices architecture.
             </p>
             <div class="module-tags">
@@ -256,7 +256,7 @@
             <h3>Security & Compliance</h3>
             <p>
               Ensuring the guild meets the highest standards of security and data protection.
-              From authentication and authorization to GDPR compliance — protecting our
+              From authentication and authorization to GDPR compliance, protecting our
               community's trust is non-negotiable.
             </p>
             <div class="module-tags">
@@ -276,7 +276,7 @@
           <h2>Built in the Open, Driven by Purpose</h2>
           <p>
             Every module on this roadmap is developed with the same principles that define our guild:
-            <strong>transparency, integrity, and community-first thinking</strong>. We don't just build software —
+            <strong>transparency, integrity, and community-first thinking</strong>. We don't just build software;
             we build trust. This roadmap is a living document that evolves with our guild members' needs and the
             community's input.
           </p>
@@ -301,7 +301,7 @@
     <!-- CTA Section -->
     <section class="cta">
       <h2>Want to Be Part of the Journey?</h2>
-      <p>Whether you're a learner, contributor, or supporter — there's a place for you in the Skill-Wanderer guild</p>
+      <p>Whether you're a learner, contributor, or supporter, there's a place for you in the Skill-Wanderer guild</p>
       <div class="cta-buttons">
         <NuxtLink to="/contact" class="btn btn-primary">
           Get In Touch
@@ -322,7 +322,7 @@ import { onMounted, ref } from 'vue'
 // SEO and meta management
 useSEO({
   title: 'Guild Roadmap | Skill-Wanderer Development Plan',
-  description: 'Explore the Skill-Wanderer guild roadmap — from our custom LMS and member portal to community tools and sustainability. See what we\'re building and how you can be part of the guild.',
+  description: 'Explore the Skill-Wanderer guild roadmap, from our custom LMS and member portal to community tools and sustainability. See what we\'re building and how you can be part of the guild.',
   keywords: ['skill-wanderer roadmap', 'guild development', 'LMS module', 'community module', 'tech guild roadmap', 'open source education'],
   type: 'website',
 })
