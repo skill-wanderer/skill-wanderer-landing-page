@@ -50,7 +50,7 @@
         <div class="impact-card" style="animation-delay: 0.1s;">
           <span class="impact-icon">🎓</span>
           <h3>For the Struggling Junior</h3>
-          <p>Complete learning paths without spending a penny. All content is free—and through our social enterprise model, human mentors and support are available to those in need via Social Impact Tokens.</p>
+          <p>Complete learning paths without spending a penny. All content is free, and through our social enterprise model, human mentors and support are available to those in need via Social Impact Tokens.</p>
         </div>
         
         <div class="impact-card" style="animation-delay: 0.2s;">
@@ -114,7 +114,7 @@ const storyChapters = [
     content: [
       {
         type: 'text' as const,
-        text: 'Over the years, I\'ve had the privilege of leading many developers—more than 20 in total, and at one point, I was managing a team of 16 simultaneously. I quickly learned that training a team with diverse skill levels is a major challenge. It\'s inefficient to teach everyone 1-on-1, and putting junior and mid level developers in the same class often helps no one. The best approach was always to point my team toward high-quality external learning materials so they could learn at their own pace.'
+        text: 'Over the years, I\'ve had the privilege of leading many developers, more than 20 in total, and at one point, I was managing a team of 16 simultaneously. I quickly learned that training a team with diverse skill levels is a major challenge. It\'s inefficient to teach everyone 1-on-1, and putting junior and mid level developers in the same class often helps no one. The best approach was always to point my team toward high-quality external learning materials so they could learn at their own pace.'
       },
       {
         type: 'text' as const,
@@ -128,11 +128,11 @@ const storyChapters = [
     content: [
       {
         type: 'text' as const,
-        text: 'The best courses, the ones that truly make a difference, often come with a cost—typically around $25-$50 USD per month. While that might not seem like much, it was a huge barrier for my junior developers. For many, that monthly fee was <strong>more than 10% of their entire salary</strong>. I watched as talented, driven developers struggled to afford the very resources they needed to grow. They didn\'t know which courses were worth the investment or simply lacked the funds to find out.'
+        text: 'The best courses, the ones that truly make a difference, often come with a cost, typically around $25-$50 USD per month. While that might not seem like much, it was a huge barrier for my junior developers. For many, that monthly fee was <strong>more than 10% of their entire salary</strong>. I watched as talented, driven developers struggled to afford the very resources they needed to grow. They didn\'t know which courses were worth the investment or simply lacked the funds to find out.'
       },
       {
         type: 'personal-story' as const,
-        text: 'I remember one junior developer on my team—brilliant mind, incredible work ethic. He would stay late, debugging issues, always asking smart questions. But when I recommended a specific course that would accelerate his learning, he quietly said, "Maybe next month." That\'s when I realized: he was choosing between learning resources and basic necessities. That moment haunts me still.'
+        text: 'I remember one junior developer on my team: brilliant mind, incredible work ethic. He would stay late, debugging issues, always asking smart questions. But when I recommended a specific course that would accelerate his learning, he quietly said, "Maybe next month." That\'s when I realized: he was choosing between learning resources and basic necessities. That moment haunts me still.'
       },
       {
         type: 'text' as const,
@@ -146,7 +146,7 @@ const storyChapters = [
     content: [
       {
         type: 'text' as const,
-        text: 'I\'ve been fortunate in my own career to have the resources to invest in my education. But I saw so many others who weren\'t as lucky. I believe in a kind of karma—that good fortune should be shared. This is why our organization is built on the promise of free access. We are committed to providing and curating high-quality core educational content that is <strong>completely free</strong>, removing that initial financial barrier for those who need it most.'
+        text: 'I\'ve been fortunate in my own career to have the resources to invest in my education. But I saw so many others who weren\'t as lucky. I believe in a kind of karma, that good fortune should be shared. This is why our organization is built on the promise of free access. We are committed to providing and curating high-quality core educational content that is <strong>completely free</strong>, removing that initial financial barrier for those who need it most.'
       },
       {
         type: 'text' as const,
@@ -154,7 +154,7 @@ const storyChapters = [
       },
       {
         type: 'text' as const,
-        text: '<strong>To be absolutely clear:</strong> All Skill-Wanderer content—our courses, materials—remains completely free. When we mention paid resources, we\'re referring to third-party tools, courses, or services that we may recommend as optional supplements to your learning journey.'
+        text: '<strong>To be absolutely clear:</strong> All Skill-Wanderer content, our courses and materials, remains completely free. When we mention paid resources, we\'re referring to third-party tools, courses, or services that we may recommend as optional supplements to your learning journey.'
       },
       {
         type: 'text' as const,

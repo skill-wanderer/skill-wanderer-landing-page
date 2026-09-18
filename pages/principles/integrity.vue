@@ -21,7 +21,7 @@
           <div class="trust-card" style="animation-delay: 0.1s;">
             <span class="trust-icon">👥</span>
             <h3>Family & Friends</h3>
-            <p>Highest trust level because there's no financial motive—just genuine care for your success.</p>
+            <p>Highest trust level because there's no financial motive, just genuine care for your success.</p>
             <div class="trust-meter">
               <div class="trust-level" style="width: 95%;"></div>
             </div>
@@ -118,7 +118,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote 
-      quote="The moment people know you're getting paid for a recommendation, a seed of doubt is planted. We refuse to let that seed take root. Our guidance will never be for sale—this is the only way to ensure complete trust in our educational mission."
+      quote="The moment people know you're getting paid for a recommendation, a seed of doubt is planted. We refuse to let that seed take root. Our guidance will never be for sale. This is the only way to ensure complete trust in our educational mission."
     />    <!-- Navigation Section -->
     <PrincipleNavigation current-slug="integrity" />  </div>
 </template>
@@ -180,7 +180,7 @@ const storyChapters = [
       },
       {
         type: 'personal-story' as const,
-        text: 'I remember watching a famous Vietnamese influencer I once admired promote a "miracle" health product. Thousands of fans bought it based on trust alone. Later, when the product was found to be harmful, I saw the comments—people felt betrayed, not just financially, but emotionally. That trust, once broken, could never be fully restored. It made me realize: when you mix trust with hidden financial incentives, you\'re playing with fire.'
+        text: 'I remember watching a famous Vietnamese influencer I once admired promote a "miracle" health product. Thousands of fans bought it based on trust alone. Later, when the product was found to be harmful, I saw the comments. People felt betrayed, not just financially, but emotionally. That trust, once broken, could never be fully restored. It made me realize: when you mix trust with hidden financial incentives, you\'re playing with fire.'
       },
       {
         type: 'text' as const,
@@ -194,7 +194,7 @@ const storyChapters = [
     content: [
       {
         type: 'text' as const,
-        text: 'That is why this principle is a hard line in the sand. <strong>Our recommendations will be our own, based solely on what we believe is best for the learner.</strong> We will not accept any form of revenue—no commissions, no referral fees, no kickbacks—from any third-party resources we guide our learners to. Our opinions and our guidance cannot and will not be for sale. This is the only way to ensure our cause is free from any doubt.'
+        text: 'That is why this principle is a hard line in the sand. <strong>Our recommendations will be our own, based solely on what we believe is best for the learner.</strong> We will not accept any form of revenue, whether commissions, referral fees, or kickbacks, from any third-party resources we guide our learners to. Our opinions and our guidance cannot and will not be for sale. This is the only way to ensure our cause is free from any doubt.'
       },
       {
         type: 'text' as const,

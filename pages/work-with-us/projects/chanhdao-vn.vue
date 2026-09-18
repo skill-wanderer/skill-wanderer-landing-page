@@ -25,8 +25,8 @@
       <div class="detail-container">
         <h2>Mission</h2>
         <p>
-          ChanhDao.vn exists to <strong>digitalize Buddhism</strong> and leverage AI — chatbots and AI-generated
-          content — to aid Vietnamese people in learning and practicing Buddhism. All source code and content are
+          ChanhDao.vn exists to <strong>digitalize Buddhism</strong> and leverage AI, using chatbots and AI-generated
+          content, to aid Vietnamese people in learning and practicing Buddhism. All source code and content are
           public. This is a non-profit project with nothing to hide.
         </p>
         <div class="highlight-box">
@@ -117,7 +117,7 @@
           <div class="tech-row">
             <div class="tech-layer">Frontend</div>
             <div class="tech-name">Nuxt 4 + Vue 3 + TailwindCSS</div>
-            <div class="tech-why">SSG/SSR, SEO-optimized. All content stored in-repo as TypeScript — fully public, fast to serve</div>
+            <div class="tech-why">SSG/SSR, SEO-optimized. All content stored in-repo as TypeScript: fully public, fast to serve</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Backend</div>
@@ -191,7 +191,7 @@
             <div class="feature-icon">📚</div>
             <h3>162 Structured Lessons</h3>
             <p>
-              "Phat Hoc Pho Thong" (General Buddhist Studies) across 3 volumes — based on the
+              "Phat Hoc Pho Thong" (General Buddhist Studies) across 3 volumes, based on the
               teachings of Venerable Thich Thien Hoa.
             </p>
           </div>
@@ -202,15 +202,15 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">🧭</div>
-            <h3>Thien Thu — AI Companion</h3>
+            <h3>Thien Thu: AI Companion</h3>
             <p>
               An AI learning companion that helps users find lessons, trace reference sources, and connect
-              study content — "holding the lamp, not replacing the path."
+              study content, "holding the lamp, not replacing the path."
             </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🛤️</div>
-            <h3>Phap Lo — Learning Pathways</h3>
+            <h3>Phap Lo: Learning Pathways</h3>
             <p>
               Structured learning progressions from Basic to Intermediate to Advanced, so learners can
               follow a systematic path suited to their level.
@@ -218,7 +218,7 @@
           </div>
           <div class="feature-card">
             <div class="feature-icon">🤖</div>
-            <h3>An Lac Vien — AI Fleet</h3>
+            <h3>An Lac Vien: AI Fleet</h3>
             <p>
               FastAPI + Qdrant-powered AI chatbot fleet for Buddhist Q&A, semantic search, and
               doctrine retrieval.
@@ -255,13 +255,13 @@
           <div class="feature-card">
             <div class="feature-icon">📖</div>
             <h3>100% Open Content</h3>
-            <p>All course data stored as TypeScript in the repo — fully transparent, nothing to hide.</p>
+            <p>All course data stored as TypeScript in the repo: fully transparent, nothing to hide.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📱</div>
             <h3>Multi-Device Responsive</h3>
             <p>
-              Compatible with desktop, tablet, and mobile — reaching Vietnamese communities
+              Compatible with desktop, tablet, and mobile, reaching Vietnamese communities
               wherever they are.
             </p>
           </div>
@@ -275,12 +275,12 @@
         <h2>Self-Hosted on Home Kubernetes</h2>
         <p>
           The entire platform runs on a <strong>self-hosted Kubernetes cluster at home</strong>. No cloud VMs,
-          no managed services — just bare-metal k8s running all workloads: Nuxt frontend, NestJS API, Keycloak,
+          no managed services, just bare-metal k8s running all workloads: Nuxt frontend, NestJS API, Keycloak,
           PostgreSQL, FastAPI AI fleet, and Qdrant.
         </p>
         <div class="highlight-box" style="margin-top: 30px;">
           <span class="highlight-number">~$0</span>
-          <span class="highlight-label">total running cost — only cloud API keys for AI inference are paid</span>
+          <span class="highlight-label">total running cost. Only cloud API keys for AI inference are paid</span>
         </div>
 
         <div class="hosting-grid">
@@ -290,7 +290,7 @@
           </div>
           <div class="hosting-card">
             <h3>Cloud API Keys</h3>
-            <p>AI inference — the only paid cost</p>
+            <p>AI inference, the only paid cost</p>
           </div>
           <div class="hosting-card">
             <h3>Domain & DNS</h3>
@@ -377,7 +377,7 @@
       <div class="detail-container">
         <h2>Course Structure</h2>
         <p class="section-intro">
-          Phat Hoc Pho Thong (General Buddhist Studies) — a comprehensive curriculum across 3 volumes,
+          Phat Hoc Pho Thong (General Buddhist Studies), a comprehensive curriculum across 3 volumes,
           based on the teachings of Venerable Thich Thien Hoa. Content spans Basic, Intermediate, and Advanced levels.
         </p>
 
@@ -443,7 +443,7 @@
       <div class="detail-container">
         <h2>AI Philosophy</h2>
         <p class="section-intro">
-          AI on ChanhDao.vn is a supportive tool — not a replacement for practice, teachers, or personal reflection.
+          AI on ChanhDao.vn is a supportive tool, not a replacement for practice, teachers, or personal reflection.
         </p>
         <div class="philosophy-grid">
           <div class="philosophy-card">
@@ -452,7 +452,7 @@
           </div>
           <div class="philosophy-card">
             <h3>Collaborative Learning</h3>
-            <p>Responses encourage self-reflection rather than prescriptive answers — the learner walks the path themselves.</p>
+            <p>Responses encourage self-reflection rather than prescriptive answers, so the learner walks the path themselves.</p>
           </div>
           <div class="philosophy-card">
             <h3>Content Transparency</h3>
@@ -480,7 +480,7 @@
             <span class="founder-role">Technology Lead</span>
             <p>
               Motivated by personal Buddhist practice to remove barriers to learning. Also the founder of
-              Skill-Wanderer — the tech guild supporting this project.
+              Skill-Wanderer, the tech guild supporting this project.
             </p>
           </div>
           <div class="founder-card">
@@ -494,7 +494,7 @@
           </div>
         </div>
         <div class="org-note">
-          <strong>Operating Organization:</strong> Skill-Wanderer — a social enterprise in the making,
+          <strong>Operating Organization:</strong> Skill-Wanderer, a social enterprise in the making,
           reinvesting technology partnerships back into free education.
         </div>
       </div>
@@ -525,7 +525,7 @@
 // Icons replaced with emojis
 
 useSEO({
-  title: 'ChanhDao.vn — Digitalizing Buddhism for Vietnamese Learners | Skill-Wanderer',
+  title: 'ChanhDao.vn: Digitalizing Buddhism for Vietnamese Learners | Skill-Wanderer',
   description:
     'A non-profit, open-source platform to digitalize Buddhism and make it accessible to Vietnamese communities worldwide through AI-powered content and interactive learning.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',

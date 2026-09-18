@@ -17,7 +17,7 @@
       <div class="ai-era-container">
         <div style="text-align: center; margin-bottom: 50px;">
           <h2 style="font-size: 2.5rem; color: var(--primary-orange);">Content Creation in the AI Era</h2>
-          <p style="font-size: 1.2rem; opacity: 0.9;">AI enables us to generate learning materials from our own curriculum — with IP respect as our foundation</p>
+          <p style="font-size: 1.2rem; opacity: 0.9;">AI enables us to generate learning materials from our own curriculum, with IP respect as our foundation</p>
         </div>
         
         <div class="ai-flow-visual">
@@ -86,7 +86,7 @@
             </div>
             
             <div class="strategy-description">
-              <p>With modern AI capabilities, we can generate learning materials directly from Skill-Wanderer's own curriculum — dramatically accelerating content production while staying within clear IP boundaries.</p>
+              <p>With modern AI capabilities, we can generate learning materials directly from Skill-Wanderer's own curriculum, dramatically accelerating content production while staying within clear IP boundaries.</p>
             </div>
             
             <ul class="strategy-list">
@@ -149,13 +149,13 @@ import type { StoryChapter, PracticeExample } from '~/types'
 // SEO and meta management
 useSEO({
   title: 'Respect IP | Principle #9',
-  description: 'Discover how Skill-Wanderer honors intellectual property in the AI era — generating content from our own curriculum while attributing every source with integrity.',
+  description: 'Discover how Skill-Wanderer honors intellectual property in the AI era, generating content from our own curriculum while attributing every source with integrity.',
   keywords: ['respect IP', 'intellectual property', 'AI content generation', 'attribution', 'skill-wanderer principle 9', 'educational ethics'],
   type: 'article',
   structuredData: [
     createArticleSchema(
       'Respect IP: Honoring Intellectual Property in the Age of AI | Principle #9',
-      'Discover how Skill-Wanderer honors intellectual property in the AI era — generating content from our own curriculum while attributing every source with integrity.',
+      'Discover how Skill-Wanderer honors intellectual property in the AI era, generating content from our own curriculum while attributing every source with integrity.',
       'https://skill-wanderer.com/principles/respect-ip'
     ),
     createBreadcrumbSchema([
@@ -167,7 +167,7 @@ useSEO({
 })
 
 // Story content data
-const storyIntro = 'I call our ninth principle <strong>Respect IP</strong>, and it marks an important evolution in how Skill-Wanderer thinks about content creation. As AI capabilities have advanced dramatically, we can now generate high-quality learning materials directly from our own curriculum — making traditional curation less central to our workflow than it once was. But this shift brings new responsibility: we must be explicit about intellectual property boundaries and set the standard for attribution that we want our learners to carry into their careers.'
+const storyIntro = 'I call our ninth principle <strong>Respect IP</strong>, and it marks an important evolution in how Skill-Wanderer thinks about content creation. As AI capabilities have advanced dramatically, we can now generate high-quality learning materials directly from our own curriculum, making traditional curation less central to our workflow than it once was. But this shift brings new responsibility: we must be explicit about intellectual property boundaries and set the standard for attribution that we want our learners to carry into their careers.'
 
 const storyChapters: StoryChapter[] = [
   {
@@ -176,15 +176,15 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: 'text',
-        text: 'When I founded Skill-Wanderer, curation was the backbone of our content strategy. We scoured the internet for the best free resources, organized them into structured learning paths, and helped learners navigate the sea of content out there. It worked — and Principle #9 was born from that work.'
+        text: 'When I founded Skill-Wanderer, curation was the backbone of our content strategy. We scoured the internet for the best free resources, organized them into structured learning paths, and helped learners navigate the sea of content out there. It worked, and Principle #9 was born from that work.'
       },
       {
         type: 'personal-story',
-        text: 'But something significant changed. AI tools became capable enough that we could take our own structured curriculum — the learning outcomes, the skill frameworks, the pedagogical sequences we had painstakingly designed — and use them as source material to generate rich, tailored learning content. Suddenly, the bottleneck was no longer finding content; it was ensuring everything we generated or referenced was grounded in clear IP respect.'
+        text: 'But something significant changed. AI tools became capable enough that we could take our own structured curriculum, the learning outcomes, the skill frameworks, the pedagogical sequences we had painstakingly designed, and use them as source material to generate rich, tailored learning content. Suddenly, the bottleneck was no longer finding content; it was ensuring everything we generated or referenced was grounded in clear IP respect.'
       },
       {
         type: 'text',
-        text: 'This shift doesn\'t mean we stop pointing learners to great third-party resources. It means <strong>we no longer need curation as our primary content strategy</strong>. With AI generating from our own curriculum, we can produce practice exercises, explanations, and guided paths faster than ever — while keeping IP boundaries crystal clear.'
+        text: 'This shift doesn\'t mean we stop pointing learners to great third-party resources. It means <strong>we no longer need curation as our primary content strategy</strong>. With AI generating from our own curriculum, we can produce practice exercises, explanations, and guided paths faster than ever, while keeping IP boundaries crystal clear.'
       }
     ]
   },
@@ -198,7 +198,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'text',
-        text: 'We explicitly reinforce intellectual property principles because we want Skill-Wanderer to model the professional standards our learners will need in their careers. <strong>The developers, engineers, and technologists we train will encounter IP questions constantly</strong> — from open-source licensing to corporate code ownership. We want them to have watched us model respect for IP from day one.'
+        text: 'We explicitly reinforce intellectual property principles because we want Skill-Wanderer to model the professional standards our learners will need in their careers. <strong>The developers, engineers, and technologists we train will encounter IP questions constantly</strong>, from open-source licensing to corporate code ownership. We want them to have watched us model respect for IP from day one.'
       },
       {
         type: 'integrity-notice',
@@ -213,7 +213,7 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: 'text',
-        text: 'Every learner who completes a Skill-Wanderer path should leave with a clear understanding of intellectual property norms. This is not just an ethical position — it is a practical career skill. Companies care deeply about IP compliance, open-source obligations, and proper attribution.'
+        text: 'Every learner who completes a Skill-Wanderer path should leave with a clear understanding of intellectual property norms. This is not just an ethical position. It is a practical career skill. Companies care deeply about IP compliance, open-source obligations, and proper attribution.'
       },
       {
         type: 'text',
@@ -221,7 +221,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'text',
-        text: 'The evolution from "Resourceful Curation" to "Respect IP" reflects the maturity of our platform. We have the tools, the curriculum, and the AI capabilities to produce excellent content from our own materials. What we must guard with equal care is the integrity of IP — ours and everyone else\'s.'
+        text: 'The evolution from "Resourceful Curation" to "Respect IP" reflects the maturity of our platform. We have the tools, the curriculum, and the AI capabilities to produce excellent content from our own materials. What we must guard with equal care is the integrity of IP, ours and everyone else\'s.'
       }
     ]
   }

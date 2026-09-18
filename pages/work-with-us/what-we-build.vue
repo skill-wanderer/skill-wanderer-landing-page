@@ -530,19 +530,19 @@
               </tr>
               <tr>
                 <td><span class="package-name">Validate</span></td>
-                <td>A Quick Build or Trust Sprint to test the concept, establish workflow, and deliver something real.</td>
+                <td>A free working prototype to test the concept, establish workflow, and deliver something real before any commitment.</td>
               </tr>
               <tr>
                 <td><span class="package-name">Build</span></td>
-                <td>Sprint-based development: the guild ships features iteratively with your feedback shaping every cycle.</td>
+                <td>Full development against the confirmed scope, including up to 2 structured revision rounds before launch.</td>
               </tr>
               <tr>
                 <td><span class="package-name">Sustain</span></td>
-                <td>Retainer or maintenance to keep the product healthy, evolving, and supported long-term.</td>
+                <td>Ongoing hosting and technical care to keep the product healthy, evolving, and supported long-term.</td>
               </tr>
               <tr>
                 <td><span class="package-name">Transfer</span></td>
-                <td>When you are ready, Knowledge Transfer ensures your team or next partner can take over with confidence.</td>
+                <td>When you are ready, you can stop the service and migrate, yourself or through another provider. No lock-in.</td>
               </tr>
             </tbody>
           </table>

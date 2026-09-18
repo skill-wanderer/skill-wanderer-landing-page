@@ -34,12 +34,12 @@
               to get in touch with Skill-Wanderer. As a true "student of life," Rei's journey has been 
               defined by resilience, introspection, and continuous growth. Navigating the challenges of 
               neurodivergence and the complex mental landscapes that come with it, Rei has demonstrated 
-              what it means to move forward with awareness, discipline, and purpose—truly sailing through adversity.
+              what it means to move forward with awareness, discipline, and purpose, truly sailing through adversity.
             </p>
             <p>
               Even before connecting with Skill-Wanderer, Rei was already actively building his own systems 
               and exploring architecture-driven development. Through mentorship, he continues to refine his 
-              approach—combining technical depth, structured thinking, and long-term vision in the systems he creates:
+              approach, combining technical depth, structured thinking, and long-term vision in the systems he creates:
             </p>
         </div>
       </div>
@@ -70,7 +70,7 @@
             <h3>Launching a Freelancing Career</h3>
             <p>
               Marking a significant milestone, Rei has officially launched his freelancing career 
-              and secured his first project—a testament to his dedication and growing skills.
+              and secured his first project, a testament to his dedication and growing skills.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@
         </div>
 
         <blockquote class="featured-quote">
-          "Rei's story reminds us that growth isn't just about technical skills—it's about the courage 
+          "Rei's story reminds us that growth isn't just about technical skills. It's about the courage 
           to keep moving forward, even when the sea is rough."
         </blockquote>
       </div>

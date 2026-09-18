@@ -1,7 +1,7 @@
 <template>
   <div class="pricing-page">
 
-    <!-- SECTION 1 — Mission-Driven Pricing Philosophy -->
+    <!-- SECTION 1: Mission-Driven Pricing Philosophy -->
     <section class="hero">
       <div class="content hero-content">
         <p class="eyebrow">How pricing works at the guild</p>
@@ -9,7 +9,7 @@
         <p class="hero-copy">
           Pricing exists so the guild can sustain itself. Every engagement funds senior-led delivery
           and reinvests directly into free education. There are no investors, no ad revenue, and no
-          hidden margins. What you pay is what it costs to do the work well — and to keep the
+          hidden margins. What you pay is what it costs to do the work well, and to keep the
           learning ecosystem running alongside it.
         </p>
         <div class="hero-actions">
@@ -33,7 +33,7 @@
       </div>
     </section>
 
-    <!-- SECTION 2 — Choose Your Path -->
+    <!-- SECTION 2: Choose Your Path -->
     <section id="choose-path" class="path-section">
       <div class="content">
         <div class="section-header section-header--center">
@@ -69,7 +69,7 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════ -->
-    <!-- SEGMENT 1 — INDIVIDUAL CLIENTS                 -->
+    <!-- SEGMENT 1: INDIVIDUAL CLIENTS                  -->
     <!-- ═══════════════════════════════════════════════ -->
     <section v-show="activeTab === 'individual'" id="individual" class="segment-section segment-individual">
       <div class="content">
@@ -113,7 +113,7 @@
               <p class="package-kicker">Full launch</p>
               <h3>Growth</h3>
               <p class="package-copy">
-                Everything in Foundation plus deeper integrations — onboarding flows,
+                Everything in Foundation plus deeper integrations: onboarding flows,
                 email automation, analytics, and multi-step lead funnels.
               </p>
             </div>
@@ -170,7 +170,7 @@
                 <span class="sprint-price">from $3,000</span>
               </div>
               <p>
-                Larger capability work — new sections, integrations,
+                Larger capability work: new sections, integrations,
                 or system-level improvements.
               </p>
             </article>
@@ -191,7 +191,7 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════ -->
-    <!-- SEGMENT 2 — ORGANIZATIONS                      -->
+    <!-- SEGMENT 2: ORGANIZATIONS                       -->
     <!-- ═══════════════════════════════════════════════ -->
     <section v-show="activeTab === 'organization'" id="organization" class="segment-section segment-org">
       <div class="content">
@@ -367,11 +367,11 @@
             </div>
             <div class="agency-card">
               <h4>Reliable development partner</h4>
-              <p>Full-cycle delivery — design, build, and launch. Consistent sprint capacity you can plan around.</p>
+              <p>Full-cycle delivery: design, build, and launch. Consistent sprint capacity you can plan around.</p>
             </div>
             <div class="agency-card">
               <h4>Mission advantage</h4>
-              <p>Every project through the guild funds free education — a genuine CSR story for your proposals.</p>
+              <p>Every project through the guild funds free education, a genuine CSR story for your proposals.</p>
             </div>
           </div>
 
@@ -387,13 +387,13 @@
       </div>
     </section>
 
-    <!-- SECTION — How Work Happens -->
+    <!-- SECTION: How Work Happens -->
     <section class="how-section">
       <div class="content">
         <div class="section-header section-header--center">
           <h2>How Work Happens</h2>
           <p>
-            Every engagement — individual or organization — follows the same rhythm.
+            Every engagement, individual or organization, follows the same rhythm.
           </p>
         </div>
 
@@ -411,7 +411,7 @@
           <div class="rhythm-card">
             <div class="rhythm-number">03</div>
             <h4>Scope evolves with you</h4>
-            <p>Priorities can shift between cycles. You're never locked into a rigid spec — just a clear rhythm.</p>
+            <p>Priorities can shift between cycles. You're never locked into a rigid spec, just a clear rhythm.</p>
           </div>
           <div class="rhythm-card">
             <div class="rhythm-number">04</div>
@@ -422,13 +422,13 @@
       </div>
     </section>
 
-    <!-- SECTION — Ongoing Support -->
+    <!-- SECTION: Ongoing Support -->
     <section class="continuity-section">
       <div class="content continuity-content">
         <h2>After Launch, We Stay With Your System</h2>
         <p>
           Software doesn't stop evolving the day it ships. Once delivery wraps,
-          many clients continue working with the guild — not as a maintenance
+          many clients continue working with the guild, not as a maintenance
           contract, but as an ongoing collaboration. Small improvements,
           performance checks, adjustments as your context changes.
         </p>
@@ -436,7 +436,7 @@
           <li>Incremental improvements and refinements</li>
           <li>Dependency updates and performance monitoring</li>
           <li>Adjustments as your audience or goals evolve</li>
-          <li>Flexible scope — scaled to what you actually need</li>
+          <li>Flexible scope, scaled to what you actually need</li>
         </ul>
         <p class="continuity-note">
           Ongoing support typically starts from <strong>$300/month</strong> and
@@ -446,13 +446,13 @@
       </div>
     </section>
 
-    <!-- SECTION — CTA -->
+    <!-- SECTION: CTA -->
     <section class="cta-section">
       <div class="content cta-content">
         <h2>Ready to plug in?</h2>
         <p>
           Talk to Admiral Orion for a guided recommendation, or contact us directly
-          to scope your starting point. No pressure, no pitch deck — just a clear conversation
+          to scope your starting point. No pressure, no pitch deck, just a clear conversation
           about what you need and how the guild can help.
         </p>
         <div class="cta-actions">
@@ -616,7 +616,7 @@ useSEO({
   color: white;
 }
 
-/* ── Choose Your Path — Tabs ───────────────────────── */
+/* ── Choose Your Path: Tabs ───────────────────────── */
 .path-section {
   padding: 80px 20px;
   background: var(--darker-bg);

@@ -158,7 +158,7 @@
         </div>
 
         <div class="more-learners-notice">
-          <p>✨ There are many more learners on their journey with Skill-Wanderer — their stories are yet to be featured. Stay tuned!</p>
+          <p>✨ There are many more learners on their journey with Skill-Wanderer, and their stories are yet to be featured. Stay tuned!</p>
         </div>
       </div>
     </section>

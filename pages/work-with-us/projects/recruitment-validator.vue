@@ -27,7 +27,7 @@
         <p>
           A <strong>large Vietnamese EdTech & Online Program Management (OPM) provider</strong> receives
           hundreds to thousands of recruitment applications each cycle. Each application contains details
-          submitted by both the student and the partnering university — and these details must match.
+          submitted by both the student and the partnering university, and these details must match.
           Previously, this validation was done <strong>manually using pure Excel</strong>, a process that
           was not only time-consuming but next to impossible to complete accurately within the tight
           turnaround of just a few days.
@@ -71,7 +71,7 @@
           The Recruitment Validator is an <strong>automated recruitment data validation tool</strong> that ingests application data
           from both the company and the university, cross-references every field, and flags any discrepancies.
           Each mismatch is clearly marked with <strong>what exactly mismatched</strong> and rated by severity
-          — Low, Medium, or High — so the operations team knows exactly what needs attention.
+          (Low, Medium, or High) so the operations team knows exactly what needs attention.
         </p>
         <p class="section-detail">
           High-severity mismatches signal that the company may need to <strong>contact the student and/or the
@@ -99,7 +99,7 @@
             <div class="pipeline-number">2</div>
             <div class="pipeline-content">
               <h3>Automated Cross-Referencing</h3>
-              <p>Every field is compared between the two sources — identifying discrepancies across hundreds to thousands of records</p>
+              <p>Every field is compared between the two sources, identifying discrepancies across hundreds to thousands of records</p>
             </div>
           </div>
           <div class="pipeline-arrow">&darr;</div>
@@ -115,7 +115,7 @@
             <div class="pipeline-number">4</div>
             <div class="pipeline-content">
               <h3>Severity Rating</h3>
-              <p>Every mismatch is rated Low, Medium, or High — guiding the team on what to check, escalate, or resolve</p>
+              <p>Every mismatch is rated Low, Medium, or High, guiding the team on what to check, escalate, or resolve</p>
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@
       <div class="detail-container">
         <h2>MVC Architecture</h2>
         <p class="section-intro">
-          Built with a <strong>Model-View-Controller (MVC)</strong> architecture — chosen deliberately for speed
+          Built with a <strong>Model-View-Controller (MVC)</strong> architecture, chosen deliberately for speed
           and simplicity. The clean separation of concerns made it fast to develop, easy to reason about, and
           straightforward to deliver results without over-engineering.
         </p>
@@ -169,12 +169,12 @@
           <div class="arch-card">
             <h3>Model</h3>
             <span class="arch-label">Data Layer</span>
-            <p>Pydantic models for data validation and structure — ensuring type-safe, validated data flows through the entire pipeline</p>
+            <p>Pydantic models for data validation and structure, ensuring type-safe, validated data flows through the entire pipeline</p>
           </div>
           <div class="arch-card">
             <h3>View</h3>
             <span class="arch-label">Presentation</span>
-            <p>Jinja2 templates rendering results directly in the browser — the operations team gets instant, readable output without a separate frontend</p>
+            <p>Jinja2 templates rendering results directly in the browser, so the operations team gets instant, readable output without a separate frontend</p>
           </div>
           <div class="arch-card">
             <h3>Controller</h3>
@@ -193,7 +193,7 @@
           <div class="tech-row">
             <div class="tech-layer">Framework</div>
             <div class="tech-name">FastAPI</div>
-            <div class="tech-why">High-performance Python web framework — async-first, ideal for data processing workloads</div>
+            <div class="tech-why">High-performance Python web framework: async-first, ideal for data processing workloads</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Server</div>
@@ -203,12 +203,12 @@
           <div class="tech-row">
             <div class="tech-layer">Validation</div>
             <div class="tech-name">Pydantic</div>
-            <div class="tech-why">Data validation and settings management — enforcing type safety and structure across all data models</div>
+            <div class="tech-why">Data validation and settings management, enforcing type safety and structure across all data models</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Views</div>
             <div class="tech-name">Jinja2</div>
-            <div class="tech-why">Template engine rendering validation results directly in the browser — no separate frontend needed</div>
+            <div class="tech-why">Template engine rendering validation results directly in the browser, with no separate frontend needed</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Uploads</div>
@@ -218,12 +218,12 @@
           <div class="tech-row">
             <div class="tech-layer">Data</div>
             <div class="tech-name">Pandas</div>
-            <div class="tech-why">Powerful data manipulation and analysis — cross-referencing thousands of records efficiently</div>
+            <div class="tech-why">Powerful data manipulation and analysis, cross-referencing thousands of records efficiently</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Excel</div>
             <div class="tech-name">openpyxl</div>
-            <div class="tech-why">Reading and writing Excel files — integrating seamlessly into the existing spreadsheet-based workflow</div>
+            <div class="tech-why">Reading and writing Excel files, integrating seamlessly into the existing spreadsheet-based workflow</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Deployment</div>
@@ -242,22 +242,22 @@
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
             <h3>Speed</h3>
-            <p>What took days of manual Excel checking is now completed in minutes — freeing the operations team to focus on resolution instead of detection.</p>
+            <p>What took days of manual Excel checking is now completed in minutes, freeing the operations team to focus on resolution instead of detection.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
             <h3>Accuracy</h3>
-            <p>Automated cross-referencing eliminates human error — no more missed mismatches in thousands of records.</p>
+            <p>Automated cross-referencing eliminates human error, with no more missed mismatches in thousands of records.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📋</div>
             <h3>Clarity</h3>
-            <p>Every mismatch is documented with what went wrong and how severe it is — no guesswork for the team.</p>
+            <p>Every mismatch is documented with what went wrong and how severe it is, leaving no guesswork for the team.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📈</div>
             <h3>Scalability</h3>
-            <p>Handles hundreds to thousands of applications per cycle without performance degradation — ready for growth.</p>
+            <p>Handles hundreds to thousands of applications per cycle without performance degradation, ready for growth.</p>
           </div>
         </div>
       </div>
@@ -274,7 +274,7 @@
         </p>
         <div class="context-note">
           This project demonstrates how targeted automation can transform a manual, error-prone process
-          into a fast, reliable operation — even in complex, multi-stakeholder environments like
+          into a fast, reliable operation, even in complex, multi-stakeholder environments like
           education recruitment.
         </div>
       </div>
@@ -288,7 +288,7 @@
           From days of manual work to minutes of automated validation.
         </p>
         <p class="cta-body">
-          This tool was built to solve a real operational bottleneck — turning an impossible manual process into
+          This tool was built to solve a real operational bottleneck, turning an impossible manual process into
           a reliable, automated workflow. If your organisation faces similar challenges with data validation,
           reconciliation, or process automation, the guild can help.
         </p>
@@ -323,9 +323,9 @@
 // Icons replaced with emojis
 
 useSEO({
-  title: 'Recruitment Validator — Data Validation Tool | Skill-Wanderer',
+  title: 'Recruitment Validator: Data Validation Tool | Skill-Wanderer',
   description:
-    'An automated recruitment data validation tool built with FastAPI and Python for a Vietnamese EdTech & OPM provider — reducing days of manual Excel checking to minutes with severity-rated mismatch detection.',
+    'An automated recruitment data validation tool built with FastAPI and Python for a Vietnamese EdTech & OPM provider, reducing days of manual Excel checking to minutes with severity-rated mismatch detection.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: ['data validation tool', 'FastAPI Python', 'recruitment automation', 'EdTech data processing', 'Excel validation automation', 'enterprise data tool'],
   structuredData: createBreadcrumbSchema([

@@ -6,7 +6,7 @@
         <h1>Guild Members</h1>
         <p class="tagline">The Craftspeople Behind Skill-Wanderer</p>
         <p class="hero-description">
-          A guild is only as strong as the people in it. Ours is intentionally small—a tight-knit crew of
+          A guild is only as strong as the people in it. Ours is intentionally small, a tight-knit crew of
           craftspeople who build, ship, and mentor together across borders. Every member carries real
           responsibility on real projects from day one.
         </p>
@@ -24,10 +24,10 @@
       <div class="philosophy-container">
         <h2>Small by Design</h2>
         <p>
-          We don't scale the team—we scale the craft. Three members isn't a limitation; it's a deliberate
+          We don't scale the team. We scale the craft. Three members isn't a limitation; it's a deliberate
           choice. In a small guild, everyone builds, everyone ships, and everyone mentors. There are no
           passengers. Each person's work is visible, meaningful, and directly tied to the guild's mission.
-          As the guild grows, it will grow one craftsperson at a time—each one chosen for their commitment
+          As the guild grows, it will grow one craftsperson at a time, each one chosen for their commitment
           to the work, not to fill a seat.
         </p>
       </div>

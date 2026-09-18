@@ -6,7 +6,7 @@
       <p class="hero-description">
         Quality education shapes brighter futures. Skill-Wanderer integrates real-world insights
         into practical tech learning paths, creating an honest educational platform with no ads,
-        no affiliate bias—just pure, passionate learning.
+        no affiliate bias, just pure, passionate learning.
       </p>
       <div class="hero-cta">
         <NuxtLink to="/learners" class="btn btn-primary">

@@ -25,14 +25,14 @@
       <div class="detail-container">
         <h2>Mission</h2>
         <p>
-          MindyPlay is a <strong>suite of mobile games under the MindyPlay brand</strong> — combining entertainment
+          MindyPlay is a <strong>suite of mobile games under the MindyPlay brand</strong>, combining entertainment
           with meaningful, mind-engaging experiences. The project focuses on digitalizing an existing game concept for
           a client, turning a physical game into an interactive mobile experience powered by Flutter and the Flame
           game engine.
         </p>
         <div class="highlight-box">
           <span class="highlight-number">3</span>
-          <span class="highlight-label">person team — Guild Master as Technical Project Manager with 2 mentees</span>
+          <span class="highlight-label">person team: Guild Master as Technical Project Manager with 2 mentees</span>
         </div>
       </div>
     </section>
@@ -106,12 +106,12 @@
           <div class="tech-row">
             <div class="tech-layer">Frontend</div>
             <div class="tech-name">Flutter</div>
-            <div class="tech-why">Cross-platform framework — single codebase for iOS and Android with native performance</div>
+            <div class="tech-why">Cross-platform framework: single codebase for iOS and Android with native performance</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Game Engine</div>
             <div class="tech-name">Flame Engine</div>
-            <div class="tech-why">Lightweight 2D game engine built on Flutter — game loops, sprites, collision detection &amp; animations</div>
+            <div class="tech-why">Lightweight 2D game engine built on Flutter: game loops, sprites, collision detection &amp; animations</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Backend</div>
@@ -121,7 +121,7 @@
           <div class="tech-row">
             <div class="tech-layer">Authorization</div>
             <div class="tech-name">Keycloak</div>
-            <div class="tech-why">Enterprise-grade identity and access management — SSO, role-based access, and secure token management</div>
+            <div class="tech-why">Enterprise-grade identity and access management: SSO, role-based access, and secure token management</div>
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@
         <h2>Game Digitalization</h2>
         <p class="section-intro">
           The core mission of MindyPlay is to take an existing game concept from a client and transform it into a
-          fully interactive mobile experience — preserving the original game design while leveraging mobile
+          fully interactive mobile experience, preserving the original game design while leveraging mobile
           capabilities to enhance gameplay.
         </p>
         <div class="features-grid">
@@ -150,7 +150,7 @@
           <div class="feature-card">
             <div class="feature-icon">📱</div>
             <h3>Cross-Platform</h3>
-            <p>One codebase targeting both iOS and Android — consistent gameplay experience across all devices.</p>
+            <p>One codebase targeting both iOS and Android, for a consistent gameplay experience across all devices.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔒</div>
@@ -202,19 +202,19 @@
         <h2>Built by Three People, Real Mentorship in Action</h2>
         <p>
           MindyPlay was developed by a <strong>Guild Master acting as Technical Project Manager alongside 2
-          mentees</strong> — a hands-on team that covered game development, backend integration, and project
+          mentees</strong>, a hands-on team that covered game development, backend integration, and project
           management from start to finish.
         </p>
         <div class="roles-grid">
           <div class="role-card">
             <div class="role-icon">🎮</div>
             <h3>Game Development</h3>
-            <p>Flutter and Flame Engine — building game mechanics, rendering, and interactive gameplay from scratch.</p>
+            <p>Flutter and Flame Engine, building game mechanics, rendering, and interactive gameplay from scratch.</p>
           </div>
           <div class="role-card">
             <div class="role-icon">🔧</div>
             <h3>Backend Integration</h3>
-            <p>Firebase setup for real-time data, cloud functions, and analytics — powering the game's backend services.</p>
+            <p>Firebase setup for real-time data, cloud functions, and analytics, powering the game's backend services.</p>
           </div>
           <div class="role-card">
             <div class="role-icon">🔒</div>
@@ -224,11 +224,11 @@
           <div class="role-card">
             <div class="role-icon">📋</div>
             <h3>Technical Project Management</h3>
-            <p>Guild Master led the project as TPM — coordinating sprints, unblocking the team, and ensuring delivery.</p>
+            <p>Guild Master led the project as TPM, coordinating sprints, unblocking the team, and ensuring delivery.</p>
           </div>
         </div>
         <div class="team-note">
-          <strong>Guild Master + 2 Mentees</strong> — after the project, both mentees ultimately decided to join the
+          <strong>Guild Master + 2 Mentees</strong>. After the project, both mentees ultimately decided to join the
           partner company to continue their work on MindyMinds and MindyPlay. A testament to Skill-Wanderer's model:
           real projects create real career opportunities.
         </div>
@@ -243,7 +243,7 @@
           Three people. One game. Real career outcomes.
         </p>
         <p class="cta-body">
-          MindyPlay was built by a Guild Master and two mentees — covering game development, backend integration,
+          MindyPlay was built by a Guild Master and two mentees, covering game development, backend integration,
           authorization, and project management. Both mentees went on to join the partner company full-time. This is
           the kind of project you could be working on at Skill-Wanderer: real products, real responsibility, real
           career impact.
@@ -282,9 +282,9 @@
 // Icons replaced with emojis
 
 useSEO({
-  title: 'MindyPlay — Mobile Game Development | Skill-Wanderer',
+  title: 'MindyPlay: Mobile Game Development | Skill-Wanderer',
   description:
-    'A mobile game digitalization project built with Flutter, Flame Engine, Firebase, and Keycloak — developed by a Guild Master and 2 mentees who went on to join the partner company.',
+    'A mobile game digitalization project built with Flutter, Flame Engine, Firebase, and Keycloak, developed by a Guild Master and 2 mentees who went on to join the partner company.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: ['Flutter game development', 'Flame Engine', 'mobile game project', 'game digitalization', 'startup mobile development', 'Firebase game backend'],
   structuredData: createBreadcrumbSchema([

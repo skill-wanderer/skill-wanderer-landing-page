@@ -140,7 +140,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote
-      quote="We want our learners to 'savor the insights' from their mistakes, because that is where the deepest, most lasting learning happens. In failure, we find the seeds of future success—but only if we take the time to understand why we failed."
+      quote="We want our learners to 'savor the insights' from their mistakes, because that is where the deepest, most lasting learning happens. In failure, we find the seeds of future success, but only if we take the time to understand why we failed."
     />
 
     <!-- Navigation Section -->
@@ -173,7 +173,7 @@ useSEO({
 })
 
 // Story content
-const storyIntro = "I call our fifth principle <strong>Encouraging Creativity & Learning Through Failure</strong>, because I believe we fundamentally misunderstand the word \"failure.\" Many people see it as just that—an end, a verdict. But over time, I've learned its true, invaluable meaning."
+const storyIntro = "I call our fifth principle <strong>Encouraging Creativity & Learning Through Failure</strong>, because I believe we fundamentally misunderstand the word \"failure.\" Many people see it as just that: an end, a verdict. But over time, I've learned its true, invaluable meaning."
 
 const storyChapters: StoryChapter[] = [
   {
@@ -232,7 +232,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: "text",
-        text: "That is why our organization will be a place that encourages creativity and experimentation, even when it carries the risk of failure. We will foster an environment where failure isn't a final judgment but a critical data point—the most powerful lesson on the path to mastery. We want our learners, our contributors, and our team to \"savor the insights\" from their mistakes, because that is where the deepest, most lasting learning happens."
+        text: "That is why our organization will be a place that encourages creativity and experimentation, even when it carries the risk of failure. We will foster an environment where failure isn't a final judgment but a critical data point, the most powerful lesson on the path to mastery. We want our learners, our contributors, and our team to \"savor the insights\" from their mistakes, because that is where the deepest, most lasting learning happens."
       }
     ]
   }

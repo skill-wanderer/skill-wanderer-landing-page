@@ -349,7 +349,7 @@ onUnmounted(() => {
    ADMIRAL ORION COMMAND THEME
    ============================================= */
 
-/* Floating action button — admiral shield */
+/* Floating action button: admiral shield */
 .pathfinder-fab {
   position: fixed;
   bottom: 1.5rem;

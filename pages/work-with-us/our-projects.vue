@@ -4,14 +4,14 @@
     <section class="hero">
       <h1>Our Projects</h1>
       <p>
-        From non-profits to start-ups, big enterprises to our own guild infrastructure—every project we take on is an opportunity
+        From non-profits to start-ups, big enterprises to our own guild infrastructure, every project we take on is an opportunity
         to create real impact and fuel free education.
       </p>
       <span class="launch-badge">Real Work. Real Impact. Real Learning.</span>
     </section>
 
     <!-- ═══════════════════════════════════════════════ -->
-    <!-- SHIPPED WORK — Case Study Cards                -->
+    <!-- SHIPPED WORK: Case Study Cards                 -->
     <!-- ═══════════════════════════════════════════════ -->
 
     <!-- Non-Profit Section -->
@@ -20,7 +20,7 @@
         <div class="section-header">
           <div class="section-tag">Non-Profit</div>
           <h2>Giving Back Through Technology</h2>
-          <p>We apply our skills where they matter most—supporting missions that serve communities for free.</p>
+          <p>We apply our skills where they matter most, supporting missions that serve communities for free.</p>
         </div>
 
         <div class="case-study-grid">
@@ -33,7 +33,7 @@
             <div class="case-study-body">
               <h3>WM Smile Generation Uganda</h3>
               <p class="case-study-result">
-                Built a full website for a Ugandan non-profit—giving them a digital presence to attract donors,
+                Built a full website for a Ugandan non-profit, giving them a digital presence to attract donors,
                 share impact stories, and coordinate community healthcare and education programmes.
               </p>
               <div class="case-study-stack">
@@ -55,7 +55,7 @@
               <h3>ChanhDao.vn</h3>
               <p class="case-study-result">
                 Digitalised 162 Buddhist lessons with AI-powered Q&A and structured learning paths for Vietnamese
-                learners—running entirely on a self-hosted Kubernetes cluster with zero hosting cost to the client.
+                learners, running entirely on a self-hosted Kubernetes cluster with zero hosting cost to the client.
               </p>
               <div class="case-study-stack">
                 <span class="stack-tag">Nuxt 3</span>
@@ -77,7 +77,7 @@
         <div class="section-header">
           <div class="section-tag">Start-up</div>
           <h2>Building the Future Together</h2>
-          <p>We partner with ambitious start-ups to turn bold ideas into real products—sharing the journey from zero to launch.</p>
+          <p>We partner with ambitious start-ups to turn bold ideas into real products, sharing the journey from zero to launch.</p>
         </div>
 
         <div class="case-study-grid">
@@ -89,7 +89,7 @@
             <div class="case-study-body">
               <h3>MindyMinds</h3>
               <p class="case-study-result">
-                Delivered a multi-tenant AI chatbot platform from concept to production in under 3 months—enabling
+                Delivered a multi-tenant AI chatbot platform from concept to production in under 3 months, enabling
                 the client to onboard multiple B2B customers with customisable AI assistants and a defence-in-depth security model.
               </p>
               <div class="case-study-stack">
@@ -111,7 +111,7 @@
             <div class="case-study-body">
               <h3>MindyPlay</h3>
               <p class="case-study-result">
-                Turned a client's board game concept into an interactive mobile experience—built with Flutter
+                Turned a client's board game concept into an interactive mobile experience, built with Flutter
                 and Flame Engine, powered by Firebase for real-time multiplayer and Keycloak for secure authentication.
               </p>
               <div class="case-study-stack">
@@ -154,7 +154,7 @@
               <h3>Recruitment Validator</h3>
               <p class="case-study-result">
                 Automated mismatch detection across hundreds to thousands of recruitment applications for a Vietnamese
-                EdTech provider—reducing days of manual Excel checking to minutes with severity-rated alerts and detailed reports.
+                EdTech provider, reducing days of manual Excel checking to minutes with severity-rated alerts and detailed reports.
               </p>
               <div class="case-study-stack">
                 <span class="stack-tag">FastAPI</span>
@@ -170,7 +170,7 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════ -->
-    <!-- GUILD PLATFORM ROADMAP — Simpler Cards         -->
+    <!-- GUILD PLATFORM ROADMAP: Simpler Cards          -->
     <!-- ═══════════════════════════════════════════════ -->
     <section class="roadmap-section">
       <div class="content">
@@ -178,7 +178,7 @@
           <div class="section-tag">Guild Platform</div>
           <h2>What We Are Building</h2>
           <p>
-            Skill-Wanderer is not just a product—it is our mission made tangible. Every module below is being
+            Skill-Wanderer is not just a product. It is our mission made tangible. Every module below is being
             built in the open, by our guild, for our community.
           </p>
         </div>
@@ -191,7 +191,7 @@
                 <h4>This Landing Page</h4>
                 <span class="roadmap-status roadmap-status--live">Live</span>
               </div>
-              <p>The public face of the guild—communicating our mission, model, and community to the world.</p>
+              <p>The public face of the guild, communicating our mission, model, and community to the world.</p>
               <div class="roadmap-tags">
                 <span class="roadmap-tag">Nuxt</span>
               </div>
@@ -219,7 +219,7 @@
                 <h4>Blog System</h4>
                 <span class="roadmap-status">In Progress</span>
               </div>
-              <p>A publishing system for knowledge sharing—enabling guild members to document their journeys.</p>
+              <p>A publishing system for knowledge sharing, enabling guild members to document their journeys.</p>
               <div class="roadmap-tags">
                 <span class="roadmap-tag">Content</span>
               </div>
@@ -304,7 +304,7 @@
 useSEO({
   title: 'Our Projects | Skill-Wanderer',
   description:
-    'Explore the real-world projects the Skill-Wanderer guild has built—from non-profits and start-ups to enterprise solutions and our own guild infrastructure.',
+    'Explore the real-world projects the Skill-Wanderer guild has built, from non-profits and start-ups to enterprise solutions and our own guild infrastructure.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: ['software portfolio', 'web development projects', 'non-profit technology', 'startup projects', 'guild project showcase', 'case studies'],
   structuredData: createBreadcrumbSchema([
@@ -418,7 +418,7 @@ useSEO({
 }
 
 /* ═══════════════════════════════════════════════════ */
-/* CASE STUDY CARDS — Shipped Project Premium Cards   */
+/* CASE STUDY CARDS: Shipped Project Premium Cards   */
 /* ═══════════════════════════════════════════════════ */
 .case-study-grid {
   display: grid;
@@ -598,7 +598,7 @@ useSEO({
 }
 
 /* ═══════════════════════════════════════════════════ */
-/* ROADMAP — Simpler Internal Module Cards            */
+/* ROADMAP: Simpler Internal Module Cards            */
 /* ═══════════════════════════════════════════════════ */
 .roadmap-section {
   padding: 90px 20px;

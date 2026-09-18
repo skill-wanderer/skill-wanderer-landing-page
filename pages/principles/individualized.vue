@@ -136,7 +136,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote 
-      quote="The people who improve the most are the ones who discover their own way of learning and stick to it. We're not here to write your story—we're here to provide all the chapters so you can arrange them however works best for you."
+      quote="The people who improve the most are the ones who discover their own way of learning and stick to it. We're not here to write your story. We're here to provide all the chapters so you can arrange them however works best for you."
     />
 
     <!-- Navigation Section -->
@@ -225,7 +225,7 @@ const storyChapters = [
       },
       {
         type: 'text' as const,
-        text: 'Our role is to be the narrator—the guide who lays out all the resources: the video courses, the readings, the hands-on projects, the collaborative opportunities. But it is the learner, the hero of their own story, who <strong>must be the one to choose their own path</strong> and their own pace.'
+        text: 'Our role is to be the narrator, the guide who lays out all the resources: the video courses, the readings, the hands-on projects, the collaborative opportunities. But it is the learner, the hero of their own story, who <strong>must be the one to choose their own path</strong> and their own pace.'
       }
     ]
   }

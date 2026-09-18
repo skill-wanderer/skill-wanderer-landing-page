@@ -3,13 +3,17 @@
     <!-- Hero Section -->
     <section class="hero">
       <span class="hero-eyebrow">Work With Us</span>
-      <h1>Success Sharing Model</h1>
+      <h1>How the Guild Delivers</h1>
       <p>
-        A senior-led system you plug into — not a service you buy.
-        The guild delivers through structured sprint cycles, parallel execution,
-        and direct architectural oversight on every engagement.
+        A senior-led system you plug into, not a service you buy.
+        We start with a working prototype, confirm the real scope against it, and then
+        deliver under direct architectural oversight.
       </p>
-      <span class="launch-badge">Senior-Led. Sprint-Driven. Mission-Backed.</span>
+      <p class="hero-model-link">
+        For the commercial side, meaning no upfront development fee, then ongoing hosting and technical
+        care, see <NuxtLink to="/work-with-us/service-model">our service model</NuxtLink>.
+      </p>
+      <span class="launch-badge">Senior-Led. Prototype-First. Mission-Backed.</span>
     </section>
 
     <!-- How the System Works -->
@@ -18,9 +22,9 @@
         <div class="section-header">
           <h2>How the System Works</h2>
           <p>
-            Every engagement follows the same rhythm: two-week cycles, senior oversight,
-            and parallel artisan execution. The model is designed for clarity, predictability,
-            and sustainable momentum.
+            Accepted engagements follow the same rhythm: a prototype first, senior oversight
+            throughout, and structured review before launch. The model is designed for clarity,
+            predictability, and sustainable momentum.
           </p>
         </div>
 
@@ -39,8 +43,8 @@
           <span class="cycle-arrow">→</span>
           <div class="cycle-item">
             <div class="cycle-icon">🔄</div>
-            <h3>Sprint Rhythm</h3>
-            <p>Scope is confirmed, built, and reviewed in focused two-week blocks</p>
+            <h3>Scope After Proof</h3>
+            <p>Real scope is confirmed against a working prototype, not an abstract brief</p>
           </div>
         </div>
 
@@ -48,33 +52,33 @@
           <div class="step-card">
             <div class="step-number">1</div>
             <div class="step-icon">🧭</div>
-            <h3>Discovery &amp; Scoping</h3>
+            <h3>Prototype First</h3>
             <p>
-              Every engagement begins with a short discovery phase. We understand your goals,
-              constraints, and technical landscape — then confirm the right starting point
-              from our pricing structure.
+              Accepted projects begin with a working prototype, built at no cost. We learn what we
+              need from a light initial conversation rather than a long discovery phase, and the
+              prototype gives both sides something real to react to.
             </p>
           </div>
 
           <div class="step-card">
             <div class="step-number">2</div>
             <div class="step-icon">📅</div>
-            <h3>Sprint Delivery</h3>
+            <h3>Scope, Then Build</h3>
             <p>
-              Work is delivered in two-week cycles. Each cycle includes planning, parallel
-              implementation by guild artisans, senior code review, and a structured
-              review session with you.
+              We review the prototype together and the real scope becomes clear. Only then do we
+              confirm the exact recurring price and begin full development, including up to
+              2 structured revision rounds before launch.
             </p>
           </div>
 
           <div class="step-card">
             <div class="step-number">3</div>
             <div class="step-icon">📈</div>
-            <h3>Evolve &amp; Scale</h3>
+            <h3>Maintain &amp; Evolve</h3>
             <p>
-              Priorities can shift between cycles. As your product grows, the guild
-              scales with you — from individual sprints to dedicated engineering pods
-              with consistent capacity.
+              After launch the project continues under ongoing hosting and technical care.
+              Changes are counted by request rather than by individual edit, and if the project
+              grows materially we discuss scope and pricing impact before making changes.
             </p>
           </div>
         </div>
@@ -113,10 +117,10 @@
 
           <div class="practice-card">
             <div class="practice-icon">📚</div>
-            <h4>Knowledge Transfer Built In</h4>
+            <h4>Supported After Launch</h4>
             <p>
-              Documentation, walkthroughs, and knowledge sharing happen throughout
-              every engagement. You are never dependent on the guild.
+              The project continues under ongoing hosting and technical care, so it stays
+              running, maintained, and supported rather than handed over and forgotten.
             </p>
           </div>
 
@@ -124,8 +128,9 @@
             <div class="practice-icon">🔓</div>
             <h4>Full Client Ownership</h4>
             <p>
-              No vendor lock-in. All code belongs to you. Open standards, clear
-              documentation, and the freedom to walk away at any time.
+              No vendor lock-in. All code belongs to you. Open standards, access to the
+              source and project materials where reasonably possible, and the freedom to
+              walk away at any time.
             </p>
           </div>
         </div>
@@ -147,10 +152,11 @@
           </p>
           <p class="philosophy-emphasis">We are a delivery system, not a service provider.</p>
           <p>
-            Work is led by a senior architect, executed in parallel by guild artisans,
-            and structured around two-week cycles with clear scope. Revenue sustains
-            the guild and reinvests directly into free education. That's the model —
-            no investors demanding margins, no overhead demanding bloated rates.
+            Work is led by a senior architect, executed in parallel by guild artisans, and
+            scoped against a working prototype rather than a speculative brief. Revenue from
+            ongoing hosting and technical care sustains the guild and reinvests directly into
+            free education. That's the model: no investors demanding margins, no overhead
+            demanding bloated rates.
           </p>
         </div>
 
@@ -175,8 +181,8 @@
             <ul class="comparison-list">
               <li>Senior-led oversight on every engagement</li>
               <li>Parallel artisan execution under review</li>
-              <li>Scope evolves within sprint cycles</li>
-              <li>Knowledge transfer built into the process</li>
+              <li>Scope confirmed against a working prototype</li>
+              <li>Code and materials you can inspect and take</li>
               <li>Full client ownership from day one</li>
             </ul>
           </div>
@@ -223,12 +229,12 @@
           <div class="pillar-card">
             <div class="pillar-number">01</div>
             <h4>Funds Free Education</h4>
-            <p>100% of guild revenue reinvests into free learning infrastructure — no ads, no paywalls.</p>
+            <p>100% of guild revenue reinvests into free learning infrastructure, with no ads and no paywalls.</p>
           </div>
           <div class="pillar-card">
             <div class="pillar-number">02</div>
             <h4>Trains the Next Generation</h4>
-            <p>Guild artisans grow through real client work under senior oversight — apprentice to master.</p>
+            <p>Guild artisans grow through real client work under senior oversight, from apprentice to master.</p>
           </div>
           <div class="pillar-card">
             <div class="pillar-number">03</div>
@@ -244,60 +250,61 @@
       </div>
     </section>
 
-    <!-- Success Sharing Model -->
+    <!-- The Service Model -->
     <section class="success-sharing-section">
       <div class="success-sharing-content">
         <div class="section-header">
-          <h2>The Success Sharing Model</h2>
+          <h2>How the Commercial Side Works</h2>
           <p>
-            We're not outsourcing — we're your true technology partner.
-            We share both the success and the risks with you, requiring less upfront cost
-            while our community of learners helps bring your vision to life.
+            We are not outsourcing, and we are not an agency billing for hours. For the projects
+            the guild accepts, websites and applications alike, there is no separate upfront
+            development fee. The relationship is sustained through ongoing hosting and technical care.
           </p>
         </div>
 
         <div class="success-sharing-grid">
           <div class="success-sharing-card">
             <div class="success-sharing-icon">💵</div>
-            <h4>Lower Upfront Investment</h4>
+            <h4>No Upfront Development Fee</h4>
             <p>
-              Unlike traditional outsourcing, we don't ask for large upfront payments.
-              Start building with minimal initial cost because we believe in earning
-              through shared success — not billing for hours.
+              Accepted projects do not pay a separate upfront build fee. The first prototype is
+              created at no cost, so you can judge real work before committing to anything.
             </p>
           </div>
 
           <div class="success-sharing-card">
-            <div class="success-sharing-icon">📈</div>
-            <h4>Success Sharing Earnings</h4>
+            <div class="success-sharing-icon">🔄</div>
+            <h4>Ongoing Hosting &amp; Technical Care</h4>
             <p>
-              Our earnings come from sharing in your success. This keeps us genuinely
-              invested in your outcomes, not just completing tasks. When you win, we win.
+              Our revenue comes from keeping projects running, maintained, and supported over time.
+              The exact price follows the project's real scope, and is confirmed after the
+              prototype review.
             </p>
           </div>
 
           <div class="success-sharing-card">
             <div class="success-sharing-icon">👥</div>
-            <h4>Community-Powered Talent</h4>
+            <h4>Funding the Guild's Mission</h4>
             <p>
-              Work gets done by talented learners from our global community — people eager
-              to prove themselves on real projects while gaining invaluable experience.
+              Commercial technical work sustains practical education, mentoring, and learning
+              opportunities through the guild. Client work and the educational mission fund
+              each other.
             </p>
           </div>
         </div>
 
         <div class="success-sharing-why">
-          <h3>Why Success Sharing Works</h3>
+          <h3>Why This Model Works</h3>
           <div class="why-grid">
             <div class="why-card">
               <span class="why-icon">💵</span>
               <h4>For You</h4>
-              <p>Lower risk with reduced upfront costs — we succeed together or not at all.</p>
+              <p>The large upfront barrier disappears, and you see working software before you decide.</p>
             </div>
             <div class="why-card">
               <span class="why-icon">🎯</span>
               <h4>For Us</h4>
-              <p>We're motivated by your success, not just billing hours. Real outcomes drive our revenue.</p>
+              <p>We are paid to keep things working, which keeps us invested long after launch.</p>
             </div>
             <div class="why-card">
               <span class="why-icon">⭐</span>
@@ -309,11 +316,12 @@
 
         <div class="success-sharing-cta">
           <p>
-            This isn't outsourcing with a different name. We put skin in the game alongside you,
-            sharing both success and setbacks — because that's what real partners do.
+            This is a selective model. The guild does not accept every project, and applying does
+            not guarantee acceptance. The full details, including pricing factors, third-party
+            costs, and our position on vendor lock-in, live on the service model page.
           </p>
-          <NuxtLink to="/principles/technology-partnership" class="principle-link">
-            Read about our Technology Partnership principle →
+          <NuxtLink to="/work-with-us/service-model" class="principle-link">
+            Read the full service model →
           </NuxtLink>
         </div>
       </div>
@@ -322,13 +330,13 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-content">
-        <h2>See How It Works for You</h2>
+        <h2>See If Your Project Fits</h2>
         <p>
-          Whether you're an individual looking for a quick build or an organization
-          that needs ongoing sprint capacity — the delivery model stays the same.
+          The guild accepts projects selectively. If yours is a fit, the next step is a
+          working prototype, built at no cost, before any commitment.
         </p>
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us" class="btn btn-primary">See How We Work</NuxtLink>
+          <NuxtLink to="/work-with-us/service-model" class="btn btn-primary">Read the Service Model</NuxtLink>
           <NuxtLink to="/contact" class="btn btn-secondary">Start a Conversation</NuxtLink>
         </div>
       </div>
@@ -339,15 +347,15 @@
 <script setup lang="ts">
 // Icons replaced with emojis
 useSEO({
-  title: 'Success Sharing Model | Skill-Wanderer',
+  title: 'How the Guild Delivers | Skill-Wanderer',
   description:
-    'Senior-led sprint delivery with a success sharing partnership model. Lower upfront cost, shared risk and reward, and full client ownership.',
+    'Senior-led delivery that starts with a free working prototype. No upfront development fee, scope confirmed against real work, and full client ownership.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['delivery model', 'sprint delivery', 'senior-led development', 'guild model', 'software development process', 'agile sprints'],
+  keywords: ['delivery model', 'prototype first', 'senior-led development', 'guild model', 'software development process', 'no upfront fee'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
-    { name: 'Success Sharing Model', url: 'https://skill-wanderer.com/work-with-us/success-sharing-model' },
+    { name: 'How the Guild Delivers', url: 'https://skill-wanderer.com/work-with-us/success-sharing-model' },
   ]),
 })
 </script>
@@ -406,6 +414,18 @@ useSEO({
   margin-left: auto;
   margin-right: auto;
   line-height: 1.8;
+}
+
+.hero-model-link {
+  font-size: 1rem !important;
+  opacity: 0.8;
+  margin-bottom: 28px !important;
+}
+
+.hero-model-link a {
+  color: var(--primary-orange);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .launch-badge {
@@ -842,7 +862,7 @@ useSEO({
   line-height: 1.65;
 }
 
-/* ── Success Sharing Section ────────────────────────── */
+/* ── Service Model Section ─────────────────────────── */
 .success-sharing-section {
   padding: 90px 20px;
   background: var(--darker-bg);

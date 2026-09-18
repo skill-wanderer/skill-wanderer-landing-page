@@ -9,7 +9,7 @@
         <h1>Meet Admiral Orion</h1>
         <p class="tagline">Your AI-Powered Guide to the Skill-Wanderer Universe</p>
         <p class="hero-description">
-          Admiral Orion is our fleet commander — an intelligent chatbot that helps you navigate
+          Admiral Orion is our fleet commander, an intelligent chatbot that helps you navigate
           learning paths, understand our principles, and discover everything Skill-Wanderer has to offer.
           Ask anything, anytime.
         </p>
@@ -32,7 +32,7 @@
         <div class="feature-card">
           <div class="feature-icon">🧭</div>
           <h3>Navigate Learning Paths</h3>
-          <p>Ask about available courses, recommended learning sequences, and how to get started on your tech journey — from beginner to advanced.</p>
+          <p>Ask about available courses, recommended learning sequences, and how to get started on your tech journey, from beginner to advanced.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">📜</div>
@@ -47,7 +47,7 @@
         <div class="feature-card">
           <div class="feature-icon">🤝</div>
           <h3>Partnership &amp; Impact Info</h3>
-          <p>Learn about our social enterprise model, success sharing, and how to become a technology partner — all through a simple conversation.</p>
+          <p>Learn about our social enterprise model, our service model, and how to become a technology partner, all through a simple conversation.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🚀</div>
@@ -107,7 +107,7 @@
 // Icons replaced with emojis
 
 useSEO({
-  title: 'Admiral Orion — AI Chatbot | Skill-Wanderer',
+  title: 'Admiral Orion: AI Chatbot | Skill-Wanderer',
   description: 'Meet Admiral Orion, the AI-powered chatbot that helps you navigate learning paths, understand our principles, and explore the Skill-Wanderer platform.',
   keywords: ['chatbot', 'AI assistant', 'Admiral Orion', 'learning guide', 'Skill-Wanderer'],
 })

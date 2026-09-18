@@ -138,6 +138,7 @@ export default defineNuxtConfig({
     '/learners': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
     '/learners/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/work-with-us': { sitemap: { changefreq: 'monthly', priority: 0.7 } },
+    '/work-with-us/service-model': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/work-with-us/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/technology-partner': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/privacy-policy': { sitemap: { changefreq: 'yearly', priority: 0.3 } },

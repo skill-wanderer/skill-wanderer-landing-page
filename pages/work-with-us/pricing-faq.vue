@@ -5,7 +5,7 @@
         <p class="eyebrow">Supporting details for both segments</p>
         <h1>Pricing FAQ &amp; Terms</h1>
         <p class="hero-copy">
-          Regional pricing guidance, payment protection options, and baseline pricing notes — the supporting detail that keeps the main pricing page focused on decisions.
+          Regional pricing guidance, payment protection options, and baseline pricing notes: the supporting detail that keeps the main pricing page focused on decisions.
         </p>
         <div class="hero-actions">
           <NuxtLink to="/work-with-us" class="btn btn-primary">Explore Work With Us</NuxtLink>

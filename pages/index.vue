@@ -1,14 +1,14 @@
 <template>
   <div>
-    <!-- Hero Section — 1 primary CTA + 1 secondary -->
+    <!-- Hero Section: 1 primary CTA + 1 secondary -->
     <section class="hero">
       <div class="hero-content">
         <h1>A Tech Guild for Social Good</h1>
         <p class="tagline">Learn by Building. Grow by Contributing. Sustain Through Craft.</p>
         <p class="hero-description">
-          Skill-Wanderer is a tech guild working toward becoming a social enterprise—where apprentices,
+          Skill-Wanderer is a tech guild working toward becoming a social enterprise, where apprentices,
           journeymen, and masters learn and work together on real projects. Every engagement funds free
-          education. No ads, no hidden agendas—just craft, community, and purpose.
+          education. No ads, no hidden agendas, just craft, community, and purpose.
         </p>
         <div class="hero-cta">
           <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-primary">
@@ -26,7 +26,7 @@
       </svg>
     </section>
 
-    <!-- How Can We Help? — two-path CTA -->
+    <!-- How Can We Help? two-path CTA -->
     <section class="help-paths">
       <div class="help-paths-content">
         <h2>How Can We Help?</h2>
@@ -51,16 +51,16 @@
       </div>
     </section>
 
-    <!-- Why a Guild? + The Tech Guild Model — merged narrative + visual features -->
+    <!-- Why a Guild? + The Tech Guild Model: merged narrative + visual features -->
     <section id="platform" class="guild-narrative">
       <div class="narrative-content">
         <div class="narrative-header">
           <h2>Why a Guild?</h2>
-          <p class="narrative-lead">A social enterprise in the making—where education and real work are one and the same</p>
+          <p class="narrative-lead">A social enterprise in the making, where education and real work are one and the same</p>
         </div>
         <div class="narrative-body">
           <p>
-            Centuries ago, guilds were communities where apprentices, journeymen, and masters worked side by side—
+            Centuries ago, guilds were communities where apprentices, journeymen, and masters worked side by side,
             learning not from lectures but from doing. The master didn't just teach; they built alongside you.
             Skill-Wanderer brings that model to technology.
           </p>
@@ -73,13 +73,13 @@
             </div>
             <div class="guild-feature-text">
               <h3>Guild-Based Learning</h3>
-              <p>Progress from Apprentice to Journeyman to Master through structured mentorship, hands-on projects, and peer collaboration—just like the craft guilds of old.</p>
+              <p>Progress from Apprentice to Journeyman to Master through structured mentorship, hands-on projects, and peer collaboration, just like the craft guilds of old.</p>
             </div>
           </div>
           <div class="guild-feature guild-feature--reverse">
             <div class="guild-feature-text">
               <h3>Learn by Building</h3>
-              <p>Guild members work on real projects for real clients. Every line of code shipped is a lesson learned—failures included. That's how craft is forged.</p>
+              <p>Guild members work on real projects for real clients. Every line of code shipped is a lesson learned, failures included. That's how craft is forged.</p>
             </div>
             <div class="guild-feature-icon">
               💻
@@ -91,18 +91,18 @@
             </div>
             <div class="guild-feature-text">
               <h3>Work Funds Education</h3>
-              <p>Revenue from guild engagements is reinvested into free education, mentorship, and community infrastructure. No ads, no donations needed—just purposeful work.</p>
+              <p>Revenue from guild engagements is reinvested into free education, mentorship, and community infrastructure. No ads, no donations needed, just purposeful work.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Recent Guild Projects — visual proof of work -->
+    <!-- Recent Guild Projects: visual proof of work -->
     <section class="projects-showcase">
       <div class="section-header">
         <h2>Recent Guild Projects</h2>
-        <p>Real solutions built for real partners—every project funds free education</p>
+        <p>Real solutions built for real partners, and every project funds free education</p>
       </div>
       <div class="projects-strip">
         <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="project-thumb">
@@ -156,7 +156,7 @@
       </div>
     </section>
 
-    <!-- Guild Voices — testimonial block for visual rhythm -->
+    <!-- Guild Voices: testimonial block for visual rhythm -->
     <section class="testimonials">
       <div class="testimonials-content">
         <div class="section-header">
@@ -165,7 +165,7 @@
         </div>
         <div class="testimonials-grid">
           <div class="testimonial-card">
-            <blockquote>"Nothing stops The Warrior. Khouja doesn't wait for the storm to pass—he charges straight through it. His resilience and self-reliance make him one of the most impressive learners we've ever had."</blockquote>
+            <blockquote>"Nothing stops The Warrior. Khouja doesn't wait for the storm to pass. He charges straight through it. His resilience and self-reliance make him one of the most impressive learners we've ever had."</blockquote>
             <div class="testimonial-author">
               <img src="/learners/khouja-nasreddine.jpeg" alt="Khouja Nasreddine" loading="lazy" />
               <div>
@@ -185,7 +185,7 @@
             </div>
           </div>
           <div class="testimonial-card">
-            <blockquote>"Vincent doesn't have the luxury of stable power or fast internet—yet he shows up every day with the same calm determination. The Stoic will sail through this."</blockquote>
+            <blockquote>"Vincent doesn't have the luxury of stable power or fast internet, yet he shows up every day with the same calm determination. The Stoic will sail through this."</blockquote>
             <div class="testimonial-author">
               <img src="/learners/Vincent-Onotu-Bello.jpeg" alt="Vincent Onotu Bello" loading="lazy" />
               <div>
@@ -203,7 +203,7 @@
       </div>
     </section>
 
-    <!-- Guild Principles — SVG icons, kept concise -->
+    <!-- Guild Principles: SVG icons, kept concise -->
     <section id="values" class="values">
       <div class="values-content">
         <div class="section-header">
@@ -230,7 +230,7 @@
               <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/><path d="M8 16h24M8 24h24" stroke="currentColor" stroke-width="2"/><ellipse cx="20" cy="20" rx="7" ry="14" stroke="currentColor" stroke-width="2"/></svg>
             </span>
             <h3>Open & Accessible</h3>
-            <p>Free learning for everyone. Guild mentorship and support sustained through our social enterprise work—not tuition or donations.</p>
+            <p>Free learning for everyone. Guild mentorship and support sustained through our social enterprise work, not tuition or donations.</p>
           </div>
           <div class="value-item" style="animation-delay: 0.4s;">
             <span class="value-icon">
@@ -249,7 +249,7 @@
       </div>
     </section>
 
-    <!-- Manifesto — subtle pull-quote instead of heavy block -->
+    <!-- Manifesto: subtle pull-quote instead of heavy block -->
     <section class="manifesto-quote">
       <div class="manifesto-quote-content">
         <blockquote>
@@ -275,19 +275,19 @@ useSEO({
     createFAQSchema([
       {
         question: 'Is Skill-Wanderer really free?',
-        answer: 'Yes, all Skill-Wanderer learning content is completely free. Mentorship and guild support are sustained through our social enterprise model—real-world guild engagements fund education.'
+        answer: 'Yes, all Skill-Wanderer learning content is completely free. Mentorship and guild support are sustained through our social enterprise model, where real-world guild engagements fund education.'
       },
       {
         question: 'What makes Skill-Wanderer different from other learning platforms?',
-        answer: 'Skill-Wanderer is a tech guild working toward social enterprise. We combine education and real work—guild members learn by building real projects, and every engagement funds free education. No ads, no affiliate marketing.'
+        answer: 'Skill-Wanderer is a tech guild working toward social enterprise. We combine education and real work. Guild members learn by building real projects, and every engagement funds free education. No ads, no affiliate marketing.'
       },
       {
         question: 'Who is behind Skill-Wanderer?',
-        answer: 'Skill-Wanderer was founded by Quan Nguyen as a tech guild with a social enterprise vision. It is built by guild members—apprentices, journeymen, and masters working and learning together.'
+        answer: 'Skill-Wanderer was founded by Quan Nguyen as a tech guild with a social enterprise vision. It is built by guild members: apprentices, journeymen, and masters working and learning together.'
       },
       {
         question: 'How does Skill-Wanderer sustain itself financially?',
-        answer: 'Skill-Wanderer sustains itself through guild engagements—real technology projects delivered by our community. All net revenue is reinvested into education and the guild as we work toward formal social enterprise status.'
+        answer: 'Skill-Wanderer sustains itself through guild engagements, real technology projects delivered by our community. All net revenue is reinvested into education and the guild as we work toward formal social enterprise status.'
       }
     ])
   ]
@@ -502,7 +502,7 @@ onUnmounted(() => {
   text-align: center;
 }
 
-/* Guild Model Features — alternating icon + text */
+/* Guild Model Features: alternating icon + text */
 .guild-model-features {
   display: flex;
   flex-direction: column;
@@ -643,7 +643,7 @@ onUnmounted(() => {
   margin-top: 32px !important;
 }
 
-/* Guild Model — removed, replaced by narrative */
+/* Guild Model: removed, replaced by narrative */
 
 /* Section Header */
 .section-header {

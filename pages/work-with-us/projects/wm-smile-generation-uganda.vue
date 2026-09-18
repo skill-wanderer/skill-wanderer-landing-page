@@ -27,7 +27,7 @@
         <p>
           WM Smile Generation Uganda Limited is a non-profit organization dedicated to transforming the lives
           of children and youth across Uganda through quality education, environmental conservation, and refugee
-          child protection. I led the full design and development of their official web presence — turning their
+          child protection. I led the full design and development of their official web presence, turning their
           mission into a digital platform that communicates impact, attracts donors, and connects the organization
           with global partners.
         </p>
@@ -41,7 +41,7 @@
         <p>
           The organization had a powerful story but no digital home. Joseph Bumpenje, a Ugandan educator who grew
           up in extreme hardship, founded WM Smile Generation to ensure no child faces the same barriers he did.
-          The team — spread across Uganda, South Africa, Italy, Nigeria, and Vietnam — needed a professional,
+          The team, spread across Uganda, South Africa, Italy, Nigeria, and Vietnam, needed a professional,
           trustworthy online presence that could serve multiple goals at once: tell the founder's story, showcase
           the mission's three core pillars, enable donations, and attract partnership opportunities from an
           international audience.
@@ -60,7 +60,7 @@
         <p>
           The organization needed a professional web presence quickly to support ongoing partnership conversations
           and fundraising efforts. By leveraging Astro's streamlined development workflow and keeping the scope
-          focused on what mattered most — clear storytelling, strong calls-to-action, and a trustworthy design —
+          focused on what mattered most, namely clear storytelling, strong calls-to-action, and a trustworthy design,
           I was able to go from first commit to live site in a single long weekend.
         </p>
       </div>
@@ -184,7 +184,7 @@
             <span class="tech-label">Framework</span>
             <p>
               Chosen for its fast static site generation, minimal JavaScript overhead, and excellent performance
-              on low-bandwidth connections — which matters for an audience that includes visitors from East Africa.
+              on low-bandwidth connections, which matters for an audience that includes visitors from East Africa.
             </p>
           </div>
           <div class="tech-card">
@@ -223,7 +223,7 @@
           <span class="status-indicator">On Maintenance</span>
           <p>
             The website is live and stable, and it is currently in maintenance mode rather than active feature
-            development. The site was built to stay lightweight — static generation means no server-side dependencies
+            development. The site was built to stay lightweight, and static generation means no server-side dependencies
             to manage, and free hosting on Vercel eliminates recurring infrastructure costs. If the organization's
             needs grow, the Astro architecture makes it straightforward to extend.
           </p>
@@ -236,9 +236,9 @@
       <div class="detail-container">
         <h2>Why This Project Matters to Me</h2>
         <blockquote class="featured-quote">
-          This is not just a portfolio piece — it's personal. I believe deeply that technology should serve people
-          who need it most, not just those who can pay for it. WM Smile Generation's mission — giving vulnerable
-          children access to education and a healthier environment — aligns directly with why I founded
+          This is not just a portfolio piece. It's personal. I believe deeply that technology should serve people
+          who need it most, not just those who can pay for it. WM Smile Generation's mission, giving vulnerable
+          children access to education and a healthier environment, aligns directly with why I founded
           Skill-Wanderer. Working alongside this international team of volunteers reinforced something I carry
           into everything I build: the best technology is the kind that amplifies human compassion.
         </blockquote>
@@ -319,9 +319,9 @@
 // Icons replaced with emojis
 
 useSEO({
-  title: 'WM Smile Generation Uganda — Project Detail | Skill-Wanderer',
+  title: 'WM Smile Generation Uganda: Project Detail | Skill-Wanderer',
   description:
-    'How Skill-Wanderer designed and built the official website for WM Smile Generation Uganda — a non-profit transforming lives through education, environmental conservation, and refugee child protection.',
+    'How Skill-Wanderer designed and built the official website for WM Smile Generation Uganda, a non-profit transforming lives through education, environmental conservation, and refugee child protection.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: ['non-profit website development', 'Uganda NGO website', 'education charity website', 'refugee child protection', 'guild project case study'],
   structuredData: createBreadcrumbSchema([

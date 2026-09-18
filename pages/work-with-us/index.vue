@@ -22,20 +22,20 @@
         <div class="cycle-flow">
           <div class="cycle-step">
             <div class="cycle-icon">🤝</div>
-            <h3>Discovery &amp; Scoping</h3>
-            <p>We start by understanding the problem, the constraints, and the right first step for the work ahead.</p>
+            <h3>Free First Prototype</h3>
+            <p>For accepted projects we build a working prototype at no cost, before any commitment is made.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
             <div class="cycle-icon">🔧</div>
-            <h3>Guild Delivery</h3>
-            <p>Senior-led sprint delivery keeps progress visible while guild members work in coordinated tracks.</p>
+            <h3>Scope &amp; Guild Delivery</h3>
+            <p>We confirm the real scope against the prototype, then build under senior-led oversight.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
-            <div class="cycle-icon">📚</div>
-            <h3>Knowledge Transfer</h3>
-            <p>Documentation, walkthroughs, and shared context are built into the work from the start.</p>
+            <div class="cycle-icon">🔓</div>
+            <h3>No Vendor Lock-In</h3>
+            <p>You can inspect the code and project materials, and move the project elsewhere whenever you choose.</p>
           </div>
           <div class="cycle-arrow">→</div>
           <div class="cycle-step">
@@ -60,7 +60,7 @@
             <div class="pillar-icon">💻</div>
             <h3>What We Build</h3>
             <p>
-              Custom web platforms, internal tools, and digital products—built from scratch with modern frameworks.
+              Custom web platforms, internal tools, and digital products, built from scratch with modern frameworks.
               No WordPress, no templates, no lock-in.
             </p>
             <NuxtLink to="/work-with-us/what-we-build" class="pillar-link">
@@ -84,7 +84,7 @@
             <div class="pillar-icon">📁</div>
             <h3>Our Projects</h3>
             <p>
-              From non-profits to startups to our own guild infrastructure—these projects show how
+              From non-profits to startups to our own guild infrastructure, these projects show how
               the guild designs, ships, and supports real systems.
             </p>
             <NuxtLink to="/work-with-us/our-projects" class="pillar-link">
@@ -106,13 +106,13 @@
 
           <div class="pillar-card">
             <div class="pillar-icon">💡</div>
-            <h3>Our Delivery Model</h3>
+            <h3>Our Service Model</h3>
             <p>
-              A senior-led system you plug into — not outsourcing. Senior architectural oversight,
-              parallel sprint execution, and full knowledge transfer at every milestone.
+              No separate upfront development fee for accepted projects, on websites and apps alike.
+              A required free prototype first, then ongoing hosting and technical care.
             </p>
-            <NuxtLink to="/work-with-us/success-sharing-model" class="pillar-link">
-              Learn How It Works <span>→</span>
+            <NuxtLink to="/work-with-us/service-model" class="pillar-link">
+              Read the Service Model <span>→</span>
             </NuxtLink>
           </div>
 
@@ -120,8 +120,8 @@
             <div class="pillar-icon">🚀</div>
             <h3>Become a Guild Partner</h3>
             <p>
-              Ready to engage? Start with a sprint, scale into a steady rhythm,
-              and keep full ownership at every stage.
+              Ready to engage? Start with a free prototype, settle into a steady rhythm,
+              and keep full ownership at every stage. Projects are accepted selectively.
             </p>
             <NuxtLink to="/work-with-us/become-a-partner" class="pillar-link">
               Become a Partner <span>→</span>
@@ -131,7 +131,7 @@
       </div>
     </section>
 
-    <!-- Proof of Work — Project Showcase Strip -->
+    <!-- Proof of Work: Project Showcase Strip -->
     <section class="proof-of-work-section">
       <div class="content">
         <div class="section-header">
@@ -215,19 +215,20 @@
         <!-- Intro + Guild callout -->
         <div class="intro-callout">
           <p>
-            Our collaboration model is built around discovery, focused sprint delivery,
-            and steady ownership transfer. We work in short cycles, keep scope visible,
-            and build systems that remain stable, maintainable, and easy to evolve over time.
+            Our collaboration model is built around a working prototype, scope confirmed against
+            real work, and steady ownership transfer. We keep scope visible and build systems that
+            remain stable, maintainable, and easy to evolve over time.
           </p>
           <div class="lockin-banner">
             <span class="lockin-icon">🔓</span>
             <div>
               <strong>Zero Vendor Lock-In. By Design.</strong>
               <span>
-                As a tech guild, our mission is education—not dependency. If you can take over
-                the work and run it yourself, that means we did our job well. We build with open standards,
-                clear documentation, and full knowledge transfer so you are never locked into working with us.
-                Your success without us is our greatest measure of success.
+                As a tech guild, our mission is education, not dependency. We build with open standards
+                and, where reasonably possible, give you access to the source code and project materials,
+                so you are never locked into working with us. You may stop the service and migrate the
+                project yourself or hire another provider to do it. The goal is for you to stay because
+                the service is useful, not because leaving is technically impossible.
               </span>
             </div>
           </div>
@@ -239,32 +240,32 @@
           <div class="journey-step">
             <div class="step-number">01</div>
             <div class="step-body">
-              <h4>Discovery &amp; Scoping</h4>
-              <p>We begin with a short discovery phase to understand your goals, constraints, and the right first step.</p>
+              <h4>Light Initial Conversation</h4>
+              <p>A short exchange, usually LinkedIn, email, and your existing site, is enough to decide whether the project is a fit. Projects are accepted selectively.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
           <div class="journey-step">
             <div class="step-number">02</div>
             <div class="step-body">
-              <h4>Start with a Sprint</h4>
-              <p>Most new collaborations begin with a focused sprint so both sides can establish the working rhythm through real delivery.</p>
+              <h4>Free First Prototype</h4>
+              <p>Accepted projects begin with a working prototype built at no cost. It is a required step, so both sides can judge real work instead of an abstract brief.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
           <div class="journey-step">
             <div class="step-number">03</div>
             <div class="step-body">
-              <h4>Sprint Delivery</h4>
-              <p>Work moves in structured cycles with planning, implementation, review, and room to adjust priorities between iterations.</p>
+              <h4>Scope, Price, Then Build</h4>
+              <p>We review the prototype together, the real scope becomes clear, and only then is the exact recurring price confirmed and full development begun.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
           <div class="journey-step">
             <div class="step-number">04</div>
             <div class="step-body">
-              <h4>Knowledge Transfer</h4>
-              <p>Documentation, walkthroughs, and architecture decisions are shared as the work evolves, not left until the end.</p>
+              <h4>Launch &amp; Ongoing Care</h4>
+              <p>The initial build includes up to 2 structured revision rounds before launch, then continues under ongoing hosting and technical care.</p>
             </div>
           </div>
           <div class="journey-connector">↓</div>
@@ -849,7 +850,7 @@ useSEO({
   padding: 8px 0;
 }
 
-/* Working Together — FAQ Accordion */
+/* Working Together: FAQ Accordion */
 .faq-section {
   max-width: 800px;
   margin: 0 auto;

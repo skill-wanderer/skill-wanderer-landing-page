@@ -44,7 +44,7 @@
           <h2>Our Mission</h2>
           <p class="mission-description">
             With a social enterprise vision, we believe quality education shapes brighter futures. Our mission 
-            is to achieve this through the tech guild model—integrating real-world project experience directly 
+            is to achieve this through the tech guild model, integrating real-world project experience directly 
             into free, practical learning. Guild engagements generate sustainable revenue, enabling us to operate 
             with complete integrity and reinvest all resources into education and social impact.
           </p>
@@ -161,7 +161,7 @@
           <div class="principle-card">
             <div class="principle-icon">🛤️</div>
             <h3>Pathways for Our Learners</h3>
-            <p>Creating opportunities for qualified learners to join our team as we grow—validating our curriculum and fostering community growth.</p>
+            <p>Creating opportunities for qualified learners to join our team as we grow, validating our curriculum and fostering community growth.</p>
             <div class="principle-visual">
               <div class="pathway-flow">
                 <div class="stage">Learn</div>
@@ -176,7 +176,7 @@
           <div class="principle-card">
             <div class="principle-icon">⚙️</div>
             <h3>Guild Engagements Fueling Mission</h3>
-            <p>We're not outsourcing—we're a tech guild. Through our social enterprise model, we deliver real work with guild members at every level, and every engagement funds free education.</p>
+            <p>We're not outsourcing. We're a tech guild. Through our social enterprise model, we deliver real work with guild members at every level, and every engagement funds free education.</p>
             <div class="principle-visual">
               <div class="service-cycle">
                 <div class="service-node">Consulting</div>
@@ -225,7 +225,7 @@
           <div class="principle-card">
             <div class="principle-icon">🌱</div>
             <h3>Social Enterprise Model</h3>
-            <p>Same quality learning with guild mentors, start-up support, and pre-learning advisory—sustained through our social enterprise model where guild work funds education and members give back by paying forward.</p>
+            <p>Same quality learning with guild mentors, start-up support, and pre-learning advisory, sustained through our social enterprise model where guild work funds education and members give back by paying forward.</p>
             <div class="principle-visual">
               <div class="service-tiers">
                 <div class="tier free">Quality Learning</div>

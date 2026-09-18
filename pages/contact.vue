@@ -13,7 +13,7 @@
         <div class="authority-card authority-leadership">
           <div class="authority-icon">🏛️</div>
           <h3>Who Will Work on Your Project?</h3>
-          <p>Every engagement receives <strong>senior architect oversight</strong> from the Guild Master — a solution architect with over a decade of experience across startups and enterprises. Your project is never handed off to juniors. The Guild Master personally leads architecture, code review, and quality assurance, hand-picking skilled artisans for each engagement.</p>
+          <p>Every engagement receives <strong>senior architect oversight</strong> from the Guild Master, a solution architect with over a decade of experience across startups and enterprises. Your project is never handed off to juniors. The Guild Master personally leads architecture, code review, and quality assurance, hand-picking skilled artisans for each engagement.</p>
         </div>
 
         <!-- Mission Highlight -->
@@ -30,7 +30,7 @@
             <span class="impact-number">100%</span>
             <span class="impact-label">of projects fund local tech education</span>
           </div>
-          <p>Senior-led quality with a social enterprise vision — your investment creates real impact beyond code.</p>
+          <p>Senior-led quality with a social enterprise vision. Your investment creates real impact beyond code.</p>
         </div>
       </div>
     </section>
@@ -43,7 +43,7 @@
             <div class="orion-icon">🧭</div>
             <div>
               <h2>Need Answers Now?</h2>
-              <p>Talk to <strong>Admiral Orion</strong>, our AI assistant, for instant project guidance — no waiting required.</p>
+              <p>Talk to <strong>Admiral Orion</strong>, our AI assistant, for instant project guidance, with no waiting required.</p>
             </div>
           </div>
           <NuxtLink to="/admiral-orion" class="btn btn-orion">Chat with Admiral Orion</NuxtLink>
@@ -246,14 +246,14 @@
                 <div class="info-icon">✏️</div>
                 <h3>Application Review</h3>
               </div>
-              <p>The Guild Master reviews every application personally. We look for passion, craftsmanship, and alignment with the Guild's values — not just years of experience.</p>
+              <p>The Guild Master reviews every application personally. We look for passion, craftsmanship, and alignment with the Guild's values, not just years of experience.</p>
             </div>
             <div class="info-card">
               <div class="info-card-header">
                 <div class="info-icon">🤝</div>
                 <h3>Craft Interview</h3>
               </div>
-              <p>Shortlisted candidates are invited for a relaxed craft conversation — no whiteboard puzzles, just a genuine discussion about how you think and build.</p>
+              <p>Shortlisted candidates are invited for a relaxed craft conversation. No whiteboard puzzles, just a genuine discussion about how you think and build.</p>
             </div>
             <div class="info-card">
               <div class="info-card-header">
@@ -520,7 +520,7 @@ const activeFaq = ref(-1)
 const faqs = ref([
   {
     question: "What kind of projects do you take on?",
-    answer: "We build custom websites, web applications, platforms, and provide technical consulting. From single landing pages to complex multi-feature platforms — every project is custom-coded with modern frameworks, no templates or page builders. Check our What We Build page for detailed examples."
+    answer: "We build custom websites, web applications, platforms, and provide technical consulting. From single landing pages to complex multi-feature platforms, every project is custom-coded with modern frameworks, no templates or page builders. Check our What We Build page for detailed examples."
   },
   {
     question: "How does pricing work?",

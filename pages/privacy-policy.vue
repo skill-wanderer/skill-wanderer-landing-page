@@ -23,9 +23,9 @@
             This Privacy Policy applies to <strong>all</strong> properties operated by Skill-Wanderer under the <strong>skill-wanderer.com</strong> domain, including every subdomain, whether listed here or introduced in the future:
           </p>
           <ul>
-            <li><strong>skill-wanderer.com</strong> — Main website and landing pages</li>
-            <li><strong>dojo.skill-wanderer.com</strong> — The Dojo learning platform (authentication and learning management powered by Keycloak)</li>
-            <li><strong>wandersings.skill-wanderer.com</strong> — Wandersings blog and community space (may use Firebase for authentication and content)</li>
+            <li><strong>skill-wanderer.com</strong>: Main website and landing pages</li>
+            <li><strong>dojo.skill-wanderer.com</strong>: The Dojo learning platform (authentication and learning management powered by Keycloak)</li>
+            <li><strong>wandersings.skill-wanderer.com</strong>: Wandersings blog and community space (may use Firebase for authentication and content)</li>
             <li>Any other current or future subdomains under skill-wanderer.com</li>
           </ul>
           <p>
@@ -86,7 +86,7 @@
           <ul>
             <li><strong>Contract:</strong> Processing necessary to provide you with the services you have signed up for (e.g., maintaining your Dojo account, delivering course content).</li>
             <li><strong>Consent:</strong> Processing based on your explicit consent (e.g., subscribing to our newsletter, posting comments).</li>
-            <li><strong>Legitimate Interest:</strong> Processing necessary for our legitimate interests, such as securing our platform, improving our services, and maintaining server logs for troubleshooting — provided these interests do not override your rights.</li>
+            <li><strong>Legitimate Interest:</strong> Processing necessary for our legitimate interests, such as securing our platform, improving our services, and maintaining server logs for troubleshooting, provided these interests do not override your rights.</li>
             <li><strong>Legal Obligation:</strong> Processing required to comply with applicable laws and regulations.</li>
           </ul>
         </div>
@@ -158,7 +158,7 @@
         <div class="policy-section">
           <h2>Cookies and Tracking Technologies</h2>
           <p>
-            Across all Skill-Wanderer properties, we use <strong>essential cookies and browser storage only</strong> — the minimum required for our services to function correctly. We do not use tracking cookies, advertising cookies, analytics cookies, or any other non-essential cookies or storage on any subdomain.
+            Across all Skill-Wanderer properties, we use <strong>essential cookies and browser storage only</strong>, the minimum required for our services to function correctly. We do not use tracking cookies, advertising cookies, analytics cookies, or any other non-essential cookies or storage on any subdomain.
           </p>
           <p>
             The specific cookies and storage used vary by subdomain, depending on the backend technology in use:
@@ -187,7 +187,7 @@
             The third-party services we integrate are limited to those essential for platform operation. Different subdomains may use different services:
           </p>
           <ul>
-            <li><strong>Keycloak (self-hosted):</strong> Identity and access management for the Dojo. Because it is self-hosted, no data is shared with Keycloak's creators (Red Hat) — this instance is fully operated by us on our own infrastructure.</li>
+            <li><strong>Keycloak (self-hosted):</strong> Identity and access management for the Dojo. Because it is self-hosted, no data is shared with Keycloak's creators (Red Hat). This instance is fully operated by us on our own infrastructure.</li>
             <li><strong>Firebase (Google):</strong> Used for data storage on the main site and potentially on Wandersings for authentication and content storage. Firebase data processing is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Data Processing terms</a>.</li>
             <li><strong>YouTube (Privacy-Enhanced Mode):</strong> Used for embedded video content across any subdomain. Cookies are only set if you actively play a video.</li>
           </ul>
@@ -223,7 +223,7 @@
         <div class="policy-section">
           <h2>Changes to This Privacy Policy</h2>
           <p>
-            We may update this Privacy Policy from time to time — for example, when we add new subdomains, adopt new backend services, or expand the features available on existing services. Any changes will be posted on this page with an updated "Last updated" date. For material changes that significantly affect how your data is handled, we will make reasonable efforts to notify you (such as via a banner on the affected subdomain). We encourage you to review this policy periodically.
+            We may update this Privacy Policy from time to time, for example when we add new subdomains, adopt new backend services, or expand the features available on existing services. Any changes will be posted on this page with an updated "Last updated" date. For material changes that significantly affect how your data is handled, we will make reasonable efforts to notify you (such as via a banner on the affected subdomain). We encourage you to review this policy periodically.
           </p>
         </div>
 

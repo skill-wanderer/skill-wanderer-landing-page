@@ -3,7 +3,7 @@
     <div class="expertise-brief-content">
       <h3>Expertise &amp; Impact</h3>
       <p>
-        We apply real-world technology expertise to solve real problems—and every challenge we tackle fuels free education.
+        We apply real-world technology expertise to solve real problems, and every challenge we tackle fuels free education.
         Success sharing model. Community-powered talent. Impact that creates learning.
       </p>
       <NuxtLink to="/work-with-us" class="btn btn-secondary">Learn More</NuxtLink>

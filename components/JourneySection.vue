@@ -7,7 +7,7 @@
       </p>
       <p class="journey-description">
         Skill-Wanderer is born from a simple belief: the best teachers are those who remember what it's like to struggle,
-        to fail, and to finally breakthrough. This platform captures that journey—the wandering path of continuous learning—and
+        to fail, and to finally breakthrough. This platform captures that journey, the wandering path of continuous learning, and
         transforms it into accessible education for all. Whether you're taking your first steps in tech or seeking to master
         advanced concepts, you'll find a home here.
       </p>

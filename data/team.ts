@@ -26,7 +26,7 @@ export const teamMembers: TeamMember[] = [
     location: 'Vietnam',
     title: 'Founder & Project Leader',
     github: 'https://github.com/skill-wanderer',
-    bio: 'Quan is the founder and leader of Skill-Wanderer. With a journey that began in international trade and evolved through four startups, leading 50+ members, and wandering through roles from Frontend to DevOps, from Business Analyst to Solution Architect, Quan brings a unique perspective to tech education. His unconventional path taught him that the most fundamental skill is learning how to learn—and that every failure is a stepping stone to mastery. Skill-Wanderer is the culmination of that belief: a platform where honest, practical education meets real-world experience, completely free and without bias.',
+    bio: 'Quan is the founder and leader of Skill-Wanderer. With a journey that began in international trade and evolved through four startups, leading 50+ members, and wandering through roles from Frontend to DevOps, from Business Analyst to Solution Architect, Quan brings a unique perspective to tech education. His unconventional path taught him that the most fundamental skill is learning how to learn, and that every failure is a stepping stone to mastery. Skill-Wanderer is the culmination of that belief: a platform where honest, practical education meets real-world experience, completely free and without bias.',
     skills: [
       'Solution Architecture',
       'Full-Stack Development',
@@ -57,7 +57,7 @@ export const teamMembers: TeamMember[] = [
     location: 'Vietnam',
     title: 'Full-Cycle Associate',
     github: 'https://github.com/Thanh-Nguyen-Valerie',
-    bio: "As a fresh graduate with a 'learn-it-all' rather than 'know-it-all' philosophy, Thanh joins Skill-Wanderer with a vibrant energy and a relentless drive for excellence. Embracing the 'Full-Cycle' mindset, Thanh is dedicated to mastering the entire product lifecycle—from initial concept to deployment. With a belief that the tech landscape is an infinite classroom, Thanh views every challenge as a strategic stepping stone to mastery, aiming to bridge the gap between academic theory and high-impact, real-world solutions.",
+    bio: "As a fresh graduate with a 'learn-it-all' rather than 'know-it-all' philosophy, Thanh joins Skill-Wanderer with a vibrant energy and a relentless drive for excellence. Embracing the 'Full-Cycle' mindset, Thanh is dedicated to mastering the entire product lifecycle, from initial concept to deployment. With a belief that the tech landscape is an infinite classroom, Thanh views every challenge as a strategic stepping stone to mastery, aiming to bridge the gap between academic theory and high-impact, real-world solutions.",
     skills: [
       'Full-Stack Development',
       'Problem-Solving',
@@ -81,7 +81,7 @@ export const teamMembers: TeamMember[] = [
     github: 'https://github.com/Reltroner',
     linkedin: 'https://www.linkedin.com/in/rei-reltroner-a3a7b8173/',
     website: 'https://www.reltroner.com',
-    bio: 'Rei Reltroner is a system-oriented backend engineer focused on building deterministic, modular, and production-grade systems. With a strong foundation in Laravel, REST API architecture, and authentication systems (JWT, OIDC, Keycloak), Rei approaches engineering as a layered system—from infrastructure to logic—prioritizing root-cause analysis and long-term reliability. As an early contributor to Skill-Wanderer, Rei is expanding from independent system building into full-cycle solution delivery within a global, collaborative environment, bridging architecture thinking with real-world product development.',
+    bio: 'Rei Reltroner is a system-oriented backend engineer focused on building deterministic, modular, and production-grade systems. With a strong foundation in Laravel, REST API architecture, and authentication systems (JWT, OIDC, Keycloak), Rei approaches engineering as a layered system, from infrastructure to logic, prioritizing root-cause analysis and long-term reliability. As an early contributor to Skill-Wanderer, Rei is expanding from independent system building into full-cycle solution delivery within a global, collaborative environment, bridging architecture thinking with real-world product development.',
     skills: [
       'Backend Architecture (Laravel)',
       'REST API Design',
@@ -113,13 +113,13 @@ export const teamMembers: TeamMember[] = [
     location: 'India',
     title: 'Full-Cycle Associate',
     github: 'https://github.com/logicalaryan',
-    bio: `Aryan is just a rookie — but he’s stepping in with a builder’s mindset and a strong foundation in development.
+    bio: `Aryan is just a rookie, but he’s stepping in with a builder’s mindset and a strong foundation in development.
 
-  He may not know everything yet, but he understands how to build. With hands-on experience in full stack development, Aryan has worked on few projects involving modern web technologies, creating responsive UIs, handling backend logic, and connecting systems end-to-end. He believes in learning by doing — not just watching, but actually building, breaking, and improving.
+  He may not know everything yet, but he understands how to build. With hands-on experience in full stack development, Aryan has worked on few projects involving modern web technologies, creating responsive UIs, handling backend logic, and connecting systems end-to-end. He believes in learning by doing, not just watching, but actually building, breaking, and improving.
 
   Instead of waiting to feel ready, Aryan puts himself under pressure, takes on challenges, and figures things out along the way. Every bug he fixes and every feature he ships adds to his growing understanding of software development.
 
-  He is still learning, still evolving — but with each step, his skills, confidence, and problem-solving ability are getting stronger.`,
+  He is still learning, still evolving, but with each step, his skills, confidence, and problem-solving ability are getting stronger.`,
     skills: ['Nuxt 3', 'Vue', 'TypeScript', 'React', 'JavaScript'],
     contributions: [
       'Learning and contributing to UI development',
@@ -136,11 +136,11 @@ export const teamMembers: TeamMember[] = [
     tagline: 'Testing with user empathy, security awareness, and curiosity',
     location: 'Nigeria',
     title: 'QA Tester',
-    bio: `Nkiru Onyebinime’s path into tech is anything but straight — and that is exactly what makes her strong at what she does.
+    bio: `Nkiru Onyebinime’s path into tech is anything but straight, and that is exactly what makes her strong at what she does.
 
 She studied Microbiology at Federal University Lafia, where she learned observation, pattern recognition, and accurate documentation. Those skills now transfer directly into QA testing, helping her notice details, analyze behavior, and document issues clearly.
 
-Before entering tech, Nkiru spent over five years in customer support across Nigeria, Dubai, and the UK. She handled angry customers, resolved escalations, trained new team members, and maintained 100% response rates under pressure. This experience gives her a deep understanding of how real users feel when something is broken. She does not just find bugs — she understands why they matter.
+Before entering tech, Nkiru spent over five years in customer support across Nigeria, Dubai, and the UK. She handled angry customers, resolved escalations, trained new team members, and maintained 100% response rates under pressure. This experience gives her a deep understanding of how real users feel when something is broken. She does not just find bugs. She understands why they matter.
 
 Her experience in CCTV monitoring also strengthened her attention to detail. Watching for real-time anomalies, documenting incidents, and staying alert to anything that looks slightly wrong are all skills that closely reflect strong testing discipline.
 
@@ -148,7 +148,7 @@ Nkiru is currently training as a SOC Analyst in cybersecurity and holds certific
 
 In her QA mentorship, she scored 90 out of 100 on her first module and 98 out of 100 on her second. Her instructor described her work as an exceptional submission demonstrating professional discipline and QA maturity. She has also completed real client testing at Skill-Wanderer, delivering structured bug reports across three batches on desktop and mobile.
 
-Outside of work, Nkiru makes music videos, creates content, and runs a YouTube channel. She believes creativity and curiosity are connected — and both make her a better tester.
+Outside of work, Nkiru makes music videos, creates content, and runs a YouTube channel. She believes creativity and curiosity are connected, and both make her a better tester.
 
 She is here to grow, contribute, and prove that the best testers are the ones who think like users, communicate like professionals, and never stop being curious.`,
     skills: [
