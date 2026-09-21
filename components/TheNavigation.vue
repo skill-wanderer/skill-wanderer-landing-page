@@ -337,6 +337,19 @@
         </div>
 
         <NuxtLink to="/contact" @click="closeMobileMenu">Contact</NuxtLink>
+
+        <!-- Mobile Easter Egg -->
+        <NuxtLink
+          v-if="!isMissionPage"
+          to="/mission"
+          class="easter-egg-mobile"
+          @click="closeMobileMenu"
+          title="The Heart of Skill-Wanderer (Motivation for Founder)"
+          aria-label="View the Skill-Wanderer mission"
+        >
+          <span class="heart-beat">❤️</span>
+          <span>The Heart of Skill-Wanderer</span>
+        </NuxtLink>
       </div>
     </div>
   </nav>
@@ -362,7 +375,7 @@ const HEART_MOVE_INTERVAL_MS = 10000
 const HEART_MARGIN = 36
 const HEART_HITBOX = 44
 const HEART_SAFE_GAP = 12
-const CLICKABLE_SELECTOR = 'a, button, input, select, textarea, label, [role="button"], [contenteditable="true"], [tabindex], .btn, .mobile-menu-btn, .dropdown-trigger, .mobile-dropdown-trigger'
+const CLICKABLE_SELECTOR = 'a, button, input, select, textarea, label, [role="button"], [contenteditable="true"], [tabindex], .btn, .mobile-menu-btn, .dropdown-trigger, .mobile-dropdown-trigger, h1, h2, h3, h4, .logo, .rich-dropdown-menu, .pathfinder-panel, .pathfinder-fab'
 
 let heartMoveIntervalId: number | null = null
 
@@ -537,7 +550,7 @@ let resizeDebounceTimeoutId: number | null = null
 
 const startHeartAutoMove = () => {
   stopHeartAutoMove()
-  if (isMissionPage.value) {
+  if (isMissionPage.value || (typeof window !== 'undefined' && window.innerWidth <= 1024)) {
     return
   }
 
@@ -626,6 +639,7 @@ onUnmounted(() => {
   text-decoration: none;
   transition: all 0.3s ease;
   gap: 10px;
+  white-space: nowrap;
 }
 
 .logo:hover {
@@ -640,7 +654,7 @@ onUnmounted(() => {
 
 .nav-links {
   display: flex;
-  gap: 50px;
+  gap: clamp(16px, 2.5vw, 45px);
   align-items: center;
 }
 
@@ -651,6 +665,7 @@ onUnmounted(() => {
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 0;
+  white-space: nowrap;
 }
 
 .nav-links a::after {
@@ -917,7 +932,7 @@ onUnmounted(() => {
   background: #FF6B35;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .mobile-menu-btn {
     display: flex;
   }
@@ -998,18 +1013,22 @@ onUnmounted(() => {
     top: 100%;
     left: 0;
     right: 0;
+    max-height: calc(100vh - 75px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     background: rgba(26, 26, 26, 0.98);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 20px 20px 40px;
+    gap: 16px;
     border-top: 1px solid rgba(255, 107, 53, 0.1);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
   }
   
   .nav-links.mobile-open {
@@ -1093,10 +1112,18 @@ onUnmounted(() => {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .easter-egg {
+    display: none !important;
+  }
+
+  .easter-egg-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     font-size: 1rem;
-    opacity: 0.75;
+    font-weight: 500;
   }
 }
 

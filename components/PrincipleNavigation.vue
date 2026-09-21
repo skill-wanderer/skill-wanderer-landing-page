@@ -146,10 +146,15 @@ const nextPrinciple = currentIndex < principles.length - 1 ? principles[currentI
 @media (max-width: 768px) {
   .nav-content {
     flex-direction: column;
+    gap: 16px;
   }
 
   .nav-button {
     width: 100%;
+  }
+
+  .nav-button.all {
+    max-width: 100%;
   }
 
   .nav-button-placeholder {

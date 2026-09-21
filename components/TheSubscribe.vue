@@ -154,7 +154,7 @@ const restorePendingRequestNotice = () => {
     const payload = JSON.parse(rawValue) as { startedAt?: number }
 
     if (typeof payload.startedAt === 'number' && Date.now() - payload.startedAt <= SUBSCRIBE_PENDING_NOTICE_WINDOW_MS) {
-      message.value = 'A previous subscription request may still be processing. If you do not receive a confirmation email shortly, you can try again.'
+      message.value = 'A previous subscription request may still be processing. If you do not receive a welcome email shortly, you can try again.'
       messageType.value = 'info'
     }
   } catch {

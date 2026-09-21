@@ -53,7 +53,9 @@ footer {
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 28px;
   margin-bottom: 30px;
 }
 
@@ -61,6 +63,7 @@ footer {
   color: var(--light-text);
   text-decoration: none;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .footer-links a:hover {

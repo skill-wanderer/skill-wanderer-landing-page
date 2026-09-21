@@ -826,10 +826,6 @@ body {
     padding: 40px 20px;
   }
 
-  .nav-links {
-    display: none;
-  }
-
   .mission-statement {
     font-size: 1.4rem;
     padding: 20px;
