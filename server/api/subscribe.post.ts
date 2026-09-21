@@ -2,7 +2,7 @@ import { Resend } from 'resend'
 import { getHeader, setResponseHeader } from 'h3'
 import type { H3Event } from 'h3'
 import type { SubscribeRequest, SubscribeResponse } from '~/types'
-import { createSubscriptionConfirmationEmail } from '~/server/services/email/subscription'
+import { createSubscriptionWelcomeEmail } from '~/server/services/email/subscription'
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const MAX_EMAIL_LENGTH = 254
@@ -19,7 +19,8 @@ const SUBSCRIPTION_THROTTLED_MESSAGE = 'Please wait before trying again.'
 const RESEND_API_KEY_PLACEHOLDER = 'YOUR_RESEND_API_KEY'
 const SUBSCRIPTION_THROTTLE_WINDOW_MS = 60_000
 const SUBSCRIPTION_IDEMPOTENCY_PREFIX = 'skill-wanderer-subscribe'
-const SUBSCRIBE_ACCEPTED_MESSAGE = 'We received your request and sent a confirmation email. Please check your inbox.'
+const SUBSCRIBE_CONFIRMED_MESSAGE = 'You are subscribed. We sent a welcome email to your inbox.'
+const SUBSCRIBE_ACCEPTED_MESSAGE = 'You are subscribed. The welcome email could not be sent right now, but your subscription is active.'
 
 const subscriptionThrottle = new Map<string, number>()
 
@@ -122,7 +123,7 @@ const logSubscribeEvent = (
 
 const getDurationMs = (startedAt: number) => Math.max(Date.now() - startedAt, 0)
 
-const getSubscribeSource = (value: unknown): SubscribeRequest['source'] | 'unknown' => {
+const getSubscribeSource = (value: unknown): NonNullable<SubscribeRequest['source']> | 'unknown' => {
   if (value === 'home' || value === 'contact') {
     return value
   }
@@ -152,6 +153,60 @@ const getProviderErrorMetadata = (error: unknown) => {
           ? maybeError.name
           : 'UNKNOWN_PROVIDER_ERROR',
     providerStatusCode: typeof maybeError.statusCode === 'number' ? maybeError.statusCode : undefined
+  }
+}
+
+const isExistingContactError = (error: unknown) => {
+  if (!error || typeof error !== 'object') {
+    return false
+  }
+
+  const message = (error as { message?: unknown }).message
+
+  return typeof message === 'string' && /already (exists|registered|subscribed)/i.test(message)
+}
+
+const sendWelcomeEmail = async (
+  resend: Resend,
+  context: {
+    email: string
+    fromEmail: string
+    idempotencyKey: string
+    requestId: string
+    maskedEmail: string
+    source: string
+  }
+) => {
+  const logWelcomeFailure = (error: unknown) => {
+    const { providerCode, providerStatusCode } = getProviderErrorMetadata(error)
+
+    logSubscribeEvent('error', {
+      event: 'subscribe.welcome_email_failed',
+      requestId: context.requestId,
+      maskedEmail: context.maskedEmail,
+      source: context.source,
+      providerCode,
+      providerStatusCode
+    })
+  }
+
+  try {
+    const { data, error } = await resend.emails.send(
+      createSubscriptionWelcomeEmail(context.email, context.fromEmail),
+      {
+        idempotencyKey: context.idempotencyKey
+      }
+    )
+
+    if (error || !data) {
+      logWelcomeFailure(error)
+      return false
+    }
+
+    return true
+  } catch (error) {
+    logWelcomeFailure(error)
+    return false
   }
 }
 
@@ -359,6 +414,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   const runtimeConfig = useRuntimeConfig(event)
   const resendApiKey = pickRuntimeString(runtimeConfig.resendApiKey)
   const resendFromEmail = pickRuntimeString(runtimeConfig.resendFromEmail)
+  const resendSegmentId = pickRuntimeString(runtimeConfig.resendSegmentId)
 
   if (!resendApiKey || resendApiKey === RESEND_API_KEY_PLACEHOLDER || !resendFromEmail) {
     return respondFailure(
@@ -384,15 +440,14 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
     const resend = new Resend(resendApiKey)
     const idempotencyKey = await createSubscriptionIdempotencyKey(email)
 
-    const { data, error } = await resend.emails.send(
-      createSubscriptionConfirmationEmail(email, resendFromEmail),
-      {
-        idempotencyKey
-      }
-    )
+    const { data: contact, error: contactError } = await resend.contacts.create({
+      email,
+      unsubscribed: false,
+      ...(resendSegmentId ? { segments: [{ id: resendSegmentId }] } : {})
+    })
 
-    if (error) {
-      const { providerCode, providerStatusCode } = getProviderErrorMetadata(error)
+    if (contactError && !isExistingContactError(contactError)) {
+      const { providerCode, providerStatusCode } = getProviderErrorMetadata(contactError)
 
       return respondFailure(
         event,
@@ -401,7 +456,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
         {
           httpStatus: 502,
           status: 'failed',
-          code: 'SUBSCRIBE_PROVIDER_REJECTED',
+          code: 'SUBSCRIBE_CONTACT_REJECTED',
           message: SUBSCRIPTION_FAILED_MESSAGE,
           retryable: true
         },
@@ -415,7 +470,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
       )
     }
 
-    if (!data) {
+    if (!contact && !contactError) {
       return respondFailure(
         event,
         startedAt,
@@ -435,14 +490,30 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
       )
     }
 
+    // The contact is stored in Resend at this point, so a welcome email failure
+    // must not fail the subscription itself.
+    const welcomeEmailDelivered = await sendWelcomeEmail(resend, {
+      email,
+      fromEmail: resendFromEmail,
+      idempotencyKey,
+      requestId,
+      maskedEmail,
+      source
+    })
+
     return respondSuccess(
       event,
       startedAt,
       requestId,
-      {
-        status: 'accepted',
-        message: SUBSCRIBE_ACCEPTED_MESSAGE
-      },
+      welcomeEmailDelivered
+        ? {
+            status: 'confirmed',
+            message: SUBSCRIBE_CONFIRMED_MESSAGE
+          }
+        : {
+            status: 'accepted',
+            message: SUBSCRIBE_ACCEPTED_MESSAGE
+          },
       {
         maskedEmail,
         source

@@ -1,21 +1,21 @@
-const confirmationBody = [
-  '<p>Thank you for your interest in Skill Wanderer.</p>',
-  '<p>This email confirms that we received your request.</p>',
-  '<p>We appreciate your interest in our learning paths and community.</p>'
+const welcomeBody = [
+  '<p>Welcome to Skill Wanderer.</p>',
+  '<p>You are now subscribed. We will send you guild updates, new learning paths, and community initiatives.</p>',
+  '<p>If you did not subscribe, or you change your mind later, reply to this email and we will remove you from the list.</p>'
 ].join('')
 
-const confirmationText = [
-  'Thank you for your interest in Skill Wanderer.',
+const welcomeText = [
+  'Welcome to Skill Wanderer.',
   '',
-  'This email confirms that we received your request.',
+  'You are now subscribed. We will send you guild updates, new learning paths, and community initiatives.',
   '',
-  'We appreciate your interest in our learning paths and community.'
+  'If you did not subscribe, or you change your mind later, reply to this email and we will remove you from the list.'
 ].join('\n')
 
-export const createSubscriptionConfirmationEmail = (email: string, fromEmail: string) => ({
+export const createSubscriptionWelcomeEmail = (email: string, fromEmail: string) => ({
   from: `Skill Wanderer <${fromEmail}>`,
   to: [email],
   subject: 'Welcome to Skill Wanderer',
-  html: confirmationBody,
-  text: confirmationText
+  html: welcomeBody,
+  text: welcomeText
 })

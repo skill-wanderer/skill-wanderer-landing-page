@@ -438,11 +438,13 @@ useSEO({
 
 .cookie-table-wrapper {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   margin: 20px 0;
 }
 
 .cookie-table {
   width: 100%;
+  min-width: 520px;
   border-collapse: collapse;
   font-size: 0.95rem;
 }

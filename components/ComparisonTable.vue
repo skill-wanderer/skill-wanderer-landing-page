@@ -112,12 +112,14 @@ withDefaults(defineProps<Props>(), {
 
 .comparison-table-wrapper {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-radius: 20px;
   border: 1px solid rgba(255, 107, 53, 0.15);
 }
 
 .comparison-table {
   width: 100%;
+  min-width: 580px;
   border-collapse: collapse;
   background: var(--card-bg);
 }

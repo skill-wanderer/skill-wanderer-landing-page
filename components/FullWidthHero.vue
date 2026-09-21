@@ -183,6 +183,9 @@ const heroStyle = computed(() => {
 
   .fullwidth-hero__actions {
     justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 }
 </style>
