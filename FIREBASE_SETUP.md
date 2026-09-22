@@ -4,6 +4,7 @@
 
 To secure your contact messages in Firestore, add these rules to your Firebase Console:
 
+
 ```javascript
 rules_version = '2';
 service cloud.firestore {
