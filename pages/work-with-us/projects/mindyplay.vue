@@ -7,7 +7,7 @@
           &larr; Back to Our Projects
         </NuxtLink>
         <div class="status-badge">
-          <span>Active Development</span>
+          <span>Delivered</span>
         </div>
         <img src="/projects/mindyplay/mindyplay-logo.jpg" alt="MindyPlay Logo" class="hero-logo" />
         <h1>MindyPlay</h1>
@@ -164,11 +164,13 @@
     <!-- Current Status Section -->
     <section class="detail-section darker">
       <div class="detail-container">
-        <h2>Current Status</h2>
+        <h2>Where It Stands Now</h2>
         <p>
-          The project is currently <strong>in active development</strong>. The team is building the game engine
-          integration and core gameplay mechanics using Flutter and Flame, with Firebase backend services being
-          set up in parallel.
+          The guild built the game engine integration and core gameplay mechanics in Flutter and Flame, with
+          Firebase backend services set up in parallel. Our engagement has since concluded, and
+          <strong>MindyPlay remains in active development</strong> at the client, carried forward by an in-house
+          team that includes both mentees from our build. We no longer work on the game, so its current feature
+          set is theirs to speak to rather than ours to claim.
         </p>
         <div class="status-timeline">
           <div class="timeline-item timeline-item--done">
@@ -185,11 +187,18 @@
               <p>Flutter + Flame Engine chosen for game development, Firebase for backend, Keycloak for authorization.</p>
             </div>
           </div>
-          <div class="timeline-item timeline-item--active">
+          <div class="timeline-item timeline-item--done">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <h3>Core Development</h3>
-              <p>Building game mechanics, integrating Flame engine, and setting up Firebase services.</p>
+              <p>Game mechanics, Flame engine integration, and Firebase services built by the guild team.</p>
+            </div>
+          </div>
+          <div class="timeline-item timeline-item--done">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Handover to the Client Team</h3>
+              <p>Our engagement closed here. Both mentees joined the client to carry the game forward in-house.</p>
             </div>
           </div>
         </div>

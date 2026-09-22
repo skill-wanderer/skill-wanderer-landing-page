@@ -147,6 +147,48 @@
             </div>
           </div>
         </NuxtLink>
+        <NuxtLink to="/work-with-us/projects/matt-harr-speaker" class="project-thumb">
+          <div class="project-image-wrap">
+            <img src="/projects/mattharr/thumb.jpg" alt="Matt Harr Speaker" loading="lazy" />
+            <span class="project-type-badge">No Development Fee</span>
+          </div>
+          <div class="project-meta">
+            <h4>Matt Harr Speaker</h4>
+            <p class="project-summary">35 years of school leadership turned into a positioned speaking brand.</p>
+            <div class="project-stack-tags">
+              <span>Astro</span>
+              <span>Cloudflare</span>
+            </div>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/work-with-us/projects/broad-strokes-studio" class="project-thumb">
+          <div class="project-image-wrap">
+            <img src="/projects/broadstrokes/thumb.jpg" alt="Broad Strokes Studio" loading="lazy" />
+            <span class="project-type-badge">No Development Fee</span>
+          </div>
+          <div class="project-meta">
+            <h4>Broad Strokes Studio</h4>
+            <p class="project-summary">A bespoke calligraphy commission funnel with published pricing and Stripe checkout.</p>
+            <div class="project-stack-tags">
+              <span>Astro</span>
+              <span>Stripe</span>
+            </div>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/work-with-us/projects/the-meek-method" class="project-thumb">
+          <div class="project-image-wrap">
+            <img src="/projects/meekmethod/thumb.jpg" alt="The Meek Method" loading="lazy" />
+            <span class="project-type-badge">No Development Fee</span>
+          </div>
+          <div class="project-meta">
+            <h4>The Meek Method</h4>
+            <p class="project-summary">Positioning and a full practice site for a decision coaching business.</p>
+            <div class="project-stack-tags">
+              <span>Astro</span>
+              <span>Web3Forms</span>
+            </div>
+          </div>
+        </NuxtLink>
 
       </div>
       <div class="projects-cta">

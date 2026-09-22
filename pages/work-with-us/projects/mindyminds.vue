@@ -7,7 +7,7 @@
           &larr; Back to Our Projects
         </NuxtLink>
         <div class="status-badge">
-          <span>Active Development</span>
+          <span>Delivered</span>
         </div>
         <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds Logo" class="hero-logo" />
         <h1>MindyMinds</h1>
@@ -260,11 +260,12 @@
     <!-- Current Status Section -->
     <section class="detail-section darker">
       <div class="detail-container">
-        <h2>Current Status</h2>
+        <h2>Where It Stands Now</h2>
         <p>
-          The MVP was <strong>developed from start to finish in under 3 months</strong>. The platform is currently
-          in active development, focusing on deeper customization capabilities per tenant, enabling more granular
-          control over AI behavior, UI theming, and conversation flows.
+          The MVP was <strong>developed from start to finish in under 3 months</strong>, with staging and production
+          both live on EU cloud before our engagement concluded. MindyMinds has since continued in active development
+          in-house at the client, with the mentee from our build having joined their team. We no longer work on the
+          platform, so anything past the handover is theirs to speak to rather than ours to claim.
         </p>
         <div class="status-timeline">
           <div class="timeline-item timeline-item--done">
@@ -281,11 +282,18 @@
               <p>Both environments running on EU cloud with Cloudflare protection.</p>
             </div>
           </div>
-          <div class="timeline-item timeline-item--active">
+          <div class="timeline-item timeline-item--done">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <h3>Enhanced Customization</h3>
-              <p>Currently developing more granular per-tenant customization for AI chatbots.</p>
+              <p>Extended per-tenant control over AI behavior, UI theming, and conversation flows.</p>
+            </div>
+          </div>
+          <div class="timeline-item timeline-item--done">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Handover to the Client Team</h3>
+              <p>Our engagement closed here. Development continues in-house at the client, with the mentee from our build on their team.</p>
             </div>
           </div>
         </div>

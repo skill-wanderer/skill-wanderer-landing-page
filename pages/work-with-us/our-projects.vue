@@ -4,8 +4,8 @@
     <section class="hero">
       <h1>Our Projects</h1>
       <p>
-        From non-profits to start-ups, big enterprises to our own guild infrastructure, every project we take on is an opportunity
-        to create real impact and fuel free education.
+        From non-profits and independent professionals to start-ups, big enterprises, and our own guild infrastructure,
+        every project we take on is an opportunity to create real impact and fuel free education.
       </p>
       <span class="launch-badge">Real Work. Real Impact. Real Learning.</span>
     </section>
@@ -71,6 +71,142 @@
       </div>
     </section>
 
+    <!-- Independent Professionals Section -->
+    <section class="projects-section alt-bg">
+      <div class="content">
+        <div class="section-header">
+          <div class="section-tag">Independent Professionals</div>
+          <h2>Built at No Development Fee</h2>
+          <p>
+            Speakers, artisans, and coaches betting on themselves. We designed, built, and launched every site below
+            without charging a development fee, because the clients who can carry our rates are what make that possible.
+          </p>
+        </div>
+
+        <div class="case-study-grid">
+          <NuxtLink to="/work-with-us/projects/matt-harr-speaker" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/mattharr/card.jpg" alt="Matt Harr Speaker" class="case-study-image" />
+              <span class="status-badge status-badge--free">No Development Fee</span>
+            </div>
+            <div class="case-study-body">
+              <h3>Matt Harr Speaker</h3>
+              <p class="case-study-result">
+                Turned 35 years of teaching and coaching stories into a positioned speaking brand, with a nine-page
+                site, a writing archive, and a qualified booking form that school districts can act on.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Astro</span>
+                <span class="stack-tag">Cloudflare</span>
+                <span class="stack-tag">Web3Forms</span>
+                <span class="stack-tag">SEO &amp; RSS</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink to="/work-with-us/projects/broad-strokes-studio" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/broadstrokes/card.jpg" alt="Broad Strokes Studio" class="case-study-image" />
+              <span class="status-badge status-badge--free">No Development Fee</span>
+            </div>
+            <div class="case-study-body">
+              <h3>Broad Strokes Studio</h3>
+              <p class="case-study-result">
+                Two months building a bespoke calligraphy studio a commission funnel with published pricing, Stripe
+                checkout, and Cal.com booking, shot entirely with real photographs of real work at the client's request.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Astro</span>
+                <span class="stack-tag">Stripe</span>
+                <span class="stack-tag">Cal.com</span>
+                <span class="stack-tag">Cloudflare</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink to="/work-with-us/projects/the-meek-method" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/meekmethod/card.jpg" alt="The Meek Method" class="case-study-image" />
+              <span class="status-badge status-badge--free">No Development Fee</span>
+            </div>
+            <div class="case-study-body">
+              <h3>The Meek Method</h3>
+              <p class="case-study-result">
+                Sharpened a hard-to-explain coaching method into a position a stranger recognises in seconds, then
+                built the twelve-page practice site and the offer ladder that runs from a free group lab to private coaching.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Astro</span>
+                <span class="stack-tag">Cloudflare</span>
+                <span class="stack-tag">Web3Forms</span>
+                <span class="stack-tag">llms.txt</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Voices Section -->
+    <section class="projects-section">
+      <div class="content">
+        <div class="section-header">
+          <div class="section-tag">Client Voices</div>
+          <h2>What They Said Afterwards</h2>
+          <p>Unprompted, in their own words, on LinkedIn.</p>
+        </div>
+
+        <div class="voices-grid">
+          <figure class="voice-card">
+            <div class="voice-quote-mark">"</div>
+            <blockquote class="voice-text">
+              Quan did an outstanding job building my professional speaking website. He took my ideas, stories, and
+              experience and turned them into a polished website that clearly represents who I am and the message I
+              want to share.
+              <br /><br />
+              What sets Quan apart, however, is that his help went far beyond designing a website. He has been a
+              trusted business adviser throughout the process, offering honest feedback and practical guidance on how
+              to position myself, present my services, reach potential clients, and grow my speaking business.
+              <br /><br />
+              Quan is knowledgeable, dependable, patient, and genuinely invested in the success of the people he
+              works with.
+            </blockquote>
+            <figcaption class="voice-author">
+              <img src="/projects/mattharr/matt-harr-avatar.jpg" alt="Matt Harr" loading="lazy" />
+              <div>
+                <strong>Matt Harr</strong>
+                <span>Speaker on school culture and leadership</span>
+                <span class="voice-source">LinkedIn · 29 August 2026</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="voice-card">
+            <div class="voice-quote-mark">"</div>
+            <blockquote class="voice-text">
+              Quan is phenomenal to work with; he designed a website for my calligraphy business and worked with me
+              for two full months to make sure it was exactly how I hoped it'd be. Everything from personal
+              preferences (i.e. not using AI, but taking actual photos of the work) to pricing structure was
+              convenient and clearly laid out in both our consultations and contract.
+              <br /><br />
+              Quan went above and beyond expectations and would not accept any bonus/tip for his patience and effort.
+            </blockquote>
+            <figcaption class="voice-author">
+              <img src="/projects/broadstrokes/jack-avatar.jpg" alt="Jack Passananti" loading="lazy" />
+              <div>
+                <strong>Jack Passananti</strong>
+                <span>Writer · Calligrapher · Illuminator</span>
+                <span class="voice-source">LinkedIn · 4 August 2026</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <!-- Start-up Section -->
     <section class="projects-section alt-bg">
       <div class="content">
@@ -84,7 +220,7 @@
           <NuxtLink to="/work-with-us/projects/mindyminds" class="case-study-card">
             <div class="case-study-hero case-study-hero--contain">
               <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds" class="case-study-image" />
-              <span class="status-badge status-badge--active">Active Development</span>
+              <span class="status-badge status-badge--delivered">Delivered</span>
             </div>
             <div class="case-study-body">
               <h3>MindyMinds</h3>
@@ -106,7 +242,7 @@
           <NuxtLink to="/work-with-us/projects/mindyplay" class="case-study-card">
             <div class="case-study-hero case-study-hero--contain">
               <img src="/projects/mindyplay/mindyplay-logo.jpg" alt="MindyPlay" class="case-study-image" />
-              <span class="status-badge status-badge--active">Active Development</span>
+              <span class="status-badge status-badge--delivered">Delivered</span>
             </div>
             <div class="case-study-body">
               <h3>MindyPlay</h3>
@@ -304,9 +440,9 @@
 useSEO({
   title: 'Our Projects | Skill-Wanderer',
   description:
-    'Explore the real-world projects the Skill-Wanderer guild has built, from non-profits and start-ups to enterprise solutions and our own guild infrastructure.',
+    'Explore the real-world projects the Skill-Wanderer guild has built, from non-profits, independent professionals, and start-ups to enterprise solutions and our own guild infrastructure.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['software portfolio', 'web development projects', 'non-profit technology', 'startup projects', 'guild project showcase', 'case studies'],
+  keywords: ['software portfolio', 'web development projects', 'non-profit technology', 'startup projects', 'guild project showcase', 'case studies', 'pro bono web development'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
@@ -510,7 +646,10 @@ useSEO({
   z-index: 2;
 }
 
-.status-badge--shipped {
+/* --shipped: we built it and it is done.
+   --delivered: same, but the product lives on under someone else's team. */
+.status-badge--shipped,
+.status-badge--delivered {
   background: linear-gradient(135deg, #22c55e, #16a34a);
   color: white;
   box-shadow: 0 2px 12px rgba(34, 197, 94, 0.3);
@@ -526,6 +665,91 @@ useSEO({
   background: linear-gradient(135deg, #64748b, #475569);
   color: white;
   box-shadow: 0 2px 12px rgba(100, 116, 139, 0.3);
+}
+
+.status-badge--free {
+  background: linear-gradient(135deg, #22c55e, #0d9488);
+  color: white;
+  box-shadow: 0 2px 12px rgba(34, 197, 94, 0.3);
+}
+
+/* ═══════════════════════════════════════════════════ */
+/* CLIENT VOICES: Testimonial Cards                  */
+/* ═══════════════════════════════════════════════════ */
+.voices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 30px;
+}
+
+.voice-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  padding: 36px 34px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.voice-card:hover {
+  border-color: rgba(255, 107, 53, 0.35);
+  transform: translateY(-4px);
+}
+
+.voice-quote-mark {
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--primary-orange), #FFD93D);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.voice-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  margin: 0 0 26px;
+  flex: 1;
+}
+
+.voice-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.voice-author img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 107, 53, 0.35);
+  flex-shrink: 0;
+}
+
+.voice-author strong {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.voice-author span {
+  display: block;
+  color: var(--primary-orange);
+  font-size: 0.88rem;
+  margin-top: 2px;
+}
+
+.voice-author .voice-source {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
 }
 
 /* Logo Overlay */
@@ -780,8 +1004,18 @@ useSEO({
   }
 
   .case-study-grid,
-  .case-study-grid--single {
+  .case-study-grid--single,
+  .voices-grid {
     grid-template-columns: 1fr;
+  }
+
+  .voice-card {
+    padding: 28px 24px;
+  }
+
+  .voice-author {
+    flex-direction: column;
+    text-align: center;
   }
 
   .case-study-hero {
