@@ -633,10 +633,12 @@ useSEO({
 }
 
 /* Status Badge */
+/* Anchored left: the subject of several hero crops sits on the right
+   (Matt Harr's face, for one), so a right-hand badge covers them. */
 .status-badge {
   position: absolute;
   top: 16px;
-  right: 16px;
+  left: 16px;
   padding: 6px 16px;
   border-radius: 50px;
   font-size: 0.75rem;

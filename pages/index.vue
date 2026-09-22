@@ -749,10 +749,12 @@ onUnmounted(() => {
   transform: scale(1.05);
 }
 
+/* Anchored left to match the project cards, and because several thumbnail
+   crops put their subject on the right. */
 .project-type-badge {
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
   background: rgba(0, 0, 0, 0.65);
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.7rem;
