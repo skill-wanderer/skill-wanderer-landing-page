@@ -107,13 +107,6 @@
               <label for="message">Your Message</label>
               <textarea id="message" v-model="form.message" required placeholder="Describe your project, goals, timeline, and any technical requirements..."></textarea>
             </div>
-            <div class="form-group form-checkbox-group">
-              <label class="checkbox-label">
-                <input type="checkbox" v-model="form.valuesQuality">
-                <span>I value senior-led quality that fuels social impact</span>
-              </label>
-              <p class="checkbox-note">This helps us tailor our reply. It does not change whether you can submit this inquiry.</p>
-            </div>
             <div v-if="!isWeb3FormsConfigured && !formMessage.show" class="form-message error">
               {{ hireConfigErrorMessage }}
             </div>
@@ -313,8 +306,7 @@ const form = reactive({
   name: '',
   email: '',
   topic: '',
-  message: '',
-  valuesQuality: false
+  message: ''
 })
 
 // Guild application form state
@@ -579,7 +571,6 @@ const handleHireSubmit = async () => {
       email: replyEmail,
       message: form.message,
       topic: form.topic,
-      valuesQuality: form.valuesQuality,
       form_type: formType,
       submission_reference: submissionReference,
       submitted_at: submittedAt,
@@ -652,8 +643,7 @@ const handleHireSubmit = async () => {
       name: '',
       email: '',
       topic: '',
-      message: '',
-      valuesQuality: false
+      message: ''
     })
   } catch (error) {
     const errorType = getSubmissionErrorType(error)
@@ -1409,35 +1399,6 @@ body {
 
 .copy-btn:hover {
   background: rgba(255, 107, 53, 0.25);
-}
-
-/* Value Checkbox */
-.form-checkbox-group {
-  margin-bottom: 20px;
-}
-
-.checkbox-label {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.checkbox-label input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  accent-color: var(--primary-orange);
-  flex-shrink: 0;
-  cursor: pointer;
-}
-
-.checkbox-note {
-  margin-top: 10px;
-  font-size: 0.88rem;
-  line-height: 1.5;
-  opacity: 0.7;
 }
 
 /* Form Footer Legal */
