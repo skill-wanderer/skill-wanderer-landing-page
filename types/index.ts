@@ -41,7 +41,8 @@ export interface PracticeExample {
 
 export interface SubscribeRequest {
   email: string
-  source?: 'home' | 'contact'
+  /** Path of the page the form was sent from, such as '/about'. */
+  source?: string
 }
 
 export type SubscribeSuccessStatus = 'accepted' | 'confirmed'

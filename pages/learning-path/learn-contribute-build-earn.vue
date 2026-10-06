@@ -54,7 +54,7 @@
             <li>Join real development teams</li>
             <li>Build production-level products</li>
             <li>Work with partners and clients</li>
-            <li>Earn through revenue sharing or paid roles</li>
+            <li>Earn through paid roles on real client projects</li>
           </ul>
           <p class="card-emphasis">This is where learning becomes earning.</p>
         </article>
@@ -144,10 +144,10 @@
     <section class="tiers-section">
       <div class="tiers-card">
         <div class="section-header narrow">
-          <h2>Tier 1 and Tier 2 Learners</h2>
+          <h2>Not Sure Where You Fit?</h2>
           <p>
-            If you are a learner in Tier 1 or Tier 2 and you want to understand where you fit,
-            contact us. We will talk with you and help you choose the right next step.
+            If you are a learner and you want to understand where you fit, contact us.
+            We will talk with you and help you choose the right next step.
           </p>
         </div>
         <div class="tiers-actions">

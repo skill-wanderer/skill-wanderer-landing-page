@@ -303,8 +303,8 @@
           community project, or social enterprise that needs a web presence, let's talk.
         </p>
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-primary">
-            Become a Partner
+          <NuxtLink to="/contact" class="btn btn-primary">
+            Start a Conversation
           </NuxtLink>
           <NuxtLink to="/work-with-us/our-projects" class="btn btn-secondary">
             View All Projects

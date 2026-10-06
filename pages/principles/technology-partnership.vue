@@ -14,83 +14,20 @@
       :chapters="storyChapters"
     />
 
-    <!-- How Our Partnership Model Works Section -->
+    <!-- How client work runs today (details live on the How It Works page) -->
     <section class="model-section">
       <div class="model-container">
-        <h2>How Our Service Model Works</h2>
-        
+        <h2>How Client Work Runs Today</h2>
+
         <div class="model-intro">
           <p class="model-statement">
-            We're not outsourcing. We're your true technology partner.
-          </p>
-          <p class="model-statement">
-            For accepted projects we carry the build cost, so there is no separate upfront development fee on websites or apps, while our community of learners helps bring your vision to life.
+            No development fee, a free working prototype first, and a monthly fee for hosting, maintenance, support and occasional changes.
           </p>
           <p class="model-description">
-            We earn through ongoing hosting and technical care rather than a large upfront invoice. That keeps us
-            invested in the project long after launch, and it funds the guild's educational mission.
+            Quan designs every client project and reviews every change. Guild learners help, always under senior
+            review, so real client work becomes real learning, and the monthly fees fund free education.
           </p>
-        </div>
-
-        <div class="model-cards">
-          <div class="model-card">
-            <div class="model-icon">💵</div>
-            <h3>No Upfront Development Fee</h3>
-            <p>
-              Unlike traditional outsourcing, accepted projects pay no separate upfront build fee. We create the
-              first prototype at no cost, so you judge real work before committing to anything.
-            </p>
-          </div>
-
-          <div class="model-card">
-            <div class="model-icon">📈</div>
-            <h3>Ongoing Technical Care</h3>
-            <p>
-              Our earnings come from keeping your project running, maintained, and supported over
-              time. We are paid to keep things working, not to bill hours.
-            </p>
-          </div>
-
-          <div class="model-card">
-            <div class="model-icon">👥</div>
-            <h3>Community-Powered Talent</h3>
-            <p>
-              Work gets done by talented learners from our global community, people eager to prove themselves 
-              on real projects while gaining invaluable experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Aligned Incentives Section -->
-    <section class="alignment-section">
-      <div class="alignment-container">
-        <h2>Why This Works Better Than Outsourcing</h2>
-        
-        <div class="alignment-grid">
-          <div class="alignment-card">
-            <span class="alignment-icon">💵</span>
-            <h3>For You</h3>
-            <p>The upfront development barrier disappears, and you see working software before you decide.</p>
-          </div>
-          <div class="alignment-card">
-            <span class="alignment-icon">🎯</span>
-            <h3>For Us</h3>
-            <p>We are paid to keep things healthy, which keeps us invested long after launch.</p>
-          </div>
-          <div class="alignment-card">
-            <span class="alignment-icon">⭐</span>
-            <h3>For Learners</h3>
-            <p>Real projects with real stakes create real skills and genuine career pathways.</p>
-          </div>
-        </div>
-
-        <div class="alignment-benefit">
-          <p>
-            This isn't outsourcing with a different name. We carry the build cost up front and earn by keeping
-            your project healthy over time, because that's what real partners do.
-          </p>
+          <NuxtLink to="/work-with-us/service-model" class="model-link">See How It Works →</NuxtLink>
         </div>
       </div>
     </section>
@@ -349,7 +286,7 @@ const practiceItems = [
   {
     title: "From Client Work to Course Content",
     items: [
-      "Every project challenge becomes a case study",
+      "Every project challenge becomes a lesson",
       "Solutions we develop become tutorials", 
       "Mistakes we make become lessons on what to avoid",
       "Best practices we discover get documented and shared"
@@ -396,7 +333,8 @@ const practiceItems = [
 }
 
 .model-intro {
-  margin-bottom: 50px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .model-statement {
@@ -414,115 +352,18 @@ const practiceItems = [
   line-height: 1.8;
 }
 
-.model-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.model-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 107, 53, 0.2);
-  border-radius: 15px;
-  padding: 30px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.model-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--primary-orange);
-  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.1);
-}
-
-.model-icon {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.model-card h3 {
+.model-link {
+  display: inline-block;
+  margin-top: 28px;
   color: var(--primary-orange);
-  font-size: 1.3rem;
-  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
-.model-card p {
-  color: var(--light-text);
-  opacity: 0.9;
-  line-height: 1.7;
-  font-size: 0.95rem;
-  text-align: left;
-}
-
-/* Alignment Section */
-.alignment-section {
-  padding: 80px 20px;
-  background: var(--dark-bg);
-}
-
-.alignment-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.alignment-container h2 {
-  font-size: 2.5rem;
-  color: var(--primary-orange);
-  margin-bottom: 40px;
-}
-
-.alignment-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.alignment-card {
-  background: rgba(255, 107, 53, 0.05);
-  border-radius: 15px;
-  padding: 30px;
-  transition: all 0.3s ease;
-}
-
-.alignment-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 107, 53, 0.1);
-}
-
-.alignment-icon {
-  font-size: 40px;
-  display: block;
-  margin-bottom: 15px;
-}
-
-.alignment-card h3 {
-  color: var(--primary-orange);
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.alignment-card p {
-  color: var(--light-text);
-  opacity: 0.9;
-  line-height: 1.6;
-}
-
-.alignment-benefit {
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 15px;
-  padding: 30px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.alignment-benefit p {
-  font-size: 1.1rem;
-  color: var(--light-text);
-  opacity: 0.9;
-  line-height: 1.8;
-  margin: 0;
+.model-link:hover {
+  transform: translateX(4px);
 }
 
 /* Transparency Section */
@@ -927,14 +768,6 @@ const practiceItems = [
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .model-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .alignment-grid {
-    grid-template-columns: 1fr;
-  }
-
   .engine-visual {
     height: 400px;
   }
@@ -974,17 +807,12 @@ const practiceItems = [
 
   .section-header h2,
   .model-container h2,
-  .alignment-container h2,
   .engine-container h2 {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .model-card {
-    padding: 20px;
-  }
-
   .transparency-container {
     padding: 20px;
   }

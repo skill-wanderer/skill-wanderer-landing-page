@@ -92,7 +92,7 @@ export const createOrganizationSchema = () => {
     "name": "Skill-Wanderer",
     "url": "https://skill-wanderer.com",
     "logo": "https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp",
-    "description": "A tech guild for social good offering free, practical education. Learn by building. Grow by contributing. Sustain through craft.",
+    "description": "A tech partner for solo founders, coaches, consultants, freelancers, writers and small businesses, whose client work funds free, practical tech education.",
     "founder": {
       "@type": "Person",
       "name": "Quan Nguyen",

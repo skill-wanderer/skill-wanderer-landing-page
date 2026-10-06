@@ -46,8 +46,8 @@
         </div>
         <div class="feature-card">
           <div class="feature-icon">🤝</div>
-          <h3>Partnership &amp; Impact Info</h3>
-          <p>Learn about our social enterprise model, our service model, and how to become a technology partner, all through a simple conversation.</p>
+          <h3>Project &amp; Impact Info</h3>
+          <p>Ask whether your project is a good fit, how the free prototype and monthly care work, and how client work funds free education.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🚀</div>
@@ -93,10 +93,11 @@
         <h2>Ready to Start Exploring?</h2>
         <p>Admiral Orion is available on every page. Click the shield in the bottom-right corner, or try it right now.</p>
         <div class="try-it-suggestions">
+          <button class="suggestion-chip" @click="askQuestion('Is my project a good fit for Skill-Wanderer?')">Is my project a good fit?</button>
+          <button class="suggestion-chip" @click="askQuestion('How does the free prototype work?')">How does the free prototype work?</button>
           <button class="suggestion-chip" @click="askQuestion('What is Skill-Wanderer?')">What is Skill-Wanderer?</button>
           <button class="suggestion-chip" @click="askQuestion('What are the 12 principles?')">What are the 12 principles?</button>
           <button class="suggestion-chip" @click="askQuestion('How do learning paths work?')">How do learning paths work?</button>
-          <button class="suggestion-chip" @click="askQuestion('How can I become a partner?')">How can I become a partner?</button>
         </div>
       </div>
     </section>

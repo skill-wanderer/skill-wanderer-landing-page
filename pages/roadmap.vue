@@ -208,14 +208,15 @@
 
           <div class="module-card">
             <span class="module-icon">💰</span>
-            <h3>Fundraising & Sustainability</h3>
+            <h3>Sustainability &amp; Fallback Funding</h3>
             <p>
-              Tools and integrations to raise funding for the project, from donation campaigns
-              and grant applications to our Social Impact Token model that sustains free education
-              through community trust and shared value.
+              Client work is how we fund free education, because it keeps us practical. This module
+              covers the fallback: donation and grant tools we can switch on if client revenue ever
+              falls short, plus our Social Impact Token model for community support.
+              <NuxtLink to="/help-the-mission">Here's how you can help today.</NuxtLink>
             </p>
             <div class="module-tags">
-              <span class="tag">Donation Platform</span>
+              <span class="tag">Fallback Donations</span>
               <span class="tag">Grant Management</span>
               <span class="tag">Impact Tokens</span>
             </div>
@@ -307,8 +308,8 @@
           Get In Touch
           <span>→</span>
         </NuxtLink>
-        <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-secondary">
-          Partner With Us
+        <NuxtLink to="/work-with-us" class="btn btn-secondary">
+          Work With Us
         </NuxtLink>
       </div>
     </section>

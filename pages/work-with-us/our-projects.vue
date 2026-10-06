@@ -2,156 +2,16 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Our Projects</h1>
+      <h1>Client Projects</h1>
       <p>
-        From non-profits and independent professionals to start-ups, big enterprises, and our own guild infrastructure,
-        every project we take on is an opportunity to create real impact and fuel free education.
+        Speakers, artists, coaches, non-profits and start-ups. See what we built with them, what they said
+        afterwards, and how client work funds free education.
       </p>
-      <span class="launch-badge">Real Work. Real Impact. Real Learning.</span>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- SHIPPED WORK: Case Study Cards                 -->
-    <!-- ═══════════════════════════════════════════════ -->
-
-    <!-- Non-Profit Section -->
-    <section class="projects-section">
-      <div class="content">
-        <div class="section-header">
-          <div class="section-tag">Non-Profit</div>
-          <h2>Giving Back Through Technology</h2>
-          <p>We apply our skills where they matter most, supporting missions that serve communities for free.</p>
-        </div>
-
-        <div class="case-study-grid">
-          <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="case-study-card">
-            <div class="case-study-hero">
-              <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" class="case-study-image" />
-              <span class="status-badge status-badge--maintenance">On Maintenance</span>
-              <img src="/projects/wmsmile/og-image.jpeg" alt="WM Smile Generation Uganda Logo" class="case-study-logo" />
-            </div>
-            <div class="case-study-body">
-              <h3>WM Smile Generation Uganda</h3>
-              <p class="case-study-result">
-                Built a full website for a Ugandan non-profit, giving them a digital presence to attract donors,
-                share impact stories, and coordinate community healthcare and education programmes.
-              </p>
-              <div class="case-study-stack">
-                <span class="stack-tag">Nuxt 3</span>
-                <span class="stack-tag">TypeScript</span>
-                <span class="stack-tag">Tailwind</span>
-                <span class="stack-tag">Kubernetes</span>
-              </div>
-              <span class="case-study-link">View Case Study →</span>
-            </div>
-          </NuxtLink>
-
-          <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="case-study-card">
-            <div class="case-study-hero">
-              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" class="case-study-image" />
-              <span class="status-badge status-badge--active">Active Development</span>
-            </div>
-            <div class="case-study-body">
-              <h3>ChanhDao.vn</h3>
-              <p class="case-study-result">
-                Digitalised 162 Buddhist lessons with AI-powered Q&A and structured learning paths for Vietnamese
-                learners, running entirely on a self-hosted Kubernetes cluster with zero hosting cost to the client.
-              </p>
-              <div class="case-study-stack">
-                <span class="stack-tag">Nuxt 3</span>
-                <span class="stack-tag">Python</span>
-                <span class="stack-tag">OpenAI</span>
-                <span class="stack-tag">Kubernetes</span>
-                <span class="stack-tag">PostgreSQL</span>
-              </div>
-              <span class="case-study-link">View Case Study →</span>
-            </div>
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
-
-    <!-- Independent Professionals Section -->
-    <section class="projects-section alt-bg">
-      <div class="content">
-        <div class="section-header">
-          <div class="section-tag">Independent Professionals</div>
-          <h2>Built at No Development Fee</h2>
-          <p>
-            Speakers, artisans, and coaches betting on themselves. We designed, built, and launched every site below
-            without charging a development fee, because the clients who can carry our rates are what make that possible.
-          </p>
-        </div>
-
-        <div class="case-study-grid">
-          <NuxtLink to="/work-with-us/projects/matt-harr-speaker" class="case-study-card">
-            <div class="case-study-hero">
-              <img src="/projects/mattharr/card.jpg" alt="Matt Harr Speaker" class="case-study-image" />
-              <span class="status-badge status-badge--free">No Development Fee</span>
-            </div>
-            <div class="case-study-body">
-              <h3>Matt Harr Speaker</h3>
-              <p class="case-study-result">
-                Turned 35 years of teaching and coaching stories into a positioned speaking brand, with a nine-page
-                site, a writing archive, and a qualified booking form that school districts can act on.
-              </p>
-              <div class="case-study-stack">
-                <span class="stack-tag">Astro</span>
-                <span class="stack-tag">Cloudflare</span>
-                <span class="stack-tag">Web3Forms</span>
-                <span class="stack-tag">SEO &amp; RSS</span>
-              </div>
-              <span class="case-study-link">View Case Study →</span>
-            </div>
-          </NuxtLink>
-
-          <NuxtLink to="/work-with-us/projects/broad-strokes-studio" class="case-study-card">
-            <div class="case-study-hero">
-              <img src="/projects/broadstrokes/card.jpg" alt="Broad Strokes Studio" class="case-study-image" />
-              <span class="status-badge status-badge--free">No Development Fee</span>
-            </div>
-            <div class="case-study-body">
-              <h3>Broad Strokes Studio</h3>
-              <p class="case-study-result">
-                Two months building a bespoke calligraphy studio a commission funnel with published pricing, Stripe
-                checkout, and Cal.com booking, shot entirely with real photographs of real work at the client's request.
-              </p>
-              <div class="case-study-stack">
-                <span class="stack-tag">Astro</span>
-                <span class="stack-tag">Stripe</span>
-                <span class="stack-tag">Cal.com</span>
-                <span class="stack-tag">Cloudflare</span>
-              </div>
-              <span class="case-study-link">View Case Study →</span>
-            </div>
-          </NuxtLink>
-
-          <NuxtLink to="/work-with-us/projects/the-meek-method" class="case-study-card">
-            <div class="case-study-hero">
-              <img src="/projects/meekmethod/card.jpg" alt="The Meek Method" class="case-study-image" />
-              <span class="status-badge status-badge--free">No Development Fee</span>
-            </div>
-            <div class="case-study-body">
-              <h3>The Meek Method</h3>
-              <p class="case-study-result">
-                Sharpened a hard-to-explain coaching method into a position a stranger recognises in seconds, then
-                built the twelve-page practice site and the offer ladder that runs from a free group lab to private coaching.
-              </p>
-              <div class="case-study-stack">
-                <span class="stack-tag">Astro</span>
-                <span class="stack-tag">Cloudflare</span>
-                <span class="stack-tag">Web3Forms</span>
-                <span class="stack-tag">llms.txt</span>
-              </div>
-              <span class="case-study-link">View Case Study →</span>
-            </div>
-          </NuxtLink>
-        </div>
-      </div>
+      <span class="launch-badge">Real Work. Real Clients. Real Impact.</span>
     </section>
 
     <!-- Client Voices Section -->
-    <section class="projects-section">
+    <section class="projects-section alt-bg">
       <div class="content">
         <div class="section-header">
           <div class="section-tag">Client Voices</div>
@@ -203,6 +63,158 @@
               </div>
             </figcaption>
           </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Independent Professionals Section -->
+    <section class="projects-section">
+      <div class="content">
+        <div class="section-header">
+          <div class="section-tag">Independent Professionals</div>
+          <h2>Built at No Development Fee</h2>
+          <p>
+            Speakers, artisans, and coaches betting on themselves. No development fee: each of these clients is on
+            our monthly hosting, maintenance and support plan, which is the same way you would start.
+          </p>
+        </div>
+
+        <div class="case-study-grid">
+          <NuxtLink to="/work-with-us/projects/matt-harr-speaker" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/mattharr/card.jpg" alt="Matt Harr Speaker" class="case-study-image" />
+              <span class="status-badge status-badge--free">No Development Fee</span>
+            </div>
+            <div class="case-study-body">
+              <h3>Matt Harr Speaker</h3>
+              <p class="case-study-result">
+                Turned 35 years of teaching and coaching stories into a positioned speaking brand, with a nine-page
+                site, a writing archive, and a qualified booking form that school districts can act on.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Astro</span>
+                <span class="stack-tag">Cloudflare</span>
+                <span class="stack-tag">Web3Forms</span>
+                <span class="stack-tag">SEO &amp; RSS</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink to="/work-with-us/projects/broad-strokes-studio" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/broadstrokes/card.jpg" alt="Broad Strokes Studio" class="case-study-image" />
+              <span class="status-badge status-badge--free">No Development Fee</span>
+            </div>
+            <div class="case-study-body">
+              <h3>Broad Strokes Studio</h3>
+              <p class="case-study-result">
+                Two months building a commission funnel for a bespoke calligraphy studio, with published pricing,
+                Stripe checkout, and Cal.com booking, shot entirely with real photographs of real work at the client's request.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Astro</span>
+                <span class="stack-tag">Stripe</span>
+                <span class="stack-tag">Cal.com</span>
+                <span class="stack-tag">Cloudflare</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink to="/work-with-us/projects/the-meek-method" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/meekmethod/card.jpg" alt="The Meek Method" class="case-study-image" />
+              <span class="status-badge status-badge--free">No Development Fee</span>
+            </div>
+            <div class="case-study-body">
+              <h3>The Meek Method</h3>
+              <p class="case-study-result">
+                Sharpened a hard-to-explain coaching method into a position a stranger recognises in seconds, then
+                built the twelve-page practice site and the offer ladder that runs from a free group lab to private coaching.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Astro</span>
+                <span class="stack-tag">Cloudflare</span>
+                <span class="stack-tag">Web3Forms</span>
+                <span class="stack-tag">llms.txt</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI & Learning Tools Section -->
+    <section class="projects-section alt-bg">
+      <div class="content">
+        <div class="section-header">
+          <div class="section-tag">AI &amp; Learning Tools</div>
+          <h2>AI That Teaches From Your Own Material</h2>
+          <p>
+            The kind of tool a teacher or coach can use with students: structured lessons and AI answers drawn from
+            your own content.
+          </p>
+        </div>
+
+        <div class="case-study-grid case-study-grid--single">
+          <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" class="case-study-image" />
+              <span class="status-badge status-badge--active">Active Development</span>
+            </div>
+            <div class="case-study-body">
+              <h3>ChanhDao.vn</h3>
+              <p class="case-study-result">
+                Digitalised 162 Buddhist lessons with AI-powered Q&A and structured learning paths for Vietnamese
+                learners, running entirely on a self-hosted Kubernetes cluster with zero hosting cost to the client.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Nuxt 3</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">OpenAI</span>
+                <span class="stack-tag">Kubernetes</span>
+                <span class="stack-tag">PostgreSQL</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- Non-Profit Section -->
+    <section class="projects-section">
+      <div class="content">
+        <div class="section-header">
+          <div class="section-tag">Non-Profit</div>
+          <h2>Giving Back Through Technology</h2>
+          <p>We apply our skills where they matter most, supporting missions that serve communities for free.</p>
+        </div>
+
+        <div class="case-study-grid case-study-grid--single">
+          <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" class="case-study-image" />
+              <span class="status-badge status-badge--maintenance">On Maintenance</span>
+              <img src="/projects/wmsmile/og-image.jpeg" alt="WM Smile Generation Uganda Logo" class="case-study-logo" />
+            </div>
+            <div class="case-study-body">
+              <h3>WM Smile Generation Uganda</h3>
+              <p class="case-study-result">
+                Built a full website for a Ugandan non-profit, giving them a digital presence to attract donors,
+                share impact stories, and coordinate community healthcare and education programmes.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Nuxt 3</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">Tailwind</span>
+                <span class="stack-tag">Kubernetes</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -263,13 +275,13 @@
       </div>
     </section>
 
-    <!-- Big Company Section -->
+    <!-- Larger Organizations Section -->
     <section class="projects-section">
       <div class="content">
         <div class="section-header">
-          <div class="section-tag">Big Company</div>
-          <h2>Enterprise-Grade Solutions</h2>
-          <p>We tackle complex operational challenges for large organisations, delivering automation and tools that scale.</p>
+          <div class="section-tag">Larger Organizations</div>
+          <h2>Automation That Saves Days</h2>
+          <p>We also take on operational problems for larger organisations, delivering automation and tools that scale.</p>
         </div>
 
         <div class="case-study-grid case-study-grid--single">
@@ -305,130 +317,14 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- GUILD PLATFORM ROADMAP: Simpler Cards          -->
-    <!-- ═══════════════════════════════════════════════ -->
-    <section class="roadmap-section">
-      <div class="content">
-        <div class="section-header">
-          <div class="section-tag">Guild Platform</div>
-          <h2>What We Are Building</h2>
-          <p>
-            Skill-Wanderer is not just a product. It is our mission made tangible. Every module below is being
-            built in the open, by our guild, for our community.
-          </p>
-        </div>
-
-        <div class="roadmap-grid">
-          <div class="roadmap-card roadmap-card--live">
-            <div class="roadmap-icon">🏠</div>
-            <div class="roadmap-body">
-              <div class="roadmap-header">
-                <h4>This Landing Page</h4>
-                <span class="roadmap-status roadmap-status--live">Live</span>
-              </div>
-              <p>The public face of the guild, communicating our mission, model, and community to the world.</p>
-              <div class="roadmap-tags">
-                <span class="roadmap-tag">Nuxt</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="roadmap-card">
-            <div class="roadmap-icon">📚</div>
-            <div class="roadmap-body">
-              <div class="roadmap-header">
-                <h4>LMS</h4>
-                <span class="roadmap-status">In Progress</span>
-              </div>
-              <p>A Learning Management System purpose-built for structured, guild-driven education at scale.</p>
-              <div class="roadmap-tags">
-                <span class="roadmap-tag">Education</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="roadmap-card">
-            <div class="roadmap-icon">✏️</div>
-            <div class="roadmap-body">
-              <div class="roadmap-header">
-                <h4>Blog System</h4>
-                <span class="roadmap-status">In Progress</span>
-              </div>
-              <p>A publishing system for knowledge sharing, enabling guild members to document their journeys.</p>
-              <div class="roadmap-tags">
-                <span class="roadmap-tag">Content</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="roadmap-card">
-            <div class="roadmap-icon">🧭</div>
-            <div class="roadmap-body">
-              <div class="roadmap-header">
-                <h4>PathFinder AI Fleet</h4>
-                <span class="roadmap-status">In Progress</span>
-              </div>
-              <p>AI agents guiding guild members through personalised learning paths based on goals and progress.</p>
-              <div class="roadmap-tags">
-                <span class="roadmap-tag">AI</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="roadmap-card">
-            <div class="roadmap-icon">🔧</div>
-            <div class="roadmap-body">
-              <div class="roadmap-header">
-                <h4>Admin & Teacher Panel</h4>
-                <span class="roadmap-status">In Progress</span>
-              </div>
-              <p>A control centre for administrators and mentors to manage content and guild operations.</p>
-              <div class="roadmap-tags">
-                <span class="roadmap-tag">Dashboard</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="roadmap-card">
-            <div class="roadmap-icon">💬</div>
-            <div class="roadmap-body">
-              <div class="roadmap-header">
-                <h4>Communication Module</h4>
-                <span class="roadmap-status">In Progress</span>
-              </div>
-              <p>Real-time messaging and notifications connecting guild members, mentors, and the community.</p>
-              <div class="roadmap-tags">
-                <span class="roadmap-tag">Messaging</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="roadmap-card">
-            <div class="roadmap-icon">🔒</div>
-            <div class="roadmap-body">
-              <div class="roadmap-header">
-                <h4>Authorization Module</h4>
-                <span class="roadmap-status">In Progress</span>
-              </div>
-              <p>Robust identity and access management ensuring secure, role-based access across all guild modules.</p>
-              <div class="roadmap-tags">
-                <span class="roadmap-tag">Security</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="content">
-        <h2>Want to Engage the Guild?</h2>
-        <p>If you have a project that needs a guild partner committed to real impact, let's talk.</p>
+        <h2>Have an Idea Like These?</h2>
+        <p>Tell us what you want to build. You'll see a free working prototype before you commit to anything.</p>
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us/become-a-partner" class="btn-primary">Become a Partner</NuxtLink>
-          <NuxtLink to="/work-with-us/success-sharing-model" class="btn-secondary">How It Works</NuxtLink>
+          <NuxtLink to="/contact" class="btn-primary">Tell Us About Your Idea</NuxtLink>
+          <NuxtLink to="/work-with-us/service-model" class="btn-secondary">How It Works</NuxtLink>
         </div>
       </div>
     </section>
@@ -438,15 +334,15 @@
 <script setup lang="ts">
 // Icons replaced with emojis
 useSEO({
-  title: 'Our Projects | Skill-Wanderer',
+  title: 'Client Projects | Skill-Wanderer',
   description:
-    'Explore the real-world projects the Skill-Wanderer guild has built, from non-profits, independent professionals, and start-ups to enterprise solutions and our own guild infrastructure.',
+    'Websites and AI tools built for speakers, artists, coaches, non-profits and start-ups, with what the clients said afterwards. No development fee, no lock-in.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['software portfolio', 'web development projects', 'non-profit technology', 'startup projects', 'guild project showcase', 'case studies', 'pro bono web development'],
+  keywords: ['client projects', 'website for coaches', 'website for speakers', 'AI learning tool', 'non-profit website', 'case studies', 'no development fee'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
-    { name: 'Our Projects', url: 'https://skill-wanderer.com/work-with-us/our-projects' },
+    { name: 'Client Projects', url: 'https://skill-wanderer.com/work-with-us/our-projects' },
   ]),
 })
 </script>
@@ -823,105 +719,6 @@ useSEO({
   transform: translateX(4px);
 }
 
-/* ═══════════════════════════════════════════════════ */
-/* ROADMAP: Simpler Internal Module Cards            */
-/* ═══════════════════════════════════════════════════ */
-.roadmap-section {
-  padding: 90px 20px;
-  background: var(--darker-bg);
-  border-top: 1px solid rgba(255, 107, 53, 0.08);
-}
-
-.roadmap-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 20px;
-}
-
-.roadmap-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 14px;
-  padding: 20px 22px;
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  transition: all 0.25s ease;
-}
-
-.roadmap-card:hover {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.12);
-}
-
-.roadmap-card--live {
-  border-color: rgba(34, 197, 94, 0.2);
-  background: rgba(34, 197, 94, 0.03);
-}
-
-.roadmap-icon {
-  font-size: 1.6rem;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.roadmap-body {
-  flex: 1;
-  min-width: 0;
-}
-
-.roadmap-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 6px;
-}
-
-.roadmap-header h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: white;
-  margin: 0;
-}
-
-.roadmap-status {
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  padding: 3px 10px;
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.5);
-  white-space: nowrap;
-}
-
-.roadmap-status--live {
-  background: rgba(34, 197, 94, 0.15);
-  color: #4ade80;
-}
-
-.roadmap-body p {
-  font-size: 0.88rem;
-  line-height: 1.6;
-  opacity: 0.65;
-  margin-bottom: 10px;
-}
-
-.roadmap-tags {
-  display: flex;
-  gap: 6px;
-}
-
-.roadmap-tag {
-  font-size: 0.72rem;
-  padding: 2px 10px;
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
 /* ── CTA Section ───────────────────────────────────── */
 .cta-section {
   padding: 90px 20px;
@@ -1022,10 +819,6 @@ useSEO({
 
   .case-study-hero {
     height: 200px;
-  }
-
-  .roadmap-grid {
-    grid-template-columns: 1fr;
   }
 }
 </style>

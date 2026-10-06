@@ -272,8 +272,8 @@
           </div>
         </div>
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-primary">
-            Become a Partner
+          <NuxtLink to="/contact" class="btn btn-primary">
+            Start a Conversation
           </NuxtLink>
           <NuxtLink to="/learning-path" class="btn btn-secondary">
             Start Your Learning Journey
@@ -897,7 +897,12 @@ useSEO({
   }
 
   .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+    overflow-wrap: anywhere;
   }
 
   .arch-grid--three,

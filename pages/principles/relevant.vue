@@ -652,6 +652,8 @@ onMounted(() => {
 
   .bridge-side {
     width: 100%;
+    box-sizing: border-box;
+    padding: 28px 24px;
   }
 
   .bridge-connection {

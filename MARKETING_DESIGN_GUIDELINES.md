@@ -120,13 +120,25 @@ background-clip: text;
 
 Visual tone and copy tone should reinforce each other.
 
+### Who we speak to first
+
+The primary reader is a client: a solo founder, freelancer, coach, consultant, writer, or small business that is starting out, is not technical, has a small budget, and is afraid of risk and vendor lock-in. Learners are the second audience: speak to them clearly, but do not lead with them on client-facing pieces.
+
+Client-facing copy follows the StoryBrand order: name the reader's problem, show Skill-Wanderer as the guide (empathy plus Quan's experience), give the same 3-step plan everywhere, then one clear call to action.
+
+- The plan: ① Tell us your idea → ② Get a free working prototype (walk away and owe nothing) → ③ Launch with no development fee, then a fee for hosting, maintenance, support and occasional changes, paid monthly or quarterly.
+- No lock-in, in concrete terms: the client owns their domain, can see the code and configuration, gets read-only server access where it applies, and can migrate anytime.
+- The one-liner: Small businesses and solo founders can't risk thousands on tech that might not work. Skill-Wanderer builds a free working prototype first, launches it with no development fee, and stays on as your tech partner. Your project helps fund free tech education.
+- Funding stance: we fund education through client work, not donations, because it keeps us practical. Donations are only a fallback.
+
 ### Copy should sound like this
 
 - Honest
 - Grounded
 - Mission-focused
 - Clear about value
-- Welcoming to learners and partners
+- Plain words a non-technical client understands
+- Welcoming to learners, with clients first
 
 ### Copy should avoid
 
@@ -134,7 +146,8 @@ Visual tone and copy tone should reinforce each other.
 - Overpromising transformation
 - Pressure-driven scarcity tactics
 - Excessive exclamation marks
-- Corporate jargon that removes the human feel
+- Corporate jargon that removes the human feel, for example "engineering capacity", "delivery system", "pod", "artisans in parallel tracks", "architectural audit", or "CSR-ready"
+- Guild vocabulary on client-facing pieces without a plain explanation. Introduce Quan as "Quan Nguyen, founder (our Guild Master)" the first time
 
 ### Message framing patterns that fit the brand
 
@@ -276,13 +289,20 @@ The site uses rounded pill buttons and direct CTAs. Marketing should do the same
 
 ### CTA wording
 
-Prefer:
+Prefer, for clients:
 
-- Explore the platform
+- Tell us about your idea
+- Start a project
+- See how it works
+- See client projects
+
+Prefer, for learners:
+
+- Start learning
 - Meet our learners
 - View learning paths
-- Partner with us
-- Learn more
+
+Use one direct call to action per piece (usually "Tell us about your idea"), plus at most one softer option such as "See how it works".
 
 Avoid:
 

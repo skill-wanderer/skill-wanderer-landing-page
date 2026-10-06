@@ -1344,6 +1344,7 @@ useSEO({
   }
 
   .pipeline-step {
+    box-sizing: border-box;
     flex-direction: column;
     text-align: center;
   }

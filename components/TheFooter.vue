@@ -1,10 +1,21 @@
 <template>
   <footer>    <div class="footer-content">
+      <p class="footer-one-liner">
+        A tech partner for solo founders and small businesses: a free working prototype first, no development fee,
+        and no lock-in. Your project helps fund free tech education.
+      </p>
+      <p class="footer-email">
+        Email the Guild Master: <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>
+      </p>
       <div class="footer-links">
         <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/work-with-us">Work With Us</NuxtLink>
+        <NuxtLink to="/work-with-us/service-model">How It Works</NuxtLink>
+        <NuxtLink to="/work-with-us/our-projects">Client Projects</NuxtLink>
+        <NuxtLink to="/learning-path">Learning Paths</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/principles">Guild Principles</NuxtLink>
-        <NuxtLink to="/work-with-us">Engage the Guild</NuxtLink>
+        <NuxtLink to="/principles">12 Principles</NuxtLink>
+        <NuxtLink to="/help-the-mission">Help the Mission</NuxtLink>
         <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Dojo</a>
         <a href="https://wanderings.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Wanderings Blog</a>
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
@@ -12,8 +23,8 @@
         <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
         <NuxtLink to="/terms-of-service">Terms of Service</NuxtLink>
         <NuxtLink to="/cookie-policy">Cookie Policy</NuxtLink>
-        <!-- Easter egg: Hidden link to mission page -->
-        <NuxtLink to="/mission" class="easter-egg-footer" title="The Heart of Skill-Wanderer (Motivation for Founder)">❤️</NuxtLink>
+        <!-- Easter egg: Hidden link to the mission section of the About page -->
+        <NuxtLink to="/about#mission" class="easter-egg-footer" title="The Heart of Skill-Wanderer (Motivation for Founder)">❤️</NuxtLink>
       </div>
       
       <div class="open-source-info">
@@ -48,6 +59,32 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+}
+
+.footer-one-liner {
+  max-width: 720px;
+  margin: 0 auto 12px;
+  color: var(--light-text);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.footer-email {
+  margin: 0 0 30px;
+  color: var(--light-text);
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.footer-email a {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-email a:hover {
+  text-decoration: underline;
 }
 
 .footer-links {

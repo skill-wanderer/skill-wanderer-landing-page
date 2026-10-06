@@ -2,154 +2,233 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Engage the Guild</h1>
+      <span class="hero-eyebrow">Work With Us</span>
+      <h1>A Tech Partner for Big Ideas on Small Budgets</h1>
       <p>
-        A tech guild for organizations that need senior-led delivery, practical collaboration,
-        and systems they can fully own. Explore what we build, who we work with,
-        and how a guild partnership works in practice.
+        We help solo founders, freelancers, coaches, consultants, writers and small businesses get their idea
+        online: websites, AI tools, booking and payments. You see a free working prototype first, and there is
+        no development fee.
       </p>
-      <span class="launch-badge">Real Craft. Real Learning. Real Impact.</span>
+      <div class="hero-actions">
+        <NuxtLink to="/contact" class="btn btn-primary">Tell Us About Your Idea</NuxtLink>
+        <NuxtLink to="/work-with-us/service-model" class="btn btn-secondary">See How It Works</NuxtLink>
+      </div>
+      <span class="launch-badge">Free Prototype · No Development Fee · No Lock-In</span>
     </section>
 
-    <!-- How It All Connects Section -->
-    <section class="connection-section">
+    <!-- Who We Help -->
+    <section id="who-its-for" class="audience-section">
       <div class="content">
         <div class="section-header">
-          <h2>How the Guild Works</h2>
-          <p>A simple path from first conversation to long-term collaboration</p>
+          <h2>Who We Help</h2>
+          <p>People who are starting out, have a clear idea, and don't want to gamble a big budget on tech.</p>
         </div>
 
-        <div class="cycle-flow">
-          <div class="cycle-step">
-            <div class="cycle-icon">🤝</div>
-            <h3>Free First Prototype</h3>
-            <p>For accepted projects we build a working prototype at no cost, before any commitment is made.</p>
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="audience-icon" aria-hidden="true">🚀</div>
+            <h3>Solo Founders &amp; Entrepreneurs</h3>
+            <p>You're starting something and need it online without hiring a whole team.</p>
           </div>
-          <div class="cycle-arrow">→</div>
-          <div class="cycle-step">
-            <div class="cycle-icon">🔧</div>
-            <h3>Scope &amp; Guild Delivery</h3>
-            <p>We confirm the real scope against the prototype, then build under senior-led oversight.</p>
+          <div class="audience-card">
+            <div class="audience-icon" aria-hidden="true">💼</div>
+            <h3>Freelancers &amp; Consultants</h3>
+            <p>You need clients to understand what you do, and how to work with you.</p>
           </div>
-          <div class="cycle-arrow">→</div>
-          <div class="cycle-step">
-            <div class="cycle-icon">🔓</div>
-            <h3>No Vendor Lock-In</h3>
-            <p>You can inspect the code and project materials, and move the project elsewhere whenever you choose.</p>
+          <div class="audience-card">
+            <div class="audience-icon" aria-hidden="true">🎓</div>
+            <h3>Coaches &amp; Teachers</h3>
+            <p>You want a practice site, a booking page, or an AI practice tool for your students.</p>
           </div>
-          <div class="cycle-arrow">→</div>
-          <div class="cycle-step">
-            <div class="cycle-icon">🌱</div>
-            <h3>Long-Term Fit</h3>
-            <p>Continue with the guild while it adds value, or take full ownership when your team is ready.</p>
+          <div class="audience-card">
+            <div class="audience-icon" aria-hidden="true">✍️</div>
+            <h3>Writers &amp; Creators</h3>
+            <p>You want a home for your work that people can find, read, and buy from.</p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-icon" aria-hidden="true">🏪</div>
+            <h3>Small Businesses Starting Out</h3>
+            <p>You need a professional presence and simple tools, without the big agency bill.</p>
+          </div>
+        </div>
+
+        <p class="audience-note">
+          We also work with non-profits and start-ups. See our
+          <NuxtLink to="/work-with-us/our-projects">client projects</NuxtLink>, or check
+          <NuxtLink to="/work-with-us/service-model#good-fit">whether your project is a good fit</NuxtLink>.
+        </p>
+      </div>
+    </section>
+
+    <!-- What We Can Build -->
+    <section id="what-we-build" class="build-section">
+      <div class="content">
+        <div class="section-header">
+          <h2>What We Can Build for You</h2>
+          <p>Every project is custom-built, handled from start to finish, and explained in plain language.</p>
+        </div>
+
+        <div class="build-grid">
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🌍</div>
+            <h3>A Website That Explains What You Do</h3>
+            <p>A clear, fast site that turns visitors into enquiries, with a message we help you sharpen first.</p>
+            <p class="build-example">
+              Example:
+              <NuxtLink to="/work-with-us/projects/matt-harr-speaker">Matt Harr Speaker</NuxtLink>,
+              <NuxtLink to="/work-with-us/projects/the-meek-method">The Meek Method</NuxtLink>
+            </p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🛒</div>
+            <h3>Selling &amp; Booking</h3>
+            <p>
+              Published prices, Stripe checkout, booking calendars and intake forms, so clients can buy or book
+              without emailing back and forth.
+            </p>
+            <p class="build-example">
+              Example: <NuxtLink to="/work-with-us/projects/broad-strokes-studio">Broad Strokes Studio</NuxtLink>
+            </p>
+          </div>
+          <div class="build-card build-card--featured">
+            <div class="build-icon" aria-hidden="true">🤖</div>
+            <h3>AI Tools for Your Students or Clients</h3>
+            <p>
+              AI practice assignments, questions and answers over your own lessons, or an assistant that answers
+              from your own material.
+            </p>
+            <p class="build-example">
+              Example: <NuxtLink to="/work-with-us/projects/chanhdao-vn">ChanhDao.vn</NuxtLink>, AI Q&amp;A over 162 lessons
+            </p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">⚡</div>
+            <h3>Small Automations</h3>
+            <p>Lead notifications, reports, data checks and other repetitive tasks, done for you automatically.</p>
+            <p class="build-example">
+              Example: <NuxtLink to="/work-with-us/projects/recruitment-validator">Recruitment Validator</NuxtLink>, days of checking down to minutes
+            </p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">📱</div>
+            <h3>Apps &amp; Bigger Platforms, When You're Ready</h3>
+            <p>Mobile apps, multi-user platforms and AI products. Start small, and grow into them.</p>
+            <p class="build-example">
+              Example:
+              <NuxtLink to="/work-with-us/projects/mindyminds">MindyMinds</NuxtLink>,
+              <NuxtLink to="/work-with-us/projects/mindyplay">MindyPlay</NuxtLink>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Explore the Guild Section -->
-    <section class="pillars-section">
+    <!-- Advice, not only code -->
+    <section class="advice-section">
       <div class="content">
-        <div class="section-header">
-          <h2>Explore the Guild</h2>
-          <p>Everything you need to know about working with us</p>
-        </div>
-
-        <div class="pillars-grid pillars-grid--six">
-          <div class="pillar-card">
-            <div class="pillar-icon">💻</div>
-            <h3>What We Build</h3>
+        <div class="advice-block">
+          <div class="advice-text">
+            <h2>Not Only Tech: Honest Advice Too</h2>
             <p>
-              Custom web platforms, internal tools, and digital products, built from scratch with modern frameworks.
-              No WordPress, no templates, no lock-in.
+              Many clients need more than code. We help you find the message your site should carry, shape your
+              offer, and decide what to build first, and what not to build at all.
             </p>
-            <NuxtLink to="/work-with-us/what-we-build" class="pillar-link">
-              See What We Build <span>→</span>
-            </NuxtLink>
+            <NuxtLink to="/work-with-us/projects/matt-harr-speaker" class="advice-link">Read Matt's story →</NuxtLink>
           </div>
-
-          <div class="pillar-card">
-            <div class="pillar-icon">🎯</div>
-            <h3>Who We Work With</h3>
-            <p>
-              Non-profits, early-stage startups, and mission-driven organizations that value long-term thinking,
-              open technology, and practical learning.
-            </p>
-            <NuxtLink to="/work-with-us/who-we-work-with" class="pillar-link">
-              Is This For You? <span>→</span>
-            </NuxtLink>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-icon">📁</div>
-            <h3>Our Projects</h3>
-            <p>
-              From non-profits to startups to our own guild infrastructure, these projects show how
-              the guild designs, ships, and supports real systems.
-            </p>
-            <NuxtLink to="/work-with-us/our-projects" class="pillar-link">
-              View Our Work <span>→</span>
-            </NuxtLink>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-icon">🧭</div>
-            <h3>Project Scoping</h3>
-            <p>
-              Tell us what you are building and we will recommend the right engagement model,
-              timeline, and first step.
-            </p>
-            <NuxtLink to="/contact" class="pillar-link">
-              Start the Conversation <span>→</span>
-            </NuxtLink>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-icon">💡</div>
-            <h3>Our Service Model</h3>
-            <p>
-              No separate upfront development fee for accepted projects, on websites and apps alike.
-              A required free prototype first, then ongoing hosting and technical care.
-            </p>
-            <NuxtLink to="/work-with-us/service-model" class="pillar-link">
-              Read the Service Model <span>→</span>
-            </NuxtLink>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-icon">🚀</div>
-            <h3>Become a Guild Partner</h3>
-            <p>
-              Ready to engage? Start with a free prototype, settle into a steady rhythm,
-              and keep full ownership at every stage. Projects are accepted selectively.
-            </p>
-            <NuxtLink to="/work-with-us/become-a-partner" class="pillar-link">
-              Become a Partner <span>→</span>
-            </NuxtLink>
-          </div>
+          <figure class="advice-quote">
+            <blockquote>
+              "He has been a trusted business adviser throughout the process, offering honest feedback and
+              practical guidance on how to position myself, present my services, reach potential clients, and grow
+              my speaking business."
+            </blockquote>
+            <figcaption>
+              <img src="/projects/mattharr/matt-harr-avatar.jpg" alt="Matt Harr" loading="lazy" />
+              <span><strong>Matt Harr</strong> · Speaker on school culture and leadership</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- Proof of Work: Project Showcase Strip -->
+    <!-- The plan, in short -->
+    <section class="plan-section">
+      <div class="content">
+        <div class="section-header">
+          <h2>How It Works</h2>
+          <p>Three simple steps. You can stop after any of them.</p>
+        </div>
+        <ol class="plan-steps">
+          <li class="plan-step">
+            <span class="plan-number">1</span>
+            <h3>Tell us your idea</h3>
+            <p>Send a short message or email Quan. He replies with a time for one short call.</p>
+          </li>
+          <li class="plan-step">
+            <span class="plan-number">2</span>
+            <h3>Get a free working prototype</h3>
+            <p>If it's a good fit, we build one for free. React to something real, or walk away and owe nothing.</p>
+          </li>
+          <li class="plan-step">
+            <span class="plan-number">3</span>
+            <h3>Launch and grow together</h3>
+            <p>No development fee. A monthly fee covers hosting, maintenance, support and occasional changes. Leave anytime.</p>
+          </li>
+        </ol>
+        <div class="plan-cta">
+          <NuxtLink to="/work-with-us/service-model" class="btn-outline">
+            Read the Full Details <span>→</span>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof of Work -->
     <section class="proof-of-work-section">
       <div class="content">
         <div class="section-header">
-          <h2>Guild Projects in Motion</h2>
-          <p>Real client work across active development, maintenance, and shipped delivery.</p>
+          <h2>Recent Client Projects</h2>
+          <p>Real work for real clients.</p>
         </div>
         <div class="proof-strip">
-          <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="proof-card">
+          <NuxtLink to="/work-with-us/projects/matt-harr-speaker" class="proof-card">
             <div class="proof-image">
-              <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" loading="lazy" />
-              <span class="proof-badge">Non-Profit</span>
+              <img src="/projects/mattharr/thumb.jpg" alt="Matt Harr Speaker" loading="lazy" />
+              <span class="proof-badge">No Development Fee</span>
             </div>
             <div class="proof-meta">
-              <h4>WM Smile Generation</h4>
-              <p>Full website for a Ugandan non-profit supporting healthcare and education.</p>
+              <h4>Matt Harr Speaker</h4>
+              <p>35 years of school leadership turned into a positioned speaking brand.</p>
               <div class="proof-tags">
-                <span>Nuxt 3</span>
-                <span>Kubernetes</span>
+                <span>Astro</span>
+                <span>Cloudflare</span>
+              </div>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/work-with-us/projects/broad-strokes-studio" class="proof-card">
+            <div class="proof-image">
+              <img src="/projects/broadstrokes/thumb.jpg" alt="Broad Strokes Studio" loading="lazy" />
+              <span class="proof-badge">No Development Fee</span>
+            </div>
+            <div class="proof-meta">
+              <h4>Broad Strokes Studio</h4>
+              <p>A calligraphy commission site with published pricing and Stripe checkout.</p>
+              <div class="proof-tags">
+                <span>Astro</span>
+                <span>Stripe</span>
+              </div>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/work-with-us/projects/the-meek-method" class="proof-card">
+            <div class="proof-image">
+              <img src="/projects/meekmethod/thumb.jpg" alt="The Meek Method" loading="lazy" />
+              <span class="proof-badge">No Development Fee</span>
+            </div>
+            <div class="proof-meta">
+              <h4>The Meek Method</h4>
+              <p>Positioning and a full practice site for a decision coaching business.</p>
+              <div class="proof-tags">
+                <span>Astro</span>
+                <span>Web3Forms</span>
               </div>
             </div>
           </NuxtLink>
@@ -160,147 +239,33 @@
             </div>
             <div class="proof-meta">
               <h4>ChanhDao.vn</h4>
-              <p>162 Buddhist lessons with AI Q&A on a self-hosted Kubernetes cluster.</p>
+              <p>162 Buddhist lessons with AI Q&amp;A on a self-hosted Kubernetes cluster.</p>
               <div class="proof-tags">
                 <span>AI</span>
                 <span>Python</span>
               </div>
             </div>
           </NuxtLink>
-          <NuxtLink to="/work-with-us/projects/mindyminds" class="proof-card">
-            <div class="proof-image">
-              <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds" loading="lazy" />
-              <span class="proof-badge">Start-up</span>
-            </div>
-            <div class="proof-meta">
-              <h4>MindyMinds</h4>
-              <p>Multi-tenant AI chatbot platform delivered in under 3 months.</p>
-              <div class="proof-tags">
-                <span>Next.js</span>
-                <span>OpenAI</span>
-              </div>
-            </div>
-          </NuxtLink>
-          <NuxtLink to="/work-with-us/projects/mindyplay" class="proof-card">
-            <div class="proof-image">
-              <img src="/projects/mindyplay/mindyplay-logo.jpg" alt="MindyPlay" loading="lazy" />
-              <span class="proof-badge">Start-up</span>
-            </div>
-            <div class="proof-meta">
-              <h4>MindyPlay</h4>
-              <p>Board game concept turned into an interactive Flutter mobile experience.</p>
-              <div class="proof-tags">
-                <span>Flutter</span>
-                <span>Firebase</span>
-              </div>
-            </div>
-          </NuxtLink>
         </div>
         <div class="proof-cta">
-          <NuxtLink to="/work-with-us/our-projects" class="btn btn-outline">
+          <NuxtLink to="/work-with-us/our-projects" class="btn-outline">
             View All Projects <span>→</span>
           </NuxtLink>
         </div>
       </div>
     </section>
 
-    <!-- How We Work Section -->
-    <section class="how-we-work-section">
-      <div class="content">
-        <div class="section-header">
-          <h2>How We Work</h2>
-          <p>Our collaboration model for building sustainable systems</p>
-        </div>
-
-        <!-- Intro + Guild callout -->
-        <div class="intro-callout">
-          <p>
-            Our collaboration model is built around a working prototype, scope confirmed against
-            real work, and steady ownership transfer. We keep scope visible and build systems that
-            remain stable, maintainable, and easy to evolve over time.
-          </p>
-          <div class="lockin-banner">
-            <span class="lockin-icon">🔓</span>
-            <div>
-              <strong>Zero Vendor Lock-In. By Design.</strong>
-              <span>
-                As a tech guild, our mission is education, not dependency. We build with open standards
-                and, where reasonably possible, give you access to the source code and project materials,
-                so you are never locked into working with us. You may stop the service and migrate the
-                project yourself or hire another provider to do it. The goal is for you to stay because
-                the service is useful, not because leaving is technically impossible.
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Journey Steps -->
-        <div class="journey-label">The Path</div>
-        <div class="journey-flow">
-          <div class="journey-step">
-            <div class="step-number">01</div>
-            <div class="step-body">
-              <h4>Light Initial Conversation</h4>
-              <p>A short exchange, usually LinkedIn, email, and your existing site, is enough to decide whether the project is a fit. Projects are accepted selectively.</p>
-            </div>
-          </div>
-          <div class="journey-connector">↓</div>
-          <div class="journey-step">
-            <div class="step-number">02</div>
-            <div class="step-body">
-              <h4>Free First Prototype</h4>
-              <p>Accepted projects begin with a working prototype built at no cost. It is a required step, so both sides can judge real work instead of an abstract brief.</p>
-            </div>
-          </div>
-          <div class="journey-connector">↓</div>
-          <div class="journey-step">
-            <div class="step-number">03</div>
-            <div class="step-body">
-              <h4>Scope, Price, Then Build</h4>
-              <p>We review the prototype together, the real scope becomes clear, and only then is the exact recurring price confirmed and full development begun.</p>
-            </div>
-          </div>
-          <div class="journey-connector">↓</div>
-          <div class="journey-step">
-            <div class="step-number">04</div>
-            <div class="step-body">
-              <h4>Launch &amp; Ongoing Care</h4>
-              <p>The initial build includes up to 2 structured revision rounds before launch, then continues under ongoing hosting and technical care.</p>
-            </div>
-          </div>
-          <div class="journey-connector">↓</div>
-          <div class="journey-step">
-            <div class="step-number">05</div>
-            <div class="step-body">
-              <h4>Ownership &amp; Independence</h4>
-              <p>You receive the context needed to operate, extend, and fully own the system without dependency on the guild.</p>
-            </div>
-          </div>
-          <div class="journey-connector">↓</div>
-          <div class="journey-step">
-            <div class="step-number">06</div>
-            <div class="step-body">
-              <h4>Continue or Transition</h4>
-              <p>Stay in an ongoing rhythm while the guild adds value, or transition fully to your own team when the time is right.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-content">
-        <h2>Ready to Engage the Guild?</h2>
+        <h2>Ready to Talk About Your Idea?</h2>
         <p>
-          Whether you're looking for a true technology partner or want to explore
-          whether the guild is the right fit for your project, we'd love to talk.
+          Tell us what you want to build. Quan reads every message himself and replies with a time for a short
+          call. Your project helps fund free tech education.
         </p>
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-primary">Become a Partner</NuxtLink>
-          <NuxtLink to="/work-with-us/our-projects" class="btn btn-secondary">See Our Projects</NuxtLink>
-          <NuxtLink to="/contact" class="btn btn-secondary">Start a Conversation</NuxtLink>
+          <NuxtLink to="/contact" class="btn btn-primary">Tell Us About Your Idea</NuxtLink>
+          <NuxtLink to="/work-with-us/our-projects" class="btn btn-secondary">See Client Projects</NuxtLink>
         </div>
       </div>
     </section>
@@ -309,11 +274,20 @@
 
 <script setup lang="ts">
 useSEO({
-  title: 'Engage the Guild | Skill-Wanderer',
+  title: 'Websites & AI Tools for Small Businesses | Skill-Wanderer',
   description:
-    'A tech guild for senior-led technology projects, clear collaboration, and long-term ownership. Explore what we build, who we work with, and how the guild works.',
+    'Websites, AI tools, booking and automation for solo founders, coaches, consultants, freelancers, writers and small businesses. Free prototype first.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['tech guild', 'software development partner', 'senior-led delivery', 'guild engagement', 'custom software', 'technology partnership', 'long-term ownership'],
+  keywords: [
+    'website for small business',
+    'website for coaches',
+    'website for consultants',
+    'AI tools for teachers',
+    'booking and payments website',
+    'tech partner',
+    'free prototype',
+    'no development fee',
+  ],
   structuredData: [
     createOrganizationSchema(),
     createBreadcrumbSchema([
@@ -343,24 +317,48 @@ useSEO({
   background: radial-gradient(circle at 30% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
 }
 
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  opacity: 0.85;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
 .hero h1 {
   font-size: 3.5rem;
+  line-height: 1.2;
   color: white;
-  margin-bottom: 20px;
+  max-width: 900px;
+  margin: 0 auto 20px;
   position: relative;
   z-index: 1;
 }
 
 .hero p {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
+  line-height: 1.75;
   color: var(--light-text);
   opacity: 0.9;
-  margin-bottom: 30px;
+  margin: 0 auto 32px;
   position: relative;
   z-index: 1;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 820px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
 }
 
 .launch-badge {
@@ -369,7 +367,7 @@ useSEO({
   padding: 12px 30px;
   border-radius: 50px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -395,12 +393,265 @@ useSEO({
 
 .section-header p {
   font-size: 1.2rem;
+  line-height: 1.7;
   opacity: 0.85;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Who We Help */
+.audience-section {
+  padding: 90px 0;
+  background: var(--darker-bg);
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 22px;
+}
+
+.audience-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 18px;
+  padding: 28px 24px;
+  transition: all 0.3s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 107, 53, 0.4);
+}
+
+.audience-icon {
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+.audience-card h3 {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.audience-card p {
+  opacity: 0.8;
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.audience-note {
+  text-align: center;
+  margin: 36px auto 0;
+  max-width: 760px;
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+.audience-note a {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.audience-note a:hover {
+  text-decoration: underline;
+}
+
+/* What We Build */
+.build-section {
+  padding: 90px 0;
+  background: var(--dark-bg);
+}
+
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.build-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.build-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 107, 53, 0.4);
+}
+
+.build-card--featured {
+  border-color: rgba(255, 107, 53, 0.35);
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 217, 61, 0.03));
+}
+
+.build-icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.build-card h3 {
+  color: var(--primary-orange);
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.build-card p {
+  opacity: 0.85;
+  line-height: 1.7;
+}
+
+.build-card .build-example {
+  margin-top: auto;
+  padding-top: 18px;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.build-example a {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.build-example a:hover {
+  text-decoration: underline;
+}
+
+/* Advice */
+.advice-section {
+  padding: 90px 0;
+  background: var(--darker-bg);
+}
+
+.advice-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: rgba(255, 107, 53, 0.05);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-left: 4px solid var(--primary-orange);
+  border-radius: 0 20px 20px 0;
+  padding: 44px;
+}
+
+.advice-text h2 {
+  font-size: 2rem;
+  color: var(--primary-orange);
+  margin-bottom: 16px;
+}
+
+.advice-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.88;
+  margin-bottom: 20px;
+}
+
+.advice-link {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.advice-link:hover {
+  text-decoration: underline;
+}
+
+.advice-quote {
+  margin: 0;
+}
+
+.advice-quote blockquote {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-style: italic;
+  opacity: 0.9;
+  margin: 0 0 20px;
+}
+
+.advice-quote figcaption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.advice-quote figcaption img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 107, 53, 0.3);
+}
+
+.advice-quote strong {
+  color: white;
+}
+
+/* Plan */
+.plan-section {
+  padding: 90px 0;
+  background: var(--dark-bg);
+}
+
+.plan-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.plan-step {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  padding: 32px 26px;
+}
+
+.plan-number {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.plan-step h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.plan-step p {
+  opacity: 0.82;
+  line-height: 1.7;
+}
+
+.plan-cta {
+  text-align: center;
+  margin-top: 36px;
 }
 
 /* Proof of Work Strip */
 .proof-of-work-section {
-  padding: 80px 20px;
+  padding: 80px 0;
   background: linear-gradient(135deg, rgba(255, 107, 53, 0.04) 0%, transparent 60%);
   border-top: 1px solid rgba(255, 107, 53, 0.08);
   border-bottom: 1px solid rgba(255, 107, 53, 0.08);
@@ -452,7 +703,7 @@ useSEO({
 .proof-badge {
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
   background: rgba(0, 0, 0, 0.65);
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.7rem;
@@ -520,159 +771,10 @@ useSEO({
   transform: translateY(-2px);
 }
 
-/* Cycle Flow Section */
-.connection-section {
-  padding: 80px 20px;
-  background: var(--darker-bg);
-}
-
-.cycle-flow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.cycle-step {
-  flex: 1;
-  min-width: 200px;
-  max-width: 250px;
-  text-align: center;
-  background: var(--card-bg);
-  border-radius: 20px;
-  padding: 30px 20px;
-  border: 1px solid rgba(255, 107, 53, 0.15);
-  transition: all 0.3s ease;
-}
-
-.cycle-step:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255, 107, 53, 0.4);
-}
-
-.cycle-icon {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.cycle-step h3 {
-  color: var(--primary-orange);
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.cycle-step p {
-  opacity: 0.85;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.cycle-arrow {
-  font-size: 2rem;
-  color: var(--primary-orange);
-  opacity: 0.5;
-  flex-shrink: 0;
-}
-
-/* Pillars Section */
-.pillars-section {
-  padding: 80px 20px;
-  background: var(--dark-bg);
-}
-
-.pillars-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-}
-
-.pillars-grid--six {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.pillar-card {
-  background: var(--card-bg);
-  border-radius: 20px;
-  padding: 40px 35px;
-  border: 2px solid rgba(255, 107, 53, 0.15);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.pillar-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255, 107, 53, 0.4);
-}
-
-.pillar-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.pillar-card h3 {
-  color: var(--primary-orange);
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
-.pillar-card p {
-  opacity: 0.85;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.pillar-highlights {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 25px 0;
-  flex-grow: 1;
-}
-
-.pillar-highlights li {
-  padding: 8px 0;
-  padding-left: 25px;
-  position: relative;
-  opacity: 0.9;
-  font-size: 0.95rem;
-}
-
-.pillar-highlights li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--primary-orange);
-  font-weight: bold;
-}
-
-.pillar-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--primary-orange);
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.05rem;
-  transition: all 0.3s ease;
-}
-
-.pillar-link:hover {
-  gap: 14px;
-}
-
-.pillar-link span {
-  transition: transform 0.3s ease;
-}
-
-.pillar-link:hover span {
-  transform: translateX(4px);
-}
-
 /* CTA Section */
 .cta-section {
   padding: 80px 20px;
-  background: var(--dark-bg);
+  background: var(--darker-bg);
   text-align: center;
 }
 
@@ -689,6 +791,7 @@ useSEO({
 
 .cta-content p {
   font-size: 1.1rem;
+  line-height: 1.75;
   opacity: 0.85;
   margin-bottom: 35px;
 }
@@ -733,231 +836,56 @@ useSEO({
   transform: translateY(-2px);
 }
 
-/* How We Work Section */
-.how-we-work-section {
-  padding: 80px 20px;
-  background: var(--dark-bg);
-}
-
-.intro-callout {
-  max-width: 800px;
-  margin: 0 auto 60px;
-  text-align: center;
-}
-
-.intro-callout > p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  opacity: 0.85;
-  margin-bottom: 28px;
-}
-
-.lockin-banner {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  background: linear-gradient(135deg, rgba(76, 175, 80, 0.12), rgba(76, 175, 80, 0.05));
-  border: 1px solid rgba(76, 175, 80, 0.35);
-  border-radius: 14px;
-  padding: 22px 28px;
-  text-align: left;
-  margin-top: 16px;
-}
-
-.lockin-icon {
-  font-size: 1.8rem;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.lockin-banner strong {
-  color: #4caf50;
-  font-size: 1rem;
-}
-
-.lockin-banner span {
-  font-size: 0.95rem;
-  opacity: 0.85;
-  line-height: 1.6;
-}
-
-/* Journey */
-.journey-label {
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--primary-orange);
-  margin-bottom: 32px;
-  opacity: 0.7;
-}
-
-.journey-flow {
-  max-width: 720px;
-  margin: 0 auto 64px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-}
-
-.journey-step {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  background: var(--card-bg);
-  border: 1px solid rgba(255, 107, 53, 0.15);
-  border-radius: 14px;
-  padding: 28px 32px;
-  width: 100%;
-  transition: all 0.3s ease;
-}
-
-.journey-step:hover {
-  border-color: rgba(255, 107, 53, 0.4);
-  transform: translateX(4px);
-}
-
-.step-number {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--primary-orange);
-  opacity: 0.4;
-  min-width: 36px;
-  line-height: 1;
-  padding-top: 3px;
-}
-
-.step-body h4 {
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.step-body p {
-  opacity: 0.8;
-  font-size: 0.95rem;
-  line-height: 1.65;
-  margin: 0;
-}
-
-.journey-connector {
-  font-size: 1.4rem;
-  color: var(--primary-orange);
-  opacity: 0.3;
-  padding: 8px 0;
-}
-
-/* Working Together: FAQ Accordion */
-.faq-section {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.faq-heading {
-  text-align: center;
-  color: var(--primary-orange);
-  font-size: 1.6rem;
-  margin-bottom: 28px;
-}
-
-.faq-item {
-  background: var(--card-bg);
-  border: 1px solid rgba(255, 107, 53, 0.12);
-  border-radius: 12px;
-  margin-bottom: 12px;
-  transition: border-color 0.3s ease;
-}
-
-.faq-item[open] {
-  border-color: rgba(255, 107, 53, 0.35);
-}
-
-.faq-question {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 20px 24px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 1.02rem;
-  color: white;
-  list-style: none;
-  user-select: none;
-}
-
-.faq-question::-webkit-details-marker {
-  display: none;
-}
-
-.faq-icon {
-  font-size: 1.4rem;
-  flex-shrink: 0;
-}
-
-.faq-chevron {
-  margin-left: auto;
-  color: var(--primary-orange);
-  font-size: 1.1rem;
-  transition: transform 0.2s ease;
-}
-
-.faq-item[open] .faq-chevron {
-  transform: rotate(90deg);
-}
-
-.faq-answer {
-  padding: 0 24px 20px 52px;
-  opacity: 0.82;
-  font-size: 0.94rem;
-  line-height: 1.7;
-}
-
-.faq-answer :deep(strong) {
-  color: var(--primary-orange);
-}
-
 /* Responsive */
+@media (max-width: 1024px) {
+  .proof-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .plan-steps {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+
+  .advice-block {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 32px 24px;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero {
+    padding: 130px 16px 70px;
+  }
+
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .hero p {
     font-size: 1.1rem;
   }
 
-  .section-header h2 {
+  .section-header h2,
+  .cta-content h2 {
     font-size: 2rem;
   }
 
-  .cycle-flow {
-    flex-direction: column;
+  .content {
+    padding: 0 16px;
   }
 
-  .cycle-arrow {
-    transform: rotate(90deg);
-  }
-
-  .pillars-grid {
+  .build-grid {
     grid-template-columns: 1fr;
   }
+}
 
+@media (max-width: 480px) {
   .proof-strip {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .lockin-banner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .journey-step {
-    flex-direction: column;
-    gap: 12px;
+    grid-template-columns: 1fr;
   }
 }
 </style>
