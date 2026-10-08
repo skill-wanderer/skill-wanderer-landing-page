@@ -125,9 +125,10 @@ const welcomeText = [
   ...FOOTER_LINKS.map(({ label, url }) => `${label}: ${url}`)
 ].join('\n')
 
-export const createSubscriptionWelcomeEmail = (email: string, fromEmail: string) => ({
+export const createSubscriptionWelcomeEmail = (email: string, fromEmail: string, replyToEmail?: string) => ({
   from: `Skill-Wanderer <${fromEmail}>`,
   to: [email],
+  ...(replyToEmail ? { replyTo: replyToEmail } : {}),
   subject: TITLE,
   html: welcomeHtml,
   text: welcomeText

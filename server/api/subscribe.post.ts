@@ -181,6 +181,7 @@ const sendWelcomeEmail = async (
   context: {
     email: string
     fromEmail: string
+    replyToEmail?: string
     requestId: string
     maskedEmail: string
     source: string
@@ -200,7 +201,7 @@ const sendWelcomeEmail = async (
   }
 
   try {
-    const welcomeEmail = createSubscriptionWelcomeEmail(context.email, context.fromEmail)
+    const welcomeEmail = createSubscriptionWelcomeEmail(context.email, context.fromEmail, context.replyToEmail)
     const { data, error } = await resend.emails.send(welcomeEmail, {
       idempotencyKey: await createWelcomeEmailIdempotencyKey(welcomeEmail)
     })
@@ -421,6 +422,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
   const runtimeConfig = useRuntimeConfig(event)
   const resendApiKey = pickRuntimeString(runtimeConfig.resendApiKey)
   const resendFromEmail = pickRuntimeString(runtimeConfig.resendFromEmail)
+  const resendReplyToEmail = pickRuntimeString(runtimeConfig.resendReplyToEmail)
   const resendSegmentId = pickRuntimeString(runtimeConfig.resendSegmentId)
 
   if (!resendApiKey || resendApiKey === RESEND_API_KEY_PLACEHOLDER || !resendFromEmail) {
@@ -501,6 +503,7 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
     const welcomeEmailDelivered = await sendWelcomeEmail(resend, {
       email,
       fromEmail: resendFromEmail,
+      replyToEmail: resendReplyToEmail,
       requestId,
       maskedEmail,
       source
