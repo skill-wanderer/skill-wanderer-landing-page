@@ -9,7 +9,6 @@ const INTRO = 'Thanks for subscribing. We will email you when new lessons and co
 // Kept low-key on purpose: an open door for anyone who wants it, not a call to action.
 const HELP_NOTE = 'And if you ever feel like lending a hand to keep education free, there are a few ways to do it. No pressure at all.'
 const HELP_LINK_LABEL = 'See how you can help'
-const UNSUBSCRIBE_NOTE = 'If you did not subscribe, or you change your mind later, reply to this email and we will remove you from the list.'
 
 const FOOTER_LINKS = [
   { label: 'Website', url: SITE_URL },
@@ -98,8 +97,7 @@ const welcomeHtml = `<!DOCTYPE html>
 </tr>
 <tr>
 <td align="center" style="padding:32px 24px 0;">
-<p style="margin:0 0 12px; font-family:${FONT}; font-size:13px; line-height:20px;">${footerLinksHtml}</p>
-<p style="margin:0; font-family:${FONT}; font-size:12px; line-height:19px; color:${COLOR.muted};">${UNSUBSCRIBE_NOTE}</p>
+<p style="margin:0; font-family:${FONT}; font-size:13px; line-height:20px;">${footerLinksHtml}</p>
 </td>
 </tr>
 </table>
@@ -118,8 +116,6 @@ const welcomeText = [
   '',
   HELP_NOTE,
   `${HELP_LINK_LABEL}: ${HELP_THE_MISSION_URL}`,
-  '',
-  UNSUBSCRIBE_NOTE,
   '',
   ...FOOTER_LINKS.map(({ label, url }) => `${label}: ${url}`)
 ].join('\n')
