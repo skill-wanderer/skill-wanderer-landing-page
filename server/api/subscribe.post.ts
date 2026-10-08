@@ -27,6 +27,7 @@ const subscriptionThrottle = new Map<string, number>()
 type SubscribeFailureResponse = Extract<SubscribeResponse, { ok: false }>
 type SubscribeSuccessResponse = Extract<SubscribeResponse, { ok: true }>
 type SubscribeLogLevel = 'info' | 'warn' | 'error'
+type WelcomeEmail = ReturnType<typeof createSubscriptionWelcomeEmail>
 
 const maskEmail = (email: string) => {
   const [localPart = '', domain = ''] = email.split('@')
@@ -64,8 +65,14 @@ const toRetryAfterSeconds = (retryAfterMs: number) => Math.max(Math.ceil(retryAf
 const encodeHex = (buffer: ArrayBuffer) =>
   Array.from(new Uint8Array(buffer), (byte) => byte.toString(16).padStart(2, '0')).join('')
 
-const createSubscriptionIdempotencyKey = async (email: string) => {
-  const digest = await globalThis.crypto.subtle.digest('SHA-256', new TextEncoder().encode(email))
+// Resend keeps an idempotency key for 24 hours and rejects a reuse whose payload differs
+// (409 invalid_idempotent_request). Hashing the whole payload, recipient included, still
+// stops duplicate welcome emails but lets a changed template through.
+const createWelcomeEmailIdempotencyKey = async (welcomeEmail: WelcomeEmail) => {
+  const digest = await globalThis.crypto.subtle.digest(
+    'SHA-256',
+    new TextEncoder().encode(JSON.stringify(welcomeEmail))
+  )
   const fingerprint = encodeHex(digest).slice(0, 32)
 
   return `${SUBSCRIPTION_IDEMPOTENCY_PREFIX}:${fingerprint}`
@@ -174,7 +181,6 @@ const sendWelcomeEmail = async (
   context: {
     email: string
     fromEmail: string
-    idempotencyKey: string
     requestId: string
     maskedEmail: string
     source: string
@@ -194,12 +200,10 @@ const sendWelcomeEmail = async (
   }
 
   try {
-    const { data, error } = await resend.emails.send(
-      createSubscriptionWelcomeEmail(context.email, context.fromEmail),
-      {
-        idempotencyKey: context.idempotencyKey
-      }
-    )
+    const welcomeEmail = createSubscriptionWelcomeEmail(context.email, context.fromEmail)
+    const { data, error } = await resend.emails.send(welcomeEmail, {
+      idempotencyKey: await createWelcomeEmailIdempotencyKey(welcomeEmail)
+    })
 
     if (error || !data) {
       logWelcomeFailure(error)
@@ -441,7 +445,6 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
 
   try {
     const resend = new Resend(resendApiKey)
-    const idempotencyKey = await createSubscriptionIdempotencyKey(email)
 
     const { data: contact, error: contactError } = await resend.contacts.create({
       email,
@@ -498,7 +501,6 @@ export default defineEventHandler(async (event): Promise<SubscribeResponse> => {
     const welcomeEmailDelivered = await sendWelcomeEmail(resend, {
       email,
       fromEmail: resendFromEmail,
-      idempotencyKey,
       requestId,
       maskedEmail,
       source

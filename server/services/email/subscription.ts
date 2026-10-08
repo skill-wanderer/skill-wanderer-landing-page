@@ -4,25 +4,12 @@ const HELP_THE_MISSION_URL = `${SITE_URL}/help-the-mission`
 const ICON_URL = `${SITE_URL}/email/skill-wanderer-icon.png`
 
 const TITLE = 'Welcome to Skill-Wanderer'
-const PREHEADER = 'You are subscribed to guild updates, new learning paths, and community initiatives.'
-const INTRO = 'We will send you guild updates, new learning paths, and community initiatives.'
+const PREHEADER = 'Thanks for subscribing. New lessons, new content, and news worth sharing are on the way.'
+const INTRO = 'Thanks for subscribing. We will email you when new lessons and content go live, and whenever there is news worth sharing.'
+// Kept low-key on purpose: an open door for anyone who wants it, not a call to action.
+const HELP_NOTE = 'And if you ever feel like lending a hand to keep education free, there are a few ways to do it. No pressure at all.'
+const HELP_LINK_LABEL = 'See how you can help'
 const UNSUBSCRIBE_NOTE = 'If you did not subscribe, or you change your mind later, reply to this email and we will remove you from the list.'
-
-// Same three ways as pages/help-the-mission.vue.
-const WAYS_TO_HELP = [
-  {
-    title: 'Share What You Know',
-    description: 'You bring the knowledge, from any field. Our members turn it into free lessons.'
-  },
-  {
-    title: 'Bring Us a Project',
-    description: 'Need a website, an app or an AI tool? We build a free working prototype first.'
-  },
-  {
-    title: 'Spread the Word',
-    description: 'Share our site, follow us on LinkedIn, or introduce us to someone who could help.'
-  }
-]
 
 const FOOTER_LINKS = [
   { label: 'Website', url: SITE_URL },
@@ -37,11 +24,7 @@ const COLOR = {
   page: '#0f0f0f', // --darker-bg
   card: '#1a1a1a', // --dark-bg
   cardBorder: '#482a1f', // rgba(255, 107, 53, 0.2) on the card
-  panel: '#252525', // --card-bg on the card
-  panelBorder: '#513328', // rgba(255, 107, 53, 0.2) on the panel
-  badge: '#463027', // rgba(255, 107, 53, 0.15) on the panel, as in .way-number
   orange: '#FF6B35', // --primary-orange
-  deepOrange: '#E85D25', // --deep-orange
   yellow: '#FFD93D', // --accent-yellow
   heading: '#ffffff',
   text: '#e0e0e0', // --light-text
@@ -53,29 +36,6 @@ const FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, 
 
 // Keeps the inbox preview from running on into the email's body text.
 const PREHEADER_FILLER = '&#847;&zwnj;&nbsp;'.repeat(60)
-
-const waysToHelpHtml = WAYS_TO_HELP.map(({ title, description }, index) => {
-  const bottomPadding = index === WAYS_TO_HELP.length - 1 ? 0 : 18
-
-  return `<tr>
-<td width="32" valign="top" style="width:32px; padding-bottom:${bottomPadding}px;">
-<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-<td width="32" height="32" align="center" valign="middle" bgcolor="${COLOR.badge}" style="width:32px; height:32px; border-radius:16px; background-color:${COLOR.badge}; font-family:${FONT}; font-size:14px; line-height:32px; mso-line-height-rule:exactly; font-weight:800; color:${COLOR.yellow};">${index + 1}</td>
-</tr></table>
-</td>
-<td valign="top" style="padding:4px 0 ${bottomPadding}px 14px;">
-<p style="margin:0; font-family:${FONT}; font-size:16px; line-height:24px; font-weight:700; color:${COLOR.heading};">${title}</p>
-<p style="margin:2px 0 0; font-family:${FONT}; font-size:14px; line-height:21px; color:${COLOR.muted};">${description}</p>
-</td>
-</tr>`
-}).join('')
-
-// Outlook ignores padding on links, so mso-padding-alt pads the cell there instead.
-const helpButtonHtml = `<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-<td align="center" bgcolor="${COLOR.deepOrange}" style="border-radius:50px; background-color:${COLOR.deepOrange}; background-image:linear-gradient(135deg, ${COLOR.orange}, ${COLOR.deepOrange}); box-shadow:0 4px 20px rgba(255, 107, 53, 0.3); mso-padding-alt:14px 28px;">
-<a href="${HELP_THE_MISSION_URL}" target="_blank" style="display:inline-block; padding:14px 28px; font-family:${FONT}; font-size:16px; line-height:20px; mso-line-height-rule:exactly; font-weight:700; color:#ffffff; text-decoration:none; border-radius:50px;">Help the Mission<span aria-hidden="true">&nbsp;&rarr;</span></a>
-</td>
-</tr></table>`
 
 const footerLinksHtml = FOOTER_LINKS
   .map(({ label, url }) => `<a href="${url}" target="_blank" style="color:${COLOR.orange}; text-decoration:none; font-weight:600;">${label}</a>`)
@@ -103,7 +63,6 @@ const welcomeHtml = `<!DOCTYPE html>
 <style>
 @media (max-width: 600px) {
   .sw-card { padding: 32px 24px !important; }
-  .sw-panel { padding: 24px 20px !important; }
   .sw-title { font-size: 28px !important; line-height: 34px !important; }
 }
 </style>
@@ -128,15 +87,11 @@ const welcomeHtml = `<!DOCTYPE html>
 <td class="sw-card" bgcolor="${COLOR.card}" style="padding:40px; background-color:${COLOR.card}; background-image:radial-gradient(circle at 0% 0%, rgba(255, 107, 53, 0.14) 0, rgba(255, 107, 53, 0) 55%); border:1px solid ${COLOR.cardBorder}; border-radius:16px;">
 <p style="margin:0 0 12px; font-family:${FONT}; font-size:12px; line-height:16px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:${COLOR.yellow};">You are subscribed</p>
 <h1 class="sw-title" style="margin:0 0 16px; font-family:${FONT}; font-size:32px; line-height:40px; font-weight:800; color:${COLOR.heading};">Welcome to <span style="color:${COLOR.orange}; white-space:nowrap;">Skill-Wanderer</span></h1>
-<p style="margin:0 0 32px; font-family:${FONT}; font-size:16px; line-height:26px; color:${COLOR.text};">${INTRO}</p>
+<p style="margin:0 0 28px; font-family:${FONT}; font-size:16px; line-height:26px; color:${COLOR.text};">${INTRO}</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td class="sw-panel" bgcolor="${COLOR.panel}" style="padding:28px; background-color:${COLOR.panel}; border:1px solid ${COLOR.panelBorder}; border-radius:12px;">
-<h2 style="margin:0 0 4px; font-family:${FONT}; font-size:20px; line-height:28px; font-weight:700; color:${COLOR.orange};">Believe in free education?</h2>
-<p style="margin:0 0 20px; font-family:${FONT}; font-size:15px; line-height:24px; color:${COLOR.text};">Here are three ways to help the mission.</p>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${waysToHelpHtml}</table>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td style="padding-top:24px;">${helpButtonHtml}</td>
-</tr></table>
+<td style="padding-top:24px; border-top:1px solid ${COLOR.cardBorder};">
+<p style="margin:0 0 10px; font-family:${FONT}; font-size:15px; line-height:24px; color:${COLOR.muted};">${HELP_NOTE}</p>
+<p style="margin:0; font-family:${FONT}; font-size:15px; line-height:24px;"><a href="${HELP_THE_MISSION_URL}" target="_blank" style="color:${COLOR.orange}; text-decoration:none; font-weight:600;">${HELP_LINK_LABEL}<span aria-hidden="true">&nbsp;&rarr;</span></a></p>
 </td>
 </tr></table>
 </td>
@@ -159,13 +114,10 @@ const welcomeHtml = `<!DOCTYPE html>
 const welcomeText = [
   TITLE,
   '',
-  `You are now subscribed. ${INTRO}`,
+  INTRO,
   '',
-  'Believe in free education? Here are three ways to help the mission:',
-  '',
-  ...WAYS_TO_HELP.flatMap(({ title, description }, index) => [`${index + 1}. ${title}`, `   ${description}`]),
-  '',
-  `Help the mission: ${HELP_THE_MISSION_URL}`,
+  HELP_NOTE,
+  `${HELP_LINK_LABEL}: ${HELP_THE_MISSION_URL}`,
   '',
   UNSUBSCRIBE_NOTE,
   '',
