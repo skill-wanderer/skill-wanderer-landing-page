@@ -11,6 +11,7 @@ const HELP_NOTE = 'And if you ever feel like lending a hand to keep education fr
 const HELP_LINK_LABEL = 'See how you can help'
 const UNSUBSCRIBE_NOTE = 'If you did not subscribe, or you change your mind later, reply to this email and we will remove you from the list.'
 
+
 const FOOTER_LINKS = [
   { label: 'Website', url: SITE_URL },
   { label: 'Dojo', url: 'https://dojo.skill-wanderer.com' },
