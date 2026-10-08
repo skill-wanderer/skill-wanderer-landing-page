@@ -254,7 +254,7 @@
         <div class="authority-card authority-mission">
           <div class="authority-icon">🌱</div>
           <h3>Your Project Funds a Mission</h3>
-          <p>Every client project helps fund <strong>free mentorship</strong> for passionate learners like <NuxtLink to="/learners/rei-reltroner" class="authority-link">Rei</NuxtLink> and <NuxtLink to="/team/thanh-nguyen" class="authority-link">Thanh</NuxtLink>. We fund education through client work, not donations.</p>
+          <p>Every client project helps fund <strong>free mentorship</strong> for passionate learners like <NuxtLink to="/learners/rei-reltroner" class="authority-link">Rei</NuxtLink> and <NuxtLink to="/team/thanh-nguyen" class="authority-link">Thanh</NuxtLink>. Client work is our main way of funding education.</p>
         </div>
 
         <div class="authority-card authority-impact">

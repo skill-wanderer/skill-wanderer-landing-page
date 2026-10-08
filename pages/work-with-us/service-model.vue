@@ -337,7 +337,7 @@ const faqs = [
   {
     question: 'Do you take donations?',
     answer:
-      'Not as our main funding. We fund free education through client work because it keeps us practical and up to date. Donations are only a fallback if client revenue ever falls short.',
+      'Not yet, but a donation link is coming soon. Client work is our main funding because it keeps us practical and up to date. It covers our running costs but not our contributors, so any donation really helps make the mission sustainable.',
   },
 ]
 

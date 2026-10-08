@@ -138,7 +138,7 @@
               <strong>AI, web, mobile, DevOps, or platform development</strong>.
               All revenue is <strong>reinvested to fund the mission</strong>.
               Your challenges get solved, learners get funded. Everyone wins.
-              We don't ask for donations; they are only a fallback.
+              Client work covers our costs but not our contributors, so a donation link is coming soon too.
               <NuxtLink to="/help-the-mission">See every way to help the mission.</NuxtLink>
             </p>
           </div>
@@ -330,7 +330,7 @@ const practiceExamples: PracticeExample[] = [
     items: [
       'Work with us as tech partners using our services: AI, web, mobile, DevOps, and platform development',
       'All revenue is reinvested into funding the mission',
-      'We fund teaching through client work, not donations, because it keeps us practical',
+      'Client work is our main way to fund teaching, because it keeps us practical',
       'Every project goes toward supporting the next learner'
     ]
   },

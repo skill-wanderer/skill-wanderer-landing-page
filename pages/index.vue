@@ -273,8 +273,8 @@
         <h2>Your project funds free education</h2>
         <p>
           Client work helps fund free learning paths and mentorship for learners like Vincent in Nigeria,
-          Khouja in Tunisia and Alfredo in Venezuela. We fund education through client work, not donations,
-          because it keeps us practical. Donations are only a fallback.
+          Khouja in Tunisia and Alfredo in Venezuela. Client work is our main funding, because it keeps us
+          practical.
         </p>
         <ul class="principle-chips">
           <li>No ads or hidden agendas</li>
@@ -383,7 +383,7 @@ useSEO({
       },
       {
         question: 'Is the learning really free?',
-        answer: 'Yes, all Skill-Wanderer learning content is completely free. Mentorship and guild support are funded by our client work, not by ads or donations.'
+        answer: 'Yes, all Skill-Wanderer learning content is completely free. Mentorship and guild support are funded mainly by our client work, and never by ads.'
       }
     ])
   ]

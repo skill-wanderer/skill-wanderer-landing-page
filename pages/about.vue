@@ -215,9 +215,9 @@
           </div>
         </div>
         <p class="mission-funding">
-          We fund education through client work, not donations, because it keeps us practical and up to date.
-          Donations are only a fallback if client revenue ever falls short.
-          <NuxtLink to="/help-the-mission">Here's how you can help instead.</NuxtLink>
+          We fund education mainly through client work, because it keeps us practical and up to date. Right now
+          it covers our running costs but can't pay our contributors, so a donation link is coming soon.
+          <NuxtLink to="/help-the-mission">Here's how you can help today.</NuxtLink>
         </p>
       </div>
     </section>

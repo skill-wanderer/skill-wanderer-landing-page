@@ -22,11 +22,13 @@
           contributors aren't paid for their work on the platform, and there is little left for anything else.
         </p>
         <p>
-          You may notice there's no donation button. That's on purpose. Paying for education with client work keeps
-          us practical: real projects keep our skills sharp, so what we teach comes from real work, not theory.
-          If we ever hit hard times, we'll ask for help openly. Donations are our fallback, not our plan.
+          You may notice there's no donation button yet. We'll add a donation link soon. I'd love for us not to
+          rely on donations, because client work keeps us practical: real projects keep our skills sharp, so what
+          we teach comes from real work, not theory. But client work only covers our costs, so any amount really
+          counts. It's what could let us pay the people who give their time to this, and make the mission
+          sustainable.
         </p>
-        <p class="letter-ask">So here's what I'm asking instead. Pick whichever fits you.</p>
+        <p class="letter-ask">In the meantime, here are three ways you can help today. Pick whichever fits you.</p>
       </div>
     </section>
 
@@ -94,7 +96,7 @@ const introEmailLink = `mailto:${GUILD_MASTER_EMAIL}?subject=${encodeURIComponen
 
 useSEO({
   title: 'Help the Mission | Skill-Wanderer',
-  description: 'No donation button, by design. Three ways to help free education: share your expertise, bring us a project, or spread the word.',
+  description: 'Client work covers our costs but not our contributors, and a donation link is coming soon. Help free education today: share your expertise, bring us a project, or spread the word.',
   keywords: ['help the mission', 'support free education', 'share your expertise', 'skill-wanderer', 'tech partner for small business'],
   structuredData: [
     createBreadcrumbSchema([
