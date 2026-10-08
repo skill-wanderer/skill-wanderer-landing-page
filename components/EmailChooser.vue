@@ -38,8 +38,6 @@
         </a>
       </div>
 
-      <a :href="mail.href" class="email-app-link" @click="close">Or open your email app</a>
-
       <p class="sr-only" role="status">{{ copied && `Copied the ${copied}` }}</p>
     </div>
   </dialog>
@@ -51,7 +49,6 @@
 // opens this chooser instead: copy the details, or start the email in Gmail or Outlook on the web.
 
 interface Mail {
-  href: string
   to: string
   subject: string
   body: string
@@ -101,7 +98,6 @@ function parseMailto(href: string): Mail | null {
   try {
     const url = new URL(href)
     return {
-      href,
       to: decodeURIComponent(url.pathname),
       subject: url.searchParams.get('subject') ?? '',
       body: url.searchParams.get('body') ?? ''
@@ -117,7 +113,7 @@ async function onDocumentClick(event: MouseEvent) {
   if (window.matchMedia('(pointer: coarse)').matches) return
 
   const link = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href^="mailto:" i]') : null
-  if (!link || dialog.value?.contains(link)) return
+  if (!link) return
 
   const parsed = parseMailto(link.href)
   if (!parsed?.to) return
@@ -326,21 +322,6 @@ onBeforeUnmount(() => {
   justify-content: center;
   padding: 11px 18px;
   font-size: 1rem;
-}
-
-.email-app-link {
-  display: block;
-  margin-top: 18px;
-  font-size: 0.9rem;
-  text-align: center;
-  color: var(--light-text);
-  opacity: 0.8;
-  transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-.email-app-link:hover {
-  color: var(--primary-orange);
-  opacity: 1;
 }
 
 .sr-only {
