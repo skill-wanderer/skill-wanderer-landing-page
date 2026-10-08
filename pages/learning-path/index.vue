@@ -6,8 +6,10 @@
         <h1>Choose Your Learning Path</h1>
         <p class="hero-description">
           Start from the topic that matches your mission. Each guild path is designed to grow practical
-          skills through guided progression, real-world craft, and clear milestones.
+          skills through guided progression, real-world craft, and clear milestones. Our first paths are in
+          tech and business, where the guild's experience runs deepest, and paths in more fields will follow.
         </p>
+        <ImageSlot name="learning-paths/hub" class="hero-image" priority />
       </div>
       <svg class="hero-wave" viewBox="0 0 1200 120" aria-hidden="true">
         <path d="M0,92 C180,65 320,26 520,34 C720,42 860,104 1200,62 L1200,120 L0,120 Z" />
@@ -30,6 +32,7 @@
             class="topic-card topic-card--foundation"
             :aria-label="`Open learning path for ${topic.title}`"
           >
+            <ImageSlot :name="`learning-paths/${topic.slug}`" group="learningPathCovers" class="topic-cover" />
             <div class="topic-top">
               <span class="topic-icon" aria-hidden="true">{{ topic.icon }}</span>
               <span class="topic-badge topic-badge--foundation">Foundation</span>
@@ -54,6 +57,7 @@
             class="topic-card topic-card--advanced"
             :aria-label="`Open learning path for ${topic.title}`"
           >
+            <ImageSlot :name="`learning-paths/${topic.slug}`" group="learningPathCovers" class="topic-cover" />
             <div class="topic-top">
               <span class="topic-icon" aria-hidden="true">{{ topic.icon }}</span>
               <span class="topic-badge topic-badge--advanced">Advanced</span>
@@ -228,6 +232,12 @@ const advancedTopics: LearningTopic[] = [
   fill: rgba(255, 107, 53, 0.08);
 }
 
+.hero-image {
+  z-index: 1;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
 .topics-section {
   padding: 36px 24px 96px;
 }
@@ -334,6 +344,12 @@ const advancedTopics: LearningTopic[] = [
   border-color: var(--primary-orange);
   background: var(--card-hover);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34);
+}
+
+.topic-card .topic-cover {
+  margin: -22px -22px 18px;
+  border: 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .topic-top {

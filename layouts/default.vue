@@ -7,8 +7,8 @@
       <slot />
     </main>
 
-    <!-- Subscribe Section: shown only on homepage and contact -->
-    <TheSubscribe v-if="showSubscribe" />
+    <!-- Subscribe Section, with the Help the Mission button below it -->
+    <TheSubscribe />
 
     <!-- Footer -->
     <TheFooter />
@@ -24,15 +24,6 @@
     </ClientOnly>
   </div>
 </template>
-
-<script setup lang="ts">
-const route = useRoute()
-
-const showSubscribe = computed(() => {
-  const path = route.path
-  return path === '/' || path === '/contact'
-})
-</script>
 
 <style scoped>
 /* Layout-specific styles can be added here if needed */

@@ -5,7 +5,7 @@
       <div class="hero-content">
         <p class="eyebrow">Our Education Philosophy</p>
         <h1>Learn. Contribute. Build. Earn.</h1>
-        <p class="hero-subtitle">A New Way to Learn Tech</p>
+        <p class="hero-subtitle">A New Way to Learn</p>
         <p class="hero-description">
           Most platforms ask you to pay first, learn alone, and hope to get a job later.
           We do it differently. At Skill-Wanderer, you don't pay to learn. You earn your way by building.
@@ -27,6 +27,7 @@
 
       <div class="journey-grid">
         <article class="journey-card">
+          <ImageSlot name="philosophy/start-free" group="philosophyJourney" class="journey-image" />
           <span class="step-badge">01</span>
           <h3>Start for Free</h3>
           <p>Begin your journey with structured learning paths, beginner-friendly courses, and community learning groups.</p>
@@ -34,32 +35,35 @@
         </article>
 
         <article class="journey-card">
+          <ImageSlot name="philosophy/contribute" group="philosophyJourney" class="journey-image" />
           <span class="step-badge">02</span>
           <h3>Unlock Mentorship Through Contribution</h3>
           <p class="card-subheader">Mentorship is earned through effort, not bought with tuition.</p>
           <p>Real growth requires commitment. Instead of charging fixed tuition, we let you choose how to contribute, and every option is a chance to grow:</p>
           <ul class="contribution-list">
-            <li class="contribution-preferred"><span class="list-icon">🔧</span> <strong>Learn by building</strong> real features for the guild</li>
+            <li class="contribution-preferred"><span class="list-icon">🔧</span> <strong>Learn by building</strong>: take on real work for the guild</li>
             <li class="contribution-preferred"><span class="list-icon">🤝</span> <strong>Learn by teaching</strong>: help and grow the community</li>
-            <li class="contribution-secondary"><span class="list-icon">💰</span> Support financially <span class="optional-tag">(optional)</span></li>
+            <li class="contribution-secondary"><span class="list-icon">🌍</span> <NuxtLink to="/help-the-mission">Help the mission</NuxtLink> in other ways <span class="optional-tag">(optional)</span></li>
           </ul>
           <p class="card-emphasis"><strong class="zero-tuition">Zero tuition.</strong> Just show up and contribute.</p>
         </article>
 
         <article class="journey-card">
+          <ImageSlot name="philosophy/real-projects" group="philosophyJourney" class="journey-image" />
           <span class="step-badge">03</span>
           <h3>Work on Real Projects</h3>
           <p>When you're ready, you move beyond learning.</p>
           <ul class="contribution-list">
-            <li>Join real development teams</li>
-            <li>Build production-level products</li>
+            <li>Join real project teams</li>
+            <li>Ship work that real people use</li>
             <li>Work with partners and clients</li>
-            <li>Earn through revenue sharing or paid roles</li>
+            <li>Earn through paid roles on real client projects</li>
           </ul>
           <p class="card-emphasis">This is where learning becomes earning.</p>
         </article>
 
         <article class="journey-card">
+          <ImageSlot name="philosophy/grow" group="philosophyJourney" class="journey-image" />
           <span class="step-badge">04</span>
           <h3>Grow Into a Builder, or a Founder</h3>
           <p>Top members don't just get jobs. They:</p>
@@ -133,7 +137,7 @@
         <h2>Built for People Who Want More</h2>
         <p class="audience-intro">This is for you if:</p>
         <ul class="audience-list">
-          <li>You're serious about learning tech</li>
+          <li>You're serious about learning a new skill</li>
           <li>You want real experience, not just theory</li>
           <li>You're willing to contribute, not just consume</li>
           <li>You want a path beyond courses</li>
@@ -144,10 +148,10 @@
     <section class="tiers-section">
       <div class="tiers-card">
         <div class="section-header narrow">
-          <h2>Tier 1 and Tier 2 Learners</h2>
+          <h2>Not Sure Where You Fit?</h2>
           <p>
-            If you are a learner in Tier 1 or Tier 2 and you want to understand where you fit,
-            contact us. We will talk with you and help you choose the right next step.
+            If you are a learner and you want to understand where you fit, contact us.
+            We will talk with you and help you choose the right next step.
           </p>
         </div>
         <div class="tiers-actions">
@@ -176,12 +180,12 @@
 
 useSEO({
   title: 'Learn. Contribute. Build. Earn. | Skill-Wanderer Education Philosophy',
-  description: 'Skill-Wanderer\'s education philosophy: start for free, contribute to unlock mentorship, build on real projects, earn through growth. A tech guild built for builders.',
+  description: 'Skill-Wanderer\'s education philosophy: start for free, contribute to unlock mentorship, build on real projects, earn through growth. A guild built for builders.',
   keywords: [
     'learn contribute build earn',
     'skill-wanderer',
     'education philosophy',
-    'tech guild',
+    'learning guild',
     'real project learning',
     'free to learn',
     'contribution model'
@@ -302,6 +306,11 @@ h1 {
   border-radius: 22px;
   padding: 30px 26px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.journey-card .journey-image {
+  margin-bottom: 20px;
+  border-radius: 14px;
 }
 
 .step-badge {

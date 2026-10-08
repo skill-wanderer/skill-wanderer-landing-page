@@ -2,6 +2,7 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="3"
+      image="principles/individualized"
       title="Individualized"
       tagline="Your Path, Your Way"
     />    <!-- Story Section -->
@@ -21,8 +22,8 @@
         <div class="styles-grid">
           <div class="style-card breaker" style="animation-delay: 0.1s;">
             <div class="style-icon">⚡</div>
-            <h3>The Code Breaker</h3>
-            <p>Learns by diving in, breaking things, and fixing them. Every error is a teacher, every bug a lesson.</p>
+            <h3>The Tinkerer</h3>
+            <p>Learns by diving in, breaking things, and fixing them. Every error is a teacher, every mistake a lesson.</p>
           </div>
           
           <div class="style-card watcher" style="animation-delay: 0.2s;">
@@ -34,13 +35,13 @@
           <div class="style-card collaborator" style="animation-delay: 0.3s;">
             <div class="style-icon">👥</div>
             <h3>The Collaborator</h3>
-            <p>Thrives in pair programming, absorbing knowledge through shared experiences and real-time feedback.</p>
+            <p>Thrives working in pairs, absorbing knowledge through shared experiences and real-time feedback.</p>
           </div>
           
           <div class="style-card reader" style="animation-delay: 0.4s;">
             <div class="style-icon">📚</div>
-            <h3>The Documentation Reader</h3>
-            <p>Prefers written words to videos. Finds clarity in official docs and technical specifications.</p>
+            <h3>The Deep Reader</h3>
+            <p>Prefers written words to videos. Finds clarity in books, manuals and reference material.</p>
           </div>
           
           <div class="style-card planner" style="animation-delay: 0.5s;">
@@ -71,7 +72,7 @@
             <span class="pace-icon">🚀</span>
             <h3>The Rapid Learner</h3>
             <ul class="pace-benefits">
-              <li>Absorbs new frameworks in days</li>
+              <li>Absorbs new tools and ideas in days</li>
               <li>Quick to prototype and experiment</li>
               <li>Brings fresh energy to teams</li>
               <li>Excellent at rapid iteration</li>
@@ -85,7 +86,7 @@
               <li>Builds unshakeable foundations</li>
               <li>Becomes the team's firefighter</li>
               <li>Deep, comprehensive understanding</li>
-              <li>Code that stands the test of time</li>
+              <li>Work that stands the test of time</li>
             </ul>
           </div>
         </div>
@@ -245,16 +246,16 @@ const practiceExamples = [
   {
     title: 'Flexible Learning Paths',
     items: [
-      'No enforced order - jump to what interests you most',
-      'Self-paced progress - take your time or speed through',
-      'Optional depth - choose how deep you want to go on each topic',
-      'Multiple entry points - start where you feel comfortable'
+      'No enforced order: jump to what interests you most',
+      'Self-paced progress: take your time or speed through',
+      'Optional depth: choose how deep to go on each topic',
+      'Multiple entry points: start wherever you feel comfortable'
     ]
   },
   {
     title: 'Celebrating Every Journey',
     items: [
-      'No comparison or competition - your progress is your own',
+      'No comparison or competition, because your progress is your own',
       'Recognition for different types of achievements',
       'Stories from learners with diverse paths to success',
       'Encouragement to find and trust your unique learning style'

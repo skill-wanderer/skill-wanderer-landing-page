@@ -151,6 +151,7 @@ const nextPrinciple = currentIndex < principles.length - 1 ? principles[currentI
 
   .nav-button {
     width: 100%;
+    box-sizing: border-box;
   }
 
   .nav-button.all {

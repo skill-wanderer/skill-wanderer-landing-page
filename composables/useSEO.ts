@@ -30,6 +30,7 @@ export const useSEO = (config: SEOConfig) => {
   const fullUrl = config.url || `${siteUrl}${route.path}`
   const ogImage = config.image || defaultImage
   const absoluteImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`
+  const ogImageAlt = config.image ? optimizedTitle : `${siteName} logo`
   
   // Set up all meta tags
   useHead({
@@ -52,14 +53,14 @@ export const useSEO = (config: SEOConfig) => {
       { property: 'og:image', content: absoluteImageUrl },
       { property: 'og:image:width', content: '768' },
       { property: 'og:image:height', content: '256' },
-      { property: 'og:image:alt', content: `${siteName} - ${optimizedTitle}` },
+      { property: 'og:image:alt', content: ogImageAlt },
       
       // Twitter Card tags
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: optimizedTitle },
       { name: 'twitter:description', content: optimizedDescription },
       { name: 'twitter:image', content: absoluteImageUrl },
-      { name: 'twitter:image:alt', content: `${siteName} - ${optimizedTitle}` },
+      { name: 'twitter:image:alt', content: ogImageAlt },
       
       // Additional SEO tags
       { name: 'robots', content: 'index,follow' },
@@ -92,7 +93,7 @@ export const createOrganizationSchema = () => {
     "name": "Skill-Wanderer",
     "url": "https://skill-wanderer.com",
     "logo": "https://skill-wanderer.com/cropped-skill-wanderer-logo-768x256.webp",
-    "description": "A tech guild for social good offering free, practical education. Learn by building. Grow by contributing. Sustain through craft.",
+    "description": "A tech partner for solo founders, coaches, consultants, freelancers, writers and small businesses, whose client work funds free, practical education.",
     "founder": {
       "@type": "Person",
       "name": "Quan Nguyen",

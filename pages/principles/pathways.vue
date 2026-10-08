@@ -1,6 +1,7 @@
 <template>  <div>    <!-- Hero Section -->
     <PrincipleHero
       :number="7"
+      image="principles/pathways"
       title="Pathways for Our Learners" 
       tagline="From Student to Colleague"
       breadcrumb-name="Pathways for Our Learners"

@@ -2,8 +2,47 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>The Story of the Guild</h1>
-      <p>How a tech guild was forged from passion, principles, and a social enterprise vision</p>
+      <h1>Our Story</h1>
+      <p>A tech partner for people with big ideas and small budgets, and a guild that turns that work into free education</p>
+    </section>
+
+    <!-- Guide: why clients can trust us -->
+    <section class="guide">
+      <div class="section-header">
+        <h2>Why You Can Trust Us With Your Idea</h2>
+        <p>Skill-Wanderer is led by Quan Nguyen, our founder and Guild Master. Here's what he brings to your project.</p>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-card">
+          <span class="guide-icon" aria-hidden="true">🤝</span>
+          <h3>Started in business, not tech</h3>
+          <p>Before writing code, Quan was an import-export manager at Toyota Tsusho Vietnam. He understands customers, budgets and risk, and he explains tech in plain words.</p>
+        </div>
+        <div class="guide-card">
+          <span class="guide-icon" aria-hidden="true">🛠️</span>
+          <h3>Over a decade of building software</h3>
+          <p>Developer, solution architect and project manager across startups and enterprises, once leading 16 developers on 4 projects at the same time.</p>
+        </div>
+        <div class="guide-card">
+          <span class="guide-icon" aria-hidden="true">📚</span>
+          <h3>Still learning, still teaching</h3>
+          <p>Teaching through Skill-Wanderer keeps his skills sharp and current, so your project is built with today's tools.</p>
+        </div>
+        <div class="guide-card">
+          <span class="guide-icon" aria-hidden="true">💬</span>
+          <h3>Honest advice, not just code</h3>
+          <p>"A trusted business adviser throughout the process," in the words of <NuxtLink to="/work-with-us/projects/matt-harr-speaker">Matt Harr</NuxtLink>, one of our clients.</p>
+        </div>
+      </div>
+      <div class="guide-actions">
+        <NuxtLink to="/contact" class="btn btn-primary">
+          Tell Us About Your Idea
+          <span>→</span>
+        </NuxtLink>
+        <NuxtLink to="/work-with-us/our-projects" class="btn btn-secondary">
+          See Client Projects
+        </NuxtLink>
+      </div>
     </section>
 
     <!-- Story Section -->
@@ -11,6 +50,7 @@
       <div class="story-content">
         <div class="story-section" style="animation-delay: 0.1s;">
           <h2><span class="section-icon">🌅</span> The Beginning</h2>
+          <ImageSlot name="about/beginning" class="story-image" />
           <p>
             My story didn't start in tech. It began in international trade at Toyota Tsusho Vietnam, where I learned 
             <span class="highlight">the most fundamental skill of all: how to learn rapidly and adapt</span>. When I 
@@ -32,9 +72,10 @@
 
         <div class="story-section" style="animation-delay: 0.3s;">
           <h2><span class="section-icon">💡</span> The Realization</h2>
+          <ImageSlot name="about/realization" class="story-image" />
           <p>
             Having transitioned from business to tech myself, I understood firsthand how daunting the journey can be. 
-            Traditional education often fails to capture the messy, non-linear reality of learning technology. 
+            Traditional education often fails to capture the messy, non-linear reality of learning a new craft.
             <span class="highlight">We're taught to fear failure, when in reality, failure is where the deepest learning happens</span>. 
             What learners truly need is honest, unbiased guidance from someone who remembers the struggle, plus a community 
             that works alongside them, not just lectures at them.
@@ -45,7 +86,7 @@
             were inseparable, and where every member's growth strengthened the whole guild.
           </p>
           <p>
-            I realized that <span class="highlight">Skill-Wanderer could be a modern tech guild</span>: a 
+            I realized that <span class="highlight">Skill-Wanderer could be a modern guild</span>: a
             social enterprise in the making where learning happens through building, where revenue from real work funds free education, 
             and where the guild grows as its members grow. Not a traditional course platform, but a living, working community 
             of craftspeople at every level.
@@ -60,6 +101,7 @@
 
         <div class="story-section" style="animation-delay: 0.5s;">
           <h2><span class="section-icon">🚀</span> The Vision</h2>
+          <ImageSlot name="about/vision" class="story-image" />
           <p>
             Skill-Wanderer is built on a profound truth: <span class="highlight">teaching is the best way to learn, 
             and building is the best way to teach</span>. The guild model unites education and professional work into 
@@ -68,7 +110,7 @@
           </p>
           <p>
             With a social enterprise mindset, we deeply believe that <span class="highlight">what we give to the world 
-            comes back to us manifold</span>. By operating as a tech guild, where every engagement delivers value to 
+            comes back to us manifold</span>. By operating as a guild, where every engagement delivers value to
             clients while growing our community, we create a virtuous cycle. Today's apprentices become tomorrow's masters. 
             Every project shipped funds the next wave of free education.
           </p>
@@ -103,7 +145,7 @@
         <div class="philosophy-card">
           <span class="philosophy-icon">🌱</span>
           <h3>Growth Through Failure</h3>
-          <p>We celebrate mistakes as learning opportunities. Every bug fixed, every error resolved is a step towards mastery within the guild.</p>
+          <p>We celebrate mistakes as learning opportunities. Every error resolved and every problem solved is a step towards mastery within the guild.</p>
         </div>
         <div class="philosophy-card">
           <span class="philosophy-icon">🔄</span>
@@ -119,11 +161,11 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="mission">
+    <section id="mission" class="mission">
       <div class="mission-content">
         <h2>Our Mission</h2>
         <div class="mission-statement">
-          "Our mission is to make quality tech education free and accessible 
+          "Our mission is to make quality education free and accessible
           through the guild model, where real-world work funds learning, and learning feeds back into work. 
           We operate with complete integrity, forgoing any benefit that could cause doubt in our cause, and 
           reinvest all resources into education, community, and lasting social impact. Every guild engagement 
@@ -135,6 +177,47 @@
           professional work within a guild structure, we create a self-sustaining ecosystem where craft revenue 
           directly funds free education, where mentorship is woven into every project, and where every member's 
           growth strengthens the whole. No ads, no tuition, no compromise, just purpose-driven craft.
+        </p>
+        <div class="impact-flow">
+          <div class="impact-step">
+            <span class="impact-step-number">1</span>
+            <h3>Client projects</h3>
+            <p>Websites and AI tools for clients, sustained by a monthly care fee.</p>
+          </div>
+          <div class="impact-step">
+            <span class="impact-step-number">2</span>
+            <h3>Free education</h3>
+            <p>That revenue funds free learning paths and mentorship.</p>
+          </div>
+          <div class="impact-step">
+            <span class="impact-step-number">3</span>
+            <h3>Skilled craftspeople</h3>
+            <p>Learners gain job-ready skills through real work, under senior review.</p>
+          </div>
+          <div class="impact-step">
+            <span class="impact-step-number">4</span>
+            <h3>Social impact</h3>
+            <p>Skilled people create positive change in their communities.</p>
+          </div>
+        </div>
+        <div class="commitment-stats">
+          <div class="stat">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Net revenue reinvested</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">0%</span>
+            <span class="stat-label">Profit extraction</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">0</span>
+            <span class="stat-label">Ads or affiliate links</span>
+          </div>
+        </div>
+        <p class="mission-funding">
+          We fund education through client work, not donations, because it keeps us practical and up to date.
+          Donations are only a fallback if client revenue ever falls short.
+          <NuxtLink to="/help-the-mission">Here's how you can help instead.</NuxtLink>
         </p>
       </div>
     </section>
@@ -170,7 +253,7 @@
           <h3>Actively Forging</h3>
           <p>
             The guild is in <span class="highlight">active development</span> with an ambitious roadmap ahead.
-            New learning paths, guild tools, community features, and more are being forged every day. This is just the
+            New learning paths in tech and beyond, guild tools, community features, and more are being forged every day. This is just the
             beginning. We're building something meaningful, one craft at a time, and we'd love for you to join the guild.
           </p>
         </div>
@@ -186,51 +269,28 @@
     <!-- Principles Section -->
     <section class="principles">
       <div class="section-header">
-        <h2>Guild Principles</h2>
-        <p>The non-negotiable standards our guild holds itself to</p>
+        <h2>Our 12 Principles</h2>
+        <p>Twelve promises guide everything we do, for learners and clients alike</p>
       </div>
-      <div class="principles-list">
-        <div class="principle-item" style="animation-delay: 0.1s;">
-          <span class="principle-number">1</span>
-          <div class="principle-content">
-            <h3>Accessible Education</h3>
-            <p>Free access to all course content created or curated by us, ensuring quality education reaches everyone regardless of their financial situation.</p>
-          </div>
-        </div>
-        <div class="principle-item" style="animation-delay: 0.2s;">
-          <span class="principle-number">2</span>
-          <div class="principle-content">
-            <h3>Complete Integrity</h3>
-            <p>No paid advertisements, no affiliate marketing, no commissions from third-party resources. Our recommendations are purely for learner benefit.</p>
-          </div>
-        </div>
-        <div class="principle-item" style="animation-delay: 0.3s;">
-          <span class="principle-number">3</span>
-          <div class="principle-content">
-            <h3>Mission-Centric Reinvestment</h3>
-            <p>All net revenue is reinvested into the guild, community, and global educational impact. No dividends, just continuous improvement.</p>
-          </div>
-        </div>
-        <div class="principle-item" style="animation-delay: 0.4s;">
-          <span class="principle-number">4</span>
-          <div class="principle-content">
-            <h3>Craft Through Practice</h3>
-            <p>We encourage creativity, experimentation, and learning through real guild work. The craft matters as much as the result.</p>
-          </div>
-        </div>
-        <div class="principle-item" style="animation-delay: 0.5s;">
-          <span class="principle-number">5</span>
-          <div class="principle-content">
-            <h3>Guild Pathways</h3>
-            <p>Long-term commitment to creating pathways for guild members to grow from apprentice to journeyman to master, or launch their own ventures.</p>
-          </div>
-        </div>
-        <div class="principles-cta" style="animation-delay: 0.6s;">
-          <NuxtLink to="/principles" class="btn btn-outline">
-            View All 12 Principles
-            <span>→</span>
-          </NuxtLink>
-        </div>
+      <ol class="principle-chips">
+        <li><NuxtLink to="/principles/accessible"><span>1</span>Accessible</NuxtLink></li>
+        <li><NuxtLink to="/principles/integrity"><span>2</span>Integrity and Impartiality</NuxtLink></li>
+        <li><NuxtLink to="/principles/individualized"><span>3</span>Individualized</NuxtLink></li>
+        <li><NuxtLink to="/principles/engaging"><span>4</span>Engaging &amp; Rewarding</NuxtLink></li>
+        <li><NuxtLink to="/principles/creativity"><span>5</span>Creativity Learning Through Failure</NuxtLink></li>
+        <li><NuxtLink to="/principles/relevant"><span>6</span>Relevant &amp; Impactful</NuxtLink></li>
+        <li><NuxtLink to="/principles/pathways"><span>7</span>Pathways for Guild Members</NuxtLink></li>
+        <li><NuxtLink to="/principles/technology-partnership"><span>8</span>Guild Engagements Fueling Mission</NuxtLink></li>
+        <li><NuxtLink to="/principles/respect-ip"><span>9</span>Respect IP</NuxtLink></li>
+        <li><NuxtLink to="/principles/community"><span>10</span>Guild Community</NuxtLink></li>
+        <li><NuxtLink to="/principles/social-enterprise"><span>11</span>Social Enterprise Model</NuxtLink></li>
+        <li><NuxtLink to="/principles/mission-centric-reinvestment"><span>12</span>Mission-Centric Reinvestment</NuxtLink></li>
+      </ol>
+      <div class="principles-cta" style="animation-delay: 0.6s;">
+        <NuxtLink to="/principles" class="btn btn-outline">
+          Read All 12 Principles
+          <span>→</span>
+        </NuxtLink>
       </div>
     </section>    <!-- Team Section -->
     <section class="team">
@@ -238,7 +298,7 @@
         <h2>The Guild Master</h2>
       </div>
       <div class="founder-card">
-        <img src="/skill-wanderer-avatar.jpg" alt="Quan Nguyen - Founder" class="founder-avatar" />
+        <img src="/skill-wanderer-avatar.jpg" alt="Quan Nguyen, founder of Skill-Wanderer" class="founder-avatar" />
         <h3 class="founder-name">Quan Nguyen</h3>
         <p class="founder-title">Founder & Guild Master · A One-Man Army in Web, AI, Mobile, DevOps, Solution Architecture & Project Management</p>
         <div class="founder-bio">
@@ -277,7 +337,7 @@
             we create a cycle of positive energy that elevates everyone.
           </p>
           <p>
-            Skill-Wanderer isn't just a platform. It's a tech guild working toward social enterprise status. From that first 
+            Skill-Wanderer isn't just a platform. It's a guild working toward social enterprise status. From that first
             MVP award at Toyota Tsusho to every line of code I've written, I've been blessed with opportunities to 
             learn and grow. Now, through the guild model, it's my turn to create those opportunities for others, where 
             every apprentice can become a master, every project funds free education, and every act of craft strengthens 
@@ -289,12 +349,17 @@
 
     <!-- CTA Section -->
     <section class="cta">
-      <h2>Join the Guild</h2>
-      <p>Be part of a tech guild that values craft, community, and purpose</p>
-      <NuxtLink to="/" class="btn btn-primary">
-        Explore Skill-Wanderer
-        <span>→</span>
-      </NuxtLink>
+      <h2>Where Would You Like to Start?</h2>
+      <p>Bring us your idea, or come and learn with us</p>
+      <div class="cta-buttons">
+        <NuxtLink to="/contact" class="btn btn-primary">
+          Start a Project
+          <span>→</span>
+        </NuxtLink>
+        <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-secondary">
+          Start Learning
+        </NuxtLink>
+      </div>
     </section>
   </div>
 </template>
@@ -306,13 +371,13 @@ import { onMounted } from 'vue'
 // SEO and meta management
 useSEO({
   title: 'About Skill-Wanderer | The Story Behind the Mission',
-  description: 'Learn about the journey behind Skill-Wanderer, our philosophy of teaching to master, and our mission to democratize quality tech education with integrity.',
-  keywords: ['about skill-wanderer', 'quan nguyen', 'tech education mission', 'learning philosophy', 'skill wanderer story'],
+  description: 'Meet Quan Nguyen and the Skill-Wanderer guild: a tech partner for solo founders and small businesses whose client work funds free education.',
+  keywords: ['about skill-wanderer', 'quan nguyen', 'tech partner for small business', 'free education mission', 'skill wanderer story'],
   type: 'article',
   structuredData: [
     createArticleSchema(
       'About Skill-Wanderer | The Story Behind the Mission',
-      'Learn about the journey behind Skill-Wanderer, our philosophy of teaching to master, and our mission to democratize quality tech education with integrity.',
+      'Meet Quan Nguyen and the Skill-Wanderer guild: a tech partner for solo founders and small businesses whose client work funds free education.',
       'https://skill-wanderer.com/about'
     ),
     createBreadcrumbSchema([
@@ -351,7 +416,7 @@ onMounted(() => {
     })
   }, observerOptions)
 
-  document.querySelectorAll('.story-section, .principle-item').forEach(item => {
+  document.querySelectorAll('.story-section').forEach(item => {
     observer.observe(item)
   })
 
@@ -443,6 +508,10 @@ body {
 
 .section-icon {
   font-size: 1.5rem;
+}
+
+.story-image {
+  margin-bottom: 28px;
 }
 
 .story-section p {
@@ -625,48 +694,187 @@ body {
   background: var(--dark-bg);
 }
 
-.principles-list {
-  max-width: 900px;
-  margin: 40px auto 0;
+.principle-chips {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.principle-item {
+.principle-chips a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
   background: var(--card-bg);
-  border-radius: 15px;
-  padding: 30px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(255, 107, 53, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.12);
+  border-radius: 12px;
+  color: var(--light-text);
+  text-decoration: none;
+  font-weight: 600;
   transition: all 0.3s ease;
-  opacity: 0;
-  animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.principle-item:hover {
-  border-color: rgba(255, 107, 53, 0.3);
-  transform: translateX(10px);
+.principle-chips a:hover {
+  border-color: rgba(255, 107, 53, 0.4);
+  color: var(--primary-orange);
+  transform: translateY(-2px);
 }
 
-.principle-number {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+.principle-chips span {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
   color: white;
-  font-weight: bold;
-  line-height: 40px;
-  text-align: center;
-  margin-right: 20px;
-  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
 }
 
-.principle-content h3 {
+/* Guide Section */
+.guide {
+  padding: 80px 20px;
+  background: var(--dark-bg);
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.guide-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 18px;
+  padding: 28px 24px;
+}
+
+.guide-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.guide-card h3 {
   color: white;
+  font-size: 1.15rem;
   margin-bottom: 10px;
 }
 
-.principle-content p {
+.guide-card p {
+  opacity: 0.85;
+  line-height: 1.7;
+  font-size: 0.97rem;
+}
+
+.guide-card a {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.guide-card a:hover {
+  text-decoration: underline;
+}
+
+.guide-actions,
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.guide-actions {
+  margin-top: 40px;
+}
+
+/* Mission impact model */
+.mission {
+  scroll-margin-top: 90px;
+}
+
+.impact-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 48px 0 36px;
+  text-align: left;
+}
+
+.impact-step {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 16px;
+  padding: 22px 20px;
+}
+
+.impact-step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.impact-step h3 {
+  color: white;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.impact-step p {
   opacity: 0.8;
-  margin-left: 60px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.commitment-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--primary-orange);
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-top: 6px;
+}
+
+.mission-funding {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.85;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 /* Team Section */
@@ -817,9 +1025,8 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .principle-content p {
-    margin-left: 0;
-    margin-top: 10px;
+  .impact-flow {
+    grid-template-columns: 1fr;
   }
 
   .founder-card {

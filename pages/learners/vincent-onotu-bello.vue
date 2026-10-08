@@ -146,7 +146,7 @@
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
-  title: 'Vincent Onotu Bello - The Stoic | Skill-Wanderer',
+  title: 'Vincent Onotu Bello, The Stoic | Skill-Wanderer',
   description: 'Meet Vincent Onotu Bello, a resilient software development learner from Nigeria. Despite power blackouts, weak internet, and rising costs, The Stoic never stops showing up.',
   keywords: ['Vincent Onotu Bello', 'The Stoic', 'software development', 'Nigeria', 'resilient learner', 'success story', 'skill-wanderer'],
 })

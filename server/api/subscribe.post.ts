@@ -123,8 +123,11 @@ const logSubscribeEvent = (
 
 const getDurationMs = (startedAt: number) => Math.max(Date.now() - startedAt, 0)
 
+// Only plain page paths reach the logs; anything else is logged as 'unknown'.
+const SUBSCRIBE_SOURCE_PATTERN = /^\/[a-z0-9/-]{0,200}$/i
+
 const getSubscribeSource = (value: unknown): NonNullable<SubscribeRequest['source']> | 'unknown' => {
-  if (value === 'home' || value === 'contact') {
+  if (typeof value === 'string' && SUBSCRIBE_SOURCE_PATTERN.test(value)) {
     return value
   }
 

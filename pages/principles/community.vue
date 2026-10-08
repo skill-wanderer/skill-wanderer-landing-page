@@ -2,6 +2,7 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="10"
+      image="principles/community"
       title="Collaborative Community Ecosystem"
       tagline="Together We Grow"
     />
@@ -265,7 +266,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'text',
-        text: '• Educators, developers, content creators, and learners all collaborate to build, improve, and enrich the platform for everyone.'
+        text: '• Educators, experts, developers, content creators, and learners all collaborate to build, improve, and enrich the platform for everyone.'
       },
       {
         type: 'text',
@@ -280,9 +281,9 @@ const practiceExamples: PracticeExample[] = [
   {
     title: 'Peer-to-Peer Learning Systems',
     items: [
-      'Study groups formed around specific technologies or projects',
-      'Pair programming sessions between community members',
-      'Code review exchanges to improve skills',
+      'Study groups formed around specific subjects or projects',
+      'Pair practice sessions between community members',
+      'Peer review exchanges to improve skills',
       'Regular "teach what you learned" sessions'
     ]
   },

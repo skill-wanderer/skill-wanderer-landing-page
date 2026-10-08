@@ -188,7 +188,7 @@
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
-  title: 'Our Learners - Skill-Wanderer',
+  title: 'Our Learners | Skill-Wanderer',
   description: 'Meet the learners who are growing with Skill-Wanderer. Discover their stories, progress, and achievements on their learning journeys.',
   keywords: ['learners', 'students', 'success stories', 'learning community', 'Rei Reltroner', 'Prabhat Kumar', 'Alfredo Salazar', 'Khouja Nasreddine', 'Vincent Onotu Bello', 'Thanh Nguyen', 'skill-wanderer'],
 })

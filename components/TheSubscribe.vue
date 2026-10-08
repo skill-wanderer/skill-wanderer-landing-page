@@ -43,6 +43,11 @@
         <p class="privacy-note">
           We respect your privacy. Unsubscribe at any time.
         </p>
+
+        <div v-if="!isHelpPage" class="help-mission">
+          <p class="help-mission-text">Believe in free education?</p>
+          <NuxtLink to="/help-the-mission" class="btn btn-outline">Help the Mission</NuxtLink>
+        </div>
       </div>
     </div>
   </section>
@@ -64,7 +69,9 @@ const isPageUnloading = ref(false)
 const route = useRoute()
 
 const trimmedEmail = computed(() => email.value.trim())
-const subscribeSource = computed<'home' | 'contact'>(() => (route.path === '/contact' ? 'contact' : 'home'))
+// The form is on every page, so the page path tells us where people subscribe.
+const subscribeSource = computed(() => route.path)
+const isHelpPage = computed(() => route.path === '/help-the-mission')
 
 const getRequestReference = (requestId: string) => requestId.split('-')[0] || requestId
 
@@ -388,6 +395,19 @@ const handleSubscribe = async () => {
   font-size: 0.9rem;
   opacity: 0.7;
   color: var(--light-text, #e0e0e0);
+}
+
+/* An outline button, so it stays quieter than the page's own call to action. */
+.help-mission {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.help-mission .help-mission-text {
+  margin: 0 0 16px;
+  font-size: 1rem;
 }
 
 /* Responsive */

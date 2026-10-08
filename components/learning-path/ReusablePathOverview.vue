@@ -13,6 +13,8 @@
             Explore Dojo Paths
           </a>
         </div>
+
+        <ImageSlot :name="`learning-paths/${overview.slug}`" class="hero-image" priority />
       </div>
     </section>
 
@@ -179,6 +181,11 @@ h1 {
   justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
+}
+
+.hero-image {
+  max-width: 960px;
+  margin: 40px auto 0;
 }
 
 .overview-section,

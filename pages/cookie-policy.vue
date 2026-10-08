@@ -28,7 +28,7 @@
           <ul>
             <li><strong>skill-wanderer.com</strong>: Main website and landing pages</li>
             <li><strong>dojo.skill-wanderer.com</strong>: Learning platform (The Dojo)</li>
-            <li><strong>wandersings.skill-wanderer.com</strong>: Blog and community writings (Wandersings)</li>
+            <li><strong>wanderings.skill-wanderer.com</strong>: Blog and community writings (Wanderings)</li>
             <li>Any other current or future subdomains under skill-wanderer.com</li>
           </ul>
           <p>
@@ -123,8 +123,8 @@
             The Dojo may also use additional browser storage (such as localStorage or sessionStorage) for essential learning features, for example saving your course progress or preferences locally. This data remains on your device and is never used for tracking.
           </p>
 
-          <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">Wandersings (wandersings.skill-wanderer.com): Blog &amp; Community</h4>
-          <p>Wandersings allows readers to engage with content through features such as commenting. It may use <strong>Firebase</strong> services to store and serve that content and to handle authentication. Firebase SDK typically uses browser <code>IndexedDB</code> and <code>localStorage</code> for token persistence rather than traditional cookies.</p>
+          <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">Wanderings (wanderings.skill-wanderer.com): Blog &amp; Community</h4>
+          <p>Wanderings allows readers to engage with content through features such as commenting. It may use <strong>Firebase</strong> services to store and serve that content and to handle authentication. Firebase SDK typically uses browser <code>IndexedDB</code> and <code>localStorage</code> for token persistence rather than traditional cookies.</p>
           <div class="cookie-table-wrapper">
             <table class="cookie-table">
               <thead>
@@ -144,7 +144,7 @@
             </table>
           </div>
           <p class="note">
-            Note: Anonymous browsing of Wandersings does not require any cookies or local storage. Storage is only used if you actively engage with interactive features such as commenting.
+            Note: Anonymous browsing of Wanderings does not require any cookies or local storage. Storage is only used if you actively engage with interactive features such as commenting.
           </p>
 
           <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">Future and Other Subdomains</h4>
@@ -212,7 +212,7 @@
             <li><strong>Advertising Cookies:</strong> We do not run ads and do not use any advertising, retargeting, or remarketing cookies on any subdomain.</li>
             <li><strong>Social Media Tracking Cookies:</strong> We do not embed social media widgets or pixels that track you across the web.</li>
             <li><strong>Personalisation / Profiling Cookies:</strong> We do not build profiles about you, track browsing patterns, or personalise content based on tracked behaviour.</li>
-            <li><strong>Cross-Subdomain Tracking:</strong> We do not use cookies or any other mechanism to track your activity across our different subdomains. Your session on dojo.skill-wanderer.com is entirely separate from your activity on wandersings.skill-wanderer.com.</li>
+            <li><strong>Cross-Subdomain Tracking:</strong> We do not use cookies or any other mechanism to track your activity across our different subdomains. Your session on dojo.skill-wanderer.com is entirely separate from your activity on wanderings.skill-wanderer.com.</li>
             <li><strong>Third-Party Marketing Scripts:</strong> We do not load any third-party marketing, tracking, or data-collection scripts on any subdomain.</li>
           </ul>
         </div>
@@ -238,7 +238,7 @@
           <ul>
             <li><strong>Main site (skill-wanderer.com):</strong> Built with Nuxt.js. Firebase is used for contact form submissions. These use browser storage essential to form delivery only.</li>
             <li><strong>The Dojo (dojo.skill-wanderer.com):</strong> Uses Keycloak (self-hosted) for identity and access management, and for managing the learning experience. No authentication data is shared with third-party advertising or analytics services.</li>
-            <li><strong>Wandersings (wandersings.skill-wanderer.com):</strong> May use Firebase for authentication, storing comments, and community content. Anonymous reading does not involve any third-party services.</li>
+            <li><strong>Wanderings (wanderings.skill-wanderer.com):</strong> May use Firebase for authentication, storing comments, and community content. Anonymous reading does not involve any third-party services.</li>
           </ul>
           <p>
             As our platform evolves, individual subdomains may adopt, replace, or remove third-party services. Some subdomains may use Firebase, others may not. Some may use Keycloak, others may use a different identity solution. The specific services are an implementation detail. Our privacy commitment is not:
@@ -259,7 +259,7 @@
           <ul>
             <li>You can view, manage, and delete cookies through your browser's settings or developer tools.</li>
             <li>You can clear your localStorage, sessionStorage, and IndexedDB at any time through your browser's developer tools, which will reset preferences and sign you out of any services.</li>
-            <li>Blocking essential cookies may affect how our services function. For example, you may not be able to sign in to the Dojo or post comments on Wandersings.</li>
+            <li>Blocking essential cookies may affect how our services function. For example, you may not be able to sign in to the Dojo or post comments on Wanderings.</li>
           </ul>
           <p>For guidance on managing cookies in popular browsers:</p>
           <ul>

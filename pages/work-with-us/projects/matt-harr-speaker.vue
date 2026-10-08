@@ -19,7 +19,7 @@
         </div>
         <div class="fee-banner">
           <span class="fee-banner-label">No Development Fee</span>
-          <p>Designed, built, and launched at zero development cost to the client.</p>
+          <p>Designed, built, and launched with no development fee. Matt is on our monthly hosting, maintenance and support plan.</p>
         </div>
       </div>
     </section>
@@ -169,9 +169,9 @@
           </div>
           <div class="tech-card">
             <h3>Cloudflare</h3>
-            <span class="tech-label">Hosting (Free Tier)</span>
+            <span class="tech-label">Hosting</span>
             <p>
-              Global edge delivery at zero recurring cost, so the only thing Matt pays for is his domain name.
+              Fast global delivery on a lightweight build, which keeps Matt's monthly care fee small.
             </p>
           </div>
           <div class="tech-card">
@@ -249,10 +249,10 @@
       <div class="detail-container">
         <h2>Why There Was No Development Fee</h2>
         <blockquote class="featured-quote">
-          Matt spent 35 years making sure the kids in his classrooms and on his teams had someone in their corner.
-          Helping him reach more schools was not something I wanted to put an invoice on. The guild is funded by the
-          work that can afford us, and that is exactly what lets us take on work like this for free. Matt paid for
-          his own domain. Everything else was on the house.
+          There was no development fee because that is how we work with every accepted project. Instead of a big
+          bill up front, Matt pays a small monthly fee for hosting, maintenance and support, which keeps me invested
+          in his site long after launch. For someone who spent 35 years making sure the kids in his classrooms and on
+          his teams had someone in their corner, a partner who stays felt like the right way to work.
         </blockquote>
       </div>
     </section>
@@ -264,9 +264,10 @@
         <div class="status-box">
           <span class="status-indicator">Live</span>
           <p>
-            The site is live and Matt publishes to it independently. Static generation means there is no server to
-            patch and no database to back up, and free-tier hosting keeps the running cost at zero. The architecture
-            leaves room to add a booking calendar or a paid course if the speaking business calls for it.
+            The site is live and Matt publishes to it independently, while we look after hosting, maintenance and
+            support under his monthly plan. Static generation means there is no server to patch and no database to
+            back up, which keeps that monthly fee small. The architecture leaves room to add a booking calendar or a
+            paid course if the speaking business calls for it.
           </p>
         </div>
       </div>
@@ -299,7 +300,7 @@ useSEO({
   description:
     'How Skill-Wanderer designed, built, and launched the professional speaking website for Matt Harr, a school culture and leadership speaker, at no development fee.',
   image: '/projects/mattharr/hero.jpg',
-  keywords: ['speaker website design', 'professional speaking website', 'personal brand website', 'Astro website case study', 'pro bono web development'],
+  keywords: ['speaker website design', 'professional speaking website', 'personal brand website', 'Astro website case study', 'no development fee website'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },

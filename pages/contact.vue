@@ -2,56 +2,14 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Let's Build Something Together</h1>
-      <p>Have a project in mind? Tell us what you need and we'll get back to you with a plan, timeline, and transparent pricing.</p>
+      <h1>Tell Us About Your Idea</h1>
+      <p>
+        Describe what you want to build or the problem you have. Quan Nguyen, our founder and Guild Master,
+        reads every message himself.
+      </p>
     </section>
 
-    <!-- Authority Section: FAQ + Mission + Impact -->
-    <section class="authority">
-      <div class="authority-container">
-        <!-- Senior Architect Oversight -->
-        <div class="authority-card authority-leadership">
-          <div class="authority-icon">🏛️</div>
-          <h3>Who Will Work on Your Project?</h3>
-          <p>Every engagement receives <strong>senior architect oversight</strong> from the Guild Master, a solution architect with over a decade of experience across startups and enterprises. Your project is never handed off to juniors. The Guild Master personally leads architecture, code review, and quality assurance, hand-picking skilled artisans for each engagement.</p>
-        </div>
-
-        <!-- Mission Highlight -->
-        <div class="authority-card authority-mission">
-          <div class="authority-icon">🌱</div>
-          <h3>Your Project Fuels a Mission</h3>
-          <p>Every guild engagement directly funds <strong>free mentorship</strong> for passionate learners like <NuxtLink to="/learners/rei-reltroner" class="authority-link">Rei</NuxtLink> and <NuxtLink to="/team/thanh-nguyen" class="authority-link">Thanh</NuxtLink>. When you build with the Guild, you invest in the next generation of developers.</p>
-        </div>
-
-        <!-- Impact Counter -->
-        <div class="authority-card authority-impact">
-          <div class="authority-icon">📊</div>
-          <div class="impact-counter">
-            <span class="impact-number">100%</span>
-            <span class="impact-label">of projects fund local tech education</span>
-          </div>
-          <p>Senior-led quality with a social enterprise vision. Your investment creates real impact beyond code.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Admiral Orion: Instant Alternative -->
-    <section class="orion-section">
-      <div class="orion-container">
-        <div class="orion-card">
-          <div class="orion-header">
-            <div class="orion-icon">🧭</div>
-            <div>
-              <h2>Need Answers Now?</h2>
-              <p>Talk to <strong>Admiral Orion</strong>, our AI assistant, for instant project guidance, with no waiting required.</p>
-            </div>
-          </div>
-          <NuxtLink to="/admiral-orion" class="btn btn-orion">Chat with Admiral Orion</NuxtLink>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- Contact Section: the form comes first -->
     <section class="contact">
       <!-- Tab Switcher -->
       <div class="tab-switcher">
@@ -59,7 +17,7 @@
           :class="['tab-btn', { active: activeTab === 'hire' }]"
           @click="activeTab = 'hire'"
         >
-          Hire the Guild
+          Start a Project
         </button>
         <button
           :class="['tab-btn', { active: activeTab === 'join' }]"
@@ -73,8 +31,8 @@
         <!-- Contact Form -->
         <div class="contact-form">
           <div class="form-header">
-            <h2>We're Ready to Build</h2>
-            <p>Describe your vision and we'll respond within 24–48 hours with an architectural assessment and next steps.</p>
+            <h2>Start a Project</h2>
+            <p>No technical words needed. Tell us what you want, who it's for, and what success would look like.</p>
           </div>
           <form id="contactForm" @submit.prevent="handleHireSubmit">
             <div class="form-group">
@@ -84,34 +42,28 @@
             <div class="form-group">
               <label for="email">Email Address</label>
               <input type="email" id="email" v-model="form.email" required autocomplete="email" spellcheck="false" aria-describedby="hire-email-note" placeholder="your.email@example.com">
-              <p id="hire-email-note" class="field-hint">We check email format only. A guild member replies manually to this address after submission; there is no automatic verification email.</p>
+              <p id="hire-email-note" class="field-hint">We check email format only. Quan replies to this address himself; there is no automatic verification email.</p>
             </div>
             <div class="form-group">
-              <label for="topic">How Can the Guild Support Your Vision?</label>
+              <label for="topic">What Do You Have in Mind?</label>
               <select id="topic" v-model="form.topic" required>
-                <option value="">Which Digital Foundation Do You Need?</option>
-                <option value="website">Website or Landing Page</option>
-                <option value="web-app">Web Application or Platform</option>
-                <option value="ecommerce">E-Commerce or Marketplace</option>
-                <option value="ai">AI Application or Integration</option>
-                <option value="mobile">Mobile App or Progressive Web App</option>
-                <option value="api">API Development or Integration</option>
-                <option value="automation">Automation or Workflow Tools</option>
-                <option value="legacy">Legacy System Replacement</option>
-                <option value="consulting">Technical Consulting</option>
-                <option value="partnership">Partnership Opportunity</option>
-                <option value="other">Something Else</option>
+                <option value="">Choose the closest one</option>
+                <option value="website">A website for my business or practice</option>
+                <option value="ai">An AI tool for my students or clients</option>
+                <option value="booking-payments-automation">Booking, payments or automation</option>
+                <option value="app-platform">An app or a bigger platform</option>
+                <option value="not-sure">Not sure yet, I just have an idea</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="message">Your Message</label>
-              <textarea id="message" v-model="form.message" required placeholder="Describe your project, goals, timeline, and any technical requirements..."></textarea>
+              <label for="message">Your Idea or Problem</label>
+              <textarea id="message" v-model="form.message" required placeholder="What do you want to build? Who is it for? What would success look like? Plain words are perfect."></textarea>
             </div>
             <div v-if="!isWeb3FormsConfigured && !formMessage.show" class="form-message error">
               {{ hireConfigErrorMessage }}
             </div>
             <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
-              {{ isSubmitting ? 'Sending...' : 'Request an Architectural Audit' }}
+              {{ isSubmitting ? 'Sending...' : 'Send My Idea' }}
               <span>{{ isSubmitting ? '⏳' : '→' }}</span>
             </button>
             <div class="form-footer-legal">
@@ -125,19 +77,48 @@
           </form>
         </div>
 
-        <!-- Contact Info -->
+        <!-- What happens next + other ways to reach us -->
         <div class="contact-info">
           <div class="info-header">
-            <h2>Other Ways to Reach Us</h2>
-            <p>Prefer a different channel? We're happy to connect however works best for you.</p>
+            <h2>What Happens Next</h2>
+            <p>Simple steps, and no pressure at any of them.</p>
           </div>
+          <ol class="next-steps">
+            <li class="next-step">
+              <span class="next-step-number">1</span>
+              <div>
+                <h3>Quan reads your message</h3>
+                <p>He usually replies within 2 working days with a time for a short call.</p>
+              </div>
+            </li>
+            <li class="next-step">
+              <span class="next-step-number">2</span>
+              <div>
+                <h3>One short call</h3>
+                <p>
+                  Quan takes one call a day so he keeps time to build and teach. Your call may be a few days
+                  later, and that's normal.
+                </p>
+              </div>
+            </li>
+            <li class="next-step">
+              <span class="next-step-number">3</span>
+              <div>
+                <h3>A free working prototype</h3>
+                <p>
+                  If your idea is a good fit, we build a free prototype. You decide after you've seen it, and
+                  you can walk away and owe nothing.
+                </p>
+              </div>
+            </li>
+          </ol>
           <div class="info-cards">
             <div class="info-card">
               <div class="info-card-header">
                 <div class="info-icon">✉️</div>
-                <h3>Email</h3>
+                <h3>Prefer Email?</h3>
               </div>
-              <p>For project proposals or detailed discussions</p>
+              <p>Write to the Guild Master directly</p>
               <div class="email-row">
                 <span class="email-text">quan.nguyen@skill-wanderer.com</span>
                 <button type="button" class="copy-btn" title="Copy email to clipboard" @click="copyEmail">
@@ -150,10 +131,10 @@
             <div class="info-card">
               <div class="info-card-header">
                 <div class="info-icon">🧭</div>
-                <h3>How We Work</h3>
+                <h3>How It Works</h3>
               </div>
-              <p>Explore our delivery model, project fit, and partnership approach</p>
-              <NuxtLink to="/work-with-us" class="info-card-link">See Engagement Options</NuxtLink>
+              <p>Free prototype first, no development fee, and no lock-in.</p>
+              <NuxtLink to="/work-with-us/service-model" class="info-card-link">See the Full Details</NuxtLink>
             </div>
           </div>
         </div>
@@ -253,10 +234,52 @@
                 <div class="info-icon">⚔️</div>
                 <h3>Guild Membership</h3>
               </div>
-              <p>Guild artisans collaborate on real client projects, receive mentorship, and share in the mission of funding free tech education for emerging developers.</p>
-              <NuxtLink to="/manifesto" class="info-card-link">Read the Guild Manifesto</NuxtLink>
+              <p>Guild members help on real client projects under senior review, receive mentorship, and share in the mission of funding free education for learners everywhere.</p>
+              <NuxtLink to="/learning-path/learn-contribute-build-earn" class="info-card-link">How Learning Works</NuxtLink>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust: who builds your project, and what it funds -->
+    <section class="authority">
+      <div class="authority-container">
+        <div class="authority-card authority-leadership">
+          <div class="authority-icon">🏛️</div>
+          <h3>Who Will Work on Your Project?</h3>
+          <p>Quan Nguyen, our founder and Guild Master, is a solution architect with over a decade of experience across startups and enterprises. He designs your project, builds the critical parts, and <strong>reviews every change</strong>. Guild learners may help, always under his review.</p>
+        </div>
+
+        <div class="authority-card authority-mission">
+          <div class="authority-icon">🌱</div>
+          <h3>Your Project Funds a Mission</h3>
+          <p>Every client project helps fund <strong>free mentorship</strong> for passionate learners like <NuxtLink to="/learners/rei-reltroner" class="authority-link">Rei</NuxtLink> and <NuxtLink to="/team/thanh-nguyen" class="authority-link">Thanh</NuxtLink>. We fund education through client work, not donations.</p>
+        </div>
+
+        <div class="authority-card authority-impact">
+          <div class="authority-icon">📊</div>
+          <div class="impact-counter">
+            <span class="impact-number">100%</span>
+            <span class="impact-label">of net revenue reinvested in the mission</span>
+          </div>
+          <p>No investors and no profit extraction. What you pay keeps your project running and keeps free education going.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admiral Orion: a secondary option for visitors not ready to write -->
+    <section class="orion-section">
+      <div class="orion-container">
+        <div class="orion-card">
+          <div class="orion-header">
+            <div class="orion-icon">🧭</div>
+            <div>
+              <h2>Not Ready to Write Yet?</h2>
+              <p>Ask <strong>Admiral Orion</strong>, our AI guide, whether your idea is a good fit or how the free prototype works.</p>
+            </div>
+          </div>
+          <NuxtLink to="/admiral-orion" class="btn btn-orion">Chat with Admiral Orion</NuxtLink>
         </div>
       </div>
     </section>
@@ -288,18 +311,24 @@
 
 <script setup lang="ts">
 // Icons replaced with emojis
-import { computed, reactive, ref } from 'vue'
+import { computed, reactive, ref, watch } from 'vue'
 
 // SEO and meta management
 useSEO({
-  title: 'Contact Skill-Wanderer | Start Your Project Today',
-  description: 'Get in touch with Skill-Wanderer Guild. Tell us about your project and receive a proposal with transparent pricing, clear timelines, and a dedicated team.',
-  keywords: ['contact skill-wanderer', 'custom software development', 'web development services', 'project inquiry', 'get a quote'],
+  title: 'Contact Skill-Wanderer | Tell Us About Your Idea',
+  description: 'Tell us about your idea. Quan, our founder, reads every message and replies with a time for a short call. Free prototype first, no development fee.',
+  keywords: ['contact skill-wanderer', 'website for small business', 'tech partner', 'free prototype', 'no development fee', 'project inquiry'],
   type: 'website'
 })
 
-// Tab state
-const activeTab = ref<'hire' | 'join'>('hire')
+// Tab state: links such as /contact?tab=join open the guild form directly
+const route = useRoute()
+const getTabFromQuery = (): 'hire' | 'join' => (route.query.tab === 'join' ? 'join' : 'hire')
+const activeTab = ref<'hire' | 'join'>(getTabFromQuery())
+
+watch(() => route.query.tab, () => {
+  activeTab.value = getTabFromQuery()
+})
 
 // Hire form state
 const form = reactive({
@@ -452,7 +481,7 @@ const getFailureLifecycleState = (errorType: SubmissionErrorType): SubmissionLif
 }
 
 const buildHireSuccessMessage = (replyEmail: string, submissionReference: string) =>
-  `Message accepted for delivery. Reference: ${submissionReference}. We'll reply to ${replyEmail} within 24-48 hours. If you do not hear from us, please check spam or email us directly with this reference.`
+  `Message accepted for delivery. Reference: ${submissionReference}. Quan will usually reply to ${replyEmail} within 2 working days with a time for a short call. If you do not hear from us, please check spam or email us directly with this reference.`
 
 const buildGuildSuccessMessage = (replyEmail: string, submissionReference: string) =>
   `Application accepted for delivery. Reference: ${submissionReference}. We'll reply to ${replyEmail} after review. If you do not hear from us within a few days, please check spam or email us directly with this reference.`
@@ -512,20 +541,27 @@ const activeFaq = ref(-1)
 const faqs = ref([
   {
     question: "What kind of projects do you take on?",
-    answer: "We build custom websites, web applications, platforms, and provide technical consulting. From single landing pages to complex multi-feature platforms, every project is custom-coded with modern frameworks, no templates or page builders. Check our What We Build page for detailed examples."
+    answer: "Websites for your business or practice, AI tools for your students or clients, booking and payments, small automations, and apps or bigger platforms when you are ready. Every project is custom-built, and we explain everything in plain language."
   },
   {
     question: "How does pricing work?",
-    answer: "We scope engagements around clear deliverables, timelines, and fixed proposals. Describe your project and we'll recommend the right fit, timeline, and next step."
+    answer: "For accepted projects there is no development fee. We build a free working prototype first, so you can see it before you commit. If you continue, you pay a monthly fee for hosting, maintenance, support and occasional changes, billed monthly or quarterly. The exact price is confirmed after the prototype review, never before."
   },
-
   {
     question: "How long does a typical project take?",
-    answer: "Timelines depend on scope. A landing page can be delivered in 1-2 weeks, while a full web application may take 4-8 weeks or more. After you describe your project, we'll provide a realistic timeline along with our proposal."
+    answer: "Timelines depend on scope. A simple website can be ready in 1-2 weeks, while a full web application may take 4-8 weeks or more. After your call, Quan will give you a realistic timeline."
   },
   {
-    question: "What makes the guild different from a traditional agency?",
-    answer: "We combine senior-led quality with a social enterprise mission. Every project is architect-led with hands-on code review. Our guild model means you get dedicated craftsmanship at competitive rates, and your investment directly funds free education and mentorship for emerging developers."
+    question: "Who will work on my project?",
+    answer: "Quan Nguyen, our founder, designs your project, builds the critical parts and reviews every change. Guild learners may help, always under his review."
+  },
+  {
+    question: "Why does Quan only take one call a day?",
+    answer: "Quan builds and teaches as well as meeting new clients. One call a day keeps time for the work itself, so every client gets his full attention."
+  },
+  {
+    question: "What makes Skill-Wanderer different from an agency?",
+    answer: "There is no big upfront bill: you see a working prototype first and pay no development fee. You get honest advice, not just code. There is no lock-in: you own your domain and can see the code. And your project helps fund free education."
   }
 ])
 
@@ -889,8 +925,8 @@ body {
 
 /* Authority Section */
 .authority {
-  padding: 60px 20px;
-  background: var(--darker-bg);
+  padding: 80px 20px;
+  background: var(--dark-bg);
 }
 
 .authority-container {
@@ -1204,6 +1240,52 @@ body {
   font-size: 2rem;
   color: var(--primary-orange);
   margin-bottom: 10px;
+}
+
+.info-header p {
+  opacity: 0.8;
+}
+
+/* What happens next */
+.next-steps {
+  list-style: none;
+  margin-bottom: 30px;
+  display: grid;
+  gap: 16px;
+}
+
+.next-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 15px;
+  padding: 22px 24px;
+}
+
+.next-step-number {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-orange), var(--deep-orange));
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-step h3 {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.next-step p {
+  opacity: 0.8;
+  line-height: 1.6;
 }
 
 .info-cards {

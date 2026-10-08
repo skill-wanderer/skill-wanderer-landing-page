@@ -118,7 +118,7 @@ const keywordMap: Record<string, string[]> = {
     'learn contribute build earn',
     'skill-wanderer',
     'education philosophy',
-    'tech guild',
+    'learning guild',
     'real project learning',
     'free to learn',
     'contribution model'

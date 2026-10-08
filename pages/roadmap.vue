@@ -7,9 +7,10 @@
         <p class="hero-subtitle">Building the Future of Skill-Wanderer, One Module at a Time</p>
         <p class="hero-description">
           Our roadmap outlines the key modules we're developing to power a truly independent,
-          community-driven tech guild. Every module is built with passion, transparency,
+          community-driven guild. Every module is built with passion, transparency,
           and our guild members' needs at heart.
         </p>
+        <ImageSlot name="roadmap/hero" class="hero-image" priority />
       </div>
     </section>
 
@@ -208,14 +209,15 @@
 
           <div class="module-card">
             <span class="module-icon">💰</span>
-            <h3>Fundraising & Sustainability</h3>
+            <h3>Sustainability &amp; Fallback Funding</h3>
             <p>
-              Tools and integrations to raise funding for the project, from donation campaigns
-              and grant applications to our Social Impact Token model that sustains free education
-              through community trust and shared value.
+              Client work is how we fund free education, because it keeps us practical. This module
+              covers the fallback: donation and grant tools we can switch on if client revenue ever
+              falls short, plus our Social Impact Token model for community support.
+              <NuxtLink to="/help-the-mission">Here's how you can help today.</NuxtLink>
             </p>
             <div class="module-tags">
-              <span class="tag">Donation Platform</span>
+              <span class="tag">Fallback Donations</span>
               <span class="tag">Grant Management</span>
               <span class="tag">Impact Tokens</span>
             </div>
@@ -307,8 +309,8 @@
           Get In Touch
           <span>→</span>
         </NuxtLink>
-        <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-secondary">
-          Partner With Us
+        <NuxtLink to="/work-with-us" class="btn btn-secondary">
+          Work With Us
         </NuxtLink>
       </div>
     </section>
@@ -323,7 +325,7 @@ import { onMounted, ref } from 'vue'
 useSEO({
   title: 'Guild Roadmap | Skill-Wanderer Development Plan',
   description: 'Explore the Skill-Wanderer guild roadmap, from our custom LMS and member portal to community tools and sustainability. See what we\'re building and how you can be part of the guild.',
-  keywords: ['skill-wanderer roadmap', 'guild development', 'LMS module', 'community module', 'tech guild roadmap', 'open source education'],
+  keywords: ['skill-wanderer roadmap', 'guild development', 'LMS module', 'community module', 'free education roadmap', 'open source education'],
   type: 'website',
 })
 
@@ -403,6 +405,11 @@ onMounted(() => {
   opacity: 0.8;
   line-height: 1.8;
   font-size: 1.05rem;
+}
+
+.hero-image {
+  max-width: 900px;
+  margin: 48px auto 0;
 }
 
 /* ========== Roadmap Timeline Section ========== */

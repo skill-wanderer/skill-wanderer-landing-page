@@ -23,7 +23,7 @@
           <ul>
             <li><strong>skill-wanderer.com</strong>: Main website, information, and contact</li>
             <li><strong>dojo.skill-wanderer.com</strong>: The Dojo, our learning platform where you can create an account, sign in via Keycloak, and access educational courses and learning management features</li>
-            <li><strong>wandersings.skill-wanderer.com</strong>: Wandersings, our blog and community space where readers may engage with content and comments (may use Firebase for authentication and content storage)</li>
+            <li><strong>wanderings.skill-wanderer.com</strong>: Wanderings, our blog and community space where readers may engage with content and comments (may use Firebase for authentication and content storage)</li>
             <li>Any other current or future subdomains we operate under skill-wanderer.com</li>
           </ul>
           <p>
@@ -38,7 +38,7 @@
             By accessing, browsing, or using any of our Services on any subdomain, you acknowledge that you have read, understood, and agree to be bound by these Terms and our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>. If you do not agree to these Terms, please do not use our Services.
           </p>
           <p>
-            Creating an account on any subdomain (such as the Dojo), posting comments or content on any community feature (such as Wandersings), submitting any form, or signing in through any identity provider constitutes acceptance of these Terms.
+            Creating an account on any subdomain (such as the Dojo), posting comments or content on any community feature (such as Wanderings), submitting any form, or signing in through any identity provider constitutes acceptance of these Terms.
           </p>
         </div>
 
@@ -46,11 +46,11 @@
         <div class="terms-section">
           <h2>Our Mission and Services</h2>
           <p>
-            Skill-Wanderer is dedicated to making quality technology education accessible to everyone. We provide:
+            Skill-Wanderer is dedicated to making quality education accessible to everyone. We provide:
           </p>
           <ul>
             <li>Educational content and courses through the Dojo learning platform (<strong>dojo.skill-wanderer.com</strong>)</li>
-            <li>Articles, guides, and community discussions through Wandersings (<strong>wandersings.skill-wanderer.com</strong>)</li>
+            <li>Articles, guides, and community discussions through Wanderings (<strong>wanderings.skill-wanderer.com</strong>)</li>
             <li>Technology consulting and development services</li>
             <li>Open-source educational materials and tools</li>
             <li>Additional services and tools as we introduce new subdomains in the future</li>
@@ -68,7 +68,7 @@
           </p>
           <ul>
             <li><strong>The Dojo (dojo.skill-wanderer.com):</strong> Accounts are managed through our self-hosted <strong>Keycloak</strong> identity service. An account is required to access course content, track learning progress, and earn certificates.</li>
-            <li><strong>Wandersings (wandersings.skill-wanderer.com):</strong> If interactive features (such as commenting) require authentication, accounts may be managed through <strong>Firebase Authentication</strong> or another provider.</li>
+            <li><strong>Wanderings (wanderings.skill-wanderer.com):</strong> If interactive features (such as commenting) require authentication, accounts may be managed through <strong>Firebase Authentication</strong> or another provider.</li>
             <li><strong>Future subdomains:</strong> New services may use Keycloak, Firebase, or other identity providers as appropriate for their purpose.</li>
           </ul>
           <p>Regardless of which subdomain or identity provider is used, the following responsibilities apply to all accounts:</p>
@@ -89,7 +89,7 @@
         <div class="terms-section">
           <h2>Community Features</h2>
           <p>
-            Some subdomains offer community and interactive features, such as comments, discussions, or user-submitted content. Currently, Wandersings (wandersings.skill-wanderer.com) provides commenting features, and future subdomains may offer similar or additional community functionality.
+            Some subdomains offer community and interactive features, such as comments, discussions, or user-submitted content. Currently, Wanderings (wanderings.skill-wanderer.com) provides commenting features, and future subdomains may offer similar or additional community functionality.
           </p>
           <p>When using any community feature on any subdomain, you agree to:</p>
           <ul>
@@ -105,7 +105,7 @@
             We reserve the right to remove any community content that violates these Terms or that we deem inappropriate, without prior notice. Repeated violations may result in account suspension or termination on the affected subdomain.
           </p>
           <p>
-            Community features may be powered by different backend services depending on the subdomain (e.g., Firebase on Wandersings). By engaging with these features, you acknowledge that your submitted content will be stored and processed as described in our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>.
+            Community features may be powered by different backend services depending on the subdomain (e.g., Firebase on Wanderings). By engaging with these features, you acknowledge that your submitted content will be stored and processed as described in our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>.
           </p>
         </div>
 
@@ -160,7 +160,7 @@
             <li>Educational outcomes may vary based on individual effort and circumstances</li>
             <li>Certificates or completion records issued through the Dojo reflect participation, not accreditation by any external body</li>
             <li>We encourage learners to supplement our resources with additional learning materials</li>
-            <li>Technology is constantly evolving, and some content may become outdated over time</li>
+            <li>Every field keeps evolving, and some content may become outdated over time</li>
           </ul>
         </div>
 
@@ -199,7 +199,7 @@
             Your privacy is important to us. Our collection, use, and protection of your personal information across all Skill-Wanderer properties, regardless of which backend technology or service powers each subdomain, is governed by our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>, which is incorporated into these Terms by reference.
           </p>
           <p>
-            We use essential cookies and browser storage only, across all subdomains. The specific cookies and storage used depend on the technology powering each subdomain (e.g., Keycloak session cookies on the Dojo, Firebase localStorage on Wandersings). Our cookie practices are fully described in our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>, which is also incorporated into these Terms by reference.
+            We use essential cookies and browser storage only, across all subdomains. The specific cookies and storage used depend on the technology powering each subdomain (e.g., Keycloak session cookies on the Dojo, Firebase localStorage on Wanderings). Our cookie practices are fully described in our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>, which is also incorporated into these Terms by reference.
           </p>
         </div>
 

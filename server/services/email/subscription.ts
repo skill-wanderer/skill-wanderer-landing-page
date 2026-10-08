@@ -1,6 +1,9 @@
+const HELP_THE_MISSION_URL = 'https://skill-wanderer.com/help-the-mission'
+
 const welcomeBody = [
   '<p>Welcome to Skill Wanderer.</p>',
   '<p>You are now subscribed. We will send you guild updates, new learning paths, and community initiatives.</p>',
+  `<p>Believe in free education? Here are <a href="${HELP_THE_MISSION_URL}">three ways to help the mission</a>.</p>`,
   '<p>If you did not subscribe, or you change your mind later, reply to this email and we will remove you from the list.</p>'
 ].join('')
 
@@ -8,6 +11,8 @@ const welcomeText = [
   'Welcome to Skill Wanderer.',
   '',
   'You are now subscribed. We will send you guild updates, new learning paths, and community initiatives.',
+  '',
+  `Believe in free education? Here are three ways to help the mission: ${HELP_THE_MISSION_URL}`,
   '',
   'If you did not subscribe, or you change your mind later, reply to this email and we will remove you from the list.'
 ].join('\n')

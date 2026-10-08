@@ -99,7 +99,7 @@
         <h2>Want to Join the Team?</h2>
         <p>
           Skill-Wanderer is open source and community-driven. Contribute to the project
-          and help shape the future of free tech education.
+          and help shape the future of free education.
         </p>
         <div class="cta-buttons">
           <a href="https://github.com/skill-wanderer" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
@@ -137,13 +137,13 @@ const member = teamMembers.find((m) => m.slug === slug)
 
 if (member) {
   useSEO({
-    title: `${member.name} - ${member.role} | Skill-Wanderer`,
+    title: `${member.name}, ${member.role} | Skill-Wanderer`,
     description: `Meet ${member.name}, ${member.role} at Skill-Wanderer. ${member.tagline}`,
     keywords: [member.name, member.role, 'team', 'skill-wanderer'],
   })
 } else {
   useSEO({
-    title: 'Team Member Not Found - Skill-Wanderer',
+    title: 'Team Member Not Found | Skill-Wanderer',
     description: 'The requested team member was not found.',
   })
 }

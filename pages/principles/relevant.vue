@@ -2,6 +2,7 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero
       :number="6"
+      image="principles/relevant"
       title="Relevant & Impactful"
       tagline="Real Skills for Real Jobs"
       breadcrumb-name="Relevant & Impactful"
@@ -17,8 +18,8 @@
     <section class="evolution-section">
       <div class="evolution-container">
         <div style="text-align: center; margin-bottom: 50px;">
-          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">The Evolution of Tech Roles</h2>
-          <p style="font-size: 1.2rem; opacity: 0.9;">How quickly the landscape changes</p>
+          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">How Fast Roles Change</h2>
+          <p style="font-size: 1.2rem; opacity: 0.9;">One example from tech, the field we know best</p>
         </div>
         
         <div class="evolution-timeline">
@@ -94,19 +95,19 @@
             
             <div class="gap-profile">
               <h4>Their Strengths:</h4>
-              <p>Strong theoretical foundation, understands algorithms, knows data structures, can prove complexity</p>
+              <p>Strong theoretical foundation, knows the core concepts of the field, can explain why things work</p>
             </div>
-            
+
             <div class="gap-profile">
               <h4>Their Gaps:</h4>
-              <p>Never deployed to production, unfamiliar with real tools, no experience with team workflows</p>
+              <p>Little real-world practice, unfamiliar with the tools of the trade, no experience with team workflows</p>
             </div>
-            
+
             <ul class="gap-list">
               <li>Needs hands-on project experience</li>
               <li>Requires exposure to industry tools</li>
-              <li>Must learn debugging real systems</li>
-              <li>Needs practice with version control</li>
+              <li>Must learn to solve messy, real problems</li>
+              <li>Needs practice working in a team</li>
             </ul>
           </div>
           
@@ -118,19 +119,19 @@
             
             <div class="gap-profile">
               <h4>Their Strengths:</h4>
-              <p>Can build working applications, knows popular frameworks, ships features quickly, solves real problems</p>
+              <p>Gets real results, knows the popular tools, works quickly, solves real problems</p>
             </div>
-            
+
             <div class="gap-profile">
               <h4>Their Gaps:</h4>
-              <p>Missing fundamental CS concepts, struggles with complex algorithms, limited architectural thinking</p>
+              <p>Missing some fundamentals, struggles with complex problems, limited big-picture thinking</p>
             </div>
-            
+
             <ul class="gap-list">
-              <li>Needs algorithmic foundations</li>
-              <li>Requires system design principles</li>
-              <li>Must understand performance analysis</li>
-              <li>Needs architectural patterns</li>
+              <li>Needs solid foundations</li>
+              <li>Requires the core principles of the field</li>
+              <li>Must understand why things work, not just how</li>
+              <li>Needs mental models for bigger decisions</li>
             </ul>
           </div>
         </div>
@@ -147,12 +148,12 @@
           <div class="bridge-sides">
             <div class="bridge-side left">
               <h3>Theory</h3>
-              <p>Algorithms, Data Structures, Design Patterns, System Architecture</p>
+              <p>Core Concepts, Foundations, Proven Patterns, Big-Picture Thinking</p>
             </div>
             
             <div class="bridge-side right">
               <h3>Practice</h3>
-              <p>Real Projects, Industry Tools, Team Collaboration, Production Skills</p>
+              <p>Real Projects, Industry Tools, Team Collaboration, Real-World Results</p>
             </div>
           </div>
           
@@ -220,7 +221,7 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: "text",
-        text: "The world of technology is in constant motion. Old skills become obsolete, making way for new ones. Job titles might stay the same, but the skills required are vastly different. The job of a developer today bears little resemblance to the era of punch cards. There even used to be a formal job title called \"Computer\" for people who performed calculations, a role that has since vanished entirely. This constant evolution means that lifelong learning isn't just a nice idea; it's a necessity for survival and growth."
+        text: "The world of work is in constant motion. Old skills become obsolete, making way for new ones. Job titles might stay the same, but the skills required are vastly different. Take my own field: the job of a developer today bears little resemblance to the era of punch cards. There even used to be a formal job title called \"Computer\" for people who performed calculations, a role that has since vanished entirely. This constant evolution means that lifelong learning isn't just a nice idea; it's a necessity for survival and growth."
       },
       {
         type: "personal-story",
@@ -276,9 +277,9 @@ const practiceExamples: PracticeExample[] = [
     title: "Industry-Aligned Curriculum",
     items: [
       "Regular surveys of job postings to identify in-demand skills",
-      "Direct feedback from hiring managers and tech leads",
-      "Curriculum updates based on technology trends",
-      "Focus on tools and frameworks actually used in production"
+      "Direct feedback from hiring managers and experienced practitioners",
+      "Curriculum updates based on industry trends",
+      "Focus on the tools and methods professionals actually use"
     ]
   },
   {
@@ -287,13 +288,13 @@ const practiceExamples: PracticeExample[] = [
       "Theory explained through practical examples",
       "Practice grounded in solid principles",
       "Real projects that demonstrate fundamental concepts",
-      "Code reviews that teach both style and substance"
+      "Reviews of real work that teach both style and substance"
     ]
   },
   {
     title: "Career-Long Empowerment",
     items: [
-      "Teaching how to learn new technologies independently",
+      "Teaching how to learn new tools and skills independently",
       "Building adaptability for future role changes",
       "Creating strong foundations for continuous growth",
       "Preparing for roles that don't exist yet"
@@ -652,6 +653,8 @@ onMounted(() => {
 
   .bridge-side {
     width: 100%;
+    box-sizing: border-box;
+    padding: 28px 24px;
   }
 
   .bridge-connection {

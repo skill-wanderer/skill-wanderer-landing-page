@@ -16,6 +16,7 @@
         <p class="principle-tagline-large">{{ tagline }}</p>
       </div>
     </div>
+    <ImageSlot v-if="image" :name="image" class="principle-hero-image" priority />
   </section>
 </template>
 
@@ -26,11 +27,14 @@ interface Props {
   tagline: string
   breadcrumbName?: string
   showLock?: boolean
+  /** Image slot name from data/image-slots.ts, e.g. "principles/accessible". */
+  image?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   breadcrumbName: undefined,
-  showLock: false
+  showLock: false,
+  image: undefined
 })
 
 // Use title as fallback for breadcrumbName
@@ -115,6 +119,12 @@ const displayBreadcrumb = computed(() => props.breadcrumbName || props.title)
   font-size: 1.5rem;
   color: var(--primary-orange);
   opacity: 0.9;
+}
+
+.principle-hero-image {
+  max-width: 900px;
+  margin: 10px auto 0;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
 }
 
 /* Animations */

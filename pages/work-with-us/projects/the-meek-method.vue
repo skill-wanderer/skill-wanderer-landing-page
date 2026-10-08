@@ -19,7 +19,7 @@
         </div>
         <div class="fee-banner">
           <span class="fee-banner-label">No Development Fee</span>
-          <p>Designed, built, and launched at zero development cost to the client.</p>
+          <p>Designed, built, and launched with no development fee. The practice is on our monthly hosting, maintenance and support plan.</p>
         </div>
       </div>
     </section>
@@ -166,10 +166,10 @@
           </div>
           <div class="tech-card">
             <h3>Cloudflare</h3>
-            <span class="tech-label">Hosting (Free Tier)</span>
+            <span class="tech-label">Hosting</span>
             <p>
-              Edge-delivered at zero recurring cost, so a solo practice is not paying a hosting bill before its
-              first client.
+              Edge-delivered on a lightweight build, which keeps the monthly care fee small for a practice that is
+              just starting.
             </p>
           </div>
           <div class="tech-card">
@@ -226,9 +226,9 @@
         <h2>Why There Was No Development Fee</h2>
         <blockquote class="featured-quote">
           A practice like this is one person betting on an idea before anyone has paid them for it. Charging a
-          development fee at that moment takes money out of exactly the phase where it has the most work to do. The
-          guild is funded by clients who can carry the cost, and that funding is what lets us build for people at
-          the start of something. No invoice, and the site was live before the first client was.
+          development fee at that moment takes money out of exactly the phase where it has the most work to do. So,
+          as with every accepted project, there was no development fee: a small monthly fee covers hosting,
+          maintenance and support instead. The site was live before the first client was.
         </blockquote>
       </div>
     </section>
@@ -240,9 +240,9 @@
         <div class="status-box">
           <span class="status-indicator">Live</span>
           <p>
-            The site is live and taking enquiries and newsletter signups. Static generation and free-tier hosting
-            keep the running cost at the domain name alone. When the practice is ready for paid scheduling or a
-            client portal, the architecture takes it without a rebuild.
+            The site is live and taking enquiries and newsletter signups, with hosting, maintenance and support
+            covered by the monthly plan. Static generation keeps that running cost small. When the practice is ready
+            for paid scheduling or a client portal, the architecture takes it without a rebuild.
           </p>
         </div>
       </div>
@@ -275,7 +275,7 @@ useSEO({
   description:
     'How Skill-Wanderer designed and built the coaching practice website for Aimee Meek, including positioning, a tiered offer ladder, and a newsletter funnel, at no development fee.',
   image: '/projects/meekmethod/card.jpg',
-  keywords: ['coaching website design', 'coach brand positioning', 'solo practice website', 'Astro website case study', 'pro bono web development'],
+  keywords: ['coaching website design', 'coach brand positioning', 'solo practice website', 'Astro website case study', 'no development fee website'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },

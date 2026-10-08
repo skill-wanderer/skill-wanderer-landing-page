@@ -2,6 +2,7 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="12"
+      image="principles/mission-centric-reinvestment"
       title="Mission-Centric Total Reinvestment & Ethical Stewardship"
       tagline="Every Penny for Purpose"
       :show-lock="true"
@@ -164,7 +165,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote 
-      quote="I have seen greed destroy profitable companies, passionate teams, and meaningful missions. This principle is our lock against those forces. It ensures that every dollar we earn serves our purpose: making quality tech education accessible to every passionate learner on this planet."
+      quote="I have seen greed destroy profitable companies, passionate teams, and meaningful missions. This principle is our lock against those forces. It ensures that every dollar we earn serves our purpose: making quality education accessible to every passionate learner on this planet."
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />
 

@@ -2,6 +2,7 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero
       :number="4"
+      image="principles/engaging"
       title="Engaging & Rewarding"
       tagline="Learning Should Spark Joy"
       breadcrumb-name="Engaging & Rewarding"
@@ -135,7 +136,7 @@
 
     <!-- Quote Section -->
     <PrincipleQuote
-      quote="The flame of passion is what allows you to learn anything, but that flame needs fuel. Every small victory, every breakthrough moment, every 'aha!' - these are the fuel that keeps learners going when the journey gets tough. We must celebrate them all."
+      quote="The flame of passion is what allows you to learn anything, but that flame needs fuel. Every small victory, every breakthrough moment and every 'aha!' is fuel that keeps learners going when the journey gets tough. We must celebrate them all."
     />
 
     <!-- Navigation Section -->
@@ -258,9 +259,9 @@ const practiceExamples: PracticeExample[] = [
   {
     title: "Struggle Support System",
     items: [
-      "Normalize the struggle - everyone goes through it",
+      "Normalize the struggle, because everyone goes through it",
       "Mentors who remember their own difficult beginnings",
-      "Break points - knowing when to rest and recharge",
+      "Planned breaks to rest and recharge",
       "Alternative approaches when one way isn't working"
     ]
   }

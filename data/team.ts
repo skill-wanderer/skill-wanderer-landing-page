@@ -22,11 +22,11 @@ export const teamMembers: TeamMember[] = [
     role: 'Founder & Leader',
     badge: '🏅 Founder',
     avatar: '/skill-wanderer-avatar.jpg',
-    tagline: 'Building the future of tech education',
+    tagline: 'Building the future of free education',
     location: 'Vietnam',
     title: 'Founder & Project Leader',
     github: 'https://github.com/skill-wanderer',
-    bio: 'Quan is the founder and leader of Skill-Wanderer. With a journey that began in international trade and evolved through four startups, leading 50+ members, and wandering through roles from Frontend to DevOps, from Business Analyst to Solution Architect, Quan brings a unique perspective to tech education. His unconventional path taught him that the most fundamental skill is learning how to learn, and that every failure is a stepping stone to mastery. Skill-Wanderer is the culmination of that belief: a platform where honest, practical education meets real-world experience, completely free and without bias.',
+    bio: 'Quan is the founder and leader of Skill-Wanderer. With a journey that began in international trade and evolved through four startups, leading 50+ members, and wandering through roles from Frontend to DevOps, from Business Analyst to Solution Architect, Quan brings a unique perspective to education. His unconventional path taught him that the most fundamental skill is learning how to learn, and that every failure is a stepping stone to mastery. Skill-Wanderer is the culmination of that belief: a platform where honest, practical education meets real-world experience, completely free and without bias.',
     skills: [
       'Solution Architecture',
       'Full-Stack Development',

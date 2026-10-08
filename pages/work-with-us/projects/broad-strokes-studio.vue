@@ -19,7 +19,7 @@
         </div>
         <div class="fee-banner">
           <span class="fee-banner-label">No Development Fee</span>
-          <p>Two months of design and development, delivered at zero development cost to the client.</p>
+          <p>Two months of design and development with no development fee. Jack is on our monthly hosting, maintenance and support plan.</p>
         </div>
       </div>
     </section>
@@ -181,10 +181,10 @@
           </div>
           <div class="tech-card">
             <h3>Cloudflare</h3>
-            <span class="tech-label">Hosting (Free Tier)</span>
+            <span class="tech-label">Hosting</span>
             <p>
-              Edge-delivered and free to run, so the studio's only fixed costs are the domain and Stripe's
-              transaction fee.
+              Edge-delivered on a lightweight build, which keeps the monthly care fee small. The studio's other
+              running costs are the domain and Stripe's transaction fee.
             </p>
           </div>
         </div>
@@ -240,10 +240,11 @@
       <div class="detail-container">
         <h2>Why There Was No Development Fee</h2>
         <blockquote class="featured-quote">
-          Jack tried to pay me a bonus at the end and I turned it down. A one-person studio putting months into
-          hand-lettered work should be spending its money on paper, gilding, and photography, not on me. The guild
-          takes fees from the clients who can carry them, which is precisely what frees us to build for the artisans
-          who cannot. Two months of work, no invoice, and the site earns its keep every time a commission comes in.
+          Jack tried to pay me a bonus at the end and I turned it down. There was no development fee because that is
+          how we work with every accepted project: a one-person studio putting months into hand-lettered work should
+          be spending its money on paper, gilding, and photography, not on a big upfront bill. Instead, a small
+          monthly fee covers hosting, maintenance and support, and the site earns its keep every time a commission
+          comes in.
         </blockquote>
       </div>
     </section>
@@ -258,7 +259,8 @@
             The studio is open for commissions and taking payment through the site. Because checkout runs on Stripe
             payment links and booking runs on Cal.com, Jack can add a size, change a price, or close his calendar
             without touching code. When the catalogue grows past what payment links handle comfortably, the Astro
-            build is ready to take a proper storefront.
+            build is ready to take a proper storefront. Hosting, maintenance and support are covered by the studio's
+            monthly plan.
           </p>
         </div>
       </div>
@@ -291,7 +293,7 @@ useSEO({
   description:
     'How Skill-Wanderer designed and built the bespoke calligraphy commission site for Broad Strokes Studio, with published pricing, Stripe checkout, and Cal.com booking, at no development fee.',
   image: '/projects/broadstrokes/card.jpg',
-  keywords: ['calligraphy studio website', 'artisan ecommerce website', 'Stripe payment links', 'Astro website case study', 'pro bono web development'],
+  keywords: ['calligraphy studio website', 'artisan ecommerce website', 'Stripe payment links', 'Astro website case study', 'no development fee website'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },

@@ -126,7 +126,7 @@ withDefaults(defineProps<Props>(), {
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--light-text);
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   font-style: italic;
 }
 

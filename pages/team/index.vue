@@ -110,8 +110,8 @@ import { useSEO } from '~/composables/useSEO'
 import { teamMembers } from '~/data/team'
 
 useSEO({
-  title: 'Guild Members - Skill-Wanderer',
-  description: 'Meet the guild members behind Skill-Wanderer. A small, intentional team of craftspeople building free, practical tech education.',
+  title: 'Guild Members | Skill-Wanderer',
+  description: 'Meet the guild members behind Skill-Wanderer. A small, intentional team of craftspeople building free, practical education.',
   keywords: ['guild members', 'team', 'developers', 'open source', 'skill-wanderer', 'Quan Nguyen'],
 })
 

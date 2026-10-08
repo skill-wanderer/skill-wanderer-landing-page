@@ -307,8 +307,8 @@
           </div>
         </div>
         <div class="cta-buttons">
-          <NuxtLink to="/work-with-us/become-a-partner" class="btn btn-primary">
-            Become a Partner
+          <NuxtLink to="/contact" class="btn btn-primary">
+            Start a Conversation
           </NuxtLink>
           <NuxtLink to="/work-with-us/our-projects" class="btn btn-tertiary">
             Explore More Projects
@@ -927,6 +927,10 @@ useSEO({
 
 /* ── Responsive ───────────────────────────────────── */
 @media (max-width: 768px) {
+  .pipeline-step {
+    box-sizing: border-box;
+  }
+
   .hero-meta {
     flex-direction: column;
     align-items: center;

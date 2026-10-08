@@ -2,6 +2,7 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero
       :number="5"
+      image="principles/creativity"
       title="Creativity & Learning Through Failure"
       tagline="Savor the Failure"
       breadcrumb-name="Creativity & Learning Through Failure"
@@ -262,7 +263,7 @@ const practiceExamples: PracticeExample[] = [
     title: "Growth Through Challenge",
     items: [
       "Challenges designed to push beyond comfort zones",
-      "Multiple solution paths - no single \"right\" answer",
+      "Multiple solution paths, with no single \"right\" answer",
       "Rewards for innovative approaches, even if they fail",
       "Focus on the journey of discovery, not just the outcome"
     ]
