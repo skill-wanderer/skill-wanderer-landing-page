@@ -238,6 +238,7 @@
             <summary>{{ faq.question }}</summary>
             <div class="faq-answer">
               <p>{{ faq.answer }}</p>
+              <NuxtLink v-if="faq.link" :to="faq.link.to" class="faq-link">{{ faq.link.label }}</NuxtLink>
             </div>
           </details>
         </div>
@@ -337,7 +338,8 @@ const faqs = [
   {
     question: 'Do you take donations?',
     answer:
-      'Not yet, but a donation link is coming soon. Client work is our main funding because it keeps us practical and up to date. It covers our running costs but not our contributors, so any donation really helps make the mission sustainable.',
+      'Yes. Client work is our main funding because it keeps us practical and up to date, but it covers our running costs, not our contributors, so any donation really helps make the mission sustainable. You can donate from our Help the Mission page.',
+    link: { to: '/help-the-mission', label: 'Go to Help the Mission' },
   },
 ]
 
@@ -988,6 +990,12 @@ useSEO({
   margin: 0;
   line-height: 1.8;
   opacity: 0.85;
+}
+
+.faq-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 600;
 }
 
 /* ── CTA ──────────────────────────────────────────── */

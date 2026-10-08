@@ -4,7 +4,7 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Help the Mission</h1>
-        <p class="hero-subtitle">Three ways to keep free education going</p>
+        <p class="hero-subtitle">Four ways to keep free education going</p>
         <p class="byline">A note from Quan Nguyen, founder (our Guild Master)</p>
         <ImageSlot name="help-the-mission/hero" class="hero-image" priority />
       </div>
@@ -22,13 +22,12 @@
           contributors aren't paid for their work on the platform, and there is little left for anything else.
         </p>
         <p>
-          You may notice there's no donation button yet. We'll add a donation link soon. I'd love for us not to
-          rely on donations, because client work keeps us practical: real projects keep our skills sharp, so what
-          we teach comes from real work, not theory. But client work only covers our costs, so any amount really
-          counts. It's what could let us pay the people who give their time to this, and make the mission
-          sustainable.
+          I'd love for us not to rely on donations, because client work keeps us practical: real projects keep our
+          skills sharp, so what we teach comes from real work, not theory. But client work only covers our costs, so
+          a donation of any amount really counts. It's what could let us pay the people who give their time to this,
+          and make the mission sustainable.
         </p>
-        <p class="letter-ask">In the meantime, here are three ways you can help today. Pick whichever fits you.</p>
+        <p class="letter-ask">Here are four ways you can help. Pick whichever fits you.</p>
       </div>
     </section>
 
@@ -78,6 +77,29 @@
             <a :href="introEmailLink" class="btn btn-outline">Introduce Someone</a>
           </div>
         </article>
+
+        <article class="way-card">
+          <span class="way-number">4</span>
+          <h2>Make a Donation</h2>
+          <p>
+            Client work covers our running costs, but not the people who give their time to the mission. A donation
+            of any size, once or whenever you like, brings us closer to paying them and keeping education free for
+            the long run.
+          </p>
+          <div class="way-actions">
+            <!-- The notice sits above the button so it is read before leaving the site. -->
+            <p id="donate-redirect-note" class="redirect-note">
+              You'll be redirected to Buy Me a Coffee (buymeacoffee.com) in a new tab to complete your donation.
+            </p>
+            <a
+              :href="DONATE_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              aria-describedby="donate-redirect-note"
+            >Donate on Buy Me a Coffee</a>
+          </div>
+        </article>
       </div>
 
       <p class="closing">
@@ -93,11 +115,13 @@
 const GUILD_MASTER_EMAIL = 'quan.nguyen@skill-wanderer.com'
 const expertEmailLink = `mailto:${GUILD_MASTER_EMAIL}?subject=${encodeURIComponent('Sharing my expertise with Skill-Wanderer')}`
 const introEmailLink = `mailto:${GUILD_MASTER_EMAIL}?subject=${encodeURIComponent('An introduction for Skill-Wanderer')}`
+// The donation link appears only on this page. Other pages that ask for help link here instead.
+const DONATE_URL = 'https://buymeacoffee.com/skill.wanderer'
 
 useSEO({
   title: 'Help the Mission | Skill-Wanderer',
-  description: 'Client work covers our costs but not our contributors, and a donation link is coming soon. Help free education today: share your expertise, bring us a project, or spread the word.',
-  keywords: ['help the mission', 'support free education', 'share your expertise', 'skill-wanderer', 'tech partner for small business'],
+  description: 'Client work covers our costs but not our contributors. Four ways to help free education: share your expertise, bring us a project, spread the word, or donate.',
+  keywords: ['help the mission', 'support free education', 'donate to free education', 'share your expertise', 'skill-wanderer', 'tech partner for small business'],
   structuredData: [
     createBreadcrumbSchema([
       { name: 'Home', url: 'https://skill-wanderer.com/' },
@@ -187,11 +211,12 @@ useSEO({
   padding: 0 20px 80px;
 }
 
+/* At most two columns, so the four cards sit in a 2x2 grid instead of leaving one alone on a row. */
 .ways-grid {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
   gap: 30px;
 }
 
@@ -236,7 +261,7 @@ useSEO({
   opacity: 0.9;
 }
 
-/* Buttons sit at the bottom so the three cards line up. */
+/* Buttons sit at the bottom so the cards line up. */
 .way-actions {
   margin-top: auto;
   display: flex;
@@ -247,6 +272,14 @@ useSEO({
 .way-actions .btn {
   padding: 12px 22px;
   font-size: 1rem;
+}
+
+.way-card .redirect-note {
+  width: 100%;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  opacity: 0.7;
 }
 
 .closing {
