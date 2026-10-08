@@ -22,6 +22,11 @@
     <ClientOnly>
       <CookieBanner />
     </ClientOnly>
+
+    <!-- Email Chooser: mailto links open this, since many computers have no mail app set up -->
+    <ClientOnly>
+      <EmailChooser />
+    </ClientOnly>
   </div>
 </template>
 
