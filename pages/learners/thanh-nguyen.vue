@@ -143,7 +143,7 @@
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
-  title: 'Thanh Nguyen - The Vanguard | Skill-Wanderer',
+  title: 'Thanh Nguyen, The Vanguard | Skill-Wanderer',
   description: 'Meet Thanh Nguyen, a passionate mentee and guild associate who became the Vanguard of the Skill-Wanderer guild in just one month. Discover her story.',
   keywords: ['Thanh Nguyen', 'The Vanguard', 'guild associate', 'mentee', 'success story', 'skill-wanderer'],
 })

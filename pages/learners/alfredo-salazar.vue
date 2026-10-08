@@ -142,7 +142,7 @@
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
-  title: 'Alfredo Salazar - The Firebrand | Skill-Wanderer',
+  title: 'Alfredo Salazar, The Firebrand | Skill-Wanderer',
   description: 'Meet Alfredo Salazar, a fiercely independent mobile game development mentee with a gift for words. Discover the story of The Firebrand who blazes his own trail at Skill-Wanderer.',
   keywords: ['Alfredo Salazar', 'The Firebrand', 'mobile game development', 'independent learner', 'success story', 'skill-wanderer'],
 })

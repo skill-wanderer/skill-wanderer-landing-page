@@ -35,7 +35,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'A tech partner for solo founders and small businesses: a free working prototype first, no development fee, no lock-in. Client work funds free tech education.' },
+        { name: 'description', content: 'A tech partner for solo founders and small businesses: a free working prototype first, no development fee, no lock-in. Client work funds free education.' },
         { name: 'author', content: 'Quan Nguyen' },
         { name: 'robots', content: 'index,follow' },
         { name: 'language', content: 'en' },

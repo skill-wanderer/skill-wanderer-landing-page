@@ -141,7 +141,7 @@
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
-  title: 'Khouja Nasreddine - The Warrior | Skill-Wanderer',
+  title: 'Khouja Nasreddine, The Warrior | Skill-Wanderer',
   description: 'Meet Khouja Nasreddine, an unstoppable mobile game development learner from Tunisia. Discover the story of The Warrior whose resilience, speed, and self-reliance consistently impress at Skill-Wanderer.',
   keywords: ['Khouja Nasreddine', 'The Warrior', 'mobile game development', 'Tunisia', 'resilient learner', 'success story', 'skill-wanderer'],
 })

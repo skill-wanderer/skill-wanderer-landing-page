@@ -12,7 +12,7 @@ const slug = typeof rawSlug === 'string' ? rawSlug : ''
 if (!validPrinciples.has(slug)) {
   useSEO({
     title: 'Principle Not Found | Skill-Wanderer',
-    description: 'This principle page does not exist. Discover Skill-Wanderer’s core values and learning philosophy for free, high-quality tech education.',
+    description: 'This principle page does not exist. Discover Skill-Wanderer’s core values and learning philosophy for free, high-quality education.',
     robots: 'noindex, nofollow'
   })
 
@@ -26,8 +26,8 @@ if (!validPrinciples.has(slug)) {
 const slugTitle = slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 useSEO({
   title: `${slugTitle} Principle | Skill-Wanderer`,
-  description: `Learn about the ${slugTitle.toLowerCase()} principle that guides Skill-Wanderer's mission to provide free, quality tech education with integrity.`,
-  keywords: [`${slug} principle`, 'skill-wanderer principles', 'tech education', 'learning philosophy'],
+  description: `Learn about the ${slugTitle.toLowerCase()} principle that guides Skill-Wanderer's mission to provide free, quality education with integrity.`,
+  keywords: [`${slug} principle`, 'skill-wanderer principles', 'free education', 'learning philosophy'],
   type: 'article'
 })
 

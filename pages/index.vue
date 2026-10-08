@@ -28,6 +28,7 @@
           Here to learn?
           <NuxtLink to="/learning-path/learn-contribute-build-earn">Start learning for free →</NuxtLink>
         </p>
+        <ImageSlot name="home/hero" class="hero-image" priority />
       </div>
       <svg class="wandering-path" viewBox="0 0 1200 200">
         <path class="path" d="M0,150 Q300,100 600,130 T1200,100" />
@@ -103,16 +104,19 @@
       </div>
       <ol class="plan-steps">
         <li class="plan-step">
+          <ImageSlot name="plan/idea" group="planSteps" class="plan-image" />
           <span class="plan-number">1</span>
           <h3>Tell us your idea</h3>
           <p>Send a short message or email Quan. He reads it himself and replies with a time for one short call.</p>
         </li>
         <li class="plan-step">
+          <ImageSlot name="plan/prototype" group="planSteps" class="plan-image" />
           <span class="plan-number">2</span>
           <h3>Get a free working prototype</h3>
           <p>If it's a good fit, we build a first version you can click through. React to something real. If it's not right, walk away and owe nothing.</p>
         </li>
         <li class="plan-step">
+          <ImageSlot name="plan/launch" group="planSteps" class="plan-image" />
           <span class="plan-number">3</span>
           <h3>Launch and grow together</h3>
           <p>
@@ -153,7 +157,7 @@
             <li>You learn what you really need before you spend</li>
             <li>A version that fits your budget is live and looked after</li>
             <li>A partner who stays as long as you want, with no lock-in</li>
-            <li>And your project helps fund free tech education</li>
+            <li>And your project helps fund free education</li>
           </ul>
         </div>
       </div>
@@ -163,7 +167,7 @@
     <section class="projects-showcase">
       <div class="section-header">
         <h2>Recent Client Projects</h2>
-        <p>Real work for real clients, from solo practices to AI learning tools.</p>
+        <p>Real work for real clients, from solo practices to start-ups.</p>
       </div>
       <div class="projects-strip">
         <NuxtLink to="/work-with-us/projects/matt-harr-speaker" class="project-thumb">
@@ -208,20 +212,6 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="project-thumb">
-          <div class="project-image-wrap">
-            <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" loading="lazy" />
-            <span class="project-type-badge">Non-Profit</span>
-          </div>
-          <div class="project-meta">
-            <h4>ChanhDao.vn</h4>
-            <p class="project-summary">162 Buddhist lessons with AI-powered Q&amp;A on a self-hosted cluster.</p>
-            <div class="project-stack-tags">
-              <span>Python</span>
-              <span>OpenAI</span>
-            </div>
-          </div>
-        </NuxtLink>
         <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="project-thumb">
           <div class="project-image-wrap">
             <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" loading="lazy" />
@@ -238,7 +228,7 @@
         </NuxtLink>
         <NuxtLink to="/work-with-us/projects/mindyminds" class="project-thumb">
           <div class="project-image-wrap">
-            <img src="/projects/mindyminds/mindyminds-logo.jpg" alt="MindyMinds" loading="lazy" />
+            <img src="/projects/mindyminds/thumb.jpg" alt="MindyMinds" loading="lazy" />
             <span class="project-type-badge">Start-up</span>
           </div>
           <div class="project-meta">
@@ -247,6 +237,20 @@
             <div class="project-stack-tags">
               <span>Next.js</span>
               <span>Docker</span>
+            </div>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/work-with-us/projects/mindyplay" class="project-thumb">
+          <div class="project-image-wrap">
+            <img src="/projects/mindyplay/thumb.jpg" alt="MindyPlay" loading="lazy" />
+            <span class="project-type-badge">Start-up</span>
+          </div>
+          <div class="project-meta">
+            <h4>MindyPlay</h4>
+            <p class="project-summary">A physical game concept turned into an interactive mobile game.</p>
+            <div class="project-stack-tags">
+              <span>Flutter</span>
+              <span>Firebase</span>
             </div>
           </div>
         </NuxtLink>
@@ -293,7 +297,7 @@
       <div class="learn-card">
         <span class="learn-icon" aria-hidden="true">📚</span>
         <div class="learn-text">
-          <h3>Want to learn tech instead?</h3>
+          <h3>Want to learn a new skill instead?</h3>
           <p>
             Our learning paths and mentorship are free. Learn by building real projects and grow from
             apprentice to master, at your own pace.
@@ -355,7 +359,7 @@ useSEO({
     'no development fee',
     'no vendor lock-in',
     'AI tools for educators',
-    'free tech education',
+    'free education',
   ],
   type: 'website',
   structuredData: [
@@ -532,6 +536,12 @@ onUnmounted(() => {
   height: 200px;
   opacity: 0.3;
   pointer-events: none;
+}
+
+.hero-image {
+  max-width: 880px;
+  margin: 48px auto 0;
+  animation: fadeInUp 0.8s ease-out 0.7s both;
 }
 
 .path {
@@ -758,6 +768,11 @@ onUnmounted(() => {
 .plan-step:hover {
   border-color: rgba(255, 107, 53, 0.4);
   transform: translateY(-4px);
+}
+
+.plan-step .plan-image {
+  margin-bottom: 22px;
+  border-radius: 14px;
 }
 
 .plan-number {

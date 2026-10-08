@@ -3,6 +3,7 @@
     <!-- Hero Section -->
     <PrincipleHero
       :number="11"
+      image="principles/social-enterprise"
       title="Social Enterprise Model for Quality Education"
       tagline="3 Ways to Contribute to the Mission"
       breadcrumb-name="Social Enterprise Model"
@@ -116,7 +117,7 @@
             <h3>How Our Social Enterprise Model Works</h3>
             <p>
               Skill-Wanderer is working toward becoming a social enterprise, meaning <strong>100% of revenue is reinvested
-              into our mission</strong> of making quality tech education accessible to everyone.
+              into our mission</strong> of making quality education accessible to everyone.
               There are three meaningful ways you can contribute to this mission,
               each creating value for you while sustaining education for those who need it most.
             </p>
@@ -231,7 +232,7 @@ import type { StoryChapter, PracticeExample } from '~/types'
 useSEO({
   title: 'Social Enterprise Model: 3 Ways to Contribute to the Mission | Principle #11',
   description: 'Discover Skill-Wanderer\'s social enterprise model, with 3 ways to contribute: work with us as tech partners, help develop our platform, or strengthen the community. All revenue reinvested into quality education.',
-  keywords: ['social enterprise', 'tech partner', 'skill-wanderer principle 11', 'sustainable education', 'contribute to mission', 'human mentors', 'quality tech education'],
+  keywords: ['social enterprise', 'tech partner', 'skill-wanderer principle 11', 'sustainable education', 'contribute to mission', 'human mentors', 'quality free education'],
   type: 'article',
   structuredData: [
     createArticleSchema(

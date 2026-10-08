@@ -234,7 +234,7 @@
                 <div class="info-icon">⚔️</div>
                 <h3>Guild Membership</h3>
               </div>
-              <p>Guild members help on real client projects under senior review, receive mentorship, and share in the mission of funding free tech education for emerging developers.</p>
+              <p>Guild members help on real client projects under senior review, receive mentorship, and share in the mission of funding free education for learners everywhere.</p>
               <NuxtLink to="/learning-path/learn-contribute-build-earn" class="info-card-link">How Learning Works</NuxtLink>
             </div>
           </div>
@@ -263,7 +263,7 @@
             <span class="impact-number">100%</span>
             <span class="impact-label">of net revenue reinvested in the mission</span>
           </div>
-          <p>No investors and no profit extraction. What you pay keeps your project running and keeps free tech education going.</p>
+          <p>No investors and no profit extraction. What you pay keeps your project running and keeps free education going.</p>
         </div>
       </div>
     </section>
@@ -561,7 +561,7 @@ const faqs = ref([
   },
   {
     question: "What makes Skill-Wanderer different from an agency?",
-    answer: "There is no big upfront bill: you see a working prototype first and pay no development fee. You get honest advice, not just code. There is no lock-in: you own your domain and can see the code. And your project helps fund free tech education."
+    answer: "There is no big upfront bill: you see a working prototype first and pay no development fee. You get honest advice, not just code. There is no lock-in: you own your domain and can see the code. And your project helps fund free education."
   }
 ])
 

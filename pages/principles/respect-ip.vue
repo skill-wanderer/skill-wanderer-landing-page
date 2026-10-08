@@ -2,6 +2,7 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="9"
+      image="principles/respect-ip"
       title="Respect IP"
       tagline="Honoring Intellectual Property in the Age of AI"
     />
@@ -198,7 +199,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'text',
-        text: 'We explicitly reinforce intellectual property principles because we want Skill-Wanderer to model the professional standards our learners will need in their careers. <strong>The developers, engineers, and technologists we train will encounter IP questions constantly</strong>, from open-source licensing to corporate code ownership. We want them to have watched us model respect for IP from day one.'
+        text: 'We explicitly reinforce intellectual property principles because we want Skill-Wanderer to model the professional standards our learners will need in their careers. <strong>Whatever field our learners go into, they will encounter IP questions constantly</strong>, from open-source licensing and code ownership to who owns the writing, designs and research they create. We want them to have watched us model respect for IP from day one.'
       },
       {
         type: 'integrity-notice',

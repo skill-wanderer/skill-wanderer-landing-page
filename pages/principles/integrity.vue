@@ -2,6 +2,7 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="2"
+      image="principles/integrity"
       title="Integrity and Impartiality"
       tagline="No Hidden Agendas"
       breadcrumb-name="Integrity and Impartiality"

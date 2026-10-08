@@ -45,7 +45,7 @@
         </p>
 
         <div v-if="!isHelpPage" class="help-mission">
-          <p class="help-mission-text">Believe in free tech education?</p>
+          <p class="help-mission-text">Believe in free education?</p>
           <NuxtLink to="/help-the-mission" class="btn btn-outline">Help the Mission</NuxtLink>
         </div>
       </div>

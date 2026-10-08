@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <h1>Our Story</h1>
-      <p>A tech partner for people with big ideas and small budgets, and a guild that turns that work into free tech education</p>
+      <p>A tech partner for people with big ideas and small budgets, and a guild that turns that work into free education</p>
     </section>
 
     <!-- Guide: why clients can trust us -->
@@ -50,6 +50,7 @@
       <div class="story-content">
         <div class="story-section" style="animation-delay: 0.1s;">
           <h2><span class="section-icon">🌅</span> The Beginning</h2>
+          <ImageSlot name="about/beginning" class="story-image" />
           <p>
             My story didn't start in tech. It began in international trade at Toyota Tsusho Vietnam, where I learned 
             <span class="highlight">the most fundamental skill of all: how to learn rapidly and adapt</span>. When I 
@@ -71,9 +72,10 @@
 
         <div class="story-section" style="animation-delay: 0.3s;">
           <h2><span class="section-icon">💡</span> The Realization</h2>
+          <ImageSlot name="about/realization" class="story-image" />
           <p>
             Having transitioned from business to tech myself, I understood firsthand how daunting the journey can be. 
-            Traditional education often fails to capture the messy, non-linear reality of learning technology. 
+            Traditional education often fails to capture the messy, non-linear reality of learning a new craft.
             <span class="highlight">We're taught to fear failure, when in reality, failure is where the deepest learning happens</span>. 
             What learners truly need is honest, unbiased guidance from someone who remembers the struggle, plus a community 
             that works alongside them, not just lectures at them.
@@ -84,7 +86,7 @@
             were inseparable, and where every member's growth strengthened the whole guild.
           </p>
           <p>
-            I realized that <span class="highlight">Skill-Wanderer could be a modern tech guild</span>: a 
+            I realized that <span class="highlight">Skill-Wanderer could be a modern guild</span>: a
             social enterprise in the making where learning happens through building, where revenue from real work funds free education, 
             and where the guild grows as its members grow. Not a traditional course platform, but a living, working community 
             of craftspeople at every level.
@@ -99,6 +101,7 @@
 
         <div class="story-section" style="animation-delay: 0.5s;">
           <h2><span class="section-icon">🚀</span> The Vision</h2>
+          <ImageSlot name="about/vision" class="story-image" />
           <p>
             Skill-Wanderer is built on a profound truth: <span class="highlight">teaching is the best way to learn, 
             and building is the best way to teach</span>. The guild model unites education and professional work into 
@@ -107,7 +110,7 @@
           </p>
           <p>
             With a social enterprise mindset, we deeply believe that <span class="highlight">what we give to the world 
-            comes back to us manifold</span>. By operating as a tech guild, where every engagement delivers value to 
+            comes back to us manifold</span>. By operating as a guild, where every engagement delivers value to
             clients while growing our community, we create a virtuous cycle. Today's apprentices become tomorrow's masters. 
             Every project shipped funds the next wave of free education.
           </p>
@@ -142,7 +145,7 @@
         <div class="philosophy-card">
           <span class="philosophy-icon">🌱</span>
           <h3>Growth Through Failure</h3>
-          <p>We celebrate mistakes as learning opportunities. Every bug fixed, every error resolved is a step towards mastery within the guild.</p>
+          <p>We celebrate mistakes as learning opportunities. Every error resolved and every problem solved is a step towards mastery within the guild.</p>
         </div>
         <div class="philosophy-card">
           <span class="philosophy-icon">🔄</span>
@@ -162,7 +165,7 @@
       <div class="mission-content">
         <h2>Our Mission</h2>
         <div class="mission-statement">
-          "Our mission is to make quality tech education free and accessible 
+          "Our mission is to make quality education free and accessible
           through the guild model, where real-world work funds learning, and learning feeds back into work. 
           We operate with complete integrity, forgoing any benefit that could cause doubt in our cause, and 
           reinvest all resources into education, community, and lasting social impact. Every guild engagement 
@@ -250,7 +253,7 @@
           <h3>Actively Forging</h3>
           <p>
             The guild is in <span class="highlight">active development</span> with an ambitious roadmap ahead.
-            New learning paths, guild tools, community features, and more are being forged every day. This is just the
+            New learning paths in tech and beyond, guild tools, community features, and more are being forged every day. This is just the
             beginning. We're building something meaningful, one craft at a time, and we'd love for you to join the guild.
           </p>
         </div>
@@ -295,7 +298,7 @@
         <h2>The Guild Master</h2>
       </div>
       <div class="founder-card">
-        <img src="/skill-wanderer-avatar.jpg" alt="Quan Nguyen - Founder" class="founder-avatar" />
+        <img src="/skill-wanderer-avatar.jpg" alt="Quan Nguyen, founder of Skill-Wanderer" class="founder-avatar" />
         <h3 class="founder-name">Quan Nguyen</h3>
         <p class="founder-title">Founder & Guild Master · A One-Man Army in Web, AI, Mobile, DevOps, Solution Architecture & Project Management</p>
         <div class="founder-bio">
@@ -334,7 +337,7 @@
             we create a cycle of positive energy that elevates everyone.
           </p>
           <p>
-            Skill-Wanderer isn't just a platform. It's a tech guild working toward social enterprise status. From that first 
+            Skill-Wanderer isn't just a platform. It's a guild working toward social enterprise status. From that first
             MVP award at Toyota Tsusho to every line of code I've written, I've been blessed with opportunities to 
             learn and grow. Now, through the guild model, it's my turn to create those opportunities for others, where 
             every apprentice can become a master, every project funds free education, and every act of craft strengthens 
@@ -368,13 +371,13 @@ import { onMounted } from 'vue'
 // SEO and meta management
 useSEO({
   title: 'About Skill-Wanderer | The Story Behind the Mission',
-  description: 'Meet Quan Nguyen and the Skill-Wanderer guild: a tech partner for solo founders and small businesses whose client work funds free tech education.',
-  keywords: ['about skill-wanderer', 'quan nguyen', 'tech partner for small business', 'tech education mission', 'skill wanderer story'],
+  description: 'Meet Quan Nguyen and the Skill-Wanderer guild: a tech partner for solo founders and small businesses whose client work funds free education.',
+  keywords: ['about skill-wanderer', 'quan nguyen', 'tech partner for small business', 'free education mission', 'skill wanderer story'],
   type: 'article',
   structuredData: [
     createArticleSchema(
       'About Skill-Wanderer | The Story Behind the Mission',
-      'Meet Quan Nguyen and the Skill-Wanderer guild: a tech partner for solo founders and small businesses whose client work funds free tech education.',
+      'Meet Quan Nguyen and the Skill-Wanderer guild: a tech partner for solo founders and small businesses whose client work funds free education.',
       'https://skill-wanderer.com/about'
     ),
     createBreadcrumbSchema([
@@ -505,6 +508,10 @@ body {
 
 .section-icon {
   font-size: 1.5rem;
+}
+
+.story-image {
+  margin-bottom: 28px;
 }
 
 .story-section p {

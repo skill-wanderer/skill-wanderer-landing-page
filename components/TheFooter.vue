@@ -2,7 +2,7 @@
   <footer>    <div class="footer-content">
       <p class="footer-one-liner">
         A tech partner for solo founders and small businesses: a free working prototype first, no development fee,
-        and no lock-in. Your project helps fund free tech education.
+        and no lock-in. Your project helps fund free education.
       </p>
       <p class="footer-email">
         Email the Guild Master: <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>

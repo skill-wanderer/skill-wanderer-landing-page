@@ -2,6 +2,7 @@
   <div>    <!-- Hero Section -->
     <PrincipleHero 
       :number="1"
+      image="principles/accessible"
       title="Accessible"
       tagline="Free Knowledge for All"
     />    <!-- Story Section -->
@@ -61,7 +62,7 @@
           <div class="impact-card" style="animation-delay: 0.3s;">
           <span class="impact-icon">🌍</span>
           <h3>For the Global Learner</h3>
-          <p>No geographic restrictions. Whether you're in Silicon Valley or rural Vietnam, quality education is yours.</p>
+          <p>No geographic restrictions. Whether you live in a big city or rural Vietnam, quality education is yours.</p>
         </div>
       </div>
     </section>    <!-- Practice Section -->
@@ -86,9 +87,9 @@
 
 // SEO and meta management
 useSEO({
-  title: 'Accessible: Free Knowledge for All | Principle #1 - Skill-Wanderer',
+  title: 'Accessible: Free Knowledge for All | Principle #1',
   description: 'Discover how Skill-Wanderer ensures free access to quality education by removing financial barriers and providing transparent guidance for all learners.',
-  keywords: ['accessible education', 'free coding courses', 'remove barriers', 'skill-wanderer principle 1', 'inclusive learning'],
+  keywords: ['accessible education', 'free online courses', 'remove barriers', 'skill-wanderer principle 1', 'inclusive learning'],
   type: 'article',
   structuredData: [
     createArticleSchema(
@@ -167,12 +168,12 @@ const storyChapters = [
 // Practice examples data
 const practiceExamples = [
   {
-    title: 'Free Core Content - Always',
+    title: 'Free Core Content, Always',
     items: [
-      'Every course we create or curate is completely free - no exceptions',
+      'Every course we create or curate is completely free, without exception',
       'No paywalls, no "premium only" sections for essential knowledge',
-      'Full access from day one - no email gates or forced registrations',
-      'Content stays free forever - we never move it behind a paywall',
+      'Full access from day one, with no email gates or forced registration',
+      'Content stays free forever and never moves behind a paywall',
       'When we recommend paid resources, they\'re clearly marked as third-party optional supplements'
     ]
   },
@@ -181,9 +182,9 @@ const practiceExamples = [
     items: [
       'Clear marking of which third-party resources are free vs paid',
       'Honest reviews of external tools and courses without affiliate bias',
-      'Multiple options provided - there\'s always a free alternative to paid third-party resources',
+      'Multiple options, so there\'s always a free alternative to paid third-party resources',
       'Guidance on when paid third-party resources are truly worth the investment',
-      'All Skill-Wanderer learning content remains 100% free - we never charge for courses or materials',
+      'We never charge for Skill-Wanderer courses or materials, so all our learning content stays 100% free',
       'Human mentoring and advisory services are available through our social enterprise model with Social Impact Tokens'
     ]
   },
@@ -191,8 +192,8 @@ const practiceExamples = [
     title: 'Removing Hidden Barriers',
     items: [
       'Multiple learning formats to suit different styles and bandwidths',
-      'No geographic restrictions - content accessible worldwide',
-      'Community support that\'s also free - no paid Discord channels',
+      'No geographic restrictions, so learners anywhere in the world can access everything',
+      'Free community support too, with no paid Discord channels',
       'Clear learning paths so you never feel lost or overwhelmed',
       'Upfront transparency about which services are free and how mentoring and advisory are sustained through our social enterprise model'
     ]

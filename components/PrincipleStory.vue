@@ -21,7 +21,7 @@
           
           <div v-else-if="content.type === 'quote'" class="japanese-quote">
             <p>"{{ content.text }}"</p>
-            <p v-if="content.author" class="author">- {{ content.author }}</p>
+            <p v-if="content.author" class="author">{{ content.author }}</p>
           </div>
           
           <div v-else-if="content.type === 'annual-review'" class="annual-review">
@@ -176,6 +176,7 @@ const props = defineProps<Props>()
 
 .japanese-quote .author {
   font-size: 1rem;
+  font-style: normal;
   opacity: 0.8;
 }
 

@@ -136,7 +136,7 @@
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
-  title: 'Prabhat Kumar - The Fearless Adventurer | Skill-Wanderer',
+  title: 'Prabhat Kumar, The Fearless Adventurer | Skill-Wanderer',
   description: 'Meet Prabhat Kumar, a fearless DevOps learner from India who completed his mentorship in under 2 months. Discover his bold journey of pushing beyond boundaries.',
   keywords: ['Prabhat Kumar', 'DevOps', 'learner', 'success story', 'Kubernetes', 'AWS', 'Docker', 'skill-wanderer'],
 })

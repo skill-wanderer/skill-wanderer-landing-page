@@ -14,6 +14,7 @@
         <NuxtLink to="/work-with-us/service-model" class="btn btn-secondary">See How It Works</NuxtLink>
       </div>
       <span class="launch-badge">Free Prototype · No Development Fee · No Lock-In</span>
+      <ImageSlot name="work-with-us/hero" class="hero-image" priority />
     </section>
 
     <!-- Who We Help -->
@@ -98,7 +99,7 @@
               from your own material.
             </p>
             <p class="build-example">
-              Example: <NuxtLink to="/work-with-us/projects/chanhdao-vn">ChanhDao.vn</NuxtLink>, AI Q&amp;A over 162 lessons
+              Example: <NuxtLink to="/work-with-us/projects/mindyminds">MindyMinds</NuxtLink>, AI chatbots tailored to each business
             </p>
           </div>
           <div class="build-card">
@@ -159,16 +160,19 @@
         </div>
         <ol class="plan-steps">
           <li class="plan-step">
+            <ImageSlot name="plan/idea" group="planSteps" class="plan-image" />
             <span class="plan-number">1</span>
             <h3>Tell us your idea</h3>
             <p>Send a short message or email Quan. He replies with a time for one short call.</p>
           </li>
           <li class="plan-step">
+            <ImageSlot name="plan/prototype" group="planSteps" class="plan-image" />
             <span class="plan-number">2</span>
             <h3>Get a free working prototype</h3>
             <p>If it's a good fit, we build one for free. React to something real, or walk away and owe nothing.</p>
           </li>
           <li class="plan-step">
+            <ImageSlot name="plan/launch" group="planSteps" class="plan-image" />
             <span class="plan-number">3</span>
             <h3>Launch and grow together</h3>
             <p>No development fee. A monthly fee covers hosting, maintenance, support and occasional changes. Leave anytime.</p>
@@ -232,17 +236,31 @@
               </div>
             </div>
           </NuxtLink>
-          <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="proof-card">
+          <NuxtLink to="/work-with-us/projects/mindyminds" class="proof-card">
             <div class="proof-image">
-              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" loading="lazy" />
-              <span class="proof-badge">Non-Profit</span>
+              <img src="/projects/mindyminds/thumb.jpg" alt="MindyMinds" loading="lazy" />
+              <span class="proof-badge">Start-up</span>
             </div>
             <div class="proof-meta">
-              <h4>ChanhDao.vn</h4>
-              <p>162 Buddhist lessons with AI Q&amp;A on a self-hosted Kubernetes cluster.</p>
+              <h4>MindyMinds</h4>
+              <p>One platform running many custom AI chatbots, built in under 3 months.</p>
               <div class="proof-tags">
-                <span>AI</span>
-                <span>Python</span>
+                <span>Next.js</span>
+                <span>Docker</span>
+              </div>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/work-with-us/projects/mindyplay" class="proof-card">
+            <div class="proof-image">
+              <img src="/projects/mindyplay/thumb.jpg" alt="MindyPlay" loading="lazy" />
+              <span class="proof-badge">Start-up</span>
+            </div>
+            <div class="proof-meta">
+              <h4>MindyPlay</h4>
+              <p>A physical game concept turned into an interactive mobile game.</p>
+              <div class="proof-tags">
+                <span>Flutter</span>
+                <span>Firebase</span>
               </div>
             </div>
           </NuxtLink>
@@ -261,7 +279,7 @@
         <h2>Ready to Talk About Your Idea?</h2>
         <p>
           Tell us what you want to build. Quan reads every message himself and replies with a time for a short
-          call. Your project helps fund free tech education.
+          call. Your project helps fund free education.
         </p>
         <div class="cta-buttons">
           <NuxtLink to="/contact" class="btn btn-primary">Tell Us About Your Idea</NuxtLink>
@@ -371,6 +389,13 @@ useSEO({
   display: inline-block;
   position: relative;
   z-index: 1;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 48px auto 0;
 }
 
 /* Section Styles */
@@ -619,6 +644,11 @@ useSEO({
   padding: 32px 26px;
 }
 
+.plan-step .plan-image {
+  margin-bottom: 20px;
+  border-radius: 14px;
+}
+
 .plan-number {
   width: 44px;
   height: 44px;
@@ -657,15 +687,20 @@ useSEO({
   border-bottom: 1px solid rgba(255, 107, 53, 0.08);
 }
 
+/* Flex rather than grid so a short last row sits centred instead of hanging left. */
 .proof-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .proof-card {
+  /* Border inside the basis, or three cards plus gaps overflow the row and wrap. */
+  box-sizing: border-box;
+  flex: 0 1 calc(33.333% - 16px);
   text-decoration: none;
   color: inherit;
   border-radius: 16px;
@@ -838,8 +873,8 @@ useSEO({
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .proof-strip {
-    grid-template-columns: 1fr 1fr;
+  .proof-card {
+    flex-basis: calc(50% - 12px);
   }
 }
 
@@ -884,8 +919,8 @@ useSEO({
 }
 
 @media (max-width: 480px) {
-  .proof-strip {
-    grid-template-columns: 1fr;
+  .proof-card {
+    flex-basis: 100%;
   }
 }
 </style>

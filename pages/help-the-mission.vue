@@ -4,8 +4,9 @@
     <section class="hero">
       <div class="hero-content">
         <h1>Help the Mission</h1>
-        <p class="hero-subtitle">Three ways to keep free tech education going</p>
+        <p class="hero-subtitle">Three ways to keep free education going</p>
         <p class="byline">A note from Quan Nguyen, founder (our Guild Master)</p>
+        <ImageSlot name="help-the-mission/hero" class="hero-image" priority />
       </div>
     </section>
 
@@ -36,7 +37,8 @@
           <span class="way-number">1</span>
           <h2>Share What You Know</h2>
           <p>
-            We need experts most of all. You bring the knowledge, and our members turn it into lessons.
+            We need experts most of all, from any field, not only tech. You bring the knowledge, and our members
+            turn it into lessons.
             We can't pay you yet, but you'll always be credited by name, and the lessons stay free and public,
             with no paywall, ever. We'll agree on the details together.
           </p>
@@ -92,8 +94,8 @@ const introEmailLink = `mailto:${GUILD_MASTER_EMAIL}?subject=${encodeURIComponen
 
 useSEO({
   title: 'Help the Mission | Skill-Wanderer',
-  description: 'No donation button, by design. Three ways to help free tech education: share your expertise, bring us a project, or spread the word.',
-  keywords: ['help the mission', 'support free tech education', 'share your expertise', 'skill-wanderer', 'tech partner for small business'],
+  description: 'No donation button, by design. Three ways to help free education: share your expertise, bring us a project, or spread the word.',
+  keywords: ['help the mission', 'support free education', 'share your expertise', 'skill-wanderer', 'tech partner for small business'],
   structuredData: [
     createBreadcrumbSchema([
       { name: 'Home', url: 'https://skill-wanderer.com/' },
@@ -143,6 +145,10 @@ useSEO({
   margin: 0;
   font-size: 0.95rem;
   opacity: 0.75;
+}
+
+.hero-image {
+  margin-top: 36px;
 }
 
 /* Letter */
@@ -256,10 +262,6 @@ useSEO({
   font-style: italic;
   font-weight: 600;
   color: var(--primary-orange);
-}
-
-.signature::before {
-  content: '— ';
 }
 
 /* Responsive */

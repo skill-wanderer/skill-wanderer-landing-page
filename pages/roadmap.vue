@@ -7,9 +7,10 @@
         <p class="hero-subtitle">Building the Future of Skill-Wanderer, One Module at a Time</p>
         <p class="hero-description">
           Our roadmap outlines the key modules we're developing to power a truly independent,
-          community-driven tech guild. Every module is built with passion, transparency,
+          community-driven guild. Every module is built with passion, transparency,
           and our guild members' needs at heart.
         </p>
+        <ImageSlot name="roadmap/hero" class="hero-image" priority />
       </div>
     </section>
 
@@ -324,7 +325,7 @@ import { onMounted, ref } from 'vue'
 useSEO({
   title: 'Guild Roadmap | Skill-Wanderer Development Plan',
   description: 'Explore the Skill-Wanderer guild roadmap, from our custom LMS and member portal to community tools and sustainability. See what we\'re building and how you can be part of the guild.',
-  keywords: ['skill-wanderer roadmap', 'guild development', 'LMS module', 'community module', 'tech guild roadmap', 'open source education'],
+  keywords: ['skill-wanderer roadmap', 'guild development', 'LMS module', 'community module', 'free education roadmap', 'open source education'],
   type: 'website',
 })
 
@@ -404,6 +405,11 @@ onMounted(() => {
   opacity: 0.8;
   line-height: 1.8;
   font-size: 1.05rem;
+}
+
+.hero-image {
+  max-width: 900px;
+  margin: 48px auto 0;
 }
 
 /* ========== Roadmap Timeline Section ========== */

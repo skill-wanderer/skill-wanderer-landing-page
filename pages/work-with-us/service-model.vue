@@ -48,6 +48,7 @@
                 a day, so he keeps time to build and teach.
               </p>
             </div>
+            <ImageSlot name="plan/idea" group="planSteps" class="step-image" />
           </article>
 
           <article class="step-card">
@@ -64,6 +65,7 @@
                 <li>With the scope clear, we confirm the exact monthly price. There is no obligation to continue just because a prototype exists.</li>
               </ul>
             </div>
+            <ImageSlot name="plan/prototype" group="planSteps" class="step-image" />
           </article>
 
           <article class="step-card">
@@ -77,6 +79,7 @@
                 it is useful to you.
               </p>
             </div>
+            <ImageSlot name="plan/launch" group="planSteps" class="step-image" />
           </article>
         </div>
       </div>
@@ -136,6 +139,8 @@
           <h2>You Can Always Leave</h2>
         </div>
 
+        <ImageSlot name="service-model/ownership" class="lockin-image" />
+
         <div class="lockin-statement">
           <p>
             The goal is for clients to stay because the service is useful, not because leaving is
@@ -165,7 +170,7 @@
           <h2>Why We Work This Way</h2>
           <p>
             We would rather earn a small monthly fee by keeping your project healthy than send a big bill up
-            front. That income also funds free tech education.
+            front. That income also funds free education.
           </p>
         </div>
 
@@ -287,7 +292,7 @@ const faqs = [
   {
     question: "What's the catch?",
     answer:
-      'There is no hidden one. Instead of a big upfront bill, we earn a monthly fee by keeping your project running and supported. That income also funds free tech education, so we are motivated to keep you happy for the long run.',
+      'There is no hidden one. Instead of a big upfront bill, we earn a monthly fee by keeping your project running and supported. That income also funds free education, so we are motivated to keep you happy for the long run.',
   },
   {
     question: "I'm not technical. Will I understand what's going on?",
@@ -550,6 +555,17 @@ useSEO({
   background: var(--card-hover);
 }
 
+.step-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.step-card .step-image {
+  flex: 0 0 220px;
+  align-self: center;
+  border-radius: 12px;
+}
+
 .step-number {
   flex-shrink: 0;
   width: 42px;
@@ -740,6 +756,11 @@ useSEO({
   background: var(--darker-bg);
 }
 
+.lockin-image {
+  max-width: 760px;
+  margin: 0 auto 32px;
+}
+
 .lockin-statement {
   max-width: 760px;
   margin: 0 auto 32px;
@@ -898,9 +919,9 @@ useSEO({
 }
 
 .fit-card--no li::before {
-  content: '–';
+  content: '✕';
   position: absolute;
-  left: 4px;
+  left: 0;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
 }
@@ -1073,6 +1094,11 @@ useSEO({
     flex-direction: column;
     gap: 16px;
     padding: 24px;
+  }
+
+  .step-card .step-image {
+    flex: none;
+    align-self: stretch;
   }
 
   .care-box {

@@ -32,7 +32,7 @@
         <div class="feature-card">
           <div class="feature-icon">🧭</div>
           <h3>Navigate Learning Paths</h3>
-          <p>Ask about available courses, recommended learning sequences, and how to get started on your tech journey, from beginner to advanced.</p>
+          <p>Ask about available courses, recommended learning sequences, and how to get started on your learning journey, from beginner to advanced.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">📜</div>

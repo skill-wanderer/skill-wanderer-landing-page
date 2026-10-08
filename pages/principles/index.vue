@@ -3,7 +3,7 @@
     <section class="hero">
       <h1>Our 12 Guild Principles</h1>
       <p>
-        Each principle represents a promise, a story, and a commitment to our tech guild mission. Click on any principle 
+        Each principle represents a promise, a story, and a commitment to our guild mission. Click on any principle
         to discover the journey and wisdom behind it.
       </p>
       <svg class="wandering-path" viewBox="0 0 1200 150">
@@ -17,6 +17,7 @@
         <div class="principles-grid">
           <!-- Principle 1 -->
           <a href="/principles/accessible" class="principle-card" style="animation-delay: 0.1s;">
+            <ImageSlot name="principles/accessible" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">1</div>
               <div class="principle-title">
@@ -32,6 +33,7 @@
 
           <!-- Principle 2 -->
           <a href="/principles/integrity" class="principle-card" style="animation-delay: 0.2s;">
+            <ImageSlot name="principles/integrity" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">2</div>
               <div class="principle-title">
@@ -47,6 +49,7 @@
 
           <!-- Principle 3 -->
           <a href="/principles/individualized" class="principle-card" style="animation-delay: 0.3s;">
+            <ImageSlot name="principles/individualized" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">3</div>
               <div class="principle-title">
@@ -62,6 +65,7 @@
 
           <!-- Principle 4 -->
           <a href="/principles/engaging" class="principle-card" style="animation-delay: 0.4s;">
+            <ImageSlot name="principles/engaging" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">4</div>
               <div class="principle-title">
@@ -77,6 +81,7 @@
 
           <!-- Principle 5 -->
           <a href="/principles/creativity" class="principle-card" style="animation-delay: 0.5s;">
+            <ImageSlot name="principles/creativity" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">5</div>
               <div class="principle-title">
@@ -92,6 +97,7 @@
 
           <!-- Principle 6 -->
           <a href="/principles/relevant" class="principle-card" style="animation-delay: 0.6s;">
+            <ImageSlot name="principles/relevant" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">6</div>
               <div class="principle-title">
@@ -107,6 +113,7 @@
 
           <!-- Principle 7 -->
           <a href="/principles/pathways" class="principle-card" style="animation-delay: 0.7s;">
+            <ImageSlot name="principles/pathways" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">7</div>
               <div class="principle-title">
@@ -122,6 +129,7 @@
 
           <!-- Principle 8 -->
           <a href="/principles/technology-partnership" class="principle-card" style="animation-delay: 0.8s;">
+            <ImageSlot name="principles/technology-partnership" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">8</div>
               <div class="principle-title">
@@ -137,6 +145,7 @@
 
           <!-- Principle 9 -->
           <a href="/principles/respect-ip" class="principle-card" style="animation-delay: 0.9s;">
+            <ImageSlot name="principles/respect-ip" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">9</div>
               <div class="principle-title">
@@ -152,6 +161,7 @@
 
           <!-- Principle 10 -->
           <a href="/principles/community" class="principle-card" style="animation-delay: 1.0s;">
+            <ImageSlot name="principles/community" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">10</div>
               <div class="principle-title">
@@ -167,6 +177,7 @@
 
           <!-- Principle 11 -->
           <a href="/principles/social-enterprise" class="principle-card" style="animation-delay: 1.1s;">
+            <ImageSlot name="principles/social-enterprise" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">11</div>
               <div class="principle-title">
@@ -182,6 +193,7 @@
 
           <!-- Principle 12 -->
           <a href="/principles/mission-centric-reinvestment" class="principle-card" style="animation-delay: 1.2s;">
+            <ImageSlot name="principles/mission-centric-reinvestment" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">12</div>
               <div class="principle-title">
@@ -202,7 +214,7 @@
     <section class="mission">
       <div class="mission-content">
         <div class="mission-quote">
-We believe quality education shapes brighter futures. Our mission as a tech guild is to achieve this by integrating real-world insights from our craft and guild engagements directly into highly practical, guild-based learning. This approach builds toward a sustainable social enterprise, enabling us to operate with complete integrity, forgoing any benefit that could cause doubt in our cause, and reinvest all resources for lasting global impact. Every guild engagement becomes free education shared. Every real-world challenge solved plants seeds of knowledge for countless guild members.
+We believe quality education shapes brighter futures. Our mission as a guild is to achieve this by integrating real-world insights from our craft and guild engagements directly into highly practical, guild-based learning. This approach builds toward a sustainable social enterprise, enabling us to operate with complete integrity, forgoing any benefit that could cause doubt in our cause, and reinvest all resources for lasting global impact. Every guild engagement becomes free education shared. Every real-world challenge solved plants seeds of knowledge for countless guild members.
         </div>
       </div>
     </section>  </div>
@@ -214,13 +226,13 @@ import { onMounted } from 'vue'
 // SEO and meta management
 useSEO({
   title: 'Our 12 Guild Principles | Skill-Wanderer',
-  description: 'Discover the 12 guild principles that shape Skill-Wanderer\'s tech guild mission to provide free, quality education with complete integrity and transparency.',
-  keywords: ['skill-wanderer principles', 'guild principles', 'tech guild values', 'social enterprise', 'integrity in education'],
+  description: 'Discover the 12 guild principles that shape Skill-Wanderer\'s guild mission to provide free, quality education with complete integrity and transparency.',
+  keywords: ['skill-wanderer principles', 'guild principles', 'guild values', 'social enterprise', 'integrity in education'],
   type: 'article',
   structuredData: [
     createArticleSchema(
       'Our 12 Guild Principles | Skill-Wanderer',
-      'Discover the 12 guild principles that shape Skill-Wanderer\'s tech guild mission to provide free, quality education with complete integrity and transparency.',
+      'Discover the 12 guild principles that shape Skill-Wanderer\'s guild mission to provide free, quality education with complete integrity and transparency.',
       'https://skill-wanderer.com/principles'
     ),
     createBreadcrumbSchema([
@@ -387,6 +399,13 @@ body {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.principle-card .principle-cover {
+  margin: -40px -40px 28px;
+  border: 0;
+  border-radius: 0;
 }
 
 .principle-card:hover {
@@ -515,6 +534,10 @@ body {
 
   .principle-card {
     padding: 30px 20px;
+  }
+
+  .principle-card .principle-cover {
+    margin: -30px -20px 24px;
   }
   .principle-title h3 {
     font-size: 1.3rem;

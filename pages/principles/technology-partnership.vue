@@ -3,9 +3,10 @@
     <!-- Hero Section -->
     <PrincipleHero
       :number="8"
-      title="Technology Partnerships Fueling Mission" 
+      image="principles/technology-partnership"
+      title="Guild Engagements Fueling Mission"
       tagline="Work That Gives Back"
-      breadcrumb-name="Technology Partnerships Fueling Mission"
+      breadcrumb-name="Guild Engagements Fueling Mission"
     />
 
     <!-- Story Section -->
@@ -36,7 +37,7 @@
     <section class="engine-section">
       <div class="engine-container">
         <h2>The Self-Sustaining Engine</h2>
-        <p class="engine-subtitle">How technology partnerships power our educational mission</p>
+        <p class="engine-subtitle">How guild engagements power our educational mission</p>
         
         <div class="engine-visual">
           <svg class="engine-flow" viewBox="0 0 800 500">
@@ -53,7 +54,7 @@
           
           <div class="engine-component services">
             <span class="component-icon">💼</span>
-            <span class="component-label">Tech Partnerships</span>
+            <span class="component-label">Guild Engagements</span>
           </div>
           
           <div class="engine-component education">
@@ -134,7 +135,7 @@
             <span class="benefit-icon">🔄</span>
             <h3>Always Current Curriculum</h3>
             <p>
-              Our courses reflect the technologies and challenges we face today, not five years ago. 
+              Our tech courses reflect the technologies and challenges we face today, not five years ago.
               When a new framework emerges, we learn it for clients and teach it immediately.
             </p>
           </div>
@@ -144,7 +145,7 @@
             <span class="benefit-icon">💪</span>
             <h3>Sustainable Independence</h3>
             <p>
-              Revenue from partnerships funds free education without relying on donations or compromising 
+              Revenue from guild engagements funds free education without relying on donations or compromising
               our principles. We control our own destiny.
             </p>
           </div>
@@ -165,14 +166,14 @@
     <!-- Practice Section -->
     <PrinciplePractice
       title="The Engine in Action"
-      subtitle="How we integrate partnerships and education"
+      subtitle="How we integrate client work and education"
       :list-icon="'⚙️'"
       :examples="practiceItems"
     />
 
     <!-- Quote Section -->
     <PrincipleQuote 
-      quote="Technology Partnerships Fueling Our Mission isn't just about funding. It's a complete, integrated system designed to ensure quality, relevance, and sustainability for everything we do. We work in the real world to teach the real world."
+      quote="Guild Engagements Fueling Our Mission isn't just about funding. It's a complete, integrated system designed to ensure quality, relevance, and sustainability for everything we do. We work in the real world to teach the real world."
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />
 
@@ -180,7 +181,7 @@
     <section class="transparency-section">
       <div class="transparency-container">
         <p>
-          Technology partnerships are listed for transparency about collaboration and learning opportunities, 
+          Client projects are listed for transparency about collaboration and learning opportunities,
           not as endorsements or paid promotion.
         </p>
       </div>
@@ -199,26 +200,26 @@ import { computed } from 'vue'
 
 // SEO and meta management
 useSEO({
-  title: 'Technology Partnerships Fueling Mission: Work That Gives Back | Principle #8',
-  description: 'How Skill-Wanderer uses technology partnerships to create a self-sustaining engine that funds education while ensuring relevance through practice.',
-  keywords: ['technology partnerships', 'self-sustaining mission', 'skill-wanderer principle 8', 'real-world practice', 'funding education'],
+  title: 'Guild Engagements Fueling Mission: Work That Gives Back | Principle #8',
+  description: 'How Skill-Wanderer turns guild engagements, its client projects, into a self-sustaining engine that funds education while ensuring relevance through practice.',
+  keywords: ['guild engagements', 'client work funds education', 'self-sustaining mission', 'skill-wanderer principle 8', 'real-world practice', 'funding education'],
   type: 'article',
   structuredData: [
     createArticleSchema(
-      'Technology Partnerships Fueling Mission: Work That Gives Back | Principle #8',
-      'How Skill-Wanderer uses technology partnerships to create a self-sustaining engine that funds education while ensuring relevance through real-world practice.',
+      'Guild Engagements Fueling Mission: Work That Gives Back | Principle #8',
+      'How Skill-Wanderer turns guild engagements, its client projects, into a self-sustaining engine that funds education while ensuring relevance through real-world practice.',
       'https://skill-wanderer.com/principles/technology-partnership'
     ),
     createBreadcrumbSchema([
       { name: 'Home', url: 'https://skill-wanderer.com/' },
       { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
-      { name: 'Technology Partnership', url: 'https://skill-wanderer.com/principles/technology-partnership' }
+      { name: 'Guild Engagements', url: 'https://skill-wanderer.com/principles/technology-partnership' }
     ])
   ]
 })
 
 // Story content
-const storyIntro = "I call our eighth principle <strong>Technology Partnerships Fueling Our Mission</strong>, and it defines the very engine of our organization."
+const storyIntro = "I call our eighth principle <strong>Guild Engagements Fueling Our Mission</strong>, and it defines the very engine of our organization."
 
 const storyChapters = [
   {
@@ -255,7 +256,7 @@ const storyChapters = [
     content: [
       {
         type: "text",
-        text: "With this model in mind, I made another fundamental decision: I don't want to rely primarily on donations to fuel our mission. We have the skills. We plan on working in the real world to keep our educational content sharp. So, why not turn those valuable technology partnerships into the revenue stream that fuels our mission?"
+        text: "With this model in mind, I made another fundamental decision: I don't want to rely primarily on donations to fuel our mission. We have the skills. We plan on working in the real world to keep our educational content sharp. So, why not turn that valuable work for clients, our guild engagements, into the revenue stream that fuels our mission?"
       },
       {
         type: "text",
@@ -275,7 +276,7 @@ const storyChapters = [
       },
       {
         type: "text",
-        text: "This is what <strong>Technology Partnerships Fueling Our Mission</strong> is all about. It's not just about funding. It's a complete, integrated system designed to ensure quality, relevance, and sustainability for everything we do."
+        text: "This is what <strong>Guild Engagements Fueling Our Mission</strong> is all about. It's not just about funding. It's a complete, integrated system designed to ensure quality, relevance, and sustainability for everything we do."
       }
     ]
   }
@@ -304,9 +305,9 @@ const practiceItems = [
   {
     title: "Financial Transparency",
     items: [
-      "Clear connection between partnership revenue and educational investment",
+      "Clear connection between client revenue and educational investment",
       "No hidden fees or profit margins",
-      "No hidden profit motives - everything reinvested",
+      "No hidden profit motives: all net revenue is reinvested",
       "Sustainable model that doesn't depend on charity"
     ]
   }

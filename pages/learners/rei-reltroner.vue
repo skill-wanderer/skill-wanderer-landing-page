@@ -184,7 +184,7 @@
 import { useSEO } from '~/composables/useSEO'
 
 useSEO({
-  title: 'Rei Reltroner - Our First Learner | Skill-Wanderer',
+  title: 'Rei Reltroner, Our First Learner | Skill-Wanderer',
   description: 'Meet Rei Reltroner, the first learner at Skill-Wanderer. Discover his journey of resilience, personal growth, and his pursuit of the QA/Tester path.',
   keywords: ['Rei Reltroner', 'first learner', 'success story', 'QA tester', 'learning journey', 'skill-wanderer'],
 })

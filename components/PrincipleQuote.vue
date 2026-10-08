@@ -4,7 +4,7 @@
       <p class="principle-quote">
         {{ quote }}
       </p>
-      <p class="quote-author">- {{ author }}</p>
+      <p class="quote-author">{{ author }}</p>
     </div>
   </section>
 </template>

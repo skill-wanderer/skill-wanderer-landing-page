@@ -146,54 +146,19 @@
       </div>
     </section>
 
-    <!-- AI & Learning Tools Section -->
-    <section class="projects-section alt-bg">
-      <div class="content">
-        <div class="section-header">
-          <div class="section-tag">AI &amp; Learning Tools</div>
-          <h2>AI That Teaches From Your Own Material</h2>
-          <p>
-            The kind of tool a teacher or coach can use with students: structured lessons and AI answers drawn from
-            your own content.
-          </p>
-        </div>
-
-        <div class="case-study-grid case-study-grid--single">
-          <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="case-study-card">
-            <div class="case-study-hero">
-              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" class="case-study-image" />
-              <span class="status-badge status-badge--active">Active Development</span>
-            </div>
-            <div class="case-study-body">
-              <h3>ChanhDao.vn</h3>
-              <p class="case-study-result">
-                Digitalised 162 Buddhist lessons with AI-powered Q&A and structured learning paths for Vietnamese
-                learners, running entirely on a self-hosted Kubernetes cluster with zero hosting cost to the client.
-              </p>
-              <div class="case-study-stack">
-                <span class="stack-tag">Nuxt 3</span>
-                <span class="stack-tag">Python</span>
-                <span class="stack-tag">OpenAI</span>
-                <span class="stack-tag">Kubernetes</span>
-                <span class="stack-tag">PostgreSQL</span>
-              </div>
-              <span class="case-study-link">View Case Study →</span>
-            </div>
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
-
     <!-- Non-Profit Section -->
-    <section class="projects-section">
+    <section class="projects-section alt-bg">
       <div class="content">
         <div class="section-header">
           <div class="section-tag">Non-Profit</div>
           <h2>Giving Back Through Technology</h2>
-          <p>We apply our skills where they matter most, supporting missions that serve communities for free.</p>
+          <p>
+            We apply our skills where they matter most: a website for a Ugandan non-profit, and ChanhDao.vn, a free,
+            open-source learning platform Quan co-founded.
+          </p>
         </div>
 
-        <div class="case-study-grid case-study-grid--single">
+        <div class="case-study-grid">
           <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="case-study-card">
             <div class="case-study-hero">
               <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" class="case-study-image" />
@@ -215,12 +180,35 @@
               <span class="case-study-link">View Case Study →</span>
             </div>
           </NuxtLink>
+
+          <!-- Quan's own co-founded non-profit, not client work: the copy says so -->
+          <NuxtLink to="/work-with-us/projects/chanhdao-vn" class="case-study-card">
+            <div class="case-study-hero">
+              <img src="/projects/chanhdao/preview.svg" alt="ChanhDao.vn" class="case-study-image" />
+              <span class="status-badge status-badge--active">Active Development</span>
+            </div>
+            <div class="case-study-body">
+              <h3>ChanhDao.vn</h3>
+              <p class="case-study-result">
+                Our own project, not client work. Digitalised 162 Buddhist lessons with AI-powered Q&A and structured
+                learning paths for Vietnamese learners, running on a self-hosted Kubernetes cluster at almost zero running cost.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Nuxt 3</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">OpenAI</span>
+                <span class="stack-tag">Kubernetes</span>
+                <span class="stack-tag">PostgreSQL</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </section>
 
     <!-- Start-up Section -->
-    <section class="projects-section alt-bg">
+    <section class="projects-section">
       <div class="content">
         <div class="section-header">
           <div class="section-tag">Start-up</div>
@@ -276,7 +264,7 @@
     </section>
 
     <!-- Larger Organizations Section -->
-    <section class="projects-section">
+    <section class="projects-section alt-bg">
       <div class="content">
         <div class="section-header">
           <div class="section-tag">Larger Organizations</div>
@@ -286,16 +274,8 @@
 
         <div class="case-study-grid case-study-grid--single">
           <NuxtLink to="/work-with-us/projects/recruitment-validator" class="case-study-card">
-            <div class="case-study-hero case-study-hero--placeholder">
-              <div class="hero-placeholder-inner">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-placeholder-icon">
-                  <rect x="6" y="8" width="36" height="32" rx="4" stroke="currentColor" stroke-width="2.5"/>
-                  <path d="M6 16h36" stroke="currentColor" stroke-width="2.5"/>
-                  <path d="M14 24h8M14 30h12M14 36h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                  <circle cx="34" cy="30" r="6" stroke="currentColor" stroke-width="2"/>
-                  <path d="M32 30l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
+            <div class="case-study-hero">
+              <img src="/projects/recruitment-validator/card.jpg" alt="Recruitment Validator" class="case-study-image" />
               <span class="status-badge status-badge--shipped">Shipped</span>
             </div>
             <div class="case-study-body">
