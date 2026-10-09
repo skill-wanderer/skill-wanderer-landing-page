@@ -998,5 +998,21 @@ useSEO({
   .proof-card {
     flex-basis: 100%;
   }
+
+  .launch-badge {
+    font-size: 0.85rem;
+    padding: 10px 18px;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.4;
+    border-radius: 24px;
+  }
+
+  .hero-actions .btn,
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
 }
 </style>

@@ -356,7 +356,7 @@ onUnmounted(() => {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  z-index: 9998;
+  z-index: 900;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -845,8 +845,22 @@ onUnmounted(() => {
   }
 
   .pathfinder-fab {
+    width: 50px;
+    height: 50px;
     bottom: 1rem;
     right: 1rem;
   }
+
+  .pathfinder-fab svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+:global(body.nav-mobile-open) .pathfinder-fab {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transform: scale(0.7) !important;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 </style>

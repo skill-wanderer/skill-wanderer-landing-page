@@ -1618,4 +1618,42 @@ body {
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 120px 16px 50px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .tab-switcher {
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 35px;
+  }
+
+  .tab-btn {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 0.92rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .contact-form {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+
+  .form-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+}
 </style>

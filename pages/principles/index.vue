@@ -16,7 +16,7 @@
       <div class="principles-container">
         <div class="principles-grid">
           <!-- Principle 1 -->
-          <a href="/principles/accessible" class="principle-card" style="animation-delay: 0.1s;">
+          <NuxtLink to="/principles/accessible" class="principle-card" style="animation-delay: 0.1s;">
             <ImageSlot name="principles/accessible" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">1</div>
@@ -29,10 +29,10 @@
               All Skill-Wanderer learning content is completely free. Our guided learning paths help you navigate both free resources and optional paid services like personalized grading and live mentoring and third-party resources.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 2 -->
-          <a href="/principles/integrity" class="principle-card" style="animation-delay: 0.2s;">
+          <NuxtLink to="/principles/integrity" class="principle-card" style="animation-delay: 0.2s;">
             <ImageSlot name="principles/integrity" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">2</div>
@@ -45,10 +45,10 @@
               Upholding trust by avoiding conflicts of interest. No ads, no affiliate marketing, no commissions from third-party resources we recommend.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 3 -->
-          <a href="/principles/individualized" class="principle-card" style="animation-delay: 0.3s;">
+          <NuxtLink to="/principles/individualized" class="principle-card" style="animation-delay: 0.3s;">
             <ImageSlot name="principles/individualized" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">3</div>
@@ -61,10 +61,10 @@
               Supporting diverse learning styles by offering multiple resources for each concept.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 4 -->
-          <a href="/principles/engaging" class="principle-card" style="animation-delay: 0.4s;">
+          <NuxtLink to="/principles/engaging" class="principle-card" style="animation-delay: 0.4s;">
             <ImageSlot name="principles/engaging" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">4</div>
@@ -77,10 +77,10 @@
               Creating an environment where challenges bring accomplishment and learning feels like play.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 5 -->
-          <a href="/principles/creativity" class="principle-card" style="animation-delay: 0.5s;">
+          <NuxtLink to="/principles/creativity" class="principle-card" style="animation-delay: 0.5s;">
             <ImageSlot name="principles/creativity" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">5</div>
@@ -93,10 +93,10 @@
               Embracing mistakes as crucial learning opportunities and celebrating the journey of discovery.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 6 -->
-          <a href="/principles/relevant" class="principle-card" style="animation-delay: 0.6s;">
+          <NuxtLink to="/principles/relevant" class="principle-card" style="animation-delay: 0.6s;">
             <ImageSlot name="principles/relevant" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">6</div>
@@ -109,10 +109,10 @@
               Providing education that directly addresses industry needs with battle-tested solutions.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 7 -->
-          <a href="/principles/pathways" class="principle-card" style="animation-delay: 0.7s;">
+          <NuxtLink to="/principles/pathways" class="principle-card" style="animation-delay: 0.7s;">
             <ImageSlot name="principles/pathways" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">7</div>
@@ -125,10 +125,10 @@
               Creating real opportunities for guild members to advance through the ranks and continue the cycle of growth.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 8 -->
-          <a href="/principles/technology-partnership" class="principle-card" style="animation-delay: 0.8s;">
+          <NuxtLink to="/principles/technology-partnership" class="principle-card" style="animation-delay: 0.8s;">
             <ImageSlot name="principles/technology-partnership" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">8</div>
@@ -141,10 +141,10 @@
               Leveraging real-world expertise and impact work to fund free education and keep content relevant.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 9 -->
-          <a href="/principles/respect-ip" class="principle-card" style="animation-delay: 0.9s;">
+          <NuxtLink to="/principles/respect-ip" class="principle-card" style="animation-delay: 0.9s;">
             <ImageSlot name="principles/respect-ip" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">9</div>
@@ -157,10 +157,10 @@
               Explicitly reinforcing intellectual property boundaries and attribution practices as we embrace AI-enabled content generation from our own curriculum.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 10 -->
-          <a href="/principles/community" class="principle-card" style="animation-delay: 1.0s;">
+          <NuxtLink to="/principles/community" class="principle-card" style="animation-delay: 1.0s;">
             <ImageSlot name="principles/community" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">10</div>
@@ -173,10 +173,10 @@
               Fostering a guild ecosystem where members support each other and grow together.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 11 -->
-          <a href="/principles/social-enterprise" class="principle-card" style="animation-delay: 1.1s;">
+          <NuxtLink to="/principles/social-enterprise" class="principle-card" style="animation-delay: 1.1s;">
             <ImageSlot name="principles/social-enterprise" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">11</div>
@@ -189,10 +189,10 @@
               Same quality human mentors, start-up support, and pre-learning advisory, sustained through Social Impact Tokens and an open give-back cycle.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
 
           <!-- Principle 12 -->
-          <a href="/principles/mission-centric-reinvestment" class="principle-card" style="animation-delay: 1.2s;">
+          <NuxtLink to="/principles/mission-centric-reinvestment" class="principle-card" style="animation-delay: 1.2s;">
             <ImageSlot name="principles/mission-centric-reinvestment" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">12</div>
@@ -205,7 +205,7 @@
               All net revenue reinvested into education, innovation, and fair compensation. No dividends.
             </p>
             <span class="principle-arrow">Read the story →</span>
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -448,11 +448,11 @@ body {
 }
 
 .principle-title h3 {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   color: white;
   margin-bottom: 5px;
   line-height: 1.3;
-  height: 3.9rem; /* 3 lines * 1.3 line-height */
+  min-height: 2.8rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   line-clamp: 3;
@@ -540,14 +540,11 @@ body {
     margin: -30px -20px 24px;
   }
   .principle-title h3 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.3;
-    height: 3.38rem; /* 3 lines * 1.3 line-height for smaller font */
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    min-height: auto;
+    display: block;
+    overflow: visible;
     word-break: break-word;
   }
 

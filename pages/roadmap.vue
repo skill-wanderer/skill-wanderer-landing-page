@@ -872,6 +872,39 @@ onMounted(() => {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding: 110px 16px 40px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .timeline::before {
+    left: 16px;
+  }
+
+  .timeline-item {
+    padding-left: 48px;
+    margin-bottom: 35px;
+  }
+
+  .timeline-marker {
+    left: 0;
+    width: 32px;
+    height: 32px;
+    top: 16px;
+  }
+
+  .phase-number {
+    font-size: 0.95rem;
+  }
+
+  .timeline-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
   .feature-tag {
     font-size: 0.75rem;
     padding: 4px 10px;
@@ -879,6 +912,11 @@ onMounted(() => {
 
   .card-features {
     gap: 6px;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
   }
 }
 </style>

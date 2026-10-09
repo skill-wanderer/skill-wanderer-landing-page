@@ -24,11 +24,23 @@
         class="mobile-menu-btn"
         @click="toggleMobileMenu"
         :class="{ active: isMobileMenuOpen }"
+        aria-label="Toggle navigation menu"
+        :aria-expanded="isMobileMenuOpen"
       >
         <span></span>
         <span></span>
         <span></span>
       </button>
+
+      <!-- Mobile menu backdrop -->
+      <Transition name="fade-backdrop">
+        <div
+          v-if="isMobileMenuOpen"
+          class="mobile-menu-backdrop"
+          @click="closeMobileMenu"
+          aria-hidden="true"
+        />
+      </Transition>
       
       <div class="nav-links" :class="{ 'mobile-open': isMobileMenuOpen }">
         <!-- Learn Dropdown (the mission comes first) -->
@@ -578,7 +590,20 @@ onMounted(() => {
   startHeartAutoMove()
 })
 
+watch(isMobileMenuOpen, (open) => {
+  if (typeof document !== 'undefined') {
+    if (open) {
+      document.body.classList.add('nav-mobile-open')
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.classList.remove('nav-mobile-open')
+      document.body.style.overflow = ''
+    }
+  }
+})
+
 watch(() => route.path, () => {
+  closeMobileMenu()
   startHeartAutoMove()
 })
 
@@ -588,6 +613,10 @@ onUnmounted(() => {
   if (resizeDebounceTimeoutId !== null) {
     window.clearTimeout(resizeDebounceTimeoutId)
     resizeDebounceTimeoutId = null
+  }
+  if (typeof document !== 'undefined') {
+    document.body.classList.remove('nav-mobile-open')
+    document.body.style.overflow = ''
   }
   stopHeartAutoMove()
 })
@@ -1024,6 +1053,18 @@ onUnmounted(() => {
     display: none;
   }
   
+  .mobile-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 998;
+  }
+
   .nav-links {
     position: absolute;
     top: 100%;
@@ -1033,18 +1074,29 @@ onUnmounted(() => {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
-    background: rgba(26, 26, 26, 0.98);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: #141416;
+    border-bottom: 2px solid rgba(255, 107, 53, 0.25);
     flex-direction: column;
     padding: 20px 20px 40px;
     gap: 16px;
-    border-top: 1px solid rgba(255, 107, 53, 0.1);
+    border-top: 1px solid rgba(255, 107, 53, 0.15);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.25s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    z-index: 1001;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    width: 6px;
+  }
+  .nav-links::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .nav-links::-webkit-scrollbar-thumb {
+    background: rgba(255, 107, 53, 0.35);
+    border-radius: 4px;
   }
   
   .nav-links.mobile-open {
@@ -1165,5 +1217,14 @@ onUnmounted(() => {
     font-size: 1rem;
     padding: 10px 0;
   }
+}
+
+.fade-backdrop-enter-active,
+.fade-backdrop-leave-active {
+  transition: opacity 0.25s ease;
+}
+.fade-backdrop-enter-from,
+.fade-backdrop-leave-to {
+  opacity: 0;
 }
 </style>

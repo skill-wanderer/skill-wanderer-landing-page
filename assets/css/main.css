@@ -139,3 +139,21 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 480px) {
+  .section-header {
+    margin: 0 auto 40px;
+    padding: 0 10px;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.75rem, 7vw, 2.2rem);
+    margin-bottom: 14px;
+  }
+
+  .btn {
+    padding: 13px 22px;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
