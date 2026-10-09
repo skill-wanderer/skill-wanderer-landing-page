@@ -100,7 +100,7 @@
             This page gives you a clear roadmap. The detailed lessons will be published in phases as we complete each module.
           </p>
           <div class="hero-actions">
-            <NuxtLink to="/contact" class="btn btn-primary">Ask About This Path</NuxtLink>
+            <NuxtLink to="/contact?tab=join" class="btn btn-primary">Ask About This Path</NuxtLink>
             <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-outline">See Learning Philosophy</NuxtLink>
           </div>
         </div>

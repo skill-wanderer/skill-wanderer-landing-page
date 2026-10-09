@@ -1,23 +1,24 @@
 <template>
   <footer>    <div class="footer-content">
       <p class="footer-one-liner">
-        A tech partner for solo founders and small businesses: a free working prototype first, no development fee,
-        and no lock-in. Your project helps fund free education.
+        Free, practical education for everyone who keeps learning. It's funded by our work as a tech partner for
+        solo founders and small businesses: a free working prototype first, no development fee and no lock-in.
       </p>
       <p class="footer-email">
         Email the Guild Master: <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>
       </p>
       <div class="footer-links">
         <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/learning-path">Learning Paths</NuxtLink>
+        <NuxtLink to="/learners">Learner Stories</NuxtLink>
+        <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Dojo</a>
+        <a href="https://wanderings.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Wanderings Blog</a>
         <NuxtLink to="/work-with-us">Work With Us</NuxtLink>
         <NuxtLink to="/work-with-us/service-model">How It Works</NuxtLink>
         <NuxtLink to="/work-with-us/our-projects">Client Projects</NuxtLink>
-        <NuxtLink to="/learning-path">Learning Paths</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/principles">12 Principles</NuxtLink>
         <NuxtLink to="/help-the-mission">Help the Mission</NuxtLink>
-        <a href="https://dojo.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Dojo</a>
-        <a href="https://wanderings.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Wanderings Blog</a>
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
         <NuxtLink to="/contact">Contact</NuxtLink>
         <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>

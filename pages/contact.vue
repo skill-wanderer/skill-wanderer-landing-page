@@ -2,9 +2,9 @@
   <div>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Tell Us About Your Idea</h1>
+      <h1>Get in Touch</h1>
       <p>
-        Describe what you want to build or the problem you have. Quan Nguyen, our founder and Guild Master,
+        Want to learn and contribute with us, or have an idea to build? Quan Nguyen, our founder and Guild Master,
         reads every message himself.
       </p>
     </section>
@@ -217,6 +217,14 @@
           <div class="info-cards">
             <div class="info-card">
               <div class="info-card-header">
+                <div class="info-icon">🧭</div>
+                <h3>Just Need Guidance?</h3>
+              </div>
+              <p>You don't need to apply to ask for help. Tell Quan where you're stuck or what you want to learn, and he'll help you find your next step. Guidance is free.</p>
+              <a :href="guidanceEmailLink" class="info-card-link">Ask for Guidance</a>
+            </div>
+            <div class="info-card">
+              <div class="info-card-header">
                 <div class="info-icon">✏️</div>
                 <h3>Application Review</h3>
               </div>
@@ -234,7 +242,7 @@
                 <div class="info-icon">⚔️</div>
                 <h3>Guild Membership</h3>
               </div>
-              <p>Guild members help on real client projects under senior review, receive mentorship, and share in the mission of funding free education for learners everywhere.</p>
+              <p>Guild members help on real client projects under senior review. Mentorship and income are based on contribution, which keeps it fair and helps fund free education for learners everywhere.</p>
               <NuxtLink to="/learning-path/learn-contribute-build-earn" class="info-card-link">How Learning Works</NuxtLink>
             </div>
           </div>
@@ -276,7 +284,7 @@
             <div class="orion-icon">🧭</div>
             <div>
               <h2>Not Ready to Write Yet?</h2>
-              <p>Ask <strong>Admiral Orion</strong>, our AI guide, whether your idea is a good fit or how the free prototype works.</p>
+              <p>Ask <strong>Admiral Orion</strong>, our AI guide, where to start learning, whether your idea is a good fit, or how the free prototype works.</p>
             </div>
           </div>
           <NuxtLink to="/admiral-orion" class="btn btn-orion">Chat with Admiral Orion</NuxtLink>
@@ -292,7 +300,7 @@
           <p>Quick answers to common questions</p>
         </div>
         <div class="faq-list">
-          <div v-for="(faq, index) in faqs" :key="index" class="faq-item" :class="{ active: activeFaq === index }">
+          <div v-for="(faq, index) in visibleFaqs" :key="faq.question" class="faq-item" :class="{ active: activeFaq === index }">
             <div class="faq-question" @click="toggleFaq(index)">
               <h3>{{ faq.question }}</h3>
               <span class="faq-toggle">+</span>
@@ -315,11 +323,13 @@ import { computed, reactive, ref, watch } from 'vue'
 
 // SEO and meta management
 useSEO({
-  title: 'Contact Skill-Wanderer | Tell Us About Your Idea',
-  description: 'Tell us about your idea. Quan, our founder, reads every message and replies with a time for a short call. Free prototype first, no development fee.',
-  keywords: ['contact skill-wanderer', 'website for small business', 'tech partner', 'free prototype', 'no development fee', 'project inquiry'],
+  title: 'Contact Skill-Wanderer | Learn With Us or Start a Project',
+  description: 'Ask for free guidance, apply to contribute, or tell us about your idea. Quan, our founder, reads every message himself and replies personally.',
+  keywords: ['contact skill-wanderer', 'free guidance', 'join the guild', 'learn and contribute', 'website for small business', 'tech partner', 'free prototype', 'no development fee', 'project inquiry'],
   type: 'website'
 })
+
+const guidanceEmailLink = `mailto:quan.nguyen@skill-wanderer.com?subject=${encodeURIComponent('Asking for guidance')}`
 
 // Tab state: links such as /contact?tab=join open the guild form directly
 const route = useRoute()
@@ -537,33 +547,61 @@ const isWeb3FormsConfigured = computed(() => getWeb3FormsAccessKey().length > 0)
 
 const activeFaq = ref(-1)
 
-// FAQ data
-const faqs = ref([
+// FAQ data: project questions show on the Start a Project tab, learner questions on Join the Guild
+const faqs = ref<{ audience: 'hire' | 'join'; question: string; answer: string }[]>([
   {
+    audience: 'hire',
     question: "What kind of projects do you take on?",
     answer: "Websites for your business or practice, AI tools for your students or clients, booking and payments, small automations, and apps or bigger platforms when you are ready. Every project is custom-built, and we explain everything in plain language."
   },
   {
+    audience: 'hire',
     question: "How does pricing work?",
     answer: "For accepted projects there is no development fee. We build a free working prototype first, so you can see it before you commit. If you continue, you pay a monthly fee for hosting, maintenance, support and occasional changes, billed monthly or quarterly. The exact price is confirmed after the prototype review, never before."
   },
   {
+    audience: 'hire',
     question: "How long does a typical project take?",
     answer: "Timelines depend on scope. A simple website can be ready in 1-2 weeks, while a full web application may take 4-8 weeks or more. After your call, Quan will give you a realistic timeline."
   },
   {
+    audience: 'hire',
     question: "Who will work on my project?",
     answer: "Quan Nguyen, our founder, designs your project, builds the critical parts and reviews every change. Guild learners may help, always under his review."
   },
   {
+    audience: 'hire',
     question: "Why does Quan only take one call a day?",
     answer: "Quan builds and teaches as well as meeting new clients. One call a day keeps time for the work itself, so every client gets his full attention."
   },
   {
+    audience: 'hire',
     question: "What makes Skill-Wanderer different from an agency?",
     answer: "There is no big upfront bill: you see a working prototype first and pay no development fee. You get honest advice, not just code. There is no lock-in: you own your domain and can see the code. And your project helps fund free education."
+  },
+  {
+    audience: 'join',
+    question: "Do you charge learners for guidance or mentorship?",
+    answer: "No. Guidance is free, and we never charge tuition. We ask for your effort instead: mentorship grows with your contribution."
+  },
+  {
+    audience: 'join',
+    question: "Can I earn as a contributor?",
+    answer: "Yes. When you are ready, you can help on real client projects under senior review and be paid for your part. Income is based on contribution, which keeps it fair for everyone and helps sustain the mission."
+  },
+  {
+    audience: 'join',
+    question: "Do I need experience to join the guild?",
+    answer: "Not necessarily. We look for passion, effort and alignment with the guild's values, not just years of experience. If you are just starting out, begin with the free courses and ask for guidance whenever you get stuck."
   }
 ])
+
+const visibleFaqs = computed(() => faqs.value.filter(faq => faq.audience === activeTab.value))
+
+// The list changes with the tab, so close any open answer when the tab changes.
+watch(activeTab, () => {
+  activeFaq.value = -1
+})
 
 // Methods
 const handleHireSubmit = async () => {

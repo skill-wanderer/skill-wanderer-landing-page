@@ -155,7 +155,7 @@
           </p>
         </div>
         <div class="tiers-actions">
-          <NuxtLink to="/contact" class="btn btn-primary">Contact Us</NuxtLink>
+          <NuxtLink to="/contact?tab=join" class="btn btn-primary">Contact Us</NuxtLink>
           <NuxtLink to="/learners" class="btn btn-outline">Meet Our Learners</NuxtLink>
         </div>
       </div>

@@ -70,13 +70,13 @@
             <img src="/orion.webp" alt="Admiral Orion" class="pathfinder-welcome-avatar" />
           </div>
           <p class="text-sm font-semibold mb-1">Welcome aboard, Cadet!</p>
-          <p class="text-xs opacity-60 leading-relaxed">Admiral Orion at your command. Report your inquiries about your project idea, our mission, principles, learning paths, and fleet operations.</p>
+          <p class="text-xs opacity-60 leading-relaxed">Admiral Orion at your command. Report your inquiries about our mission, learning paths, principles, your project idea, and fleet operations.</p>
           <div class="pathfinder-suggestions">
+            <button class="pathfinder-suggestion" @click="askSuggestion('What is Skill-Wanderer?')">Mission Briefing</button>
+            <button class="pathfinder-suggestion" @click="askSuggestion('How do learning paths work?')">Navigation Routes</button>
+            <button class="pathfinder-suggestion" @click="askSuggestion('What are the 12 principles?')">The 12 Directives</button>
             <button class="pathfinder-suggestion" @click="askSuggestion('Is my project a good fit for Skill-Wanderer?')">Is My Project a Fit?</button>
             <button class="pathfinder-suggestion" @click="askSuggestion('How does the free prototype work?')">Free Prototype</button>
-            <button class="pathfinder-suggestion" @click="askSuggestion('What is Skill-Wanderer?')">Mission Briefing</button>
-            <button class="pathfinder-suggestion" @click="askSuggestion('What are the 12 principles?')">The 12 Directives</button>
-            <button class="pathfinder-suggestion" @click="askSuggestion('How do learning paths work?')">Navigation Routes</button>
           </div>
         </div>
 

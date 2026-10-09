@@ -132,7 +132,7 @@
           <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             Explore Learning Paths
           </a>
-          <a href="/contact" class="btn btn-secondary">
+          <a href="/contact?tab=join" class="btn btn-secondary">
             Get in Touch
           </a>
         </div>

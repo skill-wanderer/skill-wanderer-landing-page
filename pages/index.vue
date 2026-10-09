@@ -1,33 +1,38 @@
 <template>
   <div>
-    <!-- Hero: who it's for, what we offer, one direct CTA + one transitional CTA -->
+    <!-- Hero: the mission first, then one door for each of our two heroes -->
     <section class="hero">
       <div class="hero-content">
-        <p class="hero-eyebrow">For solo founders, freelancers, coaches, consultants, writers &amp; small businesses</p>
-        <h1>See your idea working before you commit.</h1>
+        <p class="hero-eyebrow">A learning guild, funded by real work</p>
+        <h1>Free, practical education for everyone who keeps learning.</h1>
         <p class="hero-description">
-          We build a free working prototype of your website or AI tool. If you like it, we launch it with
-          no development fee and stay on as your tech partner. If not, you walk away and owe nothing.
+          Courses, honest guidance and real project experience for self-learners and lifelong learners.
+          Small businesses fund it all by hiring us as their tech partner, and that real work keeps the
+          mission sustainable and everything we teach practical.
         </p>
-        <div class="hero-cta">
-          <NuxtLink to="/contact" class="btn btn-primary">
-            Tell Us About Your Idea
-            <span>→</span>
-          </NuxtLink>
-          <NuxtLink to="/work-with-us/service-model" class="btn btn-secondary">
-            See How It Works
-            <span>→</span>
-          </NuxtLink>
+        <div class="hero-doors">
+          <div class="hero-door">
+            <p class="door-label"><span aria-hidden="true">📚</span> Here to learn</p>
+            <p class="door-text">
+              Free courses and guidance, then real experience when you're ready. No tuition, ever. We only ask
+              for your effort.
+            </p>
+            <NuxtLink to="/learning-path" class="btn btn-primary">
+              Start Learning for Free <span>→</span>
+            </NuxtLink>
+            <a href="#learners" class="door-link">How it works for learners <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-door">
+            <p class="door-label"><span aria-hidden="true">💡</span> Have an idea to build</p>
+            <p class="door-text">
+              A free working prototype first, then no development fee. Your project funds free education.
+            </p>
+            <NuxtLink to="/contact" class="btn btn-primary">
+              Tell Us About Your Idea <span>→</span>
+            </NuxtLink>
+            <a href="#clients" class="door-link">How it works for your project <span aria-hidden="true">↓</span></a>
+          </div>
         </div>
-        <ul class="hero-trust">
-          <li>No development fee</li>
-          <li>No lock-in</li>
-          <li>Your project helps fund free education</li>
-        </ul>
-        <p class="hero-learner-link">
-          Here to learn?
-          <NuxtLink to="/learning-path/learn-contribute-build-earn">Start learning for free →</NuxtLink>
-        </p>
         <ImageSlot name="home/hero" class="hero-image" priority />
       </div>
       <svg class="wandering-path" viewBox="0 0 1200 200">
@@ -35,21 +40,303 @@
       </svg>
     </section>
 
-    <!-- Problem: name the client's pain -->
-    <section class="problem">
+    <!-- ── Hero 1: the learner ─────────────────────────────── -->
+
+    <!-- Learner: who they are and the problem they face -->
+    <section id="learners" class="track section--darker">
+      <div class="track-intro">
+        <div class="track-intro-text">
+          <p class="track-label">For self-learners &amp; lifelong learners</p>
+          <h2>Learn on your own, without learning alone.</h2>
+          <p>
+            You want to grow, but degrees and paid coaches can cost more than you can spend, and much of it is
+            theory you can't put to use. We give you free courses, honest guidance and real project experience,
+            so you learn to think for yourself and stay ready for whatever changes next.
+          </p>
+          <div class="track-cta">
+            <NuxtLink to="/learning-path" class="btn btn-primary">
+              Start Learning for Free <span>→</span>
+            </NuxtLink>
+            <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-secondary">
+              See How Learning Works <span>→</span>
+            </NuxtLink>
+          </div>
+          <ul class="track-trust">
+            <li>No tuition or fees</li>
+            <li>No ads or affiliate links</li>
+            <li>Mentorship earned through effort</li>
+          </ul>
+        </div>
+        <ImageSlot name="home/for-learners" class="track-image" />
+      </div>
+
+      <div class="problem-header">
+        <h3>Sound familiar?</h3>
+        <p>Wanting to grow is the easy part. Finding a clear path you can afford is not.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-icon" aria-hidden="true">🧭</span>
+          <h4>"I want to learn something new. Where do I start?"</h4>
+          <p>There are endless courses, videos and opinions out there, and nobody shows you a clear path through them.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon" aria-hidden="true">💸</span>
+          <h4>"I can't afford a degree or a coach."</h4>
+          <p>Formal education and paid mentors cost more than most people can spend, especially before you know which way to go.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon" aria-hidden="true">🔧</span>
+          <h4>"I want skills I can use, not just theory."</h4>
+          <p>Formal courses teach the textbook. You want to build things that work in the real world.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon" aria-hidden="true">🌊</span>
+          <h4>"Everything changes faster than I can learn."</h4>
+          <p>Especially in the AI era, the tools you learned last year are already changing. It's easy to feel swamped.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learner guide: empathy + authority -->
+    <section class="mentor section--dark">
+      <div class="mentor-content">
+        <div class="mentor-text">
+          <p class="guide-eyebrow">Your mentor</p>
+          <h2>We know what it's like to learn something new on your own.</h2>
+          <p>
+            Quan Nguyen, our founder and Guild Master, switched from import-export manager to developer himself,
+            so he remembers how daunting it is to start over. He has since spent over a decade building software,
+            and today he mentors learners across Asia, Africa and Latin America.
+          </p>
+          <p>
+            Mentoring here doesn't mean handing you answers. We give you the mindset, the frameworks and the
+            knowledge to keep improving by yourself, and we point out the early pitfalls before you fall into them.
+          </p>
+          <ul class="guide-points">
+            <li><strong>Mindset:</strong> learn fast, adapt, and treat failure as part of learning</li>
+            <li><strong>Frameworks:</strong> break down a new field and decide what to learn next</li>
+            <li><strong>Knowledge:</strong> practical lessons from real projects, not theory for its own sake</li>
+            <li><strong>Honest advice:</strong> no affiliate links, paid promotions or kickbacks, ever</li>
+          </ul>
+        </div>
+        <div class="mentor-proof">
+          <p class="mentor-proof-title">Learners we've mentored</p>
+          <ul class="learner-list">
+            <li v-for="learner in featuredLearners" :key="learner.slug">
+              <NuxtLink :to="`/learners/${learner.slug}`" class="learner-row">
+                <img :src="learner.photo" alt="" loading="lazy" />
+                <span class="learner-row-text">
+                  <span class="learner-row-name">
+                    {{ learner.name }} <span class="learner-row-country">· {{ learner.country }}</span>
+                  </span>
+                  <span class="learner-row-outcome">{{ learner.outcome }}</span>
+                </span>
+              </NuxtLink>
+            </li>
+          </ul>
+          <NuxtLink to="/learners" class="mentor-proof-link">Meet all our learners →</NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learner plan: from free courses to paid client work -->
+    <section class="plan section--darker">
       <div class="section-header">
-        <h2>Sound familiar?</h2>
+        <h2>How it works for learners</h2>
+        <p>Four steps. Go as far as you like, at your own pace.</p>
+      </div>
+      <ol class="plan-steps plan-steps--four">
+        <li class="plan-step">
+          <ImageSlot name="philosophy/start-free" group="learnerPlanSteps" class="plan-image" />
+          <span class="plan-number">1</span>
+          <h3>Learn with free courses</h3>
+          <p>
+            Take our courses in the
+            <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer">Dojo</a>
+            and read the
+            <a href="https://wanderings.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Wanderings blog</a>
+            for the knowledge and the mindset.
+          </p>
+        </li>
+        <li class="plan-step">
+          <ImageSlot name="home/ask-for-guidance" group="learnerPlanSteps" class="plan-image" />
+          <span class="plan-number">2</span>
+          <h3>Ask when you're stuck</h3>
+          <p>Feeling swamped, or not sure what to learn next? Reach out and we'll help you find your next step. Guidance is always free.</p>
+        </li>
+        <li class="plan-step">
+          <ImageSlot name="philosophy/contribute" group="learnerPlanSteps" class="plan-image" />
+          <span class="plan-number">3</span>
+          <h3>Contribute and gain experience</h3>
+          <p>Join us as a contributor: build for the guild, improve a course or help other learners. The more you put in, the more mentorship you get.</p>
+        </li>
+        <li class="plan-step">
+          <ImageSlot name="philosophy/real-projects" group="learnerPlanSteps" class="plan-image" />
+          <span class="plan-number">4</span>
+          <h3>Earn on real client work</h3>
+          <p>When you're ready, help on client projects under senior review and get paid for your part. Your income grows with your contribution.</p>
+        </li>
+      </ol>
+      <div class="fair-exchange">
+        <h3>A fair exchange</h3>
+        <p>
+          We never charge for guidance. We ask for your effort instead. Mentorship and income are both based on
+          contribution, which keeps things fair for everyone and helps sustain the mission in return.
+        </p>
+      </div>
+      <div class="plan-cta">
+        <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-outline">
+          See the Full Learning Journey <span>→</span>
+        </NuxtLink>
+      </div>
+    </section>
+
+    <!-- Learner stakes: failure vs success -->
+    <section class="stakes section--dark">
+      <div class="stakes-grid">
+        <div class="stakes-card stakes-card--without">
+          <h3>Learning without a guide</h3>
+          <ul>
+            <li>You fall into the same early pitfalls as every beginner</li>
+            <li>You waste months going in circles, unsure what to learn next</li>
+            <li>You pay for worthless courses, or fall for a scam</li>
+            <li>You trust guides who profit from what they recommend, and get ripped off</li>
+          </ul>
+        </div>
+        <div class="stakes-card stakes-card--with">
+          <h3>Learning with Skill-Wanderer</h3>
+          <ul>
+            <li>You learn to think for yourself, so the next wave of change finds you ready</li>
+            <li>You get through early mistakes, pitfalls and confusion with someone who's been there</li>
+            <li>You build practical skills by contributing to real work</li>
+            <li>And once you're experienced, you share it back and show the world how much you've learned</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learner call to action: three reasons to reach out -->
+    <section id="reach-out" class="reach-out section--darker">
+      <div class="section-header">
+        <h2>Reach out, wherever you are on the path</h2>
+        <p>Guidance is free. All we ask in return is your effort.</p>
+      </div>
+      <div class="reach-grid">
+        <article class="reach-card">
+          <span class="reach-icon" aria-hidden="true">🤝</span>
+          <h3>Work with us as a contributor</h3>
+          <p>Gain real experience on guild and client work, with mentorship that grows with your effort.</p>
+          <NuxtLink to="/contact?tab=join" class="btn btn-primary">Join as a Contributor</NuxtLink>
+        </article>
+        <article class="reach-card">
+          <span class="reach-icon" aria-hidden="true">📚</span>
+          <h3>Help improve a course</h3>
+          <p>Spotted a gap, a mistake or a clearer way to explain something? Tell us, and help the next learner.</p>
+          <a :href="courseEmailLink" class="btn btn-outline">Suggest an Improvement</a>
+        </article>
+        <article class="reach-card">
+          <span class="reach-icon" aria-hidden="true">🧭</span>
+          <h3>Ask for guidance</h3>
+          <p>Stuck, swamped or unsure where to start? Just ask. Quan reads every message himself.</p>
+          <a :href="guidanceEmailLink" class="btn btn-outline">Ask for Guidance</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- The mission: client work keeps learning free (sustainable) and grounded in real work (practical) -->
+    <section class="mission-band">
+      <div class="mission-band-content">
+        <p class="guide-eyebrow">How it stays free</p>
+        <h2>Client work funds the mission</h2>
+        <p class="mission-lead">
+          Free education still costs money to run: servers, tools and people's time. We don't charge tuition,
+          show ads or take affiliate commissions. Instead, we build websites and AI tools for small businesses
+          as their tech partner, and that work pays for the mission.
+        </p>
+        <ImageSlot name="home/mission-loop" class="mission-image" />
+        <div class="mission-why">
+          <div class="mission-why-card">
+            <h3><span aria-hidden="true">🌱</span> It keeps the mission sustainable</h3>
+            <p>Client fees cover our running costs, so learning can stay free for everyone who wants it.</p>
+          </div>
+          <div class="mission-why-card">
+            <h3><span aria-hidden="true">🛠️</span> It keeps the learning practical</h3>
+            <p>What we teach comes from projects we really build, and contributors gain real experience on them, under review.</p>
+          </div>
+        </div>
+        <ol class="mission-loop" aria-label="How the mission keeps itself going">
+          <li><span>Client projects cover the costs</span></li>
+          <li><span>Learning stays free for everyone</span></li>
+          <li><span>Learners grow into contributors</span></li>
+          <li><span>Contributors help on client projects</span></li>
+        </ol>
+        <p class="mission-loop-again">
+          <span aria-hidden="true">↻</span> Every project funds the next learner, and every learner who grows helps
+          build the next project.
+        </p>
+        <ul class="principle-chips">
+          <li>No ads or hidden agendas</li>
+          <li>All net revenue reinvested</li>
+          <li>Free learning for everyone</li>
+        </ul>
+        <p class="mission-note">
+          Client work covers our running costs today, but not yet the people who give their time to the mission.
+          If you believe in free education, you can help.
+        </p>
+        <div class="mission-links">
+          <NuxtLink to="/help-the-mission" class="btn btn-outline">
+            Help the Mission <span>→</span>
+          </NuxtLink>
+          <NuxtLink to="/principles" class="btn btn-outline">
+            Our 12 Principles <span>→</span>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Hero 2: the client, whose project funds the mission ── -->
+
+    <!-- Client: who they are and the problem they face -->
+    <section id="clients" class="track section--dark">
+      <div class="track-intro">
+        <div class="track-intro-text">
+          <p class="track-label">For solo founders, freelancers, coaches, consultants, writers &amp; small businesses</p>
+          <h2>See your idea working before you commit.</h2>
+          <p>
+            We build a free working prototype of your website or AI tool. If you like it, we launch it with
+            no development fee and stay on as your tech partner. If not, you walk away and owe nothing.
+          </p>
+          <div class="track-cta">
+            <NuxtLink to="/contact" class="btn btn-primary">
+              Tell Us About Your Idea <span>→</span>
+            </NuxtLink>
+            <NuxtLink to="/work-with-us/service-model" class="btn btn-secondary">
+              See How It Works <span>→</span>
+            </NuxtLink>
+          </div>
+          <ul class="track-trust">
+            <li>No development fee</li>
+            <li>No lock-in</li>
+            <li>Your project helps fund free education</li>
+          </ul>
+        </div>
+        <ImageSlot name="home/for-clients" class="track-image" />
+      </div>
+
+      <div class="problem-header">
+        <h3>Sound familiar?</h3>
         <p>Good ideas shouldn't stay invisible just because the tech is hard.</p>
       </div>
       <div class="problem-grid">
         <div class="problem-card">
           <span class="problem-icon" aria-hidden="true">🤔</span>
-          <h3>"Tech isn't my thing."</h3>
+          <h4>"Tech isn't my thing."</h4>
           <p>You know exactly what you want to say. Building the website or app to say it is another story.</p>
         </div>
         <div class="problem-card">
           <span class="problem-icon" aria-hidden="true">💡</span>
-          <h3>"I have an idea, but where do I start?"</h3>
+          <h4>"I have an idea, but where do I start?"</h4>
           <p>
             Maybe it's an AI practice assignment for your students, or a booking page for your clients.
             You can picture it, but you don't know what it takes.
@@ -57,19 +344,19 @@
         </div>
         <div class="problem-card">
           <span class="problem-icon" aria-hidden="true">💸</span>
-          <h3>"I can't risk thousands on a maybe."</h3>
+          <h4>"I can't risk thousands on a maybe."</h4>
           <p>Agencies want a big payment up front, before you even know if the idea works.</p>
         </div>
         <div class="problem-card">
           <span class="problem-icon" aria-hidden="true">🔒</span>
-          <h3>"What if I get stuck?"</h3>
+          <h4>"What if I get stuck?"</h4>
           <p>Stuck with a developer who disappears, a platform you can't leave, or an AI-built app nobody can fix.</p>
         </div>
       </div>
     </section>
 
-    <!-- Guide: empathy + authority -->
-    <section class="guide">
+    <!-- Client guide: empathy + authority -->
+    <section class="guide section--darker">
       <div class="guide-content">
         <img src="/skill-wanderer-avatar.jpg" alt="Quan Nguyen, founder of Skill-Wanderer" class="guide-avatar" loading="lazy" />
         <div class="guide-text">
@@ -96,10 +383,10 @@
 
     <TestimonialBlock :testimonials="clientTestimonials" section-title="What Clients Say" />
 
-    <!-- Plan: the same 3 steps used everywhere -->
-    <section class="plan">
+    <!-- Client plan: the same 3 steps used everywhere -->
+    <section class="plan section--dark">
       <div class="section-header">
-        <h2>How it works</h2>
+        <h2>How it works for your project</h2>
         <p>Three simple steps. You can stop after any of them.</p>
       </div>
       <ol class="plan-steps">
@@ -138,8 +425,8 @@
       </div>
     </section>
 
-    <!-- Stakes: failure vs success -->
-    <section class="stakes">
+    <!-- Client stakes: failure vs success -->
+    <section class="stakes section--darker">
       <div class="stakes-grid">
         <div class="stakes-card stakes-card--without">
           <h3>Without the right partner</h3>
@@ -164,7 +451,7 @@
     </section>
 
     <!-- Client projects: proof of work -->
-    <section class="projects-showcase">
+    <section class="projects-showcase section--dark">
       <div class="section-header">
         <h2>Recent Client Projects</h2>
         <p>Real work for real clients, from solo practices to start-ups.</p>
@@ -262,73 +549,79 @@
       </div>
     </section>
 
-    <!-- Mission: the success the client shares in -->
-    <section class="mission-band">
-      <div class="mission-band-content">
-        <div class="mission-faces">
-          <img src="/learners/Vincent-Onotu-Bello.jpeg" alt="Vincent Onotu Bello" loading="lazy" />
-          <img src="/learners/khouja-nasreddine.jpeg" alt="Khouja Nasreddine" loading="lazy" />
-          <img src="/learners/Alfredo-Salazar.jpeg" alt="Alfredo Salazar" loading="lazy" />
-        </div>
-        <h2>Your project funds free education</h2>
-        <p>
-          Client work helps fund free learning paths and mentorship for learners like Vincent in Nigeria,
-          Khouja in Tunisia and Alfredo in Venezuela. Client work is our main funding, because it keeps us
-          practical.
-        </p>
-        <ul class="principle-chips">
-          <li>No ads or hidden agendas</li>
-          <li>All net revenue reinvested</li>
-          <li>Free learning for everyone</li>
-        </ul>
-        <div class="mission-links">
-          <NuxtLink to="/learners" class="btn btn-outline">
-            Meet Our Learners <span>→</span>
-          </NuxtLink>
-          <NuxtLink to="/principles" class="btn btn-outline">
-            Our 12 Principles <span>→</span>
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
-
-    <!-- Second audience: learners -->
-    <section class="learn-path">
-      <div class="learn-card">
-        <span class="learn-icon" aria-hidden="true">📚</span>
-        <div class="learn-text">
-          <h3>Want to learn a new skill instead?</h3>
+    <!-- Final CTA: one door for each hero -->
+    <section class="final-cta section--darker">
+      <h2>Start where you are</h2>
+      <p class="final-cta-lead">Whether you're here to learn or to build, you're part of the same mission.</p>
+      <div class="final-doors">
+        <div class="final-door">
+          <h3>Here to learn?</h3>
           <p>
-            Our learning paths and mentorship are free. Learn by building real projects and grow from
-            apprentice to master, at your own pace.
+            Start with a free course, or tell us where you're stuck. Guidance is free. We only ask for your effort.
+          </p>
+          <NuxtLink to="/learning-path" class="btn btn-primary">
+            Start Learning for Free <span>→</span>
+          </NuxtLink>
+          <p class="final-cta-email">
+            Or <a :href="guidanceEmailLink">ask us for guidance</a>
           </p>
         </div>
-        <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-secondary">
-          Start Learning <span>→</span>
-        </NuxtLink>
+        <div class="final-door">
+          <h3>Have an idea to build?</h3>
+          <p>
+            Describe what you want to build or the problem you have. Quan reads every message himself and usually
+            replies within 2 working days with a time for a short call. He takes one call a day, so he keeps time to
+            build and teach.
+          </p>
+          <NuxtLink to="/contact" class="btn btn-primary">
+            Tell Us About Your Idea <span>→</span>
+          </NuxtLink>
+          <p class="final-cta-email">
+            Or email <a :href="`mailto:${GUILD_MASTER_EMAIL}`">{{ GUILD_MASTER_EMAIL }}</a>
+          </p>
+        </div>
       </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="final-cta">
-      <h2>Tell Quan about your idea</h2>
-      <p>
-        Describe what you want to build or the problem you have. Quan reads every message himself and usually
-        replies within 2 working days with a time for a short call. He takes one call a day, so he keeps time to build
-        and teach.
-      </p>
-      <NuxtLink to="/contact" class="btn btn-primary">
-        Tell Us About Your Idea <span>→</span>
-      </NuxtLink>
-      <p class="final-cta-email">
-        Prefer email? Write to the Guild Master at
-        <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>
-      </p>
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
+const GUILD_MASTER_EMAIL = 'quan.nguyen@skill-wanderer.com'
+const guidanceEmailLink = `mailto:${GUILD_MASTER_EMAIL}?subject=${encodeURIComponent('Asking for guidance')}`
+const courseEmailLink = `mailto:${GUILD_MASTER_EMAIL}?subject=${encodeURIComponent('Helping improve a Skill-Wanderer course')}`
+
+// Outcomes as told on each learner's story page under /learners. The photos are their own.
+const featuredLearners = [
+  {
+    slug: 'prabhat-kumar',
+    name: 'Prabhat Kumar',
+    country: 'India',
+    photo: '/learners/Prabhat-Kumar.jpeg',
+    outcome: 'Finished the DevOps mentorship in under two months and now gains real-world experience with our partner MindyCore.',
+  },
+  {
+    slug: 'khouja-nasreddine',
+    name: 'Khouja Nasreddine',
+    country: 'Tunisia',
+    photo: '/learners/khouja-nasreddine.jpeg',
+    outcome: 'Completed the Mobile Game Dev path and now works with one of our partners.',
+  },
+  {
+    slug: 'alfredo-salazar',
+    name: 'Alfredo Salazar',
+    country: 'Venezuela',
+    photo: '/learners/Alfredo-Salazar.jpeg',
+    outcome: 'Graduated the Mobile Game Dev path and now puts those skills to work with one of our partners.',
+  },
+  {
+    slug: 'thanh-nguyen',
+    name: 'Thanh Nguyen',
+    country: 'Vietnam',
+    photo: '/learners/Thanh-Nguyen.jpeg',
+    outcome: "Went from a stranger on LinkedIn to the guild's vanguard in a single month.",
+  },
+]
+
 // Verbatim excerpts from the LinkedIn recommendations shown in full on /work-with-us/our-projects.
 const clientTestimonials = [
   {
@@ -349,9 +642,14 @@ const clientTestimonials = [
 
 // SEO and meta management
 useSEO({
-  title: 'Skill-Wanderer | Tech Partner for Small Businesses',
-  description: 'A tech partner for solo founders, coaches, consultants, freelancers, writers and small businesses. Free working prototype first, no development fee, no lock-in.',
+  title: 'Skill-Wanderer | Free Education, Funded by Real Work',
+  description: 'Free courses, guidance and real project experience for self-learners, funded by our tech partner work for small businesses. No tuition, ads or affiliate links.',
   keywords: [
+    'free education',
+    'free mentorship',
+    'self-learners',
+    'lifelong learning',
+    'learn by contributing',
     'tech partner for small business',
     'website for coaches',
     'website for consultants',
@@ -359,7 +657,6 @@ useSEO({
     'no development fee',
     'no vendor lock-in',
     'AI tools for educators',
-    'free education',
   ],
   type: 'website',
   structuredData: [
@@ -367,7 +664,15 @@ useSEO({
     createFAQSchema([
       {
         question: 'What does Skill-Wanderer do?',
-        answer: 'Skill-Wanderer is a tech partner for solo founders, freelancers, coaches, consultants, writers and small businesses. We build websites and AI tools, starting with a free working prototype. If you continue, there is no development fee; you pay a monthly or quarterly fee for hosting, maintenance, support and occasional changes.'
+        answer: 'Skill-Wanderer is a free education mission. We give self-learners and lifelong learners free courses, guidance and real project experience. It is funded by our work as a tech partner for solo founders, freelancers, coaches, consultants, writers and small businesses: we build websites and AI tools, starting with a free working prototype. If a client continues, there is no development fee; they pay a monthly or quarterly fee for hosting, maintenance, support and occasional changes.'
+      },
+      {
+        question: 'Is the learning really free?',
+        answer: 'Yes, all Skill-Wanderer learning content is completely free, and we never charge for guidance. We ask for your effort instead, and mentorship grows with your contribution. Mentorship and guild support are funded mainly by our client work, and never by ads.'
+      },
+      {
+        question: 'Can learners earn with Skill-Wanderer?',
+        answer: 'Yes. When you are ready, you can help on real client projects under senior review and be paid for your part. Income is based on contribution, which keeps it fair for everyone and helps sustain the mission.'
       },
       {
         question: 'Do I pay anything before I see my project?',
@@ -380,10 +685,6 @@ useSEO({
       {
         question: 'Who builds my project?',
         answer: 'Quan Nguyen, our founder, designs the project, builds the critical parts and reviews every change. Guild learners may help, always under his review.'
-      },
-      {
-        question: 'Is the learning really free?',
-        answer: 'Yes, all Skill-Wanderer learning content is completely free. Mentorship and guild support are funded mainly by our client work, and never by ads.'
       }
     ])
   ]
@@ -434,6 +735,15 @@ onUnmounted(() => {
 })
 </script>
 <style scoped>
+/* Section backgrounds alternate down the page */
+.section--dark {
+  background: var(--dark-bg);
+}
+
+.section--darker {
+  background: var(--darker-bg);
+}
+
 /* Hero Section */
 .hero {
   display: flex;
@@ -445,7 +755,9 @@ onUnmounted(() => {
               radial-gradient(circle at 80% 50%, rgba(255, 217, 61, 0.05) 0%, transparent 50%);
 }
 
+/* Positioned so it stacks above the decorative path. */
 .hero-content {
+  position: relative;
   max-width: 960px;
   text-align: center;
   z-index: 2;
@@ -467,6 +779,7 @@ onUnmounted(() => {
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 24px;
+  text-wrap: balance;
   background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
   background-clip: text;
   -webkit-background-clip: text;
@@ -483,48 +796,63 @@ onUnmounted(() => {
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
-.hero-cta {
-  display: flex;
+/* One door per hero: the learner and the client */
+.hero-doors {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: left;
   animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
-.hero-trust {
-  list-style: none;
-  padding: 0;
-  margin: 32px 0 0;
+.hero-door {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 28px;
-  font-size: 0.95rem;
-  opacity: 0.85;
-  animation: fadeInUp 0.8s ease-out 0.6s both;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 28px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 20px;
+  transition: border-color 0.3s ease, background 0.3s ease;
 }
 
-.hero-trust li::before {
-  content: '✓';
-  color: var(--success-green);
+.hero-door:hover {
+  border-color: rgba(255, 107, 53, 0.4);
+  background: var(--card-hover);
+}
+
+.door-label {
+  margin: 0;
+  font-size: 0.85rem;
   font-weight: 700;
-  margin-right: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-yellow);
 }
 
-.hero-learner-link {
-  margin-top: 24px;
+.door-text {
+  flex-grow: 1;
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.hero-door .btn {
+  font-size: 1rem;
+  padding: 13px 24px;
+}
+
+.door-link {
   font-size: 0.95rem;
-  opacity: 0.75;
-  animation: fadeInUp 0.8s ease-out 0.6s both;
-}
-
-.hero-learner-link a {
-  color: var(--primary-orange);
   font-weight: 600;
+  color: var(--primary-orange);
   text-decoration: none;
 }
 
-.hero-learner-link a:hover {
+.door-link:hover {
   text-decoration: underline;
 }
 
@@ -629,10 +957,111 @@ onUnmounted(() => {
   opacity: 0.85;
 }
 
-/* Problem */
-.problem {
+/* Track: each hero's story opens with who they are, then their problem */
+.track {
   padding: 100px 20px;
-  background: var(--darker-bg);
+}
+
+.track-intro {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+  max-width: 1150px;
+  margin: 0 auto 90px;
+}
+
+/* Until its image exists (production skips empty slots), the intro centers like a header. */
+.track-intro:not(:has(.track-image)) {
+  max-width: 820px;
+  text-align: center;
+}
+
+.track-intro:not(:has(.track-image)) .track-cta,
+.track-intro:not(:has(.track-image)) .track-trust {
+  justify-content: center;
+}
+
+.track-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  margin-bottom: 16px;
+}
+
+.track-intro-text h2 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  text-wrap: balance;
+  background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.track-intro-text > p:not(.track-label) {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.85;
+  margin-bottom: 28px;
+}
+
+.track-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* A little smaller than the hero buttons, so both fit side by side in the text column. */
+.track-cta .btn {
+  font-size: 1rem;
+  padding: 14px 24px;
+}
+
+.track-trust {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.track-trust li::before {
+  content: '✓';
+  color: var(--success-green);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.track-image {
+  border-radius: 20px;
+}
+
+/* Problem */
+.problem-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.problem-header h3 {
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  color: var(--primary-orange);
+  margin-bottom: 12px;
+}
+
+.problem-header p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.85;
 }
 
 .problem-grid {
@@ -662,21 +1091,22 @@ onUnmounted(() => {
   margin-bottom: 14px;
 }
 
-.problem-card h3 {
+.problem-card h4 {
   color: white;
   font-size: 1.25rem;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
 }
 
 .problem-card p {
+  margin: 0;
   opacity: 0.8;
   line-height: 1.7;
 }
 
-/* Guide */
-.guide {
+/* Guide (shared by the learner's mentor and the client's guide) */
+.guide,
+.mentor {
   padding: 100px 20px;
-  background: var(--dark-bg);
 }
 
 .guide-content {
@@ -705,14 +1135,16 @@ onUnmounted(() => {
   margin-bottom: 12px;
 }
 
-.guide-text h2 {
+.guide-text h2,
+.mentor-text h2 {
   font-size: clamp(1.7rem, 4vw, 2.4rem);
   line-height: 1.25;
   color: white;
   margin-bottom: 20px;
 }
 
-.guide-text p {
+.guide-text p,
+.mentor-text > p:not(.guide-eyebrow) {
   font-size: 1.05rem;
   line-height: 1.8;
   opacity: 0.85;
@@ -741,10 +1173,104 @@ onUnmounted(() => {
   font-weight: 700;
 }
 
+.guide-points strong {
+  color: white;
+}
+
+/* Learner mentor: the story on the left, learners we've mentored on the right */
+.mentor-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.mentor-proof {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  padding: 28px 24px;
+}
+
+.mentor-proof-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-yellow);
+  margin: 0 0 12px 10px;
+}
+
+.learner-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: grid;
+  gap: 4px;
+}
+
+.learner-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px;
+  border-radius: 14px;
+  color: var(--light-text);
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.learner-row:hover {
+  background: var(--card-hover);
+}
+
+.learner-row img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 107, 53, 0.4);
+  flex-shrink: 0;
+}
+
+.learner-row-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.learner-row-name {
+  font-weight: 700;
+  color: white;
+}
+
+.learner-row-country {
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.learner-row-outcome {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
+.mentor-proof-link {
+  margin-left: 10px;
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mentor-proof-link:hover {
+  text-decoration: underline;
+}
+
 /* Plan */
 .plan {
   padding: 100px 20px;
-  background: var(--dark-bg);
 }
 
 .plan-steps {
@@ -757,12 +1283,21 @@ onUnmounted(() => {
   gap: 24px;
 }
 
+.plan-steps--four {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1240px;
+}
+
 .plan-step {
   background: var(--card-bg);
   border: 1px solid rgba(255, 107, 53, 0.15);
   border-radius: 20px;
   padding: 36px 28px;
   transition: all 0.3s ease;
+}
+
+.plan-steps--four .plan-step {
+  padding: 28px 22px;
 }
 
 .plan-step:hover {
@@ -800,6 +1335,11 @@ onUnmounted(() => {
   line-height: 1.7;
 }
 
+.plan-step p a {
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
 .plan-proof {
   text-align: center;
   max-width: 700px;
@@ -823,10 +1363,32 @@ onUnmounted(() => {
   margin-top: 28px;
 }
 
+/* The learner's side of the deal: effort in return for guidance */
+.fair-exchange {
+  max-width: 820px;
+  margin: 48px auto 0;
+  padding: 28px 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 217, 61, 0.3);
+  background: linear-gradient(135deg, rgba(255, 217, 61, 0.07), rgba(255, 107, 53, 0.05));
+  text-align: center;
+}
+
+.fair-exchange h3 {
+  color: var(--accent-yellow);
+  font-size: 1.3rem;
+  margin: 0 0 10px;
+}
+
+.fair-exchange p {
+  margin: 0;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
 /* Stakes */
 .stakes {
   padding: 100px 20px;
-  background: var(--darker-bg);
 }
 
 .stakes-grid {
@@ -889,10 +1451,62 @@ onUnmounted(() => {
   font-weight: 700;
 }
 
+/* Learner call to action */
+.reach-out {
+  padding: 100px 20px;
+}
+
+.reach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.reach-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 28px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.15);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.reach-card:hover {
+  border-color: rgba(255, 107, 53, 0.4);
+  transform: translateY(-4px);
+}
+
+.reach-icon {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.reach-card h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0 0 10px;
+}
+
+.reach-card p {
+  flex-grow: 1;
+  opacity: 0.82;
+  line-height: 1.7;
+  margin: 0 0 24px;
+}
+
+.reach-card .btn {
+  font-size: 1rem;
+  padding: 12px 22px;
+}
+
 /* Projects Showcase */
 .projects-showcase {
   padding: 100px 20px;
-  background: var(--dark-bg);
 }
 
 .projects-strip {
@@ -990,7 +1604,7 @@ onUnmounted(() => {
   margin-top: 40px;
 }
 
-/* Mission band */
+/* Mission band: how client work funds free education */
 .mission-band {
   padding: 100px 20px;
   background: linear-gradient(135deg, rgba(255, 107, 53, 0.08) 0%, var(--darker-bg) 60%);
@@ -999,28 +1613,9 @@ onUnmounted(() => {
 }
 
 .mission-band-content {
-  max-width: 820px;
+  max-width: 960px;
   margin: 0 auto;
   text-align: center;
-}
-
-.mission-faces {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px;
-}
-
-.mission-faces img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--darker-bg);
-  margin-left: -12px;
-}
-
-.mission-faces img:first-child {
-  margin-left: 0;
 }
 
 .mission-band h2 {
@@ -1029,17 +1624,97 @@ onUnmounted(() => {
   margin-bottom: 18px;
 }
 
-.mission-band p {
+.mission-lead {
+  max-width: 760px;
+  margin: 0 auto 36px;
   font-size: 1.1rem;
   line-height: 1.8;
   opacity: 0.88;
-  margin-bottom: 28px;
+}
+
+.mission-image {
+  max-width: 880px;
+  margin: 0 auto 36px;
+}
+
+.mission-why {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.mission-why-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.18);
+  border-radius: 18px;
+  padding: 26px 28px;
+}
+
+.mission-why-card h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+}
+
+.mission-why-card p {
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* The loop: four steps with an arrow in each gap, then a line that closes the circle */
+.mission-loop {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.mission-loop li {
+  position: relative;
+  display: flex;
+}
+
+.mission-loop span {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 217, 61, 0.08);
+  border: 1px solid rgba(255, 217, 61, 0.3);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.mission-loop li:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 16px);
+  transform: translate(-50%, -50%);
+  color: var(--primary-orange);
+  font-weight: 700;
+}
+
+.mission-loop-again {
+  margin: 0 auto 32px;
+  max-width: 680px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--accent-yellow);
 }
 
 .principle-chips {
   list-style: none;
   padding: 0;
-  margin: 0 0 32px;
+  margin: 0 0 28px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1054,6 +1729,14 @@ onUnmounted(() => {
   font-size: 0.9rem;
 }
 
+.mission-note {
+  max-width: 680px;
+  margin: 0 auto 24px;
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
 .mission-links {
   display: flex;
   gap: 16px;
@@ -1061,49 +1744,9 @@ onUnmounted(() => {
   flex-wrap: wrap;
 }
 
-/* Learner path */
-.learn-path {
-  padding: 80px 20px;
-  background: var(--dark-bg);
-}
-
-.learn-card {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  background: var(--card-bg);
-  border: 1px solid rgba(255, 107, 53, 0.15);
-  border-radius: 20px;
-  padding: 36px 40px;
-}
-
-.learn-icon {
-  font-size: 2.5rem;
-  flex-shrink: 0;
-}
-
-.learn-text h3 {
-  color: white;
-  font-size: 1.35rem;
-  margin-bottom: 8px;
-}
-
-.learn-text p {
-  opacity: 0.8;
-  line-height: 1.7;
-}
-
-.learn-card .btn {
-  flex-shrink: 0;
-  margin-left: auto;
-}
-
 /* Final CTA */
 .final-cta {
   padding: 100px 20px;
-  background: var(--darker-bg);
   text-align: center;
 }
 
@@ -1113,17 +1756,49 @@ onUnmounted(() => {
   margin-bottom: 18px;
 }
 
-.final-cta p {
+.final-cta-lead {
   max-width: 680px;
-  margin: 0 auto 32px;
+  margin: 0 auto 40px;
   font-size: 1.1rem;
   line-height: 1.8;
   opacity: 0.88;
 }
 
-.final-cta .final-cta-email {
-  margin: 28px auto 0;
-  font-size: 1rem;
+.final-doors {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.final-door {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px 32px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  border-radius: 20px;
+}
+
+.final-door h3 {
+  color: white;
+  font-size: 1.4rem;
+  margin: 0 0 12px;
+}
+
+.final-door > p:not(.final-cta-email) {
+  flex-grow: 1;
+  margin: 0 0 24px;
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+.final-cta-email {
+  margin: 18px 0 0;
+  font-size: 0.95rem;
   opacity: 0.8;
 }
 
@@ -1150,10 +1825,46 @@ onUnmounted(() => {
 }
 
 /* Responsive */
+@media (max-width: 1100px) {
+  .plan-steps--four {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 760px;
+  }
+}
+
 @media (max-width: 900px) {
   .plan-steps {
     grid-template-columns: 1fr;
     max-width: 600px;
+  }
+
+  .plan-steps--four {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 760px;
+  }
+
+  .track-intro {
+    grid-auto-flow: row;
+    gap: 36px;
+    max-width: 680px;
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  .track-cta,
+  .track-trust {
+    justify-content: center;
+  }
+
+  .mentor-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 680px;
+  }
+
+  .reach-grid {
+    grid-template-columns: 1fr;
+    max-width: 560px;
   }
 }
 
@@ -1163,6 +1874,21 @@ onUnmounted(() => {
   }
 
   .hero-eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-doors,
+  .mission-why,
+  .final-doors {
+    grid-template-columns: 1fr;
+  }
+
+  .track {
+    padding: 80px 16px;
+  }
+
+  .track-label {
     font-size: 0.8rem;
     letter-spacing: 0.05em;
   }
@@ -1198,19 +1924,17 @@ onUnmounted(() => {
     grid-template-columns: 1fr 1fr;
   }
 
-  .learn-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 32px 24px;
+  .mission-loop {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .learn-card .btn {
-    margin-left: 0;
-  }
-
-  .hero-cta {
-    flex-direction: column;
-    align-items: center;
+  .mission-loop li:not(:last-child)::after {
+    content: '↓';
+    top: calc(100% + 16px);
+    left: 50%;
   }
 
   .btn {
@@ -1220,13 +1944,22 @@ onUnmounted(() => {
   }
 }
 
+@media (max-width: 600px) {
+  .plan-steps--four {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 480px) {
   .projects-strip {
     grid-template-columns: 1fr;
   }
 
   .problem-card,
-  .stakes-card {
+  .stakes-card,
+  .hero-door,
+  .final-door {
     padding: 28px 22px;
   }
 }

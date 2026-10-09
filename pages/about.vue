@@ -3,46 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <h1>Our Story</h1>
-      <p>A tech partner for people with big ideas and small budgets, and a guild that turns that work into free education</p>
-    </section>
-
-    <!-- Guide: why clients can trust us -->
-    <section class="guide">
-      <div class="section-header">
-        <h2>Why You Can Trust Us With Your Idea</h2>
-        <p>Skill-Wanderer is led by Quan Nguyen, our founder and Guild Master. Here's what he brings to your project.</p>
-      </div>
-      <div class="guide-grid">
-        <div class="guide-card">
-          <span class="guide-icon" aria-hidden="true">🤝</span>
-          <h3>Started in business, not tech</h3>
-          <p>Before writing code, Quan was an import-export manager at Toyota Tsusho Vietnam. He understands customers, budgets and risk, and he explains tech in plain words.</p>
-        </div>
-        <div class="guide-card">
-          <span class="guide-icon" aria-hidden="true">🛠️</span>
-          <h3>Over a decade of building software</h3>
-          <p>Developer, solution architect and project manager across startups and enterprises, once leading 16 developers on 4 projects at the same time.</p>
-        </div>
-        <div class="guide-card">
-          <span class="guide-icon" aria-hidden="true">📚</span>
-          <h3>Still learning, still teaching</h3>
-          <p>Teaching through Skill-Wanderer keeps his skills sharp and current, so your project is built with today's tools.</p>
-        </div>
-        <div class="guide-card">
-          <span class="guide-icon" aria-hidden="true">💬</span>
-          <h3>Honest advice, not just code</h3>
-          <p>"A trusted business adviser throughout the process," in the words of <NuxtLink to="/work-with-us/projects/matt-harr-speaker">Matt Harr</NuxtLink>, one of our clients.</p>
-        </div>
-      </div>
-      <div class="guide-actions">
-        <NuxtLink to="/contact" class="btn btn-primary">
-          Tell Us About Your Idea
-          <span>→</span>
-        </NuxtLink>
-        <NuxtLink to="/work-with-us/our-projects" class="btn btn-secondary">
-          See Client Projects
-        </NuxtLink>
-      </div>
+      <p>Free, practical education for everyone who keeps learning, funded by the real work we do for small businesses</p>
     </section>
 
     <!-- Story Section -->
@@ -215,10 +176,53 @@
           </div>
         </div>
         <p class="mission-funding">
-          We fund education mainly through client work, because it keeps us practical and up to date. Right now
-          it covers our running costs but can't pay our contributors, so every donation really counts.
+          Client work is how the mission pays its way, and it's what makes it both sustainable and practical:
+          client fees cover our running costs, and real projects keep what we teach grounded in real work. Right
+          now it can't yet pay our contributors, so every donation really counts.
           <NuxtLink to="/help-the-mission">Here's how you can help.</NuxtLink>
         </p>
+      </div>
+    </section>
+
+    <!-- Guide: why learners and clients can trust us -->
+    <section class="guide">
+      <div class="section-header">
+        <h2>Why You Can Trust Us</h2>
+        <p>
+          Skill-Wanderer is led by Quan Nguyen, our founder and Guild Master. Here's what he brings, whether you're
+          here to learn or to build.
+        </p>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-card">
+          <span class="guide-icon" aria-hidden="true">🤝</span>
+          <h3>Started in business, not tech</h3>
+          <p>Quan was an import-export manager at Toyota Tsusho Vietnam before he switched to tech, so he knows what it takes to start over, and he explains things in plain words.</p>
+        </div>
+        <div class="guide-card">
+          <span class="guide-icon" aria-hidden="true">🛠️</span>
+          <h3>Over a decade of building software</h3>
+          <p>Developer, solution architect and project manager across startups and enterprises, once leading 16 developers on 4 projects at the same time.</p>
+        </div>
+        <div class="guide-card">
+          <span class="guide-icon" aria-hidden="true">📚</span>
+          <h3>Still learning, still teaching</h3>
+          <p>He mentors learners and builds for clients side by side, so what he teaches comes from real work, and every project is built with today's tools.</p>
+        </div>
+        <div class="guide-card">
+          <span class="guide-icon" aria-hidden="true">💬</span>
+          <h3>Honest advice, never for sale</h3>
+          <p>No affiliate links or paid promotions, so learners get unbiased guidance. Clients get the same honesty: "a trusted business adviser throughout the process," in the words of <NuxtLink to="/work-with-us/projects/matt-harr-speaker">Matt Harr</NuxtLink>.</p>
+        </div>
+      </div>
+      <div class="guide-actions">
+        <NuxtLink to="/learning-path" class="btn btn-primary">
+          Start Learning for Free
+          <span>→</span>
+        </NuxtLink>
+        <NuxtLink to="/contact" class="btn btn-secondary">
+          Tell Us About Your Idea
+        </NuxtLink>
       </div>
     </section>
 
@@ -350,14 +354,14 @@
     <!-- CTA Section -->
     <section class="cta">
       <h2>Where Would You Like to Start?</h2>
-      <p>Bring us your idea, or come and learn with us</p>
+      <p>Come and learn with us, or bring us an idea and help fund the mission</p>
       <div class="cta-buttons">
-        <NuxtLink to="/contact" class="btn btn-primary">
-          Start a Project
+        <NuxtLink to="/learning-path" class="btn btn-primary">
+          Start Learning for Free
           <span>→</span>
         </NuxtLink>
-        <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-secondary">
-          Start Learning
+        <NuxtLink to="/contact" class="btn btn-secondary">
+          Start a Project
         </NuxtLink>
       </div>
     </section>
@@ -371,13 +375,13 @@ import { onMounted } from 'vue'
 // SEO and meta management
 useSEO({
   title: 'About Skill-Wanderer | The Story Behind the Mission',
-  description: 'Meet Quan Nguyen and the Skill-Wanderer guild: a tech partner for solo founders and small businesses whose client work funds free education.',
-  keywords: ['about skill-wanderer', 'quan nguyen', 'tech partner for small business', 'free education mission', 'skill wanderer story'],
+  description: 'Meet Quan Nguyen and the Skill-Wanderer guild: free, practical education for self-learners, funded by our tech partner work for small businesses.',
+  keywords: ['about skill-wanderer', 'quan nguyen', 'free education mission', 'learning guild', 'free mentorship', 'tech partner for small business', 'skill wanderer story'],
   type: 'article',
   structuredData: [
     createArticleSchema(
       'About Skill-Wanderer | The Story Behind the Mission',
-      'Meet Quan Nguyen and the Skill-Wanderer guild: a tech partner for solo founders and small businesses whose client work funds free education.',
+      'Meet Quan Nguyen and the Skill-Wanderer guild: free, practical education for self-learners, funded by our tech partner work for small businesses.',
       'https://skill-wanderer.com/about'
     ),
     createBreadcrumbSchema([

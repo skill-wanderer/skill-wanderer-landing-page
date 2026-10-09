@@ -305,7 +305,7 @@
       <h2>Want to Be Part of the Journey?</h2>
       <p>Whether you're a learner, contributor, or supporter, there's a place for you in the Skill-Wanderer guild</p>
       <div class="cta-buttons">
-        <NuxtLink to="/contact" class="btn btn-primary">
+        <NuxtLink to="/contact?tab=join" class="btn btn-primary">
           Get In Touch
           <span>→</span>
         </NuxtLink>
