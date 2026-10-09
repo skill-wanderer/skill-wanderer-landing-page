@@ -273,6 +273,30 @@
       </div>
     </section>
 
+    <!-- Why this service exists: client work funds the mission -->
+    <section class="mission-section">
+      <div class="content">
+        <div class="mission-block">
+          <p class="mission-eyebrow">Why we do this</p>
+          <h2>Your Project Funds Free Education</h2>
+          <p>
+            Skill-Wanderer exists to make practical education free for everyone who keeps learning. Our tech
+            partner work is how we pay for it: your monthly fee keeps your project running, and it keeps free
+            courses and mentorship going for self-learners from Nigeria to Venezuela.
+          </p>
+          <p>
+            It keeps our teaching practical too. Guild learners help on real projects like yours, always under
+            Quan's review, so they learn from real work and your project is built by people who keep their skills
+            current.
+          </p>
+          <div class="mission-links">
+            <NuxtLink to="/about#mission" class="advice-link">See how the mission works →</NuxtLink>
+            <NuxtLink to="/learners" class="advice-link">Meet our learners →</NuxtLink>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-content">
@@ -806,6 +830,50 @@ useSEO({
   transform: translateY(-2px);
 }
 
+/* Mission: why the client service exists */
+.mission-section {
+  padding: 90px 0;
+  background: var(--dark-bg);
+}
+
+.mission-block {
+  max-width: 860px;
+  margin: 0 auto;
+  background: rgba(255, 217, 61, 0.04);
+  border: 1px solid rgba(255, 217, 61, 0.18);
+  border-left: 4px solid var(--accent-yellow);
+  border-radius: 0 20px 20px 0;
+  padding: 44px;
+}
+
+.mission-eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-yellow);
+}
+
+.mission-block h2 {
+  font-size: 2rem;
+  color: var(--primary-orange);
+  margin: 0 0 16px;
+}
+
+.mission-block p:not(.mission-eyebrow) {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.88;
+  margin: 0 0 18px;
+}
+
+.mission-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+}
+
 /* CTA Section */
 .cta-section {
   padding: 80px 20px;
@@ -915,6 +983,14 @@ useSEO({
 
   .build-grid {
     grid-template-columns: 1fr;
+  }
+
+  .mission-block {
+    padding: 32px 24px;
+  }
+
+  .mission-block h2 {
+    font-size: 1.7rem;
   }
 }
 

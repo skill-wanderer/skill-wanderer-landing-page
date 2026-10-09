@@ -96,7 +96,7 @@
             </svg>
             GitHub Organization
           </a>
-          <NuxtLink to="/contact" class="btn btn-secondary">
+          <NuxtLink to="/contact?tab=join" class="btn btn-secondary">
             Get in Touch
           </NuxtLink>
         </div>

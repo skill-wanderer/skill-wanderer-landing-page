@@ -22,7 +22,7 @@ export interface ImageSlotSpec {
   prompt: string
 }
 
-/** Appended to every prompt so the set shares one look (see MARKETING_DESIGN_GUIDELINES.md, sections 7 and 15). */
+/** Appended to every prompt so the set shares one look. */
 export const IMAGE_HOUSE_STYLE =
   'Style: warm editorial illustration with a soft painterly texture and fine grain, like a modern storybook. ' +
   'Deep charcoal background, low-key lighting, and warm orange and golden-yellow light as the only accent colors, ' +
@@ -45,13 +45,43 @@ export const fullImagePrompt = (spec: ImageSlotSpec) =>
   `${spec.prompt} ${IMAGE_HOUSE_STYLE} ${FORMAT_HINTS[spec.ratio]}`
 
 export const imageSlots: Record<string, ImageSlotSpec> = {
-  // ── Homepage ─────────────────────────────────────────────
+  // ── Homepage: the mission hero, then one intro image per audience ──
   'home/hero': {
+    ratio: '16/9',
+    alt: 'People of different ages walking a lantern-lit path toward an open library and workshop at dawn, some carrying books and some carrying tools',
+    prompt:
+      'A wide landscape at dawn. A winding path lined with small lanterns leads up a gentle hill to a building that is part library and part workshop, its wide doors open and spilling warm light. ' +
+      'People of different ages walk the path toward it, some carrying books and some carrying tools.',
+  },
+  'home/for-learners': {
+    ratio: '16/9',
+    alt: 'A self-learner at a lamplit desk among toppling stacks of books and glowing screens, sketching a path map',
+    prompt:
+      'A self-learner at a small desk at night, seen from behind, surrounded by tall, toppling stacks of books, loose papers and several glowing screens, all crowding in at once. ' +
+      'The desk lamp casts one calm circle of warm light on the notebook in front of them, where a simple hand-drawn path map is starting to take shape.',
+  },
+  'home/for-clients': {
     ratio: '16/9',
     alt: 'A founder at a kitchen table watching a paper sketch become a working website on a laptop',
     prompt:
       'A solo founder at a kitchen table at dusk, seen from behind, looking at a laptop where a working website is taking shape. ' +
       'Beside the laptop lies the paper sketch it started from, and a thin glowing path of light runs from the sketch to the screen.',
+  },
+  'home/mission-loop': {
+    ratio: '16/9',
+    alt: 'A loop of lanterns joining a workshop, where a client\'s website glows on screen, and a hall where people of all ages learn',
+    prompt:
+      'Seen from slightly above at dusk, a looping path of small lanterns joins two warmly lit buildings: a small workshop where a finished website glows on a screen for a shop owner, ' +
+      'and an open learning hall where people of different ages study at long tables. Small figures walk the loop between them in both directions.',
+  },
+
+  // ── Homepage learner plan, step 2 (steps 1, 3 and 4 reuse the education philosophy images) ──
+  'home/ask-for-guidance': {
+    ratio: '4/3',
+    alt: 'A learner on a video call with a mentor who holds up a simple hand-drawn diagram',
+    prompt:
+      'A learner at a small wooden desk at night, seen from behind, on a video call with a mentor. On the laptop screen, the mentor in soft silhouette holds up a simple hand-drawn diagram. ' +
+      'Crossed-out notes and a half-finished cup of tea on the desk show where the learner got stuck.',
   },
 
   // ── The 3-step plan (homepage, Work With Us, How It Works) ──
@@ -346,6 +376,7 @@ export const imageSlots: Record<string, ImageSlotSpec> = {
  */
 export const imageSlotGroups = {
   planSteps: ['plan/idea', 'plan/prototype', 'plan/launch'],
+  learnerPlanSteps: ['philosophy/start-free', 'home/ask-for-guidance', 'philosophy/contribute', 'philosophy/real-projects'],
   philosophyJourney: ['philosophy/start-free', 'philosophy/contribute', 'philosophy/real-projects', 'philosophy/grow'],
   learningPathCovers: Object.keys(imageSlots).filter(name => name.startsWith('learning-paths/') && name !== 'learning-paths/hub'),
   principleCovers: Object.keys(imageSlots).filter(name => name.startsWith('principles/')),

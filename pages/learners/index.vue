@@ -168,14 +168,14 @@
       <div class="join-container">
         <h2>Become Part of Our Learning Community</h2>
         <p>
-          Start your learning journey today and join a community of passionate learners 
-          who support each other on the path to mastery. Your story could be featured here.
+          Start with our free courses, ask for guidance whenever you're stuck, and grow into a contributor on
+          real projects. Guidance is free; all we ask in return is your effort. Your story could be featured here.
         </p>
         <div class="cta-buttons">
           <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             Explore Learning Paths
           </a>
-          <NuxtLink to="/contact" class="btn btn-secondary">
+          <NuxtLink to="/contact?tab=join" class="btn btn-secondary">
             Get in Touch
           </NuxtLink>
         </div>
