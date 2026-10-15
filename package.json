@@ -10,11 +10,13 @@
     "preview": "nuxt build && wrangler dev .output/server/index.mjs --assets .output/public",
     "deploy": "nuxt build && wrangler deploy .output/server/index.mjs --assets .output/public",
     "postinstall": "nuxt prepare",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "paypal:create-monthly-plan": "node --env-file=.env scripts/create-paypal-monthly-plan.mjs"
   },
   "dependencies": {
     "@calcom/embed-snippet": "^1.3.3",
     "@nuxtjs/sitemap": "^7.4.0",
+    "@paypal/paypal-js": "^11.2.2",
     "@react-email/render": "^2.0.8",
     "@tailwindcss/postcss": "^4.1.4",
     "firebase": "^11.9.1",

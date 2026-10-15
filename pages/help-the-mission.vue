@@ -83,21 +83,21 @@
           <h2>Make a Donation</h2>
           <p>
             Client work covers our running costs, but not the people who give their time to the mission. A donation
-            of any size, once or whenever you like, brings us closer to paying them and keeping education free for
-            the long run.
+            of any size, once or every month, brings us closer to paying them and keeping education free for the
+            long run.
           </p>
-          <div class="way-actions">
-            <!-- The notice sits above the button so it is read before leaving the site. -->
-            <p id="donate-redirect-note" class="redirect-note">
-              You'll be redirected to Buy Me a Coffee (buymeacoffee.com) in a new tab to complete your donation.
-            </p>
-            <a
-              :href="DONATE_URL"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-primary"
-              aria-describedby="donate-redirect-note"
-            >Donate on Buy Me a Coffee</a>
+          <div v-if="isPayPalConfigured" class="way-actions">
+            <!-- PayPal's script loads only once this is opened, so visitors who never donate never load it. -->
+            <button
+              type="button"
+              class="btn btn-primary paypal-toggle"
+              :aria-expanded="isPayPalOpen"
+              aria-controls="paypal-donation"
+              @click="togglePayPal"
+            >Donate with PayPal</button>
+            <div v-show="isPayPalOpen" id="paypal-donation" class="paypal-donation">
+              <PayPalDonate v-if="hasOpenedPayPal" />
+            </div>
           </div>
         </article>
       </div>
@@ -115,8 +115,16 @@
 const GUILD_MASTER_EMAIL = 'quan.nguyen@skill-wanderer.com'
 const expertEmailLink = `mailto:${GUILD_MASTER_EMAIL}?subject=${encodeURIComponent('Sharing my expertise with Skill-Wanderer')}`
 const introEmailLink = `mailto:${GUILD_MASTER_EMAIL}?subject=${encodeURIComponent('An introduction for Skill-Wanderer')}`
-// The donation link appears only on this page. Other pages that ask for help link here instead.
-const DONATE_URL = 'https://buymeacoffee.com/skill.wanderer'
+// Donations happen only on this page. Other pages that ask for help link here instead.
+const { isConfigured: isPayPalConfigured } = usePayPal()
+const isPayPalOpen = ref(false)
+// Stays true after the first open, so closing the panel keeps PayPal loaded instead of starting over.
+const hasOpenedPayPal = ref(false)
+
+const togglePayPal = () => {
+  isPayPalOpen.value = !isPayPalOpen.value
+  hasOpenedPayPal.value = true
+}
 
 useSEO({
   title: 'Help the Mission | Skill-Wanderer',
@@ -274,12 +282,16 @@ useSEO({
   font-size: 1rem;
 }
 
-.way-card .redirect-note {
+/* <button> does not inherit the page font on its own, unlike the site's <a> buttons. */
+.paypal-toggle {
+  font-family: inherit;
+}
+
+.paypal-donation {
   width: 100%;
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  opacity: 0.7;
+  margin-top: 8px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 107, 53, 0.2);
 }
 
 .closing {

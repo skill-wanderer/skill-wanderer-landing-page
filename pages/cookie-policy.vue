@@ -5,7 +5,7 @@
       <div class="hero-content">
         <h1>Cookie Policy</h1>
         <p class="hero-subtitle">How we use cookies on our website</p>
-        <p class="last-updated">Last updated: March 30, 2026</p>
+        <p class="last-updated">Last updated: October 15, 2026</p>
       </div>
     </section>
 
@@ -79,6 +79,9 @@
           </div>
           <p class="note">
             The main site currently uses Firebase for contact form submissions. Firebase may use browser storage (IndexedDB or localStorage) to manage form delivery. No persistent tracking data is stored.
+          </p>
+          <p class="note">
+            If you choose "Donate with PayPal" on the Help the Mission page, PayPal's checkout script loads and PayPal may set its own cookies to secure the payment and prevent fraud. Nothing from PayPal loads until you make that choice. PayPal's cookies are covered by its <a href="https://www.paypal.com/legalhub/cookie-full" target="_blank" rel="noopener noreferrer">Statement on Cookies and Tracking Technologies</a>.
           </p>
 
           <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">The Dojo (dojo.skill-wanderer.com): Learning Platform</h4>
@@ -213,7 +216,7 @@
             <li><strong>Social Media Tracking Cookies:</strong> We do not embed social media widgets or pixels that track you across the web.</li>
             <li><strong>Personalisation / Profiling Cookies:</strong> We do not build profiles about you, track browsing patterns, or personalise content based on tracked behaviour.</li>
             <li><strong>Cross-Subdomain Tracking:</strong> We do not use cookies or any other mechanism to track your activity across our different subdomains. Your session on dojo.skill-wanderer.com is entirely separate from your activity on wanderings.skill-wanderer.com.</li>
-            <li><strong>Third-Party Marketing Scripts:</strong> We do not load any third-party marketing, tracking, or data-collection scripts on any subdomain.</li>
+            <li><strong>Third-Party Marketing Scripts:</strong> We do not load any third-party marketing, tracking, or data-collection scripts on any subdomain. PayPal's checkout script, described above, loads only when you choose to donate with PayPal and is used only to process that payment.</li>
           </ul>
         </div>
 
@@ -236,7 +239,7 @@
           <h2>Third-Party Services by Subdomain</h2>
           <p>Different parts of our platform rely on different backend services. Each is chosen for its functionality and privacy commitments. Here is a summary of the current services in use:</p>
           <ul>
-            <li><strong>Main site (skill-wanderer.com):</strong> Built with Nuxt.js. Firebase is used for contact form submissions. These use browser storage essential to form delivery only.</li>
+            <li><strong>Main site (skill-wanderer.com):</strong> Built with Nuxt.js. Firebase is used for contact form submissions. These use browser storage essential to form delivery only. PayPal processes donations made with the "Donate with PayPal" option on the Help the Mission page, and its script loads only after you choose that option.</li>
             <li><strong>The Dojo (dojo.skill-wanderer.com):</strong> Uses Keycloak (self-hosted) for identity and access management, and for managing the learning experience. No authentication data is shared with third-party advertising or analytics services.</li>
             <li><strong>Wanderings (wanderings.skill-wanderer.com):</strong> May use Firebase for authentication, storing comments, and community content. Anonymous reading does not involve any third-party services.</li>
           </ul>
