@@ -23,6 +23,9 @@
         <a href="#how-it-works" class="btn btn-secondary">See the 3 Steps</a>
       </div>
       <span class="launch-badge">Free Prototype · No Development Fee · No Lock-In</span>
+      <p class="hero-plan-note">
+        Only need a simple website? <a href="#plans">See the $8 a month Hosting-Only Plan</a>
+      </p>
     </section>
 
     <!-- How It Works: the same 3 steps used across the site -->
@@ -82,52 +85,83 @@
             <ImageSlot name="plan/launch" group="planSteps" class="step-image" />
           </article>
         </div>
+
+        <p class="steps-note">
+          On the <a href="#plans">Hosting-Only Plan</a> the steps are the same, just smaller: one prototype, one
+          revision round, then a flat $8 a month for hosting.
+        </p>
       </div>
     </section>
 
-    <!-- What You Pay -->
-    <section class="pay-section">
+    <!-- What You Pay: two plans, neither with a development fee -->
+    <section id="plans" class="pay-section">
       <div class="content">
         <div class="section-header">
           <h2>What You Pay</h2>
-          <p>Two parts, and only one of them is a bill.</p>
+          <p>Two plans. Neither has a development fee, so the only bill is the monthly fee.</p>
         </div>
 
-        <div class="pay-grid">
-          <div class="pay-card pay-card--free">
-            <span class="pay-icon">✅</span>
-            <h4>No Development Fee</h4>
-            <p>
-              Accepted projects pay no separate fee for the prototype or the initial build, across every kind
-              of work we take on.
+        <div class="plan-grid">
+          <article class="plan-card plan-card--lite">
+            <span class="plan-badge">Most affordable</span>
+            <h3>Hosting-Only Plan</h3>
+            <p class="plan-for">For a small, simple website</p>
+            <p class="plan-price">
+              <span class="plan-amount">$8</span> USD a month, <span class="plan-price-extra">plus your own domain</span>
             </p>
-          </div>
-          <div class="pay-card">
-            <span class="pay-icon">🔄</span>
-            <h4>Monthly Care Fee</h4>
-            <p>
-              Covers hosting, maintenance, support and occasional changes after launch, paid monthly or
-              quarterly depending on your situation. We keep builds lightweight where we can, so the fee stays
-              small.
+            <p class="plan-price-note">The lowest-risk way to get a decent website online.</p>
+            <ul class="plan-list">
+              <li>No development fee</li>
+              <li>1 free working prototype</li>
+              <li>1 revision round before launch</li>
+              <li>Hosting after launch, so your site stays online</li>
+              <li class="plan-list-no">No maintenance, support or changes after launch</li>
+            </ul>
+            <p class="plan-payment">Paid monthly through PayPal. Leave anytime.</p>
+            <NuxtLink to="/contact?topic=hosting-only" class="btn btn-primary">Ask About This Plan</NuxtLink>
+          </article>
+
+          <article class="plan-card">
+            <h3>Care Plan</h3>
+            <p class="plan-for">For websites, web apps, mobile apps and AI tools</p>
+            <p class="plan-price"><span class="plan-amount plan-amount--text">Priced to your project</span></p>
+            <p class="plan-price-note">
+              Based on the scope, complexity and support you need, and confirmed after the prototype review,
+              never before.
             </p>
-          </div>
+            <ul class="plan-list">
+              <li>No development fee</li>
+              <li>A free working prototype, and a second one if the direction changes significantly</li>
+              <li>Up to 2 structured revision rounds before launch</li>
+              <li>Hosting, maintenance, support and occasional changes</li>
+            </ul>
+            <p class="plan-payment">Paid monthly or quarterly, depending on your situation.</p>
+            <NuxtLink to="/contact" class="btn btn-secondary">Tell Us About Your Idea</NuxtLink>
+          </article>
         </div>
 
-        <p class="pay-close">
-          The monthly price depends on the scope, complexity, and support your project actually needs. It is
-          confirmed after the prototype review, never before.
-        </p>
+        <div class="lite-story">
+          <h3>Why only $8 a month?</h3>
+          <p>
+            AI now lets us build a simple website far faster than before, and the servers we already run for
+            Skill-Wanderer have room to spare. Together, that lets us offer a decent website to people who could
+            not afford one until now. Like all our client work, it also helps fund free education.
+          </p>
+        </div>
 
         <div class="care-box">
           <h3>What the monthly fee covers</h3>
           <ul class="care-list">
-            <li>Hosting, so your site or app stays online</li>
-            <li>Maintenance, so it stays secure and up to date</li>
-            <li>Support when something isn't working, or when you're not sure what you need next</li>
-            <li>Occasional changes as your business grows</li>
-            <li>Bigger changes or new features: we agree the scope and price with you first</li>
+            <li>Hosting, so your site or app stays online <span class="care-tag care-tag--both">Both plans</span></li>
+            <li>Maintenance, so it stays secure and up to date <span class="care-tag">Care Plan</span></li>
+            <li>Support when something isn't working, or when you're not sure what you need next <span class="care-tag">Care Plan</span></li>
+            <li>Occasional changes as your business grows <span class="care-tag">Care Plan</span></li>
+            <li>Bigger changes or new features: we agree the scope and price with you first <span class="care-tag care-tag--both">Both plans</span></li>
           </ul>
-          <p class="care-payment">You pay monthly or quarterly, depending on your situation.</p>
+          <p class="care-note">
+            Your domain is not included on either plan. It is registered in your name and you pay for it yourself,
+            so it always stays yours.
+          </p>
         </div>
       </div>
     </section>
@@ -288,12 +322,17 @@ const faqs = [
   {
     question: 'Is it completely free?',
     answer:
-      'No. For accepted projects there is no development fee and the first prototype is free, but hosting, maintenance, support and occasional changes are a paid service, billed monthly or quarterly.',
+      'No. For accepted projects there is no development fee and the first prototype is free, but the monthly fee is a paid service. On the Care Plan it covers hosting, maintenance, support and occasional changes, billed monthly or quarterly. On the Hosting-Only Plan it covers hosting only, at $8 a month.',
   },
   {
     question: "What's the catch?",
     answer:
       'There is no hidden one. Instead of a big upfront bill, we earn a monthly fee by keeping your project running and supported. That income also funds free education, so we are motivated to keep you happy for the long run.',
+  },
+  {
+    question: 'How can a website cost only $8 a month?',
+    answer:
+      'AI now lets us build a simple website far faster than before, and the servers we already run for Skill-Wanderer have room to spare. The Hosting-Only Plan also keeps everything small: one prototype, one revision round, and hosting only after launch. That keeps the price low enough for people who could not afford a decent website until now.',
   },
   {
     question: "I'm not technical. Will I understand what's going on?",
@@ -318,17 +357,27 @@ const faqs = [
   {
     question: 'Is the prototype optional?',
     answer:
-      'No. The first prototype is a required part of the process for accepted projects. A second prototype is optional, and only used when the direction changes significantly.',
+      'No. The first prototype is a required part of the process for accepted projects. On the Care Plan, a second prototype is optional, and only used when the direction changes significantly. The Hosting-Only Plan includes one prototype.',
   },
   {
     question: 'When is the exact price decided?',
     answer:
-      'After the first prototype is reviewed and we discuss the real project scope. It is never quoted before there is something real to look at.',
+      'On the Care Plan, after the first prototype is reviewed and we discuss the real project scope. It is never quoted before there is something real to look at. The Hosting-Only Plan has one flat price: $8 a month, plus your own domain.',
   },
   {
     question: 'How often do I pay?',
     answer:
-      'Monthly or quarterly, depending on your situation. We agree this with you when we confirm the price.',
+      'On the Care Plan, monthly or quarterly, depending on your situation. We agree this with you when we confirm the price. The Hosting-Only Plan is paid monthly through PayPal.',
+  },
+  {
+    question: 'What counts as a simple website on the Hosting-Only Plan?',
+    answer:
+      'A small site with a limited scope, such as a few pages that explain who you are, what you offer and how to reach you. If you need more, such as online payments, booking, user accounts or AI tools, the Care Plan is the right fit. We confirm which plan suits your project on the call.',
+  },
+  {
+    question: 'What if my Hosting-Only site needs changes later?',
+    answer:
+      'Changes after launch are not part of the Hosting-Only Plan, so your site stays as it was launched. If you need changes later, we agree the scope and price with you first, or we can talk about moving your site to the Care Plan.',
   },
   {
     question: 'Can I stop or move the project elsewhere later?',
@@ -346,12 +395,14 @@ const faqs = [
 useSEO({
   title: 'Free Prototype, No Development Fee | Skill-Wanderer',
   description:
-    'Try your idea before you commit: free prototype, no development fee, then a monthly fee for hosting, maintenance, support and occasional changes. No lock-in.',
+    'Try your idea before you commit: free prototype, no development fee, then $8 a month hosting for a simple website, or a full care plan. No lock-in.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: [
     'no development fee',
     'free prototype',
     'website for small business',
+    'affordable website for small business',
+    'low-cost website hosting',
     'monthly website maintenance',
     'no vendor lock-in',
     'tech partner for coaches',
@@ -470,6 +521,23 @@ useSEO({
   display: inline-block;
   position: relative;
   z-index: 1;
+}
+
+.hero .hero-plan-note {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin: 24px auto 0;
+}
+
+.hero-plan-note a,
+.steps-note a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero-plan-note a:hover,
+.steps-note a:hover {
+  text-decoration: underline;
 }
 
 /* ── Shared ────────────────────────────────────────── */
@@ -600,7 +668,8 @@ useSEO({
   margin: 0;
 }
 
-.step-badge {
+.step-badge,
+.plan-badge {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -647,13 +716,21 @@ useSEO({
   color: var(--primary-orange);
 }
 
+.steps-note {
+  text-align: center;
+  max-width: 720px;
+  margin: 32px auto 0;
+  line-height: 1.75;
+  opacity: 0.8;
+}
+
 /* ── What You Pay ─────────────────────────────────── */
 .pay-section {
   padding: 90px 20px;
   background: var(--dark-bg);
 }
 
-.pay-grid {
+.plan-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
@@ -661,7 +738,9 @@ useSEO({
   margin: 0 auto;
 }
 
-.pay-card {
+.plan-card {
+  display: flex;
+  flex-direction: column;
   background: var(--card-bg);
   border: 1px solid rgba(255, 107, 53, 0.15);
   border-radius: 18px;
@@ -669,44 +748,127 @@ useSEO({
   transition: all 0.3s ease;
 }
 
-.pay-card--free {
+.plan-card--lite {
   border-color: rgba(76, 175, 80, 0.35);
 }
 
-.pay-card:hover {
+.plan-card:hover {
   background: var(--card-hover);
 }
 
-.pay-icon {
-  font-size: 1.7rem;
-  display: block;
-  margin-bottom: 12px;
+.plan-badge {
+  align-self: flex-start;
+  margin-bottom: 14px;
 }
 
-.pay-card h4 {
+.plan-card h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin: 0 0 6px;
+}
+
+.plan-for {
+  margin: 0;
+  font-size: 0.97rem;
+  opacity: 0.75;
+}
+
+.plan-price {
+  margin: 20px 0 6px;
+  opacity: 0.85;
+}
+
+.plan-amount {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--primary-orange);
+  margin-right: 6px;
+}
+
+.plan-amount--text {
+  font-size: 1.6rem;
+  margin-right: 0;
+}
+
+/* Wraps as one unit on phones instead of leaving "domain" alone on a line */
+.plan-price-extra {
+  white-space: nowrap;
+}
+
+.plan-price-note {
+  margin: 0 0 20px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  opacity: 0.75;
+}
+
+.plan-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.plan-list li {
+  position: relative;
+  padding-left: 28px;
+  line-height: 1.6;
+  opacity: 0.88;
+}
+
+.plan-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success-green);
+  font-weight: 700;
+}
+
+.plan-list .plan-list-no::before {
+  content: '✕';
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Auto top margin pins the payment line and button to the bottom, so both cards line up */
+.plan-payment {
+  margin: auto 0 18px;
+  font-size: 0.95rem;
+  color: var(--primary-orange);
+  opacity: 0.9;
+}
+
+.plan-card .btn {
+  text-align: center;
+}
+
+/* border-box keeps these boxes the same width as the plan grid above */
+.lite-story {
+  box-sizing: border-box;
+  max-width: 860px;
+  margin: 36px auto 0;
+  text-align: center;
+  background: rgba(76, 175, 80, 0.07);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  border-radius: 18px;
+  padding: 26px 30px;
+}
+
+.lite-story h3 {
   color: white;
   font-size: 1.15rem;
   margin-bottom: 10px;
 }
 
-.pay-card p {
+.lite-story p {
   margin: 0;
-  opacity: 0.82;
-  line-height: 1.7;
-  font-size: 0.97rem;
-}
-
-.pay-close {
-  text-align: center;
-  max-width: 720px;
-  margin: 36px auto 0;
-  font-size: 1.05rem;
   line-height: 1.75;
-  color: var(--primary-orange);
-  opacity: 0.9;
+  opacity: 0.88;
 }
 
 .care-box {
+  box-sizing: border-box;
   max-width: 860px;
   margin: 40px auto 0;
   background: rgba(255, 107, 53, 0.05);
@@ -745,9 +907,30 @@ useSEO({
   font-weight: 700;
 }
 
-.care-payment {
+.care-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 107, 53, 0.35);
+  color: var(--primary-orange);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.care-tag--both {
+  border-color: rgba(76, 175, 80, 0.4);
+  color: #4ade80;
+}
+
+.care-note {
   margin: 18px 0 0;
   font-size: 0.97rem;
+  line-height: 1.65;
   color: var(--primary-orange);
   opacity: 0.9;
 }
@@ -1092,10 +1275,15 @@ useSEO({
     font-size: 2rem;
   }
 
-  .pay-grid,
+  .plan-grid,
   .why-grid,
   .fit-grid {
     grid-template-columns: 1fr;
+  }
+
+  .plan-card,
+  .lite-story {
+    padding: 24px 22px;
   }
 
   .step-card {

@@ -48,11 +48,7 @@
               <label for="topic">What Do You Have in Mind?</label>
               <select id="topic" v-model="form.topic" required>
                 <option value="">Choose the closest one</option>
-                <option value="website">A website for my business or practice</option>
-                <option value="ai">An AI tool for my students or clients</option>
-                <option value="booking-payments-automation">Booking, payments or automation</option>
-                <option value="app-platform">An app or a bigger platform</option>
-                <option value="not-sure">Not sure yet, I just have an idea</option>
+                <option v-for="topic in hireTopics" :key="topic.value" :value="topic.value">{{ topic.label }}</option>
               </select>
             </div>
             <div class="form-group">
@@ -133,7 +129,7 @@
                 <div class="info-icon">🧭</div>
                 <h3>How It Works</h3>
               </div>
-              <p>Free prototype first, no development fee, and no lock-in.</p>
+              <p>Free prototype first, no development fee, no lock-in, and simple websites from $8 a month.</p>
               <NuxtLink to="/work-with-us/service-model" class="info-card-link">See the Full Details</NuxtLink>
             </div>
           </div>
@@ -340,11 +336,26 @@ watch(() => route.query.tab, () => {
   activeTab.value = getTabFromQuery()
 })
 
+// Project topics: links such as /contact?topic=hosting-only preselect one
+const hireTopics = [
+  { value: 'website', label: 'A website for my business or practice' },
+  { value: 'hosting-only', label: 'A simple website on the $8 a month Hosting-Only Plan' },
+  { value: 'ai', label: 'An AI tool for my students or clients' },
+  { value: 'booking-payments-automation', label: 'Booking, payments or automation' },
+  { value: 'app-platform', label: 'An app or a bigger platform' },
+  { value: 'not-sure', label: 'Not sure yet, I just have an idea' }
+]
+
+const getTopicFromQuery = () => {
+  const topic = route.query.topic
+  return typeof topic === 'string' && hireTopics.some(option => option.value === topic) ? topic : ''
+}
+
 // Hire form state
 const form = reactive({
   name: '',
   email: '',
-  topic: '',
+  topic: getTopicFromQuery(),
   message: ''
 })
 
@@ -557,7 +568,7 @@ const faqs = ref<{ audience: 'hire' | 'join'; question: string; answer: string }
   {
     audience: 'hire',
     question: "How does pricing work?",
-    answer: "For accepted projects there is no development fee. We build a free working prototype first, so you can see it before you commit. If you continue, you pay a monthly fee for hosting, maintenance, support and occasional changes, billed monthly or quarterly. The exact price is confirmed after the prototype review, never before."
+    answer: "For accepted projects there is no development fee, and we build a free working prototype first, so you see it before you commit. A small, simple website can then go on the Hosting-Only Plan: hosting only, for $8 a month plus your own domain. For bigger projects, or if you want us to look after your site, the Care Plan covers hosting, maintenance, support and occasional changes, priced after the prototype review."
   },
   {
     audience: 'hire',
@@ -649,7 +660,7 @@ const handleHireSubmit = async () => {
       submission_reference: submissionReference,
       submitted_at: submittedAt,
       source: '/contact',
-      subject: 'Hire the Guild inquiry'
+      subject: form.topic === 'hosting-only' ? 'Hosting-Only Plan inquiry' : 'Hire the Guild inquiry'
     }
 
     logFormSubmissionEvent({
@@ -1464,7 +1475,7 @@ body {
 
 .faq-item.active .faq-answer {
   padding: 0 30px 25px;
-  max-height: 300px;
+  max-height: 600px;
 }
 
 .faq-answer p {

@@ -8,6 +8,9 @@
     "directory": ".output/public/",
     "binding": "ASSETS"
   },
+  // Newer Wrangler uploads source maps unless this is false, and ours go over
+  // Cloudflare's 15 MB gzipped limit, which fails the deploy (error 10021).
+  "upload_source_maps": false,
   "observability": {
     "enabled": true
   }
