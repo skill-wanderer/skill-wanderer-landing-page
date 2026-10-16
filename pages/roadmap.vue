@@ -211,13 +211,12 @@
             <span class="module-icon">💰</span>
             <h3>Sustainability &amp; Community Funding</h3>
             <p>
-              Client work is our main funding, because it keeps us practical, but it only covers our
-              running costs. This module adds donation and grant tools so the community can help pay
-              contributors and keep the mission sustainable, plus our Social Impact Token model.
+              Client work funds the mission. We chose it over donations because real projects keep us
+              practical. This module adds grant tools to help pay contributors and keep the mission
+              sustainable, plus our Social Impact Token model.
               <NuxtLink to="/help-the-mission">Here's how you can help today.</NuxtLink>
             </p>
             <div class="module-tags">
-              <span class="tag">Donations</span>
               <span class="tag">Grant Management</span>
               <span class="tag">Impact Tokens</span>
             </div>

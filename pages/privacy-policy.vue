@@ -5,7 +5,7 @@
       <div class="hero-content">
         <h1>Privacy Policy</h1>
         <p class="hero-subtitle">How we protect and handle your information</p>
-        <p class="last-updated">Last updated: October 15, 2026</p>
+        <p class="last-updated">Last updated: October 16, 2026</p>
       </div>
     </section>
 
@@ -41,7 +41,6 @@
           <p>Depending on which subdomains and features you use, we may collect the following types of information that you voluntarily provide:</p>
           <ul>
             <li><strong>Contact Information:</strong> When you contact us through our contact form or subscribe to our newsletter on skill-wanderer.com, we collect your name and email address.</li>
-            <li><strong>Donation Information:</strong> If you donate with PayPal on our Help the Mission page, once or monthly, PayPal processes the payments, so we never see your card or bank details. You can cancel a monthly donation at any time in your PayPal account. PayPal shares your name, email address and the donation details with us, as it does for any PayPal payment, and we use them only to keep a record of donations.</li>
             <li><strong>Account Information (The Dojo):</strong> When you register for an account on dojo.skill-wanderer.com, we collect your name, email address, and any profile information you provide. This data is managed by our self-hosted Keycloak identity service.</li>
             <li><strong>Learning Data (The Dojo):</strong> As you use the Dojo learning platform, we may collect data related to your course enrolments, learning progress, assessment results, and certificates earned. This data is used to provide and improve your learning experience.</li>
             <li><strong>Comments and Community Content (Wanderings):</strong> If you choose to comment or engage on wanderings.skill-wanderer.com, we collect the content you submit along with any identity information associated with your account (e.g., display name, email used to authenticate).</li>
@@ -191,7 +190,6 @@
             <li><strong>Keycloak (self-hosted):</strong> Identity and access management for the Dojo. Because it is self-hosted, no data is shared with Keycloak's creators (Red Hat). This instance is fully operated by us on our own infrastructure.</li>
             <li><strong>Firebase (Google):</strong> Used for data storage on the main site and potentially on Wanderings for authentication and content storage. Firebase data processing is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Data Processing terms</a>.</li>
             <li><strong>YouTube (Privacy-Enhanced Mode):</strong> Used for embedded video content across any subdomain. Cookies are only set if you actively play a video.</li>
-            <li><strong>PayPal:</strong> Processes donations made with the "Donate with PayPal" option on the Help the Mission page. PayPal's script loads only after you choose that option, and PayPal may then use its own cookies to secure the payment and prevent fraud. Your payment is handled under the <a href="https://www.paypal.com/legalhub/privacy-full" target="_blank" rel="noopener noreferrer">PayPal Privacy Statement</a>.</li>
           </ul>
           <p>
             As our platform evolves, individual subdomains may adopt new services or replace existing ones. Some subdomains may use Firebase, others may not. Some may use Keycloak, others may use a different identity solution. We will only integrate services necessary for functionality and will never integrate advertising, tracking, or data-brokerage services. Material changes will be reflected in this policy.

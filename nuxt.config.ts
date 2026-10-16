@@ -69,8 +69,6 @@ export default defineNuxtConfig({
     resendFromEmail: process.env.NUXT_RESEND_FROM_EMAIL || process.env.RESEND_FROM_EMAIL || '',
     resendReplyToEmail: process.env.NUXT_RESEND_REPLY_TO_EMAIL || process.env.RESEND_REPLY_TO_EMAIL || '',
     resendSegmentId: process.env.NUXT_RESEND_SEGMENT_ID || process.env.RESEND_SEGMENT_ID || '',
-    // Server-only. The matching client ID is public, so it lives under public.paypal.
-    paypalClientSecret: process.env.NUXT_PAYPAL_CLIENT_SECRET || '',
     public: {
       firebase: {
         apiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY || 'AIzaSyCr_1Fo6hzJDsKZrjw2u3HlrFhBnfeHmxE',
@@ -89,22 +87,7 @@ export default defineNuxtConfig({
         sessionExpiryMinutes: Number(process.env.NUXT_PUBLIC_PATHFINDER_SESSION_EXPIRY_MINUTES) || 30,
         sessionStorage: process.env.NUXT_PUBLIC_PATHFINDER_SESSION_STORAGE || 'browser',
       },
-      paypal: {
-        // Required for donations: while empty, /help-the-mission shows no donate button.
-        clientId: process.env.NUXT_PUBLIC_PAYPAL_CLIENT_ID || '',
-        // 'sandbox' or 'production'. Anything else counts as sandbox, so no real money moves by mistake.
-        environment: process.env.NUXT_PUBLIC_PAYPAL_ENVIRONMENT || 'sandbox',
-        // From `npm run paypal:create-monthly-plan`. Empty hides the monthly option.
-        monthlyPlanId: process.env.NUXT_PUBLIC_PAYPAL_MONTHLY_PLAN_ID || '',
-      },
     }
-  },
-
-  vue: {
-    compilerOptions: {
-      // The PayPal SDK registers <paypal-button> and its other buttons as native web components.
-      isCustomElement: (tag: string) => tag.startsWith('paypal-'),
-    },
   },
 
   nitro: {
