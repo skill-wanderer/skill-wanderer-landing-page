@@ -126,7 +126,7 @@
 
 <script setup lang="ts">
 // Icons replaced with emojis
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 import type { PracticeExample } from '~/types'
 
 // SEO and meta management  
@@ -235,44 +235,33 @@ const practiceExamples: PracticeExample[] = [
   }
 ]
 
+let observer: IntersectionObserver | null = null
+
 // Client-side JavaScript for interactions
 onMounted(() => {
-  // Navbar scroll effect
-  const handleScroll = () => {
-    const navbar = document.getElementById('navbar')
-    if (navbar) {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
-    }
-  }
-
-  window.addEventListener('scroll', handleScroll)
-
   // Intersection Observer for animations
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
   }
-  const observer = new IntersectionObserver((entries) => {
+  observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         (entry.target as HTMLElement).style.opacity = '1'
       }
-    })  }, observerOptions)
+    })
+  }, observerOptions)
 
   document.querySelectorAll('.trust-card, .banned-item').forEach(item => {
-    observer.observe(item)
+    observer?.observe(item)
   })
+})
 
-  // Cleanup
-  return () => {
-    window.removeEventListener('scroll', handleScroll)
-  }
+onUnmounted(() => {
+  observer?.disconnect()
 })
 </script>
+
 
 <style scoped>
 /* CSS Variables */

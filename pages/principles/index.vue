@@ -221,8 +221,6 @@ We believe quality education shapes brighter futures. Our mission as a guild is 
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
-
 // SEO and meta management
 useSEO({
   title: 'Our 12 Guild Principles | Skill-Wanderer',
@@ -251,29 +249,8 @@ useSEO({
     ])
   ]
 })
-
-// Client-side JavaScript for interactions
-onMounted(() => {
-  // Navbar scroll effect
-  const handleScroll = () => {
-    const navbar = document.getElementById('navbar')
-    if (navbar) {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
-    }
-  }
-
-  window.addEventListener('scroll', handleScroll)
-
-  // Cleanup
-  return () => {
-    window.removeEventListener('scroll', handleScroll)
-  }
-})
 </script>
+
 
 <style scoped>
 /* CSS Variables */

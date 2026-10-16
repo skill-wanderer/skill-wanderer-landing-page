@@ -32,16 +32,6 @@
         <span></span>
       </button>
 
-      <!-- Mobile menu backdrop -->
-      <Transition name="fade-backdrop">
-        <div
-          v-if="isMobileMenuOpen"
-          class="mobile-menu-backdrop"
-          @click="closeMobileMenu"
-          aria-hidden="true"
-        />
-      </Transition>
-      
       <div class="nav-links" :class="{ 'mobile-open': isMobileMenuOpen }">
         <!-- Learn Dropdown (the mission comes first) -->
         <div class="dropdown" @mouseenter="openLearningDropdown" @mouseleave="scheduleDropdownClose">
@@ -109,13 +99,19 @@
 
         <!-- Mobile Learn submenu -->
         <div class="mobile-dropdown">
-          <button class="mobile-dropdown-trigger" @click="toggleMobileLearningPathDropdown" :class="{ active: isMobileLearningPathDropdownOpen }">
+          <button
+            class="mobile-dropdown-trigger"
+            @click="toggleMobileLearningPathDropdown"
+            :class="{ active: isMobileLearningPathDropdownOpen }"
+            :aria-expanded="isMobileLearningPathDropdownOpen"
+            aria-controls="mobile-learn-menu"
+          >
             Learn
             <svg class="dropdown-arrow" :class="{ rotated: isMobileLearningPathDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
-          <div class="mobile-dropdown-menu" :class="{ open: isMobileLearningPathDropdownOpen }">
+          <div id="mobile-learn-menu" class="mobile-dropdown-menu" :class="{ open: isMobileLearningPathDropdownOpen }">
             <NuxtLink to="/learning-path" @click="closeMobileMenu">Learning Paths</NuxtLink>
             <NuxtLink to="/learning-path/learn-contribute-build-earn" @click="closeMobileMenu">How Learning Works</NuxtLink>
             <NuxtLink to="/learners" @click="closeMobileMenu">Learner Stories</NuxtLink>
@@ -178,13 +174,19 @@
 
         <!-- Mobile Work With Us submenu -->
         <div class="mobile-dropdown">
-          <button class="mobile-dropdown-trigger" @click="toggleMobilePartnershipsDropdown" :class="{ active: isMobilePartnershipsDropdownOpen }">
+          <button
+            class="mobile-dropdown-trigger"
+            @click="toggleMobilePartnershipsDropdown"
+            :class="{ active: isMobilePartnershipsDropdownOpen }"
+            :aria-expanded="isMobilePartnershipsDropdownOpen"
+            aria-controls="mobile-work-with-us-menu"
+          >
             Work With Us
             <svg class="dropdown-arrow" :class="{ rotated: isMobilePartnershipsDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
-          <div class="mobile-dropdown-menu" :class="{ open: isMobilePartnershipsDropdownOpen }">
+          <div id="mobile-work-with-us-menu" class="mobile-dropdown-menu" :class="{ open: isMobilePartnershipsDropdownOpen }">
             <NuxtLink to="/work-with-us" @click="closeMobileMenu">Services</NuxtLink>
             <NuxtLink to="/work-with-us/service-model" @click="closeMobileMenu">How It Works</NuxtLink>
             <NuxtLink to="/work-with-us/our-projects" @click="closeMobileMenu">Client Projects</NuxtLink>
@@ -254,13 +256,19 @@
 
         <!-- Mobile About submenu -->
         <div class="mobile-dropdown">
-          <button class="mobile-dropdown-trigger" @click="toggleMobileAboutDropdown" :class="{ active: isMobileAboutDropdownOpen }">
+          <button
+            class="mobile-dropdown-trigger"
+            @click="toggleMobileAboutDropdown"
+            :class="{ active: isMobileAboutDropdownOpen }"
+            :aria-expanded="isMobileAboutDropdownOpen"
+            aria-controls="mobile-about-menu"
+          >
             About
             <svg class="dropdown-arrow" :class="{ rotated: isMobileAboutDropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="6 9 12 15 18 9"></polyline>
             </svg>
           </button>
-          <div class="mobile-dropdown-menu" :class="{ open: isMobileAboutDropdownOpen }">
+          <div id="mobile-about-menu" class="mobile-dropdown-menu" :class="{ open: isMobileAboutDropdownOpen }">
             <NuxtLink to="/about" @click="closeMobileMenu">Our Story</NuxtLink>
             <NuxtLink to="/team" @click="closeMobileMenu">Team</NuxtLink>
             <NuxtLink to="/principles" @click="closeMobileMenu">12 Principles</NuxtLink>
@@ -285,13 +293,23 @@
         </NuxtLink>
       </div>
     </div>
+
+    <!-- Mobile menu backdrop -->
+    <Transition name="fade-backdrop">
+      <div
+        v-if="isMobileMenuOpen"
+        class="mobile-menu-backdrop"
+        @click="closeMobileMenu"
+        aria-hidden="true"
+      />
+    </Transition>
   </nav>
 </template>
 
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 
-const isMobileMenuOpen = ref(false)
+const isMobileMenuOpen = useState<boolean>('isMobileNavOpen', () => false)
 const isAboutDropdownOpen = ref(false)
 const isLearningPathDropdownOpen = ref(false)
 const isPartnershipsDropdownOpen = ref(false)
@@ -584,22 +602,17 @@ const handleScroll = () => {
   hideHeartWhileScrolling()
 }
 
+const handleKeydown = (e: KeyboardEvent) => {
+  if (e.key === 'Escape' && isMobileMenuOpen.value) {
+    closeMobileMenu()
+  }
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
   window.addEventListener('resize', debouncedStartHeartAutoMove)
+  window.addEventListener('keydown', handleKeydown)
   startHeartAutoMove()
-})
-
-watch(isMobileMenuOpen, (open) => {
-  if (typeof document !== 'undefined') {
-    if (open) {
-      document.body.classList.add('nav-mobile-open')
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.classList.remove('nav-mobile-open')
-      document.body.style.overflow = ''
-    }
-  }
 })
 
 watch(() => route.path, () => {
@@ -610,13 +623,10 @@ watch(() => route.path, () => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
   window.removeEventListener('resize', debouncedStartHeartAutoMove)
+  window.removeEventListener('keydown', handleKeydown)
   if (resizeDebounceTimeoutId !== null) {
     window.clearTimeout(resizeDebounceTimeoutId)
     resizeDebounceTimeoutId = null
-  }
-  if (typeof document !== 'undefined') {
-    document.body.classList.remove('nav-mobile-open')
-    document.body.style.overflow = ''
   }
   stopHeartAutoMove()
 })
@@ -662,6 +672,8 @@ onUnmounted(() => {
   transition: all 0.3s ease;
   gap: 10px;
   white-space: nowrap;
+  position: relative;
+  z-index: 1002;
 }
 
 .logo:hover {
@@ -951,7 +963,8 @@ onUnmounted(() => {
   border: none;
   cursor: pointer;
   padding: 5px;
-  z-index: 1001;
+  position: relative;
+  z-index: 1002;
 }
 
 .mobile-menu-btn span {

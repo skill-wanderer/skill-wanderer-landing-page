@@ -801,4 +801,41 @@ useSEO({
     height: 200px;
   }
 }
-</style>
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 120px 16px 50px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .launch-badge {
+    font-size: 0.85rem;
+    padding: 10px 18px;
+    white-space: normal;
+  }
+
+  .section-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .projects-section {
+    padding: 60px 16px;
+  }
+
+  .voice-card {
+    padding: 22px 16px;
+  }
+
+  .case-study-card {
+    border-radius: 14px;
+  }
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <Transition name="cookie-banner">
-    <div v-if="visible" class="cookie-banner" role="region" aria-label="Cookie notice">
+    <div v-if="visible && !isMobileNavOpen" class="cookie-banner" role="region" aria-label="Cookie notice">
       <div class="cookie-banner-inner">
         <div class="cookie-banner-accent" aria-hidden="true"></div>
         <div class="cookie-banner-content">
@@ -28,6 +28,7 @@
 
 <script setup lang="ts">
 const visible = ref(false)
+const isMobileNavOpen = useState<boolean>('isMobileNavOpen', () => false)
 
 onMounted(() => {
   if (typeof localStorage !== 'undefined') {
@@ -49,7 +50,7 @@ function dismiss() {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 990;
   padding: 0 16px 16px;
   pointer-events: none;
 }

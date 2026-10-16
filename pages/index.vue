@@ -690,18 +690,6 @@ useSEO({
   ]
 })
 
-// 🔷 Define handler outside (important for cleanup)
-const handleScroll = () => {
-  const navbar = document.getElementById('navbar')
-  if (navbar) {
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled')
-    } else {
-      navbar.classList.remove('scrolled')
-    }
-  }
-}
-
 const handleAnchorClick = (e: Event) => {
   const targetElement = e.target as HTMLElement | null
   if (!targetElement) return
@@ -724,16 +712,15 @@ const handleAnchorClick = (e: Event) => {
 
 // 🔷 Mount
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
   document.addEventListener('click', handleAnchorClick)
 })
 
-// 🔷 Cleanup (TOP LEVEL ✅)
+// 🔷 Cleanup
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
   document.removeEventListener('click', handleAnchorClick)
 })
 </script>
+
 <style scoped>
 /* Section backgrounds alternate down the page */
 .section--dark {

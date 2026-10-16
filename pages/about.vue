@@ -370,7 +370,7 @@
 
 <script setup lang="ts">
 // Icons replaced with emojis
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 
 // SEO and meta management
 useSEO({
@@ -391,28 +391,16 @@ useSEO({
   ]
 })
 
-onMounted(() => {
-  // Navbar scroll effect
-  const handleScroll = () => {
-    const navbar = document.getElementById('navbar')
-    if (navbar) {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled')
-      } else {
-        navbar.classList.remove('scrolled')
-      }
-    }
-  }
-  
-  window.addEventListener('scroll', handleScroll)
+let observer: IntersectionObserver | null = null
 
+onMounted(() => {
   // Intersection Observer for animations
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
   }
 
-  const observer = new IntersectionObserver((entries) => {
+  observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         (entry.target as HTMLElement).style.opacity = '1'
@@ -421,16 +409,15 @@ onMounted(() => {
   }, observerOptions)
 
   document.querySelectorAll('.story-section').forEach(item => {
-    observer.observe(item)
+    observer?.observe(item)
   })
+})
 
-  // Cleanup
-  return () => {
-    window.removeEventListener('scroll', handleScroll)
-    observer.disconnect()
-  }
+onUnmounted(() => {
+  observer?.disconnect()
 })
 </script>
+
 
 <style scoped>
 :root {

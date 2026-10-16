@@ -4,6 +4,7 @@
     v-if="!isOpen"
     aria-label="Open Admiral Orion command console"
     class="pathfinder-fab"
+    :class="{ 'pathfinder-fab--hidden': isMobileNavOpen }"
     @click="isOpen = true"
   >
     <!-- Shield / star badge icon -->
@@ -194,6 +195,7 @@
 
 <script setup lang="ts">
 const { history, loading, error, sendMessage, resetChat } = usePathfinder()
+const isMobileNavOpen = useState<boolean>('isMobileNavOpen', () => false)
 
 const isOpen = ref(false)
 const question = ref('')
@@ -817,7 +819,7 @@ onUnmounted(() => {
 }
 
 /* Mobile responsive */
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .pathfinder-panel {
     bottom: 0;
     right: 0;
@@ -857,10 +859,12 @@ onUnmounted(() => {
   }
 }
 
-:global(body.nav-mobile-open) .pathfinder-fab {
+.pathfinder-fab--hidden {
   opacity: 0 !important;
   pointer-events: none !important;
   transform: scale(0.7) !important;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 </style>
+
+
