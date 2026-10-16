@@ -387,7 +387,7 @@ const faqs = [
   {
     question: 'Do you take donations?',
     answer:
-      'No. After a lot of thought, we decided not to accept donations. The mission is designed to grow through real client projects like yours, because they keep us practical and up to date. Our Help the Mission page explains why, and lists other ways to help.',
+      'No. Client work covers our running costs but not our contributors, so the mission is still struggling. Even so, after a lot of thought, we decided not to accept donations, because growing through real client projects like yours keeps us practical and up to date. Our Help the Mission page explains why, and lists other ways to help.',
     link: { to: '/help-the-mission', label: 'Go to Help the Mission' },
   },
 ]

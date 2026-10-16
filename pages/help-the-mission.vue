@@ -18,13 +18,14 @@
         </p>
         <p>
           By luck, and maybe a small miracle, I met wonderful people who became our clients. Today their projects
-          pay the running costs of the whole platform, and I'm proud of that.
+          pay the running costs of the whole platform, and I'm proud of that. But that's all it covers. Most of our
+          contributors aren't paid for their work on the platform, and there is little left for anything else.
         </p>
         <p>
-          After a lot of thought, I've decided not to accept donations, and that's by design. I want the mission to
-          grow through real client projects instead of relying on donations. Real projects keep us practical and our
-          skills sharp, so what we teach comes from real work, not theory. That's how the mission keeps evolving
-          with the real world.
+          So the mission is still struggling. Even so, after a lot of thought, I've decided not to accept donations,
+          and that's by design. I want the mission to stay practical, growing through real client projects instead
+          of relying on donations. Real projects keep our skills sharp, so what we teach comes from real work, not
+          theory. That's how the mission keeps evolving with the real world.
         </p>
         <p class="letter-note">
           This page used to have a donate button, and I've removed it. If you come across a donation link on any of
@@ -102,7 +103,7 @@ const introEmailLink = `mailto:${GUILD_MASTER_EMAIL}?subject=${encodeURIComponen
 
 useSEO({
   title: 'Help the Mission | Skill-Wanderer',
-  description: "Skill-Wanderer doesn't take donations: client work funds free education. Three ways to help: share your expertise, bring us a project, or spread the word.",
+  description: "Client work covers our costs, not our contributors, yet we don't take donations. Three ways to help: share your expertise, bring us a project, or spread the word.",
   keywords: ['help the mission', 'support free education', 'share your expertise', 'skill-wanderer', 'tech partner for small business'],
   structuredData: [
     createBreadcrumbSchema([

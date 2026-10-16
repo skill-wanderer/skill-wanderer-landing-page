@@ -177,8 +177,9 @@
         </div>
         <p class="mission-funding">
           Client work is how the mission pays its way, and it's what makes it both sustainable and practical:
-          client fees cover our running costs, and real projects keep what we teach grounded in real work. It's
-          also why we chose not to accept donations, so the mission grows through real projects instead.
+          client fees cover our running costs, and real projects keep what we teach grounded in real work. Right
+          now it can't yet pay our contributors, but we still chose not to accept donations, to keep the mission
+          practical.
           <NuxtLink to="/help-the-mission">Here's how you can help.</NuxtLink>
         </p>
       </div>

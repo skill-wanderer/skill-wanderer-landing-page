@@ -138,7 +138,8 @@
               <strong>AI, web, mobile, DevOps, or platform development</strong>.
               All revenue is <strong>reinvested to fund the mission</strong>.
               Your challenges get solved, learners get funded. Everyone wins.
-              We chose not to accept donations, so client work like yours is how the mission grows.
+              Client work covers our costs but not our contributors.
+              Even so, we chose not to accept donations, to keep the mission practical.
               <NuxtLink to="/help-the-mission">See every way to help the mission.</NuxtLink>
             </p>
           </div>
