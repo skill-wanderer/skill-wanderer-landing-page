@@ -30,6 +30,14 @@ import { reusablePathOverviews } from '~/data/learning-path-overviews'
 const route = useRoute()
 
 const keywordMap: Record<string, string[]> = {
+  'learning-in-the-ai-era': [
+    'learning in the ai era',
+    'learning mindset',
+    'how to learn with ai',
+    'ai-first learning',
+    'self-learning roadmap',
+    'skill wanderer learning in the ai era'
+  ],
   'web-development': [
     'web development learning path',
     'frontend backend roadmap',
@@ -191,9 +199,10 @@ const topicDescription = computed(() =>
   'The requested learning path does not exist. Please return to the Learning Path hub.'
 )
 const seoTitle = computed(() =>
-  slug.value === 'learn-contribute-build-earn'
+  reusableOverview.value?.seoTitle ||
+  (slug.value === 'learn-contribute-build-earn'
     ? 'Learn. Contribute. Build. Earn. | Skill-Wanderer Education Philosophy'
-    : `${topicTitle.value} Learning Path | Skill-Wanderer`
+    : `${topicTitle.value} Learning Path | Skill-Wanderer`)
 )
 const seoKeywords = computed(() => keywordMap[slug.value] || ['learning path', 'skill-wanderer', topicTitle.value])
 

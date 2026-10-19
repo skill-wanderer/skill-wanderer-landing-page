@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <h1>Our Story</h1>
-      <p>Free, practical education for everyone who keeps learning, funded by the real work we do for small businesses</p>
+      <p>A social enterprise in the making, helping learners and small businesses with limited resources grow</p>
     </section>
 
     <!-- Story Section -->
@@ -61,13 +61,31 @@
         </div>
 
         <div class="story-section" style="animation-delay: 0.5s;">
+          <h2><span class="section-icon">⚖️</span> The Shift</h2>
+          <ImageSlot name="social-enterprise/enterprise" class="story-image" />
+          <p>
+            At first I ran Skill-Wanderer with a charity mindset: make everything free and hope goodwill would keep it
+            going. I learned that it doesn't last. <span class="highlight">When a mission depends on donations, grants
+            or goodwill, it depends on things nobody can control</span>, and when those things change, the people it
+            serves lose out.
+          </p>
+          <p>
+            So I turned to social entrepreneurship: using entrepreneurship and technology, especially AI, to solve
+            social problems. Small businesses with small budgets need decent tech they can afford, and AI now lets us
+            build it quickly and well. <span class="highlight">Serving them is part of the mission, not just a way to
+            pay for it</span>, and what they pay keeps education free for everyone who keeps learning.
+            <NuxtLink to="/social-enterprise">Read the full story →</NuxtLink>
+          </p>
+        </div>
+
+        <div class="story-section" style="animation-delay: 0.7s;">
           <h2><span class="section-icon">🚀</span> The Vision</h2>
           <ImageSlot name="about/vision" class="story-image" />
           <p>
             Skill-Wanderer is built on a profound truth: <span class="highlight">teaching is the best way to learn, 
             and building is the best way to teach</span>. The guild model unites education and professional work into 
-            a single self-sustaining cycle. Masters mentor journeymen, journeymen guide apprentices, and together the 
-            guild takes on real projects that fund free education for all.
+            a single self-sustaining cycle. Masters mentor journeymen, journeymen guide apprentices, and together the
+            guild takes on real projects for small budgets that fund free education for all.
           </p>
           <p>
             With a social enterprise mindset, we deeply believe that <span class="highlight">what we give to the world 
@@ -110,8 +128,8 @@
         </div>
         <div class="philosophy-card">
           <span class="philosophy-icon">🔄</span>
-          <h3>Work Funds Education</h3>
-          <p>All revenue from guild engagements flows back into free education, mentorship, and community infrastructure. No profit extraction, ever.</p>
+          <h3>Every Project Helps Twice</h3>
+          <p>Every guild engagement gives a small budget the tech it needs, and its revenue flows back into free education, mentorship, and community infrastructure. No profit extraction, ever.</p>
         </div>
         <div class="philosophy-card">
           <span class="philosophy-icon">🤝</span>
@@ -126,24 +144,26 @@
       <div class="mission-content">
         <h2>Our Mission</h2>
         <div class="mission-statement">
-          "Our mission is to make quality education free and accessible
-          through the guild model, where real-world work funds learning, and learning feeds back into work. 
-          We operate with complete integrity, forgoing any benefit that could cause doubt in our cause, and 
-          reinvest all resources into education, community, and lasting social impact. Every guild engagement 
-          delivered becomes free education shared. Every challenge solved plants seeds of knowledge for 
-          countless future craftspeople."
+          "Our mission is to help people with limited resources learn and build. Through the guild model, we
+          give small budgets the technology they need and reinvest what we earn into free, practical education,
+          so real-world work funds learning, and learning feeds back into work. We operate with complete
+          integrity, forgoing any benefit that could cause doubt in our cause, and reinvest all resources into
+          education, community, and lasting social impact. Every guild engagement delivered helps someone build
+          and becomes free education shared. Every challenge solved plants seeds of knowledge for countless
+          future craftspeople."
         </div>
         <p class="mission-description">
-          This isn't just a business model. It's a social enterprise philosophy. By uniting education and 
-          professional work within a guild structure, we create a self-sustaining ecosystem where craft revenue 
-          directly funds free education, where mentorship is woven into every project, and where every member's 
-          growth strengthens the whole. No ads, no tuition, no compromise, just purpose-driven craft.
+          This isn't just a business model. It's a social enterprise philosophy. By uniting education and
+          professional work within a guild structure, we create a self-sustaining ecosystem where small budgets
+          get honest, affordable tech, where that revenue directly funds free education, where mentorship is woven
+          into every project, and where every member's growth strengthens the whole. No ads, no tuition, no
+          compromise, just purpose-driven craft.
         </p>
         <div class="impact-flow">
           <div class="impact-step">
             <span class="impact-step-number">1</span>
-            <h3>Client projects</h3>
-            <p>Websites and AI tools for clients, sustained by a monthly care fee.</p>
+            <h3>Affordable tech</h3>
+            <p>Websites and AI tools for small budgets, kept running by a monthly fee.</p>
           </div>
           <div class="impact-step">
             <span class="impact-step-number">2</span>
@@ -158,7 +178,7 @@
           <div class="impact-step">
             <span class="impact-step-number">4</span>
             <h3>Social impact</h3>
-            <p>Skilled people create positive change in their communities.</p>
+            <p>Skilled people and growing small businesses create positive change in their communities.</p>
           </div>
         </div>
         <div class="commitment-stats">
@@ -180,6 +200,7 @@
           client fees cover our running costs, and real projects keep what we teach grounded in real work. Right
           now it can't yet pay our contributors, but we still chose not to accept donations, to keep the mission
           practical.
+          <NuxtLink to="/social-enterprise">Why we chose social enterprise over charity.</NuxtLink>
           <NuxtLink to="/help-the-mission">Here's how you can help.</NuxtLink>
         </p>
       </div>
@@ -355,7 +376,7 @@
     <!-- CTA Section -->
     <section class="cta">
       <h2>Where Would You Like to Start?</h2>
-      <p>Come and learn with us, or bring us an idea and help fund the mission</p>
+      <p>Come and learn with us, or bring us an idea on a small budget. Either way, you're part of the mission.</p>
       <div class="cta-buttons">
         <NuxtLink to="/learning-path" class="btn btn-primary">
           Start Learning for Free
@@ -376,13 +397,13 @@ import { onMounted, onUnmounted } from 'vue'
 // SEO and meta management
 useSEO({
   title: 'About Skill-Wanderer | The Story Behind the Mission',
-  description: 'Meet Quan Nguyen and the Skill-Wanderer guild: free, practical education for self-learners, funded by our tech partner work for small businesses.',
-  keywords: ['about skill-wanderer', 'quan nguyen', 'free education mission', 'learning guild', 'free mentorship', 'tech partner for small business', 'skill wanderer story'],
+  description: 'Meet Quan Nguyen and Skill-Wanderer, a social enterprise in the making: affordable tech for small budgets that funds free education for self-learners.',
+  keywords: ['about skill-wanderer', 'quan nguyen', 'social enterprise', 'free education mission', 'learning guild', 'free mentorship', 'tech partner for small business', 'skill wanderer story'],
   type: 'article',
   structuredData: [
     createArticleSchema(
       'About Skill-Wanderer | The Story Behind the Mission',
-      'Meet Quan Nguyen and the Skill-Wanderer guild: free, practical education for self-learners, funded by our tech partner work for small businesses.',
+      'Meet Quan Nguyen and Skill-Wanderer, a social enterprise in the making: affordable tech for small budgets that funds free education for self-learners.',
       'https://skill-wanderer.com/about'
     ),
     createBreadcrumbSchema([

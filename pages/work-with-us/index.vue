@@ -273,16 +273,17 @@
       </div>
     </section>
 
-    <!-- Why this service exists: client work funds the mission -->
+    <!-- Why this service exists: it helps small budgets, and it funds free education -->
     <section class="mission-section">
       <div class="content">
         <div class="mission-block">
           <p class="mission-eyebrow">Why we do this</p>
-          <h2>Your Project Funds Free Education</h2>
+          <h2>Your Project Helps Twice</h2>
           <p>
-            Skill-Wanderer exists to make practical education free for everyone who keeps learning. Our tech
-            partner work is how we pay for it: your monthly fee keeps your project running, and it keeps free
-            courses and mentorship going for self-learners from Nigeria to Venezuela.
+            Skill-Wanderer is a social enterprise in the making. We exist to help people with limited resources, and
+            a small budget is one of the problems we're here to solve: you get the tech you need at a price you can
+            carry. Your monthly fee keeps your project running, and it keeps free courses and mentorship going for
+            self-learners from Nigeria to Venezuela.
           </p>
           <p>
             It keeps our teaching practical too. Guild learners help on real projects like yours, always under
@@ -290,7 +291,7 @@
             current.
           </p>
           <div class="mission-links">
-            <NuxtLink to="/about#mission" class="advice-link">See how the mission works →</NuxtLink>
+            <NuxtLink to="/social-enterprise" class="advice-link">Why a social enterprise →</NuxtLink>
             <NuxtLink to="/learners" class="advice-link">Meet our learners →</NuxtLink>
           </div>
         </div>

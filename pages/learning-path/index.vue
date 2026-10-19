@@ -2,12 +2,12 @@
   <div class="learning-path-page">
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">Skill-Wanderer Guild Learning Hub</p>
-        <h1>Choose Your Learning Path</h1>
+        <p class="eyebrow">Skill-Wanderer Learning Hub</p>
+        <h1>Start With Learning in the AI Era</h1>
         <p class="hero-description">
-          Start from the topic that matches your mission. Each guild path is designed to grow practical
-          skills through guided progression, real-world craft, and clear milestones. Our first paths are in
-          tech and business, where the guild's experience runs deepest, and paths in more fields will follow.
+          Before any single skill, you need the mindset, the sense of direction and the ways of learning that keep you
+          growing while AI changes everything. That's the path we're building now, free for learners in any field.
+          Our other paths are planned for later, once we've revised their content.
         </p>
         <ImageSlot name="learning-paths/hub" class="hero-image" priority />
       </div>
@@ -16,55 +16,87 @@
       </svg>
     </section>
 
-    <section class="topics-section">
+    <!-- Featured path: the one path open now -->
+    <section class="featured-section">
       <div class="topics-wrapper">
-        <!-- Foundational Paths -->
         <div class="section-header">
-          <h2>Foundational Paths</h2>
-          <p>Core disciplines for starting your guild journey</p>
+          <h2>Featured Path</h2>
+          <p>Open now and in development. We add lessons as we finish them.</p>
         </div>
 
-        <div class="topics-grid topics-grid--foundation">
+        <article class="featured-card">
+          <ImageSlot :name="`learning-paths/${featured.slug}`" class="featured-cover" />
+          <div class="featured-body">
+            <div class="topic-top">
+              <span class="topic-icon" aria-hidden="true">🧭</span>
+              <span class="topic-badge topic-badge--featured">In Development</span>
+            </div>
+            <h3>{{ featured.title }}</h3>
+            <p class="featured-description">{{ featured.description }}</p>
+            <ol class="featured-stages" aria-label="Stages in this path">
+              <li v-for="stage in featured.stages" :key="stage.id">
+                <span class="featured-stage-id">{{ stage.id }}</span>
+                {{ stage.title }}
+              </li>
+            </ol>
+            <div class="featured-actions">
+              <NuxtLink :to="`/learning-path/${featured.slug}`" class="btn btn-primary">
+                Open the Path <span>→</span>
+              </NuxtLink>
+              <a v-if="firstLesson" :href="firstLesson.url" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                Take the First Lesson
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Planned paths: offered later, once their old content is revised -->
+    <section class="topics-section">
+      <div class="topics-wrapper">
+        <div class="section-header">
+          <h2>Planned Paths</h2>
+          <p>These open later. We're revising their old content first, so each outline will change before it opens.</p>
+        </div>
+
+        <h3 class="topics-group-title">Foundational</h3>
+        <div class="topics-grid">
           <NuxtLink
             v-for="topic in foundationalTopics"
             :key="topic.slug"
             :to="`/learning-path/${topic.slug}`"
-            class="topic-card topic-card--foundation"
-            :aria-label="`Open learning path for ${topic.title}`"
+            class="topic-card"
+            :aria-label="`See the planned ${topic.title} path`"
           >
             <ImageSlot :name="`learning-paths/${topic.slug}`" group="learningPathCovers" class="topic-cover" />
             <div class="topic-top">
               <span class="topic-icon" aria-hidden="true">{{ topic.icon }}</span>
-              <span class="topic-badge topic-badge--foundation">Foundation</span>
+              <span class="topic-badge topic-badge--planned">Planned</span>
             </div>
-            <h3>{{ topic.title }}</h3>
+            <h4>{{ topic.title }}</h4>
             <p>{{ topic.description }}</p>
-            <span class="topic-action">Open Path →</span>
+            <span class="topic-action">See the Plan →</span>
           </NuxtLink>
         </div>
 
-        <!-- Advanced & Specialized Paths -->
-        <div class="section-header section-header--advanced">
-          <h2>Advanced &amp; Specialized</h2>
-          <p>Deeper disciplines for experienced practitioners</p>
-        </div>
-
-        <div class="topics-grid topics-grid--advanced">
+        <h3 class="topics-group-title topics-group-title--advanced">Advanced &amp; Specialized</h3>
+        <div class="topics-grid">
           <NuxtLink
             v-for="topic in advancedTopics"
             :key="topic.slug"
             :to="`/learning-path/${topic.slug}`"
-            class="topic-card topic-card--advanced"
-            :aria-label="`Open learning path for ${topic.title}`"
+            class="topic-card"
+            :aria-label="`See the planned ${topic.title} path`"
           >
             <ImageSlot :name="`learning-paths/${topic.slug}`" group="learningPathCovers" class="topic-cover" />
             <div class="topic-top">
               <span class="topic-icon" aria-hidden="true">{{ topic.icon }}</span>
-              <span class="topic-badge topic-badge--advanced">Advanced</span>
+              <span class="topic-badge topic-badge--planned">Planned</span>
             </div>
-            <h3>{{ topic.title }}</h3>
+            <h4>{{ topic.title }}</h4>
             <p>{{ topic.description }}</p>
-            <span class="topic-action">Open Path →</span>
+            <span class="topic-action">See the Plan →</span>
           </NuxtLink>
         </div>
       </div>
@@ -73,18 +105,18 @@
 </template>
 
 <script setup lang="ts">
+import { FEATURED_PATH_SLUG, reusablePathOverviews } from '~/data/learning-path-overviews'
+
 useSEO({
-  title: 'Guild Learning Paths | Skill-Wanderer',
-  description: 'Explore Skill-Wanderer guild learning paths across Web Development, Mobile Development, AI/ML, DevOps, QA, project and career tracks.',
+  title: 'Learning Paths | Skill-Wanderer',
+  description: 'Start with Learning in the AI Era, our free path on the mindset, practical navigation and ways of learning you need now. More paths are planned for later.',
   keywords: [
+    'learning in the ai era',
+    'learning mindset',
+    'how to learn with ai',
+    'free learning path',
+    'self-learning',
     'learning path',
-    'web development',
-    'mobile development',
-    'ai and machine learning',
-    'devops',
-    'mlops',
-    'qa tester',
-    'software architecture',
     'skill wanderer'
   ]
 })
@@ -95,6 +127,10 @@ interface LearningTopic {
   icon: string
   description: string
 }
+
+// The one path open now, shown in full above the planned ones.
+const featured = reusablePathOverviews[FEATURED_PATH_SLUG]!
+const firstLesson = featured.lessons.find(lesson => lesson.status === 'available' && lesson.url)
 
 const foundationalTopics: LearningTopic[] = [
   {
@@ -238,10 +274,6 @@ const advancedTopics: LearningTopic[] = [
   margin: 40px auto 0;
 }
 
-.topics-section {
-  padding: 36px 24px 96px;
-}
-
 .topics-wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -266,18 +298,116 @@ const advancedTopics: LearningTopic[] = [
   color: var(--light-text);
 }
 
+/* Featured path: the one path open now */
+.featured-section {
+  padding: 36px 24px 24px;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 36px;
+  padding: 28px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 217, 61, 0.04));
+  border: 1px solid rgba(255, 107, 53, 0.4);
+  border-radius: 22px;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.3);
+  animation: riseIn 0.6s ease both;
+}
+
+/* Until its cover exists (production skips empty slots), the text takes the whole card. */
+.featured-card:not(:has(.featured-cover)) {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.featured-cover {
+  border-radius: 16px;
+}
+
+.featured-body h3 {
+  margin: 14px 0 10px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.2;
+  color: #fff;
+}
+
+.featured-description {
+  margin: 0 0 20px;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.featured-stages {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.featured-stages li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 107, 53, 0.18);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.featured-stage-id {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 107, 53, 0.16);
+  color: var(--accent-yellow);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.featured-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.featured-actions .btn {
+  font-size: 1rem;
+  padding: 12px 22px;
+}
+
+/* Planned paths */
+.topics-section {
+  padding: 60px 24px 96px;
+}
+
+.topics-group-title {
+  margin: 0 0 18px;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-yellow);
+}
+
+.topics-group-title--advanced {
+  margin-top: 56px;
+}
+
 .topics-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 30px;
-}
-
-.topics-grid--advanced {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.section-header--advanced {
-  margin-top: 64px;
 }
 
 .topic-badge {
@@ -289,21 +419,22 @@ const advancedTopics: LearningTopic[] = [
   border-radius: 50px;
 }
 
-.topic-badge--foundation {
+.topic-badge--featured {
   background: rgba(76, 175, 80, 0.12);
-  border: 1px solid rgba(76, 175, 80, 0.35);
-  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.4);
+  color: #81c784;
 }
 
-.topic-badge--advanced {
-  background: rgba(156, 39, 176, 0.12);
-  border: 1px solid rgba(156, 39, 176, 0.35);
-  color: #ce93d8;
+.topic-badge--planned {
+  background: rgba(255, 217, 61, 0.1);
+  border: 1px solid rgba(255, 217, 61, 0.35);
+  color: var(--accent-yellow);
 }
 
+/* Dashed, because these paths aren't open yet. */
 .topic-card {
   background: var(--card-bg);
-  border: 1px solid rgba(255, 107, 53, 0.2);
+  border: 1px dashed rgba(255, 107, 53, 0.3);
   border-radius: 16px;
   padding: 22px;
   text-decoration: none;
@@ -313,22 +444,6 @@ const advancedTopics: LearningTopic[] = [
   min-height: 220px;
   transition: all 0.3s ease;
   animation: riseIn 0.6s ease both;
-}
-
-.topic-card--foundation {
-  border-color: rgba(76, 175, 80, 0.2);
-}
-
-.topic-card--foundation:hover {
-  border-color: #4caf50;
-}
-
-.topic-card--advanced {
-  border-color: rgba(156, 39, 176, 0.2);
-}
-
-.topic-card--advanced:hover {
-  border-color: #ce93d8;
 }
 
 .topic-card:nth-child(2n) {
@@ -362,7 +477,7 @@ const advancedTopics: LearningTopic[] = [
   font-size: 1.35rem;
 }
 
-.topic-card h3 {
+.topic-card h4 {
   margin: 14px 0 10px;
   font-size: 1.24rem;
   line-height: 1.35;
@@ -395,9 +510,16 @@ const advancedTopics: LearningTopic[] = [
 }
 
 @media (max-width: 1024px) {
-  .topics-grid,
-  .topics-grid--advanced {
+  .topics-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .featured-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 22px;
   }
 }
 
@@ -406,13 +528,23 @@ const advancedTopics: LearningTopic[] = [
     padding-top: 112px;
   }
 
-  .topics-grid,
-  .topics-grid--advanced {
+  .topics-grid {
     grid-template-columns: 1fr;
   }
 
   .topic-card {
     min-height: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .featured-stages {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .featured-actions .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 </style>

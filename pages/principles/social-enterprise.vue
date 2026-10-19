@@ -200,6 +200,7 @@
               creating a cycle where today's learners fund tomorrow's. It's not about
               profit. It's about building something that lasts.
             </p>
+            <NuxtLink to="/social-enterprise" class="impact-link">Read the full story →</NuxtLink>
           </div>
         </div>
       </div>
@@ -694,6 +695,18 @@ const practiceExamples: PracticeExample[] = [
 
 .impact-card strong {
   color: var(--primary-orange);
+}
+
+.impact-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.impact-link:hover {
+  text-decoration: underline;
 }
 
 /* Animations */

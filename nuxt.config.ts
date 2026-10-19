@@ -31,11 +31,11 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      title: 'Skill-Wanderer | Tech Partner for Small Businesses',
+      title: 'Skill-Wanderer | Learn for Free, Build on a Small Budget',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'A tech partner for solo founders and small businesses: a free working prototype first, no development fee, no lock-in. Client work funds free education.' },
+        { name: 'description', content: 'Affordable websites and AI tools for small budgets, and free, practical education for self-learners. A social enterprise where client work funds learning.' },
         { name: 'author', content: 'Quan Nguyen' },
         { name: 'robots', content: 'index,follow' },
         { name: 'language', content: 'en' },
@@ -146,6 +146,7 @@ export default defineNuxtConfig({
     },
     '/learning-path/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/roadmap': { sitemap: { changefreq: 'weekly', priority: 0.7 } },
+    '/social-enterprise': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/help-the-mission': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/principles': { sitemap: { changefreq: 'monthly', priority: 0.9 } },
     '/principles/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },

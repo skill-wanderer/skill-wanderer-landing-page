@@ -16,9 +16,15 @@ export interface ReusablePathStage {
   points: string[]
 }
 
+/** in-development: open now and still growing. planned: offered later, once its old outline is revised. */
+export type PathStatus = 'in-development' | 'planned'
+
 export interface ReusablePathOverview {
   slug: string
   title: string
+  status: PathStatus
+  /** Replaces the default "<title> Learning Path | Skill-Wanderer" page title. Keep it to 60 characters. */
+  seoTitle?: string
   description: string
   intro: string
   goals: string[]
@@ -26,10 +32,114 @@ export interface ReusablePathOverview {
   lessons: ReusablePathLesson[]
 }
 
+/** The one path open now. Every other path is planned. */
+export const FEATURED_PATH_SLUG = 'learning-in-the-ai-era'
+
 export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
+  'learning-in-the-ai-era': {
+    slug: 'learning-in-the-ai-era',
+    title: 'Learning in the AI Era',
+    status: 'in-development',
+    seoTitle: 'Learning in the AI Era: Mindset & Direction | Skill-Wanderer',
+    description: 'The mindset, practical navigation and ways of learning you need to keep growing while AI changes everything.',
+    intro:
+      'AI is changing what people need to learn, and how they learn it, faster than any course can keep up. Before you pick a skill, you need three things that last: a mindset that keeps you learning and adapting, a practical way to find your direction through endless content and hype, and ways of learning with AI that make you sharper instead of more dependent. This path builds all three. It is free, it is for learners in any field, and it grows as we finish each lesson.',
+    goals: [
+      'Keep learning and adapting with confidence while the tools around you keep changing.',
+      'Find a clear direction through endless courses, opinions and hype, and decide what to learn next.',
+      'Use AI to learn faster while keeping your own judgment.',
+      'Avoid the beginner pitfalls, scams and wasted months that slow self-learners down.',
+      'Turn what you learn into real experience by building, contributing and sharing it back.'
+    ],
+    stages: [
+      {
+        id: '01',
+        title: 'A Mindset for the AI Era',
+        timeline: 'Stage One',
+        description: 'Build the habits of mind that keep you growing when the tools, the jobs and the advice all keep changing.',
+        points: [
+          'Why the ability to learn and adapt matters more than any single tool',
+          'Treating failure and confusion as a normal part of learning',
+          'Thinking for yourself instead of handing your judgment to AI',
+          'Staying curious and calm when the next wave of change arrives'
+        ]
+      },
+      {
+        id: '02',
+        title: 'Practical Navigation',
+        timeline: 'Stage Two',
+        description: 'Find your way through a world of endless content, so your time goes into what actually moves you forward.',
+        points: [
+          'Breaking down a new field and deciding what to learn next',
+          'Telling real opportunities apart from hype, scams and worthless courses',
+          'Checking who profits from the advice you are given',
+          'Avoiding the early pitfalls most self-learners fall into'
+        ]
+      },
+      {
+        id: '03',
+        title: 'Ways to Learn With AI',
+        timeline: 'Stage Three',
+        description: 'Use AI as a tutor, a practice partner and a research assistant, without letting it do your thinking for you.',
+        points: [
+          'AI-first learning habits that speed you up',
+          'Asking better questions and checking the answers you get',
+          'Learning by building small, real things from day one',
+          'A simple personal system for learning on your own'
+        ]
+      },
+      {
+        id: '04',
+        title: 'From Learner to Contributor',
+        timeline: 'Stage Four',
+        description: 'Turn what you learn into experience you can show, and give it back so the next learner goes further.',
+        points: [
+          'Contributing to real projects to gain experience',
+          'Teaching what you learn, one of the best ways to master it',
+          'Building a body of real work that shows what you can do',
+          'Staying ready for whatever changes next'
+        ]
+      }
+    ],
+    lessons: [
+      {
+        id: 'AE01',
+        title: 'AI-First Learning for Tech Careers',
+        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        status: 'available',
+        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+      },
+      {
+        id: 'AE02',
+        title: 'The Learner\'s Mindset in the AI Era',
+        status: 'coming-soon'
+      },
+      {
+        id: 'AE03',
+        title: 'Finding Your Direction: How to Break Down a New Field',
+        status: 'coming-soon'
+      },
+      {
+        id: 'AE04',
+        title: 'Spotting Hype, Scams and Worthless Courses',
+        status: 'coming-soon'
+      },
+      {
+        id: 'AE05',
+        title: 'Learning With AI Without Losing Your Judgment',
+        status: 'coming-soon'
+      },
+      {
+        id: 'AE06',
+        title: 'From Learner to Contributor: Sharing What You Learn',
+        status: 'coming-soon'
+      }
+    ]
+  },
   'web-development': {
     slug: 'web-development',
     title: 'Web Development',
+    status: 'planned',
     description: 'A guided path from frontend foundations to shipping full-stack products.',
     intro:
       'Web development is not only about making pages look good. It is about understanding user experience, application logic, data flow, performance, security, and delivery. This overview gives learners a clear map of what will be covered so each lesson feels connected to a real goal.',
@@ -110,6 +220,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'mobile-development': {
     slug: 'mobile-development',
     title: 'Mobile Development',
+    status: 'planned',
     description: 'Create robust mobile apps with practical workflows for iOS, Android, cross-platform projects, and Flutter game development.',
     intro:
       'This path helps learners understand mobile product thinking, UI patterns, app architecture, and release workflows across native and cross-platform development. It also covers Flutter game development, giving learners the skills to build interactive 2D games using the Flame engine on top of their mobile foundations.',
@@ -189,6 +300,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'business-analyst': {
     slug: 'business-analyst',
     title: 'Business Analyst',
+    status: 'planned',
     description: 'Bridge business and technical teams with strong analysis and communication.',
     intro:
       'This path focuses on requirement analysis, stakeholder communication, process mapping, and writing clear product documentation for delivery teams.',
@@ -250,6 +362,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'qa-tester': {
     slug: 'qa-tester',
     title: 'QA / Tester',
+    status: 'planned',
     description: 'Build quality-first testing skills across manual, automation, and strategy.',
     intro:
       'This path introduces testing fundamentals, quality strategy, bug reporting discipline, and automation foundations for modern product teams.',
@@ -311,6 +424,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'ai-and-machine-learning': {
     slug: 'ai-and-machine-learning',
     title: 'AI and Machine Learning',
+    status: 'planned',
     description: 'A structured path from understanding AI fundamentals to building and deploying production-ready machine learning systems.',
     intro:
       'Artificial intelligence and machine learning are reshaping every industry. This path takes learners from foundational concepts and mathematics through core ML algorithms, deep learning architectures, and applied AI in production. Each stage builds on the previous so that learners do not just run models. They understand why they work, how to evaluate them rigorously, and how to deliver real value with them responsibly.',
@@ -388,6 +502,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'devops': {
     slug: 'devops',
     title: 'DevOps',
+    status: 'planned',
     description: 'Master the culture, tools, and practices that bridge software development and reliable production operations.',
     intro:
       'DevOps is not a tool. It is a way of working. This path takes learners through the mindset, practices, and technical skills needed to build, ship, and operate software with speed and reliability. From version control and CI/CD pipelines to infrastructure as code and observability, every stage is designed to connect engineering work directly to production outcomes.',
@@ -465,6 +580,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'mlops': {
     slug: 'mlops',
     title: 'MLOps',
+    status: 'planned',
     description: 'Bridge machine learning and operations to deliver reliable, scalable, and governed ML systems in production.',
     intro:
       'Building a model in a notebook is only the beginning. MLOps is the discipline of operationalizing machine learning, making it reproducible, automatable, observable, and maintainable at scale. This path covers the full ML lifecycle from experiment management through pipeline automation, model deployment, and ongoing governance. Learners will build the skills to treat ML systems with the same engineering discipline as any production software.',
@@ -542,6 +658,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'software-development-roles-and-career': {
     slug: 'software-development-roles-and-career',
     title: 'Software Development Roles & Career',
+    status: 'planned',
     description: 'Navigate the software industry with clarity, understanding roles, team dynamics, and how to grow with intention.',
     intro:
       'The software industry can feel overwhelming without a map. This path helps learners understand how software teams are structured, what different roles actually do, and how to grow from entry-level contributor to trusted professional. Beyond technical skills, it focuses on the habits, communication, and career decisions that separate those who grow fast from those who plateau.',
@@ -619,6 +736,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'project-management': {
     slug: 'project-management',
     title: 'Project Management',
+    status: 'planned',
     description: 'Lead software projects from initiation to delivery with clear thinking, practical frameworks, and strong team habits.',
     intro:
       'Project management in technology is not about bureaucracy. It is about creating the conditions for teams to deliver well. This path covers everything from understanding stakeholder goals and structuring delivery plans, to facilitating Agile ceremonies, managing risk, and driving continuous improvement. Learners will develop the judgment to adapt their approach to real constraints rather than following a methodology by rote.',
@@ -696,6 +814,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'start-up-foundation': {
     slug: 'start-up-foundation',
     title: 'Start-up Foundation',
+    status: 'planned',
     description: 'Build the mindset, skills, and practices to turn an idea into a real, sustainable product and business.',
     intro:
       'Starting a company is one of the hardest things a person can do, and one of the most rewarding. This path gives aspiring founders and early-stage builders a grounded, practical foundation in product thinking, lean validation, team building, and early business operations. It strips away the myths and focuses on what actually matters in the earliest stages: learning fast, building with purpose, and creating something people genuinely want.',
@@ -773,6 +892,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'advanced-software-development-skills': {
     slug: 'advanced-software-development-skills',
     title: 'Advanced Software Development Skills',
+    status: 'planned',
     description: 'Deepen engineering craft from clean code and system design to performance, reliability, and technical leadership.',
     intro:
       'There is a significant gap between writing code that works and writing code that lasts. This path is for developers who want to close that gap, moving from functional to excellent by developing deep habits in code quality, system design, performance engineering, and technical influence. Each stage pushes beyond the basics to build the kind of skills that make engineers genuinely valuable at any level of seniority.',
@@ -850,6 +970,7 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
   'software-architecture-and-design-patterns': {
     slug: 'software-architecture-and-design-patterns',
     title: 'Software Architecture & Design Patterns',
+    status: 'planned',
     description: 'Learn to design software systems with intentional structure, from design patterns to architectural styles and real-world trade-offs.',
     intro:
       'Software architecture is the set of decisions that are hardest to reverse. This path teaches learners to think architecturally: understanding quality attributes, evaluating trade-offs, applying the right design patterns for the right problems, and choosing architectural styles that serve long-term product goals. By the end, learners will be equipped not just to follow existing architectures but to reason about, communicate, and evolve them with confidence.',

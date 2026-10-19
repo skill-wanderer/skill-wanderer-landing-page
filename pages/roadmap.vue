@@ -3,12 +3,12 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1 class="hero-title">Guild Roadmap</h1>
-        <p class="hero-subtitle">Building the Future of Skill-Wanderer, One Module at a Time</p>
+        <h1 class="hero-title">Our Roadmap</h1>
+        <p class="hero-subtitle">Three phases toward a social enterprise that keeps itself going</p>
         <p class="hero-description">
-          Our roadmap outlines the key modules we're developing to power a truly independent,
-          community-driven guild. Every module is built with passion, transparency,
-          and our guild members' needs at heart.
+          We're building Skill-Wanderer in a deliberate order. First, serve enough clients with small budgets to make
+          free education sustainable. Then build our own learning platform and grow our network of learners. Then
+          make a community where members help each other grow.
         </p>
         <ImageSlot name="roadmap/hero" class="hero-image" priority />
       </div>
@@ -18,256 +18,180 @@
     <section class="roadmap-timeline">
       <div class="container">
         <div class="section-header">
-          <h2>Core Guild Modules</h2>
-          <p>The foundational pillars that will power the Skill-Wanderer guild ecosystem</p>
+          <h2>Three Phases</h2>
+          <p>Each phase stands on the one before it. Here's where we are today.</p>
         </div>
 
-        <div class="timeline">
-          <!-- Phase 1: Custom LMS -->
-          <div class="timeline-item" :class="{ visible: visibleItems.has('lms') }" ref="lmsRef">
-            <div class="timeline-marker">
+        <ol class="timeline">
+          <!-- Phase 1: the engine that makes free education sustainable -->
+          <li class="timeline-item" :class="{ visible: visibleItems.has('clients') }" data-timeline-id="clients">
+            <div class="timeline-marker" aria-hidden="true">
               <span class="phase-number">1</span>
             </div>
-            <div class="timeline-card">
-              <div class="card-header">
-                <span class="card-icon">📚</span>
-                <div class="card-status status-active">
-                  <span class="status-dot"></span>
-                  In Progress
+            <article class="timeline-card">
+              <div class="card-main">
+                <div class="card-header">
+                  <span class="card-icon" aria-hidden="true">🤝</span>
+                  <div class="card-status status-active">
+                    <span class="status-dot"></span>
+                    In Progress
+                  </div>
                 </div>
+                <p class="card-phase">Phase 1</p>
+                <h3>Serve Enough Clients With Small Budgets</h3>
+                <p class="card-subtitle">To make free education sustainable</p>
+                <p class="card-description">
+                  We help solo founders, freelancers, coaches, writers, small businesses and non-profits get the
+                  websites and AI tools they need at a price they can carry: a free working prototype first, no
+                  development fee, then a <NuxtLink to="/work-with-us/service-model#plans">monthly plan</NuxtLink>,
+                  down to $8 a month plus your own domain for a simple website.
+                </p>
+                <p class="card-description">
+                  Every client we serve well helps twice: their project gets built, and their fees fund free
+                  education. Today client work covers our running costs but not yet our contributors, so this phase
+                  continues until it can carry both.
+                </p>
+                <ul class="card-features">
+                  <li class="feature-tag">Free Working Prototypes</li>
+                  <li class="feature-tag">No Development Fee</li>
+                  <li class="feature-tag">Care &amp; Hosting-Only Plans</li>
+                  <li class="feature-tag">Built With AI, Reviewed by People</li>
+                  <li class="feature-tag">Long-Term Tech Partnership</li>
+                  <li class="feature-tag">Inquiry &amp; Project Tracking</li>
+                </ul>
+                <p class="card-goal">
+                  <strong>Goal:</strong> enough steady client work to cover our running costs and pay contributors
+                  fairly, so free education never depends on donations, grants or luck.
+                </p>
               </div>
-              <h3>Custom LMS Module</h3>
-              <p class="card-subtitle">Replacing Moodle with a Purpose-Built Learning System</p>
-              <p class="card-description">
-                Building a fully customized Learning Management System from the ground up to replace our
-                existing Moodle setup. This new LMS is tailored to embrace our guild philosophy of learning
-                through failure, practical education, and community-driven content, with no limitations
-                imposed by third-party tools.
-              </p>
-              <div class="card-features">
-                <div class="feature-tag">Interactive Learning Paths</div>
-                <div class="feature-tag">Progress Tracking</div>
-                <div class="feature-tag">Practical Assessments</div>
-                <div class="feature-tag">AI-Assisted Content</div>
-                <div class="feature-tag">Certificate Generation</div>
-                <div class="feature-tag">Self-Hosted Infrastructure</div>
-              </div>
-              <div class="card-goal">
-                <strong>Goal:</strong> Full ownership of the learning experience, with no vendor lock-in,
-                no compromises on our principles, and complete freedom to innovate.
-              </div>
-            </div>
-          </div>
+              <ImageSlot name="roadmap/phase-clients" group="roadmapPhases" class="card-image" />
+            </article>
+          </li>
 
-          <!-- Phase 2: Portal & Administration -->
-          <div class="timeline-item" :class="{ visible: visibleItems.has('portal') }" ref="portalRef">
-            <div class="timeline-marker">
+          <!-- Phase 2: our own platform and a wider learner network -->
+          <li class="timeline-item" :class="{ visible: visibleItems.has('platform') }" data-timeline-id="platform">
+            <div class="timeline-marker" aria-hidden="true">
               <span class="phase-number">2</span>
             </div>
-            <div class="timeline-card">
-              <div class="card-header">
-                <span class="card-icon">🏠</span>
-                <div class="card-status status-planned">
-                  <span class="status-dot"></span>
-                  Planned
+            <article class="timeline-card">
+              <div class="card-main">
+                <div class="card-header">
+                  <span class="card-icon" aria-hidden="true">📚</span>
+                  <div class="card-status status-next">
+                    <span class="status-dot"></span>
+                    Up Next
+                  </div>
                 </div>
+                <p class="card-phase">Phase 2</p>
+                <h3>Develop the Platform and Expand the Learner Network</h3>
+                <p class="card-subtitle">To reach many more self-learners</p>
+                <p class="card-description">
+                  With a steady engine underneath, we build out our own learning platform to replace our Moodle setup,
+                  so we fully own the learning experience. Our featured path,
+                  <NuxtLink to="/learning-path/learning-in-the-ai-era">Learning in the AI Era</NuxtLink>, is already
+                  in development, and our other paths reopen once their content is revised.
+                </p>
+                <p class="card-description">
+                  Then we reach many more self-learners, and open more ways for them to grow into contributors on real
+                  projects.
+                </p>
+                <ul class="card-features">
+                  <li class="feature-tag">Our Own Learning Platform</li>
+                  <li class="feature-tag">Member Portal &amp; Dashboards</li>
+                  <li class="feature-tag">Progress Tracking</li>
+                  <li class="feature-tag">Learning in the AI Era</li>
+                  <li class="feature-tag">Revised Paths Reopening</li>
+                  <li class="feature-tag">Wider Learner Network</li>
+                  <li class="feature-tag">Privacy-First Analytics</li>
+                </ul>
+                <p class="card-goal">
+                  <strong>Goal:</strong> a platform we fully own, with no vendor lock-in, and a growing network of
+                  self-learners who learn for free and grow into contributors.
+                </p>
               </div>
-              <h3>Portal & Administration Module</h3>
-              <p class="card-subtitle">A Home for Every Member</p>
-              <p class="card-description">
-                A comprehensive member portal and administration system that gives guild members, mentors,
-                and administrators a personalized dashboard to manage their journey. From enrollment and
-                profile management to progress analytics and role-based access, everything in one place.
-              </p>
-              <div class="card-features">
-                <div class="feature-tag">Member Dashboards</div>
-                <div class="feature-tag">Role-Based Access</div>
-                <div class="feature-tag">Profile Management</div>
-                <div class="feature-tag">Enrollment System</div>
-                <div class="feature-tag">Progress Analytics</div>
-                <div class="feature-tag">Admin Panel</div>
-              </div>
-              <div class="card-goal">
-                <strong>Goal:</strong> Empower guild members to own their learning journey with a clean,
-                intuitive portal that respects their privacy and autonomy.
-              </div>
-            </div>
-          </div>
+              <ImageSlot name="roadmap/phase-platform" group="roadmapPhases" class="card-image" />
+            </article>
+          </li>
 
-          <!-- Phase 3: Chat & Communication -->
-          <div class="timeline-item" :class="{ visible: visibleItems.has('chat') }" ref="chatRef">
-            <div class="timeline-marker">
+          <!-- Phase 3: a community where members help members -->
+          <li class="timeline-item" :class="{ visible: visibleItems.has('community') }" data-timeline-id="community">
+            <div class="timeline-marker" aria-hidden="true">
               <span class="phase-number">3</span>
             </div>
-            <div class="timeline-card">
-              <div class="card-header">
-                <span class="card-icon">💬</span>
-                <div class="card-status status-planned">
-                  <span class="status-dot"></span>
-                  Planned
+            <article class="timeline-card">
+              <div class="card-main">
+                <div class="card-header">
+                  <span class="card-icon" aria-hidden="true">🌱</span>
+                  <div class="card-status status-planned">
+                    <span class="status-dot"></span>
+                    Planned
+                  </div>
                 </div>
+                <p class="card-phase">Phase 3</p>
+                <h3>Make a Community</h3>
+                <p class="card-subtitle">Where members help members</p>
+                <p class="card-description">
+                  The last phase is the one that lasts longest: a community where learners, contributors, mentors and
+                  clients help each other. Discussions and chat, study groups, peer reviews and project showcases, all
+                  on our own platform, so the culture of guild over competition can truly come alive.
+                </p>
+                <ul class="card-features">
+                  <li class="feature-tag">Discussion &amp; Chat</li>
+                  <li class="feature-tag">Study Groups</li>
+                  <li class="feature-tag">Peer Reviews</li>
+                  <li class="feature-tag">Member Mentoring</li>
+                  <li class="feature-tag">Project Showcases</li>
+                  <li class="feature-tag">Events &amp; Meetups</li>
+                </ul>
+                <p class="card-goal">
+                  <strong>Goal:</strong> a self-sustaining community where today's apprentices become tomorrow's
+                  masters, and nobody with limited resources has to grow alone.
+                </p>
               </div>
-              <h3>Chat & Communication Module</h3>
-              <p class="card-subtitle">Real-Time Connection for Guild Members & Mentors</p>
-              <p class="card-description">
-                A built-in chat and communication system to enable real-time conversations between
-                guild members, mentors, and the community. Direct messages, group channels, study rooms,
-                and mentor Q&A sessions, all integrated seamlessly into the guild without relying
-                on external tools.
-              </p>
-              <div class="card-features">
-                <div class="feature-tag">Direct Messaging</div>
-                <div class="feature-tag">Group Channels</div>
-                <div class="feature-tag">Study Rooms</div>
-                <div class="feature-tag">Mentor Q&A Sessions</div>
-                <div class="feature-tag">Notifications</div>
-                <div class="feature-tag">File Sharing</div>
-              </div>
-              <div class="card-goal">
-                <strong>Goal:</strong> Foster meaningful, instant communication that strengthens the
-                bonds between guild members and mentors, keeping everything within our ecosystem.
-              </div>
-            </div>
-          </div>
-
-          <!-- Phase 4: Community Module -->
-          <div class="timeline-item" :class="{ visible: visibleItems.has('community') }" ref="communityRef">
-            <div class="timeline-marker">
-              <span class="phase-number">4</span>
-            </div>
-            <div class="timeline-card">
-              <div class="card-header">
-                <span class="card-icon">🤝</span>
-                <div class="card-status status-planned">
-                  <span class="status-dot"></span>
-                  Planned
-                </div>
-              </div>
-              <h3>Community Module</h3>
-              <p class="card-subtitle">Members Helping Members</p>
-              <p class="card-description">
-                A vibrant guild space where members help each other grow. Discussion forums,
-                knowledge sharing, peer code reviews, project showcases, and collaborative learning
-                challenges. This is where the culture of "guild over competition" truly comes alive.
-              </p>
-              <div class="card-features">
-                <div class="feature-tag">Discussion Forums</div>
-                <div class="feature-tag">Peer Code Reviews</div>
-                <div class="feature-tag">Project Showcases</div>
-                <div class="feature-tag">Knowledge Sharing</div>
-                <div class="feature-tag">Learning Challenges</div>
-                <div class="feature-tag">Reputation System</div>
-              </div>
-              <div class="card-goal">
-                <strong>Goal:</strong> Build a self-sustaining guild where today's apprentices become
-                tomorrow's masters, embodying the karma of shared growth.
-              </div>
-            </div>
-          </div>
-        </div>
+              <ImageSlot name="roadmap/phase-community" group="roadmapPhases" class="card-image" />
+            </article>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- Supporting Modules Section -->
-    <section class="supporting-modules">
+    <!-- Why the phases come in this order -->
+    <section class="order-section">
       <div class="container">
         <div class="section-header">
-          <h2>Supporting & Growth Modules</h2>
-          <p>Additional modules we're developing alongside the core guild infrastructure to support operations, partnerships, and sustainability</p>
+          <h2>Why This Order</h2>
+          <p>A mission that rests on luck or goodwill can stop at any time, so we build the engine first.</p>
         </div>
 
-        <div class="modules-grid">
-          <div class="module-card">
-            <span class="module-icon">✉️</span>
-            <h3>Contact & Outreach</h3>
+        <div class="order-grid">
+          <article class="order-card">
+            <span class="order-icon" aria-hidden="true">⚙️</span>
+            <h3>The engine comes first</h3>
             <p>
-              A dedicated contact and outreach module to streamline communication with potential
-              partners, guild members, and supporters, making it easy for anyone to reach out and
-              engage with Skill-Wanderer.
+              Serving clients with small budgets is how the mission pays its own way. Until that's steady, everything
+              else would rest on factors outside our control.
             </p>
-            <div class="module-tags">
-              <span class="tag">Contact Forms</span>
-              <span class="tag">Inquiry Management</span>
-              <span class="tag">Auto-Responses</span>
-            </div>
-          </div>
-
-          <div class="module-card">
-            <span class="module-icon">📋</span>
-            <h3>Project Management</h3>
+          </article>
+          <article class="order-card">
+            <span class="order-icon" aria-hidden="true">📚</span>
+            <h3>Then reach</h3>
             <p>
-              An internal project management tool to coordinate guild development, track feature
-              progress, manage tasks across contributors, and maintain transparency about what
-              we're building and when.
+              Our own platform lets us teach many more learners at a cost we control, and a wider network brings more
+              of them in.
             </p>
-            <div class="module-tags">
-              <span class="tag">Task Boards</span>
-              <span class="tag">Sprint Planning</span>
-              <span class="tag">Contributor Tracking</span>
-            </div>
-          </div>
-
-          <div class="module-card">
-            <span class="module-icon">💰</span>
-            <h3>Sustainability &amp; Community Funding</h3>
+          </article>
+          <article class="order-card">
+            <span class="order-icon" aria-hidden="true">🌱</span>
+            <h3>Then a community to multiply it</h3>
             <p>
-              Client work funds the mission, but it only covers our running costs, not our contributors.
-              We still chose it over donations, because real projects keep us practical. This module adds
-              grant tools to help pay contributors and keep the mission sustainable, plus our Social Impact
-              Token model.
-              <NuxtLink to="/help-the-mission">Here's how you can help today.</NuxtLink>
+              With a solid base underneath, members helping members makes everything go further, for longer.
             </p>
-            <div class="module-tags">
-              <span class="tag">Grant Management</span>
-              <span class="tag">Impact Tokens</span>
-            </div>
-          </div>
-
-          <div class="module-card">
-            <span class="module-icon">📊</span>
-            <h3>Analytics & Insights</h3>
-            <p>
-              A privacy-respecting analytics module to understand learning patterns, measure
-              guild impact, and make data-driven decisions, all without compromising
-              member privacy or selling data.
-            </p>
-            <div class="module-tags">
-              <span class="tag">Learning Analytics</span>
-              <span class="tag">Impact Metrics</span>
-              <span class="tag">Privacy-First</span>
-            </div>
-          </div>
-
-          <div class="module-card">
-            <span class="module-icon">🔌</span>
-            <h3>Integration & API</h3>
-            <p>
-              Open APIs and integration points that allow the guild modules to work together
-              seamlessly and enable third-party tools to connect where needed, built on our
-              microservices architecture.
-            </p>
-            <div class="module-tags">
-              <span class="tag">REST APIs</span>
-              <span class="tag">Microservices</span>
-              <span class="tag">Webhooks</span>
-            </div>
-          </div>
-
-          <div class="module-card">
-            <span class="module-icon">🛡️</span>
-            <h3>Security & Compliance</h3>
-            <p>
-              Ensuring the guild meets the highest standards of security and data protection.
-              From authentication and authorization to GDPR compliance, protecting our
-              community's trust is non-negotiable.
-            </p>
-            <div class="module-tags">
-              <span class="tag">Authentication</span>
-              <span class="tag">Data Protection</span>
-              <span class="tag">GDPR Compliance</span>
-            </div>
-          </div>
+          </article>
         </div>
+
+        <p class="order-link">
+          <NuxtLink to="/social-enterprise">Read why we chose social enterprise over charity →</NuxtLink>
+        </p>
       </div>
     </section>
 
@@ -277,23 +201,22 @@
         <div class="banner-content">
           <h2>Built in the Open, Driven by Purpose</h2>
           <p>
-            Every module on this roadmap is developed with the same principles that define our guild:
-            <strong>transparency, integrity, and community-first thinking</strong>. We don't just build software;
-            we build trust. This roadmap is a living document that evolves with our guild members' needs and the
-            community's input.
+            This roadmap follows the same principles as everything we do:
+            <strong>transparency, integrity, and community-first thinking</strong>. It's a living document, and it
+            changes as we learn from our clients, our learners and the community.
           </p>
           <div class="banner-stats">
             <div class="stat">
-              <span class="stat-number">4</span>
-              <span class="stat-label">Core Modules</span>
+              <span class="stat-number">3</span>
+              <span class="stat-label">Phases</span>
             </div>
             <div class="stat">
-              <span class="stat-number">6+</span>
-              <span class="stat-label">Supporting Modules</span>
+              <span class="stat-number">1</span>
+              <span class="stat-label">Path in Development</span>
             </div>
             <div class="stat">
               <span class="stat-number">100%</span>
-              <span class="stat-label">Open & Transparent</span>
+              <span class="stat-label">Net Revenue Reinvested</span>
             </div>
           </div>
         </div>
@@ -303,14 +226,17 @@
     <!-- CTA Section -->
     <section class="cta">
       <h2>Want to Be Part of the Journey?</h2>
-      <p>Whether you're a learner, contributor, or supporter, there's a place for you in the Skill-Wanderer guild</p>
+      <p>
+        Phase 1 is where help counts most right now: bring us a project, or tell a small business about us. Learners
+        are welcome at every phase.
+      </p>
       <div class="cta-buttons">
-        <NuxtLink to="/contact?tab=join" class="btn btn-primary">
-          Get In Touch
+        <NuxtLink to="/contact" class="btn btn-primary">
+          Tell Us About Your Idea
           <span>→</span>
         </NuxtLink>
-        <NuxtLink to="/work-with-us" class="btn btn-secondary">
-          Work With Us
+        <NuxtLink to="/learning-path" class="btn btn-secondary">
+          Start Learning for Free
         </NuxtLink>
       </div>
     </section>
@@ -318,26 +244,21 @@
 </template>
 
 <script setup lang="ts">
-// Icons replaced with emojis
-import { onMounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 
 // SEO and meta management
 useSEO({
-  title: 'Guild Roadmap | Skill-Wanderer Development Plan',
-  description: 'Explore the Skill-Wanderer guild roadmap, from our custom LMS and member portal to community tools and sustainability. See what we\'re building and how you can be part of the guild.',
-  keywords: ['skill-wanderer roadmap', 'guild development', 'LMS module', 'community module', 'free education roadmap', 'open source education'],
+  title: 'Roadmap: Three Phases to a Lasting Mission | Skill-Wanderer',
+  description: 'Our roadmap in three phases: serve enough clients with small budgets to make free education sustainable, build our learning platform, then grow a community.',
+  keywords: ['skill-wanderer roadmap', 'social enterprise roadmap', 'affordable tech for small business', 'learning platform', 'learner network', 'learning community', 'free education roadmap'],
   type: 'website',
 })
 
 const visibleItems = ref(new Set<string>())
+let observer: IntersectionObserver | null = null
 
 onMounted(() => {
-  const observerOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -80px 0px'
-  }
-
-  const observer = new IntersectionObserver((entries) => {
+  observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const id = (entry.target as HTMLElement).dataset.timelineId
@@ -346,32 +267,16 @@ onMounted(() => {
         }
       }
     })
-  }, observerOptions)
-
-  // Observe timeline items
-  document.querySelectorAll('.timeline-item').forEach((item, index) => {
-    const ids = ['lms', 'portal', 'chat', 'community']
-    ;(item as HTMLElement).dataset.timelineId = ids[index]
-    observer.observe(item)
+  }, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -80px 0px'
   })
 
-  // Observe module cards for fade-in
-  const cardObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        (entry.target as HTMLElement).classList.add('visible')
-      }
-    })
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' })
+  document.querySelectorAll('.timeline-item').forEach(item => observer?.observe(item))
+})
 
-  document.querySelectorAll('.module-card').forEach(card => {
-    cardObserver.observe(card)
-  })
-
-  return () => {
-    observer.disconnect()
-    cardObserver.disconnect()
-  }
+onUnmounted(() => {
+  observer?.disconnect()
 })
 </script>
 
@@ -448,6 +353,8 @@ onMounted(() => {
 /* ========== Timeline ========== */
 .timeline {
   position: relative;
+  list-style: none;
+  margin: 0;
   padding: 20px 0;
 }
 
@@ -469,6 +376,10 @@ onMounted(() => {
   opacity: 0;
   transform: translateX(-30px);
   transition: all 0.6s ease;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
 }
 
 .timeline-item.visible {
@@ -497,7 +408,12 @@ onMounted(() => {
   font-size: 1.1rem;
 }
 
+/* Text on the left and the phase image on the right; the image stacks on top on small screens. */
 .timeline-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 340px);
+  gap: 32px;
+  align-items: start;
   background: var(--card-bg);
   border: 1px solid rgba(255, 107, 53, 0.15);
   border-radius: 16px;
@@ -505,10 +421,19 @@ onMounted(() => {
   transition: all 0.3s ease;
 }
 
+/* Until the phase images exist (production skips the group until all three do), the text takes the whole card. */
+.timeline-card:not(:has(.card-image)) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .timeline-card:hover {
   background: var(--card-hover);
   border-color: rgba(255, 107, 53, 0.3);
   transform: translateY(-3px);
+}
+
+.card-image {
+  border-radius: 14px;
 }
 
 .card-header {
@@ -550,6 +475,16 @@ onMounted(() => {
   animation: pulse-dot 2s infinite;
 }
 
+.status-next {
+  background: rgba(255, 107, 53, 0.12);
+  color: #ff8757;
+  border: 1px solid rgba(255, 107, 53, 0.35);
+}
+
+.status-next .status-dot {
+  background: #ff8757;
+}
+
 .status-planned {
   background: rgba(255, 193, 7, 0.12);
   color: #FFD93D;
@@ -563,6 +498,15 @@ onMounted(() => {
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.4; }
+}
+
+.card-phase {
+  margin: 0 0 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-yellow);
 }
 
 .timeline-card h3 {
@@ -582,15 +526,22 @@ onMounted(() => {
 .card-description {
   line-height: 1.8;
   opacity: 0.85;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 0.98rem;
 }
 
+.card-description a {
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
 .card-features {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 4px 0 20px;
 }
 
 .feature-tag {
@@ -604,6 +555,7 @@ onMounted(() => {
 }
 
 .card-goal {
+  margin: 0;
   background: rgba(255, 255, 255, 0.03);
   border-left: 3px solid var(--primary-orange);
   padding: 12px 18px;
@@ -617,71 +569,64 @@ onMounted(() => {
   color: var(--primary-orange);
 }
 
-/* ========== Supporting Modules Section ========== */
-.supporting-modules {
+/* ========== Why This Order ========== */
+.order-section {
   padding: 80px 20px;
   background: radial-gradient(ellipse at 50% 0%, rgba(255, 107, 53, 0.06) 0%, transparent 60%);
 }
 
-.modules-grid {
+.order-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 30px;
 }
 
-.module-card {
+.order-card {
   background: var(--card-bg);
   border: 1px solid rgba(255, 107, 53, 0.12);
   border-radius: 16px;
   padding: 30px;
   transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(20px);
 }
 
-.module-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.module-card:hover {
+.order-card:hover {
   background: var(--card-hover);
   transform: translateY(-5px);
   border-color: rgba(255, 107, 53, 0.3);
 }
 
-.module-icon {
+.order-icon {
   font-size: 2.2rem;
   display: block;
   margin-bottom: 15px;
 }
 
-.module-card h3 {
+.order-card h3 {
   color: var(--primary-orange);
   font-size: 1.2rem;
   margin-bottom: 12px;
 }
 
-.module-card p {
+.order-card p {
   opacity: 0.85;
   line-height: 1.7;
   font-size: 0.95rem;
-  margin-bottom: 18px;
+  margin: 0;
 }
 
-.module-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.order-link {
+  text-align: center;
+  margin: 40px 0 0;
 }
 
-.tag {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 4px 12px;
-  border-radius: 50px;
-  font-size: 0.78rem;
-  opacity: 0.7;
+.order-link a {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.order-link a:hover {
+  text-decoration: underline;
 }
 
 /* ========== Vision Banner ========== */
@@ -819,6 +764,25 @@ onMounted(() => {
 }
 
 /* ========== Responsive ========== */
+@media (max-width: 1024px) {
+  .timeline-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card-image {
+    order: -1;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 900px) {
+  .order-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 120px 20px 60px;
@@ -847,10 +811,6 @@ onMounted(() => {
     font-size: 1.3rem;
   }
 
-  .modules-grid {
-    grid-template-columns: 1fr;
-  }
-
   .banner-content {
     padding: 35px 25px;
   }
@@ -874,10 +834,6 @@ onMounted(() => {
 @media (max-width: 480px) {
   .hero {
     padding: 110px 16px 40px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
   }
 
   .timeline::before {
@@ -917,6 +873,7 @@ onMounted(() => {
   .cta-buttons .btn {
     width: 100%;
     max-width: 300px;
+    justify-content: center;
   }
 }
 </style>

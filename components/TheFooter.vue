@@ -1,8 +1,9 @@
 <template>
   <footer>    <div class="footer-content">
       <p class="footer-one-liner">
-        Free, practical education for everyone who keeps learning. It's funded by our work as a tech partner for
-        solo founders and small businesses: a free working prototype first, no development fee and no lock-in.
+        A social enterprise in the making. We build affordable websites and AI tools for small budgets: a free
+        working prototype first, no development fee and no lock-in. That work keeps practical education free for
+        everyone who keeps learning.
       </p>
       <p class="footer-email">
         Email the Guild Master: <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>
@@ -17,7 +18,9 @@
         <NuxtLink to="/work-with-us/service-model">How It Works</NuxtLink>
         <NuxtLink to="/work-with-us/our-projects">Client Projects</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/social-enterprise">Our Social Enterprise</NuxtLink>
         <NuxtLink to="/principles">12 Principles</NuxtLink>
+        <NuxtLink to="/roadmap">Roadmap</NuxtLink>
         <NuxtLink to="/help-the-mission">Help the Mission</NuxtLink>
         <a href="https://linkedin.com/company/skill-wanderer" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
         <NuxtLink to="/contact">Contact</NuxtLink>

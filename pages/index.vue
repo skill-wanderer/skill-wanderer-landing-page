@@ -1,21 +1,21 @@
 <template>
   <div>
-    <!-- Hero: the mission first, then one door for each of our two heroes -->
+    <!-- Hero: the social enterprise mission, then an equal door for each of our two heroes -->
     <section class="hero">
       <div class="hero-content">
-        <p class="hero-eyebrow">A learning guild, funded by real work</p>
-        <h1>Free, practical education for everyone who keeps learning.</h1>
+        <p class="hero-eyebrow">A social enterprise in the making</p>
+        <h1>Limited resources shouldn't limit what you can learn or build.</h1>
         <p class="hero-description">
-          Courses, honest guidance and real project experience for self-learners and lifelong learners.
-          Small businesses fund it all by hiring us as their tech partner, and that real work keeps the
-          mission sustainable and everything we teach practical.
+          We use entrepreneurship and today's technology, especially AI, to help people who are short on resources.
+          Small businesses get the websites and AI tools they need on a small budget, and their fees keep practical
+          education free for self-learners. Every project helps twice.
         </p>
         <div class="hero-doors">
           <div class="hero-door">
             <p class="door-label"><span aria-hidden="true">📚</span> Here to learn</p>
             <p class="door-text">
-              Free courses and guidance, then real experience when you're ready. No tuition, ever. We only ask
-              for your effort.
+              Free courses, honest guidance and real experience, starting with how to learn in the AI era. No
+              tuition, ever. We only ask for your effort.
             </p>
             <NuxtLink to="/learning-path" class="btn btn-primary">
               Start Learning for Free <span>→</span>
@@ -25,7 +25,8 @@
           <div class="hero-door">
             <p class="door-label"><span aria-hidden="true">💡</span> Have an idea to build</p>
             <p class="door-text">
-              A free working prototype first, then no development fee. Your project funds free education.
+              A free working prototype first, then no development fee and prices built for small budgets. Your
+              project also funds free education.
             </p>
             <NuxtLink to="/contact" class="btn btn-primary">
               Tell Us About Your Idea <span>→</span>
@@ -38,6 +39,66 @@
       <svg class="wandering-path" viewBox="0 0 1200 200">
         <path class="path" d="M0,150 Q300,100 600,130 T1200,100" />
       </svg>
+    </section>
+
+    <!-- The social enterprise: both heroes are short on resources, and serving one keeps the other going -->
+    <section class="mission-band">
+      <div class="mission-band-content">
+        <p class="guide-eyebrow">Our social enterprise</p>
+        <h2>One mission, two ways to make an impact</h2>
+        <p class="mission-lead">
+          Some people can't afford the education they need. Others can't afford the tech their idea needs. Many face
+          both. We serve both, with a model that pays its own way instead of waiting on donations.
+        </p>
+        <div class="mission-why">
+          <div class="mission-why-card">
+            <h3><span aria-hidden="true">🛠️</span> Affordable tech for small budgets</h3>
+            <p>
+              Solo founders, coaches, writers, small businesses and non-profits get websites and AI tools they can
+              afford: a free prototype first, no development fee, and simple websites from $8 a month, plus your own
+              domain.
+            </p>
+          </div>
+          <div class="mission-why-card">
+            <h3><span aria-hidden="true">📚</span> Free education for self-learners</h3>
+            <p>
+              Courses, guidance and real project experience at no cost, for everyone who keeps learning, starting with
+              the mindset and the ways of learning you need in the AI era.
+            </p>
+          </div>
+        </div>
+        <ImageSlot name="home/mission-loop" class="mission-image" />
+        <ol class="mission-loop" aria-label="How the two sides keep each other going">
+          <li><span>Small businesses get affordable tech</span></li>
+          <li><span>Their fees fund free education</span></li>
+          <li><span>Learners grow into contributors</span></li>
+          <li><span>Contributors help build the next project</span></li>
+        </ol>
+        <p class="mission-loop-again">
+          <span aria-hidden="true">↻</span> Every project helps a small budget and funds the next learner, and every
+          learner who grows helps build the next project.
+        </p>
+        <ul class="principle-chips">
+          <li>Prices built for small budgets</li>
+          <li>No ads or hidden agendas</li>
+          <li>All net revenue reinvested</li>
+          <li>Free learning for everyone</li>
+        </ul>
+        <p class="mission-note">
+          Client work covers our running costs today, but not yet the people who give their time to the mission. We
+          still don't take donations, by design, so the first phase of our
+          <NuxtLink to="/roadmap">roadmap</NuxtLink> is serving enough clients with small budgets to make free
+          education sustainable.
+        </p>
+        <div class="mission-links">
+          <NuxtLink to="/social-enterprise" class="btn btn-outline">
+            Why a Social Enterprise <span>→</span>
+          </NuxtLink>
+          <NuxtLink to="/help-the-mission" class="btn btn-outline">
+            Help the Mission <span>→</span>
+          </NuxtLink>
+        </div>
+      </div>
     </section>
 
     <!-- ── Hero 1: the learner ─────────────────────────────── -->
@@ -152,7 +213,9 @@
           <span class="plan-number">1</span>
           <h3>Learn with free courses</h3>
           <p>
-            Take our courses in the
+            Start with our
+            <NuxtLink to="/learning-path/learning-in-the-ai-era">Learning in the AI Era</NuxtLink>
+            path, take courses in the
             <a href="https://dojo.skill-wanderer.com/paths" target="_blank" rel="noopener noreferrer">Dojo</a>
             and read the
             <a href="https://wanderings.skill-wanderer.com" target="_blank" rel="noopener noreferrer">Wanderings blog</a>
@@ -244,68 +307,18 @@
       </div>
     </section>
 
-    <!-- The mission: client work keeps learning free (sustainable) and grounded in real work (practical) -->
-    <section class="mission-band">
-      <div class="mission-band-content">
-        <p class="guide-eyebrow">How it stays free</p>
-        <h2>Client work funds the mission</h2>
-        <p class="mission-lead">
-          Free education still costs money to run: servers, tools and people's time. We don't charge tuition,
-          show ads or take affiliate commissions. Instead, we build websites and AI tools for small businesses
-          as their tech partner, and that work pays for the mission.
-        </p>
-        <ImageSlot name="home/mission-loop" class="mission-image" />
-        <div class="mission-why">
-          <div class="mission-why-card">
-            <h3><span aria-hidden="true">🌱</span> It keeps the mission sustainable</h3>
-            <p>Client fees cover our running costs, so learning can stay free for everyone who wants it.</p>
-          </div>
-          <div class="mission-why-card">
-            <h3><span aria-hidden="true">🛠️</span> It keeps the learning practical</h3>
-            <p>What we teach comes from projects we really build, and contributors gain real experience on them, under review.</p>
-          </div>
-        </div>
-        <ol class="mission-loop" aria-label="How the mission keeps itself going">
-          <li><span>Client projects cover the costs</span></li>
-          <li><span>Learning stays free for everyone</span></li>
-          <li><span>Learners grow into contributors</span></li>
-          <li><span>Contributors help on client projects</span></li>
-        </ol>
-        <p class="mission-loop-again">
-          <span aria-hidden="true">↻</span> Every project funds the next learner, and every learner who grows helps
-          build the next project.
-        </p>
-        <ul class="principle-chips">
-          <li>No ads or hidden agendas</li>
-          <li>All net revenue reinvested</li>
-          <li>Free learning for everyone</li>
-        </ul>
-        <p class="mission-note">
-          Client work covers our running costs today, but not yet the people who give their time to the mission.
-          If you believe in free education, you can help.
-        </p>
-        <div class="mission-links">
-          <NuxtLink to="/help-the-mission" class="btn btn-outline">
-            Help the Mission <span>→</span>
-          </NuxtLink>
-          <NuxtLink to="/principles" class="btn btn-outline">
-            Our 12 Principles <span>→</span>
-          </NuxtLink>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Hero 2: the client, whose project funds the mission ── -->
+    <!-- ── Hero 2: the client with a small budget, whose project also funds free education ── -->
 
     <!-- Client: who they are and the problem they face -->
     <section id="clients" class="track section--dark">
       <div class="track-intro">
         <div class="track-intro-text">
           <p class="track-label">For solo founders, freelancers, coaches, consultants, writers &amp; small businesses</p>
-          <h2>See your idea working before you commit.</h2>
+          <h2>Big idea, small budget? See it working before you commit.</h2>
           <p>
             We build a free working prototype of your website or AI tool. If you like it, we launch it with
-            no development fee and stay on as your tech partner. If not, you walk away and owe nothing.
+            no development fee, on a monthly plan you can carry, and stay on as your tech partner. If not, you
+            walk away and owe nothing.
           </p>
           <div class="track-cta">
             <NuxtLink to="/contact" class="btn btn-primary">
@@ -326,7 +339,7 @@
 
       <div class="problem-header">
         <h3>Sound familiar?</h3>
-        <p>Good ideas shouldn't stay invisible just because the tech is hard.</p>
+        <p>Good ideas shouldn't stay invisible just because the budget is small or the tech is hard.</p>
       </div>
       <div class="problem-grid">
         <div class="problem-card">
@@ -417,6 +430,11 @@
         <NuxtLink to="/work-with-us/projects/broad-strokes-studio">Jack</NuxtLink> and
         <NuxtLink to="/work-with-us/projects/the-meek-method">Aimee</NuxtLink>
         work with us on exactly this model.
+      </p>
+      <p class="plan-lite">
+        Only need a simple website? Our
+        <NuxtLink to="/work-with-us/service-model#plans">Hosting-Only Plan</NuxtLink>
+        is $8 a month, plus your own domain.
       </p>
       <div class="plan-cta">
         <NuxtLink to="/work-with-us/service-model" class="btn btn-outline">
@@ -552,7 +570,7 @@
     <!-- Final CTA: one door for each hero -->
     <section class="final-cta section--darker">
       <h2>Start where you are</h2>
-      <p class="final-cta-lead">Whether you're here to learn or to build, you're part of the same mission.</p>
+      <p class="final-cta-lead">Whether you're here to learn, to build, or both, you're part of the same mission.</p>
       <div class="final-doors">
         <div class="final-door">
           <h3>Here to learn?</h3>
@@ -642,15 +660,17 @@ const clientTestimonials = [
 
 // SEO and meta management
 useSEO({
-  title: 'Skill-Wanderer | Free Education, Funded by Real Work',
-  description: 'Free courses, guidance and real project experience for self-learners, funded by our tech partner work for small businesses. No tuition, ads or affiliate links.',
+  title: 'Skill-Wanderer | Learn for Free, Build on a Small Budget',
+  description: 'Affordable websites and AI tools for small budgets, and free, practical education for self-learners. A social enterprise where client work funds learning.',
   keywords: [
+    'social enterprise',
+    'affordable website for small business',
+    'tech partner for small business',
     'free education',
     'free mentorship',
     'self-learners',
-    'lifelong learning',
+    'learning in the AI era',
     'learn by contributing',
-    'tech partner for small business',
     'website for coaches',
     'website for consultants',
     'free prototype',
@@ -664,7 +684,15 @@ useSEO({
     createFAQSchema([
       {
         question: 'What does Skill-Wanderer do?',
-        answer: 'Skill-Wanderer is a free education mission. We give self-learners and lifelong learners free courses, guidance and real project experience. It is funded by our work as a tech partner for solo founders, freelancers, coaches, consultants, writers and small businesses: we build websites and AI tools, starting with a free working prototype. If a client continues, there is no development fee; they pay a monthly or quarterly fee for hosting, maintenance, support and occasional changes.'
+        answer: 'Skill-Wanderer is a social enterprise in the making that helps people with limited resources. We build websites and AI tools for solo founders, freelancers, coaches, consultants, writers and small businesses on small budgets, starting with a free working prototype and no development fee. The monthly fees from that work fund free courses, guidance and real project experience for self-learners and lifelong learners.'
+      },
+      {
+        question: 'Why a social enterprise and not a charity?',
+        answer: 'Because help that depends on donations or grants can stop for reasons beyond anyone\'s control. Skill-Wanderer earns its way by serving clients with small budgets and reinvests all net revenue into free education, so the help keeps going as long as we serve our clients well. We do not accept donations.'
+      },
+      {
+        question: 'Is there an option for a very small budget?',
+        answer: 'Yes. For a small, simple website, the Hosting-Only Plan costs 8 USD a month plus your own domain, with no development fee. Bigger projects use the Care Plan, priced after you have reviewed a free working prototype.'
       },
       {
         question: 'Is the learning really free?',
@@ -676,7 +704,7 @@ useSEO({
       },
       {
         question: 'Do I pay anything before I see my project?',
-        answer: 'No. For accepted projects the first working prototype is free, and there is no obligation to continue. The monthly price is confirmed only after you have reviewed the prototype.'
+        answer: 'No. For accepted projects the first working prototype is free, and there is no obligation to continue. On the Care Plan, the monthly price is confirmed only after you have reviewed the prototype.'
       },
       {
         question: 'Can I leave later?',
@@ -1345,6 +1373,24 @@ onUnmounted(() => {
   text-decoration: underline;
 }
 
+.plan-lite {
+  text-align: center;
+  max-width: 700px;
+  margin: 14px auto 0;
+  font-size: 0.98rem;
+  opacity: 0.8;
+}
+
+.plan-lite a {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.plan-lite a:hover {
+  text-decoration: underline;
+}
+
 .plan-cta {
   text-align: center;
   margin-top: 28px;
@@ -1591,7 +1637,7 @@ onUnmounted(() => {
   margin-top: 40px;
 }
 
-/* Mission band: how client work funds free education */
+/* Mission band: one mission, two ways to make an impact */
 .mission-band {
   padding: 100px 20px;
   background: linear-gradient(135deg, rgba(255, 107, 53, 0.08) 0%, var(--darker-bg) 60%);
@@ -1722,6 +1768,11 @@ onUnmounted(() => {
   font-size: 1rem;
   line-height: 1.7;
   opacity: 0.8;
+}
+
+.mission-note a {
+  color: var(--primary-orange);
+  font-weight: 600;
 }
 
 .mission-links {

@@ -2,16 +2,27 @@
   <div class="web-path-page">
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">Learning Path Overview</p>
+        <p class="eyebrow">{{ isPlanned ? 'Planned Learning Path' : 'Featured Learning Path' }}</p>
         <h1>{{ overview.title }}</h1>
         <p class="hero-subtitle">{{ overview.description }}</p>
+
+        <p v-if="isPlanned" class="status-notice">
+          <strong>This path is planned, not open yet.</strong> We'll offer it later, once we've revised the outline
+          below, so the details will change. To start now, begin with our featured path,
+          <NuxtLink :to="featuredPath">{{ featuredTitle }}</NuxtLink>.
+        </p>
+        <p v-else class="status-notice status-notice--open">
+          <strong>Open now and in development.</strong> It's free, and we add lessons as we finish them.
+        </p>
+
         <p class="hero-description">{{ overview.intro }}</p>
 
         <div class="hero-actions">
-          <NuxtLink to="/learning-path" class="btn btn-primary">← Back to Topic Hub</NuxtLink>
-          <a href="https://dojo.skill-wanderer.com/paths" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-            Explore Dojo Paths
+          <NuxtLink v-if="isPlanned" :to="featuredPath" class="btn btn-primary">Start With {{ featuredTitle }}</NuxtLink>
+          <a v-else-if="firstLesson" :href="firstLesson.url" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Take the First Lesson
           </a>
+          <NuxtLink to="/learning-path" class="btn btn-secondary">← All Learning Paths</NuxtLink>
         </div>
 
         <ImageSlot :name="`learning-paths/${overview.slug}`" class="hero-image" priority />
@@ -41,9 +52,13 @@
         <div class="section-header">
           <p class="section-label">Path Structure</p>
           <h2>What is inside the {{ overview.title }} path</h2>
-          <p>
-            The path is split into practical stages. Each stage prepares you for the next one, so you do not
-            just memorize concepts, you build real delivery readiness.
+          <p v-if="isPlanned">
+            This is our earlier outline for the path. We're revising it before the path opens, so expect it to
+            change.
+          </p>
+          <p v-else>
+            The path is split into practical stages. Each stage prepares you for the next one, so you don't just
+            collect ideas, you build habits you can use.
           </p>
         </div>
 
@@ -67,9 +82,13 @@
       <div class="section-shell">
         <div class="section-header">
           <p class="section-label">Lecture Plan</p>
-          <h2>Planned lessons</h2>
-          <p>
-            These lessons represent the current direction. Detailed modules will be expanded progressively as the curriculum is finalized.
+          <h2>{{ isPlanned ? 'Planned lessons' : 'Lessons in this path' }}</h2>
+          <p v-if="isPlanned">
+            These were the planned lessons. Any marked available are open on the Dojo today, and the rest will change
+            as we revise the path.
+          </p>
+          <p v-else>
+            The first lesson is open now. We publish the rest one by one, as each is ready.
           </p>
         </div>
 
@@ -95,14 +114,28 @@
       <div class="section-shell">
         <div class="cta-card">
           <p class="section-label">Next Step</p>
-          <h2>More lessons are on the way</h2>
-          <p>
-            This page gives you a clear roadmap. The detailed lessons will be published in phases as we complete each module.
-          </p>
-          <div class="hero-actions">
-            <NuxtLink to="/contact?tab=join" class="btn btn-primary">Ask About This Path</NuxtLink>
-            <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-outline">See Learning Philosophy</NuxtLink>
-          </div>
+          <template v-if="isPlanned">
+            <h2>This path opens later</h2>
+            <p>
+              Until then, the best place to start is {{ featuredTitle }}: the mindset, practical navigation and ways
+              of learning that every other path builds on.
+            </p>
+            <div class="hero-actions">
+              <NuxtLink :to="featuredPath" class="btn btn-primary">Start With {{ featuredTitle }}</NuxtLink>
+              <NuxtLink to="/contact?tab=join" class="btn btn-outline">Ask About This Path</NuxtLink>
+            </div>
+          </template>
+          <template v-else>
+            <h2>More lessons are on the way</h2>
+            <p>
+              We publish each lesson as soon as it's ready. Stuck or unsure where to begin in the meantime? Ask us.
+              Guidance is always free.
+            </p>
+            <div class="hero-actions">
+              <NuxtLink to="/contact?tab=join" class="btn btn-primary">Ask for Guidance</NuxtLink>
+              <NuxtLink to="/learning-path/learn-contribute-build-earn" class="btn btn-outline">See Learning Philosophy</NuxtLink>
+            </div>
+          </template>
         </div>
       </div>
     </section>
@@ -110,11 +143,17 @@
 </template>
 
 <script setup lang="ts">
-import type { ReusablePathOverview } from '~/data/learning-path-overviews'
+import { FEATURED_PATH_SLUG, reusablePathOverviews, type ReusablePathOverview } from '~/data/learning-path-overviews'
 
-defineProps<{
+const props = defineProps<{
   overview: ReusablePathOverview
 }>()
+
+// Planned paths send learners to the one path that is open now.
+const isPlanned = computed(() => props.overview.status === 'planned')
+const featuredPath = `/learning-path/${FEATURED_PATH_SLUG}`
+const featuredTitle = reusablePathOverviews[FEATURED_PATH_SLUG]?.title ?? 'our featured path'
+const firstLesson = computed(() => props.overview.lessons.find(lesson => lesson.status === 'available' && lesson.url))
 </script>
 
 <style scoped>
@@ -181,6 +220,37 @@ h1 {
   justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
+}
+
+/* Planned paths say so up front; the featured path says it is open. */
+.status-notice {
+  max-width: 760px;
+  margin: 22px auto 0;
+  padding: 14px 20px;
+  border: 1px dashed rgba(255, 217, 61, 0.45);
+  border-radius: 14px;
+  background: rgba(255, 217, 61, 0.07);
+  line-height: 1.7;
+  color: rgba(243, 243, 243, 0.92);
+}
+
+.status-notice strong {
+  color: #ffd93d;
+}
+
+.status-notice a {
+  color: #ff8757;
+  font-weight: 600;
+}
+
+.status-notice--open {
+  border-style: solid;
+  border-color: rgba(76, 175, 80, 0.4);
+  background: rgba(76, 175, 80, 0.07);
+}
+
+.status-notice--open strong {
+  color: #81c784;
 }
 
 .hero-image {

@@ -48,7 +48,7 @@
               </span>
               <span class="rich-menu-text">
                 <span class="rich-menu-label">Learning Paths</span>
-                <span class="rich-menu-desc">Pick a craft and grow your skills step by step</span>
+                <span class="rich-menu-desc">Start with Learning in the AI Era</span>
               </span>
             </NuxtLink>
             <NuxtLink to="/learning-path/learn-contribute-build-earn" class="rich-menu-item" @click="closeMobileMenu(); isLearningPathDropdownOpen = false">
@@ -120,7 +120,7 @@
           </div>
         </div>
 
-        <!-- Work With Us Dropdown (the client service that funds the mission) -->
+        <!-- Work With Us Dropdown (affordable tech for small budgets, which also funds free education) -->
         <div class="dropdown" @mouseenter="openPartnershipsDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isPartnershipsDropdownOpen }">
             Work With Us
@@ -211,6 +211,15 @@
                 <span class="rich-menu-desc">Why Skill-Wanderer exists and who leads it</span>
               </span>
             </NuxtLink>
+            <NuxtLink to="/social-enterprise" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-3 8-6.5 8-11a8 8 0 0 0-16 0c0 4.5 4 8 8 11z"/><path d="M12 7v6"/><path d="M9 10l3 3 3-3"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Our Social Enterprise</span>
+                <span class="rich-menu-desc">Why we chose entrepreneurship over charity</span>
+              </span>
+            </NuxtLink>
             <NuxtLink to="/team" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
               <span class="rich-menu-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -235,7 +244,7 @@
               </span>
               <span class="rich-menu-text">
                 <span class="rich-menu-label">Roadmap</span>
-                <span class="rich-menu-desc">What we're building next for the guild</span>
+                <span class="rich-menu-desc">Three phases toward a lasting mission</span>
               </span>
             </NuxtLink>
             <div class="rich-menu-divider"></div>
@@ -270,6 +279,7 @@
           </button>
           <div id="mobile-about-menu" class="mobile-dropdown-menu" :class="{ open: isMobileAboutDropdownOpen }">
             <NuxtLink to="/about" @click="closeMobileMenu">Our Story</NuxtLink>
+            <NuxtLink to="/social-enterprise" @click="closeMobileMenu">Our Social Enterprise</NuxtLink>
             <NuxtLink to="/team" @click="closeMobileMenu">Team</NuxtLink>
             <NuxtLink to="/principles" @click="closeMobileMenu">12 Principles</NuxtLink>
             <NuxtLink to="/roadmap" @click="closeMobileMenu">Roadmap</NuxtLink>

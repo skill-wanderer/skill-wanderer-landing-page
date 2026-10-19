@@ -162,6 +162,52 @@ export const imageSlots: Record<string, ImageSlotSpec> = {
       'The nearest lantern burns brightly and the farther ones are softer, still waiting to be reached. A small group of travelers walks the path together.',
   },
 
+  // ── Roadmap phases: one scene per phase, the engine, then the school, then the square ──
+  'roadmap/phase-clients': {
+    ratio: '4/3',
+    alt: 'A busy workshop beside a turning waterwheel that sends warm light up the hill to a school still under construction',
+    prompt:
+      'A small workshop at dawn with its doors open, where a builder at a laptop shows a shop owner their new website. Beside it, a wooden waterwheel turns in a stream and sends a line of warm light ' +
+      'up the hill toward a school building still wrapped in scaffolding.',
+  },
+  'roadmap/phase-platform': {
+    ratio: '4/3',
+    alt: 'A finished school hall on a hill, with lantern-lit paths from distant villages leading to its open doors',
+    prompt:
+      'A finished school hall on a hilltop at dusk, its wide doors open onto a long room of shelves and study tables. Lantern-lit paths wind toward it from distant villages, ' +
+      'and travelers of different ages are arriving along them.',
+  },
+  'roadmap/phase-community': {
+    ratio: '4/3',
+    alt: 'A lantern-lit square in front of a school, full of people learning and talking together at long tables',
+    prompt:
+      'The square in front of a hilltop school at night, strung with lanterns and full of people at long tables: experienced learners teaching newer ones, builders and shop owners deep in conversation, ' +
+      'and small groups bent over laptops and notebooks together.',
+  },
+
+  // ── Our Social Enterprise: the hero, then the charity and social enterprise chapters (About reuses the second) ──
+  'social-enterprise/hero': {
+    ratio: '16/9',
+    alt: 'A riverside workshop whose waterwheel powers a string of warm lights leading to a learning hall next door',
+    prompt:
+      'A small riverside workshop at dawn with a sturdy wooden waterwheel turning steadily in the stream. A string of warm lights runs from the wheel along a path to an open learning hall next door, ' +
+      'where people of different ages study at long tables. A shop owner walks out of the workshop with a small finished sign under one arm, while a learner with a backpack heads toward the hall.',
+  },
+  'social-enterprise/charity': {
+    ratio: '16/9',
+    alt: 'Cupped hands shielding a small candle flame from the wind on a dark doorstep',
+    prompt:
+      'A single small candle on a stone doorstep at night, shielded by a pair of cupped hands against a strong wind. The flame leans and flickers, lighting only the hands and the edges of the few figures ' +
+      'gathered close around it, who look up at the dark sky as if waiting for the wind to change.',
+  },
+  'social-enterprise/enterprise': {
+    ratio: '16/9',
+    alt: 'A craftsperson and an apprentice fitting the last paddle onto a new waterwheel, with a burned-down candle stub on a stone nearby',
+    prompt:
+      'Beside a stream at sunrise, a craftsperson and an apprentice fit the last paddle onto a new wooden waterwheel. A laptop sits open on a workbench nearby, showing simple plans. ' +
+      'On a flat stone in the foreground, an old candle has burned down to a stub, its last thread of smoke drifting away.',
+  },
+
   // ── Learning paths: hub hero, then one cover per path (index card and path page) ──
   'learning-paths/hub': {
     ratio: '16/9',
@@ -169,6 +215,14 @@ export const imageSlots: Record<string, ImageSlotSpec> = {
     prompt:
       'A crossroads in an open landscape at twilight with a wooden signpost pointing in many directions. Each road is lined with small warm lights and leads toward ' +
       'a different distant landmark: a lighthouse, a workshop, a tower, a bridge. A traveler with a backpack stands at the center, choosing.',
+  },
+  // The featured path, open now. Its cover stands alone, so it isn't part of the planned path covers group.
+  'learning-paths/learning-in-the-ai-era': {
+    ratio: '16/9',
+    alt: 'A traveler with a glowing compass and a hand-drawn map stepping into a misty, shifting landscape at dawn',
+    prompt:
+      'A traveler with a backpack stands at the edge of a wide, misty landscape at dawn, where the paths ahead keep shifting and rearranging in the fog. ' +
+      'They hold a softly glowing compass in one hand and a hand-drawn map in the other, and a few small lanterns mark the first safe steps forward.',
   },
   'learning-paths/web-development': {
     ratio: '16/9',
@@ -378,7 +432,11 @@ export const imageSlotGroups = {
   planSteps: ['plan/idea', 'plan/prototype', 'plan/launch'],
   learnerPlanSteps: ['philosophy/start-free', 'home/ask-for-guidance', 'philosophy/contribute', 'philosophy/real-projects'],
   philosophyJourney: ['philosophy/start-free', 'philosophy/contribute', 'philosophy/real-projects', 'philosophy/grow'],
-  learningPathCovers: Object.keys(imageSlots).filter(name => name.startsWith('learning-paths/') && name !== 'learning-paths/hub'),
+  roadmapPhases: ['roadmap/phase-clients', 'roadmap/phase-platform', 'roadmap/phase-community'],
+  // The hub hero and the featured path's cover stand alone, so they never hold the planned path covers back.
+  learningPathCovers: Object.keys(imageSlots).filter(
+    name => name.startsWith('learning-paths/') && name !== 'learning-paths/hub' && name !== 'learning-paths/learning-in-the-ai-era',
+  ),
   principleCovers: Object.keys(imageSlots).filter(name => name.startsWith('principles/')),
 }
 
