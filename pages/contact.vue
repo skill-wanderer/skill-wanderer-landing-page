@@ -572,7 +572,7 @@ const faqs = ref<{ audience: 'hire' | 'join'; question: string; answer: string }
   {
     audience: 'hire',
     question: "How does pricing work?",
-    answer: "For accepted projects there is no development fee, and we build a free working prototype first, so you see it before you commit. A small, simple website can then go on the Simple Website Plan: hosting and maintenance without changes, for $15 a month plus your own domain. For bigger projects, or if you want changes as your business grows, the Care Plan covers hosting, maintenance, support and occasional changes, priced after the prototype review."
+    answer: "For accepted projects there is no development fee, and we build a free working prototype first, so you see it before you commit. A small, simple website can then go on the Simple Website Plan: hosting and maintenance, with no changes after launch, for $15 a month plus your own domain. For bigger projects, or if you want changes as your business grows, the Care Plan covers hosting, maintenance, support and occasional changes, priced after the prototype review."
   },
   {
     audience: 'hire',

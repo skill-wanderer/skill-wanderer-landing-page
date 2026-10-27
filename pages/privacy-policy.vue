@@ -5,7 +5,7 @@
       <div class="hero-content">
         <h1>Privacy Policy</h1>
         <p class="hero-subtitle">How we protect and handle your information</p>
-        <p class="last-updated">Last updated: October 16, 2026</p>
+        <p class="last-updated">Last updated: October 27, 2026</p>
       </div>
     </section>
 
@@ -25,11 +25,11 @@
           <ul>
             <li><strong>skill-wanderer.com</strong>: Main website and landing pages</li>
             <li><strong>dojo.skill-wanderer.com</strong>: The Dojo learning platform (authentication and learning management powered by Keycloak)</li>
-            <li><strong>wanderings.skill-wanderer.com</strong>: Wanderings blog and community space (may use Firebase for authentication and content)</li>
+            <li><strong>wanderings.skill-wanderer.com</strong>: Wanderings blog and community space</li>
             <li>Any other current or future subdomains under skill-wanderer.com</li>
           </ul>
           <p>
-            Each subdomain may use different backend technologies, frameworks, and third-party services to power its features. For example, one subdomain may use a self-hosted identity provider (like Keycloak) while another may use a cloud-based service (like Firebase). Regardless of the technology, this single Privacy Policy governs how your data is handled across the entire platform.
+            Each subdomain may use different backend technologies, frameworks, and third-party services to power its features. For example, one subdomain may use a self-hosted identity provider (like Keycloak) while another may use a cloud-based service. Regardless of the technology, this single Privacy Policy governs how your data is handled across the entire platform.
           </p>
         </div>
 
@@ -44,7 +44,7 @@
             <li><strong>Account Information (The Dojo):</strong> When you register for an account on dojo.skill-wanderer.com, we collect your name, email address, and any profile information you provide. This data is managed by our self-hosted Keycloak identity service.</li>
             <li><strong>Learning Data (The Dojo):</strong> As you use the Dojo learning platform, we may collect data related to your course enrolments, learning progress, assessment results, and certificates earned. This data is used to provide and improve your learning experience.</li>
             <li><strong>Comments and Community Content (Wanderings):</strong> If you choose to comment or engage on wanderings.skill-wanderer.com, we collect the content you submit along with any identity information associated with your account (e.g., display name, email used to authenticate).</li>
-            <li><strong>Authentication Data (Any Subdomain):</strong> When you create an account or sign in on any subdomain, we collect the credentials and profile data necessary for authentication. The specific data depends on the identity provider used by that subdomain (e.g., Keycloak, Firebase Authentication, or other services).</li>
+            <li><strong>Authentication Data (Any Subdomain):</strong> When you create an account or sign in on any subdomain, we collect the credentials and profile data necessary for authentication. The specific data depends on the identity provider used by that subdomain (e.g., Keycloak or another service).</li>
             <li><strong>Voluntary Information:</strong> Any additional information you choose to share through forms, surveys, feedback, or direct communication on any part of our platform.</li>
           </ul>
 
@@ -52,7 +52,7 @@
           <p>When you use any of our services, some information may be collected automatically by the underlying technology:</p>
           <ul>
             <li><strong>Device Information:</strong> Basic technical information about your device and browser (such as browser type, operating system, and screen resolution) to ensure our services display and function properly.</li>
-            <li><strong>Authentication Logs:</strong> Identity providers used across our subdomains (such as Keycloak on the Dojo or Firebase on Wanderings) may log login events, session activity, and authentication attempts as part of normal security operations.</li>
+            <li><strong>Authentication Logs:</strong> Identity providers used across our subdomains (such as Keycloak on the Dojo) may log login events, session activity, and authentication attempts as part of normal security operations.</li>
             <li><strong>Server Logs:</strong> Our web servers may record standard access logs (such as IP address, requested URL, timestamp, and HTTP status code) for security monitoring and troubleshooting. These logs are not used for tracking or profiling.</li>
           </ul>
 
@@ -98,10 +98,10 @@
             We take the security of your personal information seriously. We use industry-standard security measures to protect your data from unauthorised access, alteration, disclosure, or destruction. Different subdomains use different storage solutions, each selected for security and fitness for purpose:
           </p>
           <ul>
-            <li><strong>Main site (skill-wanderer.com):</strong> Contact form submissions are stored securely using Firebase services.</li>
+            <li><strong>Main site (skill-wanderer.com):</strong> Contact form messages are delivered to our inbox through Web3Forms, a form delivery service. Newsletter subscriptions are stored with Resend, the email service we use to send our updates.</li>
             <li><strong>The Dojo (dojo.skill-wanderer.com):</strong> Account, authentication, and learning data is managed by our self-hosted Keycloak instance and associated databases. Your credentials are never shared with third-party identity providers. Learning progress and course data is stored in our own databases.</li>
-            <li><strong>Wanderings (wanderings.skill-wanderer.com):</strong> Community content such as comments may be stored using Firebase services. If Firebase Authentication is used, your authentication tokens are managed by Firebase.</li>
-            <li><strong>Future subdomains:</strong> New services may use Firebase, self-hosted databases, or other storage solutions as appropriate. Regardless of the storage technology, the same security standards and privacy principles apply.</li>
+            <li><strong>Wanderings (wanderings.skill-wanderer.com):</strong> Community content such as comments may be stored using a cloud database service.</li>
+            <li><strong>Future subdomains:</strong> New services may use self-hosted databases, cloud services, or other storage solutions as appropriate. Regardless of the storage technology, the same security standards and privacy principles apply.</li>
           </ul>
           <p>
             However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee its absolute security.
@@ -128,7 +128,7 @@
           <h2>Sharing Your Information</h2>
           <p>We do not sell, trade, or otherwise transfer your personal information to third parties, except in the following limited circumstances:</p>
           <ul>
-            <li><strong>Service Providers:</strong> We may share information with trusted third-party service providers who assist us in operating our platform. These currently include Firebase (for data storage and potentially authentication) and may include other services as subdomains evolve. All providers are contractually or structurally bound to protect your data and may only use it to provide services to us.</li>
+            <li><strong>Service Providers:</strong> We may share information with trusted third-party service providers who assist us in operating our platform. These currently include Web3Forms (to deliver contact form messages) and Resend (to store newsletter subscriptions and send our emails), and may include other services as subdomains evolve. All providers are contractually or structurally bound to protect your data and may only use it to provide services to us.</li>
             <li><strong>Self-Hosted Services:</strong> Where we use self-hosted solutions (such as Keycloak), your data does not leave our infrastructure and is not shared with the software vendor.</li>
             <li><strong>Legal Requirements:</strong> We may disclose your information when required by law or to protect our rights, property, or safety, or that of others.</li>
             <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will notify you of any such change.</li>
@@ -145,7 +145,7 @@
           <ul>
             <li><strong>Access:</strong> You can request access to the personal information we hold about you, including data stored on any subdomain.</li>
             <li><strong>Correction:</strong> You can request that we correct any inaccurate or incomplete information.</li>
-            <li><strong>Deletion:</strong> You can request that we delete your personal information, subject to certain legal exceptions. This includes account deletion from the Dojo (Keycloak), removal of comments from Wanderings (Firebase), and deletion of contact form data from the main site.</li>
+            <li><strong>Deletion:</strong> You can request that we delete your personal information, subject to certain legal exceptions. This includes account deletion from the Dojo (Keycloak), removal of comments from Wanderings, and deletion of contact form data from the main site.</li>
             <li><strong>Data Portability:</strong> Where technically feasible, you can request a copy of your personal data in a structured, commonly used format.</li>
             <li><strong>Account Management:</strong> On subdomains with user accounts (such as the Dojo), you can manage your profile directly through the platform settings powered by the relevant identity provider.</li>
             <li><strong>Withdraw Consent:</strong> Where processing is based on consent, you can withdraw your consent at any time without affecting the lawfulness of prior processing.</li>
@@ -165,7 +165,7 @@
           </p>
           <ul>
             <li>On the <strong>Dojo</strong> (dojo.skill-wanderer.com), Keycloak sets essential session cookies to maintain your authenticated state. These are strictly necessary for login and course access.</li>
-            <li>On <strong>Wanderings</strong> (wanderings.skill-wanderer.com), Firebase may use browser localStorage or IndexedDB to persist authentication tokens if you use interactive features. Anonymous reading does not involve any storage.</li>
+            <li>On <strong>Wanderings</strong> (wanderings.skill-wanderer.com), interactive features may use browser localStorage or IndexedDB to keep you signed in. Anonymous reading does not involve any storage.</li>
             <li>On the <strong>main site</strong>, a localStorage entry records your cookie banner acknowledgement.</li>
             <li>On <strong>future subdomains</strong>, the specific cookies and storage will depend on the technologies used, but will always be limited to essential purposes only.</li>
           </ul>
@@ -188,11 +188,12 @@
           </p>
           <ul>
             <li><strong>Keycloak (self-hosted):</strong> Identity and access management for the Dojo. Because it is self-hosted, no data is shared with Keycloak's creators (Red Hat). This instance is fully operated by us on our own infrastructure.</li>
-            <li><strong>Firebase (Google):</strong> Used for data storage on the main site and potentially on Wanderings for authentication and content storage. Firebase data processing is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Data Processing terms</a>.</li>
+            <li><strong>Web3Forms:</strong> Delivers messages from the contact form on the main site to our inbox, subject to Web3Forms' own privacy policy.</li>
+            <li><strong>Resend:</strong> Stores newsletter subscriptions from the main site and sends our emails, subject to Resend's own privacy policy.</li>
             <li><strong>YouTube (Privacy-Enhanced Mode):</strong> Used for embedded video content across any subdomain. Cookies are only set if you actively play a video.</li>
           </ul>
           <p>
-            As our platform evolves, individual subdomains may adopt new services or replace existing ones. Some subdomains may use Firebase, others may not. Some may use Keycloak, others may use a different identity solution. We will only integrate services necessary for functionality and will never integrate advertising, tracking, or data-brokerage services. Material changes will be reflected in this policy.
+            As our platform evolves, individual subdomains may adopt new services or replace existing ones. Some subdomains may use Keycloak, others may use a different identity solution. We will only integrate services necessary for functionality and will never integrate advertising, tracking, or data-brokerage services. Material changes will be reflected in this policy.
           </p>
         </div>
 
@@ -204,7 +205,7 @@
           </p>
           <ul>
             <li><strong>Self-hosted services</strong> (such as Keycloak on the Dojo) process your data on our own servers in the region where they are hosted.</li>
-            <li><strong>Cloud services</strong> (such as Firebase) may process data in the regions specified by the service provider's infrastructure. Google Firebase processes data in accordance with its <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">data processing terms</a>.</li>
+            <li><strong>Cloud services</strong> (such as Web3Forms and Resend) may process data in the regions where each provider runs its infrastructure, in line with that provider's data processing terms.</li>
           </ul>
           <p>
             By using our services, you acknowledge that your information may be transferred to and processed in locations outside your country of residence. We take steps to ensure that your data is treated securely and in accordance with this Privacy Policy regardless of where it is processed.

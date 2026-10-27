@@ -70,14 +70,6 @@ export default defineNuxtConfig({
     resendReplyToEmail: process.env.NUXT_RESEND_REPLY_TO_EMAIL || process.env.RESEND_REPLY_TO_EMAIL || '',
     resendSegmentId: process.env.NUXT_RESEND_SEGMENT_ID || process.env.RESEND_SEGMENT_ID || '',
     public: {
-      firebase: {
-        apiKey: process.env.NUXT_PUBLIC_FIREBASE_API_KEY || 'AIzaSyCr_1Fo6hzJDsKZrjw2u3HlrFhBnfeHmxE',
-        authDomain: process.env.NUXT_PUBLIC_FIREBASE_AUTH_DOMAIN || 'skill-wanderer-hub.firebaseapp.com',
-        projectId: process.env.NUXT_PUBLIC_FIREBASE_PROJECT_ID || 'skill-wanderer-hub',
-        storageBucket: process.env.NUXT_PUBLIC_FIREBASE_STORAGE_BUCKET || 'skill-wanderer-hub.appspot.com',
-        messagingSenderId: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || '801841516442',
-        appId: process.env.NUXT_PUBLIC_FIREBASE_APP_ID || '1:801841516442:web:77c33043420a581b95f423',
-      },
       web3forms: {
         accessKey: process.env.NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY
       },
@@ -92,6 +84,21 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'cloudflare_module',
+  },
+
+  hooks: {
+    // Nuxt adds a <link rel="prefetch"> for every image a page's chunks import, and
+    // ImageSlot imports all of assets/images. Every page was asking the browser for
+    // about 50 MB of pictures it never shows, and on slow connections that traffic
+    // held back the JS and CSS the page needs before the nav responds to clicks.
+    // Images still load normally wherever a page shows them.
+    'build:manifest': (manifest) => {
+      for (const resource of Object.values(manifest)) {
+        if (resource.resourceType === 'image') {
+          resource.prefetch = false
+        }
+      }
+    },
   },
 
   routeRules: {

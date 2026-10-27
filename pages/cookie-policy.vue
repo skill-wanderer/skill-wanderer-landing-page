@@ -5,7 +5,7 @@
       <div class="hero-content">
         <h1>Cookie Policy</h1>
         <p class="hero-subtitle">How we use cookies on our website</p>
-        <p class="last-updated">Last updated: October 16, 2026</p>
+        <p class="last-updated">Last updated: October 27, 2026</p>
       </div>
     </section>
 
@@ -78,7 +78,7 @@
             </table>
           </div>
           <p class="note">
-            The main site currently uses Firebase for contact form submissions. Firebase may use browser storage (IndexedDB or localStorage) to manage form delivery. No persistent tracking data is stored.
+            The contact form sends your message to our inbox through Web3Forms and does not use cookies or browser storage. No persistent tracking data is stored.
           </p>
 
           <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">The Dojo (dojo.skill-wanderer.com): Learning Platform</h4>
@@ -124,7 +124,7 @@
           </p>
 
           <h4 style="font-size: 1.1rem; color: var(--light-text); margin: 20px 0 10px 0; font-weight: 500;">Wanderings (wanderings.skill-wanderer.com): Blog &amp; Community</h4>
-          <p>Wanderings allows readers to engage with content through features such as commenting. It may use <strong>Firebase</strong> services to store and serve that content and to handle authentication. Firebase SDK typically uses browser <code>IndexedDB</code> and <code>localStorage</code> for token persistence rather than traditional cookies.</p>
+          <p>Wanderings allows readers to engage with content through features such as commenting. It may use a cloud service to store and serve that content and to handle authentication. Such services typically use browser <code>IndexedDB</code> and <code>localStorage</code> for token persistence rather than traditional cookies.</p>
           <div class="cookie-table-wrapper">
             <table class="cookie-table">
               <thead>
@@ -136,8 +136,8 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Firebase IndexedDB / localStorage</td>
-                  <td>If you sign in to comment or interact, Firebase stores your authentication token locally so you remain signed in. This data stays on your device and is not a traditional cookie.</td>
+                  <td>IndexedDB / localStorage</td>
+                  <td>If you sign in to comment or interact, your authentication token is stored locally so you remain signed in. This data stays on your device and is not a traditional cookie.</td>
                   <td>Until you sign out or clear browser storage</td>
                 </tr>
               </tbody>
@@ -152,7 +152,7 @@
             As our platform grows, we may introduce additional subdomains for new services, such as forums, tools, dashboards, or other educational resources. Each new subdomain may use its own backend technology stack, which could include (but is not limited to):
           </p>
           <ul>
-            <li><strong>Identity providers</strong> (e.g., Keycloak, Firebase Authentication, or other self-hosted solutions) that set session cookies or store tokens in browser storage for authentication</li>
+            <li><strong>Identity providers</strong> (e.g., Keycloak or other self-hosted solutions) that set session cookies or store tokens in browser storage for authentication</li>
             <li><strong>Backend frameworks</strong> that set CSRF (Cross-Site Request Forgery) protection tokens as cookies to secure form submissions</li>
             <li><strong>Cloud or self-hosted databases</strong> that may require client-side tokens stored in localStorage or IndexedDB</li>
             <li><strong>Session management</strong> cookies set by web servers or application frameworks to maintain your active session</li>
@@ -191,7 +191,7 @@
                 <tr>
                   <td><strong>Authentication Tokens</strong></td>
                   <td>Store your identity or access tokens so you remain signed in. May be stored as cookies, in localStorage, or in IndexedDB depending on the service.</td>
-                  <td>Firebase auth tokens, Keycloak identity cookies, JWT tokens</td>
+                  <td>Keycloak identity cookies, JWT tokens</td>
                 </tr>
                 <tr>
                   <td><strong>User Preferences</strong></td>
@@ -236,12 +236,12 @@
           <h2>Third-Party Services by Subdomain</h2>
           <p>Different parts of our platform rely on different backend services. Each is chosen for its functionality and privacy commitments. Here is a summary of the current services in use:</p>
           <ul>
-            <li><strong>Main site (skill-wanderer.com):</strong> Built with Nuxt.js. Firebase is used for contact form submissions. These use browser storage essential to form delivery only.</li>
+            <li><strong>Main site (skill-wanderer.com):</strong> Built with Nuxt.js. Web3Forms delivers contact form messages to our inbox, and Resend stores newsletter subscriptions and sends our emails. Neither sets cookies on the main site.</li>
             <li><strong>The Dojo (dojo.skill-wanderer.com):</strong> Uses Keycloak (self-hosted) for identity and access management, and for managing the learning experience. No authentication data is shared with third-party advertising or analytics services.</li>
-            <li><strong>Wanderings (wanderings.skill-wanderer.com):</strong> May use Firebase for authentication, storing comments, and community content. Anonymous reading does not involve any third-party services.</li>
+            <li><strong>Wanderings (wanderings.skill-wanderer.com):</strong> May use third-party services for authentication, storing comments, and community content. Anonymous reading does not involve any third-party services.</li>
           </ul>
           <p>
-            As our platform evolves, individual subdomains may adopt, replace, or remove third-party services. Some subdomains may use Firebase, others may not. Some may use Keycloak, others may use a different identity solution. The specific services are an implementation detail. Our privacy commitment is not:
+            As our platform evolves, individual subdomains may adopt, replace, or remove third-party services. Some subdomains may use Keycloak, others may use a different identity solution. The specific services are an implementation detail. Our privacy commitment is not:
           </p>
           <ul>
             <li>We will only integrate services that are necessary for platform functionality</li>

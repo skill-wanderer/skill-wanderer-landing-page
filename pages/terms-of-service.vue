@@ -5,7 +5,7 @@
       <div class="hero-content">
         <h1>Terms of Service</h1>
         <p class="hero-subtitle">The terms governing your use of our platform and services</p>
-        <p class="last-updated">Last updated: March 30, 2026</p>
+        <p class="last-updated">Last updated: October 27, 2026</p>
       </div>
     </section>
 
@@ -23,11 +23,11 @@
           <ul>
             <li><strong>skill-wanderer.com</strong>: Main website, information, and contact</li>
             <li><strong>dojo.skill-wanderer.com</strong>: The Dojo, our learning platform where you can create an account, sign in via Keycloak, and access educational courses and learning management features</li>
-            <li><strong>wanderings.skill-wanderer.com</strong>: Wanderings, our blog and community space where readers may engage with content and comments (may use Firebase for authentication and content storage)</li>
+            <li><strong>wanderings.skill-wanderer.com</strong>: Wanderings, our blog and community space where readers may engage with content and comments</li>
             <li>Any other current or future subdomains we operate under skill-wanderer.com</li>
           </ul>
           <p>
-            Each subdomain may use different backend technologies, frameworks, and third-party services. For example, one subdomain may use Keycloak for authentication while another may use Firebase. These Terms apply uniformly regardless of the underlying technology. Where specific subdomains have additional terms or conditions, those will be clearly indicated on the relevant service.
+            Each subdomain may use different backend technologies, frameworks, and third-party services. For example, one subdomain may use Keycloak for authentication while another may use a different provider. These Terms apply uniformly regardless of the underlying technology. Where specific subdomains have additional terms or conditions, those will be clearly indicated on the relevant service.
           </p>
         </div>
 
@@ -68,8 +68,8 @@
           </p>
           <ul>
             <li><strong>The Dojo (dojo.skill-wanderer.com):</strong> Accounts are managed through our self-hosted <strong>Keycloak</strong> identity service. An account is required to access course content, track learning progress, and earn certificates.</li>
-            <li><strong>Wanderings (wanderings.skill-wanderer.com):</strong> If interactive features (such as commenting) require authentication, accounts may be managed through <strong>Firebase Authentication</strong> or another provider.</li>
-            <li><strong>Future subdomains:</strong> New services may use Keycloak, Firebase, or other identity providers as appropriate for their purpose.</li>
+            <li><strong>Wanderings (wanderings.skill-wanderer.com):</strong> If interactive features (such as commenting) require authentication, accounts may be managed through a separate identity provider.</li>
+            <li><strong>Future subdomains:</strong> New services may use Keycloak or other identity providers as appropriate for their purpose.</li>
           </ul>
           <p>Regardless of which subdomain or identity provider is used, the following responsibilities apply to all accounts:</p>
           <ul>
@@ -105,7 +105,7 @@
             We reserve the right to remove any community content that violates these Terms or that we deem inappropriate, without prior notice. Repeated violations may result in account suspension or termination on the affected subdomain.
           </p>
           <p>
-            Community features may be powered by different backend services depending on the subdomain (e.g., Firebase on Wanderings). By engaging with these features, you acknowledge that your submitted content will be stored and processed as described in our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>.
+            Community features may be powered by different backend services depending on the subdomain. By engaging with these features, you acknowledge that your submitted content will be stored and processed as described in our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>.
           </p>
         </div>
 
@@ -199,7 +199,7 @@
             Your privacy is important to us. Our collection, use, and protection of your personal information across all Skill-Wanderer properties, regardless of which backend technology or service powers each subdomain, is governed by our <NuxtLink to="/privacy-policy" class="contact-link">Privacy Policy</NuxtLink>, which is incorporated into these Terms by reference.
           </p>
           <p>
-            We use essential cookies and browser storage only, across all subdomains. The specific cookies and storage used depend on the technology powering each subdomain (e.g., Keycloak session cookies on the Dojo, Firebase localStorage on Wanderings). Our cookie practices are fully described in our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>, which is also incorporated into these Terms by reference.
+            We use essential cookies and browser storage only, across all subdomains. The specific cookies and storage used depend on the technology powering each subdomain (e.g., Keycloak session cookies on the Dojo). Our cookie practices are fully described in our <NuxtLink to="/cookie-policy" class="contact-link">Cookie Policy</NuxtLink>, which is also incorporated into these Terms by reference.
           </p>
         </div>
 
@@ -228,7 +228,7 @@
             <li>The uninterrupted or error-free operation of any subdomain</li>
             <li>The results that may be obtained from the use of the Services</li>
             <li>The suitability of the Services for any particular purpose</li>
-            <li>The security of third-party services integrated into our subdomains (such as Firebase or YouTube)</li>
+            <li>The security of third-party services integrated into our subdomains (such as Web3Forms, Resend, or YouTube)</li>
           </ul>
         </div>
 
@@ -243,7 +243,7 @@
             <li>Any unauthorized access to or use of our servers and/or personal information</li>
             <li>Any interruption or cessation of transmission to or from our Services</li>
             <li>Any bugs, viruses, trojan horses, or similar that may be transmitted by any third party</li>
-            <li>Any issues arising from third-party services integrated into our platform (such as Firebase, Keycloak, or YouTube)</li>
+            <li>Any issues arising from third-party services integrated into our platform (such as Web3Forms, Resend, Keycloak, or YouTube)</li>
           </ul>
         </div>
 

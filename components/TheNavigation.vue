@@ -1,5 +1,5 @@
 <template>
-  <nav id="navbar">
+  <nav id="navbar" v-nav-ready>
     <div class="nav-container">
       <NuxtLink to="/" class="logo">
         <img src="/skill-wanderer-favicon.svg" alt="Skill-Wanderer Logo" class="logo-icon" />
@@ -26,13 +26,14 @@
         :class="{ active: isMobileMenuOpen }"
         aria-label="Toggle navigation menu"
         :aria-expanded="isMobileMenuOpen"
+        aria-controls="nav-menu"
       >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <div class="nav-links" :class="{ 'mobile-open': isMobileMenuOpen }">
+      <div id="nav-menu" class="nav-links" :class="{ 'mobile-open': isMobileMenuOpen }">
         <!-- Learn Dropdown (the mission comes first) -->
         <div class="dropdown" @mouseenter="openLearningDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isLearningPathDropdownOpen }">
@@ -317,7 +318,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch, type Directive } from 'vue'
 
 const isMobileMenuOpen = useState<boolean>('isMobileNavOpen', () => false)
 const isAboutDropdownOpen = ref(false)
@@ -418,6 +419,43 @@ const toggleMobileLearningPathDropdown = () => {
 
 const toggleMobilePartnershipsDropdown = () => {
   isMobilePartnershipsDropdownOpen.value = !isMobilePartnershipsDropdownOpen.value
+}
+
+// On a slow connection the server-rendered nav is on screen for seconds before Vue
+// hydrates it. Until then this inline script runs the mobile menu buttons, and the
+// `#navbar:not(.nav-ready)` styles open the desktop menus on hover.
+if (import.meta.server) {
+  useHead({
+    script: [{
+      innerHTML: `document.addEventListener('click', function (event) {
+  var button = event.target.closest ? event.target.closest('#navbar .mobile-menu-btn, #navbar .mobile-dropdown-trigger') : null;
+  if (!button || document.getElementById('navbar').classList.contains('nav-ready')) return;
+  var panel = document.getElementById(button.getAttribute('aria-controls'));
+  var isOpen = panel.classList.toggle(button.classList.contains('mobile-menu-btn') ? 'mobile-open' : 'open');
+  button.classList.toggle('active', isOpen);
+  button.setAttribute('aria-expanded', String(isOpen));
+  var arrow = button.querySelector('.dropdown-arrow');
+  if (arrow) arrow.classList.toggle('rotated', isOpen);
+});`,
+    }],
+  })
+}
+
+const hasClass = (root: HTMLElement, selector: string, className: string) =>
+  root.querySelector(selector)?.classList.contains(className) ?? false
+
+// Runs the moment Vue's listeners are on the nav: keep whatever the visitor opened
+// through the fallbacks, then switch the fallbacks off.
+const vNavReady: Directive<HTMLElement> = {
+  beforeMount(nav) {
+    isMobileMenuOpen.value = hasClass(nav, '#nav-menu', 'mobile-open')
+    isMobileLearningPathDropdownOpen.value = hasClass(nav, '#mobile-learn-menu', 'open')
+    isMobilePartnershipsDropdownOpen.value = hasClass(nav, '#mobile-work-with-us-menu', 'open')
+    isMobileAboutDropdownOpen.value = hasClass(nav, '#mobile-about-menu', 'open')
+    // Vue missed the mouseenter of a menu the pointer already rests on, so replay it.
+    nav.querySelector('.dropdown:hover')?.dispatchEvent(new MouseEvent('mouseenter'))
+    nav.classList.add('nav-ready')
+  },
 }
 
 const isVisibleElement = (element: HTMLElement) => {
@@ -777,8 +815,10 @@ onUnmounted(() => {
   transition: all 0.3s ease;
 }
 
+/* `#navbar:not(.nav-ready)` rules open the menus on hover before Vue hydrates the nav. */
 .dropdown-trigger:hover,
-.dropdown-trigger.active {
+.dropdown-trigger.active,
+#navbar:not(.nav-ready) .dropdown:hover .dropdown-trigger {
   color: #FF6B35;
 }
 
@@ -786,7 +826,8 @@ onUnmounted(() => {
   transition: transform 0.3s ease;
 }
 
-.dropdown-arrow.rotated {
+.dropdown-arrow.rotated,
+#navbar:not(.nav-ready) .dropdown:hover .dropdown-arrow {
   transform: rotate(180deg);
 }
 
@@ -810,7 +851,8 @@ onUnmounted(() => {
   z-index: 1002;
 }
 
-.dropdown-menu.open {
+.dropdown-menu.open,
+#navbar:not(.nav-ready) .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;

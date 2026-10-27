@@ -87,8 +87,9 @@
         </div>
 
         <p class="steps-note">
-          On the <a href="#plans">Simple Website Plan</a> the steps are the same, just smaller: one prototype, one
-          revision round, then a flat $15 a month for hosting and maintenance.
+          On the <a href="#plans">Simple Website Plan</a> the steps are the same, with the same free prototypes and
+          revision rounds. The difference comes after launch: a flat $15 a month covers hosting and maintenance,
+          but no changes to the site.
         </p>
       </div>
     </section>
@@ -112,8 +113,8 @@
             <p class="plan-price-note">The lowest-risk way to get a decent website online.</p>
             <ul class="plan-list">
               <li>No development fee</li>
-              <li>1 free working prototype</li>
-              <li>1 revision round before launch</li>
+              <li>A free working prototype, and a second one if the direction changes significantly</li>
+              <li>Up to 2 structured revision rounds before launch</li>
               <li>Hosting and maintenance after launch, so your site stays online, secure and working</li>
               <li class="plan-list-no">No changes after launch</li>
             </ul>
@@ -332,7 +333,7 @@ const faqs = [
   {
     question: 'How can a website cost only $15 a month?',
     answer:
-      'AI now lets us build a simple website far faster than before, and the servers we already run for Skill-Wanderer have room to spare. The Simple Website Plan also keeps everything small: one prototype, one revision round, and no changes after launch, only hosting and maintenance. That keeps the price low enough for people who could not afford a decent website until now.',
+      'AI now lets us build a simple website far faster than before, and the servers we already run for Skill-Wanderer have room to spare. The Simple Website Plan also keeps the scope small: a site of a few pages, and after launch only hosting and maintenance, with no changes. That keeps the price low enough for people who could not afford a decent website until now. Before launch you still get the same free prototypes and revision rounds as on the Care Plan.',
   },
   {
     question: "I'm not technical. Will I understand what's going on?",
@@ -357,7 +358,7 @@ const faqs = [
   {
     question: 'Is the prototype optional?',
     answer:
-      'No. The first prototype is a required part of the process for accepted projects. On the Care Plan, a second prototype is optional, and only used when the direction changes significantly. The Simple Website Plan includes one prototype.',
+      'No. The first prototype is a required part of the process for accepted projects, on both plans. A second prototype is optional, and only used when the direction changes significantly.',
   },
   {
     question: 'When is the exact price decided?',
@@ -377,7 +378,7 @@ const faqs = [
   {
     question: 'Does the Simple Website Plan include changes?',
     answer:
-      'No. It includes hosting and maintenance: we keep your site online, secure and up to date, and fix anything that stops working. Changes such as new text, photos or prices are not included, so your site stays as it was launched. If you need changes later, we agree the scope and price with you first, or we can talk about moving your site to the Care Plan.',
+      'Before launch, yes: up to 2 revision rounds, the same as on the Care Plan. After launch, no. The plan then covers hosting and maintenance: we keep your site online, secure and up to date, and fix anything that stops working. Changes such as new text, photos or prices are not included, so your site stays as it was launched. If you need changes later, we agree the scope and price with you first, or we can talk about moving your site to the Care Plan.',
   },
   {
     question: 'Can I stop or move the project elsewhere later?',
