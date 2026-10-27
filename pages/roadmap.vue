@@ -44,7 +44,7 @@
                   We help solo founders, freelancers, coaches, writers, small businesses and non-profits get the
                   websites and AI tools they need at a price they can carry: a free working prototype first, no
                   development fee, then a <NuxtLink to="/work-with-us/service-model#plans">monthly plan</NuxtLink>,
-                  down to $8 a month plus your own domain for a simple website.
+                  down to $15 a month plus your own domain for a simple website.
                 </p>
                 <p class="card-description">
                   Every client we serve well helps twice: their project gets built, and their fees fund free
@@ -54,7 +54,7 @@
                 <ul class="card-features">
                   <li class="feature-tag">Free Working Prototypes</li>
                   <li class="feature-tag">No Development Fee</li>
-                  <li class="feature-tag">Care &amp; Hosting-Only Plans</li>
+                  <li class="feature-tag">Care &amp; Simple Website Plans</li>
                   <li class="feature-tag">Built With AI, Reviewed by People</li>
                   <li class="feature-tag">Long-Term Tech Partnership</li>
                   <li class="feature-tag">Inquiry &amp; Project Tracking</li>

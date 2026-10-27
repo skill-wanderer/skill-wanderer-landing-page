@@ -55,7 +55,7 @@
             <h3><span aria-hidden="true">🛠️</span> Affordable tech for small budgets</h3>
             <p>
               Solo founders, coaches, writers, small businesses and non-profits get websites and AI tools they can
-              afford: a free prototype first, no development fee, and simple websites from $8 a month, plus your own
+              afford: a free prototype first, no development fee, and simple websites for $15 a month, plus your own
               domain.
             </p>
           </div>
@@ -433,8 +433,8 @@
       </p>
       <p class="plan-lite">
         Only need a simple website? Our
-        <NuxtLink to="/work-with-us/service-model#plans">Hosting-Only Plan</NuxtLink>
-        is $8 a month, plus your own domain.
+        <NuxtLink to="/work-with-us/service-model#plans">Simple Website Plan</NuxtLink>
+        is $15 a month for hosting and maintenance, plus your own domain.
       </p>
       <div class="plan-cta">
         <NuxtLink to="/work-with-us/service-model" class="btn btn-outline">
@@ -692,7 +692,7 @@ useSEO({
       },
       {
         question: 'Is there an option for a very small budget?',
-        answer: 'Yes. For a small, simple website, the Hosting-Only Plan costs 8 USD a month plus your own domain, with no development fee. Bigger projects use the Care Plan, priced after you have reviewed a free working prototype.'
+        answer: 'Yes. For a small, simple website, the Simple Website Plan costs 15 USD a month for hosting and maintenance, plus your own domain, with no development fee. Bigger projects use the Care Plan, priced after you have reviewed a free working prototype.'
       },
       {
         question: 'Is the learning really free?',

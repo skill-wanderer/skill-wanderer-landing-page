@@ -129,7 +129,7 @@
                 <div class="info-icon">🧭</div>
                 <h3>How It Works</h3>
               </div>
-              <p>Free prototype first, no development fee, no lock-in, and simple websites from $8 a month.</p>
+              <p>Free prototype first, no development fee, no lock-in, and simple websites for $15 a month.</p>
               <NuxtLink to="/work-with-us/service-model" class="info-card-link">See the Full Details</NuxtLink>
             </div>
           </div>
@@ -336,19 +336,23 @@ watch(() => route.query.tab, () => {
   activeTab.value = getTabFromQuery()
 })
 
-// Project topics: links such as /contact?topic=hosting-only preselect one
+// Project topics: links such as /contact?topic=simple-website preselect one
 const hireTopics = [
   { value: 'website', label: 'A website for my business or practice' },
-  { value: 'hosting-only', label: 'A simple website on the $8 a month Hosting-Only Plan' },
+  { value: 'simple-website', label: 'A simple website on the $15 a month Simple Website Plan' },
   { value: 'ai', label: 'An AI tool for my students or clients' },
   { value: 'booking-payments-automation', label: 'Booking, payments or automation' },
   { value: 'app-platform', label: 'An app or a bigger platform' },
   { value: 'not-sure', label: 'Not sure yet, I just have an idea' }
 ]
 
+// Older links still use the topic of the retired $8 Hosting-Only Plan
+const topicAliases: Record<string, string> = { 'hosting-only': 'simple-website' }
+
 const getTopicFromQuery = () => {
-  const topic = route.query.topic
-  return typeof topic === 'string' && hireTopics.some(option => option.value === topic) ? topic : ''
+  const query = route.query.topic
+  const topic = typeof query === 'string' ? topicAliases[query] ?? query : ''
+  return hireTopics.some(option => option.value === topic) ? topic : ''
 }
 
 // Hire form state
@@ -568,7 +572,7 @@ const faqs = ref<{ audience: 'hire' | 'join'; question: string; answer: string }
   {
     audience: 'hire',
     question: "How does pricing work?",
-    answer: "For accepted projects there is no development fee, and we build a free working prototype first, so you see it before you commit. A small, simple website can then go on the Hosting-Only Plan: hosting only, for $8 a month plus your own domain. For bigger projects, or if you want us to look after your site, the Care Plan covers hosting, maintenance, support and occasional changes, priced after the prototype review."
+    answer: "For accepted projects there is no development fee, and we build a free working prototype first, so you see it before you commit. A small, simple website can then go on the Simple Website Plan: hosting and maintenance without changes, for $15 a month plus your own domain. For bigger projects, or if you want changes as your business grows, the Care Plan covers hosting, maintenance, support and occasional changes, priced after the prototype review."
   },
   {
     audience: 'hire',
@@ -660,7 +664,7 @@ const handleHireSubmit = async () => {
       submission_reference: submissionReference,
       submitted_at: submittedAt,
       source: '/contact',
-      subject: form.topic === 'hosting-only' ? 'Hosting-Only Plan inquiry' : 'Hire the Guild inquiry'
+      subject: form.topic === 'simple-website' ? 'Simple Website Plan inquiry' : 'Hire the Guild inquiry'
     }
 
     logFormSubmissionEvent({

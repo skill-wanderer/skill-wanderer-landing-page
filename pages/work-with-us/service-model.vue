@@ -24,7 +24,7 @@
       </div>
       <span class="launch-badge">Free Prototype · No Development Fee · No Lock-In</span>
       <p class="hero-plan-note">
-        Only need a simple website? <a href="#plans">See the $8 a month Hosting-Only Plan</a>
+        Only need a simple website? <a href="#plans">See the $15 a month Simple Website Plan</a>
       </p>
     </section>
 
@@ -87,8 +87,8 @@
         </div>
 
         <p class="steps-note">
-          On the <a href="#plans">Hosting-Only Plan</a> the steps are the same, just smaller: one prototype, one
-          revision round, then a flat $8 a month for hosting.
+          On the <a href="#plans">Simple Website Plan</a> the steps are the same, just smaller: one prototype, one
+          revision round, then a flat $15 a month for hosting and maintenance.
         </p>
       </div>
     </section>
@@ -104,21 +104,21 @@
         <div class="plan-grid">
           <article class="plan-card plan-card--lite">
             <span class="plan-badge">Most affordable</span>
-            <h3>Hosting-Only Plan</h3>
+            <h3>Simple Website Plan</h3>
             <p class="plan-for">For a small, simple website</p>
             <p class="plan-price">
-              <span class="plan-amount">$8</span> USD a month, <span class="plan-price-extra">plus your own domain</span>
+              <span class="plan-amount">$15</span> USD a month, <span class="plan-price-extra">plus your own domain</span>
             </p>
             <p class="plan-price-note">The lowest-risk way to get a decent website online.</p>
             <ul class="plan-list">
               <li>No development fee</li>
               <li>1 free working prototype</li>
               <li>1 revision round before launch</li>
-              <li>Hosting after launch, so your site stays online</li>
-              <li class="plan-list-no">No maintenance, support or changes after launch</li>
+              <li>Hosting and maintenance after launch, so your site stays online, secure and working</li>
+              <li class="plan-list-no">No changes after launch</li>
             </ul>
             <p class="plan-payment">Paid monthly through PayPal. Leave anytime.</p>
-            <NuxtLink to="/contact?topic=hosting-only" class="btn btn-primary">Ask About This Plan</NuxtLink>
+            <NuxtLink to="/contact?topic=simple-website" class="btn btn-primary">Ask About This Plan</NuxtLink>
           </article>
 
           <article class="plan-card">
@@ -141,7 +141,7 @@
         </div>
 
         <div class="lite-story">
-          <h3>Why only $8 a month?</h3>
+          <h3>Why only $15 a month?</h3>
           <p>
             AI now lets us build a simple website far faster than before, and the servers we already run for
             Skill-Wanderer have room to spare. Together, that lets us offer a decent website to people who could
@@ -153,8 +153,8 @@
           <h3>What the monthly fee covers</h3>
           <ul class="care-list">
             <li>Hosting, so your site or app stays online <span class="care-tag care-tag--both">Both plans</span></li>
-            <li>Maintenance, so it stays secure and up to date <span class="care-tag">Care Plan</span></li>
-            <li>Support when something isn't working, or when you're not sure what you need next <span class="care-tag">Care Plan</span></li>
+            <li>Maintenance, so it stays secure, up to date and working <span class="care-tag care-tag--both">Both plans</span></li>
+            <li>Support when you have questions or aren't sure what you need next <span class="care-tag">Care Plan</span></li>
             <li>Occasional changes as your business grows <span class="care-tag">Care Plan</span></li>
             <li>Bigger changes or new features: we agree the scope and price with you first <span class="care-tag care-tag--both">Both plans</span></li>
           </ul>
@@ -322,7 +322,7 @@ const faqs = [
   {
     question: 'Is it completely free?',
     answer:
-      'No. For accepted projects there is no development fee and the first prototype is free, but the monthly fee is a paid service. On the Care Plan it covers hosting, maintenance, support and occasional changes, billed monthly or quarterly. On the Hosting-Only Plan it covers hosting only, at $8 a month.',
+      'No. For accepted projects there is no development fee and the first prototype is free, but the monthly fee is a paid service. On the Care Plan it covers hosting, maintenance, support and occasional changes, billed monthly or quarterly. On the Simple Website Plan it covers hosting and maintenance, at $15 a month.',
   },
   {
     question: "What's the catch?",
@@ -330,9 +330,9 @@ const faqs = [
       'There is no hidden one. Instead of a big upfront bill, we earn a monthly fee by keeping your project running and supported. That income also funds free education, so we are motivated to keep you happy for the long run.',
   },
   {
-    question: 'How can a website cost only $8 a month?',
+    question: 'How can a website cost only $15 a month?',
     answer:
-      'AI now lets us build a simple website far faster than before, and the servers we already run for Skill-Wanderer have room to spare. The Hosting-Only Plan also keeps everything small: one prototype, one revision round, and hosting only after launch. That keeps the price low enough for people who could not afford a decent website until now.',
+      'AI now lets us build a simple website far faster than before, and the servers we already run for Skill-Wanderer have room to spare. The Simple Website Plan also keeps everything small: one prototype, one revision round, and no changes after launch, only hosting and maintenance. That keeps the price low enough for people who could not afford a decent website until now.',
   },
   {
     question: "I'm not technical. Will I understand what's going on?",
@@ -357,27 +357,27 @@ const faqs = [
   {
     question: 'Is the prototype optional?',
     answer:
-      'No. The first prototype is a required part of the process for accepted projects. On the Care Plan, a second prototype is optional, and only used when the direction changes significantly. The Hosting-Only Plan includes one prototype.',
+      'No. The first prototype is a required part of the process for accepted projects. On the Care Plan, a second prototype is optional, and only used when the direction changes significantly. The Simple Website Plan includes one prototype.',
   },
   {
     question: 'When is the exact price decided?',
     answer:
-      'On the Care Plan, after the first prototype is reviewed and we discuss the real project scope. It is never quoted before there is something real to look at. The Hosting-Only Plan has one flat price: $8 a month, plus your own domain.',
+      'On the Care Plan, after the first prototype is reviewed and we discuss the real project scope. It is never quoted before there is something real to look at. The Simple Website Plan has one flat price: $15 a month, plus your own domain.',
   },
   {
     question: 'How often do I pay?',
     answer:
-      'On the Care Plan, monthly or quarterly, depending on your situation. We agree this with you when we confirm the price. The Hosting-Only Plan is paid monthly through PayPal.',
+      'On the Care Plan, monthly or quarterly, depending on your situation. We agree this with you when we confirm the price. The Simple Website Plan is paid monthly through PayPal.',
   },
   {
-    question: 'What counts as a simple website on the Hosting-Only Plan?',
+    question: 'What counts as a simple website?',
     answer:
       'A small site with a limited scope, such as a few pages that explain who you are, what you offer and how to reach you. If you need more, such as online payments, booking, user accounts or AI tools, the Care Plan is the right fit. We confirm which plan suits your project on the call.',
   },
   {
-    question: 'What if my Hosting-Only site needs changes later?',
+    question: 'Does the Simple Website Plan include changes?',
     answer:
-      'Changes after launch are not part of the Hosting-Only Plan, so your site stays as it was launched. If you need changes later, we agree the scope and price with you first, or we can talk about moving your site to the Care Plan.',
+      'No. It includes hosting and maintenance: we keep your site online, secure and up to date, and fix anything that stops working. Changes such as new text, photos or prices are not included, so your site stays as it was launched. If you need changes later, we agree the scope and price with you first, or we can talk about moving your site to the Care Plan.',
   },
   {
     question: 'Can I stop or move the project elsewhere later?',
@@ -395,7 +395,7 @@ const faqs = [
 useSEO({
   title: 'Free Prototype, No Development Fee | Skill-Wanderer',
   description:
-    'Try your idea before you commit: free prototype, no development fee, then $8 a month hosting for a simple website, or a full care plan. No lock-in.',
+    'Try your idea before you commit: free prototype, no development fee, then a simple website for $15 a month, or a full care plan. No lock-in.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: [
     'no development fee',
