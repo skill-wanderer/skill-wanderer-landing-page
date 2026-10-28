@@ -157,6 +157,15 @@
                 <span class="rich-menu-desc">Real work for real clients</span>
               </span>
             </NuxtLink>
+            <NuxtLink to="/work-with-us/testimonials" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
+              <span class="rich-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+              </span>
+              <span class="rich-menu-text">
+                <span class="rich-menu-label">Testimonials</span>
+                <span class="rich-menu-desc">What people say, in their own words</span>
+              </span>
+            </NuxtLink>
             <div class="rich-menu-divider"></div>
             <NuxtLink to="/contact" class="rich-menu-item rich-menu-cta" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
               <span class="rich-menu-icon">
@@ -191,6 +200,7 @@
             <NuxtLink to="/work-with-us" @click="closeMobileMenu">Services</NuxtLink>
             <NuxtLink to="/work-with-us/service-model" @click="closeMobileMenu">How It Works</NuxtLink>
             <NuxtLink to="/work-with-us/our-projects" @click="closeMobileMenu">Client Projects</NuxtLink>
+            <NuxtLink to="/work-with-us/testimonials" @click="closeMobileMenu">Testimonials</NuxtLink>
           </div>
         </div>
 

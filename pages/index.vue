@@ -394,7 +394,11 @@
       </div>
     </section>
 
-    <TestimonialBlock :testimonials="clientTestimonials" section-title="What Clients Say" />
+    <TestimonialBlock :testimonials="clientTestimonials" section-title="What Clients Say">
+      <NuxtLink to="/work-with-us/testimonials" class="btn btn-outline">
+        Read Every Testimonial <span>→</span>
+      </NuxtLink>
+    </TestimonialBlock>
 
     <!-- Client plan: the same 3 steps used everywhere -->
     <section class="plan section--dark">
@@ -640,7 +644,7 @@ const featuredLearners = [
   },
 ]
 
-// Verbatim excerpts from the LinkedIn recommendations shown in full on /work-with-us/our-projects.
+// Verbatim excerpts from the testimonials shown in full on /work-with-us/testimonials.
 const clientTestimonials = [
   {
     quote:
@@ -655,6 +659,15 @@ const clientTestimonials = [
     name: 'Jack Passananti',
     role: 'Writer · Calligrapher · Illuminator',
     avatar: '/projects/broadstrokes/jack-avatar.jpg',
+  },
+  {
+    quote: [
+      'When I first started working with Quan on my website for The Meek Method, I had a very clear vision of what I wanted my business to represent, but very little understanding of the technology required to bring it all together.',
+      'Quan has been incredibly patient with me throughout the entire process.',
+    ],
+    name: 'Aimee Meek',
+    role: 'Decision Coach · Creator of The Meek Method',
+    avatar: '/projects/meekmethod/aimee-avatar.jpg',
   },
 ]
 

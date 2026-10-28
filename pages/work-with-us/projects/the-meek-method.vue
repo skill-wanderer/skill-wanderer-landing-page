@@ -192,19 +192,54 @@
       </div>
     </section>
 
-    <!--
-      Client testimonial goes here once Aimee provides one.
-      Copy the "Client Testimonial Section" block and its .testimonial-* styles
-      from broad-strokes-studio.vue, then flip the .darker class on the sections
-      below it to keep the light/dark alternation intact.
-      Avatar: a real 320x320 headshot of Aimee, supplied by her along with the quote.
-      Do not substitute a generated image for a named person's testimonial photo;
-      if no photo is available, use the initial-letter fallback that
-      components/TestimonialBlock.vue renders when `avatar` is omitted.
-    -->
+    <!-- Client Testimonial Section -->
+    <section class="detail-section">
+      <div class="detail-container">
+        <h2>What the Client Said</h2>
+        <div class="testimonial-card">
+          <div class="testimonial-quote-mark">"</div>
+          <blockquote class="testimonial-text">
+            Working with Quan Nguyen at Skill-Wanderer has been such a positive experience, and I genuinely cannot
+            recommend him enough.
+            <br /><br />
+            When I first started working with Quan on my website for The Meek Method, I had a very clear vision of
+            what I wanted my business to represent, but very little understanding of the technology required to bring
+            it all together.
+            <br /><br />
+            Quan has been incredibly patient with me throughout the entire process. He takes the time to explain
+            things, answer my questions, and make sure I understand what we're doing without ever making me feel
+            rushed or overwhelmed.
+            <br /><br />
+            What I appreciate most is that he genuinely cares about the work he does and the people he works with. He
+            pays attention to the smallest details, welcomes feedback, and often catches things or suggests
+            improvements I wouldn't have known to ask about.
+            <br /><br />
+            He didn't simply build a website and walk away. He has continued to help me with adjustments, technical
+            questions, and the many moving pieces that come with building an online presence for a growing business.
+            <br /><br />
+            I've also come to really respect the mission behind Skill-Wanderer and Quan's commitment to using his
+            business to support free education.
+            <br /><br />
+            If you're looking for someone who is knowledgeable, reliable, thoughtful, and genuinely invested in
+            helping your business succeed, I would highly recommend working with Quan.
+            <br /><br />
+            I'm incredibly grateful to have him as part of the team helping me build The Meek Method.
+          </blockquote>
+          <div class="testimonial-author">
+            <!-- Her own portrait from the About page of her site, the same one as the hero above -->
+            <img src="/projects/meekmethod/aimee-avatar.jpg" alt="Aimee Meek" class="testimonial-avatar" loading="lazy" />
+            <div class="testimonial-meta">
+              <p class="testimonial-name">Aimee Meek</p>
+              <p class="testimonial-role">Decision Coach · Creator of The Meek Method</p>
+              <p class="testimonial-source">Shared on LinkedIn</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- My Role Section -->
-    <section class="detail-section">
+    <section class="detail-section darker">
       <div class="detail-container">
         <h2>My Role</h2>
         <p class="section-intro">
@@ -221,7 +256,7 @@
     </section>
 
     <!-- Why No Fee Section -->
-    <section class="detail-section darker">
+    <section class="detail-section">
       <div class="detail-container">
         <h2>Why There Was No Development Fee</h2>
         <blockquote class="featured-quote">
@@ -234,7 +269,7 @@
     </section>
 
     <!-- Project Status Section -->
-    <section class="detail-section">
+    <section class="detail-section darker">
       <div class="detail-container">
         <h2>Project Status</h2>
         <div class="status-box">
@@ -554,6 +589,67 @@ useSEO({
   line-height: 1.7;
 }
 
+/* ── Client Testimonial ───────────────────────────── */
+.testimonial-card {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 107, 53, 0.18);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.testimonial-quote-mark {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--primary-orange), #FFD93D);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 30px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 107, 53, 0.4);
+  flex-shrink: 0;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: white;
+  font-size: 1.05rem;
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: var(--primary-orange);
+  margin-top: 3px;
+}
+
+.testimonial-source {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 3px;
+}
+
 /* ── Role List ────────────────────────────────────── */
 .role-list {
   display: flex;
@@ -695,6 +791,15 @@ useSEO({
   .features-grid,
   .tech-grid {
     grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 28px 24px;
+  }
+
+  .testimonial-author {
+    flex-direction: column;
+    text-align: center;
   }
 
   .cta-buttons {

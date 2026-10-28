@@ -16,7 +16,7 @@
         <div class="section-header">
           <div class="section-tag">Client Voices</div>
           <h2>What They Said Afterwards</h2>
-          <p>Unprompted, in their own words, on LinkedIn.</p>
+          <p>In their own words, on LinkedIn.</p>
         </div>
 
         <div class="voices-grid">
@@ -63,7 +63,30 @@
               </div>
             </figcaption>
           </figure>
+
+          <figure class="voice-card voice-card--wide">
+            <div class="voice-quote-mark">"</div>
+            <blockquote class="voice-text">
+              He didn't simply build a website and walk away. He has continued to help me with adjustments, technical
+              questions, and the many moving pieces that come with building an online presence for a growing business.
+              <br /><br />
+              I've also come to really respect the mission behind Skill-Wanderer and Quan's commitment to using his
+              business to support free education.
+            </blockquote>
+            <figcaption class="voice-author">
+              <img src="/projects/meekmethod/aimee-avatar.jpg" alt="Aimee Meek" loading="lazy" />
+              <div>
+                <strong>Aimee Meek</strong>
+                <span>Decision Coach · Creator of The Meek Method</span>
+                <span class="voice-source">LinkedIn</span>
+              </div>
+            </figcaption>
+          </figure>
         </div>
+
+        <p class="voices-more">
+          <NuxtLink to="/work-with-us/testimonials">Read every testimonial in full →</NuxtLink>
+        </p>
       </div>
     </section>
 
@@ -574,6 +597,32 @@ useSEO({
 .voice-card:hover {
   border-color: rgba(255, 107, 53, 0.35);
   transform: translateY(-4px);
+}
+
+/* An odd card out takes its own row, centred, instead of sitting alone at half width */
+.voice-card--wide {
+  grid-column: 1 / -1;
+  justify-self: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 820px;
+}
+
+.voices-more {
+  text-align: center;
+  margin: 36px 0 0;
+}
+
+.voices-more a {
+  color: var(--primary-orange);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.voices-more a:hover {
+  color: #FFD93D;
 }
 
 .voice-quote-mark {

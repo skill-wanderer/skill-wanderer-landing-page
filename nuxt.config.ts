@@ -162,6 +162,7 @@ export default defineNuxtConfig({
     '/work-with-us': { sitemap: { changefreq: 'monthly', priority: 0.9 } },
     '/work-with-us/service-model': { sitemap: { changefreq: 'monthly', priority: 0.9 } },
     '/work-with-us/our-projects': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
+    '/work-with-us/testimonials': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/work-with-us/**': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/privacy-policy': { sitemap: { changefreq: 'yearly', priority: 0.3 } },
     '/terms-of-service': { sitemap: { changefreq: 'yearly', priority: 0.3 } },

@@ -166,6 +166,7 @@
     <!-- Join the Community Section -->
     <section class="join-community">
       <div class="join-container">
+        <ImageSlot name="learners/lantern-map" class="join-image" />
         <h2>Become Part of Our Learning Community</h2>
         <p>
           Start with our free courses, ask for guidance whenever you're stuck, and grow into a contributor on
@@ -460,6 +461,11 @@ useSEO({
 .join-container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.join-image {
+  max-width: 560px;
+  margin: 0 auto 36px;
 }
 
 .join-container h2 {

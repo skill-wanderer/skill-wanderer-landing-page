@@ -123,6 +123,24 @@ export const imageSlots: Record<string, ImageSlotSpec> = {
       'The feeling is ownership and freedom: you hold the keys, and the door is never locked.',
   },
 
+  // ── Testimonials and Learner Stories: one closing image each, after the real people's own words and photos ──
+  // Neither scene shows people, so nobody in it can be mistaken for a real client or learner.
+  'testimonials/guestbook': {
+    ratio: '16/9',
+    alt: 'An open guestbook on a wooden stand beside a lit workshop door at dusk, with a pen resting on a fresh blank page',
+    prompt:
+      'An open guestbook on a small wooden stand beside the half-open door of a warmly lit workshop at dusk. ' +
+      'The left page is filled with faint lines of handwriting too small to read, and the right page is still blank, with a fountain pen resting across it, ready for the next entry. ' +
+      'No people in the scene.',
+  },
+  'learners/lantern-map': {
+    ratio: '16/9',
+    alt: 'A hand-painted world map on a table at night, with lanterns lit across several continents and one unlit lantern waiting at the edge',
+    prompt:
+      'A hand-painted world map with no labels, spread across a wooden table at night and seen from slightly above. Small glowing lanterns stand on it across several continents, ' +
+      'joined by fine threads of warm light. At the near edge of the table, one unlit lantern waits beside a box of matches, ready to join them. No people in the scene.',
+  },
+
   // ── About: the three story chapters ─────────────────────
   'about/beginning': {
     ratio: '16/9',

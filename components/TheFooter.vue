@@ -17,6 +17,7 @@
         <NuxtLink to="/work-with-us">Work With Us</NuxtLink>
         <NuxtLink to="/work-with-us/service-model">How It Works</NuxtLink>
         <NuxtLink to="/work-with-us/our-projects">Client Projects</NuxtLink>
+        <NuxtLink to="/work-with-us/testimonials">Testimonials</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/social-enterprise">Our Social Enterprise</NuxtLink>
         <NuxtLink to="/principles">12 Principles</NuxtLink>

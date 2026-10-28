@@ -10,7 +10,9 @@
           :style="{ animationDelay: `${index * 0.15}s` }"
         >
           <div class="testimonial-quote-mark">"</div>
-          <blockquote class="testimonial-text">{{ testimonial.quote }}</blockquote>
+          <blockquote class="testimonial-text">
+            <p v-for="(paragraph, i) in paragraphsOf(testimonial.quote)" :key="i">{{ paragraph }}</p>
+          </blockquote>
           <div class="testimonial-author">
             <img
               v-if="testimonial.avatar"
@@ -25,9 +27,25 @@
             <div class="testimonial-meta">
               <p class="testimonial-name">{{ testimonial.name }}</p>
               <p v-if="testimonial.role" class="testimonial-role">{{ testimonial.role }}</p>
+              <p v-if="testimonial.source" class="testimonial-source">
+                <a v-if="testimonial.sourceUrl" :href="testimonial.sourceUrl" target="_blank" rel="noopener noreferrer">{{ testimonial.source }}</a>
+                <template v-else>{{ testimonial.source }}</template>
+              </p>
             </div>
           </div>
+          <NuxtLink
+            v-if="testimonial.link"
+            :to="testimonial.link.to"
+            :target="isExternal(testimonial.link.to) ? '_blank' : undefined"
+            :rel="isExternal(testimonial.link.to) ? 'noopener noreferrer' : undefined"
+            class="testimonial-link"
+          >
+            {{ testimonial.link.label }} →
+          </NuxtLink>
         </div>
+      </div>
+      <div v-if="$slots.default" class="testimonial-footer">
+        <slot />
       </div>
     </div>
   </section>
@@ -35,10 +53,16 @@
 
 <script setup lang="ts">
 interface Testimonial {
-  quote: string
+  /** A short excerpt, or one string per paragraph for a full testimonial. */
+  quote: string | string[]
   name: string
   role?: string
   avatar?: string
+  source?: string
+  /** Where the source can be checked, such as the person's LinkedIn profile. */
+  sourceUrl?: string
+  /** A case study, or the person's own site when they are not a client. */
+  link?: { to: string; label: string }
 }
 
 interface Props {
@@ -51,6 +75,10 @@ withDefaults(defineProps<Props>(), {
   layout: 'grid',
   sectionTitle: undefined,
 })
+
+const paragraphsOf = (quote: string | string[]) => (Array.isArray(quote) ? quote : [quote])
+
+const isExternal = (to: string) => /^https?:\/\//.test(to)
 </script>
 
 <style scoped>
@@ -130,6 +158,14 @@ withDefaults(defineProps<Props>(), {
   font-style: italic;
 }
 
+.testimonial-text p {
+  margin: 0;
+}
+
+.testimonial-text p + p {
+  margin-top: 1em;
+}
+
 .testimonial-author {
   display: flex;
   align-items: center;
@@ -167,6 +203,41 @@ withDefaults(defineProps<Props>(), {
   font-size: 0.9rem;
   color: var(--primary-orange);
   margin-top: 2px;
+}
+
+.testimonial-source {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 2px;
+}
+
+.testimonial-source a {
+  color: inherit;
+  text-underline-offset: 2px;
+  transition: color 0.3s ease;
+}
+
+.testimonial-source a:hover {
+  color: var(--primary-orange);
+}
+
+.testimonial-link {
+  display: inline-block;
+  margin-top: 26px;
+  color: var(--primary-orange);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.testimonial-link:hover {
+  color: var(--accent-yellow);
+}
+
+.testimonial-footer {
+  text-align: center;
+  margin-top: 50px;
 }
 
 @keyframes fadeInUp {
