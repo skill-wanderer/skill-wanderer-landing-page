@@ -104,10 +104,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'AE01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'AE02',
@@ -198,10 +198,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'L01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'L02',
@@ -280,10 +280,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'M01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'M02',
@@ -347,10 +347,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'B01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'B02',
@@ -409,10 +409,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'Q01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'Q02',
@@ -487,10 +487,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'AI01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'AI02',
@@ -565,10 +565,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'DV01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'DV02',
@@ -643,10 +643,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'MO01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'MO02',
@@ -721,10 +721,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'SR01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'SR02',
@@ -799,10 +799,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'PM01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'PM02',
@@ -877,10 +877,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'SF01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'SF02',
@@ -955,10 +955,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'AS01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'AS02',
@@ -1033,10 +1033,10 @@ export const reusablePathOverviews: Record<string, ReusablePathOverview> = {
     lessons: [
       {
         id: 'SA01',
-        title: 'AI-First Learning for Tech Careers',
-        description: 'Learn how to use AI tools effectively to accelerate your learning and build stronger habits for real-world work.',
+        title: 'How to Become Your Own Teacher: Learning How to Learn',
+        description: 'The prerequisite for everything else on the Dojo. It covers why self-directed learning matters, how to combine learning methods, and how to keep it enjoyable for life.',
         status: 'available',
-        url: 'https://dojo.skill-wanderer.com/courses/ai-first-learning-for-tech-careers'
+        url: 'https://dojo.skill-wanderer.com/courses/how-to-become-your-own-teacher-learning-how-to-learn'
       },
       {
         id: 'SA02',
