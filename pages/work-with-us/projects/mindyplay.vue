@@ -15,7 +15,6 @@
         <div class="hero-meta">
           <span class="meta-tag">Flutter &amp; Flame Engine</span>
           <span class="meta-tag">Game Digitalization</span>
-          <a href="https://mindycore.com/mindy-play" target="_blank" rel="noopener noreferrer" class="meta-tag link-tag">mindycore.com/mindy-play &rarr;</a>
         </div>
       </div>
     </section>
@@ -389,19 +388,6 @@ useSEO({
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 0.95rem;
-}
-
-.link-tag {
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  color: var(--primary-orange);
-  font-weight: 600;
-}
-
-.link-tag:hover {
-  background: rgba(255, 107, 53, 0.3);
-  color: #fff;
 }
 
 /* ── Detail Sections ─────────────────────────────── */

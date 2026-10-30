@@ -15,7 +15,6 @@
         <div class="hero-meta">
           <span class="meta-tag">Multi-Tenant Architecture</span>
           <span class="meta-tag">MVP in &lt; 3 Months</span>
-          <a href="https://hellomindy.mindycore.com/" target="_blank" rel="noopener noreferrer" class="meta-tag link-tag">hellomindy.mindycore.com &rarr;</a>
         </div>
       </div>
     </section>
@@ -263,9 +262,9 @@
         <h2>Where It Stands Now</h2>
         <p>
           The MVP was <strong>developed from start to finish in under 3 months</strong>, with staging and production
-          both live on EU cloud before our engagement concluded. MindyMinds has since continued in active development
-          in-house at the client, with the mentee from our build having joined their team. We no longer work on the
-          platform, so anything past the handover is theirs to speak to rather than ours to claim.
+          both live on EU cloud before our engagement concluded. The client has since taken the platform in-house
+          for a rebuild, with the mentee from our build having joined their team. We no longer work on it, so
+          anything past the handover is theirs to speak to rather than ours to claim.
         </p>
         <div class="status-timeline">
           <div class="timeline-item timeline-item--done">
@@ -482,19 +481,6 @@ useSEO({
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 0.95rem;
-}
-
-.link-tag {
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  color: var(--primary-orange);
-  font-weight: 600;
-}
-
-.link-tag:hover {
-  background: rgba(255, 107, 53, 0.3);
-  color: #fff;
 }
 
 /* ── Detail Sections ─────────────────────────────── */
