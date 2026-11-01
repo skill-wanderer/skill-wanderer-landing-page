@@ -135,6 +135,7 @@
               <li>A free working prototype, and a second one if the direction changes significantly</li>
               <li>Up to 2 structured revision rounds before launch</li>
               <li>Hosting, maintenance, support and occasional changes</li>
+              <li>Tech partner help when you need it: business email, tools, research and advice</li>
             </ul>
             <p class="plan-payment">Paid monthly or quarterly, depending on your situation.</p>
             <NuxtLink to="/contact" class="btn btn-secondary">Tell Us About Your Idea</NuxtLink>
@@ -157,6 +158,7 @@
             <li>Maintenance, so it stays secure, up to date and working <span class="care-tag care-tag--both">Both plans</span></li>
             <li>Support when you have questions or aren't sure what you need next <span class="care-tag">Care Plan</span></li>
             <li>Occasional changes as your business grows <span class="care-tag">Care Plan</span></li>
+            <li>Help beyond your site or app, like business email, tool setup, research and advice: added as an extra service, or paid for with unused credit on your plan <span class="care-tag">Care Plan</span></li>
             <li>Bigger changes or new features: we agree the scope and price with you first <span class="care-tag care-tag--both">Both plans</span></li>
           </ul>
           <p class="care-note">
@@ -379,6 +381,11 @@ const faqs = [
     question: 'Does the Simple Website Plan include changes?',
     answer:
       'Before launch, yes: up to 2 revision rounds, the same as on the Care Plan. After launch, no. The plan then covers hosting and maintenance: we keep your site online, secure and up to date, and fix anything that stops working. Changes such as new text, photos or prices are not included, so your site stays as it was launched. If you need changes later, we agree the scope and price with you first, or we can talk about moving your site to the Care Plan.',
+  },
+  {
+    question: 'Can you help with more than the website or app?',
+    answer:
+      'Yes, on the Care Plan. Once we look after your project, we can also help with the tech around it: business email on your own domain, setting up the tools and accounts your business runs on, looking into tools, vendors and competitors before you spend, and plain-language advice on where AI really helps. It is added as an extra service with the price agreed first, or paid for with unused credit on your plan. We only take on this work for projects we build and look after, so it is not offered on its own. On the Simple Website Plan, we can talk about moving your site to the Care Plan.',
   },
   {
     question: 'Can I stop or move the project elsewhere later?',

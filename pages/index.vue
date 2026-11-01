@@ -386,7 +386,7 @@
             but Quan designs your project and reviews every change, so it doesn't fall apart later.
           </p>
           <ul class="guide-points">
-            <li>Plain-language advice, not just code</li>
+            <li>A tech partner for email, tools, research and advice, not just code</li>
             <li>Quan designs your project and reviews every change</li>
             <li>Guild learners may help, always under his review</li>
           </ul>

@@ -7,7 +7,8 @@
       <p>
         We help solo founders, freelancers, coaches, consultants, writers and small businesses get their idea
         online: websites, AI tools, booking and payments. You see a free working prototype first, and there is
-        no development fee.
+        no development fee. After launch, we can also look after the tech around it, from business email to
+        research and advice.
       </p>
       <div class="hero-actions">
         <NuxtLink to="/contact" class="btn btn-primary">Tell Us About Your Idea</NuxtLink>
@@ -124,12 +125,49 @@
       </div>
     </section>
 
-    <!-- Advice, not only code -->
-    <section class="advice-section">
+    <!-- Beyond the build: tech partner work, only for projects on the Care Plan (never sold on its own) -->
+    <section id="tech-partner" class="advice-section">
       <div class="content">
+        <div class="section-header">
+          <h2>Like Having a Tech Department, Without Hiring One</h2>
+          <p>
+            A website or app is only part of running a business online. Once we look after your project on the
+            Care Plan, we help with the tech around it too.
+          </p>
+        </div>
+
+        <div class="partner-grid">
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">📧</div>
+            <h3>Business Email &amp; Domain</h3>
+            <p>Email on your own domain, set up so your messages reach inboxes instead of spam folders.</p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🔗</div>
+            <h3>Tools &amp; Accounts</h3>
+            <p>The apps and accounts your business runs on, from payments to analytics, set up and working together.</p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🔎</div>
+            <h3>Research Before You Spend</h3>
+            <p>We look into tools, vendors and competitors for you, so you decide on facts, not sales pitches.</p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🧭</div>
+            <h3>Tech Advice</h3>
+            <p>Where AI really helps, what is worth automating, and what to leave alone, explained in plain language.</p>
+          </div>
+        </div>
+
+        <p class="partner-note">
+          This help is part of the Care Plan, for projects we build and look after. It is added as an extra
+          service with the price agreed first, or paid for with unused credit on your plan.
+          <NuxtLink to="/work-with-us/service-model#plans">Compare the plans →</NuxtLink>
+        </p>
+
         <div class="advice-block">
           <div class="advice-text">
-            <h2>Not Only Tech: Honest Advice Too</h2>
+            <h3>Not Only Tech: Honest Advice Too</h3>
             <p>
               Many clients need more than code. We help you find the message your site should carry, shape your
               offer, and decide what to build first, and what not to build at all.
@@ -592,8 +630,8 @@ useSEO({
   padding: 44px;
 }
 
-.advice-text h2 {
-  font-size: 2rem;
+.advice-text h3 {
+  font-size: 1.7rem;
   color: var(--primary-orange);
   margin-bottom: 16px;
 }
@@ -644,6 +682,33 @@ useSEO({
 
 .advice-quote strong {
   color: white;
+}
+
+/* Tech partner */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.partner-note {
+  max-width: 760px;
+  margin: 36px auto 50px;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.partner-note a {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.partner-note a:hover {
+  text-decoration: underline;
 }
 
 /* Plan */
@@ -945,6 +1010,10 @@ useSEO({
   .proof-card {
     flex-basis: calc(50% - 12px);
   }
+
+  .partner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
@@ -982,7 +1051,8 @@ useSEO({
     padding: 0 16px;
   }
 
-  .build-grid {
+  .build-grid,
+  .partner-grid {
     grid-template-columns: 1fr;
   }
 
