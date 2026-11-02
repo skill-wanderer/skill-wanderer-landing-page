@@ -320,6 +320,44 @@
       </div>
     </section>
 
+    <!-- Concept Prototype Section: not client work, shown with the author's permission.
+         Keep it out of client lists and the homepage until she agrees to more. -->
+    <section class="projects-section">
+      <div class="content">
+        <div class="section-header">
+          <div class="section-tag">Concept Prototype</div>
+          <h2>An Author's Site, Not a Template</h2>
+          <p>
+            Not client work: a working prototype we built for author Arlene Rotter, shown with her permission. Set it
+            beside the speaker, calligrapher and coach above, and no two of these sites share a template.
+          </p>
+        </div>
+
+        <div class="case-study-grid case-study-grid--single">
+          <NuxtLink to="/work-with-us/projects/arlene-rotter-author" class="case-study-card">
+            <div class="case-study-hero case-study-hero--screenshot">
+              <img src="/projects/arlenerotter/card.jpg" alt="Arlene Rotter concept prototype" class="case-study-image" />
+              <span class="status-badge status-badge--prototype">Concept Prototype</span>
+            </div>
+            <div class="case-study-body">
+              <h3>Arlene Rotter, The Rebel Writer™</h3>
+              <p class="case-study-result">
+                A concept website for an author of more than 25 books who is seeking an agent: a shelf sorted by
+                genre, covers set in type for unpublished novels, a sample chapter reader, and a one-page pitch for
+                literary agents.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Astro</span>
+                <span class="stack-tag">Tailwind CSS</span>
+                <span class="stack-tag">Cloudflare</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="content">
@@ -574,6 +612,20 @@ useSEO({
   box-shadow: 0 2px 12px rgba(34, 197, 94, 0.3);
 }
 
+/* --prototype: a concept we built to show, not a live client site */
+.status-badge--prototype {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: white;
+  box-shadow: 0 2px 12px rgba(139, 92, 246, 0.3);
+}
+
+/* Website screenshots put their text top-left, so the badge moves to the
+   empty top-right, clear of the book covers. See the 768px rule below. */
+.case-study-hero--screenshot .status-badge {
+  left: auto;
+  right: 16px;
+}
+
 /* ═══════════════════════════════════════════════════ */
 /* CLIENT VOICES: Testimonial Cards                  */
 /* ═══════════════════════════════════════════════════ */
@@ -749,9 +801,10 @@ useSEO({
 }
 
 /* ── CTA Section ───────────────────────────────────── */
+/* Darker, so it alternates with the plain Concept Prototype section above */
 .cta-section {
   padding: 90px 20px;
-  background: var(--dark-bg);
+  background: var(--darker-bg);
   text-align: center;
 }
 
@@ -848,6 +901,18 @@ useSEO({
 
   .case-study-hero {
     height: 200px;
+  }
+
+  /* A fixed 200px strip crops a screenshot unpredictably, so show all of it.
+     11% down is where the screenshot's nav ends, so the badge sits between
+     the nav and the book covers at every one-column width. */
+  .case-study-hero.case-study-hero--screenshot {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .case-study-hero--screenshot .status-badge {
+    top: 11%;
   }
 }
 

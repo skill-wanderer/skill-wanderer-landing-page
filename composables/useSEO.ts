@@ -39,8 +39,9 @@ export const useSEO = (config: SEOConfig) => {
       // Basic meta tags
       { name: 'description', content: optimizedDescription },
       { name: 'author', content: config.author || 'Quan Nguyen' },
-      ...(config.robots ? [{ name: 'robots', content: config.robots }] : []),
-      
+      // One robots tag only: with two, the later default won and silently undid a page's noindex
+      { name: 'robots', content: config.robots || 'index,follow' },
+
       // Keywords (if provided)
       ...(config.keywords ? [{ name: 'keywords', content: config.keywords.join(', ') }] : []),
       
@@ -63,7 +64,6 @@ export const useSEO = (config: SEOConfig) => {
       { name: 'twitter:image:alt', content: ogImageAlt },
       
       // Additional SEO tags
-      { name: 'robots', content: 'index,follow' },
       { name: 'language', content: 'en' },
       { name: 'revisit-after', content: '7 days' },
     ],

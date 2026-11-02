@@ -13,6 +13,8 @@ export default defineNuxtConfig({
     exclude: [
       '/partners',
       '/partners/**',
+      // Concept prototype, not client work: noindex until Arlene agrees to wider promotion
+      '/work-with-us/projects/arlene-rotter-author',
     ],
     defaults: {
       changefreq: 'weekly',
