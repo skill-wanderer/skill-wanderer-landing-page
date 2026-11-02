@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     exclude: [
       '/partners',
       '/partners/**',
-      // Concept prototype, not client work: noindex until Arlene agrees to wider promotion
+      // Arlene Rotter's prototype is kept out of search for now, see its page
       '/work-with-us/projects/arlene-rotter-author',
     ],
     defaults: {

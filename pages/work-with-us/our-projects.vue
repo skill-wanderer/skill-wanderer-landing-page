@@ -320,16 +320,17 @@
       </div>
     </section>
 
-    <!-- Concept Prototype Section: not client work, shown with the author's permission.
-         Keep it out of client lists and the homepage until she agrees to more. -->
+    <!-- Concept Prototype Section: not client work, so keep it out of client lists.
+         Arlene agreed on 2026-10-30 to the prototype being featured on this site. -->
     <section class="projects-section">
       <div class="content">
         <div class="section-header">
           <div class="section-tag">Concept Prototype</div>
           <h2>An Author's Site, Not a Template</h2>
           <p>
-            Not client work: a working prototype we built for author Arlene Rotter, shown with her permission. Set it
-            beside the speaker, calligrapher and coach above, and no two of these sites share a template.
+            Not client work: this is the free working prototype we built for author Arlene Rotter, shown with her
+            permission. It is what you see before you decide anything. Set it beside the speaker, calligrapher and
+            coach above, and no two of these sites share a template.
           </p>
         </div>
 
@@ -342,7 +343,7 @@
             <div class="case-study-body">
               <h3>Arlene Rotter, The Rebel Writer™</h3>
               <p class="case-study-result">
-                A concept website for an author of more than 25 books who is seeking an agent: a shelf sorted by
+                The free prototype for an author with 25 books and counting, now seeking an agent: a shelf sorted by
                 genre, covers set in type for unpublished novels, a sample chapter reader, and a one-page pitch for
                 literary agents.
               </p>

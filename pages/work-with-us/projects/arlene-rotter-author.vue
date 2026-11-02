@@ -1,6 +1,8 @@
 <template>
   <div>
-    <!-- Concept prototype, not client work: shown with Arlene's permission, noindex until she agrees to more -->
+    <!-- Concept prototype, not client work. Arlene agreed on 2026-10-30 to it being featured here, on the terms
+         Quan gave her: labelled as a prototype, credited to her, and none of her unpublished writing without her
+         permission. Do not quote her private messages without asking her. -->
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
@@ -20,14 +22,14 @@
         <div class="hero-meta">
           <span class="meta-tag">Role: Concept, Design &amp; Development</span>
           <span class="meta-tag">Author &amp; Novelist</span>
-          <!-- The prototype is noindex, nofollow itself, so the link passes nothing on -->
-          <a href="https://arlene-rotter.skill-wanderer.com" target="_blank" rel="noopener noreferrer nofollow" class="meta-tag link-tag">arlene-rotter.skill-wanderer.com →</a>
+          <!-- No link to the live prototype until Arlene confirms: it carries the full Chapter One of an unpublished
+               novel. When she does, add it back here with rel="noopener noreferrer nofollow". -->
         </div>
         <div class="prototype-banner">
           <span class="prototype-banner-label">Concept Prototype</span>
           <p>
-            Built by Skill-Wanderer in October 2026 and shown here with Arlene's permission. It is not her official
-            website and not a client project, and its contact form is a demo that sends nothing.
+            A free prototype we built for Arlene, shown here with her permission. The books and the writing are hers;
+            the design and the build are ours. It is not her official website and not a client project.
           </p>
         </div>
       </div>
@@ -39,7 +41,7 @@
         <h2>Overview</h2>
         <p>
           Dr. Arlene Rotter spent 41 years in education, earned a Ph.D., founded her own school, and now writes full
-          time as The Rebel Writer™. She has written more than 25 books, from psychological thrillers and political
+          time as The Rebel Writer™. She has written 25 books and counting, from psychological thrillers and political
           sci-fi to historical fiction, memoir and Southern humor, and she is seeking literary representation for
           three finished novels. This prototype shows the website that kind of career needs: a shelf for the
           published books, a pitch for the new manuscripts, and a way to try her voice before committing to a whole
@@ -48,8 +50,22 @@
       </div>
     </section>
 
-    <!-- The Challenge Section -->
+    <!-- How It Started Section -->
     <section class="detail-section">
+      <div class="detail-container">
+        <h2>How It Started</h2>
+        <p>
+          I had been reading Arlene's posts on LinkedIn since the spring of 2026, and as we talked, her goal became
+          clear: to put her books in front of far more readers, with a literary agent behind them. A website could
+          help, but that is easier to show than to explain, so I offered to build a prototype first, with no upfront
+          payment and no obligation to keep it. Two days later it was online, built from her writing, our
+          conversations and a sample chapter she shared with me.
+        </p>
+      </div>
+    </section>
+
+    <!-- The Challenge Section -->
+    <section class="detail-section darker">
       <div class="detail-container">
         <h2>The Challenge</h2>
         <p>
@@ -63,7 +79,7 @@
     </section>
 
     <!-- Agents Section -->
-    <section class="detail-section darker">
+    <section class="detail-section">
       <div class="detail-container">
         <h2>Built Around an Agent's Inbox</h2>
         <div class="highlight-box">
@@ -81,7 +97,7 @@
     </section>
 
     <!-- What I Built Section -->
-    <section class="detail-section">
+    <section class="detail-section darker">
       <div class="detail-container">
         <h2>What I Built</h2>
         <p class="section-intro">
@@ -164,8 +180,9 @@
       </div>
     </section>
 
-    <!-- Screens Section: screenshots of the live prototype, taken 2 November 2026 -->
-    <section class="detail-section darker">
+    <!-- Screens Section: screenshots of the live prototype, taken 2 November 2026.
+         Keep them free of her unpublished prose and of the premises of her unpublished novels. -->
+    <section class="detail-section">
       <div class="detail-container">
         <h2>Inside the Prototype</h2>
         <div class="screens-grid">
@@ -198,7 +215,7 @@
     </section>
 
     <!-- Tech Stack Section -->
-    <section class="detail-section">
+    <section class="detail-section darker">
       <div class="detail-container">
         <h2>Tech Stack &amp; Hosting</h2>
         <div class="tech-grid">
@@ -239,7 +256,7 @@
     </section>
 
     <!-- My Role Section -->
-    <section class="detail-section darker">
+    <section class="detail-section">
       <div class="detail-container">
         <h2>My Role</h2>
         <p class="section-intro">
@@ -256,33 +273,50 @@
     </section>
 
     <!-- Why It Is Here Section -->
-    <section class="detail-section">
+    <section class="detail-section darker">
       <div class="detail-container">
         <h2>Why It Is in Our Portfolio</h2>
         <blockquote class="featured-quote">
-          Compare this site with the ones we built for
+          This is what our free prototype looks like: a working site, made for one person, before any payment or
+          commitment. Compare it with the ones we built for
           <NuxtLink to="/work-with-us/projects/matt-harr-speaker">a speaker</NuxtLink>,
           <NuxtLink to="/work-with-us/projects/broad-strokes-studio">a calligrapher</NuxtLink> and
           <NuxtLink to="/work-with-us/projects/the-meek-method">a coach</NuxtLink>, and you will find no shared
-          template. Each business needs different pages, a different path to the first enquiry, and a different
-          first impression. That is why every accepted project starts with a free working prototype: you react to a
-          site made for your business before you commit to anything.
+          template, because each business needs different pages, a different path to the first enquiry, and a
+          different first impression. It is also here, with Arlene's permission, to help a few more readers find The
+          Rebel Writer.
         </blockquote>
       </div>
     </section>
 
     <!-- Project Status Section -->
-    <section class="detail-section darker">
+    <section class="detail-section">
       <div class="detail-container">
         <h2>Project Status</h2>
         <div class="status-box">
           <span class="status-indicator">Concept Prototype</span>
           <p>
-            The prototype is online and shown here with Arlene's permission. It is not her official website, so
-            details on it may be out of date, and its contact form is a demo that sends nothing. To reach Arlene
-            herself,
-            <a href="https://www.linkedin.com/in/arlene-rotter-6359711b8" target="_blank" rel="noopener noreferrer">message her on LinkedIn</a>.
+            This is still a prototype, shown here with Arlene's permission. It is not her official website, so details
+            in it may be out of date, and its contact form is a demo that sends nothing. Whether it ever becomes her
+            real site is up to her, in her own time.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credit Section: the proper credit, and the help finding her books, that Quan promised Arlene -->
+    <section class="detail-section darker">
+      <div class="detail-container">
+        <h2>Arlene's Own Work</h2>
+        <p>
+          The books, the sample chapter and the life story in this prototype are Dr. Arlene Rotter's own work.
+          Skill-Wanderer did the structure, the design and the build. To read her, start with her published books, or
+          follow the new writing she shares most days on LinkedIn, which is also the way to reach her.
+        </p>
+        <div class="credit-links">
+          <a href="https://www.amazon.com/s?k=Arlene+Rotter" target="_blank" rel="noopener noreferrer" class="meta-tag link-tag">Her books on Amazon →</a>
+          <a href="https://www.goodreads.com/author/show/4201599.Arlene_Rotter" target="_blank" rel="noopener noreferrer" class="meta-tag link-tag">Her books on Goodreads →</a>
+          <a href="https://www.linkedin.com/in/arlene-rotter-6359711b8" target="_blank" rel="noopener noreferrer" class="meta-tag link-tag">Arlene on LinkedIn →</a>
         </div>
       </div>
     </section>
@@ -316,7 +350,7 @@ useSEO({
     'A concept author website for Dr. Arlene Rotter, shown with her permission: a shelf by genre, covers set in type, a chapter reader and a page for agents.',
   image: '/projects/arlenerotter/card.jpg',
   keywords: ['author website design', 'website for authors', 'literary agent page', 'book website prototype', 'Astro website case study'],
-  // Not client work: kept out of search (and the sitemap, see nuxt.config) until Arlene agrees to wider promotion
+  // Kept out of search (and the sitemap, see nuxt.config) for now: Quan decides when to open it up
   robots: 'noindex, follow',
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
@@ -677,7 +711,15 @@ useSEO({
   line-height: 1.8;
 }
 
-.status-box a,
+/* ── Credit ───────────────────────────────────────── */
+.credit-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 28px;
+}
+
+/* ── Featured Quote ───────────────────────────────── */
 .featured-quote a {
   color: var(--primary-orange);
   font-weight: 600;
@@ -686,12 +728,10 @@ useSEO({
   transition: color 0.3s ease;
 }
 
-.status-box a:hover,
 .featured-quote a:hover {
   color: #FFD93D;
 }
 
-/* ── Featured Quote ───────────────────────────────── */
 .featured-quote {
   background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 217, 61, 0.05));
   border-left: 4px solid var(--primary-orange);
