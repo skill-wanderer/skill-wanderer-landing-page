@@ -39,14 +39,16 @@
     <!-- Key Stats Section -->
     <section class="detail-section">
       <div class="detail-container">
+        <!-- Counts as shown on chanhdao.vn/phap-quyen on 2026-11-09. They also appear in the
+             Features and Library sections below, the Our Projects card, and preview.svg. -->
         <div class="stats-grid">
           <div class="stat-card">
-            <span class="stat-number">162</span>
+            <span class="stat-number">256</span>
             <span class="stat-label">Structured Lessons</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">3</span>
-            <span class="stat-label">Volumes</span>
+            <span class="stat-number">8</span>
+            <span class="stat-label">Texts</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">100%</span>
@@ -117,7 +119,7 @@
           <div class="tech-row">
             <div class="tech-layer">Frontend</div>
             <div class="tech-name">Nuxt 4 + Vue 3 + TailwindCSS</div>
-            <div class="tech-why">SSG/SSR, SEO-optimized. All content stored in-repo as TypeScript: fully public, fast to serve</div>
+            <div class="tech-why">SSG/SSR on Cloudflare, SEO-optimized. All content stored in-repo as TypeScript: fully public, fast to serve</div>
           </div>
           <div class="tech-row">
             <div class="tech-layer">Backend</div>
@@ -189,10 +191,10 @@
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">📚</div>
-            <h3>162 Structured Lessons</h3>
+            <h3>256 Lessons, 8 Texts</h3>
             <p>
-              "Phat Hoc Pho Thong" (General Buddhist Studies) across 3 volumes, based on the
-              teachings of Venerable Thich Thien Hoa.
+              All four volumes of "Phat Hoc Pho Thong" (General Buddhist Studies) by Venerable Thich Thien Hoa,
+              plus four Pure Land texts, from the Infinite Life Sutra to the sayings of Great Master Yin Guang.
             </p>
           </div>
           <div class="feature-card">
@@ -212,8 +214,8 @@
             <div class="feature-icon">🛤️</div>
             <h3>Phap Lo: Learning Pathways</h3>
             <p>
-              Structured learning progressions from Basic to Intermediate to Advanced, so learners can
-              follow a systematic path suited to their level.
+              Two paths set the order of study: General Buddhist Studies runs through all four volumes, and a
+              Pure Land path opens with the late Venerable Thich Giac Khang's talks, with more teachers to follow.
             </p>
           </div>
           <div class="feature-card">
@@ -233,7 +235,7 @@
             <div class="feature-icon">📊</div>
             <h3>Progress Tracking</h3>
             <p>
-              Users can mark completed lessons and monitor their advancement through each volume
+              Users can mark completed lessons and monitor their advancement through each text
               and learning pathway.
             </p>
           </div>
@@ -273,10 +275,12 @@
     <section class="detail-section">
       <div class="detail-container">
         <h2>Self-Hosted on Home Kubernetes</h2>
+        <!-- The frontend moved to Cloudflare (nitro cloudflare_module preset) on 2026-04-14.
+             Where the back end runs is as Quan last described it; it is not visible from outside. -->
         <p>
-          The entire platform runs on a <strong>self-hosted Kubernetes cluster at home</strong>. No cloud VMs,
-          no managed services, just bare-metal k8s running all workloads: Nuxt frontend, NestJS API, Keycloak,
-          PostgreSQL, FastAPI AI fleet, and Qdrant.
+          The lesson pages are prerendered and served from Cloudflare, so they load fast wherever readers are.
+          Everything behind them runs on a <strong>self-hosted Kubernetes cluster at home</strong>. No cloud VMs,
+          just bare-metal k8s running the NestJS API, Keycloak, PostgreSQL, the FastAPI AI fleet, and Qdrant.
         </p>
         <div class="highlight-box" style="margin-top: 30px;">
           <span class="highlight-number">~$0</span>
@@ -286,15 +290,15 @@
         <div class="hosting-grid">
           <div class="hosting-card">
             <h3>Home k8s Cluster</h3>
-            <p>Nuxt, NestJS, Keycloak, PostgreSQL, Qdrant</p>
+            <p>NestJS, Keycloak, PostgreSQL, Qdrant, AI fleet</p>
           </div>
           <div class="hosting-card">
             <h3>Cloud API Keys</h3>
             <p>AI inference, the only paid cost</p>
           </div>
           <div class="hosting-card">
-            <h3>Domain & DNS</h3>
-            <p>chanhdao.vn</p>
+            <h3>Cloudflare</h3>
+            <p>Lesson pages, plus DNS for chanhdao.vn</p>
           </div>
         </div>
       </div>
@@ -364,73 +368,67 @@
           <div class="pipeline-step">
             <div class="pipeline-number">3</div>
             <div class="pipeline-content">
-              <h3>Nuxt SSG</h3>
-              <p>Static site generation deployed to chanhdao.vn</p>
+              <h3>Nuxt Prerender</h3>
+              <p>Lesson pages prerendered and served from Cloudflare at chanhdao.vn</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Course Structure Section -->
+    <!-- Library Section: counts as shown on chanhdao.vn/phap-quyen on 2026-11-09.
+         An Quang Dai Su Gia Ngon Luc has 58 pages, but 6 are section headers the site does not count. -->
     <section class="detail-section darker">
       <div class="detail-container">
-        <h2>Course Structure</h2>
+        <h2>The Library</h2>
         <p class="section-intro">
-          Phat Hoc Pho Thong (General Buddhist Studies), a comprehensive curriculum across 3 volumes,
-          based on the teachings of Venerable Thich Thien Hoa. Content spans Basic, Intermediate, and Advanced levels.
+          256 lessons across eight texts, all free. The library opened with the first three volumes of Venerable
+          Thich Thien Hoa's General Buddhist Studies, and has since added the fourth volume and a shelf of Pure Land texts.
         </p>
 
         <div class="course-volumes">
           <div class="volume-card">
-            <h3>Volume 1</h3>
-            <span class="volume-meta">51 lessons</span>
+            <h3>Phat Hoc Pho Thong</h3>
+            <span class="volume-meta">General Buddhist Studies &middot; 4 volumes &middot; 181 lessons</span>
             <div class="volume-sections">
               <div class="volume-section">
-                <span class="section-name">Section 1: Nhon Thua Phat Giao</span>
-                <span class="section-count">10 lessons + supplements</span>
+                <span class="section-name">Volume 1</span>
+                <span class="section-count">51 lessons</span>
               </div>
               <div class="volume-section">
-                <span class="section-name">Section 2: Thien Thua Phat Giao</span>
-                <span class="section-count">11 lessons</span>
+                <span class="section-name">Volume 2</span>
+                <span class="section-count">42 lessons</span>
               </div>
               <div class="volume-section">
-                <span class="section-name">Section 3: Thinh Van Thua Phat Giao</span>
-                <span class="section-count">14 lessons</span>
+                <span class="section-name">Volume 3</span>
+                <span class="section-count">70 lessons</span>
               </div>
               <div class="volume-section">
-                <span class="section-name">Section 4: Duyen Giac va Bo Tat Thua</span>
-                <span class="section-count">12 lessons</span>
+                <span class="section-name">Volume 4: Ban Do Tu Phat (A Map of Buddhist Practice)</span>
+                <span class="section-count">18 lessons</span>
               </div>
             </div>
           </div>
 
           <div class="volume-card">
-            <h3>Volume 2</h3>
-            <span class="volume-meta">41 lessons</span>
+            <h3>Tinh Do</h3>
+            <span class="volume-meta">Pure Land &middot; 4 texts &middot; 75 lessons</span>
             <div class="volume-sections">
               <div class="volume-section">
-                <span class="section-name">Section 5: History, Schools & Cosmology</span>
+                <span class="section-name">Phap Mon Tinh Do: talks by the late Venerable Thich Giac Khang</span>
+                <span class="section-count">6 lessons</span>
+              </div>
+              <div class="volume-section">
+                <span class="section-name">Luoc Giai Kinh A Di Da: a brief commentary on the Amitabha Sutra</span>
+                <span class="section-count">7 lessons</span>
+              </div>
+              <div class="volume-section">
+                <span class="section-name">Kinh Vo Luong Tho: the Infinite Life Sutra</span>
                 <span class="section-count">10 lessons</span>
               </div>
               <div class="volume-section">
-                <span class="section-name">Sections 6-7: Surangama Sutra</span>
-                <span class="section-count">16 lessons</span>
-              </div>
-              <div class="volume-section">
-                <span class="section-name">Section 8: Sutra of Perfect Enlightenment</span>
-                <span class="section-count">12 lessons</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="volume-card">
-            <h3>Volume 3</h3>
-            <span class="volume-meta">70 lessons</span>
-            <div class="volume-sections">
-              <div class="volume-section">
-                <span class="section-name">Continued foundational Buddhist studies</span>
-                <span class="section-count">70 lessons</span>
+                <span class="section-name">An Quang Dai Su Gia Ngon Luc: sayings of Great Master Yin Guang</span>
+                <span class="section-count">52 lessons</span>
               </div>
             </div>
           </div>

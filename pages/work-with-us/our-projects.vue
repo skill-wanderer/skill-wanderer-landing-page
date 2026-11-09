@@ -176,29 +176,31 @@
           <div class="section-tag">Non-Profit</div>
           <h2>Giving Back Through Technology</h2>
           <p>
-            We apply our skills where they matter most: a website for a Ugandan non-profit, and ChanhDao.vn, a free,
-            open-source learning platform Quan co-founded.
+            We apply our skills where they matter most: a Ugandan non-profit's first website, which Quan built and
+            used to look after, and ChanhDao.vn, a free, open-source learning platform Quan co-founded.
           </p>
         </div>
 
         <div class="case-study-grid">
+          <!-- A real client, but a past one: the site we built was offline on 2026-11-09,
+               so the card and case study speak in the past tense and nothing links out. -->
           <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="case-study-card">
             <div class="case-study-hero">
               <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" class="case-study-image" />
-              <span class="status-badge status-badge--maintenance">On Maintenance</span>
+              <span class="status-badge status-badge--past">Past Contribution</span>
               <img src="/projects/wmsmile/og-image.jpeg" alt="WM Smile Generation Uganda Logo" class="case-study-logo" />
             </div>
             <div class="case-study-body">
               <h3>WM Smile Generation Uganda</h3>
               <p class="case-study-result">
-                Built a full website for a Ugandan non-profit, giving them a digital presence to attract donors,
-                share impact stories, and coordinate community healthcare and education programmes.
+                Quan joined this Ugandan non-profit's team as website administrator, built its first website in three
+                days, and looked after it afterwards. It told the founder's story and gave donors and partners a clear
+                way to help. The site is no longer online.
               </p>
               <div class="case-study-stack">
-                <span class="stack-tag">Nuxt 3</span>
-                <span class="stack-tag">TypeScript</span>
-                <span class="stack-tag">Tailwind</span>
-                <span class="stack-tag">Kubernetes</span>
+                <span class="stack-tag">Astro</span>
+                <span class="stack-tag">Vercel</span>
+                <span class="stack-tag">Static Site</span>
               </div>
               <span class="case-study-link">View Case Study →</span>
             </div>
@@ -213,13 +215,14 @@
             <div class="case-study-body">
               <h3>ChanhDao.vn</h3>
               <p class="case-study-result">
-                Our own project, not client work. Digitalised 162 Buddhist lessons with AI-powered Q&A and structured
-                learning paths for Vietnamese learners, running on a self-hosted Kubernetes cluster at almost zero running cost.
+                Our own project, not client work. Digitalised 256 Buddhist lessons across eight texts, with AI-powered
+                Q&A and learning paths for Vietnamese learners, run at almost zero cost on Cloudflare and a self-hosted
+                Kubernetes cluster.
               </p>
               <div class="case-study-stack">
-                <span class="stack-tag">Nuxt 3</span>
+                <span class="stack-tag">Nuxt 4</span>
                 <span class="stack-tag">Python</span>
-                <span class="stack-tag">OpenAI</span>
+                <span class="stack-tag">Gemini</span>
                 <span class="stack-tag">Kubernetes</span>
                 <span class="stack-tag">PostgreSQL</span>
               </div>
@@ -601,7 +604,8 @@ useSEO({
   box-shadow: 0 2px 12px rgba(245, 158, 11, 0.3);
 }
 
-.status-badge--maintenance {
+/* --past: our part is over and the site is no longer online */
+.status-badge--past {
   background: linear-gradient(135deg, #64748b, #475569);
   color: white;
   box-shadow: 0 2px 12px rgba(100, 116, 139, 0.3);

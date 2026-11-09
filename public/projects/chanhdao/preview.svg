@@ -44,7 +44,7 @@
   <!-- Stats bar -->
   <g transform="translate(200, 300)">
     <rect x="0" y="0" width="400" height="50" rx="12" fill="rgba(212,168,67,0.08)" stroke="rgba(212,168,67,0.2)" stroke-width="1"/>
-    <text x="70" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#D4A843">162</text>
+    <text x="70" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#D4A843">256</text>
     <text x="70" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#e0d5c0" opacity="0.5">Lessons</text>
     <line x1="133" y1="8" x2="133" y2="42" stroke="rgba(212,168,67,0.2)" stroke-width="1"/>
     <text x="200" y="22" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="18" font-weight="700" fill="#D4A843">AI</text>

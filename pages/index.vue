@@ -528,10 +528,10 @@
           </div>
           <div class="project-meta">
             <h4>WM Smile Generation</h4>
-            <p class="project-summary">Website for a Ugandan non-profit supporting healthcare and education communities.</p>
+            <p class="project-summary">A Ugandan non-profit's first website, built in three days.</p>
             <div class="project-stack-tags">
-              <span>Nuxt 3</span>
-              <span>Kubernetes</span>
+              <span>Astro</span>
+              <span>Vercel</span>
             </div>
           </div>
         </NuxtLink>

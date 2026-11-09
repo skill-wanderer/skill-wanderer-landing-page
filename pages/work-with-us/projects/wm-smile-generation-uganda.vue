@@ -7,15 +7,17 @@
           ← Back to Our Projects
         </NuxtLink>
         <div class="status-badge">
-          <span>On Maintenance</span>
+          <span>Past Contribution</span>
         </div>
         <img src="/projects/wmsmile/og-image.jpeg" alt="WM Smile Generation Uganda Logo" class="hero-logo" />
         <h1>WM Smile Generation Uganda</h1>
         <p class="tagline">Official Website</p>
+        <!-- No link to wmsmilegeneration.org: the site we built was offline on 2026-11-09
+             (HTTPS failed, HTTP answered 404 from another host), so this page speaks in the past tense. -->
         <div class="hero-meta">
           <span class="meta-tag">Role: Website Administrator & Lead Developer</span>
           <span class="meta-tag">Non-Profit Organization Website</span>
-          <a href="https://wmsmilegeneration.org" target="_blank" rel="noopener noreferrer" class="meta-tag link-tag">wmsmilegeneration.org →</a>
+          <span class="meta-tag">Site No Longer Online</span>
         </div>
       </div>
     </section>
@@ -25,11 +27,11 @@
       <div class="detail-container">
         <h2>Overview</h2>
         <p>
-          WM Smile Generation Uganda Limited is a non-profit organization dedicated to transforming the lives
-          of children and youth across Uganda through quality education, environmental conservation, and refugee
-          child protection. I led the full design and development of their official web presence, turning their
-          mission into a digital platform that communicates impact, attracts donors, and connects the organization
-          with global partners.
+          When I worked with them, WM Smile Generation Uganda Limited was a non-profit dedicated to transforming the
+          lives of children and youth across Uganda through quality education, environmental conservation, and
+          refugee child protection. I led the full design and development of their first website, built to
+          communicate their impact, attract donors, and connect the organization with global partners. That site is
+          no longer online, so this page is a record of the work.
         </p>
       </div>
     </section>
@@ -71,8 +73,8 @@
       <div class="detail-container">
         <h2>What I Built</h2>
         <p class="section-intro">
-          A clean, purpose-driven website that puts the mission front and center while making it easy for visitors
-          to take action.
+          A clean, purpose-driven website that put the mission front and center and made it easy for visitors to
+          take action.
         </p>
 
         <div class="features-grid">
@@ -160,14 +162,14 @@
             <div class="priority-icon">📏</div>
             <div class="priority-content">
               <h3>Clear Information Hierarchy</h3>
-              <p>Visitors can understand who the organization is, what they do, and how to help within seconds.</p>
+              <p>Within seconds, visitors could see who the organization was, what it did, and how to help.</p>
             </div>
           </div>
           <div class="priority-item">
             <div class="priority-icon">❤️</div>
             <div class="priority-content">
               <h3>Human-Centered Storytelling</h3>
-              <p>Warm imagery and storytelling that reflects the reality on the ground.</p>
+              <p>Warm imagery and storytelling that reflected the reality on the ground.</p>
             </div>
           </div>
         </div>
@@ -184,14 +186,14 @@
             <span class="tech-label">Framework</span>
             <p>
               Chosen for its fast static site generation, minimal JavaScript overhead, and excellent performance
-              on low-bandwidth connections, which matters for an audience that includes visitors from East Africa.
+              on low-bandwidth connections, which mattered for an audience that included visitors from East Africa.
             </p>
           </div>
           <div class="tech-card">
             <h3>Vercel</h3>
             <span class="tech-label">Hosting (Free Tier)</span>
             <p>
-              Keeping operational costs at zero for a non-profit that needs every dollar directed toward its mission.
+              Kept hosting costs at zero for a non-profit that needed every dollar to go to its mission.
             </p>
           </div>
         </div>
@@ -210,22 +212,21 @@
           <div class="role-item">Designed the site architecture and page structure.</div>
           <div class="role-item">Developed and deployed the full website.</div>
           <div class="role-item">Coordinated with the content team (Kayla Pillay, Davide Celentano) to integrate copy and media.</div>
-          <div class="role-item">Ongoing maintenance and updates as the organization grows.</div>
+          <div class="role-item">Maintained and updated the site while I was part of the team.</div>
         </div>
       </div>
     </section>
 
-    <!-- Project Status Section -->
+    <!-- Current Status Section -->
     <section class="detail-section">
       <div class="detail-container">
-        <h2>Project Status</h2>
+        <h2>Where It Stands Now</h2>
         <div class="status-box">
-          <span class="status-indicator">On Maintenance</span>
+          <span class="status-indicator">No Longer Online</span>
           <p>
-            The website is live and stable, and it is currently in maintenance mode rather than active feature
-            development. The site was built to stay lightweight, and static generation means no server-side dependencies
-            to manage, and free hosting on Vercel eliminates recurring infrastructure costs. If the organization's
-            needs grow, the Astro architecture makes it straightforward to extend.
+            I used to look after this site as the team's Website Administrator. It has since gone offline, so there
+            is nothing live to link to. Static pages on free hosting kept it light and cost the organization nothing
+            to host while it ran. What the organization does online now is theirs to speak to rather than mine to claim.
           </p>
         </div>
       </div>
@@ -238,7 +239,7 @@
         <blockquote class="featured-quote">
           This is not just a portfolio piece. It's personal. I believe deeply that technology should serve people
           who need it most, not just those who can pay for it. WM Smile Generation's mission, giving vulnerable
-          children access to education and a healthier environment, aligns directly with why I founded
+          children access to education and a healthier environment, aligned directly with why I founded
           Skill-Wanderer. Working alongside this international team of volunteers reinforced something I carry
           into everything I build: the best technology is the kind that amplifies human compassion.
         </blockquote>
@@ -248,7 +249,8 @@
     <!-- Team Section -->
     <section class="detail-section">
       <div class="detail-container">
-        <h2>Team</h2>
+        <h2>The Team I Worked With</h2>
+        <p class="section-intro">Roles as they were while I was part of the team.</p>
         <div class="team-grid">
           <div class="team-card">
             <div class="team-role-icon">👤</div>
@@ -321,7 +323,7 @@
 useSEO({
   title: 'WM Smile Generation Uganda: Project Detail | Skill-Wanderer',
   description:
-    'How Skill-Wanderer designed and built the official website for WM Smile Generation Uganda, a non-profit transforming lives through education, environmental conservation, and refugee child protection.',
+    'How Skill-Wanderer built the first website for WM Smile Generation Uganda, a non-profit working on education, environmental conservation and refugee child protection. The site is no longer online.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: ['non-profit website development', 'Uganda NGO website', 'education charity website', 'refugee child protection', 'guild project case study'],
   structuredData: createBreadcrumbSchema([
@@ -366,8 +368,9 @@ useSEO({
   margin-bottom: 20px;
 }
 
+/* Slate, not green: a past contribution, matching its card on Our Projects */
 .status-badge span {
-  background: linear-gradient(135deg, #28a745, #218838);
+  background: linear-gradient(135deg, #64748b, #475569);
   color: white;
   padding: 10px 25px;
   border-radius: 30px;
@@ -416,19 +419,6 @@ useSEO({
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 0.95rem;
-}
-
-.link-tag {
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  color: var(--primary-orange);
-  font-weight: 600;
-}
-
-.link-tag:hover {
-  background: rgba(255, 107, 53, 0.3);
-  color: #fff;
 }
 
 /* ── Detail Sections ─────────────────────────────── */
@@ -636,15 +626,15 @@ useSEO({
 
 /* ── Status Box ───────────────────────────────────── */
 .status-box {
-  background: rgba(40, 167, 69, 0.08);
-  border: 1px solid rgba(40, 167, 69, 0.3);
+  background: rgba(100, 116, 139, 0.08);
+  border: 1px solid rgba(100, 116, 139, 0.35);
   border-radius: 16px;
   padding: 32px;
 }
 
 .status-indicator {
   display: inline-block;
-  background: linear-gradient(135deg, #28a745, #218838);
+  background: linear-gradient(135deg, #64748b, #475569);
   color: white;
   padding: 6px 20px;
   border-radius: 50px;
