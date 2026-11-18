@@ -4,8 +4,8 @@
     <section class="hero">
       <h1>Client Projects</h1>
       <p>
-        Speakers, artists, coaches, non-profits and start-ups. See what we built with them, what they said
-        afterwards, and how client work funds free education.
+        Speakers, artists, coaches, consultants, non-profits and start-ups. See what we built with them, what they
+        said afterwards, and how client work funds free education.
       </p>
       <span class="launch-badge">Real Work. Real Clients. Real Impact.</span>
     </section>
@@ -64,7 +64,7 @@
             </figcaption>
           </figure>
 
-          <figure class="voice-card voice-card--wide">
+          <figure class="voice-card">
             <div class="voice-quote-mark">"</div>
             <blockquote class="voice-text">
               He didn't simply build a website and walk away. He has continued to help me with adjustments, technical
@@ -79,6 +79,25 @@
                 <strong>Aimee Meek</strong>
                 <span>Decision Coach · Creator of The Meek Method</span>
                 <span class="voice-source">LinkedIn</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="voice-card">
+            <div class="voice-quote-mark">"</div>
+            <blockquote class="voice-text">
+              Quan is more than capable in everything that he does, and he goes way beyond the famous "extra mile". To
+              give you an example: When I asked him to provide me with a "Work in progress" page for my domain, so that
+              people could no longer see my website, but were informed that a new website was under construction, his
+              message became so much more elaborate, including a sneak preview of the new landing page, including
+              direct ways to contact me or download a brochure (while waiting for my website to be live).
+            </blockquote>
+            <figcaption class="voice-author">
+              <img src="/projects/neofrequency/floris-avatar.jpg" alt="Floris Robert Slob" loading="lazy" />
+              <div>
+                <strong>Floris Robert Slob</strong>
+                <span>Founder of The NeO Frequency</span>
+                <span class="voice-source">LinkedIn · 10 November 2026</span>
               </div>
             </figcaption>
           </figure>
@@ -97,8 +116,8 @@
           <div class="section-tag">Independent Professionals</div>
           <h2>Built at No Development Fee</h2>
           <p>
-            Speakers, artisans, and coaches betting on themselves. No development fee: each of these clients is on
-            our monthly hosting, maintenance and support plan, which is the same way you would start.
+            Speakers, artisans, coaches and consultants betting on themselves. No development fee: each of these
+            clients is on our monthly hosting, maintenance and support plan, which is the same way you would start.
           </p>
         </div>
 
@@ -161,6 +180,30 @@
                 <span class="stack-tag">Cloudflare</span>
                 <span class="stack-tag">Web3Forms</span>
                 <span class="stack-tag">llms.txt</span>
+              </div>
+              <span class="case-study-link">View Case Study →</span>
+            </div>
+          </NuxtLink>
+
+          <!-- The image is the live home page's hero, cropped below its header, so the badge
+               sits on dark space; --screenshot shows it whole on phones -->
+          <NuxtLink to="/work-with-us/projects/the-neo-frequency" class="case-study-card">
+            <div class="case-study-hero case-study-hero--screenshot">
+              <img src="/projects/neofrequency/card.jpg" alt="The NeO Frequency" class="case-study-image" />
+              <span class="status-badge status-badge--free">No Development Fee</span>
+            </div>
+            <div class="case-study-body">
+              <h3>The NeO Frequency</h3>
+              <p class="case-study-result">
+                Rebuilt a transformation consultant's Wix site, which cut off on laptops and tablets, into one that
+                holds on every screen, with his Signal Check diagnostic on the site itself, a home for his essays, and
+                a newsletter sent from his own domain.
+              </p>
+              <div class="case-study-stack">
+                <span class="stack-tag">Astro</span>
+                <span class="stack-tag">Tailwind CSS</span>
+                <span class="stack-tag">Cloudflare</span>
+                <span class="stack-tag">Resend</span>
               </div>
               <span class="case-study-link">View Case Study →</span>
             </div>
@@ -332,8 +375,8 @@
           <h2>An Author's Site, Not a Template</h2>
           <p>
             Not client work: this is the free working prototype we built for author Arlene Rotter, shown with her
-            permission. It is what you see before you decide anything. Set it beside the speaker, calligrapher and
-            coach above, and no two of these sites share a template.
+            permission. It is what you see before you decide anything. Set it beside the speaker, calligrapher, coach
+            and consultant above, and no two of these sites share a template.
           </p>
         </div>
 
@@ -381,9 +424,9 @@
 useSEO({
   title: 'Client Projects | Skill-Wanderer',
   description:
-    'Websites and AI tools built for speakers, artists, coaches, non-profits and start-ups, with what the clients said afterwards. No development fee, no lock-in.',
+    'Websites and AI tools built for speakers, artists, coaches, consultants, non-profits and start-ups, with what the clients said afterwards. No development fee, no lock-in.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
-  keywords: ['client projects', 'website for coaches', 'website for speakers', 'AI learning tool', 'non-profit website', 'case studies', 'no development fee'],
+  keywords: ['client projects', 'website for coaches', 'website for speakers', 'website for consultants', 'AI learning tool', 'non-profit website', 'case studies', 'no development fee'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },
@@ -625,7 +668,7 @@ useSEO({
 }
 
 /* Website screenshots put their text top-left, so the badge moves to the
-   empty top-right, clear of the book covers. See the 768px rule below. */
+   empty top-right (clear of Arlene's book covers). See the 768px rule below. */
 .case-study-hero--screenshot .status-badge {
   left: auto;
   right: 16px;
@@ -654,15 +697,6 @@ useSEO({
 .voice-card:hover {
   border-color: rgba(255, 107, 53, 0.35);
   transform: translateY(-4px);
-}
-
-/* An odd card out takes its own row, centred, instead of sitting alone at half width */
-.voice-card--wide {
-  grid-column: 1 / -1;
-  justify-self: center;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 820px;
 }
 
 .voices-more {
@@ -909,8 +943,9 @@ useSEO({
   }
 
   /* A fixed 200px strip crops a screenshot unpredictably, so show all of it.
-     11% down is where the screenshot's nav ends, so the badge sits between
-     the nav and the book covers at every one-column width. */
+     11% down is where the Arlene screenshot's nav ends, so the badge sits between
+     the nav and the book covers at every one-column width. The NeO Frequency's
+     image has no nav, so there the badge sits on the dark sky. */
   .case-study-hero.case-study-hero--screenshot {
     height: auto;
     aspect-ratio: 16 / 9;

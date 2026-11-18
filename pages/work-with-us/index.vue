@@ -78,7 +78,8 @@
             <p class="build-example">
               Example:
               <NuxtLink to="/work-with-us/projects/matt-harr-speaker">Matt Harr Speaker</NuxtLink>,
-              <NuxtLink to="/work-with-us/projects/the-meek-method">The Meek Method</NuxtLink>
+              <NuxtLink to="/work-with-us/projects/the-meek-method">The Meek Method</NuxtLink>,
+              <NuxtLink to="/work-with-us/projects/the-neo-frequency">The NeO Frequency</NuxtLink>
             </p>
           </div>
           <div class="build-card">
@@ -271,6 +272,20 @@
               <div class="proof-tags">
                 <span>Astro</span>
                 <span>Web3Forms</span>
+              </div>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/work-with-us/projects/the-neo-frequency" class="proof-card">
+            <div class="proof-image">
+              <img src="/projects/neofrequency/thumb.jpg" alt="The NeO Frequency" loading="lazy" />
+              <span class="proof-badge">No Development Fee</span>
+            </div>
+            <div class="proof-meta">
+              <h4>The NeO Frequency</h4>
+              <p>A consultant's Wix site rebuilt for every screen, with his diagnostic built in.</p>
+              <div class="proof-tags">
+                <span>Astro</span>
+                <span>Resend</span>
               </div>
             </div>
           </NuxtLink>

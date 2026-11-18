@@ -5,7 +5,7 @@
       <span class="hero-tag">Testimonials</span>
       <h1>In Their Own Words</h1>
       <p>
-        What it's like to work with Quan, from three clients whose websites we built and look after, and from Jade,
+        What it's like to work with Quan, from four clients whose websites we built and look after, and from Jade,
         who got a mock-up website in less than a day.
       </p>
     </section>
@@ -31,6 +31,23 @@
 // Full texts. The case study pages quote them in full too, and the homepage and
 // /work-with-us/our-projects use excerpts, so keep them in step when one changes.
 const testimonials = [
+  {
+    // Every word as he posted it. Two capital letters are fixed, and one spaced hyphen became a comma
+    // (no dashes in site copy). The photo is his studio headshot from his own site.
+    quote: [
+      "Where do I start? Quan, a person who showed up in my LinkedIn posts as somebody who was eager to understand what I was talking about related to the NeO Frequency. At some stage, he decided to tell me that my website didn't really show up as intended on his laptop and that there were issues with mobile phones as well. On top of that, he was also seeing some other aspects of my, in the meantime redundant website, that he could improve, and he was happy to show me how. He proposed a different design, one that reacts faster too and obviously would never have screen presentation issues anymore. About 2 days later, he came back to me with a design prototype.",
+      'I guess here I really need to warn you!',
+      "At first I thought my old website was still OK, but after he showed me what it could look like, I was sold! So be careful, people; make sure you are happy to let him do his magic, because the moment you agree with him WITHOUT ANY OBLIGATION and for Free (!), that he builds a prototype/design website for you, that's it! You will want that design coming to life! I promise you.",
+      'Quan is more than capable in everything that he does, and he goes way beyond the famous "extra mile". To give you an example: When I asked him to provide me with a "Work in progress" page for my domain, so that people could no longer see my website, but were informed that a new website was under construction, his message became so much more elaborate, including a sneak preview of the new landing page, including direct ways to contact me or download a brochure (while waiting for my website to be live).',
+      `Quan can really perceive very quickly what it is you need, sometimes even before you do. During your website project, I'm sure he will pleasantly surprise you over and over again. All the way to delivery day. And yes, sometimes, it even feels like he could read my mind too :-). Last but not least, I admire his "skill-wanderer" philosophy; he doesn't charge you anything for the website either. It's built completely for FREE. So what's the catch, you may think? Well, isn't that obvious? He IS the CATCH!`,
+      'I would highly recommend Quan to anybody looking for a highly proactive, intelligent, smart, full-stack developer and AI integrator. Thank you so much, Quan, for your precious time and energy invested in our collaboration so far. The result is there for the world to see: https://theneofrequency.com. I truly wish our collaboration will bear bigger fruit in the near future for both of us!',
+    ],
+    name: 'Floris Robert Slob',
+    role: 'Senior Transformation & Change Leader · Founder of The NeO Frequency',
+    avatar: '/projects/neofrequency/floris-avatar.jpg',
+    source: 'Shared on LinkedIn, 10 November 2026',
+    link: { to: '/work-with-us/projects/the-neo-frequency', label: 'The NeO Frequency case study' },
+  },
   {
     quote: [
       'Working with Quan Nguyen at Skill-Wanderer has been such a positive experience, and I genuinely cannot recommend him enough.',
@@ -86,8 +103,8 @@ const testimonials = [
 useSEO({
   title: 'Testimonials | Skill-Wanderer',
   description:
-    'What clients say about working with Quan Nguyen and Skill-Wanderer: a coach, a speaker and a calligrapher, plus a mock-up website built in less than a day.',
-  keywords: ['Skill-Wanderer testimonials', 'Skill-Wanderer reviews', 'client testimonials', 'website for coaches', 'website for speakers', 'affordable website developer'],
+    'What clients say about working with Quan Nguyen and Skill-Wanderer: a transformation consultant, a coach, a speaker and a calligrapher, plus a mock-up website built in less than a day.',
+  keywords: ['Skill-Wanderer testimonials', 'Skill-Wanderer reviews', 'client testimonials', 'website for consultants', 'website for coaches', 'website for speakers', 'affordable website developer'],
   structuredData: createBreadcrumbSchema([
     { name: 'Home', url: 'https://skill-wanderer.com/' },
     { name: 'Work With Us', url: 'https://skill-wanderer.com/work-with-us' },

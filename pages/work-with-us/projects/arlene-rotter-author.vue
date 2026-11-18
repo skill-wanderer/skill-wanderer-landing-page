@@ -280,8 +280,9 @@
           This is what our free prototype looks like: a working site, made for one person, before any payment or
           commitment. Compare it with the ones we built for
           <NuxtLink to="/work-with-us/projects/matt-harr-speaker">a speaker</NuxtLink>,
-          <NuxtLink to="/work-with-us/projects/broad-strokes-studio">a calligrapher</NuxtLink> and
-          <NuxtLink to="/work-with-us/projects/the-meek-method">a coach</NuxtLink>, and you will find no shared
+          <NuxtLink to="/work-with-us/projects/broad-strokes-studio">a calligrapher</NuxtLink>,
+          <NuxtLink to="/work-with-us/projects/the-meek-method">a coach</NuxtLink> and
+          <NuxtLink to="/work-with-us/projects/the-neo-frequency">a consultant</NuxtLink>, and you will find no shared
           template, because each business needs different pages, a different path to the first enquiry, and a
           different first impression. It is also here, with Arlene's permission, to help a few more readers find The
           Rebel Writer.

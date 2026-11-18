@@ -68,7 +68,7 @@ interface Testimonial {
 interface Props {
   testimonials: Testimonial[]
   sectionTitle?: string
-  layout?: 'single' | 'grid' | 'stacked'
+  layout?: 'single' | 'grid' | 'pairs' | 'stacked'
 }
 
 withDefaults(defineProps<Props>(), {
@@ -109,6 +109,13 @@ const isExternal = (to: string) => /^https?:\/\//.test(to)
 
 .testimonial-grid--grid {
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+/* Two across, for four cards that three columns would leave one short */
+.testimonial-grid--pairs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .testimonial-grid--stacked {
@@ -156,6 +163,8 @@ const isExternal = (to: string) => /^https?:\/\//.test(to)
   color: var(--light-text);
   margin: 0 0 30px;
   font-style: italic;
+  /* A web address in a quote is one long word: let it break rather than widen the card on a phone */
+  overflow-wrap: anywhere;
 }
 
 .testimonial-text p {
@@ -246,7 +255,8 @@ const isExternal = (to: string) => /^https?:\/\//.test(to)
 }
 
 @media (max-width: 768px) {
-  .testimonial-grid--grid {
+  .testimonial-grid--grid,
+  .testimonial-grid--pairs {
     grid-template-columns: 1fr;
   }
 

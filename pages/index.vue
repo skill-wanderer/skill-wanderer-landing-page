@@ -394,7 +394,7 @@
       </div>
     </section>
 
-    <TestimonialBlock :testimonials="clientTestimonials" section-title="What Clients Say">
+    <TestimonialBlock :testimonials="clientTestimonials" section-title="What Clients Say" layout="pairs">
       <NuxtLink to="/work-with-us/testimonials" class="btn btn-outline">
         Read Every Testimonial <span>→</span>
       </NuxtLink>
@@ -431,8 +431,9 @@
       </ol>
       <p class="plan-proof">
         <NuxtLink to="/work-with-us/projects/matt-harr-speaker">Matt</NuxtLink>,
-        <NuxtLink to="/work-with-us/projects/broad-strokes-studio">Jack</NuxtLink> and
-        <NuxtLink to="/work-with-us/projects/the-meek-method">Aimee</NuxtLink>
+        <NuxtLink to="/work-with-us/projects/broad-strokes-studio">Jack</NuxtLink>,
+        <NuxtLink to="/work-with-us/projects/the-meek-method">Aimee</NuxtLink> and
+        <NuxtLink to="/work-with-us/projects/the-neo-frequency">Floris</NuxtLink>
         work with us on exactly this model.
       </p>
       <p class="plan-lite">
@@ -521,6 +522,20 @@
             </div>
           </div>
         </NuxtLink>
+        <NuxtLink to="/work-with-us/projects/the-neo-frequency" class="project-thumb">
+          <div class="project-image-wrap">
+            <img src="/projects/neofrequency/thumb.jpg" alt="The NeO Frequency" loading="lazy" />
+            <span class="project-type-badge">No Development Fee</span>
+          </div>
+          <div class="project-meta">
+            <h4>The NeO Frequency</h4>
+            <p class="project-summary">A consultant's Wix site rebuilt for every screen, with his diagnostic built in.</p>
+            <div class="project-stack-tags">
+              <span>Astro</span>
+              <span>Resend</span>
+            </div>
+          </div>
+        </NuxtLink>
         <NuxtLink to="/work-with-us/projects/wm-smile-generation-uganda" class="project-thumb">
           <div class="project-image-wrap">
             <img src="/projects/wmsmile/children-learning.jpeg" alt="WM Smile Generation Uganda" loading="lazy" />
@@ -549,20 +564,8 @@
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink to="/work-with-us/projects/mindyplay" class="project-thumb">
-          <div class="project-image-wrap">
-            <img src="/projects/mindyplay/thumb.jpg" alt="MindyPlay" loading="lazy" />
-            <span class="project-type-badge">Start-up</span>
-          </div>
-          <div class="project-meta">
-            <h4>MindyPlay</h4>
-            <p class="project-summary">A physical game concept turned into an interactive mobile game.</p>
-            <div class="project-stack-tags">
-              <span>Flutter</span>
-              <span>Firebase</span>
-            </div>
-          </div>
-        </NuxtLink>
+        <!-- Six cards fill the three-column grid. MindyPlay made way for The NeO Frequency on 2026-11-18;
+             it is still on /work-with-us and /work-with-us/our-projects. -->
       </div>
       <div class="projects-cta">
         <NuxtLink to="/work-with-us/our-projects" class="btn btn-outline">
@@ -668,6 +671,15 @@ const clientTestimonials = [
     name: 'Aimee Meek',
     role: 'Decision Coach · Creator of The Meek Method',
     avatar: '/projects/meekmethod/aimee-avatar.jpg',
+  },
+  {
+    quote: [
+      'At first I thought my old website was still OK, but after he showed me what it could look like, I was sold!',
+      'Quan can really perceive very quickly what it is you need, sometimes even before you do.',
+    ],
+    name: 'Floris Robert Slob',
+    role: 'Founder of The NeO Frequency',
+    avatar: '/projects/neofrequency/floris-avatar.jpg',
   },
 ]
 
