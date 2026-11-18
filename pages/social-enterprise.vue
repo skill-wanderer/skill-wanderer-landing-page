@@ -97,7 +97,7 @@
             </p>
             <p class="problem-answer">
               <strong>Our answer:</strong> a free working prototype first and no development fee, then a monthly
-              plan. The Care Plan is priced to your project, and the Simple Website Plan is $15 a month, plus your
+              plan. The Care Plan is priced to your project, and the Simple Website Plan is $20 a month, plus your
               own domain.
             </p>
             <NuxtLink to="/work-with-us" class="btn btn-primary">See How We Help</NuxtLink>

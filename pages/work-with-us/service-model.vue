@@ -24,7 +24,7 @@
       </div>
       <span class="launch-badge">Free Prototype · No Development Fee · No Lock-In</span>
       <p class="hero-plan-note">
-        Only need a simple website? <a href="#plans">See the $15 a month Simple Website Plan</a>
+        Only need a simple website? <a href="#plans">See the $20 a month Simple Website Plan</a>
       </p>
     </section>
 
@@ -88,7 +88,7 @@
 
         <p class="steps-note">
           On the <a href="#plans">Simple Website Plan</a> the steps are the same, with the same free prototypes and
-          revision rounds. The difference comes after launch: a flat $15 a month covers hosting and maintenance,
+          revision rounds. The difference comes after launch: a flat $20 a month covers hosting and maintenance,
           but no changes to the site.
         </p>
       </div>
@@ -108,7 +108,7 @@
             <h3>Simple Website Plan</h3>
             <p class="plan-for">For a small, simple website</p>
             <p class="plan-price">
-              <span class="plan-amount">$15</span> USD a month, <span class="plan-price-extra">plus your own domain</span>
+              <span class="plan-amount">$20</span> USD a month, <span class="plan-price-extra">plus your own domain</span>
             </p>
             <p class="plan-price-note">The lowest-risk way to get a decent website online.</p>
             <ul class="plan-list">
@@ -143,7 +143,7 @@
         </div>
 
         <div class="lite-story">
-          <h3>Why only $15 a month?</h3>
+          <h3>Why only $20 a month?</h3>
           <p>
             AI now lets us build a simple website far faster than before, and the servers we already run for
             Skill-Wanderer have room to spare. Together, that lets us offer a decent website to people who could
@@ -325,7 +325,7 @@ const faqs = [
   {
     question: 'Is it completely free?',
     answer:
-      'No. For accepted projects there is no development fee and the first prototype is free, but the monthly fee is a paid service. On the Care Plan it covers hosting, maintenance, support and occasional changes, billed monthly or quarterly. On the Simple Website Plan it covers hosting and maintenance, at $15 a month.',
+      'No. For accepted projects there is no development fee and the first prototype is free, but the monthly fee is a paid service. On the Care Plan it covers hosting, maintenance, support and occasional changes, billed monthly or quarterly. On the Simple Website Plan it covers hosting and maintenance, at $20 a month.',
   },
   {
     question: "What's the catch?",
@@ -333,7 +333,7 @@ const faqs = [
       'There is no hidden one. Instead of a big upfront bill, we earn a monthly fee by keeping your project running and supported. That income also funds free education, so we are motivated to keep you happy for the long run.',
   },
   {
-    question: 'How can a website cost only $15 a month?',
+    question: 'How can a website cost only $20 a month?',
     answer:
       'AI now lets us build a simple website far faster than before, and the servers we already run for Skill-Wanderer have room to spare. The Simple Website Plan also keeps the scope small: a site of a few pages, and after launch only hosting and maintenance, with no changes. That keeps the price low enough for people who could not afford a decent website until now. Before launch you still get the same free prototypes and revision rounds as on the Care Plan.',
   },
@@ -365,7 +365,7 @@ const faqs = [
   {
     question: 'When is the exact price decided?',
     answer:
-      'On the Care Plan, after the first prototype is reviewed and we discuss the real project scope. It is never quoted before there is something real to look at. The Simple Website Plan has one flat price: $15 a month, plus your own domain.',
+      'On the Care Plan, after the first prototype is reviewed and we discuss the real project scope. It is never quoted before there is something real to look at. The Simple Website Plan has one flat price: $20 a month, plus your own domain.',
   },
   {
     question: 'How often do I pay?',
@@ -403,7 +403,7 @@ const faqs = [
 useSEO({
   title: 'Free Prototype, No Development Fee | Skill-Wanderer',
   description:
-    'Try your idea before you commit: free prototype, no development fee, then a simple website for $15 a month, or a full care plan. No lock-in.',
+    'Try your idea before you commit: free prototype, no development fee, then a simple website for $20 a month, or a full care plan. No lock-in.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: [
     'no development fee',

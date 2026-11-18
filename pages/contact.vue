@@ -129,7 +129,7 @@
                 <div class="info-icon">🧭</div>
                 <h3>How It Works</h3>
               </div>
-              <p>Free prototype first, no development fee, no lock-in, and simple websites for $15 a month.</p>
+              <p>Free prototype first, no development fee, no lock-in, and simple websites for $20 a month.</p>
               <NuxtLink to="/work-with-us/service-model" class="info-card-link">See the Full Details</NuxtLink>
             </div>
           </div>
@@ -339,7 +339,7 @@ watch(() => route.query.tab, () => {
 // Project topics: links such as /contact?topic=simple-website preselect one
 const hireTopics = [
   { value: 'website', label: 'A website for my business or practice' },
-  { value: 'simple-website', label: 'A simple website on the $15 a month Simple Website Plan' },
+  { value: 'simple-website', label: 'A simple website on the $20 a month Simple Website Plan' },
   { value: 'ai', label: 'An AI tool for my students or clients' },
   { value: 'booking-payments-automation', label: 'Booking, payments or automation' },
   { value: 'app-platform', label: 'An app or a bigger platform' },
@@ -572,7 +572,7 @@ const faqs = ref<{ audience: 'hire' | 'join'; question: string; answer: string }
   {
     audience: 'hire',
     question: "How does pricing work?",
-    answer: "For accepted projects there is no development fee, and we build a free working prototype first, so you see it before you commit. A small, simple website can then go on the Simple Website Plan: hosting and maintenance, with no changes after launch, for $15 a month plus your own domain. For bigger projects, or if you want changes as your business grows, the Care Plan covers hosting, maintenance, support and occasional changes, priced after the prototype review."
+    answer: "For accepted projects there is no development fee, and we build a free working prototype first, so you see it before you commit. A small, simple website can then go on the Simple Website Plan: hosting and maintenance, with no changes after launch, for $20 a month plus your own domain. For bigger projects, or if you want changes as your business grows, the Care Plan covers hosting, maintenance, support and occasional changes, priced after the prototype review."
   },
   {
     audience: 'hire',
