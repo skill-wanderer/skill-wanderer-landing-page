@@ -15,8 +15,8 @@
         <li>AI tools</li>
       </ul>
       <p class="hero-scope-note">
-        Every project is handled A to Z: design, build, setup, and deployment are all part of the work, not
-        extra line items.
+        Every project is handled A to Z: product and tech planning, design, build, setup and deployment are all
+        part of the work, not extra line items.
       </p>
       <div class="hero-actions">
         <NuxtLink to="/contact" class="btn btn-primary">Tell Us About Your Idea</NuxtLink>
@@ -63,7 +63,7 @@
               </div>
               <ul class="phase-list">
                 <li>For accepted projects we build the first prototype at no cost, so both sides have something real to react to.</li>
-                <li>We review it together: what works, what needs to change, the features and integrations you need, and the real size of the project.</li>
+                <li>We review it together: what works, what needs to change, the features and integrations you need now, what can wait, and the real size of the project.</li>
                 <li>If the direction turns out to be materially off, we may build a second prototype. Otherwise we continue from the first.</li>
                 <li>With the scope clear, we confirm the exact monthly price. There is no obligation to continue just because a prototype exists.</li>
               </ul>
@@ -78,8 +78,8 @@
               <p>
                 We complete the agreed scope, normally with up to <strong>2 structured revision rounds before
                 launch</strong>. There is no development fee. After launch, a monthly fee covers hosting,
-                maintenance, support and occasional changes, and we stay on as your tech partner for as long as
-                it is useful to you.
+                maintenance, support and occasional changes, and we stay on as your technical partner for as long
+                as it is useful to you.
               </p>
             </div>
             <ImageSlot name="plan/launch" group="planSteps" class="step-image" />
@@ -135,7 +135,7 @@
               <li>A free working prototype, and a second one if the direction changes significantly</li>
               <li>Up to 2 structured revision rounds before launch</li>
               <li>Hosting, maintenance, support and occasional changes</li>
-              <li>Tech partner help when you need it: business email, tools, research and advice</li>
+              <li>Technical partner help when you need it: business email, tools, research and advice</li>
             </ul>
             <p class="plan-payment">Paid monthly or quarterly, depending on your situation.</p>
             <NuxtLink to="/contact" class="btn btn-secondary">Tell Us About Your Idea</NuxtLink>
@@ -248,7 +248,7 @@
               <li>You're a solo founder, coach, consultant, freelancer, writer, or small business</li>
               <li>You can explain the problem you want to solve, even without technical words</li>
               <li>You're happy to start small and grow step by step</li>
-              <li>You want a partner for the long run, not a one-off build</li>
+              <li>You want a partner who thinks it through with you for the long run, not a one-off build</li>
             </ul>
           </div>
           <div class="fit-card fit-card--no">
@@ -256,6 +256,7 @@
             <ul>
               <li>You need a large platform finished in a few weeks</li>
               <li>You want a fixed quote for a fixed spec before seeing anything</li>
+              <li>You only want advice, with no website or app for us to build and look after</li>
               <li>The project raises legal, reputational, or serious ethical concerns</li>
               <li>The long-term maintenance or working relationship doesn't look sustainable</li>
             </ul>
@@ -348,6 +349,11 @@ const faqs = [
       'Quan Nguyen, our founder, designs your project, builds the critical parts and reviews every change. Guild learners may help, always under his review.',
   },
   {
+    question: 'Are you a developer or a technical partner?',
+    answer:
+      "A technical partner. A developer builds what you ask for. We help you work out what to ask for: what to build now and what can wait, which tech fits your budget and your stage, how to plan the work, and what your project will need next. Quan has worked as a developer, solution architect and project manager, and he brings all three to every project before launch. On the Care Plan, that partnership continues after launch. It comes with the projects we build and look after, so we don't offer it as consulting on its own.",
+  },
+  {
     question: 'Do you just vibe-code it with AI?',
     answer:
       'No. AI helps us move faster, but Quan designs the architecture and reviews every change, so the project stays maintainable instead of falling apart after launch.',
@@ -413,6 +419,7 @@ useSEO({
     'low-cost website hosting',
     'monthly website maintenance',
     'no vendor lock-in',
+    'technical partner for early-stage founders',
     'tech partner for coaches',
   ],
   structuredData: [

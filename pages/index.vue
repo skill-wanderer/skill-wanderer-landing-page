@@ -1,14 +1,15 @@
 <template>
   <div>
-    <!-- Hero: the social enterprise mission, then an equal door for each of our two heroes -->
+    <!-- Hero: the mission, then an equal door for each of our two heroes. "A business with a mission" replaced
+         "social enterprise" on 2026-11-27: the term is unfamiliar to many, and in the US it can sound like socialism. -->
     <section class="hero">
       <div class="hero-content">
-        <p class="hero-eyebrow">A social enterprise in the making</p>
+        <p class="hero-eyebrow">A business with a mission</p>
         <h1>Limited resources shouldn't limit what you can learn or build.</h1>
         <p class="hero-description">
           We use entrepreneurship and today's technology, especially AI, to help people who are short on resources.
-          Small businesses get the websites and AI tools they need on a small budget, and their fees keep practical
-          education free for self-learners. Every project helps twice.
+          Founders and small businesses just starting out get a technical partner to shape and build their idea on a
+          small budget, and their fees keep practical education free for self-learners. Every project helps twice.
         </p>
         <div class="hero-doors">
           <div class="hero-door">
@@ -25,8 +26,8 @@
           <div class="hero-door">
             <p class="door-label"><span aria-hidden="true">💡</span> Have an idea to build</p>
             <p class="door-text">
-              A free working prototype first, then no development fee and prices built for small budgets. Your
-              project also funds free education.
+              A technical partner, not just a developer, who plans the product and the tech around your budget,
+              starting with a free working prototype. Your project also funds free education.
             </p>
             <NuxtLink to="/contact" class="btn btn-primary">
               Tell Us About Your Idea <span>→</span>
@@ -41,22 +42,23 @@
       </svg>
     </section>
 
-    <!-- The social enterprise: both heroes are short on resources, and serving one keeps the other going -->
+    <!-- Our model: both heroes are short on resources, and serving one keeps the other going -->
     <section class="mission-band">
       <div class="mission-band-content">
-        <p class="guide-eyebrow">Our social enterprise</p>
+        <p class="guide-eyebrow">Our model</p>
         <h2>One mission, two ways to make an impact</h2>
         <p class="mission-lead">
           Some people can't afford the education they need. Others can't afford the tech their idea needs. Many face
-          both. We serve both, with a model that pays its own way instead of waiting on donations.
+          both. We serve both as a business, not a charity: clients pay fair fees for real work, and what we earn
+          pays for free education, instead of waiting on donations.
         </p>
         <div class="mission-why">
           <div class="mission-why-card">
-            <h3><span aria-hidden="true">🛠️</span> Affordable tech for small budgets</h3>
+            <h3><span aria-hidden="true">🛠️</span> A technical partner on a small budget</h3>
             <p>
-              Solo founders, coaches, writers, small businesses and non-profits get websites and AI tools they can
-              afford: a free prototype first, no development fee, and simple websites for $20 a month, plus your own
-              domain.
+              Solo founders, coaches, writers, small businesses and non-profits get the product, architecture and
+              planning help that is usually out of reach on a small budget, with websites and AI tools built to fit:
+              a free prototype first and no development fee.
             </p>
           </div>
           <div class="mission-why-card">
@@ -69,7 +71,7 @@
         </div>
         <ImageSlot name="home/mission-loop" class="mission-image" />
         <ol class="mission-loop" aria-label="How the two sides keep each other going">
-          <li><span>Small businesses get affordable tech</span></li>
+          <li><span>Small budgets get a technical partner</span></li>
           <li><span>Their fees fund free education</span></li>
           <li><span>Learners grow into contributors</span></li>
           <li><span>Contributors help build the next project</span></li>
@@ -91,8 +93,8 @@
           education sustainable.
         </p>
         <div class="mission-links">
-          <NuxtLink to="/social-enterprise" class="btn btn-outline">
-            Why a Social Enterprise <span>→</span>
+          <NuxtLink to="/business-with-a-mission" class="btn btn-outline">
+            Why a Business, Not a Charity <span>→</span>
           </NuxtLink>
           <NuxtLink to="/help-the-mission" class="btn btn-outline">
             Help the Mission <span>→</span>
@@ -307,18 +309,20 @@
       </div>
     </section>
 
-    <!-- ── Hero 2: the client with a small budget, whose project also funds free education ── -->
+    <!-- ── Hero 2: the early-stage client with a small budget, who gets a technical partner (not just a developer),
+         and whose project also funds free education ── -->
 
     <!-- Client: who they are and the problem they face -->
     <section id="clients" class="track section--dark">
       <div class="track-intro">
         <div class="track-intro-text">
-          <p class="track-label">For solo founders, freelancers, coaches, consultants, writers &amp; small businesses</p>
-          <h2>Big idea, small budget? See it working before you commit.</h2>
+          <p class="track-label">For early-stage founders, freelancers, coaches, consultants, writers &amp; small businesses</p>
+          <h2>Big idea, small budget? Get a technical partner, not just a developer.</h2>
           <p>
-            We build a free working prototype of your website or AI tool. If you like it, we launch it with
-            no development fee, on a monthly plan you can carry, and stay on as your tech partner. If not, you
-            walk away and owe nothing.
+            We help you decide what to build first, choose tech that fits your budget, and plan the way there.
+            Then we build it, starting with a free working prototype. If you like it, we launch with no
+            development fee, on a monthly plan you can carry, and adapt as your product grows. If not, you walk
+            away and owe nothing.
           </p>
           <div class="track-cta">
             <NuxtLink to="/contact" class="btn btn-primary">
@@ -329,8 +333,8 @@
             </NuxtLink>
           </div>
           <ul class="track-trust">
-            <li>No development fee</li>
-            <li>No lock-in</li>
+            <li>Product and tech advice built in</li>
+            <li>No development fee or lock-in</li>
             <li>Your project helps fund free education</li>
           </ul>
         </div>
@@ -345,7 +349,7 @@
         <div class="problem-card">
           <span class="problem-icon" aria-hidden="true">🤔</span>
           <h4>"Tech isn't my thing."</h4>
-          <p>You know exactly what you want to say. Building the website or app to say it is another story.</p>
+          <p>You know exactly what you want to say. Knowing which tech you need is another story, and a developer builds only what you ask for.</p>
         </div>
         <div class="problem-card">
           <span class="problem-icon" aria-hidden="true">💡</span>
@@ -368,12 +372,13 @@
       </div>
     </section>
 
-    <!-- Client guide: empathy + authority -->
+    <!-- Client guide: empathy + authority. A technical partner, not just a developer; the labelled points
+         mirror the learner mentor's, so both heroes get the same depth. -->
     <section class="guide section--darker">
       <div class="guide-content">
         <img src="/skill-wanderer-avatar.jpg" alt="Quan Nguyen, founder of Skill-Wanderer" class="guide-avatar" loading="lazy" />
         <div class="guide-text">
-          <p class="guide-eyebrow">Your guide</p>
+          <p class="guide-eyebrow">Your technical partner</p>
           <h2>We know what it's like to start with an idea and a small budget.</h2>
           <p>
             Skill-Wanderer is led by Quan Nguyen, our founder and Guild Master. He started in business, not
@@ -382,14 +387,31 @@
             across startups and enterprises, once leading 16 developers on 4 projects at the same time.
           </p>
           <p>
-            He still teaches through Skill-Wanderer, which keeps his skills current. AI helps us move fast,
-            but Quan designs your project and reviews every change, so it doesn't fall apart later.
+            So you get more than a developer. Quan thinks through the product, the architecture and the plan
+            with you, and keeps an eye on what your project will need next.
+          </p>
+          <p>
+            He still teaches through Skill-Wanderer, which keeps his skills current. AI helps us move fast and
+            guild learners may help, but Quan designs your project and reviews every change, so it doesn't fall
+            apart later.
           </p>
           <ul class="guide-points">
-            <li>A tech partner for email, tools, research and advice, not just code</li>
-            <li>Quan designs your project and reviews every change</li>
-            <li>Guild learners may help, always under his review</li>
+            <li><strong>Product:</strong> what to build first, what to leave out, and what your customers really need</li>
+            <li><strong>Architecture:</strong> tech that fits your budget today and leaves room to grow</li>
+            <li><strong>Project:</strong> a clear plan, honest scope and updates in plain language</li>
+            <li><strong>Beyond the build:</strong> on the Care Plan, help with email, tools, research and advice</li>
           </ul>
+          <!-- Verbatim from Floris's testimonial (in full on /work-with-us/testimonials). It sits here rather
+               than in his "What Clients Say" excerpt, so the homepage doesn't show it twice. -->
+          <figure class="guide-quote">
+            <blockquote>
+              "Quan can really perceive very quickly what it is you need, sometimes even before you do."
+            </blockquote>
+            <figcaption>
+              <NuxtLink to="/work-with-us/projects/the-neo-frequency">Floris Robert Slob</NuxtLink>, Founder of
+              The NeO Frequency
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -411,7 +433,7 @@
           <ImageSlot name="plan/idea" group="planSteps" class="plan-image" />
           <span class="plan-number">1</span>
           <h3>Tell us your idea</h3>
-          <p>Send a short message or email Quan. He reads it himself and replies with a time for one short call.</p>
+          <p>Send a short message or email Quan. He reads it himself and replies with a time for one short call about your idea and your budget.</p>
         </li>
         <li class="plan-step">
           <ImageSlot name="plan/prototype" group="planSteps" class="plan-image" />
@@ -425,7 +447,8 @@
           <h3>Launch and grow together</h3>
           <p>
             No development fee. A monthly fee covers hosting, maintenance, support and occasional changes, and
-            we stay as your tech partner. Leave anytime and take your project with you.
+            we stay on as your technical partner as your product grows or changes. Leave anytime and take your
+            project with you.
           </p>
         </li>
       </ol>
@@ -455,7 +478,7 @@
           <h3>Without the right partner</h3>
           <ul>
             <li>Your idea stays invisible, and nobody finds you</li>
-            <li>You pay for features you didn't need</li>
+            <li>You pay for features you didn't need, and miss the ones you did</li>
             <li>A quickly AI-built app falls apart after launch</li>
             <li>You're locked in to one developer or platform</li>
           </ul>
@@ -465,8 +488,8 @@
           <ul>
             <li>Your name gets out there, with a site that explains what you do</li>
             <li>You learn what you really need before you spend</li>
-            <li>A version that fits your budget is live and looked after</li>
-            <li>A partner who stays as long as you want, with no lock-in</li>
+            <li>A version that fits your budget is live, looked after and ready to grow</li>
+            <li>A technical partner who stays as long as you want, with no lock-in</li>
             <li>And your project helps fund free education</li>
           </ul>
         </div>
@@ -594,8 +617,8 @@
         <div class="final-door">
           <h3>Have an idea to build?</h3>
           <p>
-            Describe what you want to build or the problem you have. Quan reads every message himself and usually
-            replies within 2 working days with a time for a short call. He takes one call a day, so he keeps time to
+            Describe what you want to build or the problem you have, even if it's only an idea so far. Quan reads
+            every message himself and usually replies within 2 working days with a time for a short call. He takes one call a day, so he keeps time to
             build and teach.
           </p>
           <NuxtLink to="/contact" class="btn btn-primary">
@@ -647,7 +670,9 @@ const featuredLearners = [
   },
 ]
 
-// Verbatim excerpts from the testimonials shown in full on /work-with-us/testimonials.
+// Verbatim excerpts from the testimonials shown in full on /work-with-us/testimonials. The first row
+// (Matt, Aimee) is the "more than a developer" proof. Floris's "perceive very quickly" line is the pull
+// quote in the client guide section above, so his excerpt here uses other sentences.
 const clientTestimonials = [
   {
     quote:
@@ -655,6 +680,15 @@ const clientTestimonials = [
     name: 'Matt Harr',
     role: 'Speaker on school culture and leadership',
     avatar: '/projects/mattharr/matt-harr-avatar.jpg',
+  },
+  {
+    quote: [
+      'When I first started working with Quan on my website for The Meek Method, I had a very clear vision of what I wanted my business to represent, but very little understanding of the technology required to bring it all together.',
+      "He pays attention to the smallest details, welcomes feedback, and often catches things or suggests improvements I wouldn't have known to ask about.",
+    ],
+    name: 'Aimee Meek',
+    role: 'Decision Coach · Creator of The Meek Method',
+    avatar: '/projects/meekmethod/aimee-avatar.jpg',
   },
   {
     quote:
@@ -665,17 +699,8 @@ const clientTestimonials = [
   },
   {
     quote: [
-      'When I first started working with Quan on my website for The Meek Method, I had a very clear vision of what I wanted my business to represent, but very little understanding of the technology required to bring it all together.',
-      'Quan has been incredibly patient with me throughout the entire process.',
-    ],
-    name: 'Aimee Meek',
-    role: 'Decision Coach · Creator of The Meek Method',
-    avatar: '/projects/meekmethod/aimee-avatar.jpg',
-  },
-  {
-    quote: [
       'At first I thought my old website was still OK, but after he showed me what it could look like, I was sold!',
-      'Quan can really perceive very quickly what it is you need, sometimes even before you do.',
+      'Quan is more than capable in everything that he does, and he goes way beyond the famous "extra mile".',
     ],
     name: 'Floris Robert Slob',
     role: 'Founder of The NeO Frequency',
@@ -685,12 +710,13 @@ const clientTestimonials = [
 
 // SEO and meta management
 useSEO({
-  title: 'Skill-Wanderer | Learn for Free, Build on a Small Budget',
-  description: 'Affordable websites and AI tools for small budgets, and free, practical education for self-learners. A social enterprise where client work funds learning.',
+  title: 'Skill-Wanderer | Learn for Free, Build With a Technical Partner',
+  description: 'A technical partner for early ideas on small budgets, and free, practical education for self-learners. A business with a mission, where client work funds learning.',
   keywords: [
-    'social enterprise',
-    'affordable website for small business',
+    'business with a mission',
+    'technical partner for early-stage founders',
     'tech partner for small business',
+    'affordable website for small business',
     'free education',
     'free mentorship',
     'self-learners',
@@ -709,10 +735,10 @@ useSEO({
     createFAQSchema([
       {
         question: 'What does Skill-Wanderer do?',
-        answer: 'Skill-Wanderer is a social enterprise in the making that helps people with limited resources. We build websites and AI tools for solo founders, freelancers, coaches, consultants, writers and small businesses on small budgets, starting with a free working prototype and no development fee. The monthly fees from that work fund free courses, guidance and real project experience for self-learners and lifelong learners.'
+        answer: 'Skill-Wanderer is a business with a mission: it helps people with limited resources. For solo founders, freelancers, coaches, consultants, writers and small businesses on small budgets, we act as a technical partner, not just a developer: we help decide what to build, choose tech that fits the budget and plan the work, then build the website or AI tool, starting with a free working prototype and no development fee. The monthly fees from that work fund free courses, guidance and real project experience for self-learners and lifelong learners.'
       },
       {
-        question: 'Why a social enterprise and not a charity?',
+        question: 'Why a business and not a charity?',
         answer: 'Because help that depends on donations or grants can stop for reasons beyond anyone\'s control. Skill-Wanderer earns its way by serving clients with small budgets and reinvests all net revenue into free education, so the help keeps going as long as we serve our clients well. We do not accept donations.'
       },
       {
@@ -1215,6 +1241,38 @@ onUnmounted(() => {
 
 .guide-points strong {
   color: white;
+}
+
+/* Client guide: one client's words on the "before you do" part of being a technical partner */
+.guide-quote {
+  margin: 28px 0 0;
+  padding: 20px 24px;
+  background: rgba(255, 107, 53, 0.06);
+  border-left: 4px solid var(--primary-orange);
+  border-radius: 0 16px 16px 0;
+}
+
+.guide-quote blockquote {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  font-style: italic;
+  color: white;
+}
+
+.guide-quote figcaption {
+  font-size: 0.92rem;
+  opacity: 0.8;
+}
+
+.guide-quote a {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.guide-quote a:hover {
+  text-decoration: underline;
 }
 
 /* Learner mentor: the story on the left, learners we've mentored on the right */
@@ -1976,7 +2034,8 @@ onUnmounted(() => {
     text-align: center;
   }
 
-  .guide-points {
+  .guide-points,
+  .guide-quote {
     text-align: left;
     max-width: 420px;
     margin-left: auto;

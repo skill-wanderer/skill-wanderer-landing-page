@@ -3,12 +3,12 @@
     <!-- Hero Section -->
     <section class="hero">
       <span class="hero-eyebrow">Work With Us</span>
-      <h1>A Tech Partner for Big Ideas on Small Budgets</h1>
+      <h1>A Technical Partner for Big Ideas on Small Budgets</h1>
       <p>
-        We help solo founders, freelancers, coaches, consultants, writers and small businesses get their idea
-        online: websites, AI tools, booking and payments. You see a free working prototype first, and there is
-        no development fee. After launch, we can also look after the tech around it, from business email to
-        research and advice.
+        We help solo founders, freelancers, coaches, consultants, writers and small businesses at the early stage
+        decide what to build, choose tech that fits their budget, and plan the way there. Then we build it, from
+        websites and AI tools to booking and payments, and stay on to look after it as it grows. You see a free
+        working prototype first, and there is no development fee.
       </p>
       <div class="hero-actions">
         <NuxtLink to="/contact" class="btn btn-primary">Tell Us About Your Idea</NuxtLink>
@@ -16,6 +16,82 @@
       </div>
       <span class="launch-badge">Free Prototype · No Development Fee · No Lock-In</span>
       <ImageSlot name="work-with-us/hero" class="hero-image" priority />
+    </section>
+
+    <!-- The technical partner part of every project, from the prototype on. Ongoing help after launch is the
+         Care Plan's #tech-partner section below; neither is offered on its own, without a build. -->
+    <section id="technical-partner" class="partner-section">
+      <div class="content">
+        <div class="section-header">
+          <h2>More Than a Developer</h2>
+          <p>
+            A developer builds what you ask for. A technical partner helps you work out what to ask for. Quan has
+            worked as a developer, solution architect and project manager, and he brings all three to your project,
+            so you're never left to make the technical decisions alone.
+          </p>
+        </div>
+
+        <div class="how-grid">
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🎯</div>
+            <h3>Shape the Product</h3>
+            <p>What to build first, what to leave out, and what your customers really need, so the first version does the right job.</p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🏗️</div>
+            <h3>Choose the Right Tech</h3>
+            <p>Tech that fits your budget and your stage today, designed with room to grow, so the next step doesn't mean starting over.</p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🗺️</div>
+            <h3>Plan and Run the Project</h3>
+            <p>Clear steps, honest scope and updates in plain language, from someone who once led 16 developers on 4 projects at the same time.</p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🔭</div>
+            <h3>See What's Coming</h3>
+            <p>
+              What your project will need before you know to ask: old links that must keep working, forms that belong
+              on your own site, pages search engines can read.
+            </p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">💰</div>
+            <h3>Work to Your Budget</h3>
+            <p>Each step sized to what you can spend now, with an honest view of what can wait until the idea proves itself.</p>
+          </div>
+          <div class="build-card">
+            <div class="build-icon" aria-hidden="true">🌱</div>
+            <h3>Adapt as You Learn</h3>
+            <p>
+              Ideas change once real people see them, so the plan can too: a second prototype if the direction shifts,
+              and on the Care Plan, changes as you grow.
+            </p>
+          </div>
+        </div>
+
+        <!-- Floris's story as told on his case study; the quote is verbatim from his testimonial. -->
+        <div class="advice-block partner-proof">
+          <div class="advice-text">
+            <h3>Thinking Ahead, So You Don't Have To</h3>
+            <p>
+              Floris had not asked for a new website. Quan noticed his site breaking on laptops and phones, and about
+              two days later showed him a working prototype of a better one. When Floris asked for a simple holding
+              page, he got one that previewed the new home page and gave visitors a way to get in touch.
+            </p>
+            <NuxtLink to="/work-with-us/projects/the-neo-frequency" class="advice-link">Read Floris's story →</NuxtLink>
+          </div>
+          <figure class="advice-quote">
+            <blockquote>
+              "Quan can really perceive very quickly what it is you need, sometimes even before you do."
+            </blockquote>
+            <figcaption>
+              <img src="/projects/neofrequency/floris-avatar.jpg" alt="Floris Robert Slob" loading="lazy" />
+              <span><strong>Floris Robert Slob</strong> · Founder of The NeO Frequency</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
 
     <!-- Who We Help -->
@@ -171,7 +247,7 @@
             <h3>Not Only Tech: Honest Advice Too</h3>
             <p>
               Many clients need more than code. We help you find the message your site should carry, shape your
-              offer, and decide what to build first, and what not to build at all.
+              offer, and think through how to reach the people you want to serve.
             </p>
             <NuxtLink to="/work-with-us/projects/matt-harr-speaker" class="advice-link">Read Matt's story →</NuxtLink>
           </div>
@@ -214,7 +290,7 @@
             <ImageSlot name="plan/launch" group="planSteps" class="plan-image" />
             <span class="plan-number">3</span>
             <h3>Launch and grow together</h3>
-            <p>No development fee. A monthly fee covers hosting, maintenance, support and occasional changes. Leave anytime.</p>
+            <p>No development fee. A monthly fee covers hosting, maintenance, support and occasional changes, and we stay on as your technical partner. Leave anytime.</p>
           </li>
         </ol>
         <div class="plan-cta">
@@ -333,9 +409,9 @@
           <p class="mission-eyebrow">Why we do this</p>
           <h2>Your Project Helps Twice</h2>
           <p>
-            Skill-Wanderer is a social enterprise in the making. We exist to help people with limited resources, and
-            a small budget is one of the problems we're here to solve: you get the tech you need at a price you can
-            carry. Your monthly fee keeps your project running, and it keeps free courses and mentorship going for
+            Skill-Wanderer is a business with a mission. We exist to help people with limited resources, and
+            a small budget is one of the problems we're here to solve: you get a technical partner and the tech you
+            need at a price you can carry. Your monthly fee keeps your project running, and it keeps free courses and mentorship going for
             self-learners from Nigeria to Venezuela.
           </p>
           <p>
@@ -344,7 +420,7 @@
             current.
           </p>
           <div class="mission-links">
-            <NuxtLink to="/social-enterprise" class="advice-link">Why a social enterprise →</NuxtLink>
+            <NuxtLink to="/business-with-a-mission" class="advice-link">Why a business, not a charity →</NuxtLink>
             <NuxtLink to="/learners" class="advice-link">Meet our learners →</NuxtLink>
           </div>
         </div>
@@ -356,8 +432,8 @@
       <div class="cta-content">
         <h2>Ready to Talk About Your Idea?</h2>
         <p>
-          Tell us what you want to build. Quan reads every message himself and replies with a time for a short
-          call. Your project helps fund free education.
+          Tell us what you want to build, even if it's only an idea so far. Quan reads every message himself and
+          replies with a time for a short call. Your project helps fund free education.
         </p>
         <div class="cta-buttons">
           <NuxtLink to="/contact" class="btn btn-primary">Tell Us About Your Idea</NuxtLink>
@@ -370,11 +446,12 @@
 
 <script setup lang="ts">
 useSEO({
-  title: 'Websites & AI Tools for Small Businesses | Skill-Wanderer',
+  title: 'Technical Partner for Websites & AI Tools | Skill-Wanderer',
   description:
-    'Websites, AI tools, booking and automation for solo founders, coaches, consultants, freelancers, writers and small businesses. Free prototype first.',
+    'A technical partner for early-stage founders and small businesses. We plan the product and tech with you, then build it, starting with a free prototype.',
   image: '/cropped-skill-wanderer-logo-768x256.webp',
   keywords: [
+    'technical partner for early-stage founders',
     'website for small business',
     'website for coaches',
     'website for consultants',
@@ -500,6 +577,19 @@ useSEO({
   opacity: 0.85;
   max-width: 760px;
   margin: 0 auto;
+}
+
+/* More Than a Developer: the technical partner part of every project */
+.partner-section {
+  padding: 90px 0;
+  background: var(--dark-bg);
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
 }
 
 /* Who We Help */
@@ -1026,7 +1116,8 @@ useSEO({
     flex-basis: calc(50% - 12px);
   }
 
-  .partner-grid {
+  .partner-grid,
+  .how-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1067,7 +1158,8 @@ useSEO({
   }
 
   .build-grid,
-  .partner-grid {
+  .partner-grid,
+  .how-grid {
     grid-template-columns: 1fr;
   }
 

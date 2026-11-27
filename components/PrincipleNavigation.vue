@@ -59,7 +59,7 @@ const principles = [
   { slug: 'technology-partnership', name: 'Guild Engagements Fueling Mission' },
   { slug: 'respect-ip', name: 'Respect IP' },
   { slug: 'community', name: 'Guild Community' },
-  { slug: 'social-enterprise', name: 'Social Enterprise Model' },
+  { slug: 'mission-driven-business', name: 'Mission-Driven Business Model' },
   { slug: 'mission-centric-reinvestment', name: 'Mission-Centric Reinvestment' }
 ]
 

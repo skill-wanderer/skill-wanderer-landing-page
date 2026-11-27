@@ -492,8 +492,8 @@
           </div>
         </div>
         <div class="org-note">
-          <strong>Operating Organization:</strong> Skill-Wanderer, a social enterprise in the making,
-          reinvesting technology partnerships back into free education.
+          <strong>Operating Organization:</strong> Skill-Wanderer, a business with a mission that reinvests what
+          it earns from client work into free education.
         </div>
       </div>
     </section>

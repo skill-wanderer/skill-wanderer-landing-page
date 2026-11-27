@@ -51,13 +51,13 @@
         <div class="impact-card" style="animation-delay: 0.1s;">
           <span class="impact-icon">🎓</span>
           <h3>For the Struggling Junior</h3>
-          <p>Complete learning paths without spending a penny. All content is free, and through our social enterprise model, human mentors and support are available to those in need via Social Impact Tokens.</p>
+          <p>Complete learning paths without spending a penny. All content and guidance are free, paid for by our client work, and mentorship is earned through effort, never money.</p>
         </div>
         
         <div class="impact-card" style="animation-delay: 0.2s;">
           <span class="impact-icon">🧭</span>
           <h3>For the Confused Mid Level</h3>
-          <p>Expert curation of both free and paid third-party resources, plus transparency about our social enterprise services including human mentoring and pre-learning advisory.</p>
+          <p>Expert curation of both free and paid third-party resources, plus free pre-learning advice and human mentoring that grows with your effort.</p>
         </div>
           <div class="impact-card" style="animation-delay: 0.3s;">
           <span class="impact-icon">🌍</span>
@@ -185,7 +185,7 @@ const practiceExamples = [
       'Multiple options, so there\'s always a free alternative to paid third-party resources',
       'Guidance on when paid third-party resources are truly worth the investment',
       'We never charge for Skill-Wanderer courses or materials, so all our learning content stays 100% free',
-      'Human mentoring and advisory services are available through our social enterprise model with Social Impact Tokens'
+      'Human mentoring and advice never cost money: we ask for your effort instead, and our client work covers the running costs'
     ]
   },
   {
@@ -195,7 +195,7 @@ const practiceExamples = [
       'No geographic restrictions, so learners anywhere in the world can access everything',
       'Free community support too, with no paid Discord channels',
       'Clear learning paths so you never feel lost or overwhelmed',
-      'Upfront transparency about which services are free and how mentoring and advisory are sustained through our social enterprise model'
+      'Upfront transparency about how free learning is paid for: client work, not ads, tuition or donations'
     ]
   }
 ]

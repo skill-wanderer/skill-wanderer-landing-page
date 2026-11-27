@@ -1,10 +1,13 @@
 <template>
+  <!-- Formerly /social-enterprise (301 in nuxt.config.ts). Since 2026-11-27 the site says "a business with a
+       mission" instead of "social enterprise", which is unfamiliar to many readers and in the US can sound like
+       socialism. The image slot keys keep their old "social-enterprise/" names. -->
   <div class="se-page">
     <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">Our Social Enterprise</p>
-        <h1>From Charity to Social Enterprise</h1>
+        <p class="eyebrow">How we keep education free</p>
+        <h1>From Charity to a Business With a Mission</h1>
         <p class="hero-subtitle">
           How Skill-Wanderer learned to help people with limited resources in a way that keeps itself going
         </p>
@@ -60,11 +63,11 @@
 
         <article class="chapter">
           <p class="chapter-label">Chapter 3</p>
-          <h2><span aria-hidden="true">🌱</span> The shift: entrepreneurship for a social mission</h2>
+          <h2><span aria-hidden="true">🌱</span> The shift: earning our own way</h2>
           <ImageSlot name="social-enterprise/enterprise" class="chapter-image" />
           <p>
-            So we chose social entrepreneurship: using entrepreneurship to solve social problems, with the help of
-            today's technology, especially AI.
+            So we chose entrepreneurship: running Skill-Wanderer as a business that solves real problems for people
+            with limited resources, with the help of today's technology, especially AI.
           </p>
           <p>
             AI changed what a small team can do. Websites and tools that once needed an agency budget can now be
@@ -96,9 +99,9 @@
               agency prices, or risk a big payment up front on an idea that might not work.
             </p>
             <p class="problem-answer">
-              <strong>Our answer:</strong> a free working prototype first and no development fee, then a monthly
-              plan. The Care Plan is priced to your project, and the Simple Website Plan is $20 a month, plus your
-              own domain.
+              <strong>Our answer:</strong> a technical partner from the first idea, a free working prototype and
+              no development fee, then a monthly plan. The Care Plan is priced to your project, and the Simple
+              Website Plan is $20 a month, plus your own domain.
             </p>
             <NuxtLink to="/work-with-us" class="btn btn-primary">See How We Help</NuxtLink>
           </article>
@@ -132,7 +135,7 @@
       </div>
     </section>
 
-    <!-- Charity mindset vs social enterprise, side by side -->
+    <!-- Charity mindset vs a business with a mission, side by side -->
     <section class="compare-section">
       <div class="container">
         <div class="section-header">
@@ -145,34 +148,34 @@
             <tr>
               <th scope="col"><span class="visually-hidden">Question</span></th>
               <th scope="col">How we started: a charity mindset</th>
-              <th scope="col">How we work now: a social enterprise</th>
+              <th scope="col">How we work now: a business with a mission</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">Where the money comes from</th>
               <td data-label="Charity mindset">Donations, grants and sponsors</td>
-              <td data-label="Social enterprise">Fair fees for real work that clients value</td>
+              <td data-label="A business with a mission">Fair fees for real work that clients value</td>
             </tr>
             <tr>
               <th scope="row">What it depends on</th>
               <td data-label="Charity mindset">Goodwill, and decisions made outside our control</td>
-              <td data-label="Social enterprise">How well we serve our clients, which is up to us</td>
+              <td data-label="A business with a mission">How well we serve our clients, which is up to us</td>
             </tr>
             <tr>
               <th scope="row">Who it helps</th>
               <td data-label="Charity mindset">Learners, for as long as the money lasts</td>
-              <td data-label="Social enterprise">Clients with small budgets and learners, both at once</td>
+              <td data-label="A business with a mission">Clients with small budgets and learners, both at once</td>
             </tr>
             <tr>
               <th scope="row">When funding dries up</th>
               <td data-label="Charity mindset">The help stops too</td>
-              <td data-label="Social enterprise">As long as we serve clients well, the help keeps going</td>
+              <td data-label="A business with a mission">As long as we serve clients well, the help keeps going</td>
             </tr>
             <tr>
               <th scope="row">What keeps it practical</th>
               <td data-label="Charity mindset">Nothing ties it to real work</td>
-              <td data-label="Social enterprise">What we teach comes from projects we really build</td>
+              <td data-label="A business with a mission">What we teach comes from projects we really build</td>
             </tr>
           </tbody>
         </table>
@@ -191,8 +194,8 @@
           </p>
           <p>
             That's why the first phase of our roadmap is serving enough clients with small budgets to make free
-            education sustainable. We're a social enterprise in the making, and we'd rather grow steadily on work we
-            control than quickly on money that could vanish.
+            education sustainable. We're still early, and we'd rather grow steadily on work we control than quickly
+            on money that could vanish.
           </p>
           <div class="honest-links">
             <NuxtLink to="/roadmap">See the three phases →</NuxtLink>
@@ -207,14 +210,14 @@
       <div class="container">
         <div class="section-header">
           <h2>What We Promise</h2>
-          <p>A social enterprise is only as good as the rules it keeps. These are ours.</p>
+          <p>A business with a mission is only as good as the rules it keeps. These are ours.</p>
         </div>
 
         <ul class="promise-grid">
           <li class="promise-card">
             <span class="promise-icon" aria-hidden="true">♻️</span>
             <h3>All net revenue reinvested</h3>
-            <p>What we earn goes back into free education, mentorship and the community. No profit extraction, ever.</p>
+            <p>Everything we earn beyond our running costs goes back into free education, mentorship and the community.</p>
           </li>
           <li class="promise-card">
             <span class="promise-icon" aria-hidden="true">🏷️</span>
@@ -278,16 +281,16 @@
 </template>
 
 <script setup lang="ts">
-const PAGE_TITLE = 'From Charity to Social Enterprise | Skill-Wanderer'
-const PAGE_DESCRIPTION = 'How Skill-Wanderer went from a charity mindset to social entrepreneurship: affordable tech for small budgets that keeps education free, without donations.'
+const PAGE_TITLE = 'From Charity to a Business With a Mission | Skill-Wanderer'
+const PAGE_DESCRIPTION = 'How Skill-Wanderer went from a charity mindset to a business with a mission: client work for small budgets keeps education free, without donations.'
 
 useSEO({
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
   keywords: [
-    'social enterprise',
-    'social entrepreneurship',
-    'charity vs social enterprise',
+    'business with a mission',
+    'mission-driven business',
+    'charity vs business',
     'affordable website for small business',
     'free education',
     'sustainable mission',
@@ -295,10 +298,10 @@ useSEO({
   ],
   type: 'article',
   structuredData: [
-    createArticleSchema(PAGE_TITLE, PAGE_DESCRIPTION, 'https://skill-wanderer.com/social-enterprise'),
+    createArticleSchema(PAGE_TITLE, PAGE_DESCRIPTION, 'https://skill-wanderer.com/business-with-a-mission'),
     createBreadcrumbSchema([
       { name: 'Home', url: 'https://skill-wanderer.com/' },
-      { name: 'Our Social Enterprise', url: 'https://skill-wanderer.com/social-enterprise' }
+      { name: 'Business With a Mission', url: 'https://skill-wanderer.com/business-with-a-mission' }
     ])
   ]
 })

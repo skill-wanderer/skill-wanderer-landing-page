@@ -267,7 +267,7 @@
             <span class="impact-number">100%</span>
             <span class="impact-label">of net revenue reinvested in the mission</span>
           </div>
-          <p>No investors and no profit extraction. What you pay keeps your project running and keeps free education going.</p>
+          <p>No outside investors and no donations, so we answer to our clients and learners. What you pay keeps your project running and keeps free education going.</p>
         </div>
       </div>
     </section>
@@ -592,7 +592,7 @@ const faqs = ref<{ audience: 'hire' | 'join'; question: string; answer: string }
   {
     audience: 'hire',
     question: "What makes Skill-Wanderer different from an agency?",
-    answer: "There is no big upfront bill: you see a working prototype first and pay no development fee. You get honest advice, not just code. There is no lock-in: you own your domain and can see the code. And your project helps fund free education."
+    answer: "You get a technical partner, not just code: Quan helps you decide what to build, which tech fits your budget and how to plan the work, and he often spots what your project will need before you do. There is no big upfront bill: you see a working prototype first and pay no development fee. There is no lock-in: you own your domain and can see the code. And your project helps fund free education."
   },
   {
     audience: 'join',

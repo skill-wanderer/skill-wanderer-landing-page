@@ -4,7 +4,7 @@
     <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">Our Roadmap</h1>
-        <p class="hero-subtitle">Three phases toward a social enterprise that keeps itself going</p>
+        <p class="hero-subtitle">Three phases toward a mission that pays its own way</p>
         <p class="hero-description">
           We're building Skill-Wanderer in a deliberate order. First, serve enough clients with small budgets to make
           free education sustainable. Then build our own learning platform and grow our network of learners. Then
@@ -190,7 +190,7 @@
         </div>
 
         <p class="order-link">
-          <NuxtLink to="/social-enterprise">Read why we chose social enterprise over charity →</NuxtLink>
+          <NuxtLink to="/business-with-a-mission">Read why we chose business over charity →</NuxtLink>
         </p>
       </div>
     </section>
@@ -250,7 +250,7 @@ import { onMounted, onUnmounted, ref } from 'vue'
 useSEO({
   title: 'Roadmap: Three Phases to a Lasting Mission | Skill-Wanderer',
   description: 'Our roadmap in three phases: serve enough clients with small budgets to make free education sustainable, build our learning platform, then grow a community.',
-  keywords: ['skill-wanderer roadmap', 'social enterprise roadmap', 'affordable tech for small business', 'learning platform', 'learner network', 'learning community', 'free education roadmap'],
+  keywords: ['skill-wanderer roadmap', 'business with a mission roadmap', 'affordable tech for small business', 'learning platform', 'learner network', 'learning community', 'free education roadmap'],
   type: 'website',
 })
 

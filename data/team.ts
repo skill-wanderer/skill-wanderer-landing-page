@@ -43,7 +43,7 @@ export const teamMembers: TeamMember[] = [
       'Founded Skill-Wanderer and established its 12 guiding principles',
       'Built the entire platform on a self-hosted Kubernetes cluster using just an old laptop and Orange Pi',
       'Designed the learning path curriculum and mentorship program',
-      'Created the social enterprise model and Success Sharing framework',
+      'Created the mission-driven business model and Success Sharing framework',
       'Leading the open-source development team and community growth',
     ],
   },

@@ -1,12 +1,15 @@
 <template>
+  <!-- Principle #11, "Social Enterprise Model" until 2026-11-27 (old URL /principles/social-enterprise redirects
+       here). Social Impact Tokens were dropped the same day: learning is paid for by client work, never by
+       learners. The cover image keeps its old slot key. -->
   <div>
     <!-- Hero Section -->
     <PrincipleHero
       :number="11"
       image="principles/social-enterprise"
-      title="Social Enterprise Model for Quality Education"
+      title="Mission-Driven Business Model for Quality Education"
       tagline="3 Ways to Contribute to the Mission"
-      breadcrumb-name="Social Enterprise Model"
+      breadcrumb-name="Mission-Driven Business Model"
     />
 
     <!-- Story Section -->
@@ -19,7 +22,7 @@
     <section class="cycle-section">
       <div class="cycle-container">
         <div style="text-align: center; margin-bottom: 50px;">
-          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">The Social Enterprise Cycle</h2>
+          <h2 style="font-size: 2.5rem; color: var(--primary-orange);">The Mission-Driven Cycle</h2>
           <p style="font-size: 1.2rem; opacity: 0.9;">A sustainable loop where every learner fuels the next</p>
         </div>
 
@@ -104,20 +107,20 @@
     </section>
 
     <!-- 3 Ways to Contribute Section -->
-    <section class="token-section">
-      <div class="token-container">
+    <section class="model-section">
+      <div class="model-container">
         <div style="text-align: center; margin-bottom: 50px;">
           <h2 style="font-size: 2.5rem; color: var(--primary-orange);">3 Ways to Contribute to the Mission</h2>
-          <p style="font-size: 1.2rem; opacity: 0.9;">With a social enterprise model, every contribution directly funds quality education</p>
+          <p style="font-size: 1.2rem; opacity: 0.9;">As a mission-driven business, every contribution goes back into quality education</p>
         </div>
 
-        <div class="token-explainer">
-          <div class="token-card main-token">
-            <span class="token-badge">🌍</span>
-            <h3>How Our Social Enterprise Model Works</h3>
+        <div class="model-explainer">
+          <div class="model-card main-model">
+            <span class="model-badge">🌍</span>
+            <h3>How Our Mission-Driven Business Model Works</h3>
             <p>
-              Skill-Wanderer is working toward becoming a social enterprise, meaning <strong>100% of revenue is reinvested
-              into our mission</strong> of making quality education accessible to everyone.
+              Skill-Wanderer runs as a business with a mission: <strong>all net revenue is reinvested into our
+              mission</strong> of making quality education accessible to everyone.
               There are three meaningful ways you can contribute to this mission,
               each creating value for you while sustaining education for those who need it most.
             </p>
@@ -136,7 +139,7 @@
             <p>
               Work with us as tech partners using our services, be it
               <strong>AI, web, mobile, DevOps, or platform development</strong>.
-              All revenue is <strong>reinvested to fund the mission</strong>.
+              All net revenue is <strong>reinvested to fund the mission</strong>.
               Your challenges get solved, learners get funded. Everyone wins.
               Client work covers our costs but not our contributors.
               Even so, we chose not to accept donations, to keep the mission practical.
@@ -179,28 +182,28 @@
         <div class="impact-content">
           <div class="impact-card">
             <span class="impact-icon">🛡️</span>
-            <h3>For Learners Who Truly Cannot Afford It</h3>
+            <h3>For Learners With Nothing to Spare</h3>
             <p>
-              If you're in a situation where financial contribution simply isn't possible,
-              we won't turn you away. We will support you with maximum impact: full
-              access to mentors, projects, advisory, and everything else. Your only
-              obligation is to learn earnestly and, when you're able, give back to
-              the community in whatever form you can.
+              Learning here never costs money, so no one is turned away because of
+              their finances. Mentors, projects and advice are open to anyone who puts
+              in the effort. Your only obligation is to learn earnestly and, when
+              you're able, give back to the community in whatever form you can.
             </p>
           </div>
 
           <div class="impact-card">
             <span class="impact-icon">⚖️</span>
-            <h3>Why Social Enterprise, Not Charity</h3>
+            <h3>Why a Business, Not a Charity</h3>
             <p>
               This principle once leaned more toward a purely charitable model. But I
               learned that charity alone risks compromising quality or simply isn't
-              sustainable over time. A social enterprise model lets us maintain the
-              <strong>same high-quality learning with human mentors</strong> while
-              creating a cycle where today's learners fund tomorrow's. It's not about
-              profit. It's about building something that lasts.
+              sustainable over time. Running Skill-Wanderer as a mission-driven business
+              lets us keep the <strong>same high-quality learning with human mentors</strong>,
+              paid for by real client work, while today's learners grow into tomorrow's
+              mentors. Everything we earn beyond our costs goes back into the mission,
+              because the goal is building something that lasts.
             </p>
-            <NuxtLink to="/social-enterprise" class="impact-link">Read the full story →</NuxtLink>
+            <NuxtLink to="/business-with-a-mission" class="impact-link">Read the full story →</NuxtLink>
           </div>
         </div>
       </div>
@@ -208,7 +211,7 @@
 
     <!-- Practice Section -->
     <PrinciplePractice
-      title="Social Enterprise Model in Action"
+      title="Mission-Driven Business Model in Action"
       subtitle="How we deliver quality and sustain impact"
       :examples="practiceExamples"
       background-color="var(--darker-bg)"
@@ -217,12 +220,12 @@
 
     <!-- Quote Section -->
     <PrincipleQuote
-      quote="I once believed that making education free was enough. But quality suffers without sustainability, and charity alone can't fund human mentors forever. The social enterprise model is our answer. Whether you work with us as tech partners, help build the platform, or strengthen the community, every contribution is reinvested into the mission. This is how we build something that truly lasts."
+      quote="I once believed that making education free was enough. But quality suffers without sustainability, and charity alone can't fund human mentors forever. A mission-driven business is our answer. Whether you work with us as tech partners, help build the platform, or strengthen the community, every contribution is reinvested into the mission. This is how we build something that truly lasts."
       author="Quan Nguyen, Founder of Skill-Wanderer"
     />
 
     <!-- Navigation Section -->
-    <PrincipleNavigation current-slug="social-enterprise" />
+    <PrincipleNavigation current-slug="mission-driven-business" />
   </div>
 </template>
 
@@ -232,20 +235,20 @@ import type { StoryChapter, PracticeExample } from '~/types'
 
 // SEO and meta management
 useSEO({
-  title: 'Social Enterprise Model: 3 Ways to Contribute to the Mission | Principle #11',
-  description: 'Discover Skill-Wanderer\'s social enterprise model, with 3 ways to contribute: work with us as tech partners, help develop our platform, or strengthen the community. All revenue reinvested into quality education.',
-  keywords: ['social enterprise', 'tech partner', 'skill-wanderer principle 11', 'sustainable education', 'contribute to mission', 'human mentors', 'quality free education'],
+  title: 'Mission-Driven Business Model: 3 Ways to Contribute to the Mission | Principle #11',
+  description: 'Discover Skill-Wanderer\'s mission-driven business model, with 3 ways to contribute: work with us as tech partners, help develop our platform, or strengthen the community. All net revenue reinvested into quality education.',
+  keywords: ['mission-driven business', 'business with a mission', 'tech partner', 'skill-wanderer principle 11', 'sustainable education', 'contribute to mission', 'human mentors', 'quality free education'],
   type: 'article',
   structuredData: [
     createArticleSchema(
-      'Social Enterprise Model: 3 Ways to Contribute to the Mission | Principle #11',
-      'Discover Skill-Wanderer\'s social enterprise model, with 3 ways to contribute: become a tech partner, help develop our platform, or strengthen the community. All revenue reinvested into quality education.',
-      'https://skill-wanderer.com/principles/social-enterprise'
+      'Mission-Driven Business Model: 3 Ways to Contribute to the Mission | Principle #11',
+      'Discover Skill-Wanderer\'s mission-driven business model, with 3 ways to contribute: become a tech partner, help develop our platform, or strengthen the community. All net revenue reinvested into quality education.',
+      'https://skill-wanderer.com/principles/mission-driven-business'
     ),
     createBreadcrumbSchema([
       { name: 'Home', url: 'https://skill-wanderer.com/' },
       { name: 'Principles', url: 'https://skill-wanderer.com/principles' },
-      { name: 'Social Enterprise', url: 'https://skill-wanderer.com/principles/social-enterprise' }
+      { name: 'Mission-Driven Business Model', url: 'https://skill-wanderer.com/principles/mission-driven-business' }
     ])
   ]
 })
@@ -254,7 +257,7 @@ useSEO({
 const activeStep = ref(-1)
 
 // Story content data
-const storyIntro = 'I call our eleventh principle <strong>Social Enterprise Model for Quality Education</strong>. We are working toward operating as a social enterprise with three clear ways to contribute to the mission, and its story is one of honest reflection about what truly works.'
+const storyIntro = 'I call our eleventh principle <strong>Mission-Driven Business Model for Quality Education</strong>. We run Skill-Wanderer as a business with a mission, with three clear ways to contribute, and its story is one of honest reflection about what truly works.'
 
 const storyChapters: StoryChapter[] = [
   {
@@ -287,7 +290,7 @@ const storyChapters: StoryChapter[] = [
   },
   {
     icon: '⚖️',
-    title: 'From Charity to Social Enterprise',
+    title: 'From Charity to a Mission-Driven Business',
     content: [
       {
         type: 'challenge-highlight',
@@ -296,11 +299,11 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'text',
-        text: 'So I found a better balance: a <strong>social enterprise model</strong>. This means we still deliver the same quality, including human mentors, real projects, start-up support and pre-learning advisory, but we sustain it through a cycle where learners who benefit today help fund and support the learners of tomorrow.'
+        text: 'So I found a better balance: a <strong>mission-driven business model</strong>. We still deliver the same quality, including human mentors, real projects, start-up support and pre-learning advisory, but real client work pays for it, and learners who benefit today grow into contributors who support the learners of tomorrow.'
       },
       {
         type: 'text',
-        text: 'For people who are truly in need and cannot afford to participate at first, we will support them with <strong>maximum impact</strong>. No one who is genuinely committed to learning should be turned away because of their financial situation.'
+        text: 'Learning never costs money here, so no one who is genuinely committed to learning should be turned away because of their financial situation. We ask for <strong>effort, not money</strong>.'
       }
     ]
   },
@@ -310,13 +313,13 @@ const storyChapters: StoryChapter[] = [
     content: [
       {
         type: 'text',
-        text: 'With our social enterprise model, we reinvest all revenue into our mission. There are <strong>three meaningful ways</strong> anyone can contribute:'
+        text: 'As a mission-driven business, we reinvest all net revenue into our mission. There are <strong>three meaningful ways</strong> anyone can contribute:'
       },
       {
         type: 'element-list',
         text: '',
         items: [
-          '<strong>Work with us as tech partners</strong>: use our tech services, including AI, web, mobile, DevOps, and platform development. All revenue is reinvested to fund the mission.',
+          '<strong>Work with us as tech partners</strong>: use our tech services, including AI, web, mobile, DevOps, and platform development. All net revenue is reinvested to fund the mission.',
           '<strong>Platform development</strong>: join us in building the Skill-Wanderer platform, gaining real-world experience and learning at the same time while we teach you.',
           '<strong>Contribute to the community</strong>: mentor newer learners, create content, moderate discussions, or organize events, and gain meaningful connections in return.'
         ]
@@ -331,7 +334,7 @@ const practiceExamples: PracticeExample[] = [
     title: 'Work with Us as Tech Partners',
     items: [
       'Work with us as tech partners using our services: AI, web, mobile, DevOps, and platform development',
-      'All revenue is reinvested into funding the mission',
+      'All net revenue is reinvested into funding the mission',
       'Client work is our main way to fund teaching, because it keeps us practical',
       'Every project goes toward supporting the next learner'
     ]
@@ -517,23 +520,23 @@ const practiceExamples: PracticeExample[] = [
   line-height: 1.7;
 }
 
-/* Social Impact Token Section */
-.token-section {
+/* 3 Ways to Contribute Section */
+.model-section {
   padding: 80px 20px;
   background: var(--dark-bg);
 }
 
-.token-container {
+.model-container {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.token-explainer {
+.model-explainer {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.main-token {
+.main-model {
   background: var(--card-bg);
   border: 2px solid var(--primary-orange);
   border-radius: 24px;
@@ -543,7 +546,7 @@ const practiceExamples: PracticeExample[] = [
   overflow: hidden;
 }
 
-.main-token::before {
+.main-model::before {
   content: '';
   position: absolute;
   top: 0;
@@ -553,25 +556,25 @@ const practiceExamples: PracticeExample[] = [
   background: linear-gradient(90deg, #4CAF50, var(--primary-orange), #FFC107);
 }
 
-.token-badge {
+.model-badge {
   font-size: 64px;
   display: block;
   margin-bottom: 20px;
 }
 
-.main-token h3 {
+.main-model h3 {
   font-size: 1.6rem;
   color: var(--primary-orange);
   margin-bottom: 20px;
 }
 
-.main-token p {
+.main-model p {
   font-size: 1.05rem;
   line-height: 1.8;
   opacity: 0.9;
 }
 
-.main-token strong {
+.main-model strong {
   color: var(--primary-orange);
 }
 

@@ -33,11 +33,11 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      title: 'Skill-Wanderer | Learn for Free, Build on a Small Budget',
+      title: 'Skill-Wanderer | Learn for Free, Build With a Technical Partner',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Affordable websites and AI tools for small budgets, and free, practical education for self-learners. A social enterprise where client work funds learning.' },
+        { name: 'description', content: 'A technical partner for early ideas on small budgets, and free, practical education for self-learners. A business with a mission, where client work funds learning.' },
         { name: 'author', content: 'Quan Nguyen' },
         { name: 'robots', content: 'index,follow' },
         { name: 'language', content: 'en' },
@@ -119,6 +119,10 @@ export default defineNuxtConfig({
     '/work-with-us/pricing-faq': { redirect: { to: '/work-with-us/service-model', statusCode: 301 } },
     '/principles/tech-services': { redirect: { to: '/principles/technology-partnership', statusCode: 301 } },
     '/principles/resourceful': { redirect: { to: '/principles/respect-ip', statusCode: 301 } },
+    // "Social enterprise" became "a business with a mission" on 2026-11-27 (unfamiliar term, and it can read as
+    // socialism in the US); old links and LinkedIn posts keep working.
+    '/social-enterprise': { redirect: { to: '/business-with-a-mission', statusCode: 301 } },
+    '/principles/social-enterprise': { redirect: { to: '/principles/mission-driven-business', statusCode: 301 } },
     '/': { sitemap: { changefreq: 'weekly', priority: 1.0 } },
     '/about': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/contact': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
@@ -155,7 +159,7 @@ export default defineNuxtConfig({
     },
     '/learning-path/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/roadmap': { sitemap: { changefreq: 'weekly', priority: 0.7 } },
-    '/social-enterprise': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
+    '/business-with-a-mission': { sitemap: { changefreq: 'monthly', priority: 0.8 } },
     '/help-the-mission': { sitemap: { changefreq: 'monthly', priority: 0.6 } },
     '/principles': { sitemap: { changefreq: 'monthly', priority: 0.9 } },
     '/principles/**': { sitemap: { changefreq: 'monthly', priority: 0.8 } },

@@ -1,9 +1,9 @@
 <template>
   <footer>    <div class="footer-content">
       <p class="footer-one-liner">
-        A social enterprise in the making. We build affordable websites and AI tools for small budgets: a free
-        working prototype first, no development fee and no lock-in. That work keeps practical education free for
-        everyone who keeps learning.
+        A business with a mission. We're a technical partner for early ideas on small budgets, planning
+        and building websites and AI tools with you: a free working prototype first, no development fee and no
+        lock-in. That work keeps practical education free for everyone who keeps learning.
       </p>
       <p class="footer-email">
         Email the Guild Master: <a href="mailto:quan.nguyen@skill-wanderer.com">quan.nguyen@skill-wanderer.com</a>
@@ -19,7 +19,7 @@
         <NuxtLink to="/work-with-us/our-projects">Client Projects</NuxtLink>
         <NuxtLink to="/work-with-us/testimonials">Testimonials</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/social-enterprise">Our Social Enterprise</NuxtLink>
+        <NuxtLink to="/business-with-a-mission">Business With a Mission</NuxtLink>
         <NuxtLink to="/principles">12 Principles</NuxtLink>
         <NuxtLink to="/roadmap">Roadmap</NuxtLink>
         <NuxtLink to="/help-the-mission">Help the Mission</NuxtLink>

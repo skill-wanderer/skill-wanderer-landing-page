@@ -203,7 +203,8 @@ export const imageSlots: Record<string, ImageSlotSpec> = {
       'and small groups bent over laptops and notebooks together.',
   },
 
-  // ── Our Social Enterprise: the hero, then the charity and social enterprise chapters (About reuses the second) ──
+  // ── Business With a Mission (/business-with-a-mission, called /social-enterprise until 2026-11-27, so the keys
+  //    keep the old prefix): the hero, then the charity and enterprise chapters (About reuses the second) ──
   'social-enterprise/hero': {
     ratio: '16/9',
     alt: 'A riverside workshop whose waterwheel powers a string of warm lights leading to a learning hall next door',
@@ -428,6 +429,8 @@ export const imageSlots: Record<string, ImageSlotSpec> = {
       'People of different ages around a long shared table at night with laptops and notebooks open. One person explains something while the others lean in to listen, ' +
       'under warm hanging lamps, seen from a little distance.',
   },
+  // Principle #11's cover: the principle is "Mission-Driven Business Model" at /principles/mission-driven-business
+  // since 2026-11-27, but the key keeps its old name so the image file stays where it is.
   'principles/social-enterprise': {
     ratio: '16/9',
     alt: 'A tree rooted in books, its branches hung with lanterns over people learning in its shade',

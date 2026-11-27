@@ -262,7 +262,7 @@ const storyChapters: StoryChapter[] = [
       },
       {
         type: 'text',
-        text: '• Members who are more financially fortunate can give back through Social Impact Tokens, funding the next learner, contributing to the platform, or strengthening the community.'
+        text: '• Clients who bring us their projects fund the next learner, so every project helps twice.'
       },
       {
         type: 'text',
@@ -291,7 +291,7 @@ const practiceExamples: PracticeExample[] = [
     title: 'Support Networks',
     items: [
       'Mentorship matching based on skills and goals',
-      'Community give-back programs through Social Impact Tokens',
+      'Ways to give back that take effort, never money',
       'Regional chapters for local meetups and support',
       '24/7 help channels with rotating volunteers'
     ]

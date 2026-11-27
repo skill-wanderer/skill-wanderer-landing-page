@@ -121,7 +121,7 @@
           </div>
         </div>
 
-        <!-- Work With Us Dropdown (affordable tech for small budgets, which also funds free education) -->
+        <!-- Work With Us Dropdown (a technical partner for small budgets, which also funds free education) -->
         <div class="dropdown" @mouseenter="openPartnershipsDropdown" @mouseleave="scheduleDropdownClose">
           <span class="dropdown-trigger" :class="{ active: isPartnershipsDropdownOpen }">
             Work With Us
@@ -136,7 +136,7 @@
               </span>
               <span class="rich-menu-text">
                 <span class="rich-menu-label">Services</span>
-                <span class="rich-menu-desc">Who we help and what we can build for you</span>
+                <span class="rich-menu-desc">A technical partner, not just a developer</span>
               </span>
             </NuxtLink>
             <NuxtLink to="/work-with-us/service-model" class="rich-menu-item" @click="closeMobileMenu(); isPartnershipsDropdownOpen = false">
@@ -222,12 +222,12 @@
                 <span class="rich-menu-desc">Why Skill-Wanderer exists and who leads it</span>
               </span>
             </NuxtLink>
-            <NuxtLink to="/social-enterprise" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
+            <NuxtLink to="/business-with-a-mission" class="rich-menu-item" @click="closeMobileMenu(); isAboutDropdownOpen = false">
               <span class="rich-menu-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-3 8-6.5 8-11a8 8 0 0 0-16 0c0 4.5 4 8 8 11z"/><path d="M12 7v6"/><path d="M9 10l3 3 3-3"/></svg>
               </span>
               <span class="rich-menu-text">
-                <span class="rich-menu-label">Our Social Enterprise</span>
+                <span class="rich-menu-label">Business With a Mission</span>
                 <span class="rich-menu-desc">Why we chose entrepreneurship over charity</span>
               </span>
             </NuxtLink>
@@ -290,7 +290,7 @@
           </button>
           <div id="mobile-about-menu" class="mobile-dropdown-menu" :class="{ open: isMobileAboutDropdownOpen }">
             <NuxtLink to="/about" @click="closeMobileMenu">Our Story</NuxtLink>
-            <NuxtLink to="/social-enterprise" @click="closeMobileMenu">Our Social Enterprise</NuxtLink>
+            <NuxtLink to="/business-with-a-mission" @click="closeMobileMenu">Business With a Mission</NuxtLink>
             <NuxtLink to="/team" @click="closeMobileMenu">Team</NuxtLink>
             <NuxtLink to="/principles" @click="closeMobileMenu">12 Principles</NuxtLink>
             <NuxtLink to="/roadmap" @click="closeMobileMenu">Roadmap</NuxtLink>

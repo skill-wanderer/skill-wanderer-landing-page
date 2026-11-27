@@ -176,17 +176,17 @@
           </NuxtLink>
 
           <!-- Principle 11 -->
-          <NuxtLink to="/principles/social-enterprise" class="principle-card" style="animation-delay: 1.1s;">
+          <NuxtLink to="/principles/mission-driven-business" class="principle-card" style="animation-delay: 1.1s;">
             <ImageSlot name="principles/social-enterprise" group="principleCovers" class="principle-cover" />
             <div class="principle-header">
               <div class="principle-number">11</div>
               <div class="principle-title">
-                <h3>Social Enterprise Model</h3>
+                <h3>Mission-Driven Business Model</h3>
                 <p class="principle-tagline">Quality Learning, Sustainable Impact</p>
               </div>
             </div>
             <p class="principle-description">
-              Same quality human mentors, start-up support, and pre-learning advisory, sustained through Social Impact Tokens and an open give-back cycle.
+              Same quality human mentors, start-up support, and pre-learning advisory, paid for by real client work instead of donations.
             </p>
             <span class="principle-arrow">Read the story →</span>
           </NuxtLink>
@@ -214,7 +214,7 @@
     <section class="mission">
       <div class="mission-content">
         <div class="mission-quote">
-We believe quality education shapes brighter futures. Our mission as a guild is to achieve this by integrating real-world insights from our craft and guild engagements directly into highly practical, guild-based learning. This approach builds toward a sustainable social enterprise, enabling us to operate with complete integrity, forgoing any benefit that could cause doubt in our cause, and reinvest all resources for lasting global impact. Every guild engagement becomes free education shared. Every real-world challenge solved plants seeds of knowledge for countless guild members.
+We believe quality education shapes brighter futures. Our mission as a guild is to achieve this by integrating real-world insights from our craft and guild engagements directly into highly practical, guild-based learning. This approach builds toward a sustainable business with a mission, enabling us to operate with complete integrity, forgoing any benefit that could cause doubt in our cause, and reinvest all resources for lasting global impact. Every guild engagement becomes free education shared. Every real-world challenge solved plants seeds of knowledge for countless guild members.
         </div>
       </div>
     </section>  </div>
@@ -225,7 +225,7 @@ We believe quality education shapes brighter futures. Our mission as a guild is 
 useSEO({
   title: 'Our 12 Guild Principles | Skill-Wanderer',
   description: 'Discover the 12 guild principles that shape Skill-Wanderer\'s guild mission to provide free, quality education with complete integrity and transparency.',
-  keywords: ['skill-wanderer principles', 'guild principles', 'guild values', 'social enterprise', 'integrity in education'],
+  keywords: ['skill-wanderer principles', 'guild principles', 'guild values', 'mission-driven business', 'integrity in education'],
   type: 'article',
   structuredData: [
     createArticleSchema(
@@ -240,7 +240,7 @@ useSEO({
     createFAQSchema([
       {
         question: 'What are Skill-Wanderer\'s guild principles?',
-        answer: 'Skill-Wanderer is guided by 12 guild principles: Accessible, Integrity and Impartiality, Individualized, Relevant, Engaging, Creativity, Guild Community, Social Enterprise Model, Mission-Centric Reinvestment, Pathways, Respect IP, and Guild Engagements.'
+        answer: 'Skill-Wanderer is guided by 12 guild principles: Accessible, Integrity and Impartiality, Individualized, Relevant, Engaging, Creativity, Guild Community, Mission-Driven Business Model, Mission-Centric Reinvestment, Pathways, Respect IP, and Guild Engagements.'
       },
       {
         question: 'Why does Skill-Wanderer have no ads or affiliate marketing?',
